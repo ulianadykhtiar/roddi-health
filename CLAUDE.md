@@ -28,4 +28,4 @@
 
 ## Форми
 
-`FORMS_ENDPOINT` в `assets/forms.js` — адреса вебзастосунку Apps Script, що пише в Google Таблицю «Roddi Health — заявки» (вкладки Emails і Survey). Заявки з localhost теж потрапляють у Таблицю. Після зміни `google-apps-script.gs` код треба вставити в Apps Script і оновити наявне розгортання (Deploy → Manage deployments → Edit → New version), щоб адреса не змінилася.
+`FORMS_ENDPOINT` в `assets/forms.js` — адреса вебзастосунку Apps Script, що пише в Google Таблицю «Roddi Health — заявки» (вкладки Emails і Survey). Заявки з localhost теж потрапляють у Таблицю. Після зміни `google-apps-script.gs` код треба вставити в Apps Script і оновити наявне розгортання (Deploy → Manage deployments → Edit → New version), щоб адреса не змінилася. Колонка «Мова» (`uk`/`en`) береться з `lang` сторінки, з якої надіслана форма.

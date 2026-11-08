@@ -16,7 +16,7 @@ var RoddiForms = (function () {
   /* ---------- storage ---------- */
   function send(type, data) {
     if (window.clarity) window.clarity('event', type);
-    var payload = Object.assign({ type: type, page: location.pathname, sentAt: new Date().toISOString() }, data);
+    var payload = Object.assign({ type: type, page: location.pathname, lang: IS_EN ? 'en' : 'uk', sentAt: new Date().toISOString() }, data);
     if (!FORMS_ENDPOINT) {
       try {
         var all = JSON.parse(localStorage.getItem('roddi:outbox') || '[]');

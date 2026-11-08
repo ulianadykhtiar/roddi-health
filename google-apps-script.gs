@@ -16,8 +16,8 @@
  */
 
 var HEADERS = {
-  Emails: ['Дата', 'Email', 'Форма', 'Сторінка'],
-  Survey: ['Дата', 'Email', 'Тварини', 'Скільки', 'Останні ліки', 'Телефон', 'Бета', 'Коментар']
+  Emails: ['Дата', 'Email', 'Форма', 'Сторінка', 'Мова'],
+  Survey: ['Дата', 'Email', 'Тварини', 'Скільки', 'Останні ліки', 'Телефон', 'Бета', 'Коментар', 'Мова']
 };
 
 function doPost(e) {
@@ -32,7 +32,7 @@ function doPost(e) {
       // One row per address: a repeat sign-up is ignored.
       var known = emails.getLastRow() > 1 ? emails.getRange(2, 2, emails.getLastRow() - 1, 1).getValues() : [];
       if (known.some(function (r) { return String(r[0]).toLowerCase() === email; })) return reply('duplicate');
-      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page)]);
+      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page), lang(data)]);
       return reply('ok');
     }
     if (data.type === 'email-change') {
@@ -46,12 +46,12 @@ function doPost(e) {
           return reply('ok');
         }
       }
-      list.appendRow([new Date(), clean(email), 'email-change', clean(data.page)]);
+      list.appendRow([new Date(), clean(email), 'email-change', clean(data.page), lang(data)]);
       return reply('ok');
     }
     if (data.type === 'survey') {
       sheet('Survey').appendRow([new Date(), clean(email), clean(data.pets), clean(data.count), clean(data.lastMeds),
-                                 clean(data.phone), clean(data.beta), clean(data.note)]);
+                                 clean(data.phone), clean(data.beta), clean(data.note), lang(data)]);
       return reply('ok');
     }
     return reply('unknown type');
@@ -75,6 +75,33 @@ function sheet(name) {
 function clean(v) {
   var s = String(v == null ? '' : v).slice(0, 1000);
   return /^[=+\-@]/.test(s) ? "'" + s : s;
+}
+
+// "uk" or "en": the form's page language; older pages send no lang, so fall back to the /en/ path.
+function lang(data) {
+  if (data.lang === 'en' || data.lang === 'uk') return data.lang;
+  return /^\/en(\/|$)/.test(String(data.page || '')) ? 'en' : 'uk';
+}
+
+// One-time setup, run from the Apps Script editor: adds the "Мова" header to
+// existing tabs and fills it for old rows (from the page path on Emails, from
+// Cyrillic in the answers on Survey). Safe to run again.
+function addLangColumn() {
+  ['Emails', 'Survey'].forEach(function (name) {
+    var s = sheet(name);
+    var col = HEADERS[name].length;
+    s.getRange(1, col).setValue('Мова');
+    var n = s.getLastRow() - 1;
+    if (n < 1) return;
+    var rows = s.getRange(2, 1, n, col).getValues();
+    var out = rows.map(function (r) {
+      if (r[col - 1] === 'uk' || r[col - 1] === 'en') return [r[col - 1]];
+      if (!r[1]) return [''];
+      if (name === 'Emails') return [lang({ page: r[3] })];
+      return [/[А-Яа-яІіЇїЄєҐґ]/.test(r.slice(2, col - 1).join(' ')) ? 'uk' : 'en'];
+    });
+    s.getRange(2, col, n, 1).setValues(out);
+  });
 }
 
 function reply(status) {
