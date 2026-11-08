@@ -1,0 +1,6 @@
+# Project files that should not be served on the public site.
+.claude
+CLAUDE.md
+README.md
+google-apps-script.gs
+screenshots
