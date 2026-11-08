@@ -59,6 +59,11 @@
       .check-path { stroke-dasharray: 30; animation: draw .6s var(--ease) .35s both; }
     }
     :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    /* Touch screens: finger-sized targets. */
+    @media (max-width: 1023px) {
+      .chip { min-height: 44px; }
+      header a:last-child, #email-edit, #email-cancel { display: inline-flex; align-items: center; min-height: 44px; }
+    }
   </style>
   <script src="assets/clarity.js"></script>
 </head>
@@ -66,11 +71,11 @@
 
 <header class="border-b border-[#053247]/10">
   <div class="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between px-5 md:px-10">
-    <a href="index.html" class="flex items-center gap-[8px]" aria-label="Roddi Health — на головну">
+    <a href="/" class="flex items-center gap-[8px]" aria-label="Roddi Health — на головну">
       <img alt="" class="size-[34px]" src="assets/vector.svg">
       <span class="ff-montserrat text-[20px] font-semibold leading-[0.95] text-[#17171c]">roddi<br>health</span>
     </a>
-    <a href="index.html" class="t-small font-semibold text-[#333c57] hover:text-[#138cd1]">← На головну</a>
+    <a href="/" class="t-small font-semibold text-[#333c57] hover:text-[#138cd1]">← На головну</a>
   </div>
 </header>
 
@@ -97,7 +102,7 @@
         <div class="mt-[6px] flex items-center gap-[8px] rounded-full bg-white p-[5px] pl-[16px]">
           <img alt="" class="h-[15px] w-[18px] shrink-0" src="assets/formkitemail.svg">
           <input id="email-input" type="email" name="email" autocomplete="email" inputmode="email" class="min-w-0 flex-1 bg-transparent text-[15px] font-semibold text-[#053247] outline-none">
-          <button class="btn btn-navy min-h-[40px] shrink-0 px-[16px] text-[14px]">Зберегти</button>
+          <button class="btn btn-navy min-h-[44px] shrink-0 px-[16px] text-[14px]">Зберегти</button>
         </div>
         <div class="mt-[8px] flex flex-wrap items-center gap-x-[14px] gap-y-[4px]">
           <button type="button" id="email-cancel" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#fdd457]">Скасувати</button>
@@ -302,7 +307,7 @@
     });
 
     // Sharing the landing page.
-    var url = new URL('index.html', location.href).href;
+    var url = new URL('/', location.href).href;
     document.getElementById('share-url').textContent = url.replace(/^https?:\/\//, '').replace(/\/index\.html$/, '');
     var label = document.getElementById('copy-label');
     var labelText = label.querySelector('span');

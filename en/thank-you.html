@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You’re on the list · Roddi Health</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+  <style>
+    @layer components;
+    :root { --ink: #2a2a2a; --navy: #053247; --blue: #138cd1; --yellow: #fdd457; --sky: #e5f4fd; --muted: #595959;
+            --ease: cubic-bezier(.16, 1, .3, 1); }
+    html, body { margin: 0; background: #fff; }
+    body { font-family: 'Manrope', sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+    .ff-montserrat { font-family: 'Montserrat', sans-serif; }
+
+    @layer components {
+    /* Same type scale and buttons as the landing page. */
+    .t-h1, .t-h2, .t-h3, .t-h4 { text-wrap: balance; }
+    .t-h1   { font-weight: 700; font-size: clamp(34px, 5vw, 52px); line-height: calc(1em + 6px); letter-spacing: -0.04em; }
+    .t-h3   { font-weight: 700; font-size: clamp(22px, 2.2vw, 28px); line-height: calc(1em + 6px); letter-spacing: -0.025em; }
+    .t-h4   { font-weight: 700; font-size: 17px; line-height: 1.4; letter-spacing: -0.01em; }
+    .t-lead { font-weight: 400; font-size: clamp(17px, 1.5vw, 19px); line-height: 1.3; letter-spacing: -0.015em; }
+    .t-body { font-weight: 400; font-size: 16px; line-height: 1.3; letter-spacing: -0.01em; }
+    .t-small { font-weight: 400; font-size: 14px; line-height: 1.35; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 26px;
+           border-radius: 999px; font-weight: 800; font-size: 16px; white-space: nowrap; transition: filter .15s, translate .25s var(--ease), background-color .15s; }
+    .btn:hover { filter: brightness(1.08); translate: 0 -2px; }
+    .btn-navy { background: var(--navy); color: #fff; }
+    .btn-blue { background: var(--blue); color: #fff; }
+    .btn-ghost { border: 2px solid var(--navy); color: var(--navy); background: #fff; }
+    .btn-ghost:hover { background: var(--navy); color: #fff; filter: none; }
+    .btn-mono { background: var(--sky); color: var(--navy); }
+    .btn-mono:hover { background: var(--navy); color: #fff; filter: none; }
+    .icon-mask { display: inline-block; background: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
+    .link { text-decoration: underline; text-underline-offset: 3px; }
+    .link:hover { color: var(--blue); }
+
+    /* Survey answer chips */
+    .chip { display: inline-flex; align-items: center; gap: 6px; min-height: 42px; padding: 0 18px; border-radius: 999px;
+            border: 2px solid rgba(5,66,101,.18); background: #fff; font-weight: 600; font-size: 15px; color: var(--ink);
+            transition: background-color .15s, border-color .15s, color .15s, scale .2s var(--ease); cursor: pointer; }
+    .chip:hover { border-color: var(--blue); }
+    .chip[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .chip[aria-pressed="true"]::before { content: "✓"; font-weight: 800; }
+    .chip:active { scale: .96; }
+    button:disabled { opacity: .6; cursor: progress; }
+    }
+
+    @keyframes pop  { from { opacity: 0; scale: .5; } }
+    @keyframes rise { from { opacity: 0; translate: 0 24px; } }
+    @keyframes draw { from { stroke-dashoffset: 30; } }
+    @media (prefers-reduced-motion: no-preference) {
+      .anim-pop  { animation: pop .6s cubic-bezier(.34, 1.56, .64, 1) both; }
+      .anim-rise { animation: rise .8s var(--ease) both; animation-delay: var(--d, 0ms); }
+      .check-path { stroke-dasharray: 30; animation: draw .6s var(--ease) .35s both; }
+    }
+    :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    /* Touch screens: finger-sized targets. */
+    @media (max-width: 1023px) {
+      .chip { min-height: 44px; }
+      header a:last-child, #email-edit, #email-cancel { display: inline-flex; align-items: center; min-height: 44px; }
+    }
+  </style>
+  <script src="/assets/clarity.js"></script>
+</head>
+<body>
+
+<header class="border-b border-[#053247]/10">
+  <div class="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between px-5 md:px-10">
+    <a href="/en/" class="flex items-center gap-[8px]" aria-label="Roddi Health home">
+      <img alt="" class="size-[34px]" src="/assets/vector.svg">
+      <span class="ff-montserrat text-[20px] font-semibold leading-[0.95] text-[#17171c]">roddi<br>health</span>
+    </a>
+    <a href="/en/" class="t-small font-semibold text-[#333c57] hover:text-[#138cd1]">← Home</a>
+  </div>
+</header>
+
+<main class="mx-auto max-w-[640px] px-5 pb-[80px] pt-[48px] md:pt-[72px]">
+
+  
+  <section class="anim-rise relative overflow-hidden rounded-[28px] bg-gradient-to-tr from-[#138cd1] from-35% to-[#e0f2fc] px-[24px] pb-[28px] pt-[28px] text-white md:px-[36px] md:pt-[36px]">
+    <img alt="" class="pointer-events-none absolute right-[-120px] top-[-110px] size-[340px] max-w-none opacity-60" src="/assets/ellipse12.svg" aria-hidden="true">
+    <div class="relative">
+      <div class="flex items-center gap-[14px]">
+        <span class="anim-pop flex size-[56px] shrink-0 items-center justify-center overflow-hidden rounded-[16px] bg-white md:size-[64px]"><img alt="" class="size-full object-cover object-top" src="/assets/hamster-party.webp"></span>
+        <h1 class="t-h1">You’re on the list!</h1>
+      </div>
+      <p class="t-lead mt-[10px] text-white/90">We’ll write as soon as Roddi Health is ready and invite you to early access.</p>
+      <div id="email-row" class="mt-[18px] hidden flex-wrap items-center gap-[10px]">
+        <span class="inline-flex items-center gap-[8px] rounded-full bg-white/95 px-[14px] py-[8px] text-[15px] font-bold text-[#053247]">
+          <img alt="" class="h-[15px] w-[18px]" src="/assets/formkitemail.svg"><span id="email-value"></span>
+        </span>
+        <button type="button" id="email-edit" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#fdd457]">Wrong address?</button>
+        <span id="email-saved" class="t-small font-semibold text-white" role="status" aria-live="polite"></span>
+      </div>
+      <form id="email-form" novalidate class="mt-[18px] hidden max-w-[420px]">
+        <label for="email-input" class="t-small font-semibold text-white/90">Your email</label>
+        <div class="mt-[6px] flex items-center gap-[8px] rounded-full bg-white p-[5px] pl-[16px]">
+          <img alt="" class="h-[15px] w-[18px] shrink-0" src="/assets/formkitemail.svg">
+          <input id="email-input" type="email" name="email" autocomplete="email" inputmode="email" class="min-w-0 flex-1 bg-transparent text-[15px] font-semibold text-[#053247] outline-none">
+          <button class="btn btn-navy min-h-[44px] shrink-0 px-[16px] text-[14px]">Save</button>
+        </div>
+        <div class="mt-[8px] flex flex-wrap items-center gap-x-[14px] gap-y-[4px]">
+          <button type="button" id="email-cancel" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#fdd457]">Cancel</button>
+          <p id="email-msg" class="t-small font-semibold text-[#fff3c4]" role="status" aria-live="polite" hidden></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+  <section class="anim-rise [--d:150ms] mt-[36px] rounded-[24px] border border-[#053247]/10 p-[22px] md:p-[32px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)]" aria-labelledby="survey-title">
+    <form id="survey" novalidate>
+      <h2 id="survey-title" class="t-h3">Help us build the app for your rodents</h2>
+      <p class="t-body mt-[6px] text-[var(--muted)]">Five quick answers, about 30 seconds. All optional.</p>
+
+      <fieldset class="mt-[26px]" data-q="pets" data-multi>
+        <legend class="t-h4">What pets do you have?</legend>
+        <p class="t-small text-[var(--muted)]">You can choose several</p>
+        <div class="mt-[10px] flex flex-wrap gap-[8px]">
+          <button type="button" class="chip" aria-pressed="false">Rats</button>
+          <button type="button" class="chip" aria-pressed="false">Mice</button>
+          <button type="button" class="chip" aria-pressed="false">Hamsters</button>
+          <button type="button" class="chip" aria-pressed="false">Guinea pigs</button>
+          <button type="button" class="chip" aria-pressed="false">Chinchillas</button>
+          <button type="button" class="chip" aria-pressed="false">Degus</button>
+          <button type="button" class="chip" aria-pressed="false">Rabbits</button>
+          <button type="button" class="chip" aria-pressed="false">Other</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="mt-[24px]" data-q="count">
+        <legend class="t-h4">How many in total?</legend>
+        <div class="mt-[10px] flex flex-wrap gap-[8px]">
+          <button type="button" class="chip" aria-pressed="false">1</button>
+          <button type="button" class="chip" aria-pressed="false">2–3</button>
+          <button type="button" class="chip" aria-pressed="false">4–6</button>
+          <button type="button" class="chip" aria-pressed="false">7+</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="mt-[24px]" data-q="lastMeds">
+        <legend class="t-h4">When did one of them last take medication?</legend>
+        <div class="mt-[10px] flex flex-wrap gap-[8px]">
+          <button type="button" class="chip" aria-pressed="false">This month</button>
+          <button type="button" class="chip" aria-pressed="false">1–6 months ago</button>
+          <button type="button" class="chip" aria-pressed="false">Longer ago</button>
+          <button type="button" class="chip" aria-pressed="false">Never</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="mt-[24px]" data-q="phone">
+        <legend class="t-h4">Which phone will you use the app on?</legend>
+        <div class="mt-[10px] flex flex-wrap gap-[8px]">
+          <button type="button" class="chip" aria-pressed="false">iPhone</button>
+          <button type="button" class="chip" aria-pressed="false">Android</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="mt-[24px]" data-q="beta">
+        <legend class="t-h4">Want to test the beta?</legend>
+        <div class="mt-[10px] flex flex-wrap gap-[8px]">
+          <button type="button" class="chip" aria-pressed="false">Yes, I’d like to test it</button>
+          <button type="button" class="chip" aria-pressed="false">Not now</button>
+        </div>
+      </fieldset>
+
+      <label class="mt-[24px] block">
+        <span class="t-h4">What would you like to see in the app?</span>
+        <span class="t-small mt-[2px] block text-[var(--muted)]">Tell us which features you’d find most useful. We read every reply.</span>
+        <textarea name="note" rows="3" maxlength="1000" placeholder="For example: family sharing, weigh-in reminders…"
+          class="t-body mt-[10px] block w-full resize-y rounded-[16px] border-2 border-[#053247]/15 bg-white px-[16px] py-[12px] outline-none transition-colors placeholder:text-[#8d95aa] focus:border-[#138cd1]"></textarea>
+      </label>
+
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
+      <div class="mt-[24px] flex flex-wrap items-center gap-[14px]">
+        <button class="btn btn-navy">Send answers</button>
+        <p id="survey-msg" class="t-small text-[#c62828]" role="status" aria-live="polite" hidden></p>
+      </div>
+    </form>
+
+    <div id="survey-done" class="hidden text-center py-[20px]" tabindex="-1">
+      <span class="anim-pop mx-auto flex size-[52px] items-center justify-center rounded-full bg-[#e5f4fd] text-[26px]">💛</span>
+      <h2 class="t-h3 mt-[14px]">Thanks for your answers!</h2>
+      <p class="t-body mt-[6px] text-[var(--muted)]">They’ll help us decide what to build first.</p>
+    </div>
+  </section>
+
+  
+  <section class="anim-rise [--d:300ms] mt-[20px] rounded-[24px] bg-[#e5f4fd] p-[22px] md:p-[32px]">
+    <div class="flex items-center gap-[16px]">
+      <span class="flex size-[56px] shrink-0 items-center justify-center rounded-[16px] bg-white p-[5px]"><img alt="" class="size-full object-contain" src="/assets/hamster-bow-cutout.png"></span>
+      <div>
+        <h2 class="t-h3">Know someone else with rodents?</h2>
+        <p class="t-body mt-[6px] text-[var(--muted)]">Send them the link: the more owners in the beta, the better the app will suit different rodents and their needs.</p>
+      </div>
+    </div>
+    <button type="button" id="copy-link" class="group mt-[18px] flex w-full items-center gap-[10px] rounded-full bg-white p-[6px] pl-[18px] text-left transition-shadow hover:shadow-[0_6px_16px_-10px_rgba(19,90,140,0.25)]" aria-describedby="copy-msg">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#138cd1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+      <span id="share-url" class="min-w-0 flex-1 truncate text-[15px] font-semibold text-[#053247]"></span>
+      <span id="copy-label" class="flex h-[42px] shrink-0 items-center gap-[6px] rounded-full bg-[#053247] px-[18px] text-[14px] font-extrabold text-white transition-colors group-hover:bg-[#0a4763]">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        <span>Copy</span>
+      </span>
+    </button>
+    <p id="copy-msg" class="sr-only" role="status" aria-live="polite"></p>
+  </section>
+
+</main>
+
+<script src="/assets/forms.js"></script>
+<script>
+  (function () {
+    var email = RoddiForms.storedEmail();
+    var row = document.getElementById('email-row');
+    var editForm = document.getElementById('email-form');
+    var editInput = document.getElementById('email-input');
+    var editMsg = document.getElementById('email-msg');
+    var saved = document.getElementById('email-saved');
+    function showRow(on) {
+      row.classList.toggle('hidden', !on); row.classList.toggle('flex', on);
+      editForm.classList.toggle('hidden', on);
+    }
+    if (email) {
+      document.getElementById('email-value').textContent = email;
+      showRow(true);
+    }
+
+    // "Не та адреса?" — fix the address right here, with the same checks as the sign-up forms.
+    var keepAsTyped = null;
+    document.getElementById('email-edit').addEventListener('click', function () {
+      editInput.value = email; editMsg.hidden = true; saved.textContent = ''; keepAsTyped = null;
+      showRow(false); editInput.focus(); editInput.select();
+    });
+    document.getElementById('email-cancel').addEventListener('click', function () { showRow(true); });
+    editInput.addEventListener('input', function () { editMsg.hidden = true; });
+    editForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var next = editInput.value.trim();
+      var err = RoddiForms.problem(next);
+      if (err) { editMsg.textContent = err; editMsg.hidden = false; editInput.focus(); return; }
+      var fix = RoddiForms.suggestion(next);
+      if (fix && keepAsTyped !== next) {
+        keepAsTyped = next;
+        editMsg.innerHTML = 'Did you mean <button type="button" class="underline font-bold">' + fix + '</button>? If it’s correct, press “Save” again.';
+        editMsg.hidden = false;
+        editMsg.querySelector('button').addEventListener('click', function () { editInput.value = fix; editMsg.hidden = true; editInput.focus(); });
+        return;
+      }
+      if (next === email) { showRow(true); return; }
+      var button = editForm.querySelector('button:not([type="button"])');
+      button.disabled = true;
+      RoddiForms.send('email-change', { oldEmail: email, email: next }).then(function () {
+        email = next;
+        RoddiForms.setStoredEmail(next);
+        document.getElementById('email-value').textContent = next;
+        button.disabled = false;
+        showRow(true);
+        saved.textContent = 'Saved ✓';
+        setTimeout(function () { saved.textContent = ''; }, 4000);
+      }, function () {
+        button.disabled = false;
+        editMsg.textContent = 'Couldn’t save that. Please try again.'; editMsg.hidden = false;
+      });
+    });
+
+    // Chips: single choice per question, or several where data-multi is set.
+    document.querySelectorAll('#survey fieldset[data-q]').forEach(function (fs) {
+      var multi = fs.hasAttribute('data-multi');
+      fs.querySelectorAll('.chip').forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var on = chip.getAttribute('aria-pressed') !== 'true';
+          if (!multi) fs.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+          chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+      });
+    });
+
+    var form = document.getElementById('survey');
+    var msg = document.getElementById('survey-msg');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.website.value) return;
+      var answers = { email: email };
+      form.querySelectorAll('fieldset[data-q]').forEach(function (fs) {
+        answers[fs.dataset.q] = [].map.call(fs.querySelectorAll('.chip[aria-pressed="true"]'), function (c) { return c.textContent.trim(); }).join(', ');
+      });
+      answers.note = form.note.value.trim();
+      var any = Object.keys(answers).some(function (k) { return k !== 'email' && answers[k]; });
+      if (!any) { msg.textContent = 'Please choose at least one answer.'; msg.hidden = false; return; }
+
+      var button = form.querySelector('button:not([type="button"])');
+      button.disabled = true;
+      RoddiForms.send('survey', answers).then(function () {
+        form.hidden = true;
+        var done = document.getElementById('survey-done');
+        done.classList.remove('hidden');
+        done.focus();
+      }, function () {
+        button.disabled = false;
+        msg.textContent = 'Couldn’t send that. Please try again.'; msg.hidden = false;
+      });
+    });
+
+    // Sharing the landing page.
+    var url = new URL('/en/', location.href).href;
+    document.getElementById('share-url').textContent = url.replace(/^https?:\/\//, '').replace(/\/index\.html$/, '');
+    var label = document.getElementById('copy-label');
+    var labelText = label.querySelector('span');
+    var copyMsg = document.getElementById('copy-msg');
+    var resetTimer;
+    document.getElementById('copy-link').addEventListener('click', function () {
+      (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
+        labelText.textContent = 'Copied';
+        label.style.background = '#1f9d46';
+        copyMsg.textContent = 'Link copied';
+      }, function () {
+        // No clipboard access: select the link so it can be copied by hand.
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('share-url'));
+        var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+        copyMsg.textContent = 'Copy the highlighted link';
+      });
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(function () { labelText.textContent = 'Copy'; label.style.background = ''; copyMsg.textContent = ''; }, 2500);
+    });
+  })();
+</script>
+</body>
+</html>
