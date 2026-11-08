@@ -3,8 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Roddi Health</title>
-  <meta name="description" content="Roddi Health — усе про здоров’я вашого гризуна в одному додатку.">
+  <!-- seo:start -->
+  <title>Roddi Health — додаток для здоров’я щурів, хом’яків та інших гризунів</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/vector.svg">
+  <meta name="description" content="Нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для щурів, хом’яків, морських свинок та інших гризунів. Ранній доступ.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://roddihealth.app/">
+  <link rel="alternate" hreflang="uk" href="https://roddihealth.app/">
+  <link rel="alternate" hreflang="en" href="https://roddihealth.app/en">
+  <link rel="alternate" hreflang="x-default" href="https://roddihealth.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Roddi Health">
+  <meta property="og:title" content="Roddi Health — додаток для здоров’я щурів, хом’яків та інших гризунів">
+  <meta property="og:description" content="Нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для щурів, хом’яків, морських свинок та інших гризунів. Ранній доступ.">
+  <meta property="og:url" content="https://roddihealth.app/">
+  <meta property="og:image" content="https://roddihealth.app/assets/og-uk.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roddi Health — додаток для здоров’я щурів, хом’яків та інших гризунів">
+  <meta name="twitter:description" content="Нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для щурів, хом’яків, морських свинок та інших гризунів. Ранній доступ.">
+  <meta name="twitter:image" content="https://roddihealth.app/assets/og-uk.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://roddihealth.app/#organization", "name": "Roddi Health", "url": "https://roddihealth.app/", "logo": "https://roddihealth.app/assets/vector.svg", "email": "roddihealth@gmail.com", "sameAs": ["https://www.instagram.com/marchin_rats/", "https://www.tiktok.com/@marchin_rats"]}, {"@type": "WebSite", "@id": "https://roddihealth.app/#website", "url": "https://roddihealth.app/", "name": "Roddi Health", "inLanguage": "uk", "publisher": {"@id": "https://roddihealth.app/#organization"}}, {"@type": "SoftwareApplication", "name": "Roddi Health", "url": "https://roddihealth.app/", "applicationCategory": "HealthApplication", "description": "Мобільний додаток у розробці для власників гризунів: нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для кількох тварин.", "inLanguage": "uk", "publisher": {"@id": "https://roddihealth.app/#organization"}}, {"@type": "FAQPage", "@id": "https://roddihealth.app/#faq", "inLanguage": "uk", "mainEntity": [{"@type": "Question", "name": "Чи замінює додаток ветеринара?", "acceptedAnswer": {"@type": "Answer", "text": "Ні. Roddi Health допомагає вести історію здоров’я й не пропускати лікування, але не замінює консультацію ветеринара."}}, {"@type": "Question", "name": "Для яких тварин?", "acceptedAnswer": {"@type": "Answer", "text": "Для щурів, хом’яків, морських свинок, кроликів, шиншил, дегу, мишей та інших маленьких улюбленців."}}, {"@type": "Question", "name": "Що ви робите з моєю поштою?", "acceptedAnswer": {"@type": "Answer", "text": "Надсилаємо лише новини про запуск і запрошення до раннього доступу. Без спаму, відписатися можна будь-коли."}}]}]}</script>
+  <!-- seo:end -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -13,8 +36,6 @@
   <!-- Named breakpoint so its rules sort after sm/md/lg (arbitrary min-[…] ones don't). -->
   <style type="text/tailwindcss">@theme { --breakpoint-wide: 85rem; }</style>
   <!-- Shared by every page: type scale, buttons, motion, forms. -->
-  <link rel="alternate" hreflang="uk" href="https://roddihealth.app/">
-  <link rel="alternate" hreflang="en" href="https://roddihealth.app/en">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/clarity.js"></script>
 </head>
@@ -631,13 +652,13 @@
 
   <!-- Animal photos: slide right to left along an arc (assets/carousel.js). -->
   <div data-pet-carousel class="pet-carousel mt-[32px] md:mt-[48px]" aria-hidden="true">
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image162.png"></div>
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image158.png"></div>
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image163.png"></div>
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image164.png"></div>
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image165.png"></div>
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image166.png"></div>
-    <div class="pet-card"><img alt="" decoding="async" src="assets/image167.png"></div>
+    <div class="pet-card"><img alt="Дегу на підвіконні" decoding="async" src="assets/image162.png"></div>
+    <div class="pet-card"><img alt="Морська свинка на лежанці" decoding="async" src="assets/image158.png"></div>
+    <div class="pet-card"><img alt="Хом’як поруч із пальцем людини" decoding="async" src="assets/image163.png"></div>
+    <div class="pet-card"><img alt="Сіра шиншила" decoding="async" src="assets/image164.png"></div>
+    <div class="pet-card"><img alt="Щур їсть ласощі на ковдрі" decoding="async" src="assets/image165.png"></div>
+    <div class="pet-card"><img alt="Кролик із висячими вухами" decoding="async" src="assets/image166.png"></div>
+    <div class="pet-card"><img alt="Домашня миша" decoding="async" src="assets/image167.png"></div>
   </div>
 </section>
 

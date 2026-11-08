@@ -277,3 +277,6 @@ form[data-signup] .signup > img { opacity: .643; } /* the icon is already 70% #2
   .pet-card { padding: 0; background: none; box-shadow: none; }
   .pet-card img { border-radius: 24px; }
 }
+
+/* Blog articles in the HTML for crawlers and no-JS readers; the page script draws the cards. */
+.js .blog-static { display: none; }

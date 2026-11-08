@@ -1,0 +1,48 @@
+{
+  "site": "https://roddihealth.app",
+  "name": "Roddi Health",
+  "email": "roddihealth@gmail.com",
+  "sameAs": ["https://www.instagram.com/marchin_rats/", "https://www.tiktok.com/@marchin_rats"],
+  "lastmod": "2026-11-08",
+  "pages": {
+    "index.html": {
+      "path": { "uk": "/", "en": "/en" },
+      "uk": {
+        "title": "Roddi Health — додаток для здоров’я щурів, хом’яків та інших гризунів",
+        "description": "Нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для щурів, хом’яків, морських свинок та інших гризунів. Ранній доступ.",
+        "app": "Мобільний додаток у розробці для власників гризунів: нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для кількох тварин.",
+        "faq": [
+          ["Чи замінює додаток ветеринара?", "Ні. Roddi Health допомагає вести історію здоров’я й не пропускати лікування, але не замінює консультацію ветеринара."],
+          ["Для яких тварин?", "Для щурів, хом’яків, морських свинок, кроликів, шиншил, дегу, мишей та інших маленьких улюбленців."],
+          ["Що ви робите з моєю поштою?", "Надсилаємо лише новини про запуск і запрошення до раннього доступу. Без спаму, відписатися можна будь-коли."]
+        ]
+      },
+      "en": {
+        "title": "Roddi Health: health tracking app for rats, hamsters and other rodents",
+        "description": "Medication reminders, symptom and weight logs and vet visit history for rats, hamsters, guinea pigs and other small pets. Join early access.",
+        "app": "A mobile app in development for rodent owners: medication reminders, symptom and weight logs, and vet visit history for several pets.",
+        "faq": [
+          ["Does the app replace a vet?", "No. Roddi Health helps you keep a health history and stay on top of treatment, but it doesn’t replace a veterinary consultation."],
+          ["Which animals is it for?", "Rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets."],
+          ["What do you do with my email?", "We only send launch news and early access invitations. No spam, and you can unsubscribe anytime."]
+        ]
+      }
+    },
+    "blog.html": {
+      "path": { "uk": "/blog", "en": "/en/blog" },
+      "uk": {
+        "title": "Блог про здоров’я гризунів: симптоми, харчування, догляд | Roddi Health",
+        "description": "Короткі поради про здоров’я щурів, хом’яків, морських свинок, шиншил, дегу, мишей і кроликів із посиланнями на ветеринарні джерела."
+      },
+      "en": {
+        "title": "Rodent health blog: symptoms, nutrition and care | Roddi Health",
+        "description": "Short guides on the health of rats, hamsters, guinea pigs, chinchillas, degus, mice and rabbits, with links to veterinary sources."
+      }
+    },
+    "thank-you.html": {
+      "noindex": true,
+      "uk": { "title": "Ви в списку · Roddi Health" },
+      "en": { "title": "You’re on the list · Roddi Health" }
+    }
+  }
+}

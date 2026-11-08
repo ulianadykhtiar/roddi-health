@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://roddihealth.app/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://roddihealth.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/"/>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://roddihealth.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/"/>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://roddihealth.app/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/blog"/>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://roddihealth.app/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/blog"/>
+  </url>
+</urlset>

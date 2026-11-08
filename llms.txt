@@ -1,0 +1,19 @@
+# Roddi Health
+
+> Roddi Health is a mobile app in development for owners of rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets. It brings medication reminders, symptom and weight logs and vet visit history together in one place, even for several pets. Roddi Health does not replace a veterinary consultation.
+
+Status: in development, with a free early access list. It is free during the beta. Launch date, pricing and platforms are not announced yet.
+
+The project grew out of a rat blog followed by 6,000+ people on Instagram and TikTok (@marchin_rats). Contact: roddihealth@gmail.com
+
+The site is available in Ukrainian (default) and English.
+
+## Main pages
+
+- [Roddi Health in English](https://roddihealth.app/en): what the app does, who it is for, FAQ and early access sign-up
+- [Roddi Health українською](https://roddihealth.app/): додаток для здоров'я гризунів, ранній доступ
+
+## Blog
+
+- [Rodent health blog](https://roddihealth.app/en/blog): short summaries on symptoms, nutrition, care and emergencies, each linking to the original veterinary source
+- [Блог про здоров'я гризунів](https://roddihealth.app/blog): короткі поради з посиланнями на ветеринарні джерела

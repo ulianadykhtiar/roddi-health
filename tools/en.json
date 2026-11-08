@@ -28,13 +28,19 @@
     "new URL('/', location.href)": "new URL('/en/', location.href)"
   },
   "text": {
-    "Roddi Health — усе про здоров’я вашого гризуна в одному додатку.": "Roddi Health: everything about your rodent’s health in one app.",
     "Можливості": "Features",
     "Для кого": "Who it’s for",
     "Питання": "FAQ",
     "Блог": "Blog",
     "Мова сайту": "Site language",
     "Меню": "Menu",
+    "Дегу на підвіконні": "Degu on a windowsill",
+    "Морська свинка на лежанці": "Guinea pig on a cushion",
+    "Хом’як поруч із пальцем людини": "Hamster holding a person’s finger",
+    "Сіра шиншила": "Grey chinchilla",
+    "Щур їсть ласощі на ковдрі": "Rat eating a treat on a blanket",
+    "Кролик із висячими вухами": "Lop-eared rabbit",
+    "Домашня миша": "Pet mouse",
     "Закрити меню": "Close menu",
     "Ранній доступ": "Early access",
     "Усе про здоров’я вашого гризуна — в одному додатку": "Everything about your rodent’s health, in one app",
@@ -196,7 +202,6 @@
     "Про проєкт": "About",
     "Roddi Health не замінює консультацію ветеринара.": "Roddi Health does not replace a veterinary consultation.",
 
-    "Ви в списку · Roddi Health": "You’re on the list · Roddi Health",
     "Roddi Health — на головну": "Roddi Health home",
     "← На головну": "← Home",
     "Ви в списку!": "You’re on the list!",
@@ -228,8 +233,6 @@
     "Надішліть їм посилання: що більше власників у беті, то краще додаток підходитиме для різних гризунів і їхніх потреб.": "Send them the link: the more owners in the beta, the better the app will suit different rodents and their needs.",
     "Копіювати": "Copy",
 
-    "Блог — Roddi Health": "Blog · Roddi Health",
-    "Корисні матеріали про здоров’я щурів, хом’яків, морських свинок, шиншил, дегу, мишей і кроликів.": "Helpful articles on the health of rats, hamsters, guinea pigs, chinchillas, degus, mice and rabbits.",
     "Підморгує 😉": "Winking 😉",
     "Привіт!": "Hi!",
     "Головна": "Home",
