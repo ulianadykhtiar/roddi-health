@@ -26,13 +26,26 @@ var RoddiForms = (function () {
       console.info('[Roddi] FORMS_ENDPOINT is not set; saved locally:', payload);
       return Promise.resolve();
     }
+    // Apps Script takes 1.5–3 s to answer, and no-cors hides the answer anyway,
+    // so hand the request to the browser and resolve at once: a beacon (or a
+    // keepalive fetch) is still delivered after the page navigates away.
     // text/plain avoids a CORS preflight, which Apps Script can't answer.
+    var body = JSON.stringify(payload);
+    try {
+      if (navigator.sendBeacon &&
+          navigator.sendBeacon(FORMS_ENDPOINT, new Blob([body], { type: 'text/plain;charset=utf-8' })))
+        return Promise.resolve();
+    } catch (e) {}
     return fetch(FORMS_ENDPOINT, {
-      method: 'POST', mode: 'no-cors',
+      method: 'POST', mode: 'no-cors', keepalive: true,
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload)
+      body: body
     });
   }
+
+  // Vercel serves clean URLs and redirects *.html to them; the local server has only the files.
+  var LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) || location.protocol === 'file:';
+  var THANKS = (IS_EN ? '/en/' : '/') + (LOCAL ? 'thank-you.html' : 'thank-you');
 
   /* ---------- email checks ---------- */
   var EMAIL_RE = /^[^\s@"(),:;<>[\]\\]+@[^\s@"(),:;<>[\]\\]+\.[a-zЀ-ӿ]{2,}$/i;
@@ -112,7 +125,7 @@ var RoddiForms = (function () {
       button.disabled = true;
       send('signup', { email: email, form: form.dataset.form || '' }).then(function () {
         try { sessionStorage.setItem(EMAIL_KEY, email); } catch (e) {}
-        location.href = IS_EN ? '/en/thank-you.html' : 'thank-you.html';
+        location.href = THANKS;
       }, function () {
         button.disabled = false;
         show(t('Не вдалося надіслати. Перевірте інтернет і спробуйте ще раз.', 'Couldn’t send that. Check your connection and try again.'));
@@ -128,7 +141,14 @@ var RoddiForms = (function () {
     try { sessionStorage.setItem(EMAIL_KEY, email); } catch (e) {}
   }
 
-  document.querySelectorAll('form[data-signup]').forEach(initSignup);
+  var signupForms = document.querySelectorAll('form[data-signup]');
+  signupForms.forEach(initSignup);
+  // Warm up the thank-you page so it opens instantly after sign-up.
+  if (signupForms.length) {
+    var hint = document.createElement('link');
+    hint.rel = 'prefetch'; hint.href = THANKS;
+    document.head.appendChild(hint);
+  }
 
   return { send: send, storedEmail: storedEmail, setStoredEmail: setStoredEmail, problem: problem, suggestion: suggestion };
 })();
