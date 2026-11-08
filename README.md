@@ -12,6 +12,8 @@
 - `assets/blog-posts.js` — дані блогу: статті, гризуни, теми. Сторінка будується з цього списку.
 - `assets/blog/` — фото блогу з Wikimedia Commons.
 - `assets/clarity.js` — підключення Microsoft Clarity, працює лише на roddihealth.app.
+- `assets/carousel.js` — карусель фото тварин у секції «Для кого».
+- `assets/menu.js` — бокове меню на телефоні, пункти меню задані в HTML сторінок.
 - `google-apps-script.gs` — код для Google Таблиці, куди зберігатимуться email і відповіді.
 
 ## Як відкрити локально
