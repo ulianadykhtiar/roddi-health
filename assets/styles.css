@@ -245,3 +245,30 @@ input::placeholder { color: inherit; opacity: 1; }
   footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
   form[data-signup] label { min-height: 44px; align-items: center; }
 }
+
+/* ---- Phone header: logo centred on the yellow circle, controls either side ---- */
+@media (max-width: 639px) {
+  header > .breathe { width: 136px; height: 136px; top: -31px; }
+  header > nav > a[aria-label^="Roddi Health"] { position: absolute; left: 50%; top: 37px; transform: translate(-50%, -50%); }
+  header > nav > a[aria-label^="Roddi Health"] > img { width: 38px; height: 38px; }
+  header > nav > div:last-child { width: 100%; gap: 6px; }
+  header > nav .btn-sm { min-height: 32px; padding: 0 11px; font-size: 12px; position: relative; }
+  header > nav .btn-sm::before { content: ""; position: absolute; inset: -6px 0; }
+  header > nav .btn-navy { margin-left: auto; }
+  header > nav .lang-toggle { height: 32px; padding: 2px; }
+  header > nav .lang-opt { height: 28px; min-width: 32px; padding: 0 6px; font-size: 12px; }
+  header > nav .lang-opt::after { inset: -8px 0; }
+}
+
+/* ---- Phones: animal photos as a compact two-column collage ---- */
+@media (max-width: 767px) {
+  .polaroids-mobile { position: relative; display: block; width: min(100%, 430px); aspect-ratio: 335 / 590; margin-inline: auto; }
+  .polaroids-mobile > div { position: absolute; }
+  .polaroids-mobile > div:nth-child(1) { zoom: 0.62; left: -2%; top: 0.0%; z-index: 1; }
+  .polaroids-mobile > div:nth-child(2) { zoom: 0.76; left: 52%; top: 2.4%; z-index: 2; }
+  .polaroids-mobile > div:nth-child(3) { zoom: 0.7; left: 3%; top: 25.1%; z-index: 3; }
+  .polaroids-mobile > div:nth-child(4) { zoom: 0.9; left: 52%; top: 27.5%; z-index: 4; }
+  .polaroids-mobile > div:nth-child(5) { zoom: 0.78; left: -2%; top: 50.8%; z-index: 5; }
+  .polaroids-mobile > div:nth-child(6) { zoom: 0.66; left: 51%; top: 52.9%; z-index: 6; }
+  .polaroids-mobile > div:nth-child(7) { zoom: 0.8; left: 30%; top: 73.2%; z-index: 7; }
+}
