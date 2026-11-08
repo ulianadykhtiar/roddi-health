@@ -1,5 +1,5 @@
 /* "Who it's for" photos, placed from JS so tilt and drop follow each card's position.
- * The row drifts right to left without end. On touch screens a finger can drag it
+ * The row drifts right to left without end, along one circular arc. On touch screens a finger can drag it
  * and flick it faster; it then eases back to the normal drift. */
 (function () {
   var root = document.querySelector('[data-pet-carousel]');
@@ -8,9 +8,7 @@
   var SPEED = 30;           // px per second
   var GAP = 1.17;           // distance between cards, in card widths
   var PHONE_GAP = 1.12;
-  var TILT = 4.5, PHONE_TILT = 6;   // degrees per card away from the centre
-  var DROP = 7, PHONE_DROP = 30;    // px of drop, grows with distance squared
-  var MAX_TILT = 14;
+  var ANGLE = 6, PHONE_ANGLE = 10;  // degrees along the arc from one card to the next
   var FLICK_FADE = 500;     // ms for a flick to lose most of its speed
 
   // A second copy keeps the row full on very wide screens.
@@ -29,13 +27,14 @@
   }
 
   function place() {
-    var tiltBy = phone.matches ? PHONE_TILT : TILT, dropBy = phone.matches ? PHONE_DROP : DROP;
+    // Cards sit on one circle: position and tilt both come from the same angle.
+    var perCard = (phone.matches ? PHONE_ANGLE : ANGLE) * Math.PI / 180, radius = step / perCard;
     cards.forEach(function (c, i) {
       var x = ((i * step - pos) % loop + loop) % loop;
       if (x >= loop / 2) x -= loop;
-      var t = x / step;
-      var tilt = Math.max(-MAX_TILT, Math.min(MAX_TILT, t * tiltBy));
-      c.style.transform = 'translate3d(' + (centre + x - cardW / 2).toFixed(1) + 'px,' + (t * t * dropBy).toFixed(1) + 'px,0) rotate(' + tilt.toFixed(2) + 'deg)';
+      var a = x / radius;
+      var left = centre + radius * Math.sin(a) - cardW / 2, down = radius * (1 - Math.cos(a));
+      c.style.transform = 'translate3d(' + left.toFixed(1) + 'px,' + down.toFixed(1) + 'px,0) rotate(' + (a * 180 / Math.PI).toFixed(2) + 'deg)';
     });
   }
 
