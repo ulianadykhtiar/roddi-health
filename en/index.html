@@ -1,0 +1,1181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roddi Health</title>
+  <meta name="description" content="Roddi Health: everything about your rodent’s health in one app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+  
+  <style type="text/tailwindcss">@theme { --breakpoint-wide: 85rem; }</style>
+  
+  <link rel="alternate" hreflang="uk" href="https://roddihealth.app/">
+  <link rel="alternate" hreflang="en" href="https://roddihealth.app/en">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/clarity.js"></script>
+</head>
+<body>
+
+
+<header class="relative overflow-hidden rounded-b-[40px] md:rounded-b-[100px] bg-white">
+  <div class="breathe absolute left-1/2 -translate-x-1/2 top-[-305px] size-[427px] pointer-events-none" aria-hidden="true">
+    <img alt="" class="size-full" src="/assets/ellipse2.svg">
+  </div>
+
+  <nav data-reveal="down" class="relative z-40 mx-auto flex h-[54px] max-w-[1240px] items-center justify-between px-5 pt-5 md:pt-[33px] md:px-10 lg:box-content lg:grid lg:grid-cols-[1fr_auto_1fr]">
+    <div class="hidden lg:flex gap-[30px] items-center t-small font-semibold text-[#333c57]">
+      <a href="#features" class="hover:text-[#138cd1]">Features</a>
+      <a href="#for-whom" class="hover:text-[#138cd1]">Who it’s for</a>
+      <a href="#faq" class="hover:text-[#138cd1]">FAQ</a>
+      <a href="/en/blog.html" class="btn btn-mono btn-sm -ml-[8px] px-[18px]">Blog</a>
+    </div>
+    <a href="#" class="flex gap-[8px] items-center" aria-label="Roddi Health">
+      <img alt="" class="size-[32px] md:size-[38px]" src="/assets/vector.svg">
+      <span class="hidden sm:inline ff-montserrat font-semibold text-[19px] md:text-[22px] leading-[0.95] text-[#17171c]">roddi<br>health</span>
+    </a>
+    <div class="flex items-center justify-end gap-[6px] sm:gap-[10px]">
+      
+      <div class="lang-toggle" role="group" aria-label="Site language">
+        <a href="/" class="lang-opt" lang="uk" hreflang="uk">UA</a>
+        <span class="lang-opt is-active" lang="en" aria-current="true">EN</span>
+      </div>
+      
+      <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" class="btn-mono btn btn-sm hidden sm:inline-flex w-[44px] px-0"><span class="icon-mask size-[20px]" style="-webkit-mask-image:url(/assets/biinstagram.svg);mask-image:url(/assets/biinstagram.svg)"></span></a>
+      <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok" class="btn-mono btn btn-sm hidden sm:inline-flex w-[44px] px-0"><span class="icon-mask size-[20px]" style="-webkit-mask-image:url(/assets/akariconstiktokfill.svg);mask-image:url(/assets/akariconstiktokfill.svg)"></span></a>
+      
+      <a href="/en/blog.html" class="btn btn-mono btn-sm lg:hidden px-[12px] sm:px-[16px]">Blog</a>
+      <a href="#early-access" class="btn btn-navy btn-sm max-sm:px-[14px] sm:ml-[6px]">Early access</a>
+    </div>
+  </nav>
+
+  <div class="relative px-5 pt-[56px] md:pt-[80px] text-center">
+    <h1 data-reveal data-d="100" class="t-h1 mx-auto max-w-[893px]">Everything about your rodent’s health, in one app</h1>
+    <p data-reveal data-d="220" class="t-lead mx-auto mt-[20px] max-w-[640px] text-[var(--muted)]">Medication reminders, plus a log of symptoms, weight and vet visits. Your pet’s full treatment history is always at hand, even if you have several.</p>
+    <form data-reveal data-d="300" data-signup data-form="hero" novalidate class="relative mx-auto mt-[28px] max-w-[568px]">
+      <div class="signup bg-[#f4f1e7]">
+        <img alt="" class="h-[21px] w-[24px] shrink-0" src="/assets/formkitemail.svg">
+        <input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Your email" aria-label="Your email" class="text-[rgba(42,42,42,0.7)]">
+        <button class="btn btn-yellow btn-shine shrink-0">Get early access</button>
+      </div>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
+      <p class="form-msg mt-[10px]" role="status" aria-live="polite" hidden></p>
+    </form>
+    <p data-reveal data-d="380" class="t-small mx-auto mt-[14px] max-w-[568px] text-[var(--muted)]">The app is in development. Leave your email and we’ll write as soon as it’s ready, with free early access for you. No spam.</p>
+    <div data-reveal data-d="460" class="mt-[20px] flex flex-col sm:flex-row items-center justify-center gap-[10px]">
+      <div class="flex -space-x-[10px]" aria-hidden="true">
+        <img alt="" data-reveal="pop" data-d="520" class="size-[34px] rounded-full border-2 border-white object-cover" src="/assets/image158.png">
+        <img alt="" data-reveal="pop" data-d="600" class="size-[34px] rounded-full border-2 border-white object-cover" src="/assets/image166.png">
+        <img alt="" data-reveal="pop" data-d="680" class="size-[34px] rounded-full border-2 border-white object-cover" src="/assets/image167.png">
+        <img alt="" data-reveal="pop" data-d="760" class="size-[34px] rounded-full border-2 border-white object-cover" src="/assets/image165.png">
+      </div>
+      <p class="t-small">The rat blog where it all began is followed by <b class="font-bold"><span data-count="6000">6&nbsp;000</span>+ people</b> on Instagram and TikTok</p>
+    </div>
+  </div>
+
+  
+  <div class="stage mx-auto mt-[22px] hidden lg:block" style="--w:1470;--h:539;--x:0;--y:440" aria-hidden="true">
+    <div class="stage-inner w-[1470px] h-[979px]"><div class="-translate-x-1/2 absolute contents left-1/2 top-[534px]">
+              <div data-reveal="zoom" data-d="500" class="-translate-x-1/2 absolute left-1/2 size-[1140px] top-[610px]">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/ellipse10.svg" />
+              </div>
+              <div data-reveal="zoom" data-d="420" class="-translate-x-1/2 absolute left-1/2 size-[1292px] top-[534px]">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/ellipse11.svg" />
+              </div>
+            </div><div data-reveal="fly" data-d="900" style="--fx:288;--fy:170" class="float [--dur:6s] [--amp:-8px] absolute left-[316px] top-[476px] w-[262px] rotate-[-5deg] rounded-[20px] bg-white p-[14px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)] ring-1 ring-[#053247]/5 ff-manrope text-left">
+  <div class="flex items-center gap-[10px]">
+    <span class="flex size-[32px] shrink-0 items-center justify-center rounded-[10px] bg-[#e5f4fd] text-[16px]">💊</span>
+    <div class="min-w-0 flex-1"><p class="text-[13px] font-bold leading-[1.25] text-[#17171c]">Antibiotic course</p><p class="text-[11px] text-[#8d95aa]">Martin · day 6 of 10</p></div>
+  </div>
+  <div class="mt-[12px] flex gap-[4px]"><span data-reveal="grow" data-d="1250" class="h-[6px] flex-1 origin-left rounded-full bg-[#138cd1]"></span><span data-reveal="grow" data-d="1320" class="h-[6px] flex-1 origin-left rounded-full bg-[#138cd1]"></span><span data-reveal="grow" data-d="1390" class="h-[6px] flex-1 origin-left rounded-full bg-[#138cd1]"></span><span data-reveal="grow" data-d="1460" class="h-[6px] flex-1 origin-left rounded-full bg-[#138cd1]"></span><span data-reveal="grow" data-d="1530" class="h-[6px] flex-1 origin-left rounded-full bg-[#138cd1]"></span><span data-reveal="grow" data-d="1600" class="h-[6px] flex-1 origin-left rounded-full bg-[#138cd1]"></span><span class="h-[6px] flex-1 rounded-full bg-[#e5edf3]"></span><span class="h-[6px] flex-1 rounded-full bg-[#e5edf3]"></span><span class="h-[6px] flex-1 rounded-full bg-[#e5edf3]"></span><span class="h-[6px] flex-1 rounded-full bg-[#e5edf3]"></span></div>
+</div><div data-reveal="fly" data-d="1020" style="--fx:345;--fy:0" class="float [--dur:7s] [--fd:-2s] [--amp:-8px] absolute left-[244px] top-[618px] w-[280px] rotate-[4deg] rounded-[20px] bg-white p-[14px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)] ring-1 ring-[#053247]/5 ff-manrope text-left">
+  <div class="flex items-start justify-between">
+    <div><p class="text-[11px] font-semibold text-[#8d95aa]">Weight · Martin</p><p class="text-[22px] font-bold leading-[1.15] text-[#17171c]">338 <span class="text-[13px] font-semibold text-[#8d95aa]">g</span></p></div>
+    <span class="rounded-full bg-[#e8f8ec] px-[8px] py-[3px] text-[11px] font-bold text-[#1f9d46]">+3 g</span>
+  </div>
+  <svg viewBox="0 0 220 60" preserveAspectRatio="none" class="mt-[6px] h-[56px] w-full overflow-visible" aria-hidden="true">
+    <defs><linearGradient id="wg-d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#138cd1" stop-opacity=".22"/><stop offset="1" stop-color="#138cd1" stop-opacity="0"/></linearGradient></defs>
+    <path d="M0 16.8 C27 16.8 27 21.2 55 21.2 S82 43.2 110 43.2 S137 34.4 165 34.4 S192 30 220 30 L220 60 L0 60 Z" fill="url(#wg-d)"/>
+    <path data-reveal="line" data-d="1100" pathLength="1" d="M0 16.8 C27 16.8 27 21.2 55 21.2 S82 43.2 110 43.2 S137 34.4 165 34.4 S192 30 220 30" fill="none" stroke="#138cd1" stroke-width="2.5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </svg>
+  <div class="mt-[2px] flex justify-between text-[9px] font-semibold text-[#8d95aa]"><span>12.04</span><span>19.04</span><span>28.04</span></div>
+</div><div data-reveal="fly" data-d="960" style="--fx:-305;--fy:145" class="float [--dur:5.5s] [--fd:-1s] [--amp:-8px] absolute left-[930px] top-[478px] w-[220px] rotate-[5deg] rounded-[20px] bg-white p-[14px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)] ring-1 ring-[#053247]/5 ff-manrope text-left">
+  <div class="flex items-center justify-between"><p class="text-[13px] font-bold text-[#17171c]">Symptoms</p><p class="text-[11px] font-semibold text-[#8d95aa]">this week</p></div>
+  <div class="mt-[12px] flex justify-between"><span class="flex flex-col items-center gap-[5px]"><span class="flex size-[24px] items-center justify-center rounded-full bg-[#e8f8ec] text-[13px]">🙂</span><b class="text-[9px] font-semibold text-[#8d95aa]">M</b></span><span class="flex flex-col items-center gap-[5px]"><span class="flex size-[24px] items-center justify-center rounded-full bg-[#e8f8ec] text-[13px]">🙂</span><b class="text-[9px] font-semibold text-[#8d95aa]">T</b></span><span class="flex flex-col items-center gap-[5px]"><span class="flex size-[24px] items-center justify-center rounded-full bg-[#e8f8ec] text-[13px]">🙂</span><b class="text-[9px] font-semibold text-[#8d95aa]">W</b></span><span class="flex flex-col items-center gap-[5px]"><span class="flex size-[24px] items-center justify-center rounded-full bg-[#fdf4d8] text-[13px] ring-2 ring-[#fdd457]">🤧</span><b class="text-[9px] font-semibold text-[#8d95aa]">T</b></span><span class="flex flex-col items-center gap-[5px]"><span class="flex size-[24px] items-center justify-center rounded-full bg-[#e8f8ec] text-[13px]">🙂</span><b class="text-[9px] font-semibold text-[#8d95aa]">F</b></span><span class="flex flex-col items-center gap-[5px]"><span class="flex size-[24px] items-center justify-center rounded-full bg-[#e8f8ec] text-[13px]">🙂</span><b class="text-[9px] font-semibold text-[#8d95aa]">S</b></span><span class="flex flex-col items-center gap-[5px]"><span class="size-[24px] rounded-full border-2 border-dashed border-[#c5d3de]"></span><b class="text-[9px] font-semibold text-[#8d95aa]">S</b></span></div>
+</div><div data-reveal="rise" data-d="1250" class="wiggle [--fd:2.2s] absolute flex h-[185.063px] items-center justify-center left-[1000px] top-[540px] w-[217.008px]">
+              <div class="flex-none rotate-[3.07deg]">
+                <div class="h-[174.163px] relative w-[207.969px]" data-name="image 185">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src="/assets/image185.png" />
+                </div>
+              </div>
+            </div><div data-reveal="fly" data-d="1080" style="--fx:-390;--fy:-45" class="float [--dur:6.5s] [--fd:-4s] [--amp:-8px] absolute left-[962px] top-[690px] w-[330px] rotate-[-3deg] flex gap-[12px] rounded-[22px] border border-white/80 bg-white/80 p-[14px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)] backdrop-blur-[18px] ff-manrope text-left">
+  <span class="flex size-[38px] shrink-0 items-center justify-center rounded-[10px] bg-white shadow-[0_1px_2px_rgba(19,90,140,0.10)]"><img alt="" class="size-[24px]" src="/assets/vector.svg"></span>
+  <div class="min-w-0 flex-1">
+    <div class="flex items-center justify-between gap-[8px]"><p class="text-[12px] font-bold uppercase tracking-[0.04em] text-[#595959]">Roddi Health</p><p class="text-[11px] text-[#8d95aa]">now</p></div>
+    <p class="mt-[3px] text-[15px] font-semibold leading-[1.3] text-[#17171c]">Tomorrow at 11:00: vet visit 🩺</p>
+  </div>
+</div><div data-reveal="rise" data-d="1350" class="wiggle [--fd:3.4s] absolute flex h-[385.623px] items-center justify-center left-[280px] top-[700px] scale-[1.2] origin-bottom w-[319.305px]">
+              <div class="flex-none rotate-[-10.06deg]">
+                <div class="h-[344.98px] relative w-[263.108px]" data-name="image 92">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src="/assets/image92.png" />
+                </div>
+              </div>
+            </div><div data-reveal="rise" data-d="560" class="-translate-x-1/2 absolute h-[777px] left-[calc(50%-0.5px)] top-[455px] w-[377px]" data-name="image 97">
+              <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" class="absolute h-[99.35%] left-[-0.02%] max-w-none top-[0.65%] w-[100.04%]" src="/assets/image97.png" />
+              </div>
+            </div><div data-reveal="rise" data-d="560" class="absolute left-[564px] top-[476px] h-[745px] w-[343px] overflow-hidden rounded-[48px] bg-[#f4f8fb]">
+  <div class="absolute inset-0 z-10 bg-[#0b1a2a]/40"></div>
+  <div class="absolute inset-0 px-[20px] pt-[16px] ff-manrope text-left">
+    <p class="pl-[18px] text-[15px] font-semibold text-[#17171c]">9:41</p>
+    <p class="mt-[32px] text-[12px] font-semibold text-[#8d95aa]">Tue, April 14</p>
+    <p class="text-[30px] font-bold leading-[1.15] text-[#17171c]">Today</p>
+    <div class="mt-[18px] flex flex-col gap-[10px]">
+      <div class="flex items-center gap-[12px] rounded-[18px] bg-white p-[12px] opacity-50"><span class="flex size-[38px] shrink-0 items-center justify-center rounded-[12px] bg-[#e5f4fd] text-[18px]">💊</span><div class="min-w-0 flex-1"><p class="text-[15px] font-bold text-[#17171c] line-through decoration-[#8d95aa]">Antibiotic</p><p class="text-[12px] text-[#8d95aa]">Martin · 08:00</p></div><span class="flex size-[22px] items-center justify-center rounded-full bg-[#34c759] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+      <div data-reveal="pop" data-d="900" class="relative z-20 -mx-[6px] rounded-[22px] bg-white p-[14px]">
+  <div class="flex items-center justify-between">
+    <p class="t-label flex items-center gap-[8px] text-[#138cd1]"><span class="relative flex size-[8px]"><span class="absolute inline-flex size-full rounded-full bg-[#138cd1] opacity-60 motion-safe:animate-ping"></span><span class="relative inline-flex size-[8px] rounded-full bg-[#138cd1]"></span></span>Next up</p>
+    <span class="rounded-full bg-[#fdf4d8] px-[9px] py-[3px] text-[11px] font-bold text-[#8a6100]">in 15 min</span>
+  </div>
+  <div class="mt-[10px] flex items-center gap-[12px]">
+    <span class="flex size-[42px] shrink-0 items-center justify-center rounded-[13px] bg-[#fdf4d8] text-[20px]">💧</span>
+    <div class="min-w-0 flex-1"><p class="text-[17px] font-bold leading-[1.2] text-[#17171c]">Martin’s medication</p><p class="mt-[2px] text-[12px] text-[#8d95aa]">12:00 · [dose]</p></div>
+  </div>
+  <span class="mt-[12px] flex h-[40px] items-center justify-center gap-[6px] rounded-full bg-[#138cd1] text-[14px] font-extrabold text-white"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Mark as given</span>
+</div>
+      <div class="flex items-center gap-[12px] rounded-[18px] bg-white p-[12px] "><span class="flex size-[38px] shrink-0 items-center justify-center rounded-[12px] bg-[#e8f8ec] text-[18px]">⚖️</span><div class="min-w-0 flex-1"><p class="text-[15px] font-bold text-[#17171c] ">Weigh-in</p><p class="text-[12px] text-[#8d95aa]">Archie · 18:00</p></div><span class="size-[22px] rounded-full border-2 border-[#d5dee6]"></span></div>
+      <div class="flex items-center gap-[12px] rounded-[18px] bg-white p-[12px] "><span class="flex size-[38px] shrink-0 items-center justify-center rounded-[12px] bg-[#f3eaff] text-[18px]">🧹</span><div class="min-w-0 flex-1"><p class="text-[15px] font-bold text-[#17171c] ">Cage cleaning</p><p class="text-[12px] text-[#8d95aa]">Saturday</p></div><span class="size-[22px] rounded-full border-2 border-[#d5dee6]"></span></div>
+    </div>
+  </div>
+  <div class="absolute left-[117px] top-[10px] z-20 h-[33px] w-[108px] rounded-full bg-[#0b0b0f]"></div>
+</div></div>
+  </div>
+  <div class="stage max-w-none mt-[16px] lg:hidden [--w:640] [--x:415] md:[--w:1000] md:[--x:235]" style="--h:510;--y:450" aria-hidden="true">
+    <div class="stage-inner w-[1470px] h-[979px]"><div class="-translate-x-1/2 absolute contents left-1/2 top-[534px]">
+              <div data-reveal="zoom" data-d="500" class="-translate-x-1/2 absolute left-1/2 size-[1140px] top-[610px]">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/ellipse10.svg" />
+              </div>
+              <div data-reveal="zoom" data-d="420" class="-translate-x-1/2 absolute left-1/2 size-[1292px] top-[534px]">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/ellipse11.svg" />
+              </div>
+            </div><div data-reveal="rise" data-d="1250" class="wiggle [--fd:2.2s] absolute flex h-[185.063px] items-center justify-center left-[934.85px] top-[557px] w-[217.008px]">
+              <div class="flex-none rotate-[3.07deg]">
+                <div class="h-[174.163px] relative w-[207.969px]" data-name="image 185">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src="/assets/image185.png" />
+                </div>
+              </div>
+            </div><div data-reveal="rise" data-d="1350" class="wiggle [--fd:3.4s] absolute flex h-[385.623px] items-center justify-center left-[302px] top-[679px] w-[319.305px]">
+              <div class="flex-none rotate-[-10.06deg]">
+                <div class="h-[344.98px] relative w-[263.108px]" data-name="image 92">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src="/assets/image92.png" />
+                </div>
+              </div>
+            </div><div data-reveal="rise" data-d="560" class="-translate-x-1/2 absolute h-[777px] left-[calc(50%-0.5px)] top-[455px] w-[377px]" data-name="image 97">
+              <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" class="absolute h-[99.35%] left-[-0.02%] max-w-none top-[0.65%] w-[100.04%]" src="/assets/image97.png" />
+              </div>
+            </div><div data-reveal="rise" data-d="560" class="absolute left-[564px] top-[476px] h-[745px] w-[343px] overflow-hidden rounded-[48px] bg-[#f4f8fb]">
+  <div class="absolute inset-0 z-10 bg-[#0b1a2a]/40"></div>
+  <div class="absolute inset-0 px-[20px] pt-[16px] ff-manrope text-left">
+    <p class="pl-[18px] text-[15px] font-semibold text-[#17171c]">9:41</p>
+    <p class="mt-[32px] text-[12px] font-semibold text-[#8d95aa]">Tue, April 14</p>
+    <p class="text-[30px] font-bold leading-[1.15] text-[#17171c]">Today</p>
+    <div class="mt-[18px] flex flex-col gap-[10px]">
+      <div class="flex items-center gap-[12px] rounded-[18px] bg-white p-[12px] opacity-50"><span class="flex size-[38px] shrink-0 items-center justify-center rounded-[12px] bg-[#e5f4fd] text-[18px]">💊</span><div class="min-w-0 flex-1"><p class="text-[15px] font-bold text-[#17171c] line-through decoration-[#8d95aa]">Antibiotic</p><p class="text-[12px] text-[#8d95aa]">Martin · 08:00</p></div><span class="flex size-[22px] items-center justify-center rounded-full bg-[#34c759] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+      <div data-reveal="pop" data-d="900" class="relative z-20 -mx-[6px] rounded-[22px] bg-white p-[14px]">
+  <div class="flex items-center justify-between">
+    <p class="t-label flex items-center gap-[8px] text-[#138cd1]"><span class="relative flex size-[8px]"><span class="absolute inline-flex size-full rounded-full bg-[#138cd1] opacity-60 motion-safe:animate-ping"></span><span class="relative inline-flex size-[8px] rounded-full bg-[#138cd1]"></span></span>Next up</p>
+    <span class="rounded-full bg-[#fdf4d8] px-[9px] py-[3px] text-[11px] font-bold text-[#8a6100]">in 15 min</span>
+  </div>
+  <div class="mt-[10px] flex items-center gap-[12px]">
+    <span class="flex size-[42px] shrink-0 items-center justify-center rounded-[13px] bg-[#fdf4d8] text-[20px]">💧</span>
+    <div class="min-w-0 flex-1"><p class="text-[17px] font-bold leading-[1.2] text-[#17171c]">Martin’s medication</p><p class="mt-[2px] text-[12px] text-[#8d95aa]">12:00 · [dose]</p></div>
+  </div>
+  <span class="mt-[12px] flex h-[40px] items-center justify-center gap-[6px] rounded-full bg-[#138cd1] text-[14px] font-extrabold text-white"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Mark as given</span>
+</div>
+      <div class="flex items-center gap-[12px] rounded-[18px] bg-white p-[12px] "><span class="flex size-[38px] shrink-0 items-center justify-center rounded-[12px] bg-[#e8f8ec] text-[18px]">⚖️</span><div class="min-w-0 flex-1"><p class="text-[15px] font-bold text-[#17171c] ">Weigh-in</p><p class="text-[12px] text-[#8d95aa]">Archie · 18:00</p></div><span class="size-[22px] rounded-full border-2 border-[#d5dee6]"></span></div>
+      <div class="flex items-center gap-[12px] rounded-[18px] bg-white p-[12px] "><span class="flex size-[38px] shrink-0 items-center justify-center rounded-[12px] bg-[#f3eaff] text-[18px]">🧹</span><div class="min-w-0 flex-1"><p class="text-[15px] font-bold text-[#17171c] ">Cage cleaning</p><p class="text-[12px] text-[#8d95aa]">Saturday</p></div><span class="size-[22px] rounded-full border-2 border-[#d5dee6]"></span></div>
+    </div>
+  </div>
+  <div class="absolute left-[117px] top-[10px] z-20 h-[33px] w-[108px] rounded-full bg-[#0b0b0f]"></div>
+</div></div>
+  </div>
+</header>
+
+
+<section class="relative overflow-hidden rounded-t-[40px] md:rounded-t-[100px] pt-[56px] md:pt-[87px] pb-[100px] md:pb-[130px]">
+  <div class="stage stage-cover" style="--w:1470;--h:765;--x:0;--y:0" aria-hidden="true">
+    <div class="stage-inner w-[1470px] h-[765px]"><div aria-hidden class="absolute inset-0 pointer-events-none rounded-tl-[100px] rounded-tr-[100px]">
+              <div class="absolute bg-[#ffc700] inset-0 rounded-tl-[100px] rounded-tr-[100px]"></div>
+              <div class="absolute inset-0 overflow-hidden rounded-tl-[100px] rounded-tr-[100px]">
+                <img alt="" class="absolute h-[119.39%] left-[-38.52%] max-w-none top-[-2.82%] w-[141.07%]" src="/assets/section.png" />
+              </div>
+              <div class="absolute inset-0 overflow-hidden rounded-tl-[100px] rounded-tr-[100px]">
+                <img alt="" class="absolute h-[98.14%] left-[-3.92%] max-w-none top-0 w-[115.1%]" src="/assets/section1.png" />
+              </div>
+              <img alt="" class="absolute max-w-none object-cover rounded-tl-[100px] rounded-tr-[100px] size-full" src="/assets/section2.png" />
+              <div class="absolute inset-0 overflow-hidden rounded-tl-[100px] rounded-tr-[100px]">
+                <img alt="" class="absolute h-[233.37%] left-[-47.45%] max-w-none top-[-46.57%] w-[149.83%]" src="/assets/section.png" />
+              </div>
+              <div class="absolute bg-gradient-to-b from-[52.475%] from-[rgba(50,93,140,0)] inset-0 rounded-tl-[100px] rounded-tr-[100px] to-[rgba(50,93,140,0.06)]"></div>
+            </div></div>
+  </div>
+
+  <div class="relative mx-auto w-fit px-5">
+    <h2 data-reveal class="t-h2 text-center text-white">Sound familiar?</h2>
+    <div data-reveal="pop" data-d="500" class="doodle stage hidden md:block absolute left-[calc(100%+20px)] top-[-30px] w-[152px]" style="--w:152;--h:138;--x:969;--y:121" aria-hidden="true">
+      <div class="stage-inner w-[1470px] h-[765px]">
+        <svg viewBox="0 0 152 138" class="absolute left-[969px] top-[121px] h-[138px] w-[152px] overflow-visible" fill="none" stroke="#fdd457" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <defs><filter id="rough-memes" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="35"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter></defs>
+          <g filter="url(#rough-memes)">
+            <path data-reveal="line" data-d="600" pathLength="1" stroke-width="5" d="M5 23 C39 5 75 13 83 43 C89 65 69 79 57 66 C45 53 65 35 83 49 C99 61 103 91 106 125"/>
+            <path data-reveal="line" data-d="750" pathLength="1" stroke-width="2.2" stroke-opacity=".75" d="M9 20 C41 10 72 17 80 45 C85 63 70 74 60 64 C50 54 64 40 80 51 C95 63 100 92 103 120"/>
+            <path data-reveal="fade" data-d="1600" stroke-width="5" d="M90 107 L106 127"/>
+            <path data-reveal="fade" data-d="1680" stroke-width="4.5" d="M106 127 L121 105"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="meme-caps relative">
+    <div class="stage mx-auto mt-[48px] lg:mt-[72px] hidden md:block" style="--w:1180;--h:415;--x:150;--y:225" aria-hidden="true">
+      <div class="stage-inner w-[1470px] h-[765px]"><div class="-translate-x-1/2 absolute contents left-[calc(50%+4.45px)] top-[233px]">
+              <div class="absolute contents left-[169px] top-[233px]">
+                <div data-reveal="drop" data-d="0" class="absolute flex items-center justify-center left-[169px] size-[336px] top-[233px]">
+                  <div class="flex-none rotate-[-7.38deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] size-[299.969px]" data-name="image 157">
+                      <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[42px] size-full" src="/assets/image157.png" />
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="0" class="-translate-x-full absolute flex h-[89.823px] items-center justify-center left-[calc(50%-285.13px)] top-[258.88px] w-[257.416px]">
+                  <div class="flex-none rotate-[-7.57deg]">
+                    <p class="[word-break:break-word] ff-manrope font-extrabold h-[57.113px] leading-[0] not-italic relative text-[0px] text-right text-white tracking-[0.5px] uppercase w-[252.09px]">
+                      <span class="ff-impact leading-[1.3] text-[22px]">Did I give the meds? Or was that yesterday…</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute contents left-[730.37px] top-[233px]">
+                <div data-reveal="drop" data-d="320" class="absolute flex h-[290.093px] items-center justify-center left-[730.37px] top-[233px] w-[304.637px]">
+                  <div class="flex-none rotate-[4.29deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid h-[269.503px] relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[285.27px]" data-name="image 159">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[42px]">
+                        <img alt="" class="absolute max-w-none object-cover rounded-[42px] size-full" src="/assets/image159.png" />
+                        <div class="absolute bg-gradient-to-b from-[rgba(0,0,0,0.3)] inset-0 rounded-[42px] to-[rgba(0,0,0,0)]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="320" class="absolute flex h-[81.196px] items-center justify-center left-[calc(50%+30.48px)] top-[256.95px] w-[265.573px]">
+                  <div class="flex-none rotate-[4.53deg]">
+                    <div class="[word-break:break-word] ff-impact h-[60.724px] leading-[0] not-italic relative text-[22px] text-white tracking-[0.5px] uppercase w-[261.594px]">
+                      <p class="leading-[1.3] mb-0">where’s that darn note</p>
+                      <p class="leading-[1.3]">with the prescriptions?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute contents left-[981px] size-[328.907px] top-[301px]">
+                <div data-reveal="drop" data-d="480" class="absolute flex items-center justify-center left-[1001.05px] size-[288.794px] top-[321.06px]">
+                  <div class="flex-none rotate-[-3.4deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] size-[273.071px]" data-name="image 160">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[42px]">
+                        <img alt="" class="absolute max-w-none object-cover rounded-[42px] size-full" src="/assets/image160.png" />
+                        <div class="absolute inset-0 rounded-[42px]" style="background-image: linear-gradient(207.00880509741643deg, rgba(0, 0, 0, 0.5) 3.0179%, rgba(0, 0, 0, 0) 71.968%)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="480" class="-translate-x-full absolute flex h-[71.601px] items-center justify-center left-[calc(50%+513.4px)] top-[343.74px] w-[226.301px]">
+                  <div class="flex-none rotate-[-3.32deg]">
+                    <p class="[word-break:break-word] ff-impact h-[58.771px] leading-[1.2] not-italic relative text-[22px] text-right text-white tracking-[0.5px] uppercase w-[223.272px]">missed the antibiotic again</p>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute contents left-[462px] top-[314px]">
+                <div data-reveal="drop" data-d="160" class="absolute flex items-center justify-center left-[462px] size-[303px] top-[314px]">
+                  <div class="flex-none rotate-[6.55deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] size-[273.587px]" data-name="image 161">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[42px]">
+                        <div class="absolute inset-0 overflow-hidden rounded-[42px]">
+                          <img alt="" class="absolute h-full left-[-16.29%] max-w-none top-[0.1%] w-[116.75%]" src="/assets/image161.png" />
+                        </div>
+                        <div class="absolute inset-0 rounded-[42px]" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(147.69482693603652deg, rgb(0, 0, 0) 8.9602%, rgba(0, 0, 0, 0) 50.021%)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="160" class="absolute flex h-[85.606px] items-center justify-center left-[calc(50%-225.44px)] top-[338.78px] w-[237.986px]">
+                  <div class="flex-none rotate-[7.03deg]">
+                    <p class="[word-break:break-word] ff-impact h-[57.562px] leading-[1.2] not-italic relative text-[22px] text-white tracking-[0.5px] uppercase w-[232.691px]">when was the last vet check-up?</p>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    </div>
+    <div class="md:hidden px-5 mt-[40px] grid grid-cols-2 gap-x-[6px] gap-y-[14px]" aria-hidden="true">
+      <div class="stage" style="--w:336;--h:336;--x:169;--y:233"><div class="stage-inner w-[1470px] h-[765px]"><div class="absolute contents left-[169px] top-[233px]">
+                <div data-reveal="drop" data-d="0" class="absolute flex items-center justify-center left-[169px] size-[336px] top-[233px]">
+                  <div class="flex-none rotate-[-7.38deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] size-[299.969px]" data-name="image 157">
+                      <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[42px] size-full" src="/assets/image157.png" />
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="0" class="-translate-x-full absolute flex h-[89.823px] items-center justify-center left-[calc(50%-285.13px)] top-[258.88px] w-[257.416px]">
+                  <div class="flex-none rotate-[-7.57deg]">
+                    <p class="[word-break:break-word] ff-manrope font-extrabold h-[57.113px] leading-[0] not-italic relative text-[0px] text-right text-white tracking-[0.5px] uppercase w-[252.09px]">
+                      <span class="ff-impact leading-[1.3] text-[22px]">Did I give the meds? Or was that yesterday…</span>
+                    </p>
+                  </div>
+                </div>
+              </div></div></div>
+      <div class="stage" style="--w:303;--h:303;--x:462;--y:314"><div class="stage-inner w-[1470px] h-[765px]"><div class="absolute contents left-[462px] top-[314px]">
+                <div data-reveal="drop" data-d="160" class="absolute flex items-center justify-center left-[462px] size-[303px] top-[314px]">
+                  <div class="flex-none rotate-[6.55deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] size-[273.587px]" data-name="image 161">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[42px]">
+                        <div class="absolute inset-0 overflow-hidden rounded-[42px]">
+                          <img alt="" class="absolute h-full left-[-16.29%] max-w-none top-[0.1%] w-[116.75%]" src="/assets/image161.png" />
+                        </div>
+                        <div class="absolute inset-0 rounded-[42px]" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(147.69482693603652deg, rgb(0, 0, 0) 8.9602%, rgba(0, 0, 0, 0) 50.021%)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="160" class="absolute flex h-[85.606px] items-center justify-center left-[calc(50%-225.44px)] top-[338.78px] w-[237.986px]">
+                  <div class="flex-none rotate-[7.03deg]">
+                    <p class="[word-break:break-word] ff-impact h-[57.562px] leading-[1.2] not-italic relative text-[22px] text-white tracking-[0.5px] uppercase w-[232.691px]">when was the last vet check-up?</p>
+                  </div>
+                </div>
+              </div></div></div>
+      <div class="stage" style="--w:305;--h:290;--x:730;--y:233"><div class="stage-inner w-[1470px] h-[765px]"><div class="absolute contents left-[730.37px] top-[233px]">
+                <div data-reveal="drop" data-d="320" class="absolute flex h-[290.093px] items-center justify-center left-[730.37px] top-[233px] w-[304.637px]">
+                  <div class="flex-none rotate-[4.29deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid h-[269.503px] relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[285.27px]" data-name="image 159">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[42px]">
+                        <img alt="" class="absolute max-w-none object-cover rounded-[42px] size-full" src="/assets/image159.png" />
+                        <div class="absolute bg-gradient-to-b from-[rgba(0,0,0,0.3)] inset-0 rounded-[42px] to-[rgba(0,0,0,0)]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="320" class="absolute flex h-[81.196px] items-center justify-center left-[calc(50%+30.48px)] top-[256.95px] w-[265.573px]">
+                  <div class="flex-none rotate-[4.53deg]">
+                    <div class="[word-break:break-word] ff-impact h-[60.724px] leading-[0] not-italic relative text-[22px] text-white tracking-[0.5px] uppercase w-[261.594px]">
+                      <p class="leading-[1.3] mb-0">where’s that darn note</p>
+                      <p class="leading-[1.3]">with the prescriptions?</p>
+                    </div>
+                  </div>
+                </div>
+              </div></div></div>
+      <div class="stage" style="--w:329;--h:329;--x:981;--y:301"><div class="stage-inner w-[1470px] h-[765px]"><div class="absolute contents left-[981px] size-[328.907px] top-[301px]">
+                <div data-reveal="drop" data-d="480" class="absolute flex items-center justify-center left-[1001.05px] size-[288.794px] top-[321.06px]">
+                  <div class="flex-none rotate-[-3.4deg]">
+                    <div class="border-5 border-[rgba(255,255,255,0.8)] border-solid relative rounded-[42px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] size-[273.071px]" data-name="image 160">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[42px]">
+                        <img alt="" class="absolute max-w-none object-cover rounded-[42px] size-full" src="/assets/image160.png" />
+                        <div class="absolute inset-0 rounded-[42px]" style="background-image: linear-gradient(207.00880509741643deg, rgba(0, 0, 0, 0.5) 3.0179%, rgba(0, 0, 0, 0) 71.968%)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="480" class="-translate-x-full absolute flex h-[71.601px] items-center justify-center left-[calc(50%+513.4px)] top-[343.74px] w-[226.301px]">
+                  <div class="flex-none rotate-[-3.32deg]">
+                    <p class="[word-break:break-word] ff-impact h-[58.771px] leading-[1.2] not-italic relative text-[22px] text-right text-white tracking-[0.5px] uppercase w-[223.272px]">missed the antibiotic again</p>
+                  </div>
+                </div>
+              </div></div></div>
+    </div>
+    <ul class="sr-only">
+      <li>Did I give the meds? Or was that yesterday…</li>
+      <li>When was the last vet check-up?</li>
+      <li>Where’s that darn note with the prescriptions?</li>
+      <li>Missed the antibiotic again</li>
+    </ul>
+  </div>
+
+</section>
+
+
+<section id="features" class="relative bg-white pt-[64px] md:pt-[100px] pb-[100px] md:pb-[150px]">
+  <img alt="" class="wave top-[-39px]" src="/assets/vector15.svg">
+  <div class="mx-auto max-w-[1350px] px-5 md:px-10">
+    <h2 data-reveal class="t-h2 text-center">What can <span class="brand">Roddi Health</span> do?</h2>
+
+    
+    <div class="mt-[40px] md:mt-[64px] grid gap-[16px] sm:gap-[20px] sm:grid-cols-2 wide:grid-cols-[764fr_486fr]">
+
+      
+      <article data-reveal class="lift relative overflow-hidden rounded-[24px] bg-gradient-to-tr from-[#138cd1] from-40% to-[#e0f2fc] to-100% p-7 sm:p-8 wide:p-12 wide:min-h-[491px] flex flex-col gap-[24px] wide:justify-center">
+        <img alt="" data-reveal="zoom" data-d="250" class="absolute size-[513px] max-w-none left-[25%] top-[45%] wide:left-auto wide:right-[-131px] wide:top-[83px] pointer-events-none" src="/assets/ellipse12.svg" aria-hidden="true">
+        <div class="relative z-10 flex flex-col gap-[12px] text-white wide:max-w-[380px]">
+          <h3 class="t-h3">Never miss a dose</h3>
+          <p class="t-body">Set up a treatment course once and the reminders arrive on time. Mark each dose with one tap. Reminders for vet visits, weigh-ins and cage cleaning work the same way.</p>
+        </div>
+        <div data-reveal="rise" data-d="200" class="stage mx-auto mt-auto -mb-7 sm:-mb-8 [--h:300] wide:[--h:470] wide:overflow-visible wide:absolute wide:m-0 wide:right-[64px] wide:top-1/2 wide:-translate-y-1/2 wide:w-[210px]" style="--w:240;--x:0;--y:0" aria-hidden="true">
+          <div class="stage-inner w-[240px] h-[470px]">
+            <div class="absolute inset-0 rounded-[40px] bg-[#101826] p-[9px] shadow-[0_20px_40px_-24px_rgba(19,90,140,0.32)]">
+              <div class="relative h-full overflow-hidden rounded-[32px] bg-[#f4f8fb] px-[12px] pt-[42px] ff-manrope">
+                <div class="absolute left-1/2 top-[10px] h-[22px] w-[74px] -translate-x-1/2 rounded-full bg-[#101826]"></div>
+                <div class="flex items-center justify-between px-[2px]">
+                  <div>
+                    <p class="text-[10px] font-semibold text-[#8d95aa]">Tue, April 14</p>
+                    <p class="text-[20px] font-bold leading-[1.15] tracking-[-0.02em] text-[#17171c]">Today</p>
+                  </div>
+                  <div class="relative size-[38px]">
+                    <svg viewBox="0 0 36 36" class="size-full -rotate-90"><circle cx="18" cy="18" r="15" fill="none" stroke="#dbeaf4" stroke-width="4"/><circle class="ring-progress" cx="18" cy="18" r="15" fill="none" stroke="#138cd1" stroke-width="4" stroke-linecap="round" stroke-dasharray="94.25" stroke-dashoffset="47"/></svg>
+                    <span class="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-[#053247]">2/4</span>
+                  </div>
+                </div>
+                <div class="mt-[14px] flex flex-col gap-[8px]">
+                  <div data-reveal="left" data-d="500" class="flex items-center gap-[9px] rounded-[16px] bg-white/70 p-[9px] opacity-70">
+                    <span class="flex size-[30px] shrink-0 items-center justify-center rounded-[10px] bg-[#e5f4fd] text-[15px]">💊</span>
+                    <div class="min-w-0 flex-1"><p class="text-[12px] font-bold text-[#17171c] line-through decoration-[#8d95aa]">Antibiotic</p><p class="text-[10px] text-[#8d95aa]">Martin · 08:00</p></div>
+                    <span class="flex size-[20px] items-center justify-center rounded-full bg-[#34c759] text-white"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                  </div>
+                  <div data-reveal="left" data-d="620" class="rounded-[16px] bg-white p-[10px] shadow-[0_6px_16px_-10px_rgba(19,140,209,0.30)] ring-2 ring-[#138cd1]/70">
+                    <div class="flex items-center gap-[9px]">
+                      <span class="flex size-[30px] shrink-0 items-center justify-center rounded-[10px] bg-[#fdf4d8] text-[15px]">💧</span>
+                      <div class="min-w-0 flex-1"><p class="text-[12px] font-bold text-[#17171c]">Martin’s medication</p><p class="text-[10px] text-[#595959]">[dose] · 12:00</p></div>
+                      <span class="text-[10px] font-bold text-[#138cd1]">now</span>
+                    </div>
+                    <span class="pulse mt-[8px] flex h-[28px] items-center justify-center rounded-full bg-[#138cd1] text-[11px] font-extrabold text-white">Mark as given</span>
+                  </div>
+                  <div data-reveal="left" data-d="740" class="flex items-center gap-[9px] rounded-[16px] bg-white p-[9px]">
+                    <span class="flex size-[30px] shrink-0 items-center justify-center rounded-[10px] bg-[#e8f8ec] text-[15px]">⚖️</span>
+                    <div class="min-w-0 flex-1"><p class="text-[12px] font-bold text-[#17171c]">Weigh-in</p><p class="text-[10px] text-[#8d95aa]">Archie · 18:00</p></div>
+                  </div>
+                  <div data-reveal="left" data-d="860" class="flex items-center gap-[9px] rounded-[16px] bg-white p-[9px]">
+                    <span class="flex size-[30px] shrink-0 items-center justify-center rounded-[10px] bg-[#f3eaff] text-[15px]">🧹</span>
+                    <div class="min-w-0 flex-1"><p class="text-[12px] font-bold text-[#17171c]">Cage cleaning</p><p class="text-[10px] text-[#8d95aa]">Saturday</p></div>
+                  </div>
+                  <div data-reveal="left" data-d="980" class="flex items-center gap-[9px] rounded-[16px] bg-white p-[9px]">
+                    <span class="flex size-[30px] shrink-0 items-center justify-center rounded-[10px] bg-[#ddf2fd] text-[15px]">🩺</span>
+                    <div class="min-w-0 flex-1"><p class="text-[12px] font-bold text-[#17171c]">Vet visit</p><p class="text-[10px] text-[#8d95aa]">Thu, 11:00 · check-up</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      
+      <article data-reveal data-d="120" class="lift relative overflow-hidden rounded-[24px] bg-[#dff1fb] p-7 sm:p-8 wide:p-12 wide:min-h-[383px] flex flex-col gap-[24px] wide:justify-end">
+        <div class="flex flex-col gap-[12px]">
+          <h3 class="t-h3">See how your pet is doing</h3>
+          <p class="t-body">Log symptoms and weight, and the app charts the trend, so changes are easier to catch in time.</p>
+        </div>
+        <div class="stage mx-auto mt-auto wide:order-first wide:mt-[-24px]" style="--w:390;--h:185;--x:78;--y:20" aria-hidden="true">
+          <div class="stage-inner w-[486px] h-[383px]">
+            <div data-reveal="pop" data-d="300" class="float [--dur:5.0s] [--amp:-8px] absolute left-[244.27px] size-[108.57px] top-[34.57px]"><div class="absolute inset-[-4.63%_-5.55%_-6.47%_-5.55%]"><img alt="" class="block max-w-none size-full" src="/assets/group19.svg"></div></div>
+            <div data-reveal="pop" data-d="410" class="float [--dur:5.7s] [--fd:-1.3s] [--amp:-8px] absolute left-[84px] size-[127.232px] top-[25px]"><div class="absolute inset-[-3.78%_-4.57%_-5.35%_-4.57%]"><img alt="" class="block max-w-none size-full" src="/assets/group17.svg"></div></div>
+            <div data-reveal="pop" data-d="520" class="float [--dur:6.4s] [--fd:-2.6s] [--amp:-8px] absolute left-[180.62px] size-[89.728px] top-[66.13px]"><div class="absolute inset-[-5.98%_-7.1%_-8.21%_-7.1%]"><img alt="" class="block max-w-none size-full" src="/assets/group18.svg"></div></div>
+            <div data-reveal="pop" data-d="630" class="float [--dur:7.1s] [--fd:-3.9s] [--amp:-8px] absolute left-[320.29px] size-[138.712px] top-[57.53px]"><div class="absolute inset-[-3.47%_-4.19%_-4.91%_-4.19%]"><img alt="" class="block max-w-none size-full" src="/assets/group20.svg"></div></div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-[16px] sm:mt-[20px] grid gap-[16px] sm:gap-[20px] sm:grid-cols-2">
+
+      
+      <article data-reveal class="lift relative overflow-hidden rounded-[24px] bg-[#dff1fb] p-7 sm:p-8 wide:p-12 wide:min-h-[380px] flex flex-col gap-[24px] wide:justify-center">
+        <div class="relative flex flex-col gap-[12px] wide:pl-[252px]">
+          <h3 class="t-h3">Arrive at the vet with the full history</h3>
+          <p class="t-body">Visits, prescriptions, current and past treatment and test results, all in one pet profile. No more trying to remember at the appointment.</p>
+        </div>
+        <div data-reveal="rise" data-d="200" class="stage mx-auto mt-auto -mb-7 sm:-mb-8 [--h:268] wide:[--h:300] wide:overflow-visible wide:absolute wide:m-0 wide:left-[40px] wide:top-1/2 wide:-translate-y-1/2 wide:w-[236px]" style="--w:236;--x:0;--y:0" aria-hidden="true">
+          <div class="stage-inner w-[236px] h-[300px]">
+            <div class="absolute inset-0 rounded-t-[26px] wide:rounded-b-[26px] bg-white px-[14px] pt-[16px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)] ff-manrope">
+              <div class="flex items-center justify-between px-[2px]">
+                <p class="text-[14px] font-bold text-[#17171c]">April 2026</p>
+                <div class="flex gap-[4px] text-[#8d95aa]">
+                  <span class="flex size-[22px] items-center justify-center rounded-full bg-[#f2f6f9]"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+                  <span class="flex size-[22px] items-center justify-center rounded-full bg-[#f2f6f9]"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="mt-[12px] grid grid-cols-7 text-center text-[9px] font-semibold uppercase text-[#8d95aa]"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+              <div class="mt-[6px] grid grid-cols-7 gap-y-[3px]">
+                <span></span>
+                <span></span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">1</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">2</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">3</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">4</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">5</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">6</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">7</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">8</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">9<i class="absolute bottom-[1px] left-1/2 size-[4px] -translate-x-1/2 rounded-full bg-[#138cd1]"></i></span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">10</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">11</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">12</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">13</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">14</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">15<i class="absolute bottom-[1px] left-1/2 size-[4px] -translate-x-1/2 rounded-full bg-[#34c759]"></i></span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">16</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">17</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">18</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">19</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold ring-[1.5px] ring-[#053247] font-bold text-[#053247]">20</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">21</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">22</span>
+                <span data-reveal="pop" data-d="600" class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold bg-[#138cd1] font-bold text-white shadow-[0_4px_10px_-6px_rgba(19,140,209,0.50)]">23</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">24</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">25</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">26</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">27</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">28</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">29</span>
+                <span class="relative mx-auto flex size-[26px] items-center justify-center rounded-full text-[11px] font-semibold text-[#17171c]">30</span>
+              </div>
+              <div data-reveal data-d="750" class="mt-[12px] flex items-center gap-[8px] rounded-[12px] bg-[#f4f9fd] px-[10px] py-[8px]">
+                <span class="size-[8px] shrink-0 rounded-full bg-[#138cd1]"></span>
+                <p class="text-[10px] font-semibold text-[#595959]">Next visit · <b class="font-bold text-[#17171c]">Thu, April 23, 11:00</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      
+      <article data-reveal data-d="120" class="lift relative overflow-hidden rounded-[24px] bg-[#dff1fb] p-7 sm:p-8 wide:p-12 wide:min-h-[363px] flex flex-col gap-[24px] wide:justify-center">
+        <div class="relative flex flex-col gap-[12px] wide:max-w-[250px]">
+          <h3 class="t-h3">Everything at hand</h3>
+          <p class="t-body">Notes, health details and quick search: find what you need in seconds, even with several rodents.</p>
+        </div>
+        <div data-reveal="right" data-d="200" class="stage mx-auto mt-auto -mb-7 sm:-mb-8 [--h:270] wide:[--h:320] wide:overflow-visible wide:absolute wide:m-0 wide:right-[40px] wide:top-1/2 wide:-translate-y-1/2 wide:w-[264px]" style="--w:320;--x:0;--y:0" aria-hidden="true">
+          <div class="stage-inner w-[320px] h-[320px] ff-manrope">
+            <div class="absolute inset-0 rounded-tl-[26px] rounded-tr-[26px] wide:rounded-[26px] bg-white/80 p-[14px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)] backdrop-blur-[6px]">
+              <div class="flex h-[38px] items-center gap-[8px] rounded-full bg-[#f2f6f9] px-[12px]">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8d95aa" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                <span class="caret text-[13px] font-semibold text-[#17171c]">allergy</span>
+                <span class="ml-auto text-[10px] font-semibold text-[#8d95aa]">3 results</span>
+              </div>
+              <div class="mt-[10px] flex gap-[6px] text-[10px] font-bold">
+                <span class="rounded-full bg-[#053247] px-[10px] py-[4px] text-white">All</span>
+                <span class="flex items-center gap-[4px] rounded-full bg-[#f2f6f9] py-[3px] pl-[3px] pr-[9px] text-[#053247]"><img alt="" class="size-[16px] rounded-full object-cover" src="/assets/image165.png">Martin</span>
+                <span class="flex items-center gap-[4px] rounded-full bg-[#f2f6f9] py-[3px] pl-[3px] pr-[9px] text-[#053247]"><img alt="" class="size-[16px] rounded-full object-cover" src="/assets/image163.png">Archie</span>
+              </div>
+              <div class="mt-[10px] flex flex-col gap-[8px]">
+                <div data-reveal="right" data-d="500" class="rounded-[14px] border border-[#e5edf3] bg-white p-[10px]">
+                  <p class="text-[9px] font-bold uppercase tracking-[0.06em] text-[#e5484d]">Health detail · Archie</p>
+                  <p class="mt-[2px] text-[12px] font-semibold leading-snug text-[#17171c]"><mark class="rounded-[4px] bg-[#fdd457]/60 px-[2px] text-inherit">Allergy</mark> to cedar shavings</p>
+                </div>
+                <div data-reveal="right" data-d="620" class="rounded-[14px] border border-[#e5edf3] bg-white p-[10px]">
+                  <p class="text-[9px] font-bold uppercase tracking-[0.06em] text-[#138cd1]">Note · Martin · Apr 3</p>
+                  <p class="mt-[2px] text-[12px] font-semibold leading-snug text-[#17171c]">After the <mark class="rounded-[4px] bg-[#fdd457]/60 px-[2px] text-inherit">allergy</mark> : paper bedding only</p>
+                </div>
+                <div data-reveal="right" data-d="740" class="rounded-[14px] border border-[#e5edf3] bg-white p-[10px]">
+                  <p class="text-[9px] font-bold uppercase tracking-[0.06em] text-[#7c3aed]">Visit · Archie · Mar 28</p>
+                  <p class="mt-[2px] text-[12px] font-semibold leading-snug text-[#17171c]">Check for <mark class="rounded-[4px] bg-[#fdd457]/60 px-[2px] text-inherit">allergy</mark>, recommendations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-[#053247] px-5 py-[90px] md:py-[130px] text-center text-white">
+  <h2 data-reveal class="t-h2 mx-auto max-w-[760px]">Be among the first to try it</h2>
+  <p data-reveal data-d="100" class="t-lead mx-auto mt-[20px] max-w-[620px] text-white/85">Sign up for early access to try the app before its public launch and help shape its features.</p>
+  <form data-reveal data-d="200" data-signup data-form="cta" novalidate class="relative mx-auto mt-[36px] max-w-[600px]">
+    <div class="signup bg-white border border-[#cfd6e6]">
+      <img alt="" class="h-[21px] w-[24px] shrink-0" src="/assets/formkitemail1.svg">
+      <input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Your email" aria-label="Your email" class="text-[#2a2a2a] placeholder:text-[#8d95aa]">
+      <button class="btn btn-blue btn-shine shrink-0">Get early access</button>
+    </div>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
+    <p class="form-msg form-msg-dark mt-[10px]" role="status" aria-live="polite" hidden></p>
+  </form>
+  <p data-reveal data-d="280" class="t-small mt-[14px] text-white/70">Free during the beta. Launch news only, no spam. Unsubscribe anytime.</p>
+</section>
+
+
+<section id="for-whom" class="bg-white pt-[72px] md:pt-[100px] pb-[100px] md:pb-[150px]">
+  <div class="px-5 text-center">
+    <h2 data-reveal class="t-h2">Who is <span class="brand">Roddi Health</span> for?</h2>
+    <p data-reveal data-d="100" class="t-lead mx-auto mt-[20px] md:mt-[24px] max-w-[66ch]">For owners of rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets that need attentive health care.</p>
+  </div>
+
+  <div data-reveal="fade" data-d="200" class="marquee mt-[32px] md:mt-[48px]">
+    <div class="marquee-track">
+      <ul><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Mice</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rats</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Hamsters</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Chinchillas</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Degus</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Guinea pigs</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rabbits</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Mice</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rats</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Hamsters</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Chinchillas</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Degus</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Guinea pigs</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rabbits</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Mice</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rats</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Hamsters</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Chinchillas</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Degus</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Guinea pigs</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rabbits</li></ul>
+      <ul aria-hidden="true"><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Mice</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rats</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Hamsters</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Chinchillas</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Degus</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Guinea pigs</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rabbits</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Mice</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rats</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Hamsters</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Chinchillas</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Degus</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Guinea pigs</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rabbits</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Mice</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rats</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Hamsters</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Chinchillas</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Degus</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Guinea pigs</li><li class="shrink-0 rounded-full border-2 border-[rgba(5,66,101,0.2)] bg-white px-[16px] py-[8px] md:px-[20px] md:py-[10px] t-body font-semibold whitespace-nowrap transition-colors hover:border-[#138cd1] hover:text-[#138cd1]">Rabbits</li></ul>
+    </div>
+  </div>
+
+  <div class="mt-[48px] md:mt-[64px] px-5">
+    <div class="stage mx-auto hidden md:block" style="--w:1100;--h:450;--x:-20;--y:-20" aria-hidden="true">
+      <div class="stage-inner w-[1059px] h-[409px]"><div class="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
+            <div data-reveal="toss" data-d="450" data-hover="polaroid" class="col-1 flex h-[300.865px] items-center justify-center ml-[699.83px] mt-[26px] relative row-1 w-[259.795px]">
+              <div class="flex-none rotate-[9.37deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[268.8px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[218.948px]" data-name="image 161">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[32px]">
+                    <img alt="" class="absolute h-[125.19%] left-[-8.24%] max-w-none top-[-19.78%] w-[115.28%]" src="/assets/image162.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="90" data-hover="polaroid" class="col-1 flex h-[239.834px] items-center justify-center ml-[97px] mt-[2px] relative row-1 w-[217.049px]">
+              <div class="flex-none rotate-[-7.38deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[217.14px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[190.748px]" data-name="image 157">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src="/assets/image158.png" />
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="270" data-hover="polaroid" class="col-1 flex h-[282.364px] items-center justify-center ml-[395.5px] mt-0 relative row-1 w-[238.843px]">
+              <div class="flex-none rotate-[1.05deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[278.126px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[233.785px]" data-name="image 159">
+                  <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[32px]">
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[124.96%] left-0 max-w-none top-[-12.48%] w-[113.84%]" src="/assets/image158.png" />
+                    </div>
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[112.89%] left-[-11.7%] max-w-none top-0 w-[127.91%]" src="/assets/image163.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="540" data-hover="polaroid" class="col-1 flex h-[198.523px] items-center justify-center ml-[881.83px] mt-[210px] relative row-1 w-[176.73px]">
+              <div class="flex-none rotate-[3.09deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[189.811px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[166.741px]" data-name="image 162">
+                  <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[32px]">
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[124.96%] left-0 max-w-none top-[-12.48%] w-[113.84%]" src="/assets/image158.png" />
+                    </div>
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[112.89%] left-[-11.2%] max-w-none top-0 w-[122.39%]" src="/assets/image163.png" />
+                    </div>
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[109.45%] left-[-7.43%] max-w-none top-[-7.52%] w-[105.41%]" src="/assets/image164.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="360" data-hover="polaroid" class="col-1 flex h-[236.512px] items-center justify-center ml-[548.83px] mt-[191px] relative row-1 w-[208.74px]">
+              <div class="flex-none rotate-[1.05deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[232.803px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[204.508px]" data-name="image 160">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[32px]">
+                    <img alt="" class="absolute h-[118.84%] left-0 max-w-none top-[-13.16%] w-full" src="/assets/image165.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="180" data-hover="polaroid" class="col-1 flex h-[284.258px] items-center justify-center ml-[228.83px] mt-[141px] relative row-1 w-[252.471px]">
+              <div class="flex-none rotate-[9.37deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[252.757px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[214.172px]" data-name="image 158">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src="/assets/image166.png" />
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="0" data-hover="polaroid" class="col-1 flex h-[196.48px] items-center justify-center ml-0 mt-[144px] relative row-1 w-[169.082px]">
+              <div class="flex-none rotate-[-2.79deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[188.904px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[160.066px]" data-name="image 163">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src="/assets/image167.png" />
+                </div>
+              </div>
+            </div>
+          </div></div>
+    </div>
+    <div class="polaroids-mobile md:hidden flex flex-wrap justify-center gap-[6px]" aria-hidden="true">
+            <div data-reveal="toss" data-d="450" data-hover="polaroid" class="col-1 flex h-[300.865px] items-center justify-center ml-[699.83px] mt-[26px] relative row-1 w-[259.795px]">
+              <div class="flex-none rotate-[9.37deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[268.8px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[218.948px]" data-name="image 161">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[32px]">
+                    <img alt="" class="absolute h-[125.19%] left-[-8.24%] max-w-none top-[-19.78%] w-[115.28%]" src="/assets/image162.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="90" data-hover="polaroid" class="col-1 flex h-[239.834px] items-center justify-center ml-[97px] mt-[2px] relative row-1 w-[217.049px]">
+              <div class="flex-none rotate-[-7.38deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[217.14px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[190.748px]" data-name="image 157">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src="/assets/image158.png" />
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="270" data-hover="polaroid" class="col-1 flex h-[282.364px] items-center justify-center ml-[395.5px] mt-0 relative row-1 w-[238.843px]">
+              <div class="flex-none rotate-[1.05deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[278.126px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[233.785px]" data-name="image 159">
+                  <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[32px]">
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[124.96%] left-0 max-w-none top-[-12.48%] w-[113.84%]" src="/assets/image158.png" />
+                    </div>
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[112.89%] left-[-11.7%] max-w-none top-0 w-[127.91%]" src="/assets/image163.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="540" data-hover="polaroid" class="col-1 flex h-[198.523px] items-center justify-center ml-[881.83px] mt-[210px] relative row-1 w-[176.73px]">
+              <div class="flex-none rotate-[3.09deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[189.811px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[166.741px]" data-name="image 162">
+                  <div aria-hidden class="absolute inset-0 pointer-events-none rounded-[32px]">
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[124.96%] left-0 max-w-none top-[-12.48%] w-[113.84%]" src="/assets/image158.png" />
+                    </div>
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[112.89%] left-[-11.2%] max-w-none top-0 w-[122.39%]" src="/assets/image163.png" />
+                    </div>
+                    <div class="absolute inset-0 overflow-hidden rounded-[32px]">
+                      <img alt="" class="absolute h-[109.45%] left-[-7.43%] max-w-none top-[-7.52%] w-[105.41%]" src="/assets/image164.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="360" data-hover="polaroid" class="col-1 flex h-[236.512px] items-center justify-center ml-[548.83px] mt-[191px] relative row-1 w-[208.74px]">
+              <div class="flex-none rotate-[1.05deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[232.803px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[204.508px]" data-name="image 160">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[32px]">
+                    <img alt="" class="absolute h-[118.84%] left-0 max-w-none top-[-13.16%] w-full" src="/assets/image165.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="180" data-hover="polaroid" class="col-1 flex h-[284.258px] items-center justify-center ml-[228.83px] mt-[141px] relative row-1 w-[252.471px]">
+              <div class="flex-none rotate-[9.37deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[252.757px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[214.172px]" data-name="image 158">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src="/assets/image166.png" />
+                </div>
+              </div>
+            </div>
+            <div data-reveal="toss" data-d="0" data-hover="polaroid" class="col-1 flex h-[196.48px] items-center justify-center ml-0 mt-[144px] relative row-1 w-[169.082px]">
+              <div class="flex-none rotate-[-2.79deg]">
+                <div class="border-4 border-[rgba(255,255,255,0.8)] border-solid h-[188.904px] relative rounded-[32px] shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] w-[160.066px]" data-name="image 163">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src="/assets/image167.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+
+  <p data-reveal class="t-body mt-[40px] px-5 text-center text-[var(--muted)]">Don’t see your pet? <a href="mailto:roddihealth@gmail.com" class="link text-[var(--ink)] font-semibold">Write to us</a> and we’ll take it into account.</p>
+</section>
+
+
+<section class="relative bg-[#e5f4fd] px-5 md:px-10 pt-[72px] md:pt-[100px] pb-[72px] lg:pb-[180px] lg:min-h-[860px]">
+  <div class="relative mx-auto max-w-[1270px] lg:pl-[calc(50%+15px)] xl:pl-[700px]">
+    <h2 data-reveal class="t-h2 text-[#053247]">Why I’m building <span class="brand">Roddi Health</span></h2>
+    <h3 data-reveal data-d="80" class="t-h3 mt-[28px]">It all started with a love of rats 🐭❤️</h3>
+    <div data-reveal data-d="160" class="mt-[16px] flex flex-col gap-[16px]">
+      <p class="t-lead">When two rats came into my life, I started an Instagram blog to share their adventures. Along with the joy came health worries: vet visits, medication, symptoms, weight changes. I was constantly writing it all down or trying to keep it in my head.</p>
+      <p class="t-lead">So I’m building the app I need myself, together with other rodent owners.</p>
+    </div>
+    <div data-reveal data-d="240" class="mt-[32px] flex flex-wrap items-center gap-[12px] md:gap-[16px]">
+      <a href="#early-access" class="btn btn-navy">Get early access</a>
+      <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="My Instagram" title="Instagram" class="hop btn w-[54px] px-0 text-white bg-gradient-to-tr from-[#ffbc01] via-[#fe0b57] to-[#7c0eff]"><img alt="" class="size-[24px]" src="/assets/biinstagram.svg"></a>
+      <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="My TikTok" title="TikTok" class="hop btn btn-tiktok w-[54px] px-0"><img alt="" class="size-[24px]" src="/assets/akariconstiktokfill.svg"></a>
+    </div>
+  </div>
+  <div data-reveal="rise" class="stage mx-auto mt-[48px] lg:absolute lg:m-0 lg:left-[max(28px,calc(50%-707px))] lg:top-[-45px] lg:w-[min(728px,calc(50%-40px))]" style="--w:728;--h:810;--x:0;--y:0" aria-hidden="true">
+    <div class="stage-inner w-[728px] h-[810px]"><div class="absolute h-[810px] left-0 overflow-clip top-0 w-[728px]">
+              <div class="absolute contents left-[23px] top-[74px]">
+                <div data-reveal="left" data-d="350" class="absolute flex h-[567.407px] items-center justify-center left-[46.38px] top-[74px] w-[282.592px]">
+                  <div class="flex-none rotate-[2.61deg]">
+                    <div class="content-stretch flex flex-col items-start overflow-clip relative rounded-[24px] w-[257.524px]">
+                      <div class="bg-[#f5c94c] h-[28.618px] relative shrink-0 w-full"></div>
+                      <div class="bg-white content-stretch flex flex-col gap-[16px] h-[527.638px] items-start pb-[180px] pt-[24px] px-[20px] relative shrink-0 w-full">
+                        <div class="content-stretch flex gap-[14px] items-center relative shrink-0">
+                          <div class="h-[22.4px] relative shrink-0 w-[12.8px]" data-name="Vector">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/vector16.svg" />
+                          </div>
+                          <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] ff-sf font-bold leading-[1.1] relative shrink-0 text-[#2a2a2a] text-[18px] whitespace-nowrap" style="font-variation-settings: 'wdth' 100">
+                            Today
+                          </p>
+                        </div>
+                        <div class="h-0 relative shrink-0 w-full">
+                          <div class="absolute inset-[-0.5px_0]">
+                            <img alt="" class="block max-w-none size-full" src="/assets/vector27.svg" />
+                          </div>
+                        </div>
+                        <div class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] ff-sf font-normal leading-[0] relative shrink-0 text-[#2a2a2a] text-[16px] w-[204.208px]" style="font-variation-settings: 'wdth' 100">
+                          <p class="leading-[1.4] mb-0">Feed 2:00</p>
+                          <p class="leading-[1.4] mb-0">Feed 5:00</p>
+                          <p class="leading-[1.4] mb-0">Doxycycline 7:00 not with other meds!!!</p>
+                          <p class="leading-[1.4] mb-0">Ringer’s + Heptral + Metoclopramide + feed 9:30</p>
+                          <p class="leading-[1.4] mb-0">Nebulizer 15:00</p>
+                          <p class="leading-[1.4] mb-0">Doxycycline 21:00 not with other meds!!!</p>
+                          <p class="leading-[1.4]">Feed 23:00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-reveal="left" data-d="550" class="absolute bg-white content-stretch drop-shadow-[0_4px_12px_rgba(19,90,140,0.10)] flex items-center justify-between left-[38px] px-[14px] py-[16px] rounded-[12px] top-[447px] w-[250px]">
+                  <div class="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[1.1] relative shrink-0 text-[#2a2a2a] w-[143px]">
+                    <div class="content-stretch flex gap-[3px] items-end relative shrink-0 w-full whitespace-nowrap">
+                      <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-[510] relative shrink-0 text-[28px]" style="font-variation-settings: 'wdth' 100">
+                        7:00
+                      </p>
+                      <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-normal relative shrink-0 text-[20px]" style="font-variation-settings: 'wdth' 100">
+                        AM
+                      </p>
+                    </div>
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-[510] relative shrink-0 text-[14px] w-full" style="font-variation-settings: 'wdth' 100">
+                      Alarm
+                    </p>
+                  </div>
+                  <div class="h-[24px] relative shrink-0 w-[46px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/frame562.svg" />
+                  </div>
+                </div>
+                <div data-reveal="left" data-d="790" class="absolute bg-white content-stretch drop-shadow-[0_4px_12px_rgba(19,90,140,0.10)] flex items-center justify-between left-[23px] px-[14px] py-[16px] rounded-[12px] top-[601px] w-[265px]">
+                  <div class="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[1.1] relative shrink-0 text-[#2a2a2a] w-[143px]">
+                    <div class="content-stretch flex gap-[3px] items-end relative shrink-0 w-full whitespace-nowrap">
+                      <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-[510] relative shrink-0 text-[28px]" style="font-variation-settings: 'wdth' 100">
+                        11
+                      </p>
+                      <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-normal relative shrink-0 text-[20px]" style="font-variation-settings: 'wdth' 100">
+                        PM
+                      </p>
+                    </div>
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-[510] relative shrink-0 text-[14px] w-full" style="font-variation-settings: 'wdth' 100">
+                      Alarm
+                    </p>
+                  </div>
+                  <div class="h-[24px] relative shrink-0 w-[46px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/frame562.svg" />
+                  </div>
+                </div>
+                <div data-reveal="left" data-d="670" class="absolute bg-white content-stretch drop-shadow-[0_4px_12px_rgba(19,90,140,0.10)] flex items-center justify-between left-[71px] px-[14px] py-[16px] rounded-[12px] top-[524px] w-[203px]">
+                  <div class="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[1.1] relative shrink-0 text-[#2a2a2a]">
+                    <div class="content-stretch flex gap-[3px] items-end relative shrink-0 w-full whitespace-nowrap">
+                      <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-[510] relative shrink-0 text-[28px]" style="font-variation-settings: 'wdth' 100">
+                        2
+                      </p>
+                      <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-normal relative shrink-0 text-[20px]" style="font-variation-settings: 'wdth' 100">
+                        PM
+                      </p>
+                    </div>
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] ff-sf font-[510] relative shrink-0 text-[14px] w-full" style="font-variation-settings: 'wdth' 100">
+                      Alarm
+                    </p>
+                  </div>
+                  <div class="h-[24px] relative shrink-0 w-[46px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/frame562.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="absolute contents left-[288px] top-0">
+                <div class="absolute h-[798.192px] left-[288px] top-0 w-[374.227px]" data-name="image 179">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" class="absolute h-[107.4%] left-[-11.44%] max-w-none top-[-4.45%] w-[122.77%]" src="/assets/image179.png" />
+                  </div>
+                </div>
+                <div class="absolute contents left-[300.82px] top-[10.84px]">
+                  <div class="absolute h-[37.77px] left-[300.83px] rounded-[42px] top-[235.68px] w-[348.188px]" data-name="telegram-cloud-document-2-5413701427866413044 2">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[42px]">
+                      <img alt="" class="absolute h-[1996.87%] left-0 max-w-none top-[-695.31%] w-[99.92%]" src="/assets/telegramclouddocument254137014278664130442.png" />
+                    </div>
+                  </div>
+                  <div class="absolute h-[396.58px] left-[300.82px] rounded-bl-[42px] rounded-br-[42px] top-[273.45px] w-[348.188px]" data-name="telegram-cloud-document-2-5413701427866413044 3">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-bl-[42px] rounded-br-[42px]">
+                      <img alt="" class="absolute h-[190.18%] left-0 max-w-none top-[-88.99%] w-[99.92%]" src="/assets/telegramclouddocument254137014278664130442.png" />
+                    </div>
+                  </div>
+                  <div class="absolute h-[381.071px] left-[300.84px] rounded-bl-[50px] rounded-br-[50px] top-[403.58px] w-[348.188px]" data-name="telegram-cloud-document-2-5413701427866413037 1">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-bl-[50px] rounded-br-[50px]">
+                      <img alt="" class="absolute h-[197.92%] left-0 max-w-none top-[-37.55%] w-[99.92%]" src="/assets/telegramclouddocument254137014278664130371.png" />
+                    </div>
+                  </div>
+                  <div class="absolute h-[224.847px] left-[300.83px] rounded-tl-[50px] rounded-tr-[50px] top-[10.84px] w-[348.188px]" data-name="telegram-cloud-document-2-5413701427866413044 4">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-tl-[50px] rounded-tr-[50px]">
+                      <img alt="" class="absolute h-[335.43%] left-0 max-w-none top-0 w-[99.92%]" src="/assets/telegramclouddocument254137014278664130442.png" />
+                    </div>
+                  </div>
+                  <div class="absolute left-[536.89px] rounded-[42px] size-[44.851px] top-[326.57px]" data-name="telegram-cloud-document-2-5413701427866413044 5">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[42px]">
+                      <img alt="" class="absolute h-[1006.3%] left-[-19.69%] max-w-none top-[-142.52%] w-[464.17%]" src="/assets/telegramclouddocument254137014278664130442.png" />
+                    </div>
+                  </div>
+                  <div class="absolute left-[391.55px] size-[45.217px] top-[326.65px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" height="45.217" src="/assets/ellipse6.png" width="45.217" />
+                  </div>
+                  <div class="absolute left-[464.03px] size-[45.217px] top-[326.22px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" height="45.217" src="/assets/ellipse7.png" width="45.217" />
+                  </div>
+                  <div class="absolute h-[25.434px] left-[394.09px] top-[24.97px] w-[26.847px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/ellipse8.svg" />
+                  </div>
+                  <div class="absolute h-[25.434px] left-[522.68px] top-[24.97px] w-[26.847px]">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="/assets/ellipse8.svg" />
+                  </div>
+                  <div class="absolute bg-white h-[18.182px] left-[591.75px] rounded-[42px] top-[25.38px] w-[30.91px]"></div>
+                  <div class="absolute bg-white h-[15.543px] left-[502.89px] rounded-[42px] top-[378.22px] w-[18.369px]"></div>
+                  <div class="absolute bg-white h-[15.543px] left-[381.37px] rounded-[42px] top-[378.22px] w-[134.237px]"></div>
+                  <div class="absolute h-[18.369px] left-[388.44px] rounded-[42px] top-[378.22px] w-[49.456px]" data-name="telegram-cloud-document-2-5413701427866413044 6">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[42px]">
+                      <img alt="" class="absolute h-[4105.83%] left-[-160%] max-w-none top-[-2490.43%] w-[703.44%]" src="/assets/telegramclouddocument254137014278664130442.png" />
+                    </div>
+                  </div>
+                  <div class="absolute h-[18.369px] left-[463.33px] rounded-[42px] top-[378.23px] w-[48.043px]" data-name="telegram-cloud-document-2-5413701427866413044 7">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[42px]">
+                      <img alt="" class="absolute h-[4105.83%] left-[-323.53%] max-w-none top-[-2490.43%] w-[724.13%]" src="/assets/telegramclouddocument254137014278664130442.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute contents left-[514px] top-[435px]">
+                <div data-reveal="drop" data-d="950" class="absolute left-[514px] size-[243px] top-[435px]" data-name="image 198">
+                  <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src="/assets/image198.png" />
+                </div>
+                <div data-reveal="drop" data-d="950" class="-translate-x-1/2 absolute flex h-[19.613px] items-center justify-center left-[616.15px] top-[539px] w-[84.296px]">
+                  <div class="-rotate-8 flex-none">
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] ff-hand leading-[1.2] not-italic relative text-[#303030] text-[14px] text-center whitespace-pre">Apr 12 - 340g</p>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="950" class="-translate-x-1/2 absolute flex h-[19.474px] items-center justify-center left-[620.38px] top-[556.04px] w-[83.306px]">
+                  <div class="-rotate-8 flex-none">
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] ff-hand leading-[1.2] not-italic relative text-[#303030] text-[14px] text-center whitespace-pre">Apr 19 - 335g</p>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="950" class="-translate-x-1/2 absolute flex h-[21.422px] items-center justify-center left-[628.99px] top-[572.93px] w-[97.169px]">
+                  <div class="-rotate-8 flex-none">
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] ff-hand leading-[1.2] not-italic relative text-[#303030] text-[14px] text-center whitespace-nowrap">Apr 28 - 338g???</p>
+                  </div>
+                </div>
+                <div data-reveal="drop" data-d="950" class="absolute flex h-[27.037px] items-center justify-center left-[567.48px] top-[499.53px] w-[116.402px]">
+                  <div class="-rotate-8 flex-none">
+                    <p class="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] ff-hand leading-none not-italic relative text-[#303030] text-[20px] whitespace-nowrap">Martin’s weight</p>
+                  </div>
+                </div>
+              </div>
+            <span class="absolute left-[474px] top-[149px] h-[15px] w-[46px] bg-white pl-[2px] ff-sf text-[14px] font-semibold leading-[15px] text-[#0a0a0a]">6 000</span></div></div>
+  </div>
+</section>
+
+
+<section class="relative z-10 bg-white px-5 md:px-10 py-[72px] md:py-[110px]">
+  <img alt="" class="wave top-[-54px]" src="/assets/vector15.svg">
+  <div class="mx-auto grid w-full max-w-[1270px] items-center gap-[48px] lg:grid-cols-[minmax(0,1fr)_minmax(0,560px)] lg:gap-[80px]">
+    <div>
+      <h2 data-reveal class="t-h2">Before and after <span class="brand">Roddi Health</span></h2>
+      <p data-reveal data-d="100" class="t-lead mt-[20px] md:mt-[24px] max-w-[560px]">How caring for your pet’s health changes when, instead of chaos, endless notes and worry, everything important is kept <b class="font-bold">in one place</b>.</p>
+      
+      <div class="mt-[20px] flex items-start gap-[4px]">
+        <div data-reveal="tilt" data-d="200" class="stage mt-[56px] w-full max-w-[380px]" style="--w:431;--h:275;--x:0;--y:0" aria-hidden="true">
+          <div class="stage-inner w-[431px] h-[275px]"><div class="flex h-[274.938px] items-center justify-center relative shrink-0 w-[430.964px]">
+                <div class="-rotate-5 flex-none">
+                  <div class="bg-white border-8 border-solid border-white content-stretch flex gap-[8px] h-[239.976px] items-center justify-center overflow-clip relative rounded-[64px] w-[411.615px]">
+                    <div class="aspect-[297.8721618652344/351.5367431640625] h-full relative shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] shrink-0" data-name="image 158">
+                      <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src="/assets/image168.png" />
+                    </div>
+                    <div class="aspect-[297.8721618652344/351.5367431640625] h-full relative shadow-[0_8px_24px_-14px_rgba(19,90,140,0.18)] shrink-0" data-name="image 190">
+                      <div aria-hidden class="absolute inset-0 pointer-events-none">
+                        <img alt="" class="absolute max-w-none object-cover size-full" src="/assets/image190.png" />
+                        <div class="absolute inset-0 overflow-hidden">
+                          <img alt="" class="absolute h-full left-[-4.28%] max-w-none top-[-0.18%] w-[156%]" src="/assets/image191.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+        </div>
+        <svg viewBox="0 0 120 110" class="w-[96px] shrink-0 overflow-visible md:w-[124px]" fill="none" stroke="#fdd457" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <defs><filter id="rough-ba" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="14"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter></defs>
+          <g filter="url(#rough-ba)">
+            <path data-reveal="line" data-d="500" pathLength="1" stroke-width="4" d="M97 3 C111 27 101 53 79 52 C60 51 63 30 78 34 C96 40 83 72 57 82 C43 88 29 91 15 95"/>
+            <path data-reveal="line" data-d="650" pathLength="1" stroke-width="1.8" stroke-opacity=".75" d="M99 7 C109 30 99 51 81 50 C64 49 65 33 76 36 C92 42 82 69 58 80 C46 86 31 90 18 92"/>
+            <path data-reveal="fade" data-d="1500" stroke-width="4" d="M30 80 L15 95"/>
+            <path data-reveal="fade" data-d="1580" stroke-width="3.6" d="M15 95 L33 101"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div data-reveal data-d="150" class="overflow-hidden rounded-[24px] border border-[#d9e9f3] t-body">
+      <table class="w-full border-collapse text-left">
+        <thead>
+          <tr>
+            <th scope="col" class="w-1/2 bg-[#f4f6f8] px-[16px] md:px-[24px] py-[16px] t-h4 text-[var(--muted)]">Without the app</th>
+            <th scope="col" class="w-1/2 bg-[#053247] px-[16px] md:px-[24px] py-[16px] t-h4 text-white">With Roddi Health</th>
+          </tr>
+        </thead>
+        <tbody><tr data-reveal="right" data-d="250" class="border-t border-[#d9e9f3]"><td class="px-[16px] md:px-[24px] py-[16px] text-[var(--muted)] bg-[#fafbfc]">“Did I give the meds this morning?” Alarms and sticky notes</td><td class="px-[16px] md:px-[24px] py-[16px] font-bold"><div class="flex items-start gap-[8px]"><span data-reveal="pop" data-d="600" class="mt-[1px] flex size-[20px] shrink-0 items-center justify-center rounded-full bg-[#138cd1] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Reminders and one-tap check-off</span></div></td></tr><tr data-reveal="right" data-d="340" class="border-t border-[#d9e9f3]"><td class="px-[16px] md:px-[24px] py-[16px] text-[var(--muted)] bg-[#fafbfc]">Symptoms scattered across photos and messages</td><td class="px-[16px] md:px-[24px] py-[16px] font-bold"><div class="flex items-start gap-[8px]"><span data-reveal="pop" data-d="690" class="mt-[1px] flex size-[20px] shrink-0 items-center justify-center rounded-full bg-[#138cd1] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>A dated symptom diary</span></div></td></tr><tr data-reveal="right" data-d="430" class="border-t border-[#d9e9f3]"><td class="px-[16px] md:px-[24px] py-[16px] text-[var(--muted)] bg-[#fafbfc]">Weight buried in notes you can’t find</td><td class="px-[16px] md:px-[24px] py-[16px] font-bold"><div class="flex items-start gap-[8px]"><span data-reveal="pop" data-d="780" class="mt-[1px] flex size-[20px] shrink-0 items-center justify-center rounded-full bg-[#138cd1] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>A weight chart</span></div></td></tr><tr data-reveal="right" data-d="520" class="border-t border-[#d9e9f3]"><td class="px-[16px] md:px-[24px] py-[16px] text-[var(--muted)] bg-[#fafbfc]">Recalling everything from memory at the vet</td><td class="px-[16px] md:px-[24px] py-[16px] font-bold"><div class="flex items-start gap-[8px]"><span data-reveal="pop" data-d="870" class="mt-[1px] flex size-[20px] shrink-0 items-center justify-center rounded-full bg-[#138cd1] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>The full history, ready to show</span></div></td></tr><tr data-reveal="right" data-d="610" class="border-t border-[#d9e9f3]"><td class="px-[16px] md:px-[24px] py-[16px] text-[var(--muted)] bg-[#fafbfc]">Several rodents, mixing up whose meds are whose</td><td class="px-[16px] md:px-[24px] py-[16px] font-bold"><div class="flex items-start gap-[8px]"><span data-reveal="pop" data-d="960" class="mt-[1px] flex size-[20px] shrink-0 items-center justify-center rounded-full bg-[#138cd1] text-white"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>A separate profile for each pet</span></div></td></tr></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section id="faq" class="bg-white px-5 md:px-10 py-[72px] md:py-[100px]">
+  <div class="faq mx-auto grid max-w-[1270px] gap-[32px] lg:gap-x-[64px] lg:grid-cols-[minmax(0,1fr)_679px] lg:grid-rows-[auto_1fr]">
+    <div data-reveal class="lg:max-w-[460px]">
+      <h2 class="t-h2 text-[#101a3a]">Frequently asked questions</h2>
+      <p class="t-lead mt-[16px]">Answers to the most common questions about Roddi Health.</p>
+    </div>
+
+    <div class="lg:col-start-2 lg:row-span-2 flex flex-col"><details data-reveal data-d="100" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors" open><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">When is the launch?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">We’re working on the first version. [Estimated timeframe.] Everyone who leaves an email will hear from us first.</p></details><details data-reveal data-d="160" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">How much will it cost?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">Roddi Health is free during the beta. [Pricing after launch.]</p></details><details data-reveal data-d="220" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">Does the app replace a vet?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">No. Roddi Health helps you keep a health history and stay on top of treatment, but it doesn’t replace a veterinary consultation.</p></details><details data-reveal data-d="280" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">What about my data?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">[Where data is stored and how it’s protected.]</p></details><details data-reveal data-d="340" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">Which animals is it for?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">Rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets. Don’t see yours? Write to us.</p></details><details data-reveal data-d="400" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">Which devices will it run on?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">[Platforms at launch: iOS / Android / web.]</p></details><details data-reveal data-d="460" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">What languages will it support?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">[Interface languages at launch.]</p></details><details data-reveal data-d="520" class="rounded-[20px] border-b border-[#e3eaf0] last:border-b-0 transition-colors"><summary class="flex items-center justify-between gap-[16px] px-[20px] md:px-[28px] py-[16px] md:py-[18px]"><span class="t-h4">What do you do with my email?</span><img alt="" class="size-[36px] shrink-0" src="/assets/text.svg"></summary><p class="t-body px-[20px] md:px-[28px] pb-[18px] md:pr-[100px] text-[var(--muted)]">We only send launch news and early access invitations. No spam, and you can unsubscribe anytime.</p></details></div>
+
+    <div data-reveal data-d="200" class="lift self-start lg:max-w-[460px] flex flex-col gap-[28px] items-start rounded-[24px] p-[28px] md:p-[34px]" style="background-image: linear-gradient(258.06deg, rgba(224,242,252,0.25) 17.244%, rgba(19,140,209,0.25) 145.5%)">
+      <div>
+        <h3 class="t-h3">Still have questions?</h3>
+        <p class="t-body mt-[8px] text-[var(--muted)]">Email us at <a href="mailto:roddihealth@gmail.com" class="link font-semibold text-[var(--ink)]">roddihealth@gmail.com</a> and we’ll reply as soon as we can.</p>
+      </div>
+      <a href="mailto:roddihealth@gmail.com" class="btn btn-navy">Contact us</a>
+    </div>
+  </div>
+</section>
+
+
+<footer id="early-access" class="bg-[#053247] rounded-t-[40px] md:rounded-t-[64px] px-5 md:px-10 pt-[72px] md:pt-[100px] pb-[32px] md:pb-[40px] text-white">
+  <div class="mx-auto max-w-[1270px]">
+    <div class="flex flex-col items-center text-center">
+      <h2 data-reveal class="t-h2 max-w-[900px]">Be the first to know when <span class="text-[#fdd457]">Roddi Health</span> launches</h2>
+      <p data-reveal data-d="100" class="t-lead mt-[20px] max-w-[560px] text-white/85">Leave your email and we’ll tell you about the launch and invite you to early access.</p>
+      <form data-reveal data-d="200" data-signup data-form="footer" novalidate class="relative mt-[36px] flex w-full max-w-[600px] flex-col items-center gap-[14px]">
+        <div class="signup bg-[#fbfcff] border border-[#cfd6e6]">
+          <img alt="" class="h-[21px] w-[24px] shrink-0" src="/assets/formkitemail1.svg">
+          <input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Your email" aria-label="Your email" class="text-[#2a2a2a] placeholder:text-[#8d95aa]">
+          <button class="btn btn-blue btn-shine shrink-0">Get early access</button>
+        </div>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
+        <p class="form-msg form-msg-dark" role="status" aria-live="polite" hidden></p>
+        <label class="flex items-start gap-[10px] t-small text-left text-white/90 cursor-pointer">
+          <input type="checkbox" required class="mt-[2px] size-[18px] shrink-0 accent-[#138cd1]">
+          <span>I agree to receive emails about the launch. <a href="#" class="link">Privacy policy</a></span>
+        </label>
+      </form>
+    </div>
+
+    <div data-reveal="fade" class="mt-[72px] md:mt-[100px] border-t border-white/15 pt-[32px] grid gap-[24px] md:grid-cols-[1fr_auto_1fr] items-center">
+      <div class="flex justify-center md:justify-start gap-[12px] order-2 md:order-1">
+        <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="Instagram" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="/assets/qlementineiconsinstagramfill16.svg"></a>
+        <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="/assets/akariconstiktokfill.svg"></a>
+        <a href="mailto:roddihealth@gmail.com" aria-label="Email" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="/assets/griddyiconsemailfilled.svg"></a>
+      </div>
+      <a href="#" class="flex justify-center gap-[8px] items-center order-1 md:order-2" aria-label="Roddi Health">
+        <img alt="" class="size-[38px]" src="/assets/vector.svg">
+        <span class="ff-montserrat font-semibold text-[22px] leading-[0.95] text-left">roddi<br>health</span>
+      </a>
+      <nav class="flex flex-wrap justify-center md:justify-end gap-x-[28px] gap-y-[8px] t-small order-3">
+        <a href="/en/blog.html" class="link">Blog</a>
+        <a href="#" class="link">Privacy policy</a>
+        <a href="mailto:roddihealth@gmail.com" class="link">Contact</a>
+        <a href="#" class="link">About</a>
+      </nav>
+    </div>
+    <div class="mt-[28px] flex flex-col md:flex-row justify-between gap-[8px] text-center md:text-left t-small text-white/60">
+      <p>Roddi Health does not replace a veterinary consultation.</p>
+      <p>© 2026 Roddi Health</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function layoutStages() {
+    // Sized stages first: a cover stage depends on the height they give its section.
+    var stages = [].slice.call(document.querySelectorAll('.stage'));
+    stages.sort(function (a, b) { return a.classList.contains('stage-cover') - b.classList.contains('stage-cover'); });
+    stages.forEach(function (el) {
+      if (!el.getClientRects().length) return; // hidden at this size
+      var cs = getComputedStyle(el), v = function (n) { return parseFloat(cs.getPropertyValue(n)) || 0; };
+      var W = v('--w'), H = v('--h'), X = v('--x'), Y = v('--y'), s, tx, ty;
+      if (el.classList.contains('stage-cover')) {
+        s = Math.max(el.clientWidth / W, el.clientHeight / H);
+        tx = (el.clientWidth - W * s) / 2 - X * s; ty = (el.clientHeight - H * s) / 2 - Y * s;
+      } else {
+        s = el.clientWidth / W;
+        el.style.height = H * s + 'px';
+        tx = -X * s; ty = -Y * s;
+      }
+      el.firstElementChild.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + s + ')';
+    });
+  }
+  layoutStages();
+  addEventListener('resize', layoutStages);
+  addEventListener('load', layoutStages);
+  if (document.fonts) document.fonts.ready.then(layoutStages);
+
+  // Reveal on scroll.
+  var reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function (el) { el.style.setProperty('--d', el.dataset.d + 'ms'); });
+  if (!('IntersectionObserver' in window)) document.documentElement.classList.remove('js');
+  // A collage (stage) plays as one choreographed group: everything in it starts
+  // once the stage itself is in view, each piece after its own data-d delay.
+  var revealer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      el.classList.add('is-in');
+      if (el.classList.contains('stage')) el.querySelectorAll('[data-reveal]').forEach(function (c) { c.classList.add('is-in'); });
+      revealer.unobserve(el);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(function (el) {
+    var stage = el.closest('.stage-inner');
+    revealer.observe(stage ? stage.parentElement : el);
+  });
+
+  // Elements at the very end of the page can't pass the bottom margin above.
+  addEventListener('scroll', function () {
+    if (innerHeight + scrollY < document.documentElement.scrollHeight - 4) return;
+    document.querySelectorAll('[data-reveal]:not(.is-in)').forEach(function (el) { el.classList.add('is-in'); });
+  }, { passive: true });
+
+  // Count-up numbers.
+  function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  var counter = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      counter.unobserve(e.target);
+      var el = e.target, to = +el.dataset.count, t0 = performance.now(), dur = 1600;
+      (function tick(t) {
+        var k = Math.min(1, (t - t0) / dur);
+        el.textContent = fmt(Math.round(to * (1 - Math.pow(1 - k, 3))));
+        if (k < 1) requestAnimationFrame(tick);
+      })(t0);
+    });
+  });
+  if (!reduceMotion) document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = '0'; counter.observe(el); });
+
+  // In-page links (#features, #faq, #early-access, logo "#"). CSS smooth scrolling
+  // alone doesn't move the page in some browsers, so scroll from script instead.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    var id = a.getAttribute('href').slice(1);
+    e.preventDefault();
+    // Bare "#" is the logo (back to top) or a placeholder for a page not written yet.
+    if (!id && a.getAttribute('aria-label') !== 'Roddi Health') return;
+    var target = id ? document.getElementById(id) : document.documentElement;
+    if (!target) return;
+    var go = function (behavior) {
+      if (id) target.scrollIntoView({ behavior: behavior, block: 'start' });
+      else window.scrollTo({ top: 0, behavior: behavior });
+    };
+    var y0 = scrollY;
+    go(reduceMotion ? 'instant' : 'smooth');
+    // Smooth scrolling needs animation frames; if the browser isn't producing
+    // them (busy, throttled), it never starts. Jump instead of doing nothing.
+    if (!reduceMotion) setTimeout(function () { if (scrollY === y0) go('instant'); }, 200);
+    if (location.hash !== (id ? '#' + id : '')) history.pushState(null, '', id ? '#' + id : location.pathname + location.search);
+  });
+
+  // Only one FAQ answer open at a time.
+  document.querySelectorAll('.faq details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) document.querySelectorAll('.faq details[open]').forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+</script>
+<script src="/assets/forms.js"></script>
+</body>
+</html>

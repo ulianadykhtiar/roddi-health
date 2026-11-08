@@ -11,6 +11,8 @@
   <script>document.documentElement.classList.add('js');</script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
   <style type="text/tailwindcss">@theme { --breakpoint-wide: 85rem; }</style>
+  <link rel="alternate" hreflang="uk" href="https://roddihealth.app/blog">
+  <link rel="alternate" hreflang="en" href="https://roddihealth.app/en/blog">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/clarity.js"></script>
 </head>
@@ -22,25 +24,25 @@
     <img alt="" class="size-full" src="assets/ellipse2.svg">
   </div>
 
-  <nav data-reveal="down" class="relative z-40 mx-auto flex h-[54px] max-w-[1240px] items-center justify-between px-5 pt-5 md:pt-[33px] md:px-10 md:box-content md:grid md:grid-cols-[1fr_auto_1fr]">
-    <div class="hidden md:flex gap-[30px] items-center t-small font-semibold text-[#333c57]">
-      <a href="index.html#features" class="hover:text-[#138cd1]">Можливості</a>
-      <a href="index.html#for-whom" class="hover:text-[#138cd1]">Для кого</a>
-      <a href="index.html#faq" class="hover:text-[#138cd1]">Питання</a>
+  <nav data-reveal="down" class="relative z-40 mx-auto flex h-[54px] max-w-[1240px] items-center justify-between px-5 pt-5 md:pt-[33px] md:px-10 lg:box-content lg:grid lg:grid-cols-[1fr_auto_1fr]">
+    <div class="hidden lg:flex gap-[30px] items-center t-small font-semibold text-[#333c57]">
+      <a href="/#features" class="hover:text-[#138cd1]">Можливості</a>
+      <a href="/#for-whom" class="hover:text-[#138cd1]">Для кого</a>
+      <a href="/#faq" class="hover:text-[#138cd1]">Питання</a>
       <a href="blog.html" aria-current="page" class="btn btn-mono btn-sm -ml-[8px] px-[18px]">Блог</a>
     </div>
-    <a href="index.html" class="flex gap-[8px] items-center" aria-label="Roddi Health — на головну">
+    <a href="/" class="flex gap-[8px] items-center" aria-label="Roddi Health — на головну">
       <img alt="" class="size-[32px] md:size-[38px]" src="assets/vector.svg">
       <span class="hidden sm:inline ff-montserrat font-semibold text-[19px] md:text-[22px] leading-[0.95] text-[#17171c]">roddi<br>health</span>
     </a>
     <div class="flex items-center justify-end gap-[6px] sm:gap-[10px]">
       <div class="lang-toggle" role="group" aria-label="Мова сайту">
         <span class="lang-opt is-active" lang="uk" aria-current="true">UA</span>
-        <a href="#" onclick="return false" class="lang-opt" lang="en" title="English version — coming soon">EN</a>
+        <a href="/en/blog.html" class="lang-opt" lang="en" hreflang="en">EN</a>
       </div>
       <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" class="btn-mono btn btn-sm hidden sm:inline-flex w-[44px] px-0"><span class="icon-mask size-[20px]" style="-webkit-mask-image:url(assets/biinstagram.svg);mask-image:url(assets/biinstagram.svg)"></span></a>
       <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok" class="btn-mono btn btn-sm hidden sm:inline-flex w-[44px] px-0"><span class="icon-mask size-[20px]" style="-webkit-mask-image:url(assets/akariconstiktokfill.svg);mask-image:url(assets/akariconstiktokfill.svg)"></span></a>
-      <a href="blog.html" aria-current="page" class="btn btn-mono btn-sm md:hidden px-[12px] sm:px-[16px]">Блог</a>
+      <a href="blog.html" aria-current="page" class="btn btn-mono btn-sm lg:hidden px-[12px] sm:px-[16px]">Блог</a>
       <a href="#early-access" class="btn btn-navy btn-sm max-sm:px-[14px] sm:ml-[6px]">Ранній доступ</a>
     </div>
   </nav>
@@ -68,7 +70,7 @@
       </div>
     </div>
 
-    <p data-reveal data-d="50" class="t-small font-semibold text-[#595959]"><a href="index.html" class="hover:text-[#138cd1]">Головна</a> <span aria-hidden="true" class="mx-[6px] text-[#8d95aa]">/</span> <span class="text-[#138cd1]">Блог</span></p>
+    <p data-reveal data-d="50" class="t-small font-semibold text-[#595959]"><a href="/" class="hover:text-[#138cd1]">Головна</a> <span aria-hidden="true" class="mx-[6px] text-[#8d95aa]">/</span> <span class="text-[#138cd1]">Блог</span></p>
     <h1 data-reveal data-d="100" class="t-h1 mx-auto mt-[16px] max-w-[820px]">Блог про здоров’я <span class="brand">гризунів</span></h1>
     <p data-reveal data-d="200" class="t-lead mx-auto mt-[20px] max-w-[640px] text-[var(--ink)]">Харчування, симптоми, догляд і невідкладні стани — коротко й зрозуміло. Обирайте свого улюбленця або шукайте за ключовим словом.</p>
 
@@ -144,7 +146,7 @@
         <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="assets/akariconstiktokfill.svg"></a>
         <a href="mailto:roddihealth@gmail.com" aria-label="Email" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="assets/griddyiconsemailfilled.svg"></a>
       </div>
-      <a href="index.html" class="flex justify-center gap-[8px] items-center order-1 md:order-2" aria-label="Roddi Health — на головну">
+      <a href="/" class="flex justify-center gap-[8px] items-center order-1 md:order-2" aria-label="Roddi Health — на головну">
         <img alt="" class="size-[38px]" src="assets/vector.svg">
         <span class="ff-montserrat font-semibold text-[22px] leading-[0.95] text-left">roddi<br>health</span>
       </a>

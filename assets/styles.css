@@ -227,3 +227,21 @@ input::placeholder { color: inherit; opacity: 1; }
   .lang-toggle { margin-right: 0; }
   .lang-opt { padding: 0 10px; }
 }
+
+/* ---- Phones: the email gets a full row, the button sits under it ---- */
+@media (max-width: 639px) {
+  form[data-signup] .signup { flex-wrap: wrap; gap: 6px; padding: 8px; border-radius: 30px; }
+  form[data-signup] .signup > img { margin-left: 14px; }
+  form[data-signup] .signup input { flex: 1 1 0; min-height: 52px; }
+  form[data-signup] .signup .btn { flex: 1 0 100%; min-height: 54px; padding: 0 20px; font-size: 16px; }
+}
+
+/* ---- Touch screens: small links keep a finger-sized hit area ---- */
+@media (max-width: 1023px) {
+  .lang-opt { position: relative; min-width: 44px; justify-content: center; }
+  .lang-opt::after { content: ""; position: absolute; inset: -4px 0; }
+  a[aria-label^="Roddi Health"] { position: relative; }
+  a[aria-label^="Roddi Health"]::after { content: ""; position: absolute; inset: -6px; }
+  footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  form[data-signup] label { min-height: 44px; align-items: center; }
+}

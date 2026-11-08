@@ -8,6 +8,9 @@
 var FORMS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwV8yi4dIDTwzk0D9J8BdZtBD7E0UUmvbaG2zolA2Aix3fpQPzN3P4qlX44SsiL4ua_dg/exec';
 
 var RoddiForms = (function () {
+  // Page language picks the text; en/*.html are built with lang="en".
+  var IS_EN = document.documentElement.lang === 'en';
+  function t(uk, en) { return IS_EN ? en : uk; }
   var EMAIL_KEY = 'roddi:email';
 
   /* ---------- storage ---------- */
@@ -48,10 +51,10 @@ var RoddiForms = (function () {
 
   // Returns an error text, or null if the address looks valid.
   function problem(email) {
-    if (!email) return 'Введіть email, щоб ми могли вам написати.';
-    if (/[Ѐ-ӿ]/.test(email.split('@')[0])) return 'Схоже, частина адреси набрана кирилицею. Перевірте розкладку.';
+    if (!email) return t('Введіть email, щоб ми могли вам написати.', 'Enter your email so we can reach you.');
+    if (/[Ѐ-ӿ]/.test(email.split('@')[0])) return t('Схоже, частина адреси набрана кирилицею. Перевірте розкладку.', 'Part of the address seems to be in Cyrillic. Check your keyboard layout.');
     if (!EMAIL_RE.test(email) || /\.\./.test(email) || /^\.|\.@|@\./.test(email))
-      return 'Перевірте адресу: вона має виглядати як name@gmail.com.';
+      return t('Перевірте адресу: вона має виглядати як name@gmail.com.', 'Please check the address. It should look like name@gmail.com.');
     return null;
   }
 
@@ -97,22 +100,22 @@ var RoddiForms = (function () {
       var fix = suggestion(email);
       if (fix && confirmed !== email) {
         confirmed = email;
-        show('Можливо, ви мали на увазі <button type="button" class="form-fix">' + fix + '</button>? ' +
-             'Якщо адреса правильна, натисніть кнопку ще раз.', 'hint');
+        show(t('Можливо, ви мали на увазі ', 'Did you mean ') + '<button type="button" class="form-fix">' + fix + '</button>? ' +
+             t('Якщо адреса правильна, натисніть кнопку ще раз.', 'If your address is correct, press the button again.'), 'hint');
         msg.querySelector('.form-fix').addEventListener('click', function () {
           input.value = fix; show(''); input.focus();
         });
         return;
       }
-      if (consent && !consent.checked) { show('Поставте позначку, що погоджуєтесь отримувати листи.'); consent.focus(); return; }
+      if (consent && !consent.checked) { show(t('Поставте позначку, що погоджуєтесь отримувати листи.', 'Please tick the box to agree to receive emails.')); consent.focus(); return; }
 
       button.disabled = true;
       send('signup', { email: email, form: form.dataset.form || '' }).then(function () {
         try { sessionStorage.setItem(EMAIL_KEY, email); } catch (e) {}
-        location.href = 'thank-you.html';
+        location.href = IS_EN ? '/en/thank-you.html' : 'thank-you.html';
       }, function () {
         button.disabled = false;
-        show('Не вдалося надіслати. Перевірте інтернет і спробуйте ще раз.');
+        show(t('Не вдалося надіслати. Перевірте інтернет і спробуйте ще раз.', 'Couldn’t send that. Check your connection and try again.'));
       });
     });
   }
