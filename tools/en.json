@@ -7,7 +7,6 @@
   "script": {
     "'\\u00a0'); }": "','); }",
     "Фото з Wikimedia Commons": "Photo from Wikimedia Commons",
-    "'Невідкладне'": "'Urgent'",
     ">Читати<": ">Read<",
     "★ Головне": "★ Featured",
     "Читати статтю": "Read article",
@@ -35,6 +34,8 @@
     "Питання": "FAQ",
     "Блог": "Blog",
     "Мова сайту": "Site language",
+    "Меню": "Menu",
+    "Закрити меню": "Close menu",
     "Ранній доступ": "Early access",
     "Усе про здоров’я вашого гризуна — в одному додатку": "Everything about your rodent’s health, in one app",
     "Нагадування про ліки, облік симптомів, ваги й візитів до ветеринара. Уся історія лікування завжди під рукою, навіть якщо у вас кілька улюбленців.": "Medication reminders, plus a log of symptoms, weight and vet visits. Your pet’s full treatment history is always at hand, even if you have several.",

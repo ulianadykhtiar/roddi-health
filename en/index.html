@@ -20,6 +20,21 @@
 </head>
 <body>
 
+<dialog id="site-menu" class="site-menu" aria-label="Menu">
+  <div class="site-menu-inner">
+    <div class="flex items-center justify-between">
+      <a href="/en/" class="flex items-center gap-[8px]" aria-label="Roddi Health home">
+        <img alt="" class="size-[34px]" src="/assets/vector.svg">
+        <span class="ff-montserrat text-[19px] font-semibold leading-[0.95] text-[#17171c]">roddi<br>health</span>
+      </a>
+      <button type="button" data-menu-close class="menu-close" aria-label="Close menu"><svg aria-hidden="true" class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="mt-[24px]">
+      <a href="/en/blog.html" class="site-menu-link">Blog <svg aria-hidden="true" class="size-[20px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </nav>
+  </div>
+</dialog>
+
 
 <header class="relative overflow-hidden lg:rounded-b-[100px] bg-white">
   <div class="breathe absolute left-1/2 -translate-x-1/2 top-[-305px] size-[427px] pointer-events-none" aria-hidden="true">
@@ -39,6 +54,7 @@
     </a>
     <div class="flex items-center justify-end gap-[6px] sm:gap-[10px]">
       
+      <button type="button" data-menu-open class="menu-btn" aria-label="Menu" aria-haspopup="dialog" aria-controls="site-menu"><svg aria-hidden="true" class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
       <div class="lang-toggle" role="group" aria-label="Site language">
         <a href="/" class="lang-opt" lang="uk" hreflang="uk">UA</a>
         <span class="lang-opt is-active" lang="en" aria-current="true">EN</span>
@@ -47,7 +63,7 @@
       <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" class="btn-mono btn btn-sm hidden sm:inline-flex w-[44px] px-0"><span class="icon-mask size-[20px]" style="-webkit-mask-image:url(/assets/biinstagram.svg);mask-image:url(/assets/biinstagram.svg)"></span></a>
       <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok" class="btn-mono btn btn-sm hidden sm:inline-flex w-[44px] px-0"><span class="icon-mask size-[20px]" style="-webkit-mask-image:url(/assets/akariconstiktokfill.svg);mask-image:url(/assets/akariconstiktokfill.svg)"></span></a>
       
-      <a href="/en/blog.html" class="btn btn-mono btn-sm lg:hidden px-[12px] sm:px-[16px]">Blog</a>
+      <a href="/en/blog.html" class="btn btn-mono btn-sm max-sm:hidden lg:hidden px-[12px] sm:px-[16px]">Blog</a>
       <a href="#early-access" class="btn btn-navy btn-sm max-sm:px-[14px] sm:ml-[6px]">Early access</a>
     </div>
   </nav>
@@ -1177,5 +1193,6 @@
   });
 </script>
 <script src="/assets/forms.js"></script>
+<script src="/assets/menu.js"></script>
 </body>
 </html>
