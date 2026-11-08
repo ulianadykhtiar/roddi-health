@@ -272,4 +272,8 @@ form[data-signup] .signup > img { opacity: .643; } /* the icon is already 70% #2
 .pet-carousel { --pet-w: clamp(180px, 21vw, 300px); position: relative; height: calc(var(--pet-w) * 1.25 + var(--arc-room, clamp(112px, 17.7vw - 130px, 240px))); overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
 .pet-card { position: absolute; top: 16px; left: 0; width: var(--pet-w); aspect-ratio: 4 / 5; padding: 7px; border-radius: 28px; background: #fff; box-shadow: 0 1px 3px rgba(5,50,71,.10), 0 6px 14px -8px rgba(5,50,71,.20); will-change: transform; }
 .pet-card img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 21px; pointer-events: none; }
-@media (max-width: 767px) { .pet-carousel { --pet-w: min(62vw, 280px); --arc-room: 76px; } }
+@media (max-width: 767px) {
+  .pet-carousel { --pet-w: min(54vw, 250px); --arc-room: 76px; }
+  .pet-card { padding: 0; background: none; box-shadow: none; }
+  .pet-card img { border-radius: 24px; }
+}
