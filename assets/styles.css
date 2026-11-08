@@ -1,0 +1,229 @@
+/* Declared before Tailwind's own layers so its utilities always win over these. */
+@layer components;
+:root {
+  --ink: #2a2a2a; --navy: #053247; --blue: #138cd1; --yellow: #fdd457;
+  --sky: #e5f4fd; --muted: #595959;
+}
+html { scroll-behavior: smooth; }
+html, body { margin: 0; background: #fff; overflow-x: clip; }
+body { font-family: 'Manrope', sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+.ff-manrope { font-family: 'Manrope', sans-serif; }
+.ff-montserrat { font-family: 'Montserrat', sans-serif; }
+.ff-impact { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+.ff-hand { font-family: 'Bradley Hand', 'Segoe Script', cursive; }
+.ff-sf { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif; }
+
+@layer components {
+/* ---- Type scale: one style per level, used everywhere ---- */
+/* Line heights: headings use "1em + a fixed gap", so the ratio tightens as
+   the fluid size grows (H1 ≈1.09 at 64px, ≈1.17 at 36px; H2 ≈1.15 → 1.25)
+   — big display type needs less leading, small headings more. Reading text
+   is set compact at 1.3 (design choice; tighter than WCAG's 1.5 guideline,
+   and the layout still reflows if users raise it). 1.3 rather than 1.2
+   leaves room for Cyrillic marks (й, ї, Й). Headings balance their lines
+   so they don't leave a lone word on the last line. */
+.t-h1, .t-h2, .t-h3, .t-h4 { text-wrap: balance; }
+.t-h1    { font-weight: 700; font-size: clamp(36px, 5.6vw, 64px); line-height: calc(1em + 6px);  letter-spacing: -0.045em; }
+.t-h2    { font-weight: 700; font-size: clamp(32px, 4.2vw, 54px); line-height: calc(1em + 8px);  letter-spacing: -0.04em; }
+.t-h3    { font-weight: 700; font-size: clamp(22px, 2.2vw, 30px); line-height: calc(1em + 6px);  letter-spacing: -0.025em; }
+.t-h4    { font-weight: 700; font-size: clamp(17px, 1.4vw, 20px); line-height: calc(1em + 7px);  letter-spacing: -0.02em; }
+.t-lead  { font-weight: 400; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.3; letter-spacing: -0.015em; }
+.t-body  { font-weight: 400; font-size: 16px; line-height: 1.3; letter-spacing: -0.01em; }
+.t-small { font-weight: 400; font-size: 14px; line-height: 1.35; }
+.t-label { font-weight: 700; font-size: 12px; line-height: 1.35; letter-spacing: 0.08em; text-transform: uppercase; }
+.brand   { color: var(--blue); }
+
+/* ---- Buttons ---- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 26px;
+       border-radius: 999px; font-weight: 800; font-size: 16px; line-height: 21px; white-space: nowrap;
+       transition: filter .15s, background-color .15s, translate .25s var(--ease), box-shadow .25s var(--ease); }
+.btn:hover { filter: brightness(1.08); translate: 0 -2px; box-shadow: 0 8px 16px -10px rgba(19,90,140,.30); }
+.btn:active { translate: 0 0; box-shadow: none; }
+.btn-navy   { background: var(--navy); color: #fff; }
+.btn-blue   { background: var(--blue); color: #fff; }
+.btn-yellow { background: var(--yellow); color: #101a3a; }
+.btn-outline { border: 2px solid var(--navy); color: var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; filter: none; }
+/* TikTok brand: black with the logo's cyan/pink offset glow. */
+.btn-tiktok { background: #010101; color: #fff; box-shadow: -3px -2px 0 0 #25f4ee, 3px 2px 0 0 #fe2c55; }
+.btn-tiktok img { filter: drop-shadow(-1.5px -1px 0 #25f4ee) drop-shadow(1.5px 1px 0 #fe2c55); }
+.btn-tiktok:hover { box-shadow: -4px -3px 0 0 #25f4ee, 4px 3px 0 0 #fe2c55; }
+/* Quiet brand-coloured icon buttons (header socials): the SVG is used as a
+   mask so it takes the text colour. */
+.btn-mono { background: var(--sky); color: var(--navy); }
+.btn-mono:hover { background: var(--navy); color: #fff; filter: none; }
+.btn-soft { background: #f4f1e7; color: var(--navy); }
+.btn-soft:hover { background: var(--navy); color: #fff; filter: none; translate: none; box-shadow: none; }
+.lang-toggle { display: flex; align-items: center; height: 44px; padding: 4px; border-radius: 999px; background: var(--sky); margin-right: 4px; }
+.lang-opt { display: flex; align-items: center; height: 36px; padding: 0 13px; border-radius: 999px;
+            font-size: 14px; font-weight: 700; color: rgba(5,50,71,.5); transition: color .15s, background-color .15s; }
+a.lang-opt:hover { color: var(--navy); }
+.lang-opt.is-active { background: #fff; color: var(--navy); box-shadow: 0 1px 2px rgba(5,50,71,.10); }
+/* Set the icon inline: style="-webkit-mask-image:url(assets/x.svg);mask-image:url(assets/x.svg)". (A url() inside a CSS variable would resolve against this file's folder.) */
+.icon-mask { display: inline-block; background: currentColor; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.btn-sm { min-height: 44px; padding: 0 22px; font-size: 14px; }
+.link { text-decoration: underline; text-underline-offset: 3px; }
+.link:hover { color: var(--blue); }
+
+/* ---- Email form pill ---- */
+.signup { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 600px; border-radius: 999px; padding: 8px 8px 8px 24px; }
+.signup input { flex: 1; min-width: 0; background: transparent; outline: none; font-size: 16px; }
+@media (max-width: 479px) {
+  .signup { padding: 6px 6px 6px 18px; }
+  .signup .btn { min-height: 46px; padding: 0 16px; font-size: 14px; }
+}
+
+/* A "stage" keeps a fixed-size piece of the Figma canvas and scales it to the
+   width it is given. --w/--h is the visible region, --x/--y its offset. */
+.stage { position: relative; overflow: hidden; width: 100%; max-width: calc(var(--w) * 1px); }
+.stage > .stage-inner { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+.stage-cover { position: absolute; inset: 0; max-width: none; }
+
+.wave { position: absolute; left: 0; width: 100%; height: 55px; pointer-events: none; transform: scaleY(-1); }
+/* Meme captions: uppercase Impact with a classic black outline (stroke painted under the fill). */
+.meme-caps p, .meme-caps span { text-transform: uppercase; }
+.meme-caps .ff-impact, .meme-caps .ff-impact * { -webkit-text-stroke: 4px #000; paint-order: stroke fill; }
+
+/* ---- Animal tags: endless loop ---- */
+.marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+           mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee-track { display: flex; width: max-content; }
+.marquee-track > ul { display: flex; gap: 10px; padding-right: 10px; }
+
+@media (max-width: 767px) {
+  .polaroids-mobile > div { margin: 0 !important; zoom: .56; }
+}
+
+.faq summary { list-style: none; cursor: pointer; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary img { transition: transform .2s ease; }
+.faq details[open] summary img { transform: rotate(180deg); }
+.faq details[open] { background: #f4f9fd; }
+
+}
+/* ---- Motion ---- */
+:root { --ease: cubic-bezier(.16, 1, .3, 1); --spring: cubic-bezier(.34, 1.56, .64, 1); }
+@keyframes floaty  { 0%, 100% { translate: 0 0; } 50% { translate: 0 var(--amp, -10px); } }
+@keyframes wiggle  { 0%, 84%, 100% { rotate: 0deg; } 88% { rotate: -5deg; } 92% { rotate: 4deg; } 96% { rotate: -2deg; } }
+@keyframes doodle  { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: 5px 8px; rotate: 7deg; } }
+@keyframes breathe { 0%, 100% { scale: 1; } 50% { scale: 1.06; } }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes shimmer { to { background-position: -200% 0; } }
+@keyframes shine   { 0% { transform: translateX(-130%) skewX(-20deg); } 35%, 100% { transform: translateX(260%) skewX(-20deg); } }
+@keyframes faq-in  { from { opacity: 0; transform: translateY(-8px); } }
+@keyframes blink   { 50% { opacity: 0; } }
+@keyframes pulse   { 0% { box-shadow: 0 0 0 0 rgba(19,140,209,.55); } 70%, 100% { box-shadow: 0 0 0 10px rgba(19,140,209,0); } }
+@keyframes hop     { 40% { translate: 0 -5px; scale: 1.12; } 70% { translate: 0 1px; scale: .96; } }
+
+.lift { transition: translate .35s var(--ease), box-shadow .35s var(--ease); }
+.lift:hover { translate: 0 -6px; box-shadow: 0 16px 32px -20px rgba(19,90,140,.18); }
+.hop:hover > img { animation: hop .5s var(--ease); }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Reveal on entering the viewport: [data-reveal] (variant) + [data-d] (delay, ms). */
+  .js [data-reveal] {
+    opacity: 0; transform: var(--from, translateY(32px));
+    transition: opacity .7s var(--ease) var(--d, 0ms), transform .9s var(--ease) var(--d, 0ms),
+                clip-path 1.1s var(--ease) var(--d, 0ms), translate .35s var(--ease), scale .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  .js [data-reveal].is-in { opacity: 1; transform: none; }
+  [data-reveal="down"]  { --from: translateY(-24px); }
+  [data-reveal="zoom"]  { --from: scale(.9); }
+  [data-reveal="pop"]   { --from: scale(.55); }
+  [data-reveal="rise"]  { --from: translateY(140px); }
+  [data-reveal="left"]  { --from: translateX(-56px); }
+  [data-reveal="right"] { --from: translateX(56px); }
+  [data-reveal="drop"]  { --from: translateY(-70px) rotate(-12deg) scale(1.12); }
+  [data-reveal="toss"]  { --from: translateY(90px) rotate(16deg) scale(.8); }
+  [data-reveal="tilt"]  { --from: rotate(-12deg) scale(.86); }
+  [data-reveal="fade"]  { --from: none; }
+  [data-reveal="grow"]  { --from: scaleX(0); }
+  [data-reveal="fly"]   { --from: translate(calc(var(--fx, 0) * 1px), calc(var(--fy, 0) * 1px)) scale(.35); }
+  .js [data-reveal="fly"] { transition-duration: .5s, 1.1s, 1.1s, .35s, .35s, .35s; }
+  .js [data-reveal="line"] { transform: none; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.6s var(--ease) var(--d, 0ms); }
+  .js [data-reveal="line"].is-in { stroke-dashoffset: 0; }
+  .js .ring-progress { stroke-dashoffset: 94.25; transition: stroke-dashoffset 1.4s var(--ease) .7s; }
+  .js .stage.is-in .ring-progress { stroke-dashoffset: 47; }
+  .caret::after { content: ""; display: inline-block; width: 2px; height: 1.1em; margin-left: 2px; vertical-align: -0.2em; background: #138cd1; animation: blink 1s steps(1) infinite; }
+  .pulse { animation: pulse 2.2s ease-out 1.6s infinite; }
+  .js [data-reveal="pop"], .js [data-reveal="toss"], .js [data-reveal="tilt"] {
+    transition-timing-function: var(--ease), var(--spring), var(--ease), var(--ease), var(--ease), var(--ease);
+  }
+  .js [data-reveal="draw"] { transform: none; clip-path: inset(0 100% 0 0); }
+  .js [data-reveal="draw"].is-in { clip-path: inset(0 0 0 0); }
+
+  /* Idle loops */
+  .float   { animation: floaty var(--dur, 6s) ease-in-out var(--fd, 0s) infinite; }
+  .wiggle  { animation: wiggle 5s ease-in-out var(--fd, 1.6s) infinite; transform-origin: 50% 100%; }
+  .doodle  { animation: doodle 3.4s ease-in-out infinite; }
+  .breathe { animation: breathe 9s ease-in-out infinite; }
+  .shimmer { background: linear-gradient(90deg, #e5f4fd 0%, #f8fcfe 40%, #e5f4fd 80%) 0 0 / 200% 100%; animation: shimmer 2.2s linear infinite; }
+  .btn-shine { position: relative; overflow: hidden; isolation: isolate; }
+  .btn-shine::after { content: ""; position: absolute; inset: 0 auto 0 0; width: 45%; pointer-events: none;
+                      background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent); animation: shine 5s ease-in-out 1.8s infinite; }
+  .marquee-track { animation: marquee var(--speed, 45s) linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  [data-hover="polaroid"]:hover { scale: 1.07; z-index: 5; }
+  .faq details[open] > p { animation: faq-in .4s var(--ease); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee { overflow-x: auto; }
+}
+@supports (interpolate-size: allow-keywords) {
+  @media (prefers-reduced-motion: no-preference) {
+    :root { interpolate-size: allow-keywords; }
+    .faq details::details-content { height: 0; overflow: clip; transition: height .4s var(--ease), content-visibility .4s allow-discrete; }
+    .faq details[open]::details-content { height: auto; }
+  }
+}
+
+/* Sign-up form messages: errors, and "did you mean…?" typo hints. */
+.form-msg { font-size: 14px; line-height: 1.4; text-align: center; color: #c62828; }
+.form-msg[data-kind="hint"] { color: #8a6100; }
+.form-msg-dark { color: #ffb4b4; }
+.form-msg-dark[data-kind="hint"] { color: #fdd457; }
+.form-fix { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.signup:has(input[aria-invalid="true"]) { box-shadow: 0 0 0 2px #e5484d; }
+button:disabled { opacity: .6; cursor: progress; }
+input::placeholder { color: inherit; opacity: 1; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+/* ---- Blog ---- */
+/* Header button of the page you're on. */
+.btn-mono[aria-current="page"] { background: var(--navy); color: #fff; }
+/* Rodent filter chips: same pill as the "Для кого" tags, filled when chosen. */
+.chip { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; border: 2px solid rgba(5,66,101,.2);
+        background: #fff; padding: 8px 16px; font-weight: 600; font-size: 16px; line-height: 1.3; white-space: nowrap; cursor: pointer;
+        transition: border-color .15s, color .15s, background-color .15s, translate .25s var(--ease); }
+.chip:hover { border-color: var(--blue); color: var(--blue); }
+.chip[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.chip .chip-n { font-size: 12px; font-weight: 700; min-width: 22px; padding: 1px 7px; border-radius: 999px; background: var(--sky); color: var(--navy); text-align: center; }
+.chip[aria-pressed="true"] .chip-n { background: rgba(255,255,255,.18); color: #fff; }
+.chip:disabled { opacity: .45; cursor: default; }
+.chip:disabled:hover { border-color: rgba(5,66,101,.2); color: inherit; }
+@media (min-width: 768px) { .chip { padding: 10px 20px; } }
+.blog-search input::-webkit-search-cancel-button { display: none; }
+.blog-card mark { background: rgba(253,212,87,.7); color: inherit; border-radius: 4px; padding: 0 2px; }
+.blog-card--hero mark { background: rgba(253,212,87,.9); color: #101a3a; }
+.blog-hero-title { font-size: clamp(28px, 3vw, 42px); }
+/* Polaroid photo: tilted a little (--tilt), straightens on hover. Sticker: rotated label. */
+.polaroid { rotate: var(--tilt, 0deg); transition: rotate .5s var(--spring), scale .5s var(--ease); }
+.group:hover .polaroid { rotate: 0deg; scale: 1.015; }
+.sticker { rotate: var(--st, -5deg); transition: rotate .5s var(--spring); }
+.group:hover .sticker { rotate: calc(var(--st, -5deg) * -1); }
+@keyframes card-in { from { opacity: 0; transform: translateY(24px); } }
+@keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(229,72,77,.6); } 70%, 100% { box-shadow: 0 0 0 7px rgba(229,72,77,0); } }
+@media (prefers-reduced-motion: no-preference) {
+  .blog-card { animation: card-in .6s var(--ease) both; animation-delay: calc(var(--i, 0) * 60ms); }
+  .pulse-red { animation: pulse-red 1.8s ease-out infinite; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .polaroid, .sticker { transition: none; }
+}
+
+/* Phones: a tighter language toggle so the logo, blog and CTA buttons fit in the header. */
+@media (max-width: 639px) {
+  .lang-toggle { margin-right: 0; }
+  .lang-opt { padding: 0 10px; }
+}
