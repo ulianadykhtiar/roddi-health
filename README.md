@@ -11,6 +11,7 @@
 - `assets/styles.css` — стилі, спільні для головної та блогу.
 - `assets/blog-posts.js` — дані блогу: статті, гризуни, теми. Сторінка будується з цього списку.
 - `assets/blog/` — фото блогу з Wikimedia Commons.
+- `assets/clarity.js` — підключення Microsoft Clarity, працює лише на roddihealth.app.
 - `google-apps-script.gs` — код для Google Таблиці, куди зберігатимуться email і відповіді.
 
 ## Як відкрити локально
