@@ -8,8 +8,8 @@
   var SPEED = 30;      // px per second (drift)
   var HOLD = 2600;     // ms a card stays centred (phones)
   var SNAP = 320;      // ms of the change to the next card (phones)
-  var TILT = 4.5;      // degrees per card away from the centre
-  var DROP = 7;        // px of drop, grows with distance squared
+  var TILT = 4.5, PHONE_TILT = 6;   // degrees per card away from the centre
+  var DROP = 7, PHONE_DROP = 30;    // px of drop, grows with distance squared
   var MAX_TILT = 14;
 
   // A second copy keeps the row full on very wide screens.
@@ -32,8 +32,8 @@
       var x = ((i * step - pos) % loop + loop) % loop;
       if (x >= loop / 2) x -= loop;
       var t = x / step;
-      var tilt = Math.max(-MAX_TILT, Math.min(MAX_TILT, t * TILT));
-      c.style.transform = 'translate3d(' + (centre + x - cardW / 2).toFixed(1) + 'px,' + (t * t * DROP).toFixed(1) + 'px,0) rotate(' + tilt.toFixed(2) + 'deg)';
+      var tilt = Math.max(-MAX_TILT, Math.min(MAX_TILT, t * (phone.matches ? PHONE_TILT : TILT)));
+      c.style.transform = 'translate3d(' + (centre + x - cardW / 2).toFixed(1) + 'px,' + (t * t * (phone.matches ? PHONE_DROP : DROP)).toFixed(1) + 'px,0) rotate(' + tilt.toFixed(2) + 'deg)';
     });
   }
 
