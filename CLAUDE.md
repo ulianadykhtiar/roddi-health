@@ -24,4 +24,4 @@
 
 ## Форми
 
-`FORMS_ENDPOINT` в `assets/forms.js` поки порожній, тому заявки нікуди не надходять. Не вставляйте туди реальну адресу без підтвердження власниці.
+`FORMS_ENDPOINT` в `assets/forms.js` — адреса вебзастосунку Apps Script, що пише в Google Таблицю «Roddi Health — заявки» (вкладки Emails і Survey). Заявки з localhost теж потрапляють у Таблицю. Після зміни `google-apps-script.gs` код треба вставити в Apps Script і оновити наявне розгортання (Deploy → Manage deployments → Edit → New version), щоб адреса не змінилася.

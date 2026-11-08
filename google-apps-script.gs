@@ -1,4 +1,6 @@
 /**
+ * @OnlyCurrentDoc
+ *
  * Roddi Health — receives sign-ups and survey answers from the website and
  * stores them in this Google Sheet ("Emails" and "Survey" tabs).
  *

@@ -5,13 +5,14 @@
  * "Emails" and "Survey"). While it is empty, submissions are kept in this
  * browser's localStorage only, so the flow can be tried locally.
  */
-var FORMS_ENDPOINT = '';
+var FORMS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwV8yi4dIDTwzk0D9J8BdZtBD7E0UUmvbaG2zolA2Aix3fpQPzN3P4qlX44SsiL4ua_dg/exec';
 
 var RoddiForms = (function () {
   var EMAIL_KEY = 'roddi:email';
 
   /* ---------- storage ---------- */
   function send(type, data) {
+    if (window.clarity) window.clarity('event', type);
     var payload = Object.assign({ type: type, page: location.pathname, sentAt: new Date().toISOString() }, data);
     if (!FORMS_ENDPOINT) {
       try {
