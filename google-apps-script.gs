@@ -30,7 +30,7 @@ function doPost(e) {
       // One row per address: a repeat sign-up is ignored.
       var known = emails.getLastRow() > 1 ? emails.getRange(2, 2, emails.getLastRow() - 1, 1).getValues() : [];
       if (known.some(function (r) { return String(r[0]).toLowerCase() === email; })) return reply('duplicate');
-      emails.appendRow([new Date(), email, clean(data.form), clean(data.page)]);
+      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page)]);
       return reply('ok');
     }
     if (data.type === 'email-change') {
@@ -40,15 +40,15 @@ function doPost(e) {
       var rows = list.getLastRow() > 1 ? list.getRange(2, 2, list.getLastRow() - 1, 1).getValues() : [];
       for (var i = 0; i < rows.length; i++) {
         if (String(rows[i][0]).toLowerCase() === old) {
-          list.getRange(i + 2, 2).setValue(email);
+          list.getRange(i + 2, 2).setValue(clean(email));
           return reply('ok');
         }
       }
-      list.appendRow([new Date(), email, 'email-change', clean(data.page)]);
+      list.appendRow([new Date(), clean(email), 'email-change', clean(data.page)]);
       return reply('ok');
     }
     if (data.type === 'survey') {
-      sheet('Survey').appendRow([new Date(), email, clean(data.pets), clean(data.count), clean(data.lastMeds),
+      sheet('Survey').appendRow([new Date(), clean(email), clean(data.pets), clean(data.count), clean(data.lastMeds),
                                  clean(data.phone), clean(data.beta), clean(data.note)]);
       return reply('ok');
     }
