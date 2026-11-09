@@ -146,10 +146,6 @@ header:has(> nav) .btn-mono:not([aria-current="page"]):hover {
 .pet-tags { display: flex; flex-wrap: nowrap; justify-content: safe center; gap: 8px; width: 100vw; padding-inline: 20px; overflow-x: auto; scrollbar-width: none; }
 .pet-tags::-webkit-scrollbar { display: none; }
 .pet-tags > * { flex: none; white-space: nowrap; }
-
-/* The story block is square on phones. */
-@media (max-width: 767px) { .story { aspect-ratio: 1 / 1; max-width: none; } }
-
 /* Story comments: a round avatar and a dark chat bubble with a tail. */
 .story-c { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; gap: 8px; opacity: 0; translate: 0 10px; transition: opacity .45s var(--ph-ease), translate .45s var(--ph-ease); }
 .story-c.is-on { opacity: 1; translate: 0 0; }
@@ -223,3 +219,8 @@ header:has(> nav) > nav > div:first-child a[aria-current="page"] { color: #17171
 .meme-row.is-carousel .meme-clone { display: flex; }
 .meme-row.is-carousel .think { min-height: 92px; }
 .meme-row.is-carousel img { pointer-events: none; }
+
+/* Early access on phones: a slightly smaller line under the title. */
+@media (max-width: 639px) { section.bg-\[\#141416\] > p.t-lead { font-size: 16px; line-height: 1.4; } }
+
+.site-menu:focus { outline: none; }
