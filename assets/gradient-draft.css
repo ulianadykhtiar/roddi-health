@@ -5,11 +5,6 @@
 @keyframes hg-pan { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-4%, 3%) scale(1.1); } 100% { transform: translate(3%, -3%) scale(1.04); } }
 
 /* ---------------- hero ---------------- */
-/* The soft circle behind the logo: a warm pink-peach glow instead of grey. */
-header:has(> nav) > .breathe { filter: none; opacity: 1; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(246,190,206,.8) 0%, rgba(249,206,186,.45) 52%, rgba(255,255,255,0) 78%); }
-header:has(> nav) > .breathe img { display: none; }
-
 /* A dome of soft colour behind the phone: the picture fades out towards the edge, like light. */
 .hg-dome { overflow: hidden; border-radius: 50%;
   -webkit-mask-image: radial-gradient(closest-side, #000 91%, rgba(0,0,0,0) 100%); mask-image: radial-gradient(closest-side, #000 91%, rgba(0,0,0,0) 100%); }

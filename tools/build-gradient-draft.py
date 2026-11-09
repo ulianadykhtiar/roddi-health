@@ -4,8 +4,7 @@ of the feature cards used in more places.
     python3 tools/build-gradient-draft.py
 
 Reads index.html (so run it again after the homepage changes) and
-  - replaces the pale circles behind the phone in the hero with a dome of soft colour,
-    and gives the glow behind the logo a warm tint,
+  - replaces the pale circles behind the phone in the hero with a dome of soft colour
   - turns "До і після" into one big gradient panel with a frosted table,
   - gives the "Залишилися питання?" card in the FAQ a gradient.
 Styles: assets/gradient-draft.css. The page is noindex and not linked anywhere.
