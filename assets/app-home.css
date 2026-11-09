@@ -113,14 +113,6 @@ header:has(> nav) .btn-mono:not([aria-current="page"]):hover {
 
 /* "What Roddi Health can do": pinned list with cards scrolling past it. */
 /* Variant C: the pinned list and the panels that scroll by. */
-.feat-link { display: flex; gap: 16px; align-items: flex-start; padding: 16px; border-radius: 22px; color: var(--ph-ink); transition: background-color .3s var(--ph-ease), color .3s; }
-.feat-link:hover { background: #fff; }
-.feat-num { display: flex; flex: none; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 14px; background: #fff; font: 500 14px ui-monospace, 'SF Mono', Menlo, monospace; color: var(--ph-ink); }
-.feat-sub { color: var(--ph-muted); }
-.feat-link.is-active { background: var(--ph-ink); color: #fff; }
-.feat-link.is-active .feat-sub { color: rgba(255,255,255,.65); }
-.feat-panel { padding: 24px; border-radius: 32px; background: var(--ph-soft); }
-@media (min-width: 1024px) { .feat-panel { min-height: 78vh; padding: 40px; display: flex; flex-direction: column; justify-content: center; } }
 
 /* Story montage: stacked videos, one live at a time, with a slow push-in. */
 .story-stage { position: absolute; inset: 0; cursor: pointer; }
@@ -154,9 +146,16 @@ header:has(> nav) .btn-mono:not([aria-current="page"]):hover {
 .story-c p { position: relative; max-width: calc(100% - 64px); margin-bottom: 4px; padding: 10px 14px; border-radius: 20px; background: #fff; color: #0f0f11; font-size: 14px; line-height: 1.3; }
 .story-c p::before { content: ""; position: absolute; left: -3px; bottom: -3px; width: 16px; height: 14px; background: inherit; clip-path: polygon(100% 0, 100% 72%, 0 100%, 34% 40%); }
 
-/* Header: compact language switch, text links with a hover underline. */
-header:has(> nav) .lang-toggle { height: 30px; padding: 2px; margin-right: 0; }
-header:has(> nav) .lang-opt { height: 26px; min-width: 0; padding: 0 7px; font-size: 12px; font-weight: 600; }
+/* Header: language switch and CTA as in the redesign draft (same markup as before), text links with a hover underline. */
+header:has(> nav) .lang-toggle { display: flex; align-items: center; height: auto; padding: 3px; margin-right: 0; border-radius: 999px; background: #f4f5f7; }
+header:has(> nav) .lang-opt { display: flex; align-items: center; justify-content: center; height: 36px; min-width: 38px; padding: 0 10px; border-radius: 999px; font-size: 13px; font-weight: 600; color: #a2a6ad; transition: color .15s, background-color .15s; }
+header:has(> nav) a.lang-opt:hover { color: #0f0f11; }
+header:has(> nav) .lang-opt.is-active { background: #fff; color: #0f0f11; box-shadow: 0 1px 2px rgba(15,15,17,.08); }
+header:has(> nav) > nav .btn-navy { min-height: 42px; padding: 0 18px; border-radius: 999px; background: #0f0f11; color: #fff; font-size: 14px; font-weight: 500; }
+@media (max-width: 639px) {
+  header:has(> nav) .lang-opt { height: 30px; min-width: 34px; padding: 0 8px; }
+  header:has(> nav) > nav .btn-navy { min-height: 36px; padding: 0 14px; font-size: 13px; }
+}
 header:has(> nav) > nav > div:first-child a { text-underline-offset: 6px; text-decoration-thickness: 1.5px; transition: color .15s; }
 header:has(> nav) > nav > div:first-child a:hover,
 header:has(> nav) > nav > div:first-child a[aria-current="page"] { color: #17171c; text-decoration-line: underline; }
@@ -309,19 +308,6 @@ header .fx-push-top small { display: none; }
 .hv-bar i { display: block; width: 32%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #f7a23e, #e8791a); }
 .hv-txt small { display: block; margin-top: 5px; color: #8c8c94; font-size: 12px; font-weight: 500; white-space: nowrap; }
 
-/* Features, desktop: side margins 15% wider (92px instead of 80px at 1440). */
-@media (min-width: 1024px) {
-  .feat-panel { min-height: min(72vh, 600px); padding: 14px; justify-content: flex-start; border-radius: 34px; }
-  .feat-panel > p { margin-inline: 26px; }
-  .feat-panel > p:not(.feat-lead) { margin-top: 26px; }
-  .feat-panel > p.feat-lead { max-width: 640px; margin-bottom: 30px; font-size: 25px; font-weight: 500; line-height: 1.26; letter-spacing: -0.02em; }
-  .feat-show { display: flex; flex: 1; align-items: center; justify-content: center; min-height: 320px; padding: 32px; border-radius: 24px; background: radial-gradient(90% 90% at 50% 100%, #efd7e7 0%, rgba(239,215,231,0) 100%), #faf3f8; }
-  .feat-show > * { --z: 1.26; width: 100%; max-width: min(440px, calc(100% / var(--z))); zoom: var(--z); }
-  #feat-4 .feat-show > * { --z: 1.42; }
-  .feat-show > .lg\:grid-cols-2 { --z: 1; max-width: 440px; grid-template-columns: 1fr; }
-  #features { padding-inline: 23px; }
-  #features > div { max-width: 1256px; }
-}
 
 /* Hero below desktop: the same scene, moved to fit a narrower stage. */
 .hm-sy { left: 43px; }

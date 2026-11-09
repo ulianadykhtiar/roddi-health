@@ -26,6 +26,10 @@
 
 `en/*.html` генеруються скриптом `tools/build_en.py` з українських сторінок і словника `tools/en.json`. Заголовки, описи й структуровані дані лежать у `tools/seo.json`, скрипт вставляє їх між `seo:start` і `seo:end` на всіх сторінках, а статті блогу дублює в HTML між `posts:start` і `posts:end` для ботів без JavaScript. Ці області не редагуйте вручну. У структуровані дані не додавайте відповіді із заглушками в дужках. Не редагуйте їх напряму. Після будь-якої зміни в `index.html`, `blog.html` чи `thank-you.html` запускайте скрипт: він зупиниться й покаже текст без перекладу.
 
+## Блок «Що вміє Roddi Health»
+
+Його будує `tools/build-features.py` з готових віджетів у самому скрипті, а англійський текст береться з `tools/features-en.json`. Скрипт вставляє блок в `index.html` і `en/index.html`, тож HTML цього блоку руками не правте, а змінюйте скрипт і запускайте `python3 tools/build-features.py`. Фони карток (`assets/features/soft-1..4.jpg`) малює `tools/make-feature-backgrounds.py`. Закріплення секції й ефект стопки карток — у `assets/features-pin.css` і `assets/features-pin.js`.
+
 ## Форми
 
 `FORMS_ENDPOINT` в `assets/forms.js` — адреса вебзастосунку Apps Script, що пише в Google Таблицю «Roddi Health — заявки» (вкладки Emails і Survey). Заявки з localhost теж потрапляють у Таблицю. Після зміни `google-apps-script.gs` код треба вставити в Apps Script і оновити наявне розгортання (Deploy → Manage deployments → Edit → New version), щоб адреса не змінилася. Колонка «Мова» (`uk`/`en`) береться з `lang` сторінки, з якої надіслана форма.
