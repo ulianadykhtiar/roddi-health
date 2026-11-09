@@ -308,33 +308,9 @@ header .fx-push-top small { display: none; }
 /* Hero below desktop: the same scene, moved to fit a narrower stage. */
 .hm-sy { left: 43px; }
 @media (max-width: 767px) {
-  .hm-push { left: 383px; top: 590px; width: 178px; }
-  .hm-push > div { padding: 11px 17px 11px 10px; border-radius: 16px; }
-  .hm-push .fx-push { gap: 7px; }
-  .hm-push .fx-push-ic { width: 30px; height: 30px; border-radius: 9px; }
-  .hm-push .fx-push-ic img { width: 20px; height: 20px; }
-  .hm-push .fx-push-top { display: none; }
-  .hm-push .fx-push-t b { margin: 0; font-size: 14.5px; }
-  .hm-push .fx-push-t > small { font-size: 13px; line-height: 1.2; }
-  .hm-push .hv-bell { left: -4px; top: -22px; font-size: 30px; }
-  .hm-left { left: 383px; top: 745px; width: 260px; height: 330px; }
-  .hm-sy { left: 0; width: 178px; padding: 12px 18px 12px 12px; border-radius: 16px; }
-  .hm-sy .sy { padding: 0; }
-  .hm-sy .sy-top small { display: none; }
-  .hm-sy .sy-top b { font-size: 15.5px; }
-  .hm-sy .sy-row { flex-wrap: wrap; justify-content: flex-start; gap: 7px 6px; margin-top: 9px; }
-  .hm-sy .sy-d { gap: 2px; }
-  .hm-sy .sy-d i { width: 32px; height: 32px; font-size: 18px; }
-  .hm-sy .sy-d b { font-size: 12.5px; }
-  .hm-rat { left: 44px; top: 164px; width: 156px; }
-  .hm-right { left: 902px; top: 636px; width: 190px; height: 260px; }
-  .hm-ham { left: 16px; width: 132px; }
-  .hm-dox { top: 96px; width: 184px; padding: 12px 12px 12px 30px; border-radius: 16px; }
-  .hm-dox .hv-stock { gap: 8px; align-items: flex-start; }
-  .hm-dox .hv-tile { width: 34px; height: 34px; border-radius: 10px; }
-  .hm-dox .hv-tile img { width: 25px; height: 25px; }
-  .hm-dox .hv-row { flex-direction: column; gap: 1px; }
-  .hm-dox .hv-row b, .hm-dox .hv-left { font-size: 15px; }
-  .hm-dox .hv-bar { margin-top: 6px; }
-  .hm-dox .hv-txt small { font-size: 13px; line-height: 1.2; white-space: normal; }
+  .hm-push, .hm-sy, .hm-dox { display: none; }
+  .hm-left { left: 372px; top: 884px; width: 240px; height: 266px; }
+  .hm-rat { left: 0; top: 0; width: 240px; rotate: -10deg; }
+  .hm-right { left: 905px; top: 640px; width: 190px; height: 150px; }
+  .hm-ham { left: -24px; width: 190px; rotate: 10deg; }
 }
