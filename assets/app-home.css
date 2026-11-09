@@ -224,3 +224,117 @@ header:has(> nav) > nav > div:first-child a[aria-current="page"] { color: #17171
 @media (max-width: 639px) { section.bg-\[\#141416\] > p.t-lead { font-size: 16px; line-height: 1.4; } }
 
 .site-menu:focus { outline: none; }
+
+/* Hero phone: one sharp "Evening round" card over the rest of the app, blurred. */
+header .stage { -webkit-mask-image: linear-gradient(180deg, #000 76%, transparent 92%); mask-image: linear-gradient(180deg, #000 76%, transparent 92%); }
+.fx-blank::after { z-index: 3; }
+.ph-blur { position: absolute; inset: 0; padding: 56px 14px 0; filter: blur(2.5px); }
+.pb-h { margin: 0 0 12px; color: #2a2a2e; font-size: 22px; font-weight: 700; }
+.pb-h:first-child { display: none; }
+.pb-later { margin-top: 262px; }
+.pb-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; padding: 12px; border-radius: 18px; background: #fff; }
+.ph-card { position: absolute; left: 50%; top: 106px; z-index: 2; width: 316px; margin-left: -158px; padding: 17px; border-radius: 22px; background: #fff; box-shadow: 0 0 0 3px rgba(164,85,136,.32), 0 18px 36px -20px rgba(42,28,38,.2); color: #26262b; text-align: left; }
+.rc-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.rc-chip { padding: 4px 9px; border-radius: 8px; background: #f6e9f1; color: #a45588; font-size: 11.5px; font-weight: 600; white-space: nowrap; }
+.rc-duo { display: flex; flex: none; }
+.rc-duo img { width: 26px; height: 26px; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
+.rc-duo img + img { margin-left: -9px; }
+.rc-title { display: block; margin-top: 11px; font-size: 19px; font-weight: 700; line-height: 1.2; }
+.rc-sub { display: block; margin-top: 3px; color: #8a8a92; font-size: 13px; line-height: 1.25; }
+.rc-prog { position: relative; display: flex; align-items: center; gap: 8px; margin: 11px 0 3px; }
+.rc-prog::before { content: ""; flex: 1; height: 6px; border-radius: 6px; background: #dff1e7; }
+.rc-prog i { position: absolute; left: 0; top: 50%; width: 29%; height: 6px; margin-top: -3px; border-radius: 6px; background: #3fcb7e; }
+.rc-prog span { color: #77777f; font-size: 12px; font-weight: 700; }
+.rc-row { display: flex; align-items: center; gap: 10px; margin-top: 11px; }
+.rc-mark { display: flex; flex: none; align-items: center; justify-content: center; width: 23px; height: 23px; border: 2px solid #bdb2bd; border-radius: 50%; }
+.rc-mark.is-done { border: 0; background: #3fcb7e; }
+.rc-tile { display: flex; flex: none; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 12px; background: #f4f4f8; }
+.rc-tile img { width: 28px; height: 28px; object-fit: contain; }
+.rc-t { flex: 1; min-width: 0; }
+.rc-t b { display: block; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.rc-t small { display: block; margin-top: 1px; overflow: hidden; color: #8a8a92; font-size: 11.5px; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.rc-btn { display: block; margin-top: 14px; padding: 13px; border-radius: 13px; background: #a45588; color: #fff; font-size: 14px; font-weight: 600; text-align: center; }
+
+/* Behind the card: quiet, colourless placeholders instead of blurred content. */
+.fx-blank { background: #f5f4f6; }
+.pb-later { visibility: hidden; }
+.ph-blur .pb-row { background: #fff; }
+.ph-blur .rc-mark { border: 0; background: #ebeaef; }
+.ph-blur .rc-mark svg, .ph-blur .rc-tile img { display: none; }
+.ph-blur .rc-tile { background: #ebeaef; }
+.ph-blur .rc-t b, .ph-blur .rc-t small { width: fit-content; max-width: 100%; border-radius: 6px; background: #ebeaef; color: transparent; }
+.ph-blur .rc-t b { width: 62%; }
+.ph-blur .rc-t small { width: 42%; margin-top: 5px; }
+
+
+/* "Who it's for" tags on phones: smaller and wrapped, so all of them show at once. */
+@media (max-width: 639px) {
+  .pet-tags { flex-wrap: wrap; justify-content: center; gap: 6px; width: 100%; padding-inline: 0; overflow: visible; }
+  .pet-tags > * { padding: 5px 10px; font-size: 13px; }
+}
+
+/* Hero, desktop: symptom week, bell on the notification, softer lower fade. */
+@media (min-width: 768px) {
+  header .stage { -webkit-mask-image: linear-gradient(180deg, #000 82%, transparent 94%); mask-image: linear-gradient(180deg, #000 82%, transparent 94%); }
+}
+.hv-bell { position: absolute; left: -22px; top: -26px; z-index: 1; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 42px; line-height: 1; rotate: -14deg; filter: drop-shadow(0 6px 8px rgba(122,74,104,.28)); }
+.hv-veg { padding-left: 34px; }
+.sy { padding: 2px 2px 18px; }
+header .fx-push-top small { display: none; }
+.sy-top { display: flex; align-items: baseline; justify-content: space-between; }
+.sy-top b { font-size: 15px; font-weight: 700; }
+.sy-top small { color: #8c8c94; font-size: 12px; font-weight: 500; }
+.sy-row { display: flex; justify-content: space-between; margin-top: 12px; }
+.sy-d { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.sy-d i { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: #f4f4f8; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 20px; font-style: normal; line-height: 1; }
+.sy-d i.sy-good { background: #d9f3e2; }
+.sy-d i.sy-same { background: #fff1c4; }
+.sy-d i.sy-bad { background: #fddcdc; }
+.sy-d b { color: #8c8c94; font-size: 11px; font-weight: 600; }
+
+/* Hero: low medication stock, in orange. */
+.hv-stock { display: flex; align-items: center; gap: 11px; }
+.hv-tile img { width: 32px; height: 32px; object-fit: contain; }
+.hv-txt { flex: 1; min-width: 0; }
+.hv-tile, .rc-tile { background: linear-gradient(145deg, #f8f8fb 0%, #e8e8ef 100%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.7); }
+.hv-tile { display: flex; flex: none; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 13px; }
+.hv-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.hv-row b { font-size: 14.5px; font-weight: 700; line-height: 1.2; }
+.hv-left { color: #d9730d; font-size: 14.5px; font-weight: 700; white-space: nowrap; }
+.hv-bar { display: block; height: 6px; margin-top: 7px; overflow: hidden; border-radius: 6px; background: #f6e7d8; }
+.hv-bar i { display: block; width: 32%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #f7a23e, #e8791a); }
+.hv-txt small { display: block; margin-top: 5px; color: #8c8c94; font-size: 12px; font-weight: 500; white-space: nowrap; }
+
+/* Hero below desktop: the same scene, moved to fit a narrower stage. */
+.hm-sy { left: 43px; }
+@media (max-width: 767px) {
+  .hm-push { left: 383px; top: 590px; width: 178px; }
+  .hm-push > div { padding: 11px 17px 11px 10px; border-radius: 16px; }
+  .hm-push .fx-push { gap: 7px; }
+  .hm-push .fx-push-ic { width: 30px; height: 30px; border-radius: 9px; }
+  .hm-push .fx-push-ic img { width: 20px; height: 20px; }
+  .hm-push .fx-push-top { display: none; }
+  .hm-push .fx-push-t b { margin: 0; font-size: 14.5px; }
+  .hm-push .fx-push-t > small { font-size: 13px; line-height: 1.2; }
+  .hm-push .hv-bell { left: -4px; top: -22px; font-size: 30px; }
+  .hm-left { left: 383px; top: 745px; width: 260px; height: 330px; }
+  .hm-sy { left: 0; width: 178px; padding: 12px 18px 12px 12px; border-radius: 16px; }
+  .hm-sy .sy { padding: 0; }
+  .hm-sy .sy-top small { display: none; }
+  .hm-sy .sy-top b { font-size: 15.5px; }
+  .hm-sy .sy-row { flex-wrap: wrap; justify-content: flex-start; gap: 7px 6px; margin-top: 9px; }
+  .hm-sy .sy-d { gap: 2px; }
+  .hm-sy .sy-d i { width: 32px; height: 32px; font-size: 18px; }
+  .hm-sy .sy-d b { font-size: 12.5px; }
+  .hm-rat { left: 44px; top: 164px; width: 156px; }
+  .hm-right { left: 902px; top: 636px; width: 190px; height: 260px; }
+  .hm-ham { left: 16px; width: 132px; }
+  .hm-dox { top: 96px; width: 184px; padding: 12px 12px 12px 30px; border-radius: 16px; }
+  .hm-dox .hv-stock { gap: 8px; align-items: flex-start; }
+  .hm-dox .hv-tile { width: 34px; height: 34px; border-radius: 10px; }
+  .hm-dox .hv-tile img { width: 25px; height: 25px; }
+  .hm-dox .hv-row { flex-direction: column; gap: 1px; }
+  .hm-dox .hv-row b, .hm-dox .hv-left { font-size: 15px; }
+  .hm-dox .hv-bar { margin-top: 6px; }
+  .hm-dox .hv-txt small { font-size: 13px; line-height: 1.2; white-space: normal; }
+}
