@@ -4,7 +4,7 @@
   var root = document.querySelector('.meme-row');
   if (!root) return;
 
-  var HOLD = 1400, SNAP = 240, GAP = 1.12;
+  var HOLD = 1700, SNAP = 260, GAP = 1.12;
   var ANGLE = 10 * Math.PI / 180, FLICK_REACH = 0.18;
 
   var originals = [].slice.call(root.children);
