@@ -10,7 +10,10 @@ Reads index.html (so run it again after the homepage changes) and
 Styles: assets/gradient-draft.css. The page is noindex and not linked anywhere.
 """
 import re
+import sys
 import time
+
+sys.exit('Retired: the homepage itself now has these gradients, so index-gradients.html is no longer rebuilt.')
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent

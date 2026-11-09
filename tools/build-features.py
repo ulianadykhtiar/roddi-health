@@ -5,7 +5,7 @@
 Writes <section id="features"> into index.html and, in English, into en/index.html
 (text from tools/features-en.json), with the stylesheet and script it needs.
 Desktop: the section is pinned and its cards stack as you scroll; phones: the
-features simply follow each other. Card backgrounds are assets/features/soft-1..4.jpg
+features simply follow each other. Card backgrounds are assets/features/pastel-1..4.jpg
 (made by tools/make-feature-backgrounds.py). Styles and behaviour:
 assets/features-pin.css and assets/features-pin.js. Edit this file, not the HTML.
 """
@@ -127,7 +127,7 @@ SCENES = [scene_reminders, scene_state, scene_vet, scene_notes]
 
 def background(i):
     """A soft pastel picture behind the widgets; it drifts slowly (see the CSS)."""
-    return f'<div class="fp-glow" aria-hidden="true"><img alt="" src="assets/features/soft-{i + 1}.jpg"></div>'
+    return f'<div class="fp-glow" aria-hidden="true"><img alt="" src="assets/features/pastel-{i + 1}.jpg"></div>'
 
 def pill(text):
     return (f'<span class="inline-flex items-center gap-[8px] rounded-full border border-[#e7e9ec] bg-white text-[#0f0f11] px-[14px] py-[6px] text-[13px] font-medium">'
