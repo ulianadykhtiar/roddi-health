@@ -32,7 +32,7 @@
 .bp-crumb { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.72); color: #6e727a; font-size: 13px; font-weight: 500; }
 .bp-crumb a:hover { color: #a45588; }
 .bp-crumb b { color: #0f0f11; font-weight: 500; }
-.bp-hero .signup { display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 6px 6px 20px; border-radius: 999px; }
+.bp-hero .signup { display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 6px 6px 20px; border-radius: 999px; background: #fff; }
 .bp-hero .signup input { flex: 1; min-width: 0; background: transparent; outline: none; font-size: 16px; }
 .bp-hero .btn-app.hidden { display: none; }
 .bp-hero .chip { background: rgba(255,255,255,.72); }
