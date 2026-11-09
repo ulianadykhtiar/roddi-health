@@ -1,13 +1,13 @@
 /* Declared before Tailwind's own layers so its utilities always win over these. */
 @layer components;
 :root {
-  --ink: #2a2a2a; --navy: #053247; --blue: #138cd1; --yellow: #fdd457;
-  --sky: #e5f4fd; --muted: #595959;
+  --ink: #2a2a2a; --navy: #141416; --blue: #a45588; --yellow: #efd3e4;
+  --sky: #f3e8ef; --muted: #6f6a73;
 }
 html { scroll-behavior: smooth; }
 html, body { margin: 0; background: #fff; overflow-x: clip; }
-body { font-family: 'Manrope', sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
-.ff-manrope { font-family: 'Manrope', sans-serif; }
+body { font-family: 'Onest', sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+.ff-manrope { font-family: 'Onest', sans-serif; }
 .ff-montserrat { font-family: 'Montserrat', sans-serif; }
 .ff-impact { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 .ff-hand { font-family: 'Bradley Hand', 'Segoe Script', cursive; }
@@ -37,11 +37,11 @@ body { font-family: 'Manrope', sans-serif; color: var(--ink); -webkit-font-smoot
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 26px;
        border-radius: 999px; font-weight: 800; font-size: 16px; line-height: 21px; white-space: nowrap;
        transition: filter .15s, background-color .15s, translate .25s var(--ease), box-shadow .25s var(--ease); }
-.btn:hover { filter: brightness(1.08); translate: 0 -2px; box-shadow: 0 8px 16px -10px rgba(19,90,140,.30); }
+.btn:hover { filter: brightness(1.08); translate: 0 -2px; box-shadow: 0 8px 16px -10px rgba(122,74,104,.30); }
 .btn:active { translate: 0 0; box-shadow: none; }
 .btn-navy   { background: var(--navy); color: #fff; }
 .btn-blue   { background: var(--blue); color: #fff; }
-.btn-yellow { background: var(--yellow); color: #101a3a; }
+.btn-yellow { background: var(--yellow); color: #141416; }
 .btn-outline { border: 2px solid var(--navy); color: var(--navy); }
 .btn-outline:hover { background: var(--navy); color: #fff; filter: none; }
 /* TikTok brand: black with the logo's cyan/pink offset glow. */
@@ -52,13 +52,13 @@ body { font-family: 'Manrope', sans-serif; color: var(--ink); -webkit-font-smoot
    mask so it takes the text colour. */
 .btn-mono { background: var(--sky); color: var(--navy); }
 .btn-mono:hover { background: var(--navy); color: #fff; filter: none; }
-.btn-soft { background: #f4f1e7; color: var(--navy); }
+.btn-soft { background: #f2f2f4; color: var(--navy); }
 .btn-soft:hover { background: var(--navy); color: #fff; filter: none; translate: none; box-shadow: none; }
 .lang-toggle { display: flex; align-items: center; height: 44px; padding: 4px; border-radius: 999px; background: var(--sky); margin-right: 4px; }
 .lang-opt { display: flex; align-items: center; height: 36px; padding: 0 13px; border-radius: 999px;
-            font-size: 14px; font-weight: 700; color: rgba(5,50,71,.5); transition: color .15s, background-color .15s; }
+            font-size: 14px; font-weight: 700; color: rgba(20,20,22,.5); transition: color .15s, background-color .15s; }
 a.lang-opt:hover { color: var(--navy); }
-.lang-opt.is-active { background: #fff; color: var(--navy); box-shadow: 0 1px 2px rgba(5,50,71,.10); }
+.lang-opt.is-active { background: #fff; color: var(--navy); box-shadow: 0 1px 2px rgba(20,20,22,.10); }
 /* Set the icon inline: style="-webkit-mask-image:url(assets/x.svg);mask-image:url(assets/x.svg)". (A url() inside a CSS variable would resolve against this file's folder.) */
 .icon-mask { display: inline-block; background: currentColor; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 .btn-sm { min-height: 44px; padding: 0 22px; font-size: 14px; }
@@ -88,7 +88,7 @@ a.lang-opt:hover { color: var(--navy); }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary img { transition: transform .2s ease; }
 .faq details[open] summary img { transform: rotate(180deg); }
-.faq details[open] { background: #f4f9fd; }
+.faq details[open] { background: #f8f1f5; }
 
 }
 /* ---- Motion ---- */
@@ -105,7 +105,7 @@ a.lang-opt:hover { color: var(--navy); }
 @keyframes hop     { 40% { translate: 0 -5px; scale: 1.12; } 70% { translate: 0 1px; scale: .96; } }
 
 .lift { transition: translate .35s var(--ease), box-shadow .35s var(--ease); }
-.lift:hover { translate: 0 -6px; box-shadow: 0 16px 32px -20px rgba(19,90,140,.18); }
+.lift:hover { translate: 0 -6px; box-shadow: 0 16px 32px -20px rgba(122,74,104,.18); }
 .hop:hover > img { animation: hop .5s var(--ease); }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -133,7 +133,7 @@ a.lang-opt:hover { color: var(--navy); }
   .js [data-reveal="line"].is-in { stroke-dashoffset: 0; }
   .js .ring-progress { stroke-dashoffset: 94.25; transition: stroke-dashoffset 1.4s var(--ease) .7s; }
   .js .stage.is-in .ring-progress { stroke-dashoffset: 47; }
-  .caret::after { content: ""; display: inline-block; width: 2px; height: 1.1em; margin-left: 2px; vertical-align: -0.2em; background: #138cd1; animation: blink 1s steps(1) infinite; }
+  .caret::after { content: ""; display: inline-block; width: 2px; height: 1.1em; margin-left: 2px; vertical-align: -0.2em; background: #a45588; animation: blink 1s steps(1) infinite; }
   .pulse { animation: pulse 2.2s ease-out 1.6s infinite; }
   .js [data-reveal="pop"], .js [data-reveal="toss"], .js [data-reveal="tilt"] {
     transition-timing-function: var(--ease), var(--spring), var(--ease), var(--ease), var(--ease), var(--ease);
@@ -146,7 +146,7 @@ a.lang-opt:hover { color: var(--navy); }
   .wiggle  { animation: wiggle 5s ease-in-out var(--fd, 1.6s) infinite; transform-origin: 50% 100%; }
   .doodle  { animation: doodle 3.4s ease-in-out infinite; }
   .breathe { animation: breathe 9s ease-in-out infinite; }
-  .shimmer { background: linear-gradient(90deg, #e5f4fd 0%, #f8fcfe 40%, #e5f4fd 80%) 0 0 / 200% 100%; animation: shimmer 2.2s linear infinite; }
+  .shimmer { background: linear-gradient(90deg, #f3e8ef 0%, #f8fcfe 40%, #f3e8ef 80%) 0 0 / 200% 100%; animation: shimmer 2.2s linear infinite; }
   .btn-shine { position: relative; overflow: hidden; isolation: isolate; }
   .btn-shine::after { content: ""; position: absolute; inset: 0 auto 0 0; width: 45%; pointer-events: none;
                       background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent); animation: shine 5s ease-in-out 1.8s infinite; }
@@ -165,9 +165,9 @@ a.lang-opt:hover { color: var(--navy); }
 
 /* Sign-up form messages: errors, and "did you mean…?" typo hints. */
 .form-msg { font-size: 14px; line-height: 1.4; text-align: center; color: #c62828; }
-.form-msg[data-kind="hint"] { color: #8a6100; }
+.form-msg[data-kind="hint"] { color: #a45588; }
 .form-msg-dark { color: #ffb4b4; }
-.form-msg-dark[data-kind="hint"] { color: #fdd457; }
+.form-msg-dark[data-kind="hint"] { color: #efd3e4; }
 .form-fix { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .signup:has(input[aria-invalid="true"]) { box-shadow: 0 0 0 2px #e5484d; }
 button:disabled { opacity: .6; cursor: progress; }
@@ -178,7 +178,7 @@ input::placeholder { color: inherit; opacity: 1; }
 /* Header button of the page you're on. */
 .btn-mono[aria-current="page"] { background: var(--navy); color: #fff; }
 /* Rodent filter chips: same pill as the "Для кого" tags, filled when chosen. */
-.chip { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; border: 2px solid rgba(5,66,101,.2);
+.chip { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; border: 2px solid rgba(20,20,22,.2);
         background: #fff; padding: 8px 16px; font-weight: 600; font-size: 16px; line-height: 1.3; white-space: nowrap; cursor: pointer;
         transition: border-color .15s, color .15s, background-color .15s, translate .25s var(--ease); }
 .chip:hover { border-color: var(--blue); color: var(--blue); }
@@ -186,11 +186,11 @@ input::placeholder { color: inherit; opacity: 1; }
 .chip .chip-n { font-size: 12px; font-weight: 700; min-width: 22px; padding: 1px 7px; border-radius: 999px; background: var(--sky); color: var(--navy); text-align: center; }
 .chip[aria-pressed="true"] .chip-n { background: rgba(255,255,255,.18); color: #fff; }
 .chip:disabled { opacity: .45; cursor: default; }
-.chip:disabled:hover { border-color: rgba(5,66,101,.2); color: inherit; }
+.chip:disabled:hover { border-color: rgba(20,20,22,.2); color: inherit; }
 @media (min-width: 768px) { .chip { padding: 10px 20px; } }
 .blog-search input::-webkit-search-cancel-button { display: none; }
-.blog-card mark { background: rgba(253,212,87,.7); color: inherit; border-radius: 4px; padding: 0 2px; }
-.blog-card--hero mark { background: rgba(253,212,87,.9); color: #101a3a; }
+.blog-card mark { background: rgba(239,211,228,.7); color: inherit; border-radius: 4px; padding: 0 2px; }
+.blog-card--hero mark { background: rgba(239,211,228,.9); color: #141416; }
 .blog-hero-title { font-size: clamp(28px, 3vw, 42px); }
 /* Polaroid photo: tilted a little (--tilt), straightens on hover. Sticker: rotated label. */
 .polaroid { rotate: var(--tilt, 0deg); transition: rotate .5s var(--spring), scale .5s var(--ease); }
@@ -251,10 +251,10 @@ input::placeholder { color: inherit; opacity: 1; }
   .menu-btn::before { content: ""; position: absolute; inset: -6px; }
 }
 .menu-close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: -6px; border-radius: 999px; background: var(--sky); color: var(--navy); }
-.site-menu { position: fixed; inset: 0 auto 0 0; width: min(320px, 84vw); max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0 28px 28px 0; background: #fff; color: var(--navy); box-shadow: 0 24px 60px -20px rgba(5,50,71,.5); }
-.site-menu::backdrop { background: rgba(5,50,71,.45); }
+.site-menu { position: fixed; inset: 0 auto 0 0; width: min(320px, 84vw); max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0 28px 28px 0; background: #fff; color: var(--navy); box-shadow: 0 24px 60px -20px rgba(20,20,22,.5); }
+.site-menu::backdrop { background: rgba(20,20,22,.45); }
 .site-menu-inner { height: 100%; padding: 22px 20px; overflow-y: auto; }
-.site-menu-link { display: flex; align-items: center; justify-content: space-between; min-height: 58px; border-bottom: 1px solid rgba(5,50,71,.1); font-size: 20px; font-weight: 700; }
+.site-menu-link { display: flex; align-items: center; justify-content: space-between; min-height: 58px; border-bottom: 1px solid rgba(20,20,22,.1); font-size: 20px; font-weight: 700; }
 .site-menu-link[aria-current="page"] { color: var(--blue); }
 html:has(.site-menu[open]) { overflow: hidden; }
 @keyframes menu-in { from { transform: translateX(-100%); } }
@@ -270,7 +270,7 @@ form[data-signup] .signup > img { opacity: .643; } /* the icon is already 70% #2
 
 /* ---- "Who it's for" photo carousel ---- */
 .pet-carousel { --pet-w: clamp(180px, 21vw, 300px); position: relative; height: calc(var(--pet-w) * 1.25 + var(--arc-room, clamp(112px, 17.7vw - 130px, 240px))); overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
-.pet-card { position: absolute; top: 16px; left: 0; width: var(--pet-w); aspect-ratio: 4 / 5; padding: 7px; border-radius: 28px; background: #fff; box-shadow: 0 1px 3px rgba(5,50,71,.10), 0 6px 14px -8px rgba(5,50,71,.20); will-change: transform; }
+.pet-card { position: absolute; top: 16px; left: 0; width: var(--pet-w); aspect-ratio: 4 / 5; padding: 7px; border-radius: 28px; background: #fff; box-shadow: 0 1px 3px rgba(20,20,22,.10), 0 6px 14px -8px rgba(20,20,22,.20); will-change: transform; }
 .pet-card img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 21px; pointer-events: none; }
 @media (max-width: 767px) {
   .pet-carousel { --pet-w: min(54vw, 250px); --arc-room: 76px; }

@@ -1,0 +1,225 @@
+/* Sections, buttons and section tags from PR #1 (assets/app-home.css there). */
+:root {
+  --ph-ink: #0f0f11; --ph-muted: #6e727a; --ph-faint: #a2a6ad;
+  --ph-line: #e7e9ec; --ph-soft: #f4f5f7;
+  --ph-ease: cubic-bezier(.16, 1, .3, 1);
+  --ph-spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+@layer components {
+/* ---- Type ---- */
+.t-display { font-weight: 500; font-size: clamp(40px, 6.4vw, 80px); line-height: 1.02; letter-spacing: -0.045em; text-wrap: balance; }
+.t-h2-app { font-weight: 500; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.06; letter-spacing: -0.04em; text-wrap: balance; }
+
+/* A row of pet photos set inside the headline, like an inline chip. */
+.word-chip { display: inline-flex; vertical-align: middle; align-items: center; height: .82em; padding: .06em; margin: 0 .04em; border-radius: 999px; background: var(--ph-soft); box-shadow: inset 0 0 0 1px var(--ph-line); translate: 0 -.06em; }
+.word-chip img { height: 100%; aspect-ratio: 1; border-radius: 999px; object-fit: cover; border: .05em solid #fff; }
+.word-chip img + img { margin-left: -.18em; }
+
+/* ---- Buttons: black pill, white round arrow ---- */
+.btn-app { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 52px; padding: 0 8px 0 24px;
+           border-radius: 999px; background: var(--ph-ink); color: #fff; font-weight: 500; font-size: 15px; white-space: nowrap;
+           transition: translate .25s var(--ph-ease), box-shadow .25s var(--ph-ease), background-color .2s; }
+.btn-app:not(:has(.btn-app-dot)) { padding: 0 24px; }
+.btn-app:hover { translate: 0 -2px; box-shadow: 0 12px 24px -14px rgba(15,15,17,.55); }
+.btn-app:active { translate: 0 0; box-shadow: none; }
+.btn-app-dot { rotate: -45deg; display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 999px; transition: rotate .3s var(--ph-ease); }
+.btn-app:hover .btn-app-dot { rotate: -45deg; }
+.btn-app-light { background: #fff; color: var(--ph-ink); box-shadow: inset 0 0 0 1px var(--ph-line); }
+.btn-app-light:hover { box-shadow: inset 0 0 0 1px var(--ph-ink), 0 12px 24px -16px rgba(15,15,17,.35); }
+.btn-app-white { background: #fff; color: var(--ph-ink); }
+.btn-app-sm { min-height: 42px; padding: 0 18px; font-size: 14px; }
+
+
+/* ---- Memes as tilted cards ---- */
+.meme-row { display: grid; gap: 16px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.meme-card { margin: 0; padding: 10px; border-radius: 28px; background: var(--ph-soft); rotate: var(--r); transition: rotate .5s var(--ph-spring), translate .4s var(--ph-ease); }
+.meme-card:hover { rotate: 0deg; translate: 0 -6px; }
+@media (max-width: 1023px) { .meme-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 639px) {
+  .meme-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -20px; padding: 12px 20px 20px; }
+  .meme-card { flex: 0 0 76%; scroll-snap-align: center; }
+}
+
+
+.feature-card { display: flex; flex-direction: column; min-height: 100%; padding: 28px; border-radius: 32px; background: var(--ph-soft); }
+@media (min-width: 768px) { .feature-card { padding: 36px; } }
+
+/* ---- FAQ ---- */
+.faq-list details { border-bottom: 1px solid var(--ph-line); }
+.faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 4px; list-style: none; cursor: pointer; font-size: clamp(17px, 1.5vw, 20px); font-weight: 500; letter-spacing: -0.01em; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list p { margin: -6px 0 0; padding: 0 56px 22px 4px; font-size: 16px; line-height: 1.5; color: var(--ph-muted); }
+.faq-plus { position: relative; flex: none; width: 36px; height: 36px; border-radius: 999px; background: var(--ph-soft); transition: background-color .2s, rotate .3s var(--ph-ease); }
+.faq-plus::before { content: ""; position: absolute; left: 50%; top: 50%; width: 9px; height: 9px; margin: -7px 0 0 -4.5px; border-right: 2px solid var(--ph-ink); border-bottom: 2px solid var(--ph-ink); border-radius: 1px; rotate: 45deg; transition: border-color .2s; }
+details[open] .faq-plus { background: var(--ph-ink); rotate: 180deg; }
+details[open] .faq-plus::before { border-color: #fff; }
+
+.foot-icon { display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 999px; background: rgba(255,255,255,.08); transition: background-color .2s, translate .25s var(--ph-ease); }
+.foot-icon:hover { background: rgba(255,255,255,.16); translate: 0 -2px; }
+
+
+.caret::after { content: ""; display: inline-block; width: 2px; height: 1.1em; margin-left: 2px; vertical-align: -0.2em; background: var(--ph-ink); }
+
+/* ---- Email pill (assets/forms.js) ---- */
+#early-access .signup { display: flex; align-items: center; gap: 8px; width: 100%; border-radius: 999px; padding: 6px 6px 6px 22px; }
+#early-access .signup input { flex: 1; min-width: 0; background: transparent; outline: none; font-size: 16px; color: var(--ph-ink); }
+#early-access .signup input::placeholder { color: var(--ph-faint); }
+#early-access .signup .btn-app { min-height: 46px; }
+@media (max-width: 539px) {
+  #early-access .signup { flex-wrap: wrap; padding: 6px; border-radius: 28px; }
+  #early-access .signup input { min-height: 48px; padding-left: 16px; }
+  #early-access .signup .btn-app { flex: 1 0 100%; }
+}
+
+/* The site's own buttons in the PR style. */
+.t-h2 { font-weight: 500; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.06; letter-spacing: -0.04em; }
+.btn { gap: 12px; min-height: 52px; padding: 0 24px; font-weight: 500; font-size: 15px; line-height: normal;
+       transition: translate .25s var(--ph-ease), box-shadow .25s var(--ph-ease), background-color .2s; }
+.btn:hover { filter: none; translate: 0 -2px; box-shadow: 0 12px 24px -14px rgba(15,15,17,.55); }
+.btn:active { translate: 0 0; box-shadow: none; }
+.btn:has(.btn-app-dot) { padding: 0 8px 0 24px; }
+.btn:hover .btn-app-dot { rotate: -45deg; }
+.btn-sm { min-height: 42px; padding: 0 18px; font-size: 14px; }
+.signup .btn { min-height: 46px; padding: 0 18px; font-size: 14px; }
+}
+
+/* Unlayered: these have to beat assets/theme.css. */
+html, body { background: #fff; }
+section.bg-white, #features, #faq { background: #fff; }
+#for-whom { background: #f4f5f7; }
+.btn-shine::after { display: none; }
+.btn-navy, .btn-yellow, .btn-blue { background: #0f0f11; color: #fff; }
+.btn-soft, .btn-outline,
+.btn-mono:not([aria-current="page"]),
+header:has(> nav) .btn-mono:not([aria-current="page"]) {
+  border: 0; background: #fff; color: #0f0f11; box-shadow: inset 0 0 0 1px #e7e9ec; }
+.btn-soft:hover, .btn-outline:hover,
+.btn-mono:not([aria-current="page"]):hover,
+header:has(> nav) .btn-mono:not([aria-current="page"]):hover {
+  background: #fff; color: #0f0f11; translate: 0 -2px;
+  box-shadow: inset 0 0 0 1px #0f0f11, 0 12px 24px -16px rgba(15,15,17,.35); }
+.ff-sf, .ff-hand, .ff-impact { font-family: 'Onest', sans-serif; }
+
+/* "Why I'm building" video, styled as a story. */
+.story { position: relative; width: 100%; max-width: 420px; aspect-ratio: 9 / 16; margin-inline: auto; overflow: hidden; border-radius: 36px; background: #0f0f11; }
+.story::before { content: ""; position: absolute; inset: 0 0 auto; z-index: 1; height: 130px; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,0)); }
+.story-top { position: absolute; inset: 14px 14px auto; z-index: 2; }
+.story-head { display: flex; align-items: center; gap: 10px; margin-top: 12px; color: #fff; font-size: 14px; }
+.story-head b { font-weight: 600; }
+.story-logo { flex: none; width: 40px; height: 40px; padding: 2px; border-radius: 50%; background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf); }
+.story-logo img { display: block; width: 100%; height: 100%; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
+@media (max-width: 639px) { h1.t-display { font-size: clamp(26px, 8.5vw, 40px); } }
+@media (max-width: 639px) { html[lang="en"] h1.t-display { font-size: clamp(24px, 7.5vw, 36px); } }
+
+/* "What Roddi Health can do": pinned list with cards scrolling past it. */
+/* Variant C: the pinned list and the panels that scroll by. */
+.feat-link { display: flex; gap: 16px; align-items: flex-start; padding: 16px; border-radius: 22px; color: var(--ph-ink); transition: background-color .3s var(--ph-ease), color .3s; }
+.feat-link:hover { background: #fff; }
+.feat-num { display: flex; flex: none; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 14px; background: #fff; font: 500 14px ui-monospace, 'SF Mono', Menlo, monospace; color: var(--ph-ink); }
+.feat-sub { color: var(--ph-muted); }
+.feat-link.is-active { background: var(--ph-ink); color: #fff; }
+.feat-link.is-active .feat-sub { color: rgba(255,255,255,.65); }
+.feat-panel { padding: 24px; border-radius: 32px; background: var(--ph-soft); }
+@media (min-width: 1024px) { .feat-panel { min-height: 78vh; padding: 40px; display: flex; flex-direction: column; justify-content: center; } }
+
+/* Story montage: stacked videos, one live at a time, with a slow push-in. */
+.story-stage { position: absolute; inset: 0; cursor: pointer; }
+.story-stage > * { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.story-stage > .is-live { opacity: 1; animation: story-push var(--clip, 3s) linear both; }
+.story.is-paused .story-stage > .is-live { animation-play-state: paused; }
+@keyframes story-push { from { transform: scale(1); } to { transform: scale(1.08); } }
+.story-bars { display: flex; gap: 4px; }
+.story-bar { display: block; flex: 1; height: 3px; overflow: hidden; border-radius: 3px; background: rgba(255,255,255,.38); }
+.story-bar i { display: block; height: 100%; border-radius: inherit; background: #fff; transform: scaleX(0); transform-origin: left; }
+.story-ig { display: inline-flex; align-items: center; gap: 5px; height: 32px; margin-left: auto; padding: 0 12px; border-radius: 999px; background: #0f0f11; color: #fff; font-size: 13px; font-weight: 500; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: background-color .2s; }
+.story-ig:hover { background: #2a2a2e; }
+.story-toggle { position: absolute; left: 50%; top: 50%; z-index: 3; display: flex; align-items: center; justify-content: center; width: 68px; height: 68px; border-radius: 50%; background: rgba(15,15,17,.5); color: #fff; cursor: pointer; opacity: 0; translate: -50% -50%; transition: opacity .2s; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.story-toggle svg { width: 26px; height: 26px; }
+.story-toggle .ic-play, .story.is-paused .story-toggle .ic-pause { display: none; }
+.story.is-paused .story-toggle .ic-play { display: block; }
+.story:hover .story-toggle, .story-toggle:focus-visible { opacity: 1; }
+@media (hover: none) { .story:hover .story-toggle { opacity: 0; } }
+.story.is-paused .story-toggle { opacity: 1; }
+.story-cs { position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 2; height: 58px; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .story-stage > .is-live { animation: none; } }
+/* "Who it's for": all tags on one line; the row scrolls sideways on narrow screens. */
+.pet-tags { display: flex; flex-wrap: nowrap; justify-content: safe center; gap: 8px; width: 100vw; padding-inline: 20px; overflow-x: auto; scrollbar-width: none; }
+.pet-tags::-webkit-scrollbar { display: none; }
+.pet-tags > * { flex: none; white-space: nowrap; }
+
+/* The story block is square on phones. */
+@media (max-width: 767px) { .story { aspect-ratio: 1 / 1; max-width: none; } }
+
+/* Story comments: a round avatar and a dark chat bubble with a tail. */
+.story-c { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; gap: 8px; opacity: 0; translate: 0 10px; transition: opacity .45s var(--ph-ease), translate .45s var(--ph-ease); }
+.story-c.is-on { opacity: 1; translate: 0 0; }
+.story-ava { flex: none; width: 42px; height: 42px; overflow: hidden; border-radius: 50%; }
+.story-ava img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.story-c p { position: relative; max-width: calc(100% - 64px); margin-bottom: 4px; padding: 10px 14px; border-radius: 20px; background: #fff; color: #0f0f11; font-size: 14px; line-height: 1.3; }
+.story-c p::before { content: ""; position: absolute; left: -3px; bottom: -3px; width: 16px; height: 14px; background: inherit; clip-path: polygon(100% 0, 100% 72%, 0 100%, 34% 40%); }
+
+/* Header: compact language switch, text links with a hover underline. */
+header:has(> nav) .lang-toggle { height: 30px; padding: 2px; margin-right: 0; }
+header:has(> nav) .lang-opt { height: 26px; min-width: 0; padding: 0 7px; font-size: 12px; font-weight: 600; }
+header:has(> nav) > nav > div:first-child a { text-underline-offset: 6px; text-decoration-thickness: 1.5px; transition: color .15s; }
+header:has(> nav) > nav > div:first-child a:hover,
+header:has(> nav) > nav > div:first-child a[aria-current="page"] { color: #17171c; text-decoration-line: underline; }
+
+/* Header: soft grey circle behind the logo. */
+@media (min-width: 640px) { header:has(> nav) > .breathe { display: block; opacity: .5; filter: grayscale(1); } }
+
+/* Tablet header follows the phone: centred logo, sidebar button on the left. */
+@media (min-width: 640px) and (max-width: 1023px) {
+  header > nav > a[aria-label^="Roddi Health"] { position: absolute; left: 50%; top: 37px; transform: translate(-50%, -50%); }
+  header > nav > div:last-child { width: 100%; gap: 8px; }
+  header > nav .btn-navy { margin-left: auto; }
+  header > nav .btn-mono.btn-sm { display: none; }
+  header > nav .menu-btn { display: inline-flex; align-items: center; justify-content: center; position: relative; flex: none; width: 36px; height: 36px; border-radius: 999px; }
+  header > nav .menu-btn::before { content: ""; position: absolute; inset: -6px; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header > nav > a[aria-label^="Roddi Health"] { top: 43.5px; }
+}
+
+/* "Sound familiar?": each caption is a thought bubble trailing to the person in the photo. */
+.meme-row { padding-top: 6px; }
+.meme-card { display: flex; flex-direction: column; }
+.think { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; min-height: 78px; margin: 0 0 16px; padding: 14px 18px; border-radius: 22px; background: #fff; filter: drop-shadow(0 3px 6px rgba(15,15,17,.14)); text-align: center; }
+.think p { margin: 0; color: #0f0f11; font-family: Impact, Haettenschweiler, 'Oswald', 'Arial Narrow', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.16; letter-spacing: .03em; text-transform: uppercase; }
+.think i { position: absolute; left: var(--tx, 50%); border-radius: 50%; background: #fff; }
+.think i:nth-of-type(1) { bottom: -12px; width: 19px; height: 19px; margin-left: -9px; }
+.think i:nth-of-type(2) { bottom: -33px; width: 12px; height: 12px; margin-left: 7px; }
+.think-photo { display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 18px; object-fit: cover; }
+
+/* Early access on tablets: narrower content, so the orbits show. */
+@media (min-width: 640px) and (max-width: 1023px) {
+  section.bg-\[\#141416\] > *:not(.orbits) { max-width: 420px; margin-inline: auto; }
+  section.bg-\[\#141416\] form { max-width: 100%; }
+  .orbit.o1 { --d: 640px; }
+  .orbit.o2 { --d: 760px; }
+}
+
+/* Before / after: one table, each problem facing its solution. */
+.ba-table { overflow: hidden; border-radius: 32px; background: #f4f5f7; }
+.ba-row { position: relative; display: grid; grid-template-columns: 1fr 1fr; }
+.ba-cell { display: flex; align-items: center; gap: 12px; padding: 20px 32px; font-size: 17px; line-height: 1.3; }
+.ba-no { border-top: 1px solid #e7e9ec; color: #6e727a; }
+.ba-yes { border-top: 1px solid rgba(255,255,255,.12); background: #0f0f11; color: #fff; font-weight: 500; }
+.ba-head .ba-cell { border-top: 0; padding-block: 22px; font-size: 14px; font-weight: 500; }
+.ba-head .ba-yes { color: rgba(255,255,255,.7); }
+@media (max-width: 639px) {
+  .ba-table { border-radius: 24px; }
+  .ba-cell, .ba-yes { flex-direction: column; align-items: flex-start; gap: 8px; padding: 14px; font-size: 14.5px; }
+  .ba-head .ba-cell { padding-block: 16px; font-size: 13px; }
+}
+
+/* Memes on desktop: slightly smaller cards with more air between them. */
+@media (min-width: 1024px) { .meme-row { gap: 44px; } }
+
+/* Memes on phones: the same arc carousel as "Who it's for" (assets/meme-carousel.js). */
+.meme-clone { display: none; }
+.meme-row.is-carousel { position: relative; display: block; overflow: hidden; margin: 0 -20px; padding: 0; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.meme-row.is-carousel .meme-card { position: absolute; top: 14px; left: 0; width: min(62vw, 250px); rotate: 0deg; translate: none; will-change: transform; }
+.meme-row.is-carousel .meme-clone { display: flex; }
+.meme-row.is-carousel .think { min-height: 92px; }
+.meme-row.is-carousel img { pointer-events: none; }

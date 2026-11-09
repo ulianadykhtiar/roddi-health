@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- seo:start -->
   <title>Ви в списку · Roddi Health</title>
-  <link rel="icon" type="image/svg+xml" href="/assets/vector.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/vector.svg">
   <meta name="robots" content="noindex">
   <!-- seo:end -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
   <style>
     @layer components;
-    :root { --ink: #2a2a2a; --navy: #053247; --blue: #138cd1; --yellow: #fdd457; --sky: #e5f4fd; --muted: #595959;
+    :root { --ink: #2a2a2a; --navy: #141416; --blue: #a45588; --yellow: #efd3e4; --sky: #f3e8ef; --muted: #6f6a73;
             --ease: cubic-bezier(.16, 1, .3, 1); }
     html, body { margin: 0; background: #fff; }
-    body { font-family: 'Manrope', sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Onest', sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
     .ff-montserrat { font-family: 'Montserrat', sans-serif; }
 
     @layer components {
@@ -44,7 +44,7 @@
 
     /* Survey answer chips */
     .chip { display: inline-flex; align-items: center; gap: 6px; min-height: 42px; padding: 0 18px; border-radius: 999px;
-            border: 2px solid rgba(5,66,101,.18); background: #fff; font-weight: 600; font-size: 15px; color: var(--ink);
+            border: 2px solid rgba(20,20,22,.18); background: #fff; font-weight: 600; font-size: 15px; color: var(--ink);
             transition: background-color .15s, border-color .15s, color .15s, scale .2s var(--ease); cursor: pointer; }
     .chip:hover { border-color: var(--blue); }
     .chip[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
@@ -69,23 +69,25 @@
     }
   </style>
   <script src="assets/clarity.js"></script>
+  <link rel="stylesheet" href="assets/theme.css">
+  <link rel="stylesheet" href="assets/app-home.css?v=19">
 </head>
 <body>
 
-<header class="border-b border-[#053247]/10">
+<header class="border-b border-[#141416]/10">
   <div class="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between px-5 md:px-10">
-    <a href="/" class="flex items-center gap-[8px]" aria-label="Roddi Health — на головну">
-      <img alt="" class="size-[34px]" src="assets/vector.svg">
+    <a href="index.html" class="flex items-center gap-[8px]" aria-label="Roddi Health — на головну">
+      <img alt="" class="size-[34px]" src="assets/logo-mauve.svg">
       <span class="ff-montserrat text-[20px] font-semibold leading-[0.95] text-[#17171c]">roddi<br>health</span>
     </a>
-    <a href="/" class="t-small font-semibold text-[#333c57] hover:text-[#138cd1]">← На головну</a>
+    <a href="index.html" class="t-small font-semibold text-[#4a4450] hover:text-[#a45588]">← На головну</a>
   </div>
 </header>
 
 <main class="mx-auto max-w-[640px] px-5 pb-[80px] pt-[48px] md:pt-[72px]">
 
   <!-- Confirmation -->
-  <section class="anim-rise relative overflow-hidden rounded-[28px] bg-gradient-to-tr from-[#138cd1] from-35% to-[#e0f2fc] px-[24px] pb-[28px] pt-[28px] text-white md:px-[36px] md:pt-[36px]">
+  <section class="anim-rise relative overflow-hidden rounded-[28px] bg-gradient-to-tr from-[#a45588] from-35% to-[#f3e8ef] px-[24px] pb-[28px] pt-[28px] text-white md:px-[36px] md:pt-[36px]">
     <img alt="" class="pointer-events-none absolute right-[-120px] top-[-110px] size-[340px] max-w-none opacity-60" src="assets/ellipse12.svg" aria-hidden="true">
     <div class="relative">
       <div class="flex items-center gap-[14px]">
@@ -94,21 +96,21 @@
       </div>
       <p class="t-lead mt-[10px] text-white/90">Ми напишемо вам, щойно Roddi Health запрацює, і запросимо до раннього доступу.</p>
       <div id="email-row" class="mt-[18px] hidden flex-wrap items-center gap-[10px]">
-        <span class="inline-flex items-center gap-[8px] rounded-full bg-white/95 px-[14px] py-[8px] text-[15px] font-bold text-[#053247]">
+        <span class="inline-flex items-center gap-[8px] rounded-full bg-white/95 px-[14px] py-[8px] text-[15px] font-bold text-[#141416]">
           <img alt="" class="h-[15px] w-[18px]" src="assets/formkitemail.svg"><span id="email-value"></span>
         </span>
-        <button type="button" id="email-edit" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#fdd457]">Не та адреса?</button>
+        <button type="button" id="email-edit" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#efd3e4]">Не та адреса?</button>
         <span id="email-saved" class="t-small font-semibold text-white" role="status" aria-live="polite"></span>
       </div>
       <form id="email-form" novalidate class="mt-[18px] hidden max-w-[420px]">
         <label for="email-input" class="t-small font-semibold text-white/90">Ваш email</label>
         <div class="mt-[6px] flex items-center gap-[8px] rounded-full bg-white p-[5px] pl-[16px]">
           <img alt="" class="h-[15px] w-[18px] shrink-0" src="assets/formkitemail.svg">
-          <input id="email-input" type="email" name="email" autocomplete="email" inputmode="email" class="min-w-0 flex-1 bg-transparent text-[15px] font-semibold text-[#053247] outline-none">
+          <input id="email-input" type="email" name="email" autocomplete="email" inputmode="email" class="min-w-0 flex-1 bg-transparent text-[15px] font-semibold text-[#141416] outline-none">
           <button class="btn btn-navy min-h-[44px] shrink-0 px-[16px] text-[14px]">Зберегти</button>
         </div>
         <div class="mt-[8px] flex flex-wrap items-center gap-x-[14px] gap-y-[4px]">
-          <button type="button" id="email-cancel" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#fdd457]">Скасувати</button>
+          <button type="button" id="email-cancel" class="t-small font-semibold text-white underline underline-offset-[3px] hover:text-[#efd3e4]">Скасувати</button>
           <p id="email-msg" class="t-small font-semibold text-[#fff3c4]" role="status" aria-live="polite" hidden></p>
         </div>
       </form>
@@ -116,7 +118,7 @@
   </section>
 
   <!-- Survey -->
-  <section class="anim-rise [--d:150ms] mt-[36px] rounded-[24px] border border-[#053247]/10 p-[22px] md:p-[32px] shadow-[0_1px_2px_rgba(19,90,140,0.05),0_10px_24px_-12px_rgba(19,90,140,0.14)]" aria-labelledby="survey-title">
+  <section class="anim-rise [--d:150ms] mt-[36px] rounded-[24px] border border-[#141416]/10 p-[22px] md:p-[32px] shadow-[0_1px_2px_rgba(122,74,104,0.05),0_10px_24px_-12px_rgba(122,74,104,0.14)]" aria-labelledby="survey-title">
     <form id="survey" novalidate>
       <h2 id="survey-title" class="t-h3">Допоможіть зробити додаток для ваших гризунів</h2>
       <p class="t-body mt-[6px] text-[var(--muted)]">П’ять швидких відповідей, близько 30 секунд. Усе необов’язково.</p>
@@ -176,7 +178,7 @@
         <span class="t-h4">Що б ви хотіли бачити в додатку?</span>
         <span class="t-small mt-[2px] block text-[var(--muted)]">Напишіть свої побажання: яких функцій бракує саме вам. Ми читаємо кожне.</span>
         <textarea name="note" rows="3" maxlength="1000" placeholder="Наприклад: спільний доступ для родини, нагадування про зважування…"
-          class="t-body mt-[10px] block w-full resize-y rounded-[16px] border-2 border-[#053247]/15 bg-white px-[16px] py-[12px] outline-none transition-colors placeholder:text-[#8d95aa] focus:border-[#138cd1]"></textarea>
+          class="t-body mt-[10px] block w-full resize-y rounded-[16px] border-2 border-[#141416]/15 bg-white px-[16px] py-[12px] outline-none transition-colors placeholder:text-[#8f8a94] focus:border-[#a45588]"></textarea>
       </label>
 
       <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
@@ -187,14 +189,14 @@
     </form>
 
     <div id="survey-done" class="hidden text-center py-[20px]" tabindex="-1">
-      <span class="anim-pop mx-auto flex size-[52px] items-center justify-center rounded-full bg-[#e5f4fd] text-[26px]">💛</span>
+      <span class="anim-pop mx-auto flex size-[52px] items-center justify-center rounded-full bg-[#f3e8ef] text-[26px]">💛</span>
       <h2 class="t-h3 mt-[14px]">Дякуємо за відповіді!</h2>
       <p class="t-body mt-[6px] text-[var(--muted)]">Вони допоможуть нам вирішити, що зробити першим.</p>
     </div>
   </section>
 
   <!-- Share -->
-  <section class="anim-rise [--d:300ms] mt-[20px] rounded-[24px] bg-[#e5f4fd] p-[22px] md:p-[32px]">
+  <section class="anim-rise [--d:300ms] mt-[20px] rounded-[24px] bg-[#f3e8ef] p-[22px] md:p-[32px]">
     <div class="flex items-center gap-[16px]">
       <span class="flex size-[56px] shrink-0 items-center justify-center rounded-[16px] bg-white p-[5px]"><img alt="" class="size-full object-contain" src="assets/hamster-bow-cutout.png"></span>
       <div>
@@ -202,10 +204,10 @@
         <p class="t-body mt-[6px] text-[var(--muted)]">Надішліть їм посилання: що більше власників у беті, то краще додаток підходитиме для різних гризунів і їхніх потреб.</p>
       </div>
     </div>
-    <button type="button" id="copy-link" class="group mt-[18px] flex w-full items-center gap-[10px] rounded-full bg-white p-[6px] pl-[18px] text-left transition-shadow hover:shadow-[0_6px_16px_-10px_rgba(19,90,140,0.25)]" aria-describedby="copy-msg">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#138cd1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
-      <span id="share-url" class="min-w-0 flex-1 truncate text-[15px] font-semibold text-[#053247]"></span>
-      <span id="copy-label" class="flex h-[42px] shrink-0 items-center gap-[6px] rounded-full bg-[#053247] px-[18px] text-[14px] font-extrabold text-white transition-colors group-hover:bg-[#0a4763]">
+    <button type="button" id="copy-link" class="group mt-[18px] flex w-full items-center gap-[10px] rounded-full bg-white p-[6px] pl-[18px] text-left transition-shadow hover:shadow-[0_6px_16px_-10px_rgba(122,74,104,0.25)]" aria-describedby="copy-msg">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a45588" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+      <span id="share-url" class="min-w-0 flex-1 truncate text-[15px] font-semibold text-[#141416]"></span>
+      <span id="copy-label" class="flex h-[42px] shrink-0 items-center gap-[6px] rounded-full bg-[#141416] px-[18px] text-[14px] font-extrabold text-white transition-colors group-hover:bg-[#8a4674]">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
         <span>Копіювати</span>
       </span>
@@ -310,7 +312,7 @@
     });
 
     // Sharing the landing page.
-    var url = new URL('/', location.href).href;
+    var url = new URL('index.html', location.href).href;
     document.getElementById('share-url').textContent = url.replace(/^https?:\/\//, '').replace(/\/index\.html$/, '');
     var label = document.getElementById('copy-label');
     var labelText = label.querySelector('span');
@@ -319,7 +321,7 @@
     document.getElementById('copy-link').addEventListener('click', function () {
       (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
         labelText.textContent = 'Скопійовано';
-        label.style.background = '#1f9d46';
+        label.style.background = '#a45588';
         copyMsg.textContent = 'Посилання скопійовано';
       }, function () {
         // No clipboard access: select the link so it can be copied by hand.

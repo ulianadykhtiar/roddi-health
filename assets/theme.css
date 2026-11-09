@@ -1,0 +1,323 @@
+
+/* ---- Visual theme: colours and surfaces only, layout untouched ---- */
+html, body { background: #f2f2f4; }
+section.bg-white, #features, #for-whom, #faq { background: #f2f2f4; }
+/* Hero: the app's soft gradient header */
+header:has(> nav) { background: linear-gradient(180deg, #d2acc6 0%, #c28cb1 100%); color: #fff; }
+header:has(> nav) h1, header:has(> nav) .t-lead, header:has(> nav) > div > p, header:has(> nav) p.t-small, header:has(> nav) nav a:not(.btn):not([aria-label]) { color: #fff; }
+header:has(> nav) p.t-small a, header:has(> nav) p.t-small span { color: #fff; }
+header:has(> nav) .chip:not([aria-pressed="true"]) { color: #17171c; }
+header:has(> nav) .chip[aria-pressed="true"] { color: #fff; }
+header:has(> nav) .brand { color: #fff; }
+header:has(> nav) nav .ff-montserrat { color: #fff; }
+header:has(> nav) .btn-mono, header:has(> nav) .menu-btn { background: rgba(255,255,255,.92); color: #141416; }
+header:has(> nav) .btn-mono[aria-current="page"] { background: #141416; color: #fff; }
+header:has(> nav) .lang-toggle { background: rgba(255,255,255,.35); }
+header:has(> nav) .lang-opt { color: rgba(255,255,255,.9); }
+header:has(> nav) .lang-opt.is-active { color: #141416; }
+header:has(> nav) .signup { background: #fff; }
+/* Sheet that rises over the header, as in the app */
+body > header + section { background: #f2f2f4; }
+body > header + section .stage-cover, body > header + section .wave { display: none; }
+body > header + section h2 { color: #17171c; }
+.brand { color: #a45588; }
+/* Buttons */
+.btn-yellow, .btn-blue, .btn-navy { background: #141416; color: #ffffff; }
+.btn-shine::after { opacity: .35; }
+.btn-mono:hover, .btn-soft:hover { background: #141416; color: #fff; }
+header:has(> nav) .btn-navy { background: #141416; color: #fff; }
+header:has(> nav) form .btn-yellow { background: #141416; color: #fff; }
+footer .text-\[\#efd3e4\], section .text-\[\#efd3e4\] { color: #d9a9c8; }
+.bg-\[\#efd3e4\] { color: #141416; }
+.chip[aria-pressed="true"] { background: #141416; border-color: #141416; }
+.site-menu-link[aria-current="page"] { color: #a45588; }
+
+/* ---- Variant 3 refinements ---- */
+/* Hero: no ring, the big circle becomes a soft glow behind the phone */
+header img[src$="ellipse11.svg"] { display: none; }
+header img[src$="ellipse10.svg"] { filter: blur(90px); opacity: .95; }
+
+/* "Become one of the first": a rounded box with side margins */
+section.bg-\[\#141416\] { margin-inline: clamp(16px, 3vw, 40px); border-radius: 28px; }
+@media (min-width: 768px) { section.bg-\[\#141416\] { border-radius: 40px; } }
+
+/* "What can Roddi Health do": white cards, one black card, far less pink */
+#features article.bg-\[\#f3e8ef\] { background: #fff; box-shadow: 0 1px 2px rgba(20,20,22,.04); }
+#features article.bg-gradient-to-tr { background: #141416; }
+#features article .bg-\[\#f3e8ef\], #features article .bg-\[\#efd3e4\] { background-color: #efeff1; }
+#features article .bg-\[\#f8f1f5\] { background-color: #f6f6f7; }
+#features article .bg-\[\#a45588\] { background-color: #141416; }
+#features article .bg-\[\#2a1c26\] { background-color: #2c2c30; }
+#features article .text-\[\#a45588\] { color: #141416; }
+#features article .border-\[\#ebe5e9\] { border-color: #e7e7ea; }
+
+/* Hero meets the next section along the site's wave */
+header:has(> nav) { border-radius: 0; }
+body > header + section { border-radius: 0; overflow: visible; margin-top: 0; }
+@media (min-width: 768px) and (max-width: 1023px) { body > header + section { margin-top: -60px; } }
+body > header + section::before { content: ""; position: absolute; left: 0; right: 0; top: -54px; height: 55px; z-index: 2; pointer-events: none;
+  background: url("vector15.svg") center top / max(100%, 1100px) 100% no-repeat; transform: scaleY(-1); }
+
+/* ---- App interface mockups, built after the real app screens ---- */
+.app { font-family: 'Onest', sans-serif; color: #1c1c20; text-align: left; -webkit-font-smoothing: antialiased; }
+.app b, .app strong { font-weight: 700; }
+.app small { display: block; font-weight: 500; color: #8c8c94; }
+.app img { display: block; }
+.app-screen { position: absolute; inset: 0; width: 343px; height: 745px; background: #f2f2f4; overflow: hidden; }
+.app-head { position: relative; height: 240px; padding: 0 18px; background: #c48bb0; color: #fff; }
+.app-notch { position: absolute; left: 50%; top: 11px; width: 104px; height: 30px; margin-left: -52px; border-radius: 16px; background: #0b0b0f; }
+.app-status { display: flex; justify-content: space-between; align-items: center; height: 52px; padding: 6px 14px 0; font-size: 15px; font-weight: 600; }
+.app-sig { display: flex; align-items: flex-end; gap: 2px; }
+.app-sig i { width: 3px; background: #fff; border-radius: 1px; height: 6px; }
+.app-sig i:nth-child(2) { height: 8px; } .app-sig i:nth-child(3) { height: 10px; } .app-sig i:nth-child(4) { height: 12px; }
+.app-sig b { width: 22px; height: 11px; margin-left: 5px; border-radius: 3px; background: #fff; }
+.app-greet { display: flex; justify-content: space-between; gap: 10px; margin-top: 2px; }
+.app-greet small { color: #fff; font-size: 12px; font-weight: 600; }
+.app-greet strong { display: block; margin-top: 3px; font-size: 21px; line-height: 1.12; letter-spacing: -.01em; }
+.app-bell { position: relative; flex: none; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: #fff; }
+.app-bell svg { width: 21px; height: 21px; }
+.app-bell i { position: absolute; right: 3px; top: 3px; width: 9px; height: 9px; border-radius: 50%; background: #ef4444; }
+.app-pets { display: flex; gap: 16px; margin-top: 16px; white-space: nowrap; }
+.app-pet { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: none; font-size: 12px; font-weight: 700; color: #fff; }
+.app-av { position: relative; display: block; width: 48px; height: 48px; padding: 0; border-radius: 50%; background: #fff; }
+.app-av img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.app-pet.is-sel .app-av { box-shadow: 0 0 0 3px #c48bb0, 0 0 0 5px #fff; }
+.app-av em { position: absolute; right: -4px; top: -4px; width: 19px; height: 19px; border: 2px solid #fff; border-radius: 50%; background: #ef4444; color: #fff; font: 800 11px/15px 'Onest', sans-serif; text-align: center; }
+.app-panel { position: relative; margin: -22px 12px 0; padding: 16px 12px 14px; border-radius: 24px; background: #fff; }
+.app-panel--2 { margin-top: 10px; }
+.app-h { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; }
+.app-sun { width: 15px; height: 15px; }
+.app-early { width: max-content; margin: 8px auto 6px; padding: 6px 12px; border-radius: 999px; background: #fff; box-shadow: 0 2px 10px rgba(60,40,55,.1); color: #a45588; font-size: 11px; font-weight: 700; }
+.app-row { display: flex; gap: 7px; margin-top: 8px; }
+.app-row.is-past { opacity: .45; }
+.app-time { flex: none; display: flex; flex-direction: column; align-items: center; gap: 7px; width: 36px; padding-top: 7px; font-size: 11px; font-weight: 700; }
+.app-time--dot { width: 18px; }
+.app-circle { display: block; width: 19px; height: 19px; border: 1.5px solid #b9b0b6; border-radius: 50%; }
+.app-circle--on { border: 2px solid #a45588; }
+.app-item { display: flex; flex: 1; min-width: 0; align-items: center; gap: 9px; padding: 7px 8px; border-radius: 15px; background: #fafafb; }
+.app-tile { flex: none; width: 40px; height: 40px; border-radius: 11px; object-fit: cover; }
+.app-tile--s { width: 28px; height: 28px; border-radius: 8px; }
+.app-txt { flex: 1; min-width: 0; }
+.app-txt b { display: block; font-size: 13px; line-height: 1.2; }
+.app-txt small { margin-top: 1px; font-size: 11px; line-height: 1.2; }
+.app-duo { display: flex; flex: none; }
+.app-duo img { width: 22px; height: 22px; border: 1.5px solid #fff; border-radius: 50%; object-fit: cover; }
+.app-duo img + img { margin-left: -7px; }
+.app-round { flex: 1; min-width: 0; padding: 10px; border: 1.5px solid #dcc5d6; border-radius: 16px; background: #fff; }
+.app-round-top { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+.app-chip { display: inline-block; padding: 3px 7px; border-radius: 7px; background: #f6e9f1; color: #a45588; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.app-round-title { display: block; margin-top: 8px; font-size: 15px; }
+.app-round small, .app-float-round small { font-size: 11px; }
+.app-bar { position: relative; height: 5px; margin: 9px 26px 8px 0; border-radius: 3px; background: #f1e6ee; }
+.app-bar i { position: absolute; inset: 0 33% 0 0; border-radius: 3px; background: #a45588; }
+.app-bar span { position: absolute; right: -26px; top: -6px; color: #6f6a73; font-size: 10px; font-weight: 700; }
+.app-med { display: flex; align-items: center; gap: 7px; margin-top: 7px; }
+.app-med .app-txt b { font-size: 12px; } .app-med .app-txt small { font-size: 10px; }
+.app-med.is-done .app-txt b { color: #a8a4ab; text-decoration: line-through; }
+.app-tick { flex: none; display: flex; align-items: center; justify-content: center; width: 19px; height: 19px; border: 1.5px solid #b9b0b6; border-radius: 50%; color: #fff; }
+.app-med.is-done .app-tick { border-color: #a45588; background: #a45588; }
+.app-tick svg { width: 12px; height: 12px; }
+.app-cta { display: block; margin-top: 9px; padding: 10px; border-radius: 12px; background: #a45588; color: #fff; font-size: 13px; font-weight: 700; text-align: center; }
+.app-nowline { display: flex; align-items: center; gap: 6px; margin: 9px 0 0; color: #985b82; font-size: 10px; font-weight: 800; }
+.app-nowline i { flex: 1; height: 1.5px; background: #a45588; }
+/* Floating cards around the hero phone */
+.app-float-row { display: flex; flex: 1; align-items: center; gap: 10px; min-width: 0; }
+.app-float-row .app-tile { width: 46px; height: 46px; border-radius: 13px; }
+.app-float-row .app-txt b { font-size: 14px; }
+.app-float-row .app-txt small { font-size: 11.5px; }
+.app-float-row .app-time { padding-top: 0; font-size: 12px; }
+.app-float-round .app-round-title { font-size: 16px; }
+.app-float-pets b { font-size: 13px; }
+.app-pets--card { justify-content: space-between; gap: 6px; margin-top: 10px; }
+.app-pets--card .app-pet { color: #1c1c20; font-size: 11px; }
+.app-pets--card .app-pet.is-sel .app-av { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #c48bb0; }
+/* Interfaces inside the feature cards */
+.app-zoom { position: absolute; inset: 0; zoom: .647; }
+.app-profile { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; background: #f2f2f4; }
+.app-profile-head { display: flex; align-items: center; gap: 10px; padding: 14px 14px 30px; background: #c48bb0; color: #fff; }
+.app-profile-av { width: 46px; height: 46px; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
+.app-profile-head strong { display: block; font-size: 15px; }
+.app-profile-head small { color: #fff; font-size: 10.5px; line-height: 1.25; }
+.app-profile-list { display: flex; flex-direction: column; gap: 8px; margin: -18px 10px 0; padding: 12px; border-radius: 18px; background: #fff; }
+.app-profile-list .app-tile { width: 38px; height: 38px; }
+.app-profile-list .app-txt b { font-size: 12.5px; } .app-profile-list .app-txt small { font-size: 10.5px; }
+.app-search { position: absolute; inset: 0; padding: 14px; overflow: hidden; border-radius: inherit; background: #fff; }
+.app-sbox { display: flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: 999px; background: #f2f2f4; }
+.app-sbox b { font-size: 13px; } .app-sbox small { margin-left: auto; font-size: 10px; }
+.app-fchips { display: flex; gap: 6px; margin: 10px 0; }
+.app-fchip { display: flex; align-items: center; gap: 4px; padding: 3px 9px 3px 3px; border-radius: 999px; background: #f2f2f4; font-size: 10px; font-weight: 700; }
+.app-fchip.is-on { padding: 4px 10px; background: #141416; color: #fff; }
+.app-fchip img { width: 16px; height: 16px; border-radius: 50%; object-fit: cover; }
+.app-hit { display: flex; align-items: center; gap: 9px; margin-top: 7px; padding: 8px 9px; border-radius: 14px; background: #fafafb; }
+.app-hit-av { flex: none; width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.app-hit small { color: #a45588; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+.app-hit b { margin-top: 1px; font-size: 12px; font-weight: 600; line-height: 1.25; }
+.app mark { padding: 0 2px; border-radius: 3px; background: #f6e0ee; color: inherit; }
+.app-float-pets .app-pet { font-size: 0; gap: 0; }
+
+/* "What can Roddi Health do": pastel gradient cards with white widgets */
+#features article.bg-\[\#f3e8ef\] { box-shadow: none; }
+/* Each card has its own direction: dark corner top right, bottom left, then along the bottom */
+#features *:has(> article.bg-gradient-to-tr) > article:nth-of-type(2) { background: linear-gradient(215deg, #dfb6d3 0%, #efdfe9 52%, #f7f1f6 100%); }
+#features *:has(> article.bg-gradient-to-tr) ~ * > article:nth-of-type(1) { background: linear-gradient(35deg, #dcb2d0 0%, #efe0ea 55%, #f8f3f7 100%); }
+#features *:has(> article.bg-gradient-to-tr) ~ * > article:nth-of-type(2) { background: linear-gradient(180deg, #f8f3f7 0%, #f0e2eb 48%, #dbb0cf 100%); }
+
+/* Black card: larger phone that runs past the bottom edge */
+#features article.bg-gradient-to-tr .stage { max-width: 290px; }
+@media (min-width: 85rem) {
+  #features article.bg-gradient-to-tr > .relative.z-10 { max-width: 340px; }
+  #features article.bg-gradient-to-tr .stage { top: 44px; right: 40px; width: 290px; translate: none; }
+}
+.app-profile { background: #fff; }
+.app-search { background: #fff; }
+.app-profile-list { background: #fff; }
+
+/* ---- Variant 4: hero starts white and melts into the pink gradient ---- */
+header:has(> nav) { background: linear-gradient(180deg, #fff 0%, #fff 38%, #f1e0eb 68%, #c28cb1 100%); color: #17171c; }
+header:has(> nav) h1, header:has(> nav) nav .ff-montserrat { color: #17171c; }
+header:has(> nav) .t-lead, header:has(> nav) > div > p { color: #6f6a73; }
+header:has(> nav) p.t-small, header:has(> nav) p.t-small a, header:has(> nav) p.t-small span { color: #4a4450; }
+header:has(> nav) p.t-small b, header:has(> nav) p.t-small b span { color: #17171c; }
+header:has(> nav) nav a:not(.btn):not([aria-label]) { color: #4a4450; }
+header:has(> nav) .brand { color: #a45588; }
+header:has(> nav) > .breathe { opacity: .55; }
+header:has(> nav) .btn-mono, header:has(> nav) .menu-btn { background: #f2f2f4; color: #141416; }
+header:has(> nav) .btn-mono[aria-current="page"] { background: #141416; color: #fff; }
+header:has(> nav) .lang-toggle { background: #f2f2f4; }
+header:has(> nav) .lang-opt { color: #8f8a94; }
+header:has(> nav) .lang-opt.is-active { background: #fff; color: #141416; }
+header:has(> nav) .signup { background: #f2f2f4; }
+
+/* ---- "What can Roddi Health do": 3 + 2 cards with a pastel widget panel ---- */
+.fx-grid { display: grid; gap: 22px; margin-top: 40px; }
+@media (min-width: 640px) { .fx-grid { grid-template-columns: 1fr 1fr; } .fx-grid .fx-2:last-child { grid-column: span 2; } }
+@media (min-width: 1024px) {
+  .fx-grid { grid-template-columns: repeat(6, 1fr); margin-top: 64px; }
+  .fx-grid .fx-3 { grid-column: span 2; }
+  .fx-grid .fx-2, .fx-grid .fx-2:last-child { grid-column: span 3; }
+}
+.fx-card { padding: 9px; border-radius: 22px; background: #fff; box-shadow: 0 1px 2px rgba(122,74,104,.04), 0 18px 34px -24px rgba(122,74,104,.24); }
+.fx-panel { overflow: hidden; border-radius: 15px;
+  background: radial-gradient(90% 80% at 85% 100%, #e6b8d6 0%, rgba(230,184,214,0) 62%),
+              radial-gradient(70% 70% at 10% 95%, #d8c4e6 0%, rgba(216,196,230,0) 60%),
+              linear-gradient(160deg, #e9e4f1 0%, #f8eef4 50%, #f1dbe9 100%); }
+.fx-body { padding: 14px 10px 12px; }
+.fx-body h3 { color: #17171c; font-size: 22px; font-weight: 700; line-height: 1.2; letter-spacing: -.02em; }
+.fx-body p { margin-top: 6px; color: #6f6a73; font-size: 16px; line-height: 1.32; letter-spacing: -.01em; }
+/* One calm widget per card, in the app's own style */
+.fx-w, .fx-q { position: absolute; font-family: 'Onest', sans-serif; color: #1c1c20; text-align: left; background: #fff; }
+.fx-w { padding: 16px; border-radius: 22px; box-shadow: 0 14px 30px -20px rgba(122,74,104,.45); }
+.fx-r { display: flex; align-items: center; gap: 12px; }
+.fx-tile { flex: none; width: 54px; height: 54px; border-radius: 15px; object-fit: cover; }
+.fx-ava { flex: none; width: 58px; height: 58px; border-radius: 50%; object-fit: cover; }
+.fx-ava--s { width: 46px; height: 46px; }
+.fx-t { min-width: 0; }
+.fx-t b { display: block; font-size: 17px; font-weight: 700; line-height: 1.2; }
+.fx-t small { display: block; margin-top: 2px; color: #8c8c94; font-size: 13.5px; font-weight: 500; }
+.fx-t small + b { margin-top: 2px; }
+.fx-t small.fx-pl { margin: 0; color: #a45588; font-size: 11px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
+.fx-go { display: block; margin-top: 14px; padding: 12px; border-radius: 13px; background: #a45588; color: #fff; font-size: 15px; font-weight: 700; text-align: center; }
+.fx-l { display: block; color: #8c8c94; font-size: 13.5px; font-weight: 600; }
+.fx-big { display: flex; align-items: center; gap: 10px; margin-top: 2px; }
+.fx-big b { font-size: 32px; font-weight: 700; letter-spacing: -.02em; }
+.fx-big span { padding: 3px 9px; border-radius: 8px; background: #f6e9f1; color: #a45588; font-size: 13px; font-weight: 700; }
+.fx-ch { display: block; width: 100%; height: 70px; margin-top: 8px; }
+.fx-ch path { fill: none; stroke: #a45588; stroke-width: 3; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.fx-q { display: flex; align-items: center; gap: 9px; height: 50px; padding: 0 18px; border-radius: 999px; box-shadow: 0 14px 30px -20px rgba(122,74,104,.45); }
+.fx-q b { font-size: 15px; font-weight: 600; }
+.fx-w mark { padding: 0 3px; border-radius: 4px; background: #f6e0ee; color: inherit; }
+.fx-pets { display: flex; justify-content: space-between; padding: 20px 26px 16px; }
+.fx-p { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; }
+.fx-av { position: relative; display: block; width: 62px; height: 62px; border-radius: 50%; }
+.fx-av img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.fx-p.is-sel .fx-av { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #a45588; }
+.fx-av em { position: absolute; right: -3px; top: -3px; width: 21px; height: 21px; border: 2px solid #fff; border-radius: 50%; background: #ef4444; color: #fff; font: 800 12px/17px 'Onest', sans-serif; text-align: center; }
+
+/* Hero: white into light grey, no pink in the background */
+header:has(> nav) { background: linear-gradient(180deg, #fff 0%, #fff 38%, #f5f5f7 68%, #e4e4e9 100%); }
+header:has(> nav) > .breathe, header img[src$="ellipse10.svg"] { filter: grayscale(1); }
+header img[src$="ellipse10.svg"] { filter: grayscale(1) blur(90px); }
+
+/* "Sound familiar?" on white; hero grey with a whisper of the brand pink */
+body > header + section { background: #fff; }
+body > header + section::before { background-image: url("vector15-white.svg"); }
+header:has(> nav) { background: linear-gradient(180deg, #fff 0%, #fff 38%, #f6f3f5 68%, #e6dce3 100%); }
+
+/* Hero: a cleaner, lighter grey; phone screen left plain */
+header:has(> nav) { background: linear-gradient(180deg, #fff 0%, #fff 38%, #f9f9fa 68%, #efeef1 100%); }
+.fx-blank { position: absolute; inset: 0; background: #eceef1; }
+.fx-blank::after { content: ""; position: absolute; left: 50%; top: 11px; width: 104px; height: 30px; margin-left: -52px; border-radius: 16px; background: #0b0b0f; }
+
+/* Before / after table: neutral left, clean white right, black accent */
+div:has(> table) { border-color: #e7e7ea; }
+table tr { border-color: #ececef; }
+table th.bg-\[\#f4f6f8\] { background: #ececef; color: #6f6a73; }
+table td { background: #fff; }
+table td.bg-\[\#f8f1f5\] { background: #f8f8f9; color: #77747b; }
+table [class*="bg-[#a45588]"] { background-color: #141416; }
+
+/* FAQ: white cards on the grey page, no pink */
+.faq details { border-color: #e4e4e8; }
+.faq details[open] { background: #fff; }
+.faq .lift[style*="background-image"] { background-image: none !important; background-color: #fff; }
+
+/* Push notification beside the hero phone */
+.fx-push { display: flex; align-items: center; gap: 12px; }
+.fx-push-ic { flex: none; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: #f2f2f4; }
+.fx-push-ic img { width: 28px; height: 28px; }
+.fx-push-t { flex: 1; min-width: 0; }
+.fx-push-top { display: flex; align-items: center; justify-content: space-between; }
+.fx-push-top span { color: #6f6a73; font-size: 11px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
+.fx-push-top small { font-size: 11px; }
+.fx-push-t b { display: block; margin-top: 2px; font-size: 14.5px; line-height: 1.25; }
+.fx-push-t > small { margin-top: 1px; font-size: 12px; }
+.fx-push { flex: 1; min-width: 0; }
+.fx-tuck { padding-left: 38px; }
+
+/* Hero intro fits on two lines from tablet width up */
+@media (min-width: 768px) { header:has(> nav) > div > .t-lead { max-width: 780px; text-wrap: balance; } }
+
+/* ---- Variant 5: soft pink glow behind the phone, phone melts into white ---- */
+header:has(> nav) { background: #fff; }
+header:has(> nav)::before { content: ""; position: absolute; inset: auto -10% 0; height: 64%; pointer-events: none;
+  background: linear-gradient(180deg, rgba(240,212,229,0) 0%, #f1d6e6 42%, #f1d6e6 56%, rgba(240,212,229,0) 100%); filter: blur(24px); }
+header:has(> nav) > .breathe, header img[src$="ellipse10.svg"] { display: none; }
+header .stage { -webkit-mask-image: linear-gradient(180deg, #000 58%, transparent 97%); mask-image: linear-gradient(180deg, #000 58%, transparent 97%); }
+body > header + section::before { display: none; }
+body > header + section { margin-top: 0; }
+header:has(> nav)::before { height: 54%; bottom: 0; background: linear-gradient(180deg, rgba(240,212,229,0) 0%, #f1d6e6 46%, #f3dcea 58%, rgba(240,212,229,0) 100%); filter: blur(30px); }
+header .stage { -webkit-mask-image: linear-gradient(180deg, #000 62%, transparent 98%); mask-image: linear-gradient(180deg, #000 62%, transparent 98%); }
+header .z-\[6\] { background: #fff; }
+
+/* "Be among the first": animal photos travelling on orbits */
+section.bg-\[\#141416\] { position: relative; overflow: hidden; width: min(1120px, 100% - 2 * clamp(16px, 3vw, 40px)); margin-inline: auto; }
+section.bg-\[\#141416\] > *:not(.orbits) { position: relative; z-index: 1; }
+.orbits { position: absolute; inset: 0; pointer-events: none; --ic: 34px; }
+.orbit { --d: 430px; position: absolute; left: 50%; top: 50%; width: var(--d); height: var(--d); margin: calc(var(--d) / -2) 0 0 calc(var(--d) / -2); border: 1.5px dashed rgba(255,255,255,.18); border-radius: 50%; animation: orbit-spin var(--t, 40s) linear infinite; }
+.orbit.o1 { --d: 590px; --t: 80s; }
+.orbit.o2 { --d: 700px; --t: 112s; animation-direction: reverse; }
+@media (min-width: 768px) {
+  .orbits { --ic: 40px; }
+  .orbit.o1 { --d: 800px; }
+  .orbit.o2 { --d: 920px; }
+}
+@media (min-width: 1100px) {
+  .orbits { --ic: 50px; }
+  .orbit.o1 { --d: 820px; }
+  .orbit.o2 { --d: 1010px; }
+}
+.orbit-ic { position: absolute; left: 50%; top: 50%; width: var(--ic); height: var(--ic); margin: calc(var(--ic) / -2) 0 0 calc(var(--ic) / -2); transform: rotate(var(--a)) translateY(calc(var(--d) / -2)) rotate(calc(var(--a) * -1)); }
+.orbit-ic img { display: block; width: 100%; height: 100%; border: 2px solid #fff; border-radius: 50%; object-fit: cover; animation: orbit-spin var(--t, 40s) linear infinite reverse; }
+.orbit.o2 .orbit-ic img { animation-direction: normal; }
+@keyframes orbit-spin { to { rotate: 360deg; } }
+@media (prefers-reduced-motion: reduce) { .orbit, .orbit-ic img { animation: none; } }
+
+/* Hero: mirrored widget columns, animals on one shared fading ground */
+.fx-tuck { padding-left: 38px; gap: 5px; }
+.fx-tuck .app-txt small { white-space: nowrap; }
+.fx-tuck-r { padding-right: 44px; }
+.fx-blank { background: linear-gradient(180deg, #f7f5f7 0%, #efebef 100%); }
+@media (min-width: 1024px) {
+  header .stage { -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 98%); mask-image: linear-gradient(180deg, #000 72%, transparent 98%); }
+}
+.fx-tuck .app-tile { width: 36px; height: 36px; }

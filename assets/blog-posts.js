@@ -20,17 +20,17 @@
  *   featured — the first featured post (per filter) is shown as the large card
  */
 var BLOG_RODENTS = [
-  { key: 'rat',        label: 'Щури',           tint: '#dff1fb' },
-  { key: 'hamster',    label: 'Хом’яки',        tint: '#fdf1c8' },
-  { key: 'guinea-pig', label: 'Морські свинки', tint: '#f4f1e7' },
-  { key: 'chinchilla', label: 'Шиншили',        tint: '#e6edf7' },
-  { key: 'degu',       label: 'Дегу',           tint: '#f7ecdc' },
-  { key: 'mouse',      label: 'Миші',           tint: '#e4f4ee' },
-  { key: 'rabbit',     label: 'Кролики',        tint: '#f6e8ef' }
+  { key: 'rat',        label: 'Щури',           tint: '#f3e8ef' },
+  { key: 'hamster',    label: 'Хом’яки',        tint: '#f3e8ef' },
+  { key: 'guinea-pig', label: 'Морські свинки', tint: '#f2f2f4' },
+  { key: 'chinchilla', label: 'Шиншили',        tint: '#f3e8ef' },
+  { key: 'degu',       label: 'Дегу',           tint: '#f3e8ef' },
+  { key: 'mouse',      label: 'Миші',           tint: '#f3e8ef' },
+  { key: 'rabbit',     label: 'Кролики',        tint: '#f3e8ef' }
 ];
 
 var BLOG_TOPICS = {
-  'Симптоми':    '#138cd1',
+  'Симптоми':    '#a45588',
   'Харчування':  '#2f9e5b',
   'Догляд':      '#e0a800',
   'Невідкладне': '#e5484d'

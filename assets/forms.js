@@ -45,7 +45,7 @@ var RoddiForms = (function () {
 
   // Vercel serves clean URLs and redirects *.html to them; the local server has only the files.
   var LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) || location.protocol === 'file:';
-  var THANKS = (IS_EN ? '/en/' : '/') + (LOCAL ? 'thank-you.html' : 'thank-you');
+  var THANKS = 'thank-you.html';
 
   /* ---------- email checks ---------- */
   var EMAIL_RE = /^[^\s@"(),:;<>[\]\\]+@[^\s@"(),:;<>[\]\\]+\.[a-zЀ-ӿ]{2,}$/i;
