@@ -187,6 +187,10 @@ header:has(> nav) > nav > div:first-child a[aria-current="page"] { color: #17171
 .think i:nth-of-type(2) { bottom: -33px; width: 12px; height: 12px; margin-left: 7px; }
 .think-photo { display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 18px; object-fit: cover; }
 
+/* Early access: same side margins as the other sections, and room below. */
+section.bg-\[\#141416\] { width: min(1280px, 100% - 40px); margin-bottom: 96px; }
+@media (min-width: 768px) { section.bg-\[\#141416\] { margin-bottom: 130px; } }
+
 /* Early access on tablets: narrower content, so the orbits show. */
 @media (min-width: 640px) and (max-width: 1023px) {
   section.bg-\[\#141416\] > *:not(.orbits) { max-width: 420px; margin-inline: auto; }
@@ -304,6 +308,20 @@ header .fx-push-top small { display: none; }
 .hv-bar { display: block; height: 6px; margin-top: 7px; overflow: hidden; border-radius: 6px; background: #f6e7d8; }
 .hv-bar i { display: block; width: 32%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #f7a23e, #e8791a); }
 .hv-txt small { display: block; margin-top: 5px; color: #8c8c94; font-size: 12px; font-weight: 500; white-space: nowrap; }
+
+/* Features, desktop: side margins 15% wider (92px instead of 80px at 1440). */
+@media (min-width: 1024px) {
+  .feat-panel { min-height: min(72vh, 600px); padding: 14px; justify-content: flex-start; border-radius: 34px; }
+  .feat-panel > p { margin-inline: 26px; }
+  .feat-panel > p:not(.feat-lead) { margin-top: 26px; }
+  .feat-panel > p.feat-lead { max-width: 640px; margin-bottom: 30px; font-size: 25px; font-weight: 500; line-height: 1.26; letter-spacing: -0.02em; }
+  .feat-show { display: flex; flex: 1; align-items: center; justify-content: center; min-height: 320px; padding: 32px; border-radius: 24px; background: radial-gradient(90% 90% at 50% 100%, #efd7e7 0%, rgba(239,215,231,0) 100%), #faf3f8; }
+  .feat-show > * { --z: 1.26; width: 100%; max-width: min(440px, calc(100% / var(--z))); zoom: var(--z); }
+  #feat-4 .feat-show > * { --z: 1.42; }
+  .feat-show > .lg\:grid-cols-2 { --z: 1; max-width: 440px; grid-template-columns: 1fr; }
+  #features { padding-inline: 23px; }
+  #features > div { max-width: 1256px; }
+}
 
 /* Hero below desktop: the same scene, moved to fit a narrower stage. */
 .hm-sy { left: 43px; }
