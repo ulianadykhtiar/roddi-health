@@ -1,0 +1,38 @@
+/* Gradient accents of the landing duplicate (index-gradients.html, built by tools/build-gradient-draft.py).
+   The same pastel pictures as the feature cards (assets/features/soft-*.jpg), slowly drifting,
+   with a touch of film grain. url() paths are relative to this file. */
+:root { --hg-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+@keyframes hg-pan { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-4%, 3%) scale(1.1); } 100% { transform: translate(3%, -3%) scale(1.04); } }
+
+/* ---------------- hero ---------------- */
+/* The soft circle behind the logo: a warm pink-peach glow instead of grey. */
+header:has(> nav) > .breathe { filter: none; opacity: 1; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(246,190,206,.8) 0%, rgba(249,206,186,.45) 52%, rgba(255,255,255,0) 78%); }
+header:has(> nav) > .breathe img { display: none; }
+
+/* A dome of soft colour behind the phone: the picture fades out towards the edge, like light. */
+.hg-dome { overflow: hidden; border-radius: 50%;
+  -webkit-mask-image: radial-gradient(closest-side, #000 91%, rgba(0,0,0,0) 100%); mask-image: radial-gradient(closest-side, #000 91%, rgba(0,0,0,0) 100%); }
+.hg-dome img { position: absolute; left: -10%; top: -10%; width: 120%; height: 120%; max-width: none; object-fit: cover; animation: hg-pan 16s ease-in-out infinite alternate; }
+/* A bright core above the phone, so it appears to rise out of the light; fine grain on top. */
+.hg-dome::before { content: ""; position: absolute; inset: 0; z-index: 1; background: radial-gradient(40% 26% at 50% 20%, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 100%); }
+.hg-dome::after { content: ""; position: absolute; inset: 0; z-index: 2; opacity: .22; mix-blend-mode: overlay; background-image: var(--hg-noise); pointer-events: none; }
+
+/* ---------------- "До і після": one big gradient panel ---------------- */
+/* clip-path rounds the corners for sure: Safari ignores overflow+border-radius when a child animates. */
+.hg-ba > div { position: relative; isolation: isolate; overflow: hidden; border-radius: 44px; clip-path: inset(0 round 44px); padding: clamp(22px, 4.5vw, 64px); }
+.hg-ba > div::before { content: ""; position: absolute; inset: -12%; z-index: -2; background: url(features/soft-3.jpg) center / cover; animation: hg-pan 18s ease-in-out infinite alternate; }
+.hg-ba > div::after { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .22; mix-blend-mode: overlay; background-image: var(--hg-noise); pointer-events: none; }
+.hg-ba .text-\[\#6e727a\] { color: #4b4550; }
+/* The table lies on frosted glass; the black "with the app" column keeps the contrast. */
+.hg-ba .ba-table { background: rgba(255,255,255,.55); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); box-shadow: 0 0 0 1px rgba(255,255,255,.6); }
+.hg-ba .ba-no { border-top-color: rgba(255,255,255,.7); color: #5a5460; }
+@media (max-width: 639px) { .hg-ba > div { border-radius: 30px; clip-path: inset(0 round 30px); padding: 18px; } }
+
+/* ---------------- FAQ: the "still have questions" card ---------------- */
+.hg-ask { position: relative; isolation: isolate; overflow: hidden; clip-path: inset(0 round 28px); }
+.hg-ask::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/soft-2.jpg) center / cover; animation: hg-pan 17s ease-in-out infinite alternate; }
+.hg-ask::after { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .2; mix-blend-mode: overlay; background-image: var(--hg-noise); pointer-events: none; }
+.hg-ask p { color: #4b4550; }
+
+@media (prefers-reduced-motion: reduce) { .hg-dome img, .hg-ba > div::before, .hg-ask::before { animation: none; } }
