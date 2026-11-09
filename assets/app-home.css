@@ -318,3 +318,6 @@ header .fx-push-top small { display: none; }
   .hm-right { left: 905px; top: 640px; width: 190px; height: 150px; }
   .hm-ham { left: -24px; width: 190px; rotate: 10deg; }
 }
+
+/* Room between the pinned features and the black CTA (below 1024px .fp has its own padding). */
+@media (min-width: 1024px) { #features + section.bg-\[\#141416\] { margin-top: 130px; } }

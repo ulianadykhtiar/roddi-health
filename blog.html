@@ -39,9 +39,10 @@
   <link rel="stylesheet" href="assets/styles.css?v=2">
   <script src="assets/clarity.js"></script>
   <link rel="stylesheet" href="assets/theme.css">
-  <link rel="stylesheet" href="assets/app-home.css?v=46">
+  <link rel="stylesheet" href="assets/app-home.css?v=47">
+  <link rel="stylesheet" href="assets/pages.css?v=3">
 </head>
-<body>
+<body class="page-soft">
 <!-- Phone side menu: add new links inside its <nav>. -->
 <dialog id="site-menu" class="site-menu" aria-label="Меню">
   <div class="site-menu-inner">
@@ -59,11 +60,7 @@
 </dialog>
 
 <!-- ============ Header + intro ============ -->
-<header class="relative overflow-hidden rounded-b-[40px] md:rounded-b-[100px] bg-white pb-[40px] md:pb-[56px]">
-  <div class="breathe absolute left-1/2 -translate-x-1/2 top-[-305px] size-[427px] pointer-events-none" aria-hidden="true">
-    <img alt="" class="size-full" src="assets/ellipse2.svg">
-  </div>
-
+<header class="relative bg-white">
   <nav data-reveal="down" class="relative z-40 mx-auto flex h-[54px] max-w-[1240px] items-center justify-between px-5 pt-5 md:pt-[33px] md:px-10 lg:box-content lg:grid lg:grid-cols-[1fr_auto_1fr]">
     <div class="hidden lg:flex gap-[30px] items-center t-small font-semibold text-[#4a4450]">
       <a href="index.html#features" class="hover:text-[#a45588]">Можливості</a>
@@ -86,63 +83,41 @@
     </div>
   </nav>
 
-  <div class="relative px-5 pt-[48px] md:pt-[72px] text-center">
-    <!-- Decorations: round photo "bubbles" floating beside the title on wide screens
-         (photos from Wikimedia Commons, credited at the bottom of the page). -->
-    <div aria-hidden="true" class="hidden lg:block pointer-events-none">
-      <div data-reveal="pop" data-d="350" class="absolute right-[max(24px,calc(50%-640px))] top-[30px]">
-        <div class="float [--dur:6s] [--amp:-10px] size-[150px] rotate-[8deg] overflow-hidden rounded-full border-[6px] border-white shadow-[0_16px_32px_-18px_rgba(122,74,104,.45)]">
-          <img alt="" class="size-full object-cover" src="assets/blog/syrian-hamster-winking-330.jpg">
-        </div>
-        <span class="absolute -left-[18px] bottom-[6px] -rotate-[8deg] rounded-full bg-[#efd3e4] px-[12px] py-[5px] t-label text-[#141416] shadow-sm">Підморгує 😉</span>
-      </div>
-      <div data-reveal="pop" data-d="500" class="absolute right-[max(150px,calc(50%-470px))] top-[210px]">
-        <div class="float [--dur:7.4s] [--fd:-3s] [--amp:-6px] size-[84px] -rotate-[6deg] overflow-hidden rounded-full border-[5px] border-white shadow-[0_12px_24px_-14px_rgba(122,74,104,.45)]">
-          <img alt="" class="size-full object-cover" src="assets/blog/cavia-porcellus01-330.jpg">
-        </div>
-      </div>
-      <div data-reveal="pop" data-d="420" class="absolute left-[max(24px,calc(50%-640px))] top-[120px]">
-        <div class="float [--dur:7s] [--fd:-2s] [--amp:-8px] size-[132px] -rotate-[10deg] overflow-hidden rounded-full border-[6px] border-white shadow-[0_16px_32px_-18px_rgba(122,74,104,.45)]">
-          <img alt="" class="size-full object-cover" src="assets/blog/fancy-rat-330.jpg">
-        </div>
-        <span class="absolute -right-[30px] top-[0px] rotate-[10deg] rounded-full bg-[#141416] px-[12px] py-[5px] t-label text-white shadow-sm">Привіт!</span>
+  <div class="px-5 pt-[56px] md:pt-[64px]">
+    <div class="bp-hero soft-grad">
+      <p data-reveal data-d="50" class="bp-crumb"><a href="index.html">Головна</a> <span aria-hidden="true">/</span> <b>Блог</b></p>
+      <h1 data-reveal data-d="100" class="t-display mx-auto mt-[18px] max-w-[900px]">Блог про здоров’я <span class="word-chip"><img alt="" src="assets/blog/fancy-rat-330.jpg"><img alt="" src="assets/blog/syrian-hamster-winking-330.jpg"><img alt="" src="assets/blog/cavia-porcellus01-330.jpg"></span> <span>гризунів</span></h1>
+      <p data-reveal data-d="200" class="t-lead mx-auto mt-[18px] max-w-[640px] text-[#4b4550]">Харчування, симптоми, догляд і невідкладні стани — коротко й зрозуміло. Обирайте свого улюбленця або шукайте за ключовим словом.</p>
+
+      <form data-reveal data-d="300" role="search" class="blog-search mx-auto mt-[28px] max-w-[600px]" onsubmit="return false">
+        <label class="signup bg-white cursor-text">
+          <svg aria-hidden="true" class="size-[20px] shrink-0 text-[#0f0f11]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="blog-q" type="search" name="q" autocomplete="off" placeholder="Наприклад: вітамін C, дихання, діабет" aria-label="Пошук статей" class="text-[#0f0f11] placeholder:text-[#a2a6ad]">
+          <button type="button" id="blog-clear" class="btn-app btn-app-sm shrink-0 hidden" aria-label="Очистити пошук">Очистити</button>
+          <span id="blog-go" class="btn-app btn-app-sm shrink-0 pointer-events-none">Знайти</span>
+        </label>
+      </form>
+
+      <div data-reveal="fade" data-d="400" class="mt-[24px] md:mt-[32px]">
+        <div id="blog-chips" role="group" aria-label="Фільтр за твариною" class="mx-auto flex max-w-[1040px] flex-wrap justify-center gap-[8px]"></div>
       </div>
     </div>
-
-    <p data-reveal data-d="50" class="t-small font-semibold text-[#6f6a73]"><a href="index.html" class="hover:text-[#a45588]">Головна</a> <span aria-hidden="true" class="mx-[6px] text-[#8f8a94]">/</span> <span class="text-[#a45588]">Блог</span></p>
-    <h1 data-reveal data-d="100" class="t-h1 mx-auto mt-[16px] max-w-[820px]">Блог про здоров’я <span class="brand">гризунів</span></h1>
-    <p data-reveal data-d="200" class="t-lead mx-auto mt-[20px] max-w-[640px] text-[var(--ink)]">Харчування, симптоми, догляд і невідкладні стани — коротко й зрозуміло. Обирайте свого улюбленця або шукайте за ключовим словом.</p>
-
-    <!-- Search: same pill as the hero email form. -->
-    <form data-reveal data-d="300" role="search" class="blog-search mx-auto mt-[32px] max-w-[600px]" onsubmit="return false">
-      <label class="signup bg-[#f2f2f4] cursor-text">
-        <svg aria-hidden="true" class="size-[22px] shrink-0 text-[#141416]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="blog-q" type="search" name="q" autocomplete="off" placeholder="Наприклад: вітамін C, дихання, діабет" aria-label="Пошук статей" class="text-[#2a2a2a] placeholder:text-[#8f8a94]">
-        <button type="button" id="blog-clear" class="btn btn-yellow shrink-0 hidden" aria-label="Очистити пошук">Очистити</button>
-        <span id="blog-go" class="btn btn-yellow shrink-0 pointer-events-none">Знайти</span>
-      </label>
-    </form>
-  </div>
-
-  <!-- Rodent filter -->
-  <div data-reveal="fade" data-d="400" class="mt-[28px] md:mt-[36px] px-5">
-    <div id="blog-chips" role="group" aria-label="Фільтр за твариною" class="mx-auto flex max-w-[1240px] flex-wrap justify-center gap-[10px]"></div>
   </div>
 </header>
 
 <!-- ============ Posts ============ -->
-<main class="bg-white px-5 md:px-10 pt-[24px] pb-[100px] md:pb-[130px]">
-  <div class="mx-auto max-w-[1350px]">
+<main class="bg-white px-5 pt-[32px] pb-[96px] md:pb-[130px]">
+  <div class="mx-auto max-w-[1280px]">
     <div class="flex flex-wrap items-baseline justify-between gap-[12px]">
       <p id="blog-count" class="t-body font-semibold text-[#6f6a73]" aria-live="polite"></p>
       <button type="button" id="blog-reset" class="t-small font-semibold link hidden">Скинути фільтри</button>
     </div>
 
-    <div id="blog-grid" class="mt-[20px] grid gap-[16px] sm:gap-[20px] sm:grid-cols-2 lg:grid-cols-3"><!-- posts:start --><article class="blog-static"><h3><a href="https://www.petmd.com/exotic/conditions/respiratory/upper-respiratory-infection-rats" rel="noopener">Респіраторні інфекції у щурів: на які ознаки зважати</a></h3><p>Чхання, хрипи чи «клацання» під час дихання, виділення з носа й червонуваті кірочки біля очей — найчастіші сигнали. Без лікування інфекція може бути небезпечною, тож із такими симптомами варто йти до ветеринара.</p><p>PetMD</p></article><article class="blog-static"><h3><a href="https://www.walkervillevet.com.au/blog/mycoplasma-respiratory-infections-in-rats" rel="noopener">Мікоплазмоз: чому щур важко дихає</a></h3><p>Мікоплазма є в багатьох щурів і може роками нічим себе не проявляти, а загострюватися на тлі стресу. Брудна клітка із запахом аміаку подразнює дихальні шляхи, тому регулярне прибирання — частина профілактики.</p><p>Walkerville Vet</p></article><article class="blog-static"><h3><a href="https://www.bluecross.org.uk/advice/rat/food-and-weight" rel="noopener">Чим годувати щура і як стежити за вагою</a></h3><p>Основа раціону — спеціальний гранульований корм для щурів, а овочі, трохи фруктів і білкові ласощі — доповнення. Щури легко набирають вагу, тому порції варто контролювати.</p><p>Blue Cross</p></article><article class="blog-static"><h3><a href="https://www.bluecross.org.uk/pet-advice/caring-your-rat" rel="noopener">Як зробити життя щура цікавішим</a></h3><p>Щури розумні й допитливі, їм потрібні нові враження. Коробки, тунелі, мотузки та розсипаний корм, який треба шукати, допомагають уникнути нудьги.</p><p>Blue Cross</p></article><article class="blog-static"><h3><a href="https://askavet.com/blogs/news/husbandry-and-medical-care-of-hamsters-vet-approved-2025-guide-by-dr-duncan-houston-%F0%9F%90%B9" rel="noopener">Мокрий хвіст у хом’яка: чому це терміново</a></h3><p>Мокрий, забруднений хвіст, млявість і відмова від їжі можуть означати тяжку кишкову інфекцію. Стан швидко погіршується, тому до ветеринара треба потрапити в першу ж добу.</p><p>Ask A Vet</p></article><article class="blog-static"><h3><a href="https://vetverified.com/articles/the-top-25-hamster-care-questions-answered-by-uk-vets" rel="noopener">25 найчастіших запитань про хом’яків</a></h3><p>Ветеринари відповідають на те, що найчастіше питають власники: яка клітка потрібна, чим годувати, чи можна тримати двох хом’яків разом і як зрозуміти, що тварина хворіє.</p><p>VetVerified</p></article><article class="blog-static"><h3><a href="https://spca.nz/advice-and-welfare/article/why-is-vitamin-c-important-for-my-guinea-pigs" rel="noopener">Чому морським свинкам потрібен вітамін C</a></h3><p>Морські свинки, як і люди, не синтезують вітамін C самі, тож мають отримувати його з їжею щодня. Добре підходять болгарський перець і листова зелень. Вітамін у воді для пиття — ненадійне джерело.</p><p>SPCA New Zealand</p></article><article class="blog-static"><h3><a href="https://unusualpetvets.com.au/scurvy-in-guinea-pigs-and-the-importance-of-vitamin-c" rel="noopener">Цинга в морських свинок: як помітити вчасно</a></h3><p>Ознаки нестачі вітаміну C можуть з’явитися вже за 2–3 тижні неправильного харчування: скутість, біль у суглобах, кровоточивість ясен, погана шерсть. Стан лікується, якщо почати вчасно.</p><p>Unusual Pet Vets</p></article><article class="blog-static"><h3><a href="https://www.rspca.org.au/latest-news/blog/how-should-i-care-my-guinea-pig/" rel="noopener">Базовий догляд за морською свинкою</a></h3><p>Необмежене сіно, свіжі овочі, корм для морських свинок і чиста вода — основа раціону. А ще простора клітка й компанія: це соціальні тварини.</p><p>RSPCA Australia</p></article><article class="blog-static"><h3><a href="https://www.petmd.com/exotic/care/how-give-your-chinchilla-dust-bath" rel="noopener">Пилові ванни для шиншили: як і як часто</a></h3><p>Шиншилу не купають у воді: густе хутро погано висихає. Натомість дають спеціальний пісок-пил і прибирають ванночку приблизно через пів години, щоб не подразнювати очі.</p><p>PetMD</p></article><article class="blog-static"><h3><a href="https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health" rel="noopener">Здоров’я шиншили: зуби, шерсть, травлення</a></h3><p>Зуби шиншили ростуть усе життя, тому їй потрібне необмежене сіно і безпечні предмети для гризіння. Слинотеча чи відмова від їжі — привід перевірити зуби у ветеринара.</p><p>PDSA</p></article><article class="blog-static"><h3><a href="https://exoticdirect.co.uk/news/degu-food-advice-what-your-degu-should-be-eating-not-eating-diabetes-and-other-advice/" rel="noopener">Дегу і цукор: як уберегти від діабету</a></h3><p>Дегу погано засвоюють цукор, тому схильні до діабету. Фрукти, сухофрукти й солодкі овочі краще не давати. Основа раціону — сіно і корм для дегу. Діабет легше попередити, ніж лікувати.</p><p>Exotic Direct</p></article><article class="blog-static"><h3><a href="https://www.petmd.com/exotic/care/caring-for-a-degu" rel="noopener">Дегу вдома: що потрібно знати власнику</a></h3><p>Дегу — активні денні тварини, які живуть групами. Їм потрібні простір, колесо, предмети для гризіння й пилові ванни. Сильна спрага чи помутніння очей — привід звернутися до лікаря.</p><p>PetMD</p></article><article class="blog-static"><h3><a href="https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health" rel="noopener">Здоров’я мишей: щоденний огляд за хвилину</a></h3><p>Миші часто приховують біль, тому зміни краще ловити рано: подивіться на очі, ніс, шерсть, дихання й послід. Чхання чи «цокання» під час дихання — привід звернутися до ветеринара.</p><p>PDSA</p></article><article class="blog-static"><h3><a href="https://www.msdvetmanual.com/all-other-pets/mice/routine-health-care-of-mice" rel="noopener">Рутинний догляд за домашніми мишами</a></h3><p>Довідник для власників від MSD Vet Manual: як облаштувати житло, як часто прибирати, як годувати і як помітити перші ознаки хвороби.</p><p>MSD Vet Manual</p></article><article class="blog-static"><h3><a href="https://vcahospitals.com/vitality/know-your-pet/gastrointestinal-stasis-in-rabbits" rel="noopener">Стаз ШКТ у кролика: коли бити на сполох</a></h3><p>Кролик не їсть і не залишає посліду кілька годин — це привід терміново їхати до ветеринара. Найкраща профілактика — раціон, де основа сіно, а гранул і фруктів зовсім трохи.</p><p>VCA Animal Hospitals</p></article><article class="blog-static"><h3><a href="https://www.walkervillevet.com.au/blog/rabbit-not-eating/" rel="noopener">Кролик не їсть: що робити</a></h3><p>Відмова від їжі в кролика — не дрібниця: травлення може зупинитися за лічені години. Пояснюємо, які причини бувають і чому не варто чекати до ранку.</p><p>Walkerville Vet</p></article><!-- posts:end --></div>
+    <div id="blog-grid" class="mt-[20px] grid gap-[16px] sm:gap-[20px] sm:grid-cols-2 lg:grid-cols-3"><!-- articles:start --><article class="blog-static"><h3><a href="blog/chomu-shchur-chkhaie.html">Чому щур чхає і коли їхати до ветеринара</a></h3><p>Навіть поодиноке чхання або червонуваті кірочки біля очей і носа можуть бути першими ознаками респіраторної інфекції. У щурів вона дуже поширена й без лікування може перейти в пневмонію, тому чхання варто показати ветеринару, а не чекати.</p></article><article class="blog-static"><h3><a href="blog/chym-goduvaty-shchura.html">Чим годувати щура: що можна, а що не можна</a></h3><p>Основа раціону домашнього щура — гранульований корм саме для щурів. Овочі, трохи фруктів, варене яйце, зерно й насіння дають у межах денної норми, а не понад неї. Виноград, родзинки, цибуля, цитрусові й шоколад не підходять.</p></article><article class="blog-static"><h3><a href="blog/chym-goduvaty-khomiaka.html">Чим годувати хомʼяка: що можна, а що не можна</a></h3><p>Більшу частину раціону хомʼяка має становити готовий гранульований корм із вмістом білка 15–25%. Овочі дають помірно, бо надлишок свіжого може спричинити діарею, а для хомʼяка це небезпечно.</p></article><article class="blog-static"><h3><a href="blog/mokryi-khvist-u-khomiaka.html">Мокрий хвіст у хомʼяка: симптоми й що робити</a></h3><p>«Мокрий хвіст» — це діарея, через яку намокає шерсть під хвостом. Хомʼяк швидко втрачає рідину, тому стан часто є невідкладним: ветеринар-екзотолог має оглянути його в ідеалі протягом 24 годин.</p></article><article class="blog-static"><h3><a href="blog/morska-svynka-ne-yist.html">Морська свинка не їсть: що робити</a></h3><p>Якщо морська свинка перестала їсти чи стало менше посліду, телефонуйте ветеринару відразу. Стаз шлунково-кишкового тракту без лікування може стати смертельним за 24–48 годин.</p></article><article class="blog-static"><h3><a href="blog/chym-goduvaty-morsku-svynku.html">Чим годувати морську свинку і де брати вітамін C</a></h3><p>Приблизно 80% раціону морської свинки становлять трава й сіно, і вони мають бути доступні постійно. Вітамін C свинки не виробляють самі, тому отримують його щодня з їжею.</p></article><article class="blog-static"><h3><a href="blog/krolyk-ne-yist.html">Кролик не їсть: чому це небезпечно й що робити</a></h3><p>Кролик має їсти й випорожнюватися постійно. Більше 8 годин без їжі чи посліду — це вже відхилення, а стаз ШКТ є невідкладним станом, тож звертайтеся до ветеринара якнайшвидше.</p></article><article class="blog-static"><h3><a href="blog/chym-goduvaty-degu.html">Чим годувати дегу: сіно, гранули й обережно з цукром</a></h3><p>Основа раціону дегу — якісне сіно. Гранули дають у малій кількості й без цукру та патоки, бо дегу схильні до діабету. Фрукти й крохмалисті овочі найкраще обмежити або виключити.</p></article><article class="blog-static"><h3><a href="blog/skilky-zhyvut-gryzuny.html">Скільки живуть домашні гризуни: щури, хомʼяки, свинки, дегу</a></h3><p>Найкоротший вік серед цих тварин у мишей, приблизно 1,5–2 роки. Щури й хомʼяки зазвичай живуть до 2–3 років, морські свинки до 8, а дегу 5–9 років.</p></article><!-- articles:end --><!-- posts:start --><article class="blog-static"><h3><a href="https://www.petmd.com/exotic/conditions/respiratory/upper-respiratory-infection-rats" rel="noopener">Респіраторні інфекції у щурів: на які ознаки зважати</a></h3><p>Чхання, хрипи чи «клацання» під час дихання, виділення з носа й червонуваті кірочки біля очей — найчастіші сигнали. Без лікування інфекція може бути небезпечною, тож із такими симптомами варто йти до ветеринара.</p><p>PetMD</p></article><article class="blog-static"><h3><a href="https://www.walkervillevet.com.au/blog/mycoplasma-respiratory-infections-in-rats" rel="noopener">Мікоплазмоз: чому щур важко дихає</a></h3><p>Мікоплазма є в багатьох щурів і може роками нічим себе не проявляти, а загострюватися на тлі стресу. Брудна клітка із запахом аміаку подразнює дихальні шляхи, тому регулярне прибирання — частина профілактики.</p><p>Walkerville Vet</p></article><article class="blog-static"><h3><a href="https://www.bluecross.org.uk/advice/rat/food-and-weight" rel="noopener">Чим годувати щура і як стежити за вагою</a></h3><p>Основа раціону — спеціальний гранульований корм для щурів, а овочі, трохи фруктів і білкові ласощі — доповнення. Щури легко набирають вагу, тому порції варто контролювати.</p><p>Blue Cross</p></article><article class="blog-static"><h3><a href="https://www.bluecross.org.uk/pet-advice/caring-your-rat" rel="noopener">Як зробити життя щура цікавішим</a></h3><p>Щури розумні й допитливі, їм потрібні нові враження. Коробки, тунелі, мотузки та розсипаний корм, який треба шукати, допомагають уникнути нудьги.</p><p>Blue Cross</p></article><article class="blog-static"><h3><a href="https://askavet.com/blogs/news/husbandry-and-medical-care-of-hamsters-vet-approved-2025-guide-by-dr-duncan-houston-%F0%9F%90%B9" rel="noopener">Мокрий хвіст у хом’яка: чому це терміново</a></h3><p>Мокрий, забруднений хвіст, млявість і відмова від їжі можуть означати тяжку кишкову інфекцію. Стан швидко погіршується, тому до ветеринара треба потрапити в першу ж добу.</p><p>Ask A Vet</p></article><article class="blog-static"><h3><a href="https://vetverified.com/articles/the-top-25-hamster-care-questions-answered-by-uk-vets" rel="noopener">25 найчастіших запитань про хом’яків</a></h3><p>Ветеринари відповідають на те, що найчастіше питають власники: яка клітка потрібна, чим годувати, чи можна тримати двох хом’яків разом і як зрозуміти, що тварина хворіє.</p><p>VetVerified</p></article><article class="blog-static"><h3><a href="https://spca.nz/advice-and-welfare/article/why-is-vitamin-c-important-for-my-guinea-pigs" rel="noopener">Чому морським свинкам потрібен вітамін C</a></h3><p>Морські свинки, як і люди, не синтезують вітамін C самі, тож мають отримувати його з їжею щодня. Добре підходять болгарський перець і листова зелень. Вітамін у воді для пиття — ненадійне джерело.</p><p>SPCA New Zealand</p></article><article class="blog-static"><h3><a href="https://unusualpetvets.com.au/scurvy-in-guinea-pigs-and-the-importance-of-vitamin-c" rel="noopener">Цинга в морських свинок: як помітити вчасно</a></h3><p>Ознаки нестачі вітаміну C можуть з’явитися вже за 2–3 тижні неправильного харчування: скутість, біль у суглобах, кровоточивість ясен, погана шерсть. Стан лікується, якщо почати вчасно.</p><p>Unusual Pet Vets</p></article><article class="blog-static"><h3><a href="https://www.rspca.org.au/latest-news/blog/how-should-i-care-my-guinea-pig/" rel="noopener">Базовий догляд за морською свинкою</a></h3><p>Необмежене сіно, свіжі овочі, корм для морських свинок і чиста вода — основа раціону. А ще простора клітка й компанія: це соціальні тварини.</p><p>RSPCA Australia</p></article><article class="blog-static"><h3><a href="https://www.petmd.com/exotic/care/how-give-your-chinchilla-dust-bath" rel="noopener">Пилові ванни для шиншили: як і як часто</a></h3><p>Шиншилу не купають у воді: густе хутро погано висихає. Натомість дають спеціальний пісок-пил і прибирають ванночку приблизно через пів години, щоб не подразнювати очі.</p><p>PetMD</p></article><article class="blog-static"><h3><a href="https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health" rel="noopener">Здоров’я шиншили: зуби, шерсть, травлення</a></h3><p>Зуби шиншили ростуть усе життя, тому їй потрібне необмежене сіно і безпечні предмети для гризіння. Слинотеча чи відмова від їжі — привід перевірити зуби у ветеринара.</p><p>PDSA</p></article><article class="blog-static"><h3><a href="https://exoticdirect.co.uk/news/degu-food-advice-what-your-degu-should-be-eating-not-eating-diabetes-and-other-advice/" rel="noopener">Дегу і цукор: як уберегти від діабету</a></h3><p>Дегу погано засвоюють цукор, тому схильні до діабету. Фрукти, сухофрукти й солодкі овочі краще не давати. Основа раціону — сіно і корм для дегу. Діабет легше попередити, ніж лікувати.</p><p>Exotic Direct</p></article><article class="blog-static"><h3><a href="https://www.petmd.com/exotic/care/caring-for-a-degu" rel="noopener">Дегу вдома: що потрібно знати власнику</a></h3><p>Дегу — активні денні тварини, які живуть групами. Їм потрібні простір, колесо, предмети для гризіння й пилові ванни. Сильна спрага чи помутніння очей — привід звернутися до лікаря.</p><p>PetMD</p></article><article class="blog-static"><h3><a href="https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health" rel="noopener">Здоров’я мишей: щоденний огляд за хвилину</a></h3><p>Миші часто приховують біль, тому зміни краще ловити рано: подивіться на очі, ніс, шерсть, дихання й послід. Чхання чи «цокання» під час дихання — привід звернутися до ветеринара.</p><p>PDSA</p></article><article class="blog-static"><h3><a href="https://www.msdvetmanual.com/all-other-pets/mice/routine-health-care-of-mice" rel="noopener">Рутинний догляд за домашніми мишами</a></h3><p>Довідник для власників від MSD Vet Manual: як облаштувати житло, як часто прибирати, як годувати і як помітити перші ознаки хвороби.</p><p>MSD Vet Manual</p></article><article class="blog-static"><h3><a href="https://vcahospitals.com/vitality/know-your-pet/gastrointestinal-stasis-in-rabbits" rel="noopener">Стаз ШКТ у кролика: коли бити на сполох</a></h3><p>Кролик не їсть і не залишає посліду кілька годин — це привід терміново їхати до ветеринара. Найкраща профілактика — раціон, де основа сіно, а гранул і фруктів зовсім трохи.</p><p>VCA Animal Hospitals</p></article><article class="blog-static"><h3><a href="https://www.walkervillevet.com.au/blog/rabbit-not-eating/" rel="noopener">Кролик не їсть: що робити</a></h3><p>Відмова від їжі в кролика — не дрібниця: травлення може зупинитися за лічені години. Пояснюємо, які причини бувають і чому не варто чекати до ранку.</p><p>Walkerville Vet</p></article><!-- posts:end --></div>
 
     <!-- Nothing found -->
-    <div id="blog-empty" hidden class="mx-auto mt-[24px] flex max-w-[520px] flex-col items-center rounded-[24px] bg-[#f3e8ef] px-[28px] py-[40px] text-center">
-      <div class="wiggle size-[120px] overflow-hidden rounded-full border-[6px] border-white shadow-[0_12px_24px_-14px_rgba(122,74,104,.45)]">
+    <div id="blog-empty" hidden class="mx-auto mt-[24px] flex max-w-[520px] flex-col items-center rounded-[34px] bg-[#f4f5f7] px-[28px] py-[40px] text-center">
+      <div class="wiggle size-[112px] overflow-hidden rounded-full border-[5px] border-white">
         <img alt="" class="size-full object-cover" src="assets/blog/shy-baby-rat-looking-curious-330.jpg">
       </div>
       <h2 class="t-h3 mt-[16px]">Нічого не знайшли</h2>
@@ -153,57 +128,47 @@
       </div>
     </div>
 
-    <p class="t-small mx-auto mt-[48px] max-w-[760px] text-center text-[var(--muted)]">Добірка з відкритих джерел — ветеринарних клінік і зоозахисних організацій. На картках — короткий переказ, повний текст відкривається на сайті джерела. Матеріали не замінюють консультацію ветеринара.</p>
+    <p class="t-small mx-auto mt-[48px] max-w-[760px] text-center text-[var(--muted)]">Статті Roddi Health є оглядами відкритих джерел і не замінюють консультації ветеринара. Перш ніж ухвалювати рішення щодо здоровʼя тварини, порадьтеся з лікарем. <a class="link" href="blog/pro-materialy.html">Про матеріали блогу</a></p>
+    <p class="t-small mx-auto mt-[10px] max-w-[760px] text-center text-[var(--muted)]">Добірка з відкритих джерел — ветеринарних клінік і зоозахисних організацій. На картках — короткий переказ, повний текст відкривається на сайті джерела. Матеріали не замінюють консультацію ветеринара.</p>
     <p class="t-small mx-auto mt-[10px] max-w-[760px] text-center text-[#8f8a94]">Фото: <a class="link" href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, автори й ліцензії вказані на картках. Декоративні фото у шапці: <a class="link" href="https://commons.wikimedia.org/wiki/File:Syrian_Hamster_Winking.jpg" target="_blank" rel="noopener">John Stockla, CC BY-SA 4.0</a>; <a class="link" href="https://commons.wikimedia.org/wiki/File:Cavia_porcellus01.jpg" target="_blank" rel="noopener">Kacper Aleksander, CC BY-SA 4.0</a>; <a class="link" href="https://commons.wikimedia.org/wiki/File:Fancy_rat.jpg" target="_blank" rel="noopener">Ectopistes666, суспільне надбання</a>; <a class="link" href="https://commons.wikimedia.org/wiki/File:Shy_baby_rat_looking_curious.jpg" target="_blank" rel="noopener">Cat Ball, CC0</a>.</p>
   </div>
 </main>
 
 <!-- ============ Final CTA + Footer ============ -->
-<footer id="early-access" class="bg-[#141416] rounded-t-[40px] md:rounded-t-[64px] px-5 md:px-10 pt-[72px] md:pt-[100px] pb-[32px] md:pb-[40px] text-white">
-  <div class="mx-auto max-w-[1270px]">
-    <div class="flex flex-col items-center text-center">
-      <h2 data-reveal class="t-h2 max-w-[900px]">Дізнайтеся першими, коли <span class="text-[#B76D9E]">Roddi Health</span> запрацює</h2>
-      <p data-reveal data-d="100" class="t-lead mt-[20px] max-w-[560px] text-white/85">Залиште email, і ми напишемо про запуск та запросимо до раннього доступу.</p>
-      <form data-reveal data-d="200" data-signup data-form="blog" novalidate class="relative mt-[36px] flex w-full max-w-[600px] flex-col items-center gap-[14px]">
-        <div class="signup bg-[#ffffff] border border-[#dfd6dc]">
-          <img alt="" class="h-[21px] w-[24px] shrink-0" src="assets/formkitemail1.svg">
-          <input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Ваш email" aria-label="Ваш email" class="text-[#2a2a2a] placeholder:text-[#8f8a94]">
-          <button class="btn btn-blue btn-shine shrink-0">Хочу ранній доступ</button>
-        </div>
-        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
-        <p class="form-msg form-msg-dark" role="status" aria-live="polite" hidden></p>
-        <label class="flex items-start gap-[10px] t-small text-left text-white/90 cursor-pointer">
-          <input type="checkbox" required class="mt-[2px] size-[18px] shrink-0 accent-[#a45588]">
-          <span>Погоджуюсь отримувати листи про запуск. <a href="#" class="link">Політика конфіденційності</a></span>
-        </label>
-      </form>
-    </div>
-
-    <div data-reveal="fade" class="mt-[72px] md:mt-[100px] border-t border-white/15 pt-[32px] grid gap-[24px] md:grid-cols-[1fr_auto_1fr] items-center">
-      <div class="flex justify-center md:justify-start gap-[12px] order-2 md:order-1">
-        <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="Instagram" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="assets/qlementineiconsinstagramfill16.svg"></a>
-        <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="assets/akariconstiktokfill.svg"></a>
-        <a href="mailto:roddihealth@gmail.com" aria-label="Email" class="size-[48px] rounded-full flex items-center justify-center bg-white/5 hover:bg-white/15 transition hover:-translate-y-1 hover:rotate-[-8deg]"><img alt="" class="size-[26px]" src="assets/griddyiconsemailfilled.svg"></a>
+<footer id="early-access" class="px-3 pb-3 md:px-4 md:pb-4">
+  <div class="rounded-[36px] bg-[#0f0f11] px-5 pb-[28px] pt-[80px] text-white md:rounded-[44px] md:px-10 md:pt-[110px]">
+    <div class="mx-auto flex max-w-[760px] flex-col items-center text-center">
+      <div data-reveal><span class="inline-flex items-center gap-[8px] rounded-full border border-white/20 text-white/80 px-[14px] py-[6px] text-[13px] font-medium"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg>Скоро запуск</span></div>
+      <h2 data-reveal data-d="80" class="t-h2-app mt-[18px]">Дізнайтеся першими, коли <span class="text-[#B76D9E]">Roddi Health</span> запрацює</h2>
+      <p data-reveal data-d="160" class="mt-[14px] max-w-[520px] text-[16px] leading-[1.45] text-white/70">Залиште email, і ми напишемо про запуск та запросимо до раннього доступу.</p>
+      <div data-reveal data-d="240" class="mt-[28px] flex w-full justify-center"><form data-signup data-form="blog" novalidate class="relative w-full max-w-[520px]">
+      <div class="signup bg-white">
+        <input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Ваш email" aria-label="Ваш email">
+        <button class="btn-app btn-app-sm shrink-0">Хочу ранній доступ</button>
       </div>
-      <a href="index.html" class="flex justify-center gap-[8px] items-center order-1 md:order-2" aria-label="Roddi Health — на головну">
-        <img alt="" class="size-[38px]" src="assets/logo-white.svg">
-        <span class="ff-montserrat font-semibold text-[22px] leading-[0.95] text-left">roddi<span class="sm:hidden">&nbsp;</span><br class="max-sm:hidden">health</span>
-      </a>
-      <nav class="flex flex-wrap justify-center md:justify-end gap-x-[28px] gap-y-[8px] t-small order-3">
-        <a href="blog.html" class="link" aria-current="page">Блог</a>
-        <a href="#" class="link">Політика конфіденційності</a>
-        <a href="mailto:roddihealth@gmail.com" class="link">Контакти</a>
-        <a href="#" class="link">Про проєкт</a>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] size-px opacity-0">
+      <p class="form-msg form-msg-dark mt-[10px]" role="status" aria-live="polite" hidden></p><label class="mt-[14px] flex cursor-pointer items-start gap-[10px] text-left text-[14px] text-white/75"><input type="checkbox" required class="mt-[2px] size-[18px] shrink-0 accent-[#0f0f11]"><span>Погоджуюсь отримувати листи про запуск. <a href="#" class="underline underline-offset-2">Політика конфіденційності</a></span></label>
+    </form></div>
+    </div>
+    <div class="mx-auto mt-[80px] grid max-w-[1280px] items-center gap-[24px] border-t border-white/12 pt-[28px] md:grid-cols-[1fr_auto_1fr]">
+      <div class="order-2 flex justify-center gap-[10px] md:order-1 md:justify-start">
+        <a href="https://www.instagram.com/marchin_rats/" target="_blank" rel="noopener" aria-label="Instagram" class="foot-icon"><img alt="" class="size-[22px]" src="assets/qlementineiconsinstagramfill16.svg"></a>
+        <a href="https://www.tiktok.com/@marchin_rats" target="_blank" rel="noopener" aria-label="TikTok" class="foot-icon"><img alt="" class="size-[22px]" src="assets/akariconstiktokfill.svg"></a>
+        <a href="mailto:roddihealth@gmail.com" aria-label="Email" class="foot-icon"><img alt="" class="size-[22px]" src="assets/griddyiconsemailfilled.svg"></a>
+      </div>
+      <a href="index.html" class="order-1 flex items-center justify-center gap-[8px] md:order-2" aria-label="Roddi Health — на головну"><img alt="" class="size-[36px]" src="assets/logo-white.svg"><span class="ff-montserrat text-left text-[21px] font-semibold leading-[0.95]">roddi<br>health</span></a>
+      <nav class="order-3 flex flex-wrap justify-center gap-x-[24px] gap-y-[8px] text-[14px] text-white/75 md:justify-end">
+        <a href="blog.html" aria-current="page" class="hover:text-white">Блог</a><a href="#" class="hover:text-white">Політика конфіденційності</a><a href="mailto:roddihealth@gmail.com" class="hover:text-white">Контакти</a><a href="#" class="hover:text-white">Про проєкт</a>
       </nav>
     </div>
-    <div class="mt-[28px] flex flex-col md:flex-row justify-between gap-[8px] text-center md:text-left t-small text-white/60">
-      <p>Roddi Health не замінює консультацію ветеринара.</p>
-      <p>© 2026 Roddi Health</p>
+    <div class="mx-auto mt-[24px] flex max-w-[1280px] flex-col justify-between gap-[6px] text-center text-[13px] text-white/50 md:flex-row md:text-left">
+      <p>Roddi Health не замінює консультацію ветеринара.</p><p>© 2026 Roddi Health</p>
     </div>
   </div>
 </footer>
 
 <script src="assets/blog-posts.js"></script>
+<script src="assets/blog-articles.js"></script>
 <script>
 (function () {
   var reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -236,7 +201,7 @@
   });
 
   /* ---------- Blog: filter + search ---------- */
-  var posts = BLOG_POSTS, rodents = BLOG_RODENTS;
+  var posts = (typeof BLOG_ARTICLES === 'undefined' ? [] : BLOG_ARTICLES).concat(BLOG_POSTS), rodents = BLOG_RODENTS;
   var labelOf = {}; rodents.forEach(function (r) { labelOf[r.key] = r.label; });
   var $q = document.getElementById('blog-q'), $chips = document.getElementById('blog-chips'),
       $grid = document.getElementById('blog-grid'), $count = document.getElementById('blog-count'),
@@ -281,8 +246,6 @@
 
   var arrow = '<svg aria-hidden="true" class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 
-  var tintOf = {}; rodents.forEach(function (r) { tintOf[r.key] = r.tint; });
-
   // Local copy of a Wikimedia Commons thumbnail, saved in assets/blog as <slug>-<width>.jpg
   // (widths 500 and 960). `src` stays the Commons path so the original is easy to find again.
   function wm(src, w) {
@@ -297,61 +260,53 @@
   // Author + licence on the photo (CC BY / BY-SA ask for it). Sits above the card's stretched link.
   function credit(p) {
     var f = p.photo;
-    return '<a href="' + esc(f.page) + '" target="_blank" rel="noopener" title="Фото з Wikimedia Commons" class="relative z-10 rounded-full bg-black/45 px-[8px] py-[2px] text-[10px] font-semibold leading-[16px] text-white/95 backdrop-blur-sm hover:bg-black/70">© ' + esc(f.by) + ' · ' + esc(f.lic) + '</a>';
+    return '<a href="' + esc(f.page) + '" target="_blank" rel="noopener" title="Фото з Wikimedia Commons" class="relative z-10 rounded-full bg-black/45 px-[8px] py-[2px] text-[10px] font-medium leading-[16px] text-white/95 backdrop-blur-sm hover:bg-black/70">© ' + esc(f.by) + ' · ' + esc(f.lic) + '</a>';
   }
-  function topicPill(p, dark) {
-    return '<span class="inline-flex items-center rounded-full ' + (dark ? 'bg-white/20 text-white' : 'bg-white text-[#141416]') + ' px-[11px] py-[5px] t-label">' + esc(p.topic) + '</span>';
+  function topicPill(p) {
+    return '<span class="bp-pill">' + esc(p.topic) + '</span>';
   }
   function stretched(p) {
-    return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener" class="after:absolute after:inset-0 after:z-[1] after:content-[\'\'] focus-visible:outline-none">';
+    return '<a href="' + esc(p.url) + '"' + (p.internal ? '' : ' target="_blank" rel="noopener"') + ' class="after:absolute after:inset-0 after:z-[1] after:content-[\'\'] focus-visible:outline-none">';
   }
-  function photoLink(p) { return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" class="block">'; }
-  var focusRing = ' has-[a:focus-visible]:outline-2 has-[a:focus-visible]:outline-[#a45588] has-[a:focus-visible]:outline-offset-4';
+  function photoLink(p) { return '<a href="' + esc(p.url) + '"' + (p.internal ? '' : ' target="_blank" rel="noopener"') + ' tabindex="-1" aria-hidden="true" class="block">'; }
+  var focusRing = ' has-[a:focus-visible]:outline-2 has-[a:focus-visible]:outline-[#a45588] has-[a:focus-visible]:outline-offset-2';
 
-  // Regular card: a tilted "polaroid" photo with a yellow sticker, on the rodent's tint.
+  // Regular card: photo on top, text on the same soft grey as the homepage's panels.
   // Every fifth card is wide on large screens (photo beside the text), for rhythm.
   function card(p, ws, i, wide) {
-    var tilt = (i % 2 ? 1.6 : -1.4) + 'deg';
-    return '<article class="blog-card lift group relative flex flex-col rounded-[24px] p-[14px]' + (wide ? ' sm:col-span-2 lg:grid lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-[8px]' : '') + focusRing + '" style="--i:' + i + ';background:' + tintOf[p.rodent] + '">' +
-      '<div class="polaroid relative z-[2] rounded-[20px] bg-white p-[7px] shadow-[0_14px_28px_-20px_rgba(20,20,22,.55)]' + (wide && i % 2 ? ' lg:order-last' : '') + '" style="--tilt:' + tilt + '">' +
-        '<div class="relative overflow-hidden rounded-[14px] bg-[#f3e8ef]">' +
-          photoLink(p) + photo(p, 'block h-[210px] ' + (wide ? 'lg:h-[300px] ' : '') + 'w-full transition-transform duration-700 group-hover:scale-[1.06]', wide ? '(min-width: 1024px) 45vw, (min-width: 640px) 90vw, 100vw' : '(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw') + '</a>' +
-          '<div class="absolute right-[8px] bottom-[8px]">' + credit(p) + '</div>' +
-        '</div>' +
-        '<span class="sticker absolute -top-[12px] left-[18px] z-[2] rounded-full bg-[#efd3e4] px-[14px] py-[6px] t-label text-[#141416] shadow-[0_6px_12px_-6px_rgba(20,20,22,.5)]">' + esc(labelOf[p.rodent]) + '</span>' +
+    return '<article class="blog-card lift group relative flex flex-col rounded-[30px] bg-[#f4f5f7] p-[8px]' + (wide ? ' sm:col-span-2 lg:grid lg:grid-cols-[1.05fr_1fr] lg:gap-[8px]' : '') + focusRing + '" style="--i:' + i + '">' +
+      '<div class="relative overflow-hidden rounded-[24px] bg-[#e9eaee]' + (wide && i % 2 ? ' lg:order-last' : '') + '">' +
+        photoLink(p) + photo(p, 'block h-[220px] ' + (wide ? 'lg:h-full lg:min-h-[340px] ' : '') + 'w-full transition-transform duration-700 group-hover:scale-[1.04]', wide ? '(min-width: 1024px) 45vw, (min-width: 640px) 90vw, 100vw' : '(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw') + '</a>' +
+        '<span class="bp-pill absolute left-[10px] top-[10px]">' + esc(labelOf[p.rodent]) + '</span>' +
+        '<div class="absolute right-[8px] bottom-[8px]">' + credit(p) + '</div>' +
       '</div>' +
-      '<div class="flex flex-1 flex-col gap-[10px] px-[8px] pt-[18px] pb-[6px] ' + (wide ? 'lg:px-[28px] lg:pt-[10px]' : '') + '">' +
+      '<div class="flex flex-1 flex-col gap-[10px] px-[12px] pt-[16px] pb-[8px] ' + (wide ? 'lg:justify-center lg:px-[32px] lg:py-[24px]' : '') + '">' +
         '<p>' + topicPill(p) + '</p>' +
-        '<h3 class="' + (wide ? 't-h3' : 't-h4') + ' text-[#141416]">' + stretched(p) + highlight(p.title, ws) + '</a></h3>' +
-        '<p class="t-body text-[var(--muted)]' + (ws.length || wide ? '' : ' line-clamp-4') + '">' + highlight(p.excerpt, ws) + '</p>' +
+        '<h3 class="' + (wide ? 't-h3' : 't-h4') + ' text-[#0f0f11]">' + stretched(p) + highlight(p.title, ws) + '</a></h3>' +
+        '<p class="t-body' + (ws.length || wide ? '' : ' line-clamp-4') + '">' + highlight(p.excerpt, ws) + '</p>' +
         '<div class="mt-auto flex items-center justify-between gap-[12px] pt-[12px]">' +
-          '<span class="flex items-center gap-[8px] t-small font-semibold text-[#141416]"><span class="flex size-[28px] items-center justify-center rounded-full bg-[#141416] text-[12px] font-extrabold text-white">' + esc(p.source.charAt(0)) + '</span>' + esc(p.source) + '</span>' +
-          '<span class="flex items-center gap-[8px] t-small font-bold text-[#141416]"><span class="hidden sm:inline opacity-0 -translate-x-1 transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">Читати</span>' +
-            '<span class="flex size-[42px] shrink-0 items-center justify-center rounded-full bg-white transition duration-300 group-hover:bg-[#141416] group-hover:text-white group-hover:rotate-45">' + arrow + '</span></span>' +
+          '<span class="flex items-center gap-[8px] t-small font-medium text-[#0f0f11]"><span class="bp-letter">' + esc(p.source.charAt(0)) + '</span>' + esc(p.source) + '</span>' +
+          '<span class="flex items-center gap-[8px] t-small font-medium text-[#0f0f11]"><span class="hidden sm:inline opacity-0 -translate-x-1 transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">Читати</span>' +
+            '<span class="bp-go">' + arrow + '</span></span>' +
         '</div></div></article>';
   }
 
-  // The large card: same gradient as the first feature card on the landing,
-  // with the photo as a tilted polaroid and stickers.
+  // The large card: a pastel panel like the homepage's feature cards.
   function heroCard(p, ws) {
-    return '<article class="blog-card blog-card--hero lift group relative grid overflow-hidden rounded-[28px] bg-gradient-to-tr from-[#a45588] from-40% to-[#f3e8ef] to-100% p-[14px] text-white sm:col-span-2 lg:col-span-3 md:grid-cols-[1fr_1fr] md:gap-[10px]' + focusRing + '" style="--i:0">' +
-      '<img alt="" aria-hidden="true" src="assets/ellipse2.svg" class="breathe pointer-events-none absolute -right-[120px] -top-[160px] size-[420px] opacity-60">' +
-      '<div class="relative flex flex-col gap-[14px] p-[14px] sm:p-[26px] wide:p-[44px] md:justify-center">' +
-        '<p class="flex flex-wrap items-center gap-[8px]"><span class="rounded-full bg-[#efd3e4] px-[12px] py-[5px] t-label text-[#141416]">★ Головне</span>' + topicPill(p, true) + '</p>' +
+    return '<article class="blog-card blog-card--hero lift soft-grad soft-grad--one group grid rounded-[34px] p-[8px] sm:col-span-2 lg:col-span-3 md:grid-cols-[1fr_1fr] md:gap-[8px]' + focusRing + '" style="--i:0">' +
+      '<div class="relative flex flex-col gap-[14px] p-[16px] sm:p-[26px] wide:p-[44px] md:justify-center">' +
+        '<p class="flex flex-wrap items-center gap-[8px]"><span class="bp-pill bp-pill--ink">★ Головне</span>' + topicPill(p) + '</p>' +
         '<h2 class="t-h2 blog-hero-title">' + stretched(p) + highlight(p.title, ws) + '</a></h2>' +
-        '<p class="t-lead text-white/90">' + highlight(p.excerpt, ws) + '</p>' +
+        '<p class="t-lead">' + highlight(p.excerpt, ws) + '</p>' +
         '<div class="mt-[8px] flex flex-wrap items-center gap-[14px]">' +
-          '<span class="btn btn-yellow btn-shine">Читати статтю ' + arrow + '</span>' +
-          '<span class="t-small font-semibold text-white/85">' + esc(p.source) + '</span>' +
+          '<span class="btn-app">Читати статтю <span class="btn-app-dot bg-white text-[#0f0f11]"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>' +
+          '<span class="t-small font-medium text-[#4b4550]">' + esc(p.source) + '</span>' +
         '</div></div>' +
-      '<div class="relative p-[10px] md:p-[26px]">' +
-        '<div class="polaroid relative z-[2] rounded-[24px] bg-white p-[9px] shadow-[0_24px_40px_-24px_rgba(20,20,22,.7)]" style="--tilt:2deg">' +
-          '<div class="relative h-[240px] md:h-[380px] overflow-hidden rounded-[17px] bg-[#f3e8ef]">' +
-            photoLink(p) + photo(p, 'absolute inset-0 block h-full w-full transition-transform duration-700 group-hover:scale-[1.05]', '(min-width: 768px) 50vw, 100vw') + '</a>' +
-            '<div class="absolute right-[10px] bottom-[10px]">' + credit(p) + '</div>' +
-          '</div>' +
-          '<span class="sticker absolute -top-[14px] -left-[10px] z-[2] rounded-full bg-[#141416] px-[14px] py-[6px] t-label text-white shadow-[0_6px_12px_-6px_rgba(20,20,22,.6)]" style="--st:-7deg">' + esc(labelOf[p.rodent]) + '</span>' +
-        '</div></div>' +
+      '<div class="relative h-[240px] overflow-hidden rounded-[26px] bg-white/40 md:h-[440px]">' +
+        photoLink(p) + photo(p, 'absolute inset-0 block h-full w-full transition-transform duration-700 group-hover:scale-[1.04]', '(min-width: 768px) 50vw, 100vw') + '</a>' +
+        '<span class="bp-pill absolute left-[12px] top-[12px]">' + esc(labelOf[p.rodent]) + '</span>' +
+        '<div class="absolute right-[10px] bottom-[10px]">' + credit(p) + '</div>' +
+      '</div>' +
       '</article>';
   }
 

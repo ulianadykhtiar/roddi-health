@@ -61,11 +61,23 @@
     "28.04": "Apr 28",
     "Симптоми": "Symptoms",
     "цей тиждень": "this week",
-    "П": ["M", "F"],
-    "В": ["T"],
-    "С": ["W", "S"],
-    "Ч": ["T"],
-    "Н": ["S"],
+    "П": [
+      "M",
+      "F"
+    ],
+    "В": [
+      "T"
+    ],
+    "С": [
+      "W",
+      "S"
+    ],
+    "Ч": [
+      "T"
+    ],
+    "Н": [
+      "S"
+    ],
     "зараз": "now",
     "Завтра об 11:00 — ветеринар 🩺": "Tomorrow at 11:00: vet visit 🩺",
     "Вт, 14 квітня": "Tue, April 14",
@@ -201,7 +213,6 @@
     "Контакти": "Contact",
     "Про проєкт": "About",
     "Roddi Health не замінює консультацію ветеринара.": "Roddi Health does not replace a veterinary consultation.",
-
     "Roddi Health — на головну": "Roddi Health home",
     "← На головну": "← Home",
     "Ви в списку!": "You’re on the list!",
@@ -232,7 +243,6 @@
     "Знаєте ще когось із гризунами?": "Know someone else with rodents?",
     "Надішліть їм посилання: що більше власників у беті, то краще додаток підходитиме для різних гризунів і їхніх потреб.": "Send them the link: the more owners in the beta, the better the app will suit different rodents and their needs.",
     "Копіювати": "Copy",
-
     "Підморгує 😉": "Winking 😉",
     "Привіт!": "Hi!",
     "Головна": "Home",
@@ -253,6 +263,9 @@
     "Добірка з відкритих джерел — ветеринарних клінік і зоозахисних організацій. На картках — короткий переказ, повний текст відкривається на сайті джерела. Матеріали не замінюють консультацію ветеринара.": "A selection from open sources: veterinary clinics and animal welfare organizations. Cards show a short summary; the full text opens on the source’s website. These articles do not replace a veterinary consultation.",
     "Фото:": "Photos:",
     ", автори й ліцензії вказані на картках. Декоративні фото у шапці:": ", with authors and licenses shown on the cards. Decorative header photos:",
-    "Ectopistes666, суспільне надбання": "Ectopistes666, public domain"
+    "Ectopistes666, суспільне надбання": "Ectopistes666, public domain",
+    "Скоро запуск": "Launching soon",
+    "Статті Roddi Health є оглядами відкритих джерел і не замінюють консультації ветеринара. Перш ніж ухвалювати рішення щодо здоровʼя тварини, порадьтеся з лікарем.": "Roddi Health articles are overviews of open sources and do not replace a vet’s advice. Talk to your vet before making any decision about your pet’s health.",
+    "Про матеріали блогу": "About our blog content"
   }
 }

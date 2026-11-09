@@ -91,7 +91,7 @@ def scene_state():
 <div class="w w-glass" style="{at(392, 120, 160, 4)};padding:12px 14px"><span class="text-[11px] font-semibold text-[#a2a6ad]">Нотатка · Чт</span><b class="mt-[3px] block text-[13px] leading-[1.3]">Чхав зранку, апетит нормальний 🤧</b></div>'''
 
 def scene_vet():
-    return f'''<div class="w" style="{at(20, 30, 300, 2)}">
+    return f'''<div class="w" style="{at(20, 12, 300, 2)}">
   <div class="flex gap-[12px]"><span class="w-date"><small>Пн</small><b>9</b><small>лист</small></span>
     <div class="min-w-0"><span class="w-chip grey">Завтра · 11:00</span><b class="mt-[7px] block text-[16px]">Огляд у ветеринара</b><span class="w-sub">Мартін · клініка «Хвостик»</span></div></div>
   <div class="mt-[14px] border-t border-[#eef0f3] pt-[4px]">
@@ -101,7 +101,7 @@ def scene_vet():
     <div class="w-check"><span class="w-mark"></span>Спитати: продовжувати курс?</div>
   </div>
 </div>
-<div class="w" style="{at(272, 150, 280, 3)}">
+<div class="w" style="{at(272, 132, 280, 3)}">
   <div class="w-top"><div class="w-pet !gap-[10px]"><img alt="" class="!size-[34px] !shadow-none" src="{MARTIN}"><b class="!text-[15px]">Історія Мартіна</b></div><span class="w-chip">12 записів</span></div>
   <div class="w-tl">
     <div style="--c:#a45588"><small>28 жовтня</small><b>Огляд · легка інфекція</b><span>Антибіотик на 10 днів</span></div>

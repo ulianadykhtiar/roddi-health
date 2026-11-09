@@ -28,4 +28,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/blog"/>
   </url>
+  <!-- articles:start -->
+  <url>
+    <loc>https://roddihealth.app/blog/chomu-shchur-chkhaie</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/chym-goduvaty-shchura</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/chym-goduvaty-khomiaka</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/mokryi-khvist-u-khomiaka</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/morska-svynka-ne-yist</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/chym-goduvaty-morsku-svynku</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/krolyk-ne-yist</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/chym-goduvaty-degu</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/skilky-zhyvut-gryzuny</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/pro-materialy</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <!-- articles:end -->
 </urlset>

@@ -179,6 +179,8 @@ def build(name):
     used.clear()
     refresh_source(name)
     s = (ROOT / name).read_text(encoding="utf-8")
+    s = re.sub(r'<!-- articles:start -->.*?<!-- articles:end -->', '', s, flags=re.S)
+    s = s.replace('<script src="assets/blog-articles.js"></script>\n', '')
     # Filled in after translation: these two regions are generated per language.
     s = SEO_RE.sub('<meta name="__seo__">', s)
     s = POSTS_RE.sub('<meta name="__posts__">', s)
