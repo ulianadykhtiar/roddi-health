@@ -15,14 +15,19 @@
 
 /* ---------------- "До і після": one big gradient panel ---------------- */
 /* clip-path rounds the corners for sure: Safari ignores overflow+border-radius when a child animates. */
-.hg-ba > div { position: relative; isolation: isolate; overflow: hidden; border-radius: 44px; clip-path: inset(0 round 44px); padding: clamp(22px, 4.5vw, 64px); }
+.hg-ba > div { position: relative; isolation: isolate; overflow: hidden; overflow: clip; border-radius: 44px; clip-path: inset(0 round 44px); padding: clamp(22px, 4.5vw, 64px); }
 .hg-ba > div::before { content: ""; position: absolute; inset: -12%; z-index: -2; background: url(features/pastel-ba.jpg) center / cover; animation: hg-pan 18s ease-in-out infinite alternate; }
 .hg-ba > div::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hg-noise) 0 0 / 240px; pointer-events: none; }
 .hg-ba .text-\[\#6e727a\] { color: #4b4550; }
 /* The table lies on frosted glass; the black "with the app" column keeps the contrast. */
 .hg-ba .ba-table { background: rgba(255,255,255,.55); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); box-shadow: 0 0 0 1px rgba(255,255,255,.6); }
 .hg-ba .ba-no { border-top-color: rgba(255,255,255,.7); color: #5a5460; }
-@media (max-width: 639px) { .hg-ba > div { border-radius: 30px; clip-path: inset(0 round 30px); padding: 18px; } }
+@media (max-width: 639px) {
+  .hg-ba > div { border-radius: 30px; clip-path: inset(0 round 30px); padding: 18px; }
+  /* The table runs edge to edge of the pastel panel; the panel's clip rounds its bottom corners. */
+  .hg-ba .ba-table { margin-inline: -18px; margin-bottom: -18px; border-radius: 24px 24px 0 0; box-shadow: none; }
+  .hg-ba .ba-cell { padding-inline: 18px; }
+}
 
 /* ---------------- FAQ: the "still have questions" card ---------------- */
 .hg-ask { position: relative; isolation: isolate; overflow: hidden; clip-path: inset(0 round 28px); }

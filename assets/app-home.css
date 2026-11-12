@@ -321,3 +321,44 @@ header .fx-push-top small { display: none; }
 
 /* Room between the pinned features and the black CTA (below 1024px .fp has its own padding). */
 @media (min-width: 1024px) { #features + section.bg-\[\#141416\] { margin-top: 130px; } }
+
+/* Hero on phones: the phone on a pastel circle, a rat and a hamster peeking from behind it, the bottom fading out. */
+header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, transparent 98%); mask-image: linear-gradient(180deg, #000 71%, transparent 98%); }
+.hero-p .hp-phone { filter: drop-shadow(0 26px 30px rgba(122,74,104,.22)); }
+.hp-pet { filter: drop-shadow(0 12px 16px rgba(122,74,104,.18)); }
+.hero-p .hg-dome img { filter: saturate(1.35) brightness(.97); }
+.hero-p .hg-dome::before { background: radial-gradient(closest-side, rgba(255,255,255,.62) 0%, rgba(255,255,255,.3) 55%, rgba(255,255,255,0) 88%); }
+
+/* Phone hero screen: "Important today" with the next round, on white. */
+.td { background: #fff; }
+.td-in { position: absolute; inset: 0; padding: 64px 16px 0; color: #2a2630; text-align: left; }
+.td-next { margin: 18px 0; overflow: hidden; border-radius: 22px; background: #8f3a66; }
+.td-next-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 14px 14px 24px; color: #fff; }
+.td-next-top small { display: block; font-size: 12.5px; opacity: .92; }
+.td-next-top > div > b { display: block; margin-top: 1px; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+.td-timer { display: flex; align-items: center; gap: 5px; padding: 7px 10px; border-radius: 999px; background: rgba(255,255,255,.15); font-size: 11.5px; white-space: nowrap; }
+.td-timer svg { width: 15px; height: 15px; }
+.td-timer b { font-size: 13px; font-weight: 700; }
+.td-next-body { margin-top: -12px; padding: 14px; border-radius: 20px 20px 22px 22px; background: #f4f4f5; }
+.td-who { display: flex; align-items: center; gap: 10px; }
+.td-who b { display: block; font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+.td-who small { display: block; margin-top: 1px; color: #8a8a92; font-size: 11.5px; }
+.td-ava { display: flex; flex: none; }
+.td-ava img { width: 32px; height: 32px; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
+.td-ava img + img { margin-left: -8px; }
+.td-btn { position: relative; display: flex; align-items: center; justify-content: center; height: 46px; margin-top: 14px; border-radius: 999px; background: #2f2a2e; color: #fff; font-size: 14.5px; font-weight: 600; }
+.td-btn i { position: absolute; right: 4px; top: 4px; display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: #fff; color: #2f2a2e; }
+.td-btn svg { width: 16px; height: 16px; }
+/* Around the next step: light loading placeholders, as when the app is still fetching. */
+.sk { display: block; border-radius: 8px; background: #eef0f3; }
+.sk-title { width: 58%; height: 20px; margin-bottom: 18px; border-radius: 10px; }
+.sk-row { display: flex; align-items: center; gap: 12px; padding: 12px; margin-top: 10px; border-radius: 18px; background: #fff; box-shadow: inset 0 0 0 1.5px #f1f2f5; }
+.sk-ic { flex: none; width: 38px; height: 38px; border-radius: 12px; }
+.sk-tx { flex: 1; display: grid; gap: 7px; }
+.sk-l { width: 70%; height: 11px; }
+.sk-s { width: 44%; height: 9px; background: #f3f4f6; }
+.sk-row:nth-of-type(2n) .sk-l { width: 56%; }
+.sk-row:nth-of-type(3n) .sk-s { width: 34%; }
+@keyframes sk-shine { 0% { background-position: 120% 0; } 100% { background-position: -20% 0; } }
+.td .sk { background-image: linear-gradient(100deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.75) 50%, rgba(255,255,255,0) 70%); background-size: 220% 100%; background-repeat: no-repeat; animation: sk-shine 1.8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .td .sk { animation: none; } }
