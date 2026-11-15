@@ -28,6 +28,20 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/blog"/>
   </url>
+  <url>
+    <loc>https://roddihealth.app/privacy</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://roddihealth.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/privacy</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://roddihealth.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/privacy"/>
+  </url>
   <!-- articles:start -->
   <url>
     <loc>https://roddihealth.app/blog/chomu-shchur-chkhaie</loc>

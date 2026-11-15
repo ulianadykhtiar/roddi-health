@@ -362,3 +362,13 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 @keyframes sk-shine { 0% { background-position: 120% 0; } 100% { background-position: -20% 0; } }
 .td .sk { background-image: linear-gradient(100deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.75) 50%, rgba(255,255,255,0) 70%); background-size: 220% 100%; background-repeat: no-repeat; animation: sk-shine 1.8s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .td .sk { animation: none; } }
+
+/* Consent checkbox under the sign-up pills (hero and call-to-action). */
+.consent { display: flex; align-items: flex-start; justify-content: center; gap: 10px; margin-top: 12px; color: #6e727a; font-size: 13px; line-height: 1.4; text-align: left; cursor: pointer; }
+.consent input { flex: none; width: 18px; height: 18px; margin-top: 1px; accent-color: #0f0f11; cursor: pointer; }
+.consent a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.consent a:hover { color: #0f0f11; }
+.consent-dark { color: rgba(255,255,255,.72); }
+.consent-dark input { accent-color: #fff; }
+.consent-dark a:hover { color: #fff; }
+@media (pointer: coarse) { .consent { align-items: center; min-height: 44px; } .consent input { margin-top: 0; } }

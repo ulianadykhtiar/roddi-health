@@ -16,7 +16,7 @@
  */
 
 var HEADERS = {
-  Emails: ['Дата', 'Email', 'Форма', 'Сторінка', 'Мова'],
+  Emails: ['Дата', 'Email', 'Форма', 'Сторінка', 'Мова', 'Згода'],
   Survey: ['Дата', 'Email', 'Тварини', 'Скільки', 'Останні ліки', 'Телефон', 'Бета', 'Коментар', 'Мова']
 };
 
@@ -32,7 +32,7 @@ function doPost(e) {
       // One row per address: a repeat sign-up is ignored.
       var known = emails.getLastRow() > 1 ? emails.getRange(2, 2, emails.getLastRow() - 1, 1).getValues() : [];
       if (known.some(function (r) { return String(r[0]).toLowerCase() === email; })) return reply('duplicate');
-      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page), lang(data)]);
+      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page), lang(data), clean(data.consent)]);
       return reply('ok');
     }
     if (data.type === 'email-change') {
@@ -67,6 +67,10 @@ function sheet(name) {
     s = book.insertSheet(name);
     s.appendRow(HEADERS[name]);
     s.setFrozenRows(1);
+  } else {
+    // A tab made before a column was added gets the missing header.
+    var want = HEADERS[name], have = s.getRange(1, 1, 1, want.length).getValues()[0];
+    for (var i = 0; i < want.length; i++) if (!have[i]) s.getRange(1, i + 1).setValue(want[i]);
   }
   return s;
 }
@@ -77,6 +81,7 @@ function clean(v) {
   return /^[=+\-@]/.test(s) ? "'" + s : s;
 }
 
+// Emails column F "Згода": the version of the consent text the visitor ticked (assets/forms.js CONSENT_VERSION), empty if none.
 // "uk" or "en": the form's page language; older pages send no lang, so fall back to the /en/ path.
 function lang(data) {
   if (data.lang === 'en' || data.lang === 'uk') return data.lang;

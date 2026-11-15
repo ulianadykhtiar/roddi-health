@@ -7,6 +7,10 @@
  */
 var FORMS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwV8yi4dIDTwzk0D9J8BdZtBD7E0UUmvbaG2zolA2Aix3fpQPzN3P4qlX44SsiL4ua_dg/exec';
 
+/* Version of the consent wording and the privacy policy the visitor agreed to (stored with the sign-up).
+ * Change it together with the policy date in tools/build-privacy.py. */
+var CONSENT_VERSION = '2026-11-16';
+
 var RoddiForms = (function () {
   // Page language picks the text; en/*.html are built with lang="en".
   var IS_EN = document.documentElement.lang === 'en';
@@ -123,7 +127,7 @@ var RoddiForms = (function () {
       if (consent && !consent.checked) { show(t('Поставте позначку, що погоджуєтесь отримувати листи.', 'Please tick the box to agree to receive emails.')); consent.focus(); return; }
 
       button.disabled = true;
-      send('signup', { email: email, form: form.dataset.form || '' }).then(function () {
+      send('signup', { email: email, form: form.dataset.form || '', consent: consent && consent.checked ? CONSENT_VERSION : '' }).then(function () {
         try { sessionStorage.setItem(EMAIL_KEY, email); } catch (e) {}
         location.href = THANKS;
       }, function () {

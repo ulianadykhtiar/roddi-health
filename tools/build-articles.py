@@ -258,7 +258,7 @@ blog = (ROOT / 'blog.html').read_text(encoding='utf-8')
 def relink(x):
     x = re.sub(r'\sdata-reveal(="[^"]*")?', '', x)
     x = re.sub(r'\sdata-d="\d+"', '', x)
-    x = re.sub(r'(src|href)="(assets/|index\.html|blog\.html|en/)', lambda m: '%s="../%s' % (m.group(1), m.group(2)), x)
+    x = re.sub(r'(src|href)="(assets/|index\.html|blog\.html|privacy\.html|en/)', lambda m: '%s="../%s' % (m.group(1), m.group(2)), x)
     return x.replace(' aria-current="page"', '')
 
 
@@ -269,7 +269,7 @@ FOOT = relink(blog[blog.index('<footer id="early-access"'):blog.index('</footer>
 
 def page(slug, title, desc, jsonld, main, img=None, og='article'):
     url = '%s/blog/%s' % (BASE, slug)
-    image = BASE + '/' + (img or 'assets/og-uk.jpg')
+    image = BASE + '/' + (img or 'assets/og-uk-v2.jpg')
     return f'''<!doctype html>
 <html lang="uk">
 <head>
