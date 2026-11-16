@@ -75,7 +75,11 @@
       b.addEventListener('click', function () { show(true); });
       nav.appendChild(b);
     }
-    if (!read()) show(false);
+    if (!read()) {
+      // The language dialog (lang-prompt.js) goes first; the cookie banner appears once it is closed.
+      if (window.roddiLangPending) window.addEventListener('roddi:lang-done', function () { if (!read()) show(false); });
+      else show(false);
+    }
   }
   if (l.readyState === 'loading') l.addEventListener('DOMContentLoaded', ready); else ready();
 })(window, document, 'clarity', 'script', 'zah0cbuajb');
