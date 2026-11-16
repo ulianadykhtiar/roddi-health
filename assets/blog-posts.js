@@ -5,7 +5,8 @@
  * external site. They are being replaced one by one with our own articles
  * (tools/build-articles.py). When an article replaces a card, remove the card here
  * and the entry at the same position in blog-posts.en.js, then run
- * tools/build-blog-lists.py. Never translate or copy the original text.
+ * tools/build-articles.py (it versions the script URLs so browsers fetch the new
+ * file) and tools/build-blog-lists.py. Never translate or copy the original text.
  *
  * Photos are free-licence pictures from Wikimedia Commons, saved locally in
  * assets/blog as <slug>-500.jpg and <slug>-960.jpg (slug = file name in lower
