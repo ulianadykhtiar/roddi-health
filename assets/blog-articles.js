@@ -276,5 +276,40 @@ var BLOG_ARTICLES = [
    "lic": "CC BY 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg"
   }
+ },
+ {
+  "rodent": "rat",
+  "topic": "Догляд",
+  "title": "Як зробити життя щура цікавішим: компанія, ігри й пошук їжі",
+  "excerpt": "Щури розумні, допитливі й соціальні, тож їм потрібні щонайменше один родич і щоденні нові враження. Висока клітка з кількома рівнями, схованки, мотузки, коробки для риття й корм, який треба шукати, допомагають уникнути нудьги, а прогулянки поза кліткою — лише під наглядом.",
+  "tags": "збагачення іграшки нудьга клітка гамак мотузки пошук корму прогулянка дресирування компанія",
+  "source": "Roddi Health",
+  "url": "blog/zhyttia-shchura-tsikavishe.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "2/26/Three_baby_rats_piled_up_in_their_bed.jpg",
+   "by": "Cat Ball",
+   "lic": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Three_baby_rats_piled_up_in_their_bed.jpg"
+  }
+ },
+ {
+  "rodent": "hamster",
+  "topic": "Догляд",
+  "title": "Хомʼяк для новачка: відповіді на часті запитання",
+  "excerpt": "Сирійських хомʼяків тримають лише поодинці, а карликових іноді парами, якщо вони виросли разом. Хомʼякам потрібна простора клітка з глибокою підстилкою для риття, суцільне колесо, у якому спина лишається рівною, гранульований корм і спокій удень, бо вони активні вночі.",
+  "tags": "хомʼяк новачок сирійський джунгарик клітка колесо підстилка корм поодинці руки мокрий хвіст",
+  "source": "Roddi Health",
+  "url": "blog/khomiak-dlia-novachka.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "f/f5/Syrian_hamster_on_blanket.jpg",
+   "by": "MarketBoiCYM",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg",
+   "pos": "50% 40%"
+  }
  }
 ];
