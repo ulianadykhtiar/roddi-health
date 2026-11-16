@@ -109,7 +109,7 @@ for lang, path in (('uk', ROOT / 'blog.html'), ('en', ROOT / 'en' / 'blog.html')
     block = ('<!-- hubs:start --><nav class="mt-[28px] text-center text-[15px] text-[#6e727a] [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-[#0f0f11]" aria-label="%s"><b>%s:</b> %s</nav><!-- hubs:end -->'
              % (c['row'], c['row'], links))
     s = path.read_text(encoding='utf-8')
-    s = re.sub(r'<!-- hubs:start -->.*?<!-- hubs:end -->', '', s, flags=re.S)
+    s = re.sub(r'<!-- hubs:start -->.*?<!-- hubs:end -->\s*', '', s, flags=re.S)
     anchor = '<div id="blog-empty"'
     assert s.count(anchor) == 1, path
     s = s.replace(anchor, block + '\n    ' + anchor, 1)
