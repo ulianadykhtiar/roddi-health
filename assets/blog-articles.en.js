@@ -53,6 +53,58 @@ var BLOG_ARTICLES = [
   }
  },
  {
+  "rodent": "hamster",
+  "topic": "Urgent",
+  "title": "Wet tail in hamsters: symptoms and what to do",
+  "excerpt": "“Wet tail” is diarrhoea that soaks the fur under the tail. A hamster loses fluid quickly, so it is often an emergency: PetMD advises that a vet who treats exotic animals should see the hamster, ideally within 24 hours.",
+  "tags": "wet tail diarrhoea not eating lethargic dying hamster dehydration",
+  "source": "Roddi Health",
+  "url": "/en/blog/mokryi-khvist-u-khomiaka.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "f/f5/Syrian_hamster_on_blanket.jpg",
+   "by": "MarketBoiCYM",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg",
+   "pos": "50% 40%"
+  }
+ },
+ {
+  "rodent": "guinea-pig",
+  "topic": "Urgent",
+  "title": "Guinea pig not eating: what to do",
+  "excerpt": "If your guinea pig has stopped eating or is producing fewer droppings, call a vet straight away. According to PetMD, untreated gut stasis can become fatal within 24–48 hours.",
+  "tags": "not eating not drinking no droppings gut stasis hay belly teeth grinding",
+  "source": "Roddi Health",
+  "url": "/en/blog/morska-svynka-ne-yist.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "e/ee/Cavia_porcellus01.jpg",
+   "by": "Kacper Aleksander",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cavia_porcellus01.jpg"
+  }
+ },
+ {
+  "rodent": "guinea-pig",
+  "topic": "Nutrition",
+  "title": "What to feed a guinea pig and where to get vitamin C",
+  "excerpt": "Hay and grass make up most of a guinea pig’s diet and must always be available: PetMD puts their share at about 80%, PDSA at 85–90%. Guinea pigs can’t make vitamin C themselves, so they get it from food every day, above all from fresh vegetables.",
+  "tags": "what to feed diet hay vegetables vitamin c scurvy pellets parsley alfalfa water",
+  "source": "Roddi Health",
+  "url": "/en/blog/chym-goduvaty-morsku-svynku.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "b/bc/Caviidae_Cavia_porcellus_1.jpg",
+   "by": "NasserHalaweh",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Caviidae_Cavia_porcellus_1.jpg"
+  }
+ },
+ {
   "rodent": "mouse",
   "topic": "Symptoms",
   "title": "How to check a pet mouse’s health: daily check and warning signs",
