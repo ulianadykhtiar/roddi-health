@@ -1378,7 +1378,7 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <script src="{up}assets/clarity.js?v=3"></script>
   <link rel="stylesheet" href="{up}assets/theme.css">
   <link rel="stylesheet" href="{up}assets/app-home.css?v=47">
-  <link rel="stylesheet" href="{up}assets/pages.css?v=5">
+  <link rel="stylesheet" href="{up}assets/pages.css?v=6">
 </head>
 <body class="page-soft">
 <a class="skip-link" href="#main">{SKIP[lang]}</a>
