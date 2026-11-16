@@ -9,6 +9,7 @@ add a source whenever you add a fact. Run this script after any change to the li
 also refreshes the crawler list in blog.html and the article URLs in sitemap.xml.
 Nav and footer come from blog.html, so redesigns there carry over.
 """
+import hashlib
 import html
 import json
 import re
@@ -1105,4 +1106,22 @@ urls = ''.join('\n  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n  </url
                for lang in ('uk', 'en') for s, d in pages if lang == 'uk' or has_en(s))
 sm = sm.replace('</urlset>', '  <!-- articles:start -->' + urls + '\n  <!-- articles:end -->\n</urlset>')
 (ROOT / 'sitemap.xml').write_text(sm, encoding='utf-8')
+# The blog's data scripts are cached by browsers for a day (vercel.json), so their URLs carry a
+# version taken from the file contents: any change to the cards or articles gives a new URL.
+DATA_JS = re.compile(r'(src="/?assets/(blog-posts|blog-articles)(\.en)?\.js)(\?v=[0-9a-f]+)?"')
+
+
+def stamp(path):
+    def ver(m):
+        name = m.group(2) + (m.group(3) or '') + '.js'
+        digest = hashlib.sha1((ROOT / 'assets' / name).read_bytes()).hexdigest()[:10]
+        return '%s?v=%s"' % (m.group(1), digest)
+    s = path.read_text(encoding='utf-8')
+    s2 = DATA_JS.sub(ver, s)
+    assert s2 != s or '?v=' in s, path
+    path.write_text(s2, encoding='utf-8')
+
+
+for page_path in (ROOT / 'blog.html', ROOT / 'en' / 'blog.html'):
+    stamp(page_path)
 print('built', len(ARTICLES), 'articles,', len(cards_en), 'in English')
