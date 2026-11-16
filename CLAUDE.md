@@ -6,7 +6,7 @@
 
 ## Запуск
 
-`python3 -m http.server 8766` у корені проєкту. Той самий сервер описаний у `.claude/launch.json` як `roddi-health`.
+`python3 tools/serve.py` у корені проєкту (порт 8766). Він поводиться як Vercel: чисті адреси (`/blog/shchury`, `/sitemap`, `/en`), редиректи з `vercel.json` і сторінка 404. Звичайний `python3 -m http.server` чистих адрес не вміє, і вони дають 404. Той самий сервер описаний у `.claude/launch.json` як `roddi-health`.
 
 ## Що важливо знати
 
