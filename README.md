@@ -68,3 +68,7 @@
 ## Карта сайту для людей
 
 `sitemap.xml` для пошукових систем лишається простим XML (браузери більше не показують XSLT-оформлення). Для людей є `sitemap.html` (адреса `/sitemap`, не індексується): список усіх сторінок UA і EN з назвами. Збирається `python3 tools/build-sitemap-page.py` із `sitemap.xml`; запускати після `build-articles.py` і `build-hubs.py`.
+
+## Фото в каруселі на головній
+
+Карусель показує вільні фото з Wikimedia Commons (не фото власниці): 4:5-кадри лежать у `assets/carousel/`. Їх робить вручну `python3 tools/make-carousel-photos.py` (потрібен Pillow) із фото, збережених у `assets/blog/`. Автори й ліцензії виводяться на сторінці `/credits` (`/en/credits`) скриптом `tools/build-credits.py`; посилання на неї стоїть під каруселлю. Змінюючи фото, оновіть обидва скрипти.

@@ -42,6 +42,64 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://roddihealth.app/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://roddihealth.app/privacy"/>
   </url>
+  <!-- hubs:start -->
+  <url>
+    <loc>https://roddihealth.app/blog/shchury</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/khomiaky</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/morski-svynky</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/shynshyly</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/degu</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/myshi</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/blog/kroliky</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/rats</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/hamsters</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/guinea-pigs</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/chinchillas</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/degus</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/mice</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://roddihealth.app/en/blog/rabbits</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <!-- hubs:end -->
   <!-- articles:start -->
   <url>
     <loc>https://roddihealth.app/blog/shchury/chomu-shchur-chkhaie</loc>
@@ -196,62 +254,4 @@
     <lastmod>2026-11-16</lastmod>
   </url>
   <!-- articles:end -->
-  <!-- hubs:start -->
-  <url>
-    <loc>https://roddihealth.app/blog/shchury</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/blog/khomiaky</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/blog/morski-svynky</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/blog/shynshyly</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/blog/degu</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/blog/myshi</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/blog/kroliky</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/rats</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/hamsters</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/guinea-pigs</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/chinchillas</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/degus</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/mice</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roddihealth.app/en/blog/rabbits</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <!-- hubs:end -->
 </urlset>
