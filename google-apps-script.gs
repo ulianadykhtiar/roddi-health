@@ -16,7 +16,7 @@
  */
 
 var HEADERS = {
-  Emails: ['Дата', 'Email', 'Форма', 'Сторінка', 'Мова', 'Згода'],
+  Emails: ['Дата', 'Email', 'Форма', 'Сторінка', 'Мова', 'Згода', 'Джерело', 'Кампанія'],
   Survey: ['Дата', 'Email', 'Тварини', 'Скільки', 'Останні ліки', 'Телефон', 'Бета', 'Коментар', 'Мова']
 };
 
@@ -32,7 +32,7 @@ function doPost(e) {
       // One row per address: a repeat sign-up is ignored.
       var known = emails.getLastRow() > 1 ? emails.getRange(2, 2, emails.getLastRow() - 1, 1).getValues() : [];
       if (known.some(function (r) { return String(r[0]).toLowerCase() === email; })) return reply('duplicate');
-      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page), lang(data), clean(data.consent)]);
+      emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page), lang(data), clean(data.consent), clean(data.source), clean(data.campaign)]);
       return reply('ok');
     }
     if (data.type === 'email-change') {
@@ -81,6 +81,7 @@ function clean(v) {
   return /^[=+\-@]/.test(s) ? "'" + s : s;
 }
 
+// Emails column G "Джерело" = utm_source or the referring site (or "direct"), H "Кампанія" = utm_campaign / utm_medium (assets/forms.js).
 // Emails column F "Згода": the version of the consent text the visitor ticked (assets/forms.js CONSENT_VERSION), empty if none.
 // "uk" or "en": the form's page language; older pages send no lang, so fall back to the /en/ path.
 function lang(data) {
