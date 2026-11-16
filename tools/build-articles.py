@@ -46,16 +46,17 @@ P = {
     'chin2': {'src': 'e/e8/Chinchilla_lanigera1.jpg', 'by': 'Trurl66', 'lic': 'Public domain', 'page': 'https://commons.wikimedia.org/wiki/File:Chinchilla_lanigera1.jpg'},
     'mouse': {'src': 'e/ed/Pet_mouse_mini.jpg', 'by': 'Tiia Monto', 'lic': 'CC BY-SA 3.0', 'page': 'https://commons.wikimedia.org/wiki/File:Pet_mouse_mini.jpg'},
     'degu2': {'src': '6/69/Octodon_degus_209581281.jpg', 'by': 'Ben Lyle Bedard', 'lic': 'CC BY 4.0', 'page': 'https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg'},
+    'rat3': {'src': '2/26/Three_baby_rats_piled_up_in_their_bed.jpg', 'by': 'Cat Ball', 'lic': 'CC0', 'page': 'https://commons.wikimedia.org/wiki/File:Three_baby_rats_piled_up_in_their_bed.jpg'},
     'mouse2': {'src': '4/4d/Pet_mouse_drinking.jpg', 'by': 'Tiia Monto', 'lic': 'CC BY-SA 3.0', 'page': 'https://commons.wikimedia.org/wiki/File:Pet_mouse_drinking.jpg', 'pos': '50% 35%'},
 }
 
 S = {
     'petmd_uri': ('PetMD: інфекції верхніх дихальних шляхів у щурів', 'https://www.petmd.com/exotic/conditions/respiratory/upper-respiratory-infection-rats'),
-    'petmd_rat': ('PetMD: памʼятка з догляду за щурами', 'https://www.petmd.com/exotic/rat-care-sheet'),
+    'petmd_rat': ('PetMD: памʼятка з догляду за щурами', 'https://www.petmd.com/exotic/rat-care-sheet', 'PetMD: rat care sheet'),
     'rspca_rat': ('RSPCA: чим годувати щурів', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/diet'),
-    'petmd_ham': ('PetMD: памʼятка з догляду за хомʼяками', 'https://www.petmd.com/exotic/hamster-care-sheet'),
-    'petmd_syr': ('PetMD: сирійські хомʼяки', 'https://www.petmd.com/exotic/syrian-hamster-care-sheet'),
-    'petmd_dwarf': ('PetMD: карликові хомʼяки', 'https://www.petmd.com/exotic/dwarf-hamster-care-sheet'),
+    'petmd_ham': ('PetMD: памʼятка з догляду за хомʼяками', 'https://www.petmd.com/exotic/hamster-care-sheet', 'PetMD: hamster care sheet'),
+    'petmd_syr': ('PetMD: сирійські хомʼяки', 'https://www.petmd.com/exotic/syrian-hamster-care-sheet', 'PetMD: Syrian hamster care sheet'),
+    'petmd_dwarf': ('PetMD: карликові хомʼяки', 'https://www.petmd.com/exotic/dwarf-hamster-care-sheet', 'PetMD: dwarf hamster care sheet'),
     'petmd_wet': ('PetMD: мокрий хвіст у хомʼяків', 'https://www.petmd.com/exotic/condition/wet-tail-in-hamsters'),
     'petmd_gi_gp': ('PetMD: стаз ШКТ у морських свинок', 'https://www.petmd.com/exotic/gi-stasis-in-guinea-pigs'),
     'petmd_gp': ('PetMD: памʼятка з догляду за морськими свинками', 'https://www.petmd.com/exotic/guinea-pig-care-sheet', 'PetMD: guinea pig care sheet'),
@@ -106,6 +107,21 @@ S = {
     'rspca_degu_company': ('RSPCA: як тримати дегу разом', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/company', 'RSPCA: keeping degus together'),
     'rspca_degu_behaviour': ('RSPCA: поведінка дегу', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/behaviour', 'RSPCA: degu behaviour'),
     'pdsa_degu': ('PDSA: дегу як домашні тварини', 'https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus', 'PDSA: degus as pets'),
+    # Sources for the rat and hamster articles (PR 4).
+    'rspca_rats': ('RSPCA: щури як домашні тварини', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats', 'RSPCA: pet rats'),
+    'rspca_rats_env': ('RSPCA: житло для щурів', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/environment', 'RSPCA: creating a good home for rats'),
+    'rspca_rats_beh': ('RSPCA: поведінка щурів', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/behaviour', 'RSPCA: pet rat behaviour'),
+    'rspca_rats_company': ('RSPCA: як тримати щурів разом', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/company', 'RSPCA: keeping pet rats together'),
+    'rspca_rats_diet': ('RSPCA: чим годувати щурів', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/diet', 'RSPCA: what to feed pet rats'),
+    'rspca_rats_health': ('RSPCA: здоровʼя щурів', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/health', 'RSPCA: rat health and welfare'),
+    'rspcaau_rats_keep': ('RSPCA Australia: де тримати щурів', 'https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/where-should-i-keep-my-rats', 'RSPCA Australia: where should I keep my rats?'),
+    'rspca_ham': ('RSPCA: хомʼяки як домашні тварини', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters', 'RSPCA: keeping hamsters as pets'),
+    'rspca_ham_env': ('RSPCA: житло для хомʼяків', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/environment', 'RSPCA: creating a good home for hamsters'),
+    'rspca_ham_diet': ('RSPCA: чим годувати хомʼяка', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet', 'RSPCA: what to feed a pet hamster'),
+    'rspca_ham_beh': ('RSPCA: поведінка хомʼяків', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/behaviour', 'RSPCA: hamster behaviour'),
+    'rspca_ham_company': ('RSPCA: чи можна тримати хомʼяків разом', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/company', 'RSPCA: keeping hamsters together'),
+    'rspca_ham_health': ('RSPCA: здоровʼя хомʼяків', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/health', 'RSPCA: hamster health and welfare'),
+    'pdsa_ham': ('PDSA: хомʼяки як домашні тварини', 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets', 'PDSA: hamsters as pets'),
 }
 
 
@@ -747,6 +763,145 @@ ARTICLES = [
              ],
              check=['how many degus live together and their sex', 'what you feed and whether they get sweet things', 'how much the degus drink', 'the condition of the eyes and tooth colour', 'room temperature'],
          )),
+    # ---- Rats and hamsters (PR 4, 16 November 2026) ----
+    dict(slug='zhyttia-shchura-tsikavishe', rodent='rat', topic='Догляд', photo='rat3',
+         published='2026-11-16', updated='2026-11-16', checked='2026-11-16',
+         title='Як зробити життя щура цікавішим: компанія, ігри й пошук їжі',
+         seo='Як розважити щура: компанія, ігри, пошук їжі, прогулянки',
+         desc='Чому щурам потрібні родичі, як облаштувати клітку для лазіння й риття, як годувати так, щоб щур шукав їжу, і як безпечно випускати його погуляти.',
+         short='Щури розумні, допитливі й соціальні, тож їм потрібні щонайменше один родич і щоденні нові враження. Висока клітка з кількома рівнями, схованки, мотузки, коробки для риття й корм, який треба шукати, допомагають уникнути нудьги, а прогулянки поза кліткою — лише під наглядом.',
+         tags='збагачення іграшки нудьга клітка гамак мотузки пошук корму прогулянка дресирування компанія',
+         sections=[
+             ('Чому щурам нудно', '<p>RSPCA описує щурів як дуже розумних і допитливих тварин із доброю памʼяттю. Вони швидко вчаться, і їм потрібні можливості лазити, бігати, шукати їжу, досліджувати, гратися й копати. Коли цього бракує, щур нудьгує. Гризіння прутів клітки RSPCA називає можливою ознакою нудьги чи бажання втекти, а проплішини від того, що щури обгризають одне одному шерсть, — ознакою того, що вони не ладнають або їм нудно.</p>'),
+             ('Компанія', '<p>Щура не тримають самого: за RSPCA, навіть багато уваги від людини не замінює родичів, а самотність може призвести до пригніченості й незвичної поведінки. Тримають пари чи невеликі групи однієї статі, найкраще братів чи сестер. У змішаній групі всі самці мають бути кастровані. До сталої групи не додають і не забирають щурів. Собак і котів тримають окремо: для щурів це хижаки.</p>'),
+             ('Клітка, у якій є що робити', ul(
+                 'Клітка має бути великою, щоб щур міг бігати, ставати на задні лапи, лазити й досліджувати. PetMD для одного щура називає мінімум приблизно 61 × 61 × 61 см і радить якомога більше житло. RSPCA Australia зазначає, що науково обґрунтованої норми немає.',
+                 'Кілька рівнів зі сходинками й рампами. RSPCA пише, що рівні ще й зменшують сварки між сусідами.',
+                 'Відстань між прутами така, щоб щур не просунув голову. PetMD називає близько 1,3 см, RSPCA Australia — до 2,5 см для дорослих.',
+                 'Суцільна підлога: сітка травмує лапи.',
+                 'Схованок на одну більше, ніж щурів, з кількома виходами, щоб усі могли спати разом.',
+                 'Тунелі, мотузки з натуральних волокон, гамаки, драбинки. Погризений тканинний гамак краще прибрати, щоб щур не наковтався тканини.',
+                 'Оновлюйте іграшки: RSPCA радить регулярно їх міняти.')),
+             ('Їжа, яку треба шукати', '<p>RSPCA радить перетворювати годування на пошук: змішувати корм із підстилкою, розсипати й ховати його, класти в картонні тубуси чи коробки для яєць. Можна давати цілу їжу, з якою доведеться повозитися, наприклад охолоджене варене яйце в шкаралупі. Важливо, щоб ця їжа входила в денну норму, а не додавалася до неї. Кілька місць годування зменшують суперництво.</p>'),
+             ('Риття й гризіння', '<p>Для риття RSPCA радить коробку з чистим піском або компостом і товстий шар підстилки в клітці. RSPCA Australia називає 3–4 см. Різці щурів ростуть усе життя, тому потрібні предмети для гризіння: дерев’яні вироби для гризунів, гілки яблуні, необроблене дерево.</p>'),
+             ('Прогулянки поза кліткою', '<p>PetMD пише, що щурам щодня потрібен час поза кліткою. RSPCA радить випускати лише ручних, спокійних щурів і лише під наглядом, у кімнаті, звідки вони не втечуть і де не зможуть поранитися. Приберіть дроти, отруйні рослини й усе, що можна погризти. Альтернатива — великий вольєр із предметами, місцем для риття й лотком для пошуку їжі. Тривалості прогулянки джерела не називають.</p>'),
+             ('Як навчати', '<p>Щури добре піддаються дресируванню: RSPCA згадує, що їх можна навчити відгукуватися на імʼя чи давати «пʼять». Навчають лише заохоченням, ніколи не карають. Корисна навичка — самому залазити на ваги за ласощі, так легше стежити за вагою. Брати щура на руки, за RSPCA, найкраще вранці або ввечері: дати понюхати руку, підвести одну долоню під тіло, а другою легко накрити спину. Не піднімайте щура за хвіст і за шкірку.</p>'),
+             ('Чого уникати', ul(
+                 'Кульки для бігу: RSPCA пише, що вони обмежують дослідження й лякають.',
+                 'Підстилку з ароматного чи фарбованого матеріалу, вату й пухнасті волокна.',
+                 'Сильні запахи (освіжувачі повітря, дим) і різкий шум, зокрема ультразвук від техніки.',
+                 'Скляні й суцільні пластикові клітки: у них погано циркулює повітря.',
+                 'Обрізання вусів.')),
+             ('Коли нудьга може бути хворобою', '<p>Повторювані рухи, як-от постійне гризіння прутів, RSPCA радить показати ветеринару. Ознаками стресу також бувають надмірне вмивання голови й лап, агресія, червоні виділення біля очей і носа, бажання ховатися й уникати контакту. Щури приховують біль, тож будь-які зміни в поведінці — привід придивитися уважніше.</p>'),
+         ],
+         check=['скільки щурів і якої статі живуть разом', 'розмір клітки й скільки рівнів', 'які зміни в поведінці й відколи', 'чи гризе щур прути, чи є проплішини', 'вага в динаміці'],
+         sources=['rspca_rats', 'rspca_rats_env', 'rspca_rats_beh', 'rspca_rats_company', 'rspca_rats_diet', 'rspca_rats_health', 'rspcaau_rats_keep', 'petmd_rat'],
+         related=['chomu-shchur-chkhaie', 'chym-goduvaty-shchura'],
+         en=dict(
+             title='How to make a rat’s life more interesting: company, play and foraging',
+             seo='How to enrich a pet rat’s life: company, play, foraging',
+             desc='Why rats need companions, how to set up a cage for climbing and digging, how to feed so rats forage, and how to let them roam safely outside the cage.',
+             short='Rats are clever, curious and social, so they need at least one companion and new experiences every day. A tall cage with several levels, hides, ropes, digging boxes and food they have to search for help prevent boredom, and time outside the cage should always be supervised.',
+             tags='enrichment toys boredom cage hammock ropes foraging free roam training company',
+             sections=[
+                 ('Why rats get bored', '<p>The RSPCA describes rats as highly intelligent, curious animals with good memories. They learn quickly and need chances to climb, run, forage, explore, play and dig. Without these, a rat gets bored. The RSPCA says chewing the cage bars may signal boredom or a wish to escape, and bald patches from rats chewing each other’s fur may mean they don’t get on or are bored.</p>'),
+                 ('Company', '<p>A rat is never kept alone: according to the RSPCA, even plenty of human attention doesn’t replace other rats, and loneliness can lead to depression and abnormal behaviour. Keep pairs or small same-sex groups, ideally siblings. In a mixed group, all males must be neutered. Don’t add or remove rats from a stable group. Keep dogs and cats away: to rats they are predators.</p>'),
+                 ('A cage with plenty to do', ul(
+                     'The cage should be large enough for the rat to run, stand on its hind legs, climb and explore. PetMD gives a minimum of about 61 × 61 × 61 cm for one rat and advises the largest home possible. RSPCA Australia notes there is no evidence-based size standard.',
+                     'Several levels with ladders and ramps. The RSPCA says levels also reduce squabbles between cage-mates.',
+                     'Bar spacing narrow enough that a rat can’t push its head through: about 1.3 cm according to PetMD, up to 2.5 cm for adults according to RSPCA Australia.',
+                     'A solid floor: wire mesh hurts feet.',
+                     'One more hide than there are rats, with several exits so they can all sleep together.',
+                     'Tunnels, natural-fibre ropes, hammocks, ladders. Remove a fabric hammock once it is chewed so the rat doesn’t swallow the fabric.',
+                     'Change things around: the RSPCA advises rotating toys regularly.')),
+                 ('Food they have to find', '<p>The RSPCA suggests turning feeding into foraging: mix food into the bedding, scatter and hide it, put it in cardboard tubes or egg boxes. Whole foods that take some work, such as a cooled boiled egg in its shell, are good too. This food should come out of the daily ration, not be added to it. Several feeding spots reduce competition.</p>'),
+                 ('Digging and gnawing', '<p>For digging, the RSPCA suggests a box of clean sand or compost and a thick layer of bedding in the cage; RSPCA Australia gives 3–4 cm. Rats’ incisors grow throughout life, so they need things to gnaw: wooden chews made for rodents, apple branches, untreated wood.</p>'),
+                 ('Time outside the cage', '<p>PetMD says rats need time outside the cage every day. The RSPCA advises letting out only tame, relaxed rats, and only under supervision, in a room they can’t escape from and where they can’t get hurt. Remove cables, toxic plants and anything they could chew. An alternative is a large pen with objects, a digging area and a foraging tray. Sources don’t give a length of time.</p>'),
+                 ('How to train', '<p>Rats are very trainable: the RSPCA mentions teaching them to respond to their name or give a high five. Use rewards only and never punish. A useful skill is climbing onto the scales for a treat, which makes weight checks easier. According to the RSPCA, rats are best handled in the morning or evening: let the rat sniff your hand, slide one palm under its body and rest the other lightly over its back. Never lift a rat by the tail or the scruff.</p>'),
+                 ('What to avoid', ul(
+                     'Exercise balls: the RSPCA says they restrict exploration and are stressful.',
+                     'Scented or coloured bedding, cotton wool and fluffy fibres.',
+                     'Strong smells (air fresheners, smoke) and sudden noise, including ultrasound from appliances.',
+                     'Glass and solid plastic cages: air doesn’t circulate well.',
+                     'Trimming whiskers.')),
+                 ('When boredom may be illness', '<p>The RSPCA advises showing a vet any repetitive behaviour, such as constant bar chewing. Signs of stress also include excessive grooming of the head and paws, aggression, red staining around the eyes and nose, hiding and avoiding contact. Rats hide pain, so any change in behaviour is a reason to look more closely.</p>'),
+             ],
+             check=['how many rats live together and their sex', 'cage size and number of levels', 'what behaviour changed and since when', 'whether the rat chews the bars or has bald patches', 'weight over time'],
+         )),
+    dict(slug='khomiak-dlia-novachka', rodent='hamster', topic='Догляд', photo='hamster2',
+         published='2026-11-16', updated='2026-11-16', checked='2026-11-16',
+         title='Хомʼяк для новачка: відповіді на часті запитання',
+         seo='Хомʼяк для новачка: клітка, колесо, корм і сусіди',
+         desc='Чи можна тримати хомʼяків разом, яка клітка й колесо потрібні, скільки підстилки, чим годувати, як брати на руки й коли терміново до ветеринара.',
+         short='Сирійських хомʼяків тримають лише поодинці, а карликових іноді парами, якщо вони виросли разом. Хомʼякам потрібна простора клітка з глибокою підстилкою для риття, суцільне колесо, у якому спина лишається рівною, гранульований корм і спокій удень, бо вони активні вночі.',
+         tags='хомʼяк новачок сирійський джунгарик клітка колесо підстилка корм поодинці руки мокрий хвіст',
+         sections=[
+             ('Сирійський чи карликовий?', '<p>RSPCA перелічує пʼять видів, яких найчастіше тримають удома: сирійський, китайський, кембелла, джунгарський і хомʼяк Роборовського. Сирійські більші, за PetMD — 13–18 см завдовжки, а карликові — 5–10 см. Від виду залежать розмір колеса й житла та можливість жити разом.</p>'),
+             ('Чи можна тримати двох хомʼяків разом?', '<p>Сирійських і китайських хомʼяків тримають лише поодинці: за природою вони не соціальні, і сирійців ніколи не селять разом. Щодо карликових джерела розходяться. RSPCA і PetMD допускають пари чи трійки, якщо хомʼяки виросли разом, найкраще з одного виводку, але попереджають, що вони можуть посваритися пізніше, тож будьте готові їх розселити. PDSA радить не тримати разом російських карликових хомʼяків, тобто кембелла й джунгарських. Нових хомʼяків до групи не підселяють.</p>'),
+             ('Яка клітка потрібна', '<p>Розміри в джерелах різні:</p>' + table(['Джерело', 'Мінімум'], [
+                 ['PDSA', '100 × 50 см (за даними німецької асоціації ветеринарів із захисту тварин)'],
+                 ['PetMD, сирійський', 'приблизно 102 × 51 × 41 см'],
+                 ['PetMD, карликовий', 'приблизно 61 × 30 × 30 см на одного хомʼяка'],
+             ]) + '<p>Усі сходяться, що більше краще. PDSA радить одноповерхову клітку, а не високу багаторівневу. Підлога має бути суцільною, без сітки. RSPCA не радить деревʼяних кліток. Відстань між прутами PetMD називає близько 1,3 см для сирійських і близько 0,6 см для карликових.</p>'),
+             ('Підстилка й гніздо', '<p>Хомʼяки риють, тому підстилка має бути глибокою. PDSA радить щонайменше 25 см, PetMD — 15–25 см для сирійських, а для карликових 5 см по всій клітці й близько 20 см в одному куті. Найбезпечніше обрати паперову підстилку без запаху. Вату й пухнасті волокна RSPCA, PDSA і PetMD не радять: нитки обмотують лапки. Для гнізда підійдуть сіно, рваний папір і туалетний папір без запаху. Щодо деревної стружки й газет джерела розходяться: PDSA вважає стружку надто пиловою, а друкарську фарбу на газетах — токсичною.</p>'),
+             ('Колесо', '<p>Колесо має бути суцільним, без щілин і перекладин, і настільки великим, щоб спина хомʼяка лишалася рівною: у малому колесі вона вигинається, і з часом це може спричинити біль. Рекомендовані розміри різняться:</p>' + table(['Джерело', 'Сирійський', 'Карликовий'], [
+                 ['PDSA', 'щонайменше 30 см', 'щонайменше 20 см'],
+                 ['PetMD, памʼятка про сирійських', '28–30 см', 'не вказано'],
+                 ['PetMD, загальна памʼятка', 'щонайменше 20 см', 'щонайменше 15 см'],
+             ]) + '<p>RSPCA нагадує, що колесо не має бути єдиною розвагою.</p>'),
+             ('Удень хомʼяк спить', '<p>Хомʼяки активні вночі. Їх не будять, не беруть на руки під час сну й не прибирають клітку вдень. Розбуджений хомʼяк може налякатися й вкусити. Ставте клітку в тихому місці, подалі від телевізора, пральної машини й прямого сонця, і вимикайте світло щовечора приблизно в той самий час.</p>'),
+             ('Температура', '<p>Тримайте хомʼяка вдома, без протягів і вогкості. PDSA радить стабільні 18–21 °C, PetMD для сирійських — 20–24 °C. У спеку є ризик теплового удару, а в холоді хомʼяк може впасти в заціпеніння. Якщо хомʼяк холодний, млявий і майже не реагує, PetMD радить негайно звернутися до ветеринара.</p>'),
+             ('Чим годувати', ul(
+                 'Основа — гранульований корм для хомʼяків: кожна гранула однакова, і хомʼяк не може вибрати лише смачне. Суміші на кшталт мюслі PDSA радить давати лише зрідка як доповнення.',
+                 'Свіжі овочі й зелень — потроху, одну-дві чайні ложки на день за PDSA. Надлишок свіжого може спричинити діарею.',
+                 'Фрукти — зрідка й крихітними порціями. PDSA попереджає, що російські карликові хомʼяки схильні до діабету, тож їм солодке особливо шкідливе.',
+                 'Не давайте виноград, ревінь, шоколад, каву, алкоголь, кісточки й насіння фруктів, сиру картоплю, часник, солодке й солоне.',
+                 'Хомʼяки роблять запаси, тому свіжу їжу, що лишилася, прибирайте того ж дня, а сухі запаси під час прибирання не викидайте.',
+                 'Вода має бути завжди. Щодня перевіряйте поїлку: чи не протікає й чи не забилася.')
+              + '<p>Щодо цибулі й помідорів джерела суперечать одне одному: PDSA має їх у списку дозволених продуктів, а PetMD радить уникати цибулі й незрілих помідорів. Безпечніше їх не давати.</p>'),
+             ('Як брати на руки', '<p>За RSPCA, спершу дайте хомʼяку обнюхати руку, потім підставте дві складені долоні, щоб він сам на них сів. Тримайте його лише на кілька сантиметрів вище стійкої поверхні: падіння з висоти небезпечні. Не хапайте хомʼяка й не стискайте. Брати на руки варто лише тоді, коли він не спить. Дітям тримати хомʼяка без дорослих не радять.</p>'),
+             ('Прибирання', '<p>Щодня або раз на кілька днів прибирайте брудну підстилку, послід і залишки свіжої їжі. Щодо повного прибирання джерела розходяться: PetMD радить щотижня, PDSA — щотижня в малих клітках і раз на кілька тижнів у великих, RSPCA — один-два рази на місяць. Повертайте трохи старої сухої підстилки, щоб гніздо пахло знайомо.</p>'),
+             ('Коли терміново до ветеринара', '<p>Хомʼяки швидко втрачають сили й приховують біль. Звертайтеся до ветеринара одразу, якщо хомʼяк гірше їсть, має діарею, мокру чи забруднену шерсть під хвостом (це може бути «мокрий хвіст»), схуд, важко дихає, чхає, має виділення з носа чи очей, слинить, зуби переросли, щічні мішки лишаються роздутими кілька годин або випнулося око. Про мокрий хвіст є окрема стаття.</p>'),
+         ],
+         check=['вид хомʼяка й вік', 'розмір клітки, глибина підстилки, діаметр колеса', 'чим годуєте', 'температура в кімнаті', 'вага в динаміці', 'який вигляд має послід'],
+         sources=['rspca_ham', 'rspca_ham_env', 'rspca_ham_diet', 'rspca_ham_beh', 'rspca_ham_company', 'rspca_ham_health', 'pdsa_ham', 'petmd_ham', 'petmd_syr', 'petmd_dwarf'],
+         related=['mokryi-khvist-u-khomiaka', 'chym-goduvaty-khomiaka'],
+         en=dict(
+             title='A hamster for beginners: answers to common questions',
+             seo='Hamsters for beginners: cage, wheel, food and companions',
+             desc='Can hamsters live together, which cage and wheel they need, how deep the bedding should be, what to feed, how to handle them and when to see a vet urgently.',
+             short='Syrian hamsters live alone, while dwarf hamsters can sometimes live in pairs if they grew up together. Hamsters need a roomy cage with deep bedding for digging, a solid wheel that keeps their back straight, pelleted food and quiet during the day, as they are active at night.',
+             tags='hamster beginner syrian dwarf cage wheel bedding food alone handling wet tail',
+             sections=[
+                 ('Syrian or dwarf?', '<p>The RSPCA lists five species commonly kept as pets: Syrian, Chinese, Campbell’s Russian dwarf, winter white dwarf and Roborovski. Syrians are larger: about 13–18 cm long according to PetMD, while dwarfs are 5–10 cm. The species determines the size of the wheel and cage and whether hamsters can live together.</p>'),
+                 ('Can two hamsters live together?', '<p>Syrian and Chinese hamsters live alone: they are not naturally social, and Syrians are never housed together. Sources disagree about dwarfs. The RSPCA and PetMD allow pairs or trios if they grew up together, ideally littermates, but warn they may fall out later, so be ready to separate them. PDSA advises against housing Russian dwarfs together. New hamsters are not added to a group.</p>'),
+                 ('Which cage', '<p>Sources give different sizes:</p>' + table(['Source', 'Minimum'], [
+                     ['PDSA', '100 × 50 cm (citing a German veterinary animal welfare association)'],
+                     ['PetMD, Syrian', 'about 102 × 51 × 41 cm'],
+                     ['PetMD, dwarf', 'about 61 × 30 × 30 cm per hamster'],
+                 ]) + '<p>All agree that bigger is better. PDSA prefers a single-level cage to a tall multi-level one. The floor should be solid, not mesh. The RSPCA advises against wooden cages. PetMD gives bar spacing of about 1.3 cm for Syrians and about 0.6 cm for dwarfs.</p>'),
+                 ('Bedding and nest', '<p>Hamsters dig, so bedding should be deep. PDSA recommends at least 25 cm, PetMD 15–25 cm for Syrians, and for dwarfs 5 cm across the cage with about 20 cm in one corner. Unscented paper bedding is the safest choice. The RSPCA, PDSA and PetMD advise against cotton wool and fluffy fibres: the threads wrap around feet. Hay, shredded paper and unscented toilet paper work for the nest. Sources disagree about wood shavings and newspaper: PDSA considers shavings too dusty and newspaper ink toxic.</p>'),
+                 ('The wheel', '<p>The wheel should be solid, with no gaps or rungs, and big enough to keep the hamster’s back straight: in a small wheel the back arches, which can cause pain over time. Recommended sizes differ:</p>' + table(['Source', 'Syrian', 'Dwarf'], [
+                     ['PDSA', 'at least 30 cm', 'at least 20 cm'],
+                     ['PetMD, Syrian care sheet', '28–30 cm', 'not stated'],
+                     ['PetMD, general care sheet', 'at least 20 cm', 'at least 15 cm'],
+                 ]) + '<p>The RSPCA reminds owners that a wheel shouldn’t be the only enrichment.</p>'),
+                 ('Hamsters sleep by day', '<p>Hamsters are active at night. Don’t wake them, pick them up while they sleep or clean the cage during the day. A hamster woken suddenly may get scared and bite. Keep the cage somewhere quiet, away from the TV, washing machine and direct sun, and switch the light off at about the same time each evening.</p>'),
+                 ('Temperature', '<p>Keep your hamster indoors, away from draughts and damp. PDSA recommends a steady 18–21 °C, PetMD 20–24 °C for Syrians. Heat brings a risk of heatstroke, and in the cold a hamster can go into torpor. If a hamster is cold, limp and barely responsive, PetMD advises seeing a vet straight away.</p>'),
+                 ('What to feed', ul(
+                     'The core is pelleted hamster food: every pellet is the same, so a hamster can’t pick out the tasty bits. PDSA suggests muesli-style mixes only as an occasional extra.',
+                     'Fresh vegetables and greens in small amounts, one or two teaspoons a day according to PDSA. Too much fresh food can cause diarrhoea.',
+                     'Fruit rarely and in tiny portions. PDSA warns that Russian dwarfs are prone to diabetes, so sugary food is especially harmful for them.',
+                     'Don’t give grapes, rhubarb, chocolate, caffeine, alcohol, fruit pits and seeds, raw potato, garlic, or sugary and salty food.',
+                     'Hamsters hoard food, so remove leftover fresh food the same day, but leave dry food stores in place when cleaning.',
+                     'Water must always be available. Check the bottle daily for leaks or blockages.')
+                  + '<p>Sources contradict each other on onion and tomato: PDSA lists them as suitable, while PetMD advises avoiding onions and unripe tomatoes. It is safer not to give them.</p>'),
+                 ('How to pick up a hamster', '<p>According to the RSPCA, first let the hamster sniff your hand, then offer two cupped palms so it can climb on by itself. Hold it only a few centimetres above a stable surface: falls from a height are dangerous. Don’t grab or squeeze. Only handle a hamster when it is awake. Children shouldn’t hold a hamster without an adult.</p>'),
+                 ('Cleaning', '<p>Remove dirty bedding, droppings and leftover fresh food every day or every few days. Sources disagree about full cleans: PetMD says weekly, PDSA weekly for small cages and every few weeks for larger ones, the RSPCA once or twice a month. Put back a little old, dry bedding so the nest still smells familiar.</p>'),
+                 ('When to see a vet urgently', '<p>Hamsters lose condition quickly and hide pain. See a vet straight away if your hamster eats less, has diarrhoea, has wet or dirty fur under the tail (this may be wet tail), loses weight, breathes with difficulty, sneezes, has discharge from the nose or eyes, drools, has overgrown teeth, has cheek pouches that stay swollen for hours, or an eye bulges out.</p>'),
+             ],
+             check=['species and age', 'cage size, bedding depth, wheel diameter', 'what you feed', 'room temperature', 'weight over time', 'what the droppings look like'],
+         )),
 ]
 
 BY_SLUG = {a['slug']: a for a in ARTICLES}
@@ -1017,7 +1172,7 @@ info_main = f'''<main id="main" class="ar">
     <h2>Симптоми й невідкладні стани</h2>
     <p>Статті про симптоми й невідкладні стани мають помітне попередження: якщо стан тварини погіршується, негайно звертайтеся до ветеринара. Такі статті допомагають зрозуміти, що відбувається й що розповісти лікарю, але не дають змоги поставити діагноз удома.</p>
     <h2>Статті на сторонніх сайтах</h2>
-    <p>Частина карток у блозі поки веде на статті інших сайтів. Такі картки позначені написом «стаття на сторонньому сайті», а їхній текст є нашим коротким описом, а не цитатою. Ми поступово замінюємо їх власними оглядами.</p>
+    <p>Усі картки в блозі ведуть на наші власні статті. Якщо колись ми додамо картку, що веде на статтю іншого сайту, вона буде позначена написом «стаття на сторонньому сайті», а її текст буде нашим коротким описом, а не цитатою.</p>
     <h2>Це не ветеринарна консультація</h2>
     <p>Roddi Health не є ветеринарною клінікою і не надає ветеринарних послуг. Матеріали блогу мають лише інформаційний характер і не є діагнозом, планом лікування чи рекомендацією щодо ліків або доз. Вони не замінюють огляду ветеринара.</p>
     <p>Перш ніж ухвалювати будь-яке рішення щодо здоровʼя тварини, порадьтеся з ветеринаром і самостійно перевірте інформацію. Якщо тварині погано, не відкладайте звернення через прочитане на сайті.</p>
@@ -1054,7 +1209,7 @@ info_main_en = f'''<main id="main" class="ar">
     <h2>Symptoms and emergencies</h2>
     <p>Articles about symptoms and emergencies carry a visible notice: if your animal’s condition gets worse, see a vet straight away. These articles help you understand what may be happening and what to tell the vet, but they do not let you diagnose your animal at home.</p>
     <h2>Articles on other sites</h2>
-    <p>Some cards in the blog still lead to articles on other websites. They are marked “article on an external site”, and their text is our own short description, not a quotation. We are gradually replacing them with our own overviews.</p>
+    <p>Every card in the blog leads to one of our own articles. If we ever add a card that leads to an article on another website, it will be marked “article on an external site”, and its text will be our own short description, not a quotation.</p>
     <h2>This is not veterinary advice</h2>
     <p>Roddi Health is not a veterinary clinic and does not provide veterinary services. Blog articles are for information only and are not a diagnosis, a treatment plan or a recommendation about medicines or doses. They do not replace an examination by a vet.</p>
     <p>Before making any decision about your animal’s health, talk to a vet and check the information yourself. If your animal is unwell, don’t delay getting help because of something you read on this site.</p>

@@ -41,20 +41,4 @@ var BLOG_TOPICS = {
 };
 
 var BLOG_POSTS = [
-  {
-    rodent: 'rat', topic: 'Догляд',
-    title: 'Як зробити життя щура цікавішим',
-    excerpt: 'Щури розумні й допитливі, їм потрібні нові враження. Коробки, тунелі, мотузки та розсипаний корм, який треба шукати, допомагають уникнути нудьги.',
-    tags: 'збагачення іграшки нудьга клітка гра пошук корму',
-    source: 'Blue Cross', url: 'https://www.bluecross.org.uk/pet-advice/caring-your-rat',
-    photo: { src: '2/26/Three_baby_rats_piled_up_in_their_bed.jpg', by: 'Cat Ball', lic: 'CC0', page: 'https://commons.wikimedia.org/wiki/File:Three_baby_rats_piled_up_in_their_bed.jpg' }
-  },
-  {
-    rodent: 'hamster', topic: 'Догляд',
-    title: '25 найчастіших запитань про хом’яків',
-    excerpt: 'Ветеринари відповідають на те, що найчастіше питають власники: яка клітка потрібна, чим годувати, чи можна тримати двох хом’яків разом і як зрозуміти, що тварина хворіє.',
-    tags: 'клітка корм питання поради новачкам сусіди сирійський джунгарик',
-    source: 'VetVerified', url: 'https://vetverified.com/articles/the-top-25-hamster-care-questions-answered-by-uk-vets',
-    photo: { src: 'f/f5/Syrian_hamster_on_blanket.jpg', by: 'MarketBoiCYM', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg', pos: '50% 40%' }
-  }
 ];

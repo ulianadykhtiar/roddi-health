@@ -120,5 +120,40 @@ var BLOG_ARTICLES = [
    "lic": "CC BY 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg"
   }
+ },
+ {
+  "rodent": "rat",
+  "topic": "Care",
+  "title": "How to make a rat’s life more interesting: company, play and foraging",
+  "excerpt": "Rats are clever, curious and social, so they need at least one companion and new experiences every day. A tall cage with several levels, hides, ropes, digging boxes and food they have to search for help prevent boredom, and time outside the cage should always be supervised.",
+  "tags": "enrichment toys boredom cage hammock ropes foraging free roam training company",
+  "source": "Roddi Health",
+  "url": "/en/blog/zhyttia-shchura-tsikavishe.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "2/26/Three_baby_rats_piled_up_in_their_bed.jpg",
+   "by": "Cat Ball",
+   "lic": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Three_baby_rats_piled_up_in_their_bed.jpg"
+  }
+ },
+ {
+  "rodent": "hamster",
+  "topic": "Care",
+  "title": "A hamster for beginners: answers to common questions",
+  "excerpt": "Syrian hamsters live alone, while dwarf hamsters can sometimes live in pairs if they grew up together. Hamsters need a roomy cage with deep bedding for digging, a solid wheel that keeps their back straight, pelleted food and quiet during the day, as they are active at night.",
+  "tags": "hamster beginner syrian dwarf cage wheel bedding food alone handling wet tail",
+  "source": "Roddi Health",
+  "url": "/en/blog/khomiak-dlia-novachka.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "f/f5/Syrian_hamster_on_blanket.jpg",
+   "by": "MarketBoiCYM",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg",
+   "pos": "50% 40%"
+  }
  }
 ];
