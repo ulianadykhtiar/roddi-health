@@ -6,7 +6,8 @@
  *   where Clarity requires a consent signal: window.clarity('consentv2', {...})).
  * - The choice is kept in localStorage under roddi:consent ("granted" or "denied") and can be
  *   changed with the "Cookie settings" button that this script adds to the footer links.
- * The banner shows on every host, so it can be checked locally. */
+ * The banner shows on every host, so it can be checked locally.
+ * Team visits: opening /me once marks this browser (localStorage roddi:internal). Then Clarity never loads and no banner shows. */
 (function (c, l, a, r, i, t, y) {
   var KEY = 'roddi:consent';
   var EN = l.documentElement.lang === 'en';
@@ -15,13 +16,14 @@
     ? { msg: 'We use Microsoft Clarity to see how people use the site. Allow analytics cookies?', yes: 'Allow', no: 'Decline', more: 'Details', settings: 'Cookie settings', label: 'Cookies', href: '/en/privacy.html#cookies' }
     : { msg: 'Ми використовуємо Microsoft Clarity, щоб бачити, як люди користуються сайтом. Дозволити аналітичні cookies?', yes: 'Дозволити', no: 'Відхилити', more: 'Докладніше', settings: 'Налаштування cookies', label: 'Cookies', href: '/privacy.html#cookies' };
 
+  function internal() { try { return localStorage.getItem('roddi:internal') === '1'; } catch (e) { return false; } }
   function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function write(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
   function signal(granted) {
     if (typeof c[a] === 'function') c[a]('consentv2', { ad_Storage: 'denied', analytics_Storage: granted ? 'granted' : 'denied' });
   }
 
-  if (live) {
+  if (live && !internal()) {
     c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
     signal(read() === 'granted'); // queued first, applied when the tag loads
     t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
@@ -61,6 +63,7 @@
   }
 
   function ready() {
+    if (internal()) return; // team browser: no analytics, so no consent banner or footer button either
     var st = l.createElement('style');
     st.textContent = css;
     l.head.appendChild(st);
