@@ -19,7 +19,18 @@ ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://roddihealth.app'
 PUBLISHED = '2026-11-09'
 UPDATED = '2026-11-09'
-UPDATED_UK = '9 листопада 2026'
+# When the facts were last compared with the sources. Each article may set its own
+# 'published', 'updated' and 'checked' dates; these are the defaults.
+CHECKED = '2026-11-09'
+# Topics that get the "if it gets worse, go to the vet now" notice at the top.
+ALERT_TOPICS = ('Симптоми', 'Невідкладне')
+MONTHS = ['січня', 'лютого', 'березня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня']
+
+
+def uk_date(iso):
+    y, m, d = iso.split('-')
+    return '%d %s %s' % (int(d), MONTHS[int(m) - 1], y)
+
 
 P = {
     'rat': {'src': 'f/fd/Fancy_rat_blaze.jpg', 'by': 'AlexK100', 'lic': 'CC BY-SA 2.0', 'page': 'https://commons.wikimedia.org/wiki/File:Fancy_rat_blaze.jpg'},
@@ -236,7 +247,7 @@ ARTICLES = [
 ]
 
 BY_SLUG = {a['slug']: a for a in ARTICLES}
-LABEL = {'rat': 'Щури', 'hamster': 'Хомʼяки', 'guinea-pig': 'Морські свинки', 'degu': 'Дегу', 'rabbit': 'Кролики'}
+LABEL = {'rat': 'Щури', 'hamster': 'Хомʼяки', 'guinea-pig': 'Морські свинки', 'chinchilla': 'Шиншили', 'degu': 'Дегу', 'mouse': 'Миші', 'rabbit': 'Кролики'}
 INFO_URL = 'pro-materialy.html'
 
 
@@ -300,7 +311,7 @@ def page(slug, title, desc, jsonld, main, img=None, og='article'):
   <script src="../assets/clarity.js?v=3"></script>
   <link rel="stylesheet" href="../assets/theme.css">
   <link rel="stylesheet" href="../assets/app-home.css?v=47">
-  <link rel="stylesheet" href="../assets/pages.css?v=4">
+  <link rel="stylesheet" href="../assets/pages.css?v=5">
 </head>
 <body class="page-soft">
 <a class="skip-link" href="#main">Перейти до змісту</a>
@@ -318,13 +329,15 @@ def page(slug, title, desc, jsonld, main, img=None, og='article'):
 '''
 
 
-SHORT_NOTE = ('<p class="ar-note"><b>Важливо.</b> Це загальна інформація з відкритих джерел, а не діагноз чи призначення. '
-              'Перш ніж ухвалювати будь-яке рішення щодо здоровʼя тварини, порадьтеся з ветеринаром і перевірте інформацію. '
+SHORT_NOTE = ('<p class="ar-note"><b>Довідковий матеріал.</b> Це загальна інформація з відкритих джерел, а не діагноз чи призначення, '
+              'і вона не замінює консультації ветеринара. Перш ніж ухвалювати будь-яке рішення щодо здоровʼя тварини, порадьтеся з лікарем. '
               '<a href="%s">Як ми готуємо матеріали</a></p>' % INFO_URL)
 LEGAL = ('<p class="ar-legal">Roddi Health не є ветеринарною клінікою і не надає ветеринарних послуг. Матеріал має лише інформаційний характер, '
          'може бути неповним або застарілим і не замінює огляду лікаря. Ви самостійно приймаєте рішення щодо догляду за твариною. '
          'Назви джерел наведено для посилання: вони не писали й не схвалювали цей текст. '
          '<a href="%s">Докладніше про матеріали блогу</a>.</p>' % INFO_URL)
+ALERT = ('<p class="ar-alert" role="note"><b>Якщо стан тварини погіршується, негайно звертайтеся до ветеринара.</b> '
+         'Не відкладайте візит і не лікуйте тварину самостійно за статтею.</p>')
 
 
 def article(a):
@@ -332,6 +345,8 @@ def article(a):
     ph = P[a['photo']]
     img = photo_file(ph['src'], 960)
     pos = ph.get('pos', '50% 50%')
+    published, updated, checked = a.get('published', PUBLISHED), a.get('updated', UPDATED), a.get('checked', CHECKED)
+    alert = ALERT if a.get('alert', a['topic'] in ALERT_TOPICS) else ''
     urgent = ''
     if a.get('urgent'):
         urgent = '<aside class="ar-urgent" aria-label="Коли потрібен ветеринар терміново"><h2>Терміново до ветеринара, якщо:</h2>' + ul(*a['urgent']) + '</aside>'
@@ -341,7 +356,7 @@ def article(a):
     related = ''.join('<a href="%s.html" class="ar-rel"><span>%s</span><b>%s</b></a>' % (r, e(BY_SLUG[r]['topic']), e(BY_SLUG[r]['title'])) for r in a['related'])
     ld = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'BlogPosting', 'headline': a['title'], 'description': a['desc'], 'image': [BASE + '/' + img],
-         'datePublished': PUBLISHED, 'dateModified': UPDATED, 'inLanguage': 'uk', 'mainEntityOfPage': url,
+         'datePublished': published, 'dateModified': updated, 'inLanguage': 'uk', 'mainEntityOfPage': url,
          'author': {'@type': 'Organization', 'name': 'Редакція Roddi Health', 'url': BASE + '/blog/pro-materialy'},
          'publisher': {'@type': 'Organization', 'name': 'Roddi Health', 'url': BASE + '/', 'logo': {'@type': 'ImageObject', 'url': BASE + '/assets/favicon-32.png'}},
          'citation': [S[k][1] for k in a['sources']]},
@@ -353,14 +368,15 @@ def article(a):
     main = f'''<main id="main" class="ar">
   <nav class="ar-crumb" aria-label="Навігація"><a href="../index.html">Головна</a><span aria-hidden="true">/</span><a href="../blog.html">Блог</a><span aria-hidden="true">/</span><b>{e(LABEL[a['rodent']])}</b></nav>
   <h1 class="t-h1">{e(a['title'])}</h1>
-  <p class="ar-meta">Редакція Roddi Health · оновлено {UPDATED_UK} · огляд відкритих джерел</p>
+  <p class="ar-meta">Редакція Roddi Health · оновлено {uk_date(updated)} · огляд відкритих джерел</p>
   <div class="ar-short soft-grad soft-grad--ask"><p class="ar-short-l">Коротко</p><p>{e(a['short'])}</p></div>
+  {alert}
   {SHORT_NOTE}
   <figure class="ar-fig"><img alt="{e(a['title'])}" src="../{img}" width="960" height="540" style="object-position:{pos}"><figcaption>Фото: <a href="{e(ph['page'])}" target="_blank" rel="noopener">{e(ph['by'])}</a>, {e(ph['lic'])}, Wikimedia Commons</figcaption></figure>
   {urgent}
   <div class="ar-body">{body}</div>
   <section class="ar-check"><h2>Що записати перед дзвінком ветеринару</h2><ul>{check}</ul><p>Такі нотатки легше вести в одному місці. Саме для цього ми робимо Roddi Health.</p><a href="#early-access" class="btn-app btn-app-sm">Хочу ранній доступ</a></section>
-  <section class="ar-sources"><h2>Джерела</h2><ul>{sources}</ul></section>
+  <section class="ar-sources"><h2>Джерела</h2><ul>{sources}</ul><p class="ar-checked">Факти звірено з джерелами {uk_date(checked)}. Знайшли помилку чи посилання не відкривається? Напишіть на <a href="mailto:roddihealth@gmail.com">roddihealth@gmail.com</a>.</p></section>
   {LEGAL}
   <section class="ar-related" aria-label="Схожі матеріали"><h2>Читайте також</h2><div>{related}</div></section>
 </main>
@@ -369,25 +385,39 @@ def article(a):
 
 
 INFO_TITLE = 'Про матеріали блогу та відмова від відповідальності'
-INFO_DESC = 'Як Roddi Health готує матеріали блогу, які джерела використовує, обмеження інформації та як звʼязатися щодо авторських прав.'
-info_ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': INFO_TITLE, 'description': INFO_DESC, 'url': BASE + '/blog/pro-materialy', 'inLanguage': 'uk'}
+INFO_DESC = 'Як Roddi Health готує матеріали блогу: які джерела обирає, як позначає чужі статті й дату перевірки фактів, обмеження інформації та як повідомити про помилку.'
+INFO_UPDATED = '2026-11-16'
+info_ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': INFO_TITLE, 'description': INFO_DESC, 'url': BASE + '/blog/pro-materialy', 'inLanguage': 'uk', 'dateModified': INFO_UPDATED}
 info_main = f'''<main id="main" class="ar">
   <nav class="ar-crumb" aria-label="Навігація"><a href="../index.html">Головна</a><span aria-hidden="true">/</span><a href="../blog.html">Блог</a><span aria-hidden="true">/</span><b>Про матеріали</b></nav>
   <h1 class="t-h1">{e(INFO_TITLE)}</h1>
-  <p class="ar-meta">Оновлено {UPDATED_UK}</p>
+  <p class="ar-meta">Оновлено {uk_date(INFO_UPDATED)}</p>
   <div class="ar-body">
     <h2>Як ми готуємо статті</h2>
-    <p>Статті блогу є власними оглядами редакції Roddi Health українською. Ми читаємо відкриті матеріали ветеринарів, клінік і зоозахисних організацій, зіставляємо їх, викладаємо факти своїми словами й показуємо місця, де джерела розходяться. Під кожною статтею є перелік джерел із посиланнями. Ми не копіюємо чужі тексти.</p>
+    <p>Статті блогу є власними оглядами редакції Roddi Health українською. Ми читаємо матеріали ветеринарів, ветеринарних організацій, університетів і зоозахисних організацій, зіставляємо їх і викладаємо факти своїми словами у власній структурі. Там, де джерела розходяться, ми це показуємо.</p>
+    <p>Ми не копіюємо, не перекладаємо й не переказуємо абзац за абзацом чужі статті. Факти беремо з кількох джерел і під кожною статтею даємо їх перелік із прямими посиланнями.</p>
     <p>У підготовці текстів ми використовуємо інструменти на основі ШІ. Статті не є рецензованими ветеринарними публікаціями, якщо це не зазначено окремо біля конкретної статті.</p>
+    <h2>Які джерела ми обираємо</h2>
+    <p>Насамперед ми спираємося на ветеринарні асоціації й довідники, університети, державні й профільні організації та рецензовані наукові статті. Матеріали зоозахисних організацій і ветеринарних клінік використовуємо як додаткові. Якщо твердження не вдається перевірити за джерелом, ми його не публікуємо.</p>
+    <h2>Ліки й дози</h2>
+    <p>Ми не наводимо дози ліків і не радимо препарати. Призначити лікування може лише ветеринар, який оглянув тварину.</p>
+    <h2>Дата перевірки</h2>
+    <p>У кожній статті вказано, коли факти востаннє звіряли з джерелами. Ми переглядаємо матеріали, коли змінюються рекомендації або коли нам повідомляють про помилку чи посилання, що не відкривається.</p>
+    <h2>Симптоми й невідкладні стани</h2>
+    <p>Статті про симптоми й невідкладні стани мають помітне попередження: якщо стан тварини погіршується, негайно звертайтеся до ветеринара. Такі статті допомагають зрозуміти, що відбувається й що розповісти лікарю, але не дають змоги поставити діагноз удома.</p>
+    <h2>Статті на сторонніх сайтах</h2>
+    <p>Частина карток у блозі поки веде на статті інших сайтів. Такі картки позначені написом «стаття на сторонньому сайті», а їхній текст є нашим коротким описом, а не цитатою. Ми поступово замінюємо їх власними оглядами.</p>
     <h2>Це не ветеринарна консультація</h2>
     <p>Roddi Health не є ветеринарною клінікою і не надає ветеринарних послуг. Матеріали блогу мають лише інформаційний характер і не є діагнозом, планом лікування чи рекомендацією щодо ліків або доз. Вони не замінюють огляду ветеринара.</p>
     <p>Перш ніж ухвалювати будь-яке рішення щодо здоровʼя тварини, порадьтеся з ветеринаром і самостійно перевірте інформацію. Якщо тварині погано, не відкладайте звернення через прочитане на сайті.</p>
     <h2>Обмеження</h2>
     <p>Ми намагаємося підтримувати матеріали точними, але не гарантуємо, що вони повні, актуальні чи підходять саме вашій тварині. Рекомендації змінюються, а джерела можуть не збігатися. Ви самостійно приймаєте рішення щодо догляду за твариною. У межах, дозволених законом, Roddi Health не відповідає за наслідки використання цієї інформації.</p>
     <h2>Згадані джерела</h2>
-    <p>Назви організацій і сайтів наведено лише для посилання. Вони не пов’язані з Roddi Health, не писали й не схвалювали наші тексти. За вміст зовнішніх сайтів відповідають їхні власники.</p>
+    <p>Назви організацій і сайтів наведено лише для посилання. Вони не повʼязані з Roddi Health, не писали й не схвалювали наші тексти. За вміст зовнішніх сайтів відповідають їхні власники.</p>
     <h2>Фото й авторські права</h2>
-    <p>Фотографії в блозі мають вільні ліцензії й підписані іменем автора та ліцензією. Якщо ви вважаєте, що матеріал порушує ваші права, або знайшли помилку, напишіть на <a href="mailto:roddihealth@gmail.com">roddihealth@gmail.com</a>: ми перевіримо й виправимо або приберемо його.</p>
+    <p>Фотографії в блозі взято з Wikimedia Commons і мають вільні ліцензії. Біля кожного фото вказано автора, ліцензію й посилання на файл.</p>
+    <h2>Помилки й звернення</h2>
+    <p>Якщо ви знайшли помилку або вважаєте, що матеріал порушує ваші права, напишіть на <a href="mailto:roddihealth@gmail.com">roddihealth@gmail.com</a>: ми перевіримо й виправимо або приберемо його.</p>
   </div>
 </main>
 '''
@@ -415,7 +445,8 @@ else:
 # Sitemap.
 sm = (ROOT / 'sitemap.xml').read_text(encoding='utf-8')
 sm = re.sub(r'\s*<!-- articles:start -->.*?<!-- articles:end -->', '', sm, flags=re.S)
-urls = ''.join('\n  <url>\n    <loc>%s/blog/%s</loc>\n    <lastmod>%s</lastmod>\n  </url>' % (BASE, s, UPDATED) for s in [a['slug'] for a in ARTICLES] + ['pro-materialy'])
+urls = ''.join('\n  <url>\n    <loc>%s/blog/%s</loc>\n    <lastmod>%s</lastmod>\n  </url>' % (BASE, s, d)
+               for s, d in [(a['slug'], a.get('updated', UPDATED)) for a in ARTICLES] + [('pro-materialy', INFO_UPDATED)])
 sm = sm.replace('</urlset>', '  <!-- articles:start -->' + urls + '\n  <!-- articles:end -->\n</urlset>')
 (ROOT / 'sitemap.xml').write_text(sm, encoding='utf-8')
 print('built', len(ARTICLES), 'articles')
