@@ -1337,11 +1337,29 @@ HUB_LABEL = {'rat': ('Щури', 'Rats'), 'hamster': ('Хом’яки', 'Hamste
              'chinchilla': ('Шиншили', 'Chinchillas'), 'degu': ('Дегу', 'Degus'), 'mouse': ('Миші', 'Mice'), 'rabbit': ('Кролики', 'Rabbits')}
 
 
+# English pages get English slugs (keys are the Ukrainian slugs, which are also the article ids).
+EN_SLUG = {
+    'chomu-shchur-chkhaie': 'why-is-my-rat-sneezing', 'chym-goduvaty-shchura': 'what-to-feed-a-rat',
+    'chym-goduvaty-khomiaka': 'what-to-feed-a-hamster', 'mokryi-khvist-u-khomiaka': 'wet-tail-in-hamsters',
+    'morska-svynka-ne-yist': 'guinea-pig-not-eating', 'chym-goduvaty-morsku-svynku': 'what-to-feed-a-guinea-pig',
+    'krolyk-ne-yist': 'rabbit-not-eating', 'chym-goduvaty-degu': 'what-to-feed-a-degu',
+    'skilky-zhyvut-gryzuny': 'how-long-pet-rodents-live', 'zdorovia-myshi': 'pet-mouse-health-check',
+    'domashni-myshi': 'pet-mice-care', 'pylovi-vanny-shynshyly': 'chinchilla-dust-baths',
+    'zdorovia-shynshyly': 'chinchilla-health', 'tsynga-u-morskoi-svynky': 'guinea-pig-scurvy',
+    'dohliad-za-morskoiu-svynkoiu': 'guinea-pig-care-basics', 'degu-vdoma': 'degus-at-home',
+    'zhyttia-shchura-tsikavishe': 'enrich-your-rats-life', 'khomiak-dlia-novachka': 'hamster-for-beginners',
+}
+
+
+def lslug(slug, lang):
+    return EN_SLUG.get(slug, slug) if lang == 'en' else slug
+
+
 def art_path(slug, lang):
     """Path without extension, e.g. blog/shchury/chomu-shchur-chkhaie. The 'about the blog' page has no animal."""
     if slug == 'pro-materialy' or slug not in BY_SLUG:   # not an article: the about page or a hub page
         return '%s/%s' % (DIR[lang], slug)
-    return '%s/%s/%s' % (DIR[lang], HUB_SLUG[BY_SLUG[slug]['rodent']][0 if lang == 'uk' else 1], slug)
+    return '%s/%s/%s' % (DIR[lang], HUB_SLUG[BY_SLUG[slug]['rodent']][0 if lang == 'uk' else 1], lslug(slug, lang))
 
 
 def hub_path(rodent, lang):
@@ -1594,9 +1612,10 @@ for a in ARTICLES:
         out = ROOT / (art_path(a['slug'], lang) + '.html')
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(article(a, lang), encoding='utf-8')
-        old = ROOT / DIR[lang] / (a['slug'] + '.html')   # the pre-hierarchy location: now a redirect, no file
-        if old.exists():
-            old.unlink()
+        for old in (ROOT / DIR[lang] / (a['slug'] + '.html'),                                                    # flat location before the animal folders
+                    ROOT / DIR[lang] / HUB_SLUG[a['rodent']][0 if lang == 'uk' else 1] / (a['slug'] + '.html')):  # Ukrainian slug in the English folder
+            if old.exists() and old != out:
+                old.unlink()   # these addresses are redirects now, not files
 (ROOT / 'blog' / 'pro-materialy.html').write_text(page('uk', 'pro-materialy', INFO_TITLE, INFO_DESC, info_ld, info_main, og='website'), encoding='utf-8')
 (ROOT / 'en' / 'blog' / 'pro-materialy.html').write_text(page('en', 'pro-materialy', INFO_TITLE_EN, INFO_DESC_EN, info_ld_en, info_main_en, og='website'), encoding='utf-8')
 
