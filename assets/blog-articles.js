@@ -155,5 +155,75 @@ var BLOG_ARTICLES = [
    "page": "https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg",
    "pos": "50% 40%"
   }
+ },
+ {
+  "rodent": "mouse",
+  "topic": "Симптоми",
+  "title": "Як перевірити здоровʼя миші: щоденний огляд і тривожні ознаки",
+  "excerpt": "Миші приховують нездужання, тож помітні симптоми часто означають, що тварина вже серйозно хвора. Короткий огляд уранці й увечері допомагає побачити зміни рано: тьмяні очі, скуйовджену шерсть, незвичне дихання, схуднення або мишу, яка сидить окремо від інших.",
+  "tags": "здоровʼя огляд хвора миша чхає дихання шерсть кліщі пухлина грудка зуби схудла",
+  "source": "Roddi Health",
+  "url": "blog/zdorovia-myshi.html",
+  "internal": true,
+  "featured": true,
+  "photo": {
+   "src": "e/ed/Pet_mouse_mini.jpg",
+   "by": "Tiia Monto",
+   "lic": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pet_mouse_mini.jpg"
+  }
+ },
+ {
+  "rodent": "mouse",
+  "topic": "Догляд",
+  "title": "Домашні миші: житло, прибирання, корм і компанія",
+  "excerpt": "Миші — соціальні нічні тварини. Їм потрібні родичі тієї ж статі, просторе провітрюване житло без протягів і місця, щоб ховатися та лазити. Основа раціону — гранульований корм для мишей, свіжа зелень у межах денної норми й чиста вода щодня.",
+  "tags": "клітка житло підстилка прибирання корм гранули компанія самці самки колесо температура",
+  "source": "Roddi Health",
+  "url": "blog/domashni-myshi.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "4/4d/Pet_mouse_drinking.jpg",
+   "by": "Tiia Monto",
+   "lic": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pet_mouse_drinking.jpg",
+   "pos": "50% 35%"
+  }
+ },
+ {
+  "rodent": "chinchilla",
+  "topic": "Догляд",
+  "title": "Пилові ванни для шиншили: навіщо, як часто й скільки тривати",
+  "excerpt": "Шиншила чиститься в пилу: він забирає з густого хутра зайвий жир і вологу. Купати у воді не можна, бо хутро довго сохне, а шкіра може запалитися. Ванну зі спеціальним пилом дають на обмежений час і після цього прибирають, щоб пил не подразнював очі.",
+  "tags": "пилова ванна пил пісок купання хутро шерсть очі вологість",
+  "source": "Roddi Health",
+  "url": "blog/pylovi-vanny-shynshyly.html",
+  "internal": true,
+  "featured": true,
+  "photo": {
+   "src": "4/45/Napoleon_chinchilla_in_box.jpg",
+   "by": "Bluerasberry",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Napoleon_chinchilla_in_box.jpg",
+   "pos": "50% 45%"
+  }
+ },
+ {
+  "rodent": "chinchilla",
+  "topic": "Симптоми",
+  "title": "Здоровʼя шиншили: зуби, хутро, травлення й тривожні ознаки",
+  "excerpt": "Зуби шиншили ростуть усе життя, тому основа раціону — необмежене сіно, а не солодкі суміші. Слина на підборідді, гірший апетит, схуднення чи менше посліду можуть означати біль у роті або проблеми з травленням. Шиншили приховують хворобу, тож такі ознаки — привід звернутися до ветеринара одразу.",
+  "tags": "зуби слина слинотеча сіно послід не їсть хутро випадає стрес температура спека",
+  "source": "Roddi Health",
+  "url": "blog/zdorovia-shynshyly.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "e/e8/Chinchilla_lanigera1.jpg",
+   "by": "Trurl66",
+   "lic": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Chinchilla_lanigera1.jpg"
+  }
  }
 ];

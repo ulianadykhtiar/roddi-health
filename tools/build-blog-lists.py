@@ -10,7 +10,7 @@ build_en.py rebuilds whole English pages and must not be run right now, so this 
 updates only these two lists from assets/blog-posts.js, assets/blog-posts.en.js and
 assets/blog-articles.js. Run it after adding or removing a card or an article.
 Differences from build_en.py: each static card says it is an article on an external site,
-and the Ukrainian ItemList also lists our own articles. Running build_en.py would undo both,
+and both ItemLists (and the English bot list) also include our own articles. Running build_en.py would undo both,
 so port them there before using it again.
 """
 import html
@@ -46,13 +46,13 @@ def read_posts():
     }
 
 
-def read_articles():
-    js = (ROOT / 'assets/blog-articles.js').read_text(encoding='utf-8')
+def read_articles(name):
+    js = (ROOT / 'assets' / name).read_text(encoding='utf-8')
     return json.loads(js[js.index('['):js.rindex(']') + 1])
 
 
 posts = read_posts()
-articles = read_articles()
+articles = {'uk': read_articles('blog-articles.js'), 'en': read_articles('blog-articles.en.js')}
 
 
 def posts_html(lang):
@@ -62,9 +62,14 @@ def posts_html(lang):
         for p in posts[lang])
 
 
+def articles_html(lang):
+    # blog.html gets its article list from build-articles.py; en/blog.html gets it here.
+    return ''.join('<article class="blog-static"><h3><a href="%s">%s</a></h3><p>%s</p></article>'
+                   % (esc(a['url']), esc(a['title']), esc(a['excerpt'])) for a in articles[lang])
+
+
 def item_list(lang):
-    # Our own articles exist only in Ukrainian so far, so the English list has just the cards.
-    items = [(a['title'], BASE + '/' + a['url']) for a in articles] if lang == 'uk' else []
+    items = [(a['title'], BASE + '/' + a['url'].lstrip('/')) for a in articles[lang]]
     items += [(p['title'], p['url']) for p in posts[lang]]
     return [{'@type': 'ListItem', 'position': i + 1, 'name': n, 'url': u} for i, (n, u) in enumerate(items)]
 
@@ -77,7 +82,7 @@ def refresh(name, lang):
         s = POSTS_RE.sub(lambda m: '<!-- posts:start -->%s<!-- posts:end -->' % posts_html(lang), s)
     else:
         assert len(EN_POSTS_RE.findall(s)) == 1, name
-        s = EN_POSTS_RE.sub(lambda m: m.group(1) + posts_html(lang), s)
+        s = EN_POSTS_RE.sub(lambda m: m.group(1) + articles_html(lang) + posts_html(lang), s)
     m = LD_RE.search(s)
     assert m, name
     data = json.loads(m.group(2).replace('<\\/', '</'))
