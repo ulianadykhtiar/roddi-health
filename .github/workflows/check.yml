@@ -20,6 +20,7 @@ jobs:
           python3 tools/build-articles.py
           python3 tools/build-hubs.py
           python3 tools/build-blog-lists.py
+          python3 tools/build-sitemap-page.py
           python3 tools/build-privacy.py
           python3 tools/build-css.py
-          git diff --exit-code -- . ':!app-design' || (echo "Generated files are out of date: run tools/build-articles.py, tools/build-hubs.py, tools/build-blog-lists.py, tools/build-privacy.py, tools/build-css.py and commit the result" && exit 1)
+          git diff --exit-code -- . ':!app-design' || (echo "Generated files are out of date: run tools/build-articles.py, tools/build-hubs.py, tools/build-blog-lists.py, tools/build-sitemap-page.py, tools/build-privacy.py, tools/build-css.py and commit the result" && exit 1)
