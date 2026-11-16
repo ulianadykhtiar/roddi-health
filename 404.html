@@ -9,36 +9,48 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font-family:Onest,system-ui,sans-serif;color:#0f0f11;background:linear-gradient(180deg,#efdfe9 0%,#f6ebe9 55%,#fff8ee 100%)}
-    main{max-width:460px;text-align:center}
-    img.logo{height:44px;margin-bottom:36px}
-    h1{margin:0 0 12px;font-size:clamp(34px,8vw,48px);line-height:1.05;letter-spacing:-.03em;font-weight:600}
-    p{margin:0 0 28px;font-size:17px;line-height:1.5;color:#4b4550}
+    html,body{margin:0}
+    body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;font-family:Onest,system-ui,sans-serif;color:#0f0f11;background:#fff8ee url(/assets/features/pastel-hero.jpg) center/cover fixed}
+    body::after{content:"";position:fixed;inset:0;background:url(/assets/features/grain.png) 0 0/240px;pointer-events:none}
+    header{padding:24px 20px;text-align:center}
+    header img{height:36px}
+    main{flex:1;display:grid;place-items:center;padding:12px 20px 56px;text-align:center;position:relative;z-index:1}
+    .num{display:flex;align-items:flex-end;justify-content:center;gap:clamp(4px,2vw,16px);font-weight:700;font-size:clamp(120px,30vw,240px);line-height:.8;letter-spacing:-.06em}
+    .num span{display:block}
+    .num img{width:clamp(110px,27vw,220px);height:auto;margin-bottom:-2px;animation:bob 3.6s ease-in-out infinite;transform-origin:50% 100%}
+    @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+    h1{margin:28px 0 10px;font-size:clamp(28px,5vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:600}
+    p{max-width:440px;margin:0 auto 28px;font-size:17px;line-height:1.5;color:#4b4550}
     .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-    a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;font-weight:500;font-size:15px;text-decoration:none;background:#0f0f11;color:#fff}
-    a.alt{background:#fff;color:#0f0f11;box-shadow:inset 0 0 0 1px #d9dce1}
-    a:focus-visible{outline:2px solid #a45588;outline-offset:2px}
+    a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-weight:500;font-size:15px;text-decoration:none;background:#0f0f11;color:#fff;transition:translate .2s ease,box-shadow .2s ease}
+    a.btn.alt{background:#fff;color:#0f0f11;box-shadow:inset 0 0 0 1px #d9dce1}
+    a.btn:hover{translate:0 -1px;box-shadow:0 10px 18px -12px rgba(15,15,17,.55)}
+    a.btn:focus-visible{outline:2px solid #a45588;outline-offset:2px}
+    @media (prefers-reduced-motion:reduce){.num img{animation:none}a.btn{transition:none}}
   </style>
 </head>
 <body>
+  <header><a href="/" aria-label="Roddi Health"><img src="/assets/logo-black.svg" alt="Roddi Health"></a></header>
   <main>
-    <img class="logo" src="/assets/logo-black.svg" alt="Roddi Health">
-    <h1 id="t">Такої сторінки немає</h1>
-    <p id="d">Можливо, посилання застаріло. Поверніться на головну або загляньте в блог.</p>
-    <div class="row"><a id="h" href="/">На головну</a><a id="b" class="alt" href="/blog">Блог</a></div>
+    <div>
+      <div class="num" aria-hidden="true"><span>4</span><img src="/assets/hero-hamster.png" alt="" width="355" height="281"><span>4</span></div>
+      <h1 id="t">Ой, тут нікого немає</h1>
+      <p id="d">Такої сторінки не існує, або її перенесли чи видалили, а посилання застаріло. Перевірте адресу або повертайтеся на головну.</p>
+      <div class="row"><a id="h" class="btn" href="/">На головну</a><a id="b" class="btn alt" href="/blog">Читати блог</a></div>
+    </div>
   </main>
   <script>
     // The same file serves every missing address, so pick the language from the path.
     if (location.pathname.indexOf('/en') === 0) {
       document.documentElement.lang = 'en';
       document.title = 'Page not found · Roddi Health';
-      t.textContent = 'This page does not exist';
-      d.textContent = 'The link may be outdated. Go back home or have a look at the blog.';
-      h.textContent = 'Home'; h.href = '/en/index.html';
-      b.textContent = 'Blog'; b.href = '/en/blog.html';
+      t.textContent = 'Oops, nobody’s here';
+      d.textContent = 'This page doesn’t exist, or it has moved or been removed and the link is out of date. Check the address or head back home.';
+      h.textContent = 'Back home'; h.href = '/en/index.html';
+      b.textContent = 'Read the blog'; b.href = '/en/blog.html';
     }
   </script>
 </body>
