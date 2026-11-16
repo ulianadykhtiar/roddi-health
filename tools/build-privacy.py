@@ -21,7 +21,7 @@ T = {
         lang='uk', locale='uk_UA', file='privacy.html', url=BASE + '/privacy', other_file='en/privacy.html',
         title='Політика конфіденційності | Roddi Health', h1='Політика конфіденційності',
         desc='Які дані збирає Roddi Health, навіщо, кому ми їх довіряємо, скільки зберігаємо та як ви можете керувати даними й cookies.',
-        meta='Оновлено 16 листопада 2026', home='Головна', crumb='Політика конфіденційності', nav='Навігація',
+        meta='Оновлено 16 листопада 2026', skip='Перейти до змісту', home='Головна', crumb='Політика конфіденційності', nav='Навігація',
         body=f'''
     <h2>Хто ми</h2>
     <p>Roddi Health — додаток для здоров’я гризунів, який зараз розробляється. Сайт roddihealth.app ведуть Уляна Дихтяр і Вероніка Дихтяр, засновниці проєкту (далі «ми»). Ми відповідаємо за обробку ваших персональних даних. З будь-яких питань про ваші дані пишіть на <a href="mailto:{MAIL}">{MAIL}</a>.</p>
@@ -61,7 +61,7 @@ T = {
         lang='en', locale='en_US', file='en/privacy.html', url=BASE + '/en/privacy', other_file='privacy.html',
         title='Privacy Policy | Roddi Health', h1='Privacy Policy',
         desc='What data Roddi Health collects and why, who we trust with it, how long we keep it and how you can manage your data and cookies.',
-        meta='Updated November 16, 2026', home='Home', crumb='Privacy Policy', nav='Navigation',
+        meta='Updated November 16, 2026', skip='Skip to content', home='Home', crumb='Privacy Policy', nav='Navigation',
         body=f'''
     <h2>Who we are</h2>
     <p>Roddi Health is an app for rodent health that is currently in development. The roddihealth.app website is run by Uliana Dykhtiar and Veronika Dykhtiar, the founders of the project (“we”). We are responsible for processing your personal data. For any question about your data, write to <a href="mailto:{MAIL}">{MAIL}</a>.</p>
@@ -149,7 +149,7 @@ def build(lang):
     nav = re.sub(r'(<a href=")[^"]*(" class="lang-opt")', r'\g<1>%s\2' % other, nav, count=1)
 
     home = 'index.html' if lang == 'uk' else '/en/index.html'
-    main = f'''<main class="ar">
+    main = f'''<main id="main" class="ar">
   <nav class="ar-crumb" aria-label="{c['nav']}"><a href="{home}">{c['home']}</a><span aria-hidden="true">/</span><b>{c['crumb']}</b></nav>
   <h1 class="t-h1">{c['h1']}</h1>
   <p class="ar-meta">{c['meta']}</p>
@@ -157,6 +157,7 @@ def build(lang):
 </main>'''
     html = f'''{head}</head>
 <body class="page-soft">
+<a class="skip-link" href="#main">{c['skip']}</a>
 {dialog}
 <header class="relative bg-white">
   {nav}
