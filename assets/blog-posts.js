@@ -55,29 +55,5 @@ var BLOG_POSTS = [
     tags: 'клітка корм питання поради новачкам сусіди сирійський джунгарик',
     source: 'VetVerified', url: 'https://vetverified.com/articles/the-top-25-hamster-care-questions-answered-by-uk-vets',
     photo: { src: 'f/f5/Syrian_hamster_on_blanket.jpg', by: 'MarketBoiCYM', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg', pos: '50% 40%' }
-  },
-  {
-    rodent: 'guinea-pig', topic: 'Симптоми',
-    title: 'Цинга в морських свинок: як помітити вчасно',
-    excerpt: 'Ознаки нестачі вітаміну C можуть з’явитися вже за 2–3 тижні неправильного харчування: скутість, біль у суглобах, кровоточивість ясен, погана шерсть. Стан лікується, якщо почати вчасно.',
-    tags: 'цинга вітамін с суглоби ясна шерсть дефіцит',
-    source: 'Unusual Pet Vets', url: 'https://unusualpetvets.com.au/scurvy-in-guinea-pigs-and-the-importance-of-vitamin-c',
-    photo: { src: 'e/ee/Cavia_porcellus01.jpg', by: 'Kacper Aleksander', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Cavia_porcellus01.jpg' }
-  },
-  {
-    rodent: 'guinea-pig', topic: 'Догляд',
-    title: 'Базовий догляд за морською свинкою',
-    excerpt: 'Необмежене сіно, свіжі овочі, корм для морських свинок і чиста вода — основа раціону. А ще простора клітка й компанія: це соціальні тварини.',
-    tags: 'сіно вода клітка компанія раціон овочі',
-    source: 'RSPCA Australia', url: 'https://www.rspca.org.au/latest-news/blog/how-should-i-care-my-guinea-pig/',
-    photo: { src: 'b/bc/Caviidae_Cavia_porcellus_1.jpg', by: 'NasserHalaweh', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Caviidae_Cavia_porcellus_1.jpg' }
-  },
-  {
-    rodent: 'degu', topic: 'Догляд',
-    title: 'Дегу вдома: що потрібно знати власнику',
-    excerpt: 'Дегу — активні денні тварини, які живуть групами. Їм потрібні простір, колесо, предмети для гризіння й пилові ванни. Сильна спрага чи помутніння очей — привід звернутися до лікаря.',
-    tags: 'клітка колесо компанія пилова ванна очі спрага',
-    source: 'PetMD', url: 'https://www.petmd.com/exotic/care/caring-for-a-degu',
-    photo: { src: '6/69/Octodon_degus_209581281.jpg', by: 'Ben Lyle Bedard', lic: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg' }
   }
 ];

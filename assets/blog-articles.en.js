@@ -69,5 +69,56 @@ var BLOG_ARTICLES = [
    "lic": "Public domain",
    "page": "https://commons.wikimedia.org/wiki/File:Chinchilla_lanigera1.jpg"
   }
+ },
+ {
+  "rodent": "guinea-pig",
+  "topic": "Symptoms",
+  "title": "Scurvy in guinea pigs: signs of vitamin C deficiency and prevention",
+  "excerpt": "Guinea pigs can’t make vitamin C themselves, so they need it from food every day. According to PetMD, signs of deficiency can appear after just 2–3 weeks of a poor diet: the coat, appetite and weight get worse, wounds heal slowly and moving becomes painful. A vet finds the cause and prescribes treatment.",
+  "tags": "scurvy vitamin c deficiency coat joints limping not eating pellets pepper supplements",
+  "source": "Roddi Health",
+  "url": "/en/blog/tsynga-u-morskoi-svynky.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "e/ee/Cavia_porcellus01.jpg",
+   "by": "Kacper Aleksander",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cavia_porcellus01.jpg"
+  }
+ },
+ {
+  "rodent": "guinea-pig",
+  "topic": "Care",
+  "title": "Basic guinea pig care: hay, food, housing and company",
+  "excerpt": "The core of a guinea pig’s diet is unlimited hay and grass. On top of that come a few guinea pig pellets, fresh vegetables every day and clean water. Guinea pigs are social and live in pairs or groups. They need a roomy home with a solid floor, hides and space to move.",
+  "tags": "hay pellets vegetables water cage run bedding cleaning company neutering temperature",
+  "source": "Roddi Health",
+  "url": "/en/blog/dohliad-za-morskoiu-svynkoiu.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "b/bc/Caviidae_Cavia_porcellus_1.jpg",
+   "by": "NasserHalaweh",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Caviidae_Cavia_porcellus_1.jpg"
+  }
+ },
+ {
+  "rodent": "degu",
+  "topic": "Care",
+  "title": "Degus at home: housing, company, diet and health",
+  "excerpt": "Degus are active by day and live in groups, so they are not kept alone. They need a tall metal cage with several levels and a wheel, deep bedding for digging and dust baths a few times a week. The core of the diet is hay, with a few sugar-free pellets, because degus are prone to diabetes.",
+  "tags": "degu cage company hay pellets diabetes cataract teeth tail dust bath wheel",
+  "source": "Roddi Health",
+  "url": "/en/blog/degu-vdoma.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "6/69/Octodon_degus_209581281.jpg",
+   "by": "Ben Lyle Bedard",
+   "lic": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg"
+  }
  }
 ];
