@@ -1248,7 +1248,7 @@ LABEL = {
 }
 TOPIC_EN = {'Симптоми': 'Symptoms', 'Харчування': 'Nutrition', 'Догляд': 'Care', 'Невідкладне': 'Urgent'}
 MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-INFO_URL = 'pro-materialy.html'
+INFO_URL_UK, INFO_URL_EN = '/blog/pro-materialy.html', '/en/blog/pro-materialy.html'
 
 
 def en_date(iso):
@@ -1300,8 +1300,8 @@ def strip_reveal(x):
 
 
 def relink(x):
-    """Ukrainian pages sit one folder down (blog/), so their relative links get '../'."""
-    x = re.sub(r'(src|href)="(assets/|index\.html|blog\.html|privacy\.html|en/)', lambda m: '%s="../%s' % (m.group(1), m.group(2)), x)
+    """Article and hub pages sit at different depths, so every link is made root-absolute."""
+    x = re.sub(r'(src|href)="(assets/|index\.html|blog\.html|privacy\.html|en/)', lambda m: '%s="/%s' % (m.group(1), m.group(2)), x)
     return strip_reveal(x)
 
 
@@ -1322,16 +1322,38 @@ def chrome(src, fix):
 
 CHROME = {'uk': chrome(blog, relink), 'en': chrome(blog_en, relink_en)}
 # Ukrainian pages live in blog/, English ones in en/blog/.
-UP = {'uk': '../', 'en': '../../'}
+UP = {'uk': '/', 'en': '/'}
 DIR = {'uk': 'blog', 'en': 'en/blog'}
 LOCALE = {'uk': 'uk_UA', 'en': 'en_US'}
 OG_IMG = {'uk': 'assets/og-uk-v2.jpg', 'en': 'assets/og-en-v2.jpg'}
-THANKS = {'uk': '../thank-you.html', 'en': '/en/thank-you.html'}
+THANKS = {'uk': '/thank-you.html', 'en': '/en/thank-you.html'}
 SKIP = {'uk': 'Перейти до змісту', 'en': 'Skip to content'}
 
 
+# Articles live under their animal: /blog/shchury/<slug> (uk), /en/blog/rats/<slug> (en). Hub pages are /blog/shchury and /en/blog/rats.
+HUB_SLUG = {'rat': ('shchury', 'rats'), 'hamster': ('khomiaky', 'hamsters'), 'guinea-pig': ('morski-svynky', 'guinea-pigs'),
+            'chinchilla': ('shynshyly', 'chinchillas'), 'degu': ('degu', 'degus'), 'mouse': ('myshi', 'mice'), 'rabbit': ('kroliky', 'rabbits')}
+HUB_LABEL = {'rat': ('Щури', 'Rats'), 'hamster': ('Хом’яки', 'Hamsters'), 'guinea-pig': ('Морські свинки', 'Guinea pigs'),
+             'chinchilla': ('Шиншили', 'Chinchillas'), 'degu': ('Дегу', 'Degus'), 'mouse': ('Миші', 'Mice'), 'rabbit': ('Кролики', 'Rabbits')}
+
+
+def art_path(slug, lang):
+    """Path without extension, e.g. blog/shchury/chomu-shchur-chkhaie. The 'about the blog' page has no animal."""
+    if slug == 'pro-materialy' or slug not in BY_SLUG:   # not an article: the about page or a hub page
+        return '%s/%s' % (DIR[lang], slug)
+    return '%s/%s/%s' % (DIR[lang], HUB_SLUG[BY_SLUG[slug]['rodent']][0 if lang == 'uk' else 1], slug)
+
+
+def hub_path(rodent, lang):
+    return '%s/%s' % (DIR[lang], HUB_SLUG[rodent][0 if lang == 'uk' else 1])
+
+
+def file_href(slug, lang):
+    return '/' + art_path(slug, lang) + '.html'
+
+
 def url_of(slug, lang):
-    return '%s/%s/%s' % (BASE, DIR[lang], slug)
+    return '%s/%s' % (BASE, art_path(slug, lang))
 
 
 def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
@@ -1345,9 +1367,9 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
                       '\n  <link rel="alternate" hreflang="x-default" href="%s">') % (url_of(slug, 'uk'), url_of(slug, 'en'), url_of(slug, 'uk'))
         # The language switch leads to the same article in the other language.
         if lang == 'uk':
-            nav = nav.replace('href="../en/blog.html" class="lang-opt"', 'href="../en/blog/%s.html" class="lang-opt"' % slug)
+            nav = nav.replace('href="/en/blog.html" class="lang-opt"', 'href="%s" class="lang-opt"' % file_href(slug, 'en'))
         else:
-            nav = nav.replace('href="/blog.html" class="lang-opt"', 'href="/blog/%s.html" class="lang-opt"' % slug)
+            nav = nav.replace('href="/blog.html" class="lang-opt"', 'href="%s" class="lang-opt"' % file_href(slug, 'uk'))
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -1378,7 +1400,7 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <script src="{up}assets/clarity.js?v=3"></script>
   <link rel="stylesheet" href="{up}assets/theme.css">
   <link rel="stylesheet" href="{up}assets/app-home.css?v=47">
-  <link rel="stylesheet" href="{up}assets/pages.css?v=6">
+  <link rel="stylesheet" href="{up}assets/pages.css?v=7">
 </head>
 <body class="page-soft">
 <a class="skip-link" href="#main">{SKIP[lang]}</a>
@@ -1400,11 +1422,11 @@ T = {
     'uk': dict(
         note=('<p class="ar-note"><b>Довідковий матеріал.</b> Це загальна інформація з відкритих джерел, а не діагноз чи призначення, '
               'і вона не замінює консультації ветеринара. Перш ніж ухвалювати будь-яке рішення щодо здоровʼя тварини, порадьтеся з лікарем. '
-              '<a href="%s">Як ми готуємо матеріали</a></p>' % INFO_URL),
+              '<a href="%s">Як ми готуємо матеріали</a></p>' % INFO_URL_UK),
         legal=('<p class="ar-legal">Roddi Health не є ветеринарною клінікою і не надає ветеринарних послуг. Матеріал має лише інформаційний характер, '
                'може бути неповним або застарілим і не замінює огляду лікаря. Ви самостійно приймаєте рішення щодо догляду за твариною. '
                'Назви джерел наведено для посилання: вони не писали й не схвалювали цей текст. '
-               '<a href="%s">Докладніше про матеріали блогу</a>.</p>' % INFO_URL),
+               '<a href="%s">Докладніше про матеріали блогу</a>.</p>' % INFO_URL_UK),
         alert=('<p class="ar-alert" role="note"><b>Якщо стан тварини погіршується, негайно звертайтеся до ветеринара.</b> '
                'Не відкладайте візит і не лікуйте тварину самостійно за статтею.</p>'),
         urgent_label='Коли потрібен ветеринар терміново', urgent_h='Терміново до ветеринара, якщо:',
@@ -1415,15 +1437,15 @@ T = {
         sources_h='Джерела',
         checked='Факти звірено з джерелами %s. Знайшли помилку чи посилання не відкривається? Напишіть на <a href="mailto:roddihealth@gmail.com">roddihealth@gmail.com</a>.',
         related_label='Схожі матеріали', related_h='Читайте також', author='Редакція Roddi Health',
-        home_url='../index.html', blog_url='../blog.html', blog_ld=BASE + '/blog', home_ld=BASE + '/'),
+        home_url='/index.html', blog_url='/blog.html', blog_ld=BASE + '/blog', home_ld=BASE + '/'),
     'en': dict(
         note=('<p class="ar-note"><b>Reference material.</b> This is general information from open sources, not a diagnosis or a prescription, '
               'and it does not replace a consultation with a vet. Talk to a vet before making any decision about your animal’s health. '
-              '<a href="%s">How we prepare our articles</a></p>' % INFO_URL),
+              '<a href="%s">How we prepare our articles</a></p>' % INFO_URL_EN),
         legal=('<p class="ar-legal">Roddi Health is not a veterinary clinic and does not provide veterinary services. This article is for information only, '
                'may be incomplete or out of date, and does not replace an examination by a vet. You make your own decisions about caring for your animal. '
                'Sources are named for reference: they did not write or endorse this text. '
-               '<a href="%s">More about our blog articles</a>.</p>' % INFO_URL),
+               '<a href="%s">More about our blog articles</a>.</p>' % INFO_URL_EN),
         alert=('<p class="ar-alert" role="note"><b>If your animal’s condition gets worse, see a vet straight away.</b> '
                'Don’t put off the visit and don’t treat your pet yourself based on this article.</p>'),
         urgent_label='When a vet is needed urgently', urgent_h='See a vet urgently if:',
@@ -1454,8 +1476,8 @@ def article(a, lang):
     sources = ''.join('<li><a href="%s" target="_blank" rel="noopener">%s</a></li>' % (e(S[k][1]), e(source_label(k, lang))) for k in a['sources'])
     rel = [r for r in a['related'] if lang == 'uk' or has_en(r)]
     topic = a['topic'] if lang == 'uk' else TOPIC_EN[a['topic']]
-    related = ''.join('<a href="%s.html" class="ar-rel"><span>%s</span><b>%s</b></a>'
-                      % (r, e(BY_SLUG[r]['topic'] if lang == 'uk' else TOPIC_EN[BY_SLUG[r]['topic']]), e(text(BY_SLUG[r], lang)['title'])) for r in rel)
+    related = ''.join('<a href="%s" class="ar-rel"><span>%s</span><b>%s</b></a>'
+                      % (file_href(r, lang), e(BY_SLUG[r]['topic'] if lang == 'uk' else TOPIC_EN[BY_SLUG[r]['topic']]), e(text(BY_SLUG[r], lang)['title'])) for r in rel)
     related_sec = '<section class="ar-related" aria-label="%s"><h2>%s</h2><div>%s</div></section>' % (t['related_label'], t['related_h'], related) if rel else ''
     ld = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'BlogPosting', 'headline': x['title'], 'description': x['desc'], 'image': [BASE + '/' + img],
@@ -1466,10 +1488,11 @@ def article(a, lang):
         {'@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': t['home'], 'item': t['home_ld']},
             {'@type': 'ListItem', 'position': 2, 'name': t['blog'], 'item': t['blog_ld']},
-            {'@type': 'ListItem', 'position': 3, 'name': x['title']}]},
+            {'@type': 'ListItem', 'position': 3, 'name': LABEL[lang][a['rodent']], 'item': '%s/%s' % (BASE, hub_path(a['rodent'], lang))},
+            {'@type': 'ListItem', 'position': 4, 'name': x['title']}]},
     ]}
     main = f'''<main id="main" class="ar">
-  <nav class="ar-crumb" aria-label="{t['crumbs']}"><a href="{t['home_url']}">{t['home']}</a><span aria-hidden="true">/</span><a href="{t['blog_url']}">{t['blog']}</a><span aria-hidden="true">/</span><b>{e(LABEL[lang][a['rodent']])}</b></nav>
+  <nav class="ar-crumb" aria-label="{t['crumbs']}"><a href="{t['home_url']}">{t['home']}</a><span aria-hidden="true">/</span><a href="{t['blog_url']}">{t['blog']}</a><span aria-hidden="true">/</span><a href="/{hub_path(a['rodent'], lang)}.html">{e(LABEL[lang][a['rodent']])}</a><span aria-hidden="true">/</span><b>{e(x['title'])}</b></nav>
   <h1 class="t-h1">{e(x['title'])}</h1>
   <p class="ar-meta">{t['meta'] % date(updated, lang)}</p>
   <div class="ar-short soft-grad soft-grad--ask"><p class="ar-short-l">{t['short']}</p><p>{e(x['short'])}</p></div>
@@ -1565,24 +1588,30 @@ info_main_en = f'''<main id="main" class="ar">
 for lang in ('uk', 'en'):
     (ROOT / DIR[lang]).mkdir(parents=True, exist_ok=True)
 for a in ARTICLES:
-    (ROOT / 'blog' / (a['slug'] + '.html')).write_text(article(a, 'uk'), encoding='utf-8')
-    if 'en' in a:
-        (ROOT / 'en' / 'blog' / (a['slug'] + '.html')).write_text(article(a, 'en'), encoding='utf-8')
+    for lang in ('uk', 'en'):
+        if lang == 'en' and 'en' not in a:
+            continue
+        out = ROOT / (art_path(a['slug'], lang) + '.html')
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(article(a, lang), encoding='utf-8')
+        old = ROOT / DIR[lang] / (a['slug'] + '.html')   # the pre-hierarchy location: now a redirect, no file
+        if old.exists():
+            old.unlink()
 (ROOT / 'blog' / 'pro-materialy.html').write_text(page('uk', 'pro-materialy', INFO_TITLE, INFO_DESC, info_ld, info_main, og='website'), encoding='utf-8')
 (ROOT / 'en' / 'blog' / 'pro-materialy.html').write_text(page('en', 'pro-materialy', INFO_TITLE_EN, INFO_DESC_EN, info_ld_en, info_main_en, og='website'), encoding='utf-8')
 
 # Data for the cards on blog.html and en/blog.html.
 cards = [{'rodent': a['rodent'], 'topic': a['topic'], 'title': a['title'], 'excerpt': a['short'], 'tags': a['tags'],
-          'source': 'Roddi Health', 'url': 'blog/%s.html' % a['slug'], 'internal': True, 'featured': bool(a.get('featured')), 'photo': P[a['photo']]} for a in ARTICLES]
+          'source': 'Roddi Health', 'url': file_href(a['slug'], 'uk'), 'internal': True, 'featured': bool(a.get('featured')), 'photo': P[a['photo']]} for a in ARTICLES]
 (ROOT / 'assets/blog-articles.js').write_text('/* Built by tools/build-articles.py. Do not edit by hand. */\nvar BLOG_ARTICLES = ' + json.dumps(cards, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
 cards_en = [{'rodent': a['rodent'], 'topic': TOPIC_EN[a['topic']], 'title': a['en']['title'], 'excerpt': a['en']['short'], 'tags': a['en']['tags'],
-             'source': 'Roddi Health', 'url': '/en/blog/%s.html' % a['slug'], 'internal': True, 'featured': bool(a.get('featured')), 'photo': P[a['photo']]}
+             'source': 'Roddi Health', 'url': file_href(a['slug'], 'en'), 'internal': True, 'featured': bool(a.get('featured')), 'photo': P[a['photo']]}
             for a in ARTICLES if 'en' in a]
 (ROOT / 'assets/blog-articles.en.js').write_text('/* Built by tools/build-articles.py. Do not edit by hand. */\nvar BLOG_ARTICLES = ' + json.dumps(cards_en, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
 
 # Links for crawlers that do not run the page's script.
 static = '<!-- articles:start -->' + ''.join(
-    '<article class="blog-static"><h3><a href="blog/%s.html">%s</a></h3><p>%s</p></article>' % (a['slug'], e(a['title']), e(a['short'])) for a in ARTICLES) + '<!-- articles:end -->'
+    '<article class="blog-static"><h3><a href="%s">%s</a></h3><p>%s</p></article>' % (file_href(a['slug'], 'uk'), e(a['title']), e(a['short'])) for a in ARTICLES) + '<!-- articles:end -->'
 if '<!-- articles:start -->' in blog:
     blog = re.sub(r'<!-- articles:start -->.*?<!-- articles:end -->', lambda m: static, blog, flags=re.S)
 else:

@@ -4,18 +4,398 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blog/chomu-shchur-chkhaie",
+      "destination": "/blog/shchury/chomu-shchur-chkhaie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chomu-shchur-chkhaie.html",
+      "destination": "/blog/shchury/chomu-shchur-chkhaie",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chomu-shchur-chkhaie",
+      "destination": "/en/blog/rats/chomu-shchur-chkhaie",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chomu-shchur-chkhaie.html",
+      "destination": "/en/blog/rats/chomu-shchur-chkhaie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-shchura",
+      "destination": "/blog/shchury/chym-goduvaty-shchura",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-shchura.html",
+      "destination": "/blog/shchury/chym-goduvaty-shchura",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-shchura",
+      "destination": "/en/blog/rats/chym-goduvaty-shchura",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-shchura.html",
+      "destination": "/en/blog/rats/chym-goduvaty-shchura",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-khomiaka",
+      "destination": "/blog/khomiaky/chym-goduvaty-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-khomiaka.html",
+      "destination": "/blog/khomiaky/chym-goduvaty-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-khomiaka",
+      "destination": "/en/blog/hamsters/chym-goduvaty-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-khomiaka.html",
+      "destination": "/en/blog/hamsters/chym-goduvaty-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mokryi-khvist-u-khomiaka",
+      "destination": "/blog/khomiaky/mokryi-khvist-u-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mokryi-khvist-u-khomiaka.html",
+      "destination": "/blog/khomiaky/mokryi-khvist-u-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/mokryi-khvist-u-khomiaka",
+      "destination": "/en/blog/hamsters/mokryi-khvist-u-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/mokryi-khvist-u-khomiaka.html",
+      "destination": "/en/blog/hamsters/mokryi-khvist-u-khomiaka",
+      "permanent": true
+    },
+    {
+      "source": "/blog/morska-svynka-ne-yist",
+      "destination": "/blog/morski-svynky/morska-svynka-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/morska-svynka-ne-yist.html",
+      "destination": "/blog/morski-svynky/morska-svynka-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/morska-svynka-ne-yist",
+      "destination": "/en/blog/guinea-pigs/morska-svynka-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/morska-svynka-ne-yist.html",
+      "destination": "/en/blog/guinea-pigs/morska-svynka-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-morsku-svynku",
+      "destination": "/blog/morski-svynky/chym-goduvaty-morsku-svynku",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-morsku-svynku.html",
+      "destination": "/blog/morski-svynky/chym-goduvaty-morsku-svynku",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-morsku-svynku",
+      "destination": "/en/blog/guinea-pigs/chym-goduvaty-morsku-svynku",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-morsku-svynku.html",
+      "destination": "/en/blog/guinea-pigs/chym-goduvaty-morsku-svynku",
+      "permanent": true
+    },
+    {
+      "source": "/blog/krolyk-ne-yist",
+      "destination": "/blog/kroliky/krolyk-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/krolyk-ne-yist.html",
+      "destination": "/blog/kroliky/krolyk-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/krolyk-ne-yist",
+      "destination": "/en/blog/rabbits/krolyk-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/krolyk-ne-yist.html",
+      "destination": "/en/blog/rabbits/krolyk-ne-yist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-degu",
+      "destination": "/blog/degu/chym-goduvaty-degu",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chym-goduvaty-degu.html",
+      "destination": "/blog/degu/chym-goduvaty-degu",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-degu",
+      "destination": "/en/blog/degus/chym-goduvaty-degu",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chym-goduvaty-degu.html",
+      "destination": "/en/blog/degus/chym-goduvaty-degu",
+      "permanent": true
+    },
+    {
+      "source": "/blog/skilky-zhyvut-gryzuny",
+      "destination": "/blog/shchury/skilky-zhyvut-gryzuny",
+      "permanent": true
+    },
+    {
+      "source": "/blog/skilky-zhyvut-gryzuny.html",
+      "destination": "/blog/shchury/skilky-zhyvut-gryzuny",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/skilky-zhyvut-gryzuny",
+      "destination": "/en/blog/rats/skilky-zhyvut-gryzuny",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/skilky-zhyvut-gryzuny.html",
+      "destination": "/en/blog/rats/skilky-zhyvut-gryzuny",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zdorovia-myshi",
+      "destination": "/blog/myshi/zdorovia-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zdorovia-myshi.html",
+      "destination": "/blog/myshi/zdorovia-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/zdorovia-myshi",
+      "destination": "/en/blog/mice/zdorovia-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/zdorovia-myshi.html",
+      "destination": "/en/blog/mice/zdorovia-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/blog/domashni-myshi",
+      "destination": "/blog/myshi/domashni-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/blog/domashni-myshi.html",
+      "destination": "/blog/myshi/domashni-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/domashni-myshi",
+      "destination": "/en/blog/mice/domashni-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/domashni-myshi.html",
+      "destination": "/en/blog/mice/domashni-myshi",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pylovi-vanny-shynshyly",
+      "destination": "/blog/shynshyly/pylovi-vanny-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pylovi-vanny-shynshyly.html",
+      "destination": "/blog/shynshyly/pylovi-vanny-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/pylovi-vanny-shynshyly",
+      "destination": "/en/blog/chinchillas/pylovi-vanny-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/pylovi-vanny-shynshyly.html",
+      "destination": "/en/blog/chinchillas/pylovi-vanny-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zdorovia-shynshyly",
+      "destination": "/blog/shynshyly/zdorovia-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zdorovia-shynshyly.html",
+      "destination": "/blog/shynshyly/zdorovia-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/zdorovia-shynshyly",
+      "destination": "/en/blog/chinchillas/zdorovia-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/zdorovia-shynshyly.html",
+      "destination": "/en/blog/chinchillas/zdorovia-shynshyly",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tsynga-u-morskoi-svynky",
+      "destination": "/blog/morski-svynky/tsynga-u-morskoi-svynky",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tsynga-u-morskoi-svynky.html",
+      "destination": "/blog/morski-svynky/tsynga-u-morskoi-svynky",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/tsynga-u-morskoi-svynky",
+      "destination": "/en/blog/guinea-pigs/tsynga-u-morskoi-svynky",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/tsynga-u-morskoi-svynky.html",
+      "destination": "/en/blog/guinea-pigs/tsynga-u-morskoi-svynky",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dohliad-za-morskoiu-svynkoiu",
+      "destination": "/blog/morski-svynky/dohliad-za-morskoiu-svynkoiu",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dohliad-za-morskoiu-svynkoiu.html",
+      "destination": "/blog/morski-svynky/dohliad-za-morskoiu-svynkoiu",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/dohliad-za-morskoiu-svynkoiu",
+      "destination": "/en/blog/guinea-pigs/dohliad-za-morskoiu-svynkoiu",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/dohliad-za-morskoiu-svynkoiu.html",
+      "destination": "/en/blog/guinea-pigs/dohliad-za-morskoiu-svynkoiu",
+      "permanent": true
+    },
+    {
+      "source": "/blog/degu-vdoma",
+      "destination": "/blog/degu/degu-vdoma",
+      "permanent": true
+    },
+    {
+      "source": "/blog/degu-vdoma.html",
+      "destination": "/blog/degu/degu-vdoma",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/degu-vdoma",
+      "destination": "/en/blog/degus/degu-vdoma",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/degu-vdoma.html",
+      "destination": "/en/blog/degus/degu-vdoma",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zhyttia-shchura-tsikavishe",
+      "destination": "/blog/shchury/zhyttia-shchura-tsikavishe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zhyttia-shchura-tsikavishe.html",
+      "destination": "/blog/shchury/zhyttia-shchura-tsikavishe",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/zhyttia-shchura-tsikavishe",
+      "destination": "/en/blog/rats/zhyttia-shchura-tsikavishe",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/zhyttia-shchura-tsikavishe.html",
+      "destination": "/en/blog/rats/zhyttia-shchura-tsikavishe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/khomiak-dlia-novachka",
+      "destination": "/blog/khomiaky/khomiak-dlia-novachka",
+      "permanent": true
+    },
+    {
+      "source": "/blog/khomiak-dlia-novachka.html",
+      "destination": "/blog/khomiaky/khomiak-dlia-novachka",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/khomiak-dlia-novachka",
+      "destination": "/en/blog/hamsters/khomiak-dlia-novachka",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/khomiak-dlia-novachka.html",
+      "destination": "/en/blog/hamsters/khomiak-dlia-novachka",
+      "permanent": true
     }
   ]
 }
