@@ -105,6 +105,58 @@ var BLOG_ARTICLES = [
   }
  },
  {
+  "rodent": "rabbit",
+  "topic": "Urgent",
+  "title": "Rabbit not eating: why it’s dangerous and what to do",
+  "excerpt": "A rabbit needs to eat and pass droppings all the time. PetMD considers more than 8 hours without food or droppings abnormal, and gut stasis an emergency. The Rabbit Welfare Association advises seeing a vet straight away in that case, without waiting until tomorrow.",
+  "tags": "not eating not eating hay not drinking gut stasis bloated belly teeth grinding pet rabbit",
+  "source": "Roddi Health",
+  "url": "/en/blog/krolyk-ne-yist.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "3/31/Heimtier_004_2023_08_26.jpg",
+   "by": "Friedrich Haag",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Heimtier_004_2023_08_26.jpg"
+  }
+ },
+ {
+  "rodent": "degu",
+  "topic": "Nutrition",
+  "title": "What to feed a degu: hay, pellets and go easy on sugar",
+  "excerpt": "The basis of a degu’s diet is unlimited good-quality hay. Pellets are given in small amounts and without molasses, because degus are prone to diabetes. Fruit and starchy vegetables are best limited or left out.",
+  "tags": "what to feed degu diabetes sugar hay carrot cabbage apple cucumber peas corn",
+  "source": "Roddi Health",
+  "url": "/en/blog/chym-goduvaty-degu.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "f/f4/Octodontidae_Octodon_degus_1.2.jpg",
+   "by": "NasserHalaweh",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Octodontidae_Octodon_degus_1.2.jpg"
+  }
+ },
+ {
+  "rodent": "rat",
+  "topic": "Care",
+  "title": "How long pet rodents live: rats, hamsters, guinea pigs, degus",
+  "excerpt": "Mice and hamsters live the shortest, about 1–3 years, rats 2–3 years, guinea pigs 4–8, degus 5–9 years, and chinchillas, according to the RSPCA, 10–20 years. Sources give different figures, so treat these as guides, not exact limits.",
+  "tags": "lifespan how long years rat hamster guinea pig degu mouse chinchilla age",
+  "source": "Roddi Health",
+  "url": "/en/blog/skilky-zhyvut-gryzuny.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "f/f5/Syrian_hamster_on_blanket.jpg",
+   "by": "MarketBoiCYM",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Syrian_hamster_on_blanket.jpg",
+   "pos": "50% 40%"
+  }
+ },
+ {
   "rodent": "mouse",
   "topic": "Symptoms",
   "title": "How to check a pet mouse’s health: daily check and warning signs",
