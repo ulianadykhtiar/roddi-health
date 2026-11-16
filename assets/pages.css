@@ -20,6 +20,9 @@
 .page-soft .t-h4 { font-weight: 600; letter-spacing: -0.015em; }
 .page-soft .link:hover { color: #a45588; }
 .page-soft :focus-visible { outline: 2px solid #a45588; outline-offset: 3px; }
+/* The e-mail field has no outline of its own: the pill around it shows the focus instead (soft ring). */
+.page-soft .signup input:focus-visible { outline: none; }
+.signup:focus-within { box-shadow: 0 0 0 3px rgba(164, 85, 136, 0.3); }
 .page-soft .chip { min-height: 42px; padding: 0 16px; border: 0; border-radius: 999px; background: #fff; color: #0f0f11; font-size: 14px; font-weight: 500; transition: background-color .2s, color .2s, translate .25s var(--ph-ease); }
 .page-soft .chip:hover:not(:disabled) { border: 0; background: #fff; color: #0f0f11; translate: 0 -1px; box-shadow: 0 8px 16px -12px rgba(15,15,17,.4); }
 .page-soft .chip[aria-pressed="true"], .page-soft .chip[aria-pressed="true"]:hover:not(:disabled) { background: #0f0f11; color: #fff; }
