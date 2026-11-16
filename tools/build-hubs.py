@@ -141,8 +141,13 @@ for a in ARTICLES:
         if lang == 'en' and 'en' not in a:
             continue
         new = '/' + g['art_path'](a['slug'], lang)
-        for src in ('/%s/%s' % (DIR[lang], a['slug']), '/%s/%s.html' % (DIR[lang], a['slug'])):
-            reds.append({'source': src, 'destination': new, 'permanent': True})
+        hub = HUB_SLUG[a['rodent']][0 if lang == 'uk' else 1]
+        olds = ['/%s/%s' % (DIR[lang], a['slug']), '/%s/%s/%s' % (DIR[lang], hub, a['slug'])]   # flat, and nested with the Ukrainian slug
+        for base in olds:
+            if base == new:
+                continue   # the Ukrainian page keeps its address
+            for src in (base, base + '.html'):
+                reds.append({'source': src, 'destination': new, 'permanent': True})
 vc['redirects'] = reds
 (ROOT / 'vercel.json').write_text(json.dumps(vc, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('hubs:', {k: len(v) for k, v in built.items()}, 'redirects:', len(reds))

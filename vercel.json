@@ -49,12 +49,22 @@
     },
     {
       "source": "/en/blog/chomu-shchur-chkhaie",
-      "destination": "/en/blog/rats/chomu-shchur-chkhaie",
+      "destination": "/en/blog/rats/why-is-my-rat-sneezing",
       "permanent": true
     },
     {
       "source": "/en/blog/chomu-shchur-chkhaie.html",
-      "destination": "/en/blog/rats/chomu-shchur-chkhaie",
+      "destination": "/en/blog/rats/why-is-my-rat-sneezing",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/chomu-shchur-chkhaie",
+      "destination": "/en/blog/rats/why-is-my-rat-sneezing",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/chomu-shchur-chkhaie.html",
+      "destination": "/en/blog/rats/why-is-my-rat-sneezing",
       "permanent": true
     },
     {
@@ -69,12 +79,22 @@
     },
     {
       "source": "/en/blog/chym-goduvaty-shchura",
-      "destination": "/en/blog/rats/chym-goduvaty-shchura",
+      "destination": "/en/blog/rats/what-to-feed-a-rat",
       "permanent": true
     },
     {
       "source": "/en/blog/chym-goduvaty-shchura.html",
-      "destination": "/en/blog/rats/chym-goduvaty-shchura",
+      "destination": "/en/blog/rats/what-to-feed-a-rat",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/chym-goduvaty-shchura",
+      "destination": "/en/blog/rats/what-to-feed-a-rat",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/chym-goduvaty-shchura.html",
+      "destination": "/en/blog/rats/what-to-feed-a-rat",
       "permanent": true
     },
     {
@@ -89,12 +109,22 @@
     },
     {
       "source": "/en/blog/chym-goduvaty-khomiaka",
-      "destination": "/en/blog/hamsters/chym-goduvaty-khomiaka",
+      "destination": "/en/blog/hamsters/what-to-feed-a-hamster",
       "permanent": true
     },
     {
       "source": "/en/blog/chym-goduvaty-khomiaka.html",
-      "destination": "/en/blog/hamsters/chym-goduvaty-khomiaka",
+      "destination": "/en/blog/hamsters/what-to-feed-a-hamster",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/hamsters/chym-goduvaty-khomiaka",
+      "destination": "/en/blog/hamsters/what-to-feed-a-hamster",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/hamsters/chym-goduvaty-khomiaka.html",
+      "destination": "/en/blog/hamsters/what-to-feed-a-hamster",
       "permanent": true
     },
     {
@@ -109,12 +139,22 @@
     },
     {
       "source": "/en/blog/mokryi-khvist-u-khomiaka",
-      "destination": "/en/blog/hamsters/mokryi-khvist-u-khomiaka",
+      "destination": "/en/blog/hamsters/wet-tail-in-hamsters",
       "permanent": true
     },
     {
       "source": "/en/blog/mokryi-khvist-u-khomiaka.html",
-      "destination": "/en/blog/hamsters/mokryi-khvist-u-khomiaka",
+      "destination": "/en/blog/hamsters/wet-tail-in-hamsters",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/hamsters/mokryi-khvist-u-khomiaka",
+      "destination": "/en/blog/hamsters/wet-tail-in-hamsters",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/hamsters/mokryi-khvist-u-khomiaka.html",
+      "destination": "/en/blog/hamsters/wet-tail-in-hamsters",
       "permanent": true
     },
     {
@@ -129,12 +169,22 @@
     },
     {
       "source": "/en/blog/morska-svynka-ne-yist",
-      "destination": "/en/blog/guinea-pigs/morska-svynka-ne-yist",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-not-eating",
       "permanent": true
     },
     {
       "source": "/en/blog/morska-svynka-ne-yist.html",
-      "destination": "/en/blog/guinea-pigs/morska-svynka-ne-yist",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-not-eating",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/morska-svynka-ne-yist",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-not-eating",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/morska-svynka-ne-yist.html",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-not-eating",
       "permanent": true
     },
     {
@@ -149,12 +199,22 @@
     },
     {
       "source": "/en/blog/chym-goduvaty-morsku-svynku",
-      "destination": "/en/blog/guinea-pigs/chym-goduvaty-morsku-svynku",
+      "destination": "/en/blog/guinea-pigs/what-to-feed-a-guinea-pig",
       "permanent": true
     },
     {
       "source": "/en/blog/chym-goduvaty-morsku-svynku.html",
-      "destination": "/en/blog/guinea-pigs/chym-goduvaty-morsku-svynku",
+      "destination": "/en/blog/guinea-pigs/what-to-feed-a-guinea-pig",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/chym-goduvaty-morsku-svynku",
+      "destination": "/en/blog/guinea-pigs/what-to-feed-a-guinea-pig",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/chym-goduvaty-morsku-svynku.html",
+      "destination": "/en/blog/guinea-pigs/what-to-feed-a-guinea-pig",
       "permanent": true
     },
     {
@@ -169,12 +229,22 @@
     },
     {
       "source": "/en/blog/krolyk-ne-yist",
-      "destination": "/en/blog/rabbits/krolyk-ne-yist",
+      "destination": "/en/blog/rabbits/rabbit-not-eating",
       "permanent": true
     },
     {
       "source": "/en/blog/krolyk-ne-yist.html",
-      "destination": "/en/blog/rabbits/krolyk-ne-yist",
+      "destination": "/en/blog/rabbits/rabbit-not-eating",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rabbits/krolyk-ne-yist",
+      "destination": "/en/blog/rabbits/rabbit-not-eating",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rabbits/krolyk-ne-yist.html",
+      "destination": "/en/blog/rabbits/rabbit-not-eating",
       "permanent": true
     },
     {
@@ -189,12 +259,22 @@
     },
     {
       "source": "/en/blog/chym-goduvaty-degu",
-      "destination": "/en/blog/degus/chym-goduvaty-degu",
+      "destination": "/en/blog/degus/what-to-feed-a-degu",
       "permanent": true
     },
     {
       "source": "/en/blog/chym-goduvaty-degu.html",
-      "destination": "/en/blog/degus/chym-goduvaty-degu",
+      "destination": "/en/blog/degus/what-to-feed-a-degu",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/degus/chym-goduvaty-degu",
+      "destination": "/en/blog/degus/what-to-feed-a-degu",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/degus/chym-goduvaty-degu.html",
+      "destination": "/en/blog/degus/what-to-feed-a-degu",
       "permanent": true
     },
     {
@@ -209,12 +289,22 @@
     },
     {
       "source": "/en/blog/skilky-zhyvut-gryzuny",
-      "destination": "/en/blog/rats/skilky-zhyvut-gryzuny",
+      "destination": "/en/blog/rats/how-long-pet-rodents-live",
       "permanent": true
     },
     {
       "source": "/en/blog/skilky-zhyvut-gryzuny.html",
-      "destination": "/en/blog/rats/skilky-zhyvut-gryzuny",
+      "destination": "/en/blog/rats/how-long-pet-rodents-live",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/skilky-zhyvut-gryzuny",
+      "destination": "/en/blog/rats/how-long-pet-rodents-live",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/skilky-zhyvut-gryzuny.html",
+      "destination": "/en/blog/rats/how-long-pet-rodents-live",
       "permanent": true
     },
     {
@@ -229,12 +319,22 @@
     },
     {
       "source": "/en/blog/zdorovia-myshi",
-      "destination": "/en/blog/mice/zdorovia-myshi",
+      "destination": "/en/blog/mice/pet-mouse-health-check",
       "permanent": true
     },
     {
       "source": "/en/blog/zdorovia-myshi.html",
-      "destination": "/en/blog/mice/zdorovia-myshi",
+      "destination": "/en/blog/mice/pet-mouse-health-check",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/mice/zdorovia-myshi",
+      "destination": "/en/blog/mice/pet-mouse-health-check",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/mice/zdorovia-myshi.html",
+      "destination": "/en/blog/mice/pet-mouse-health-check",
       "permanent": true
     },
     {
@@ -249,12 +349,22 @@
     },
     {
       "source": "/en/blog/domashni-myshi",
-      "destination": "/en/blog/mice/domashni-myshi",
+      "destination": "/en/blog/mice/pet-mice-care",
       "permanent": true
     },
     {
       "source": "/en/blog/domashni-myshi.html",
-      "destination": "/en/blog/mice/domashni-myshi",
+      "destination": "/en/blog/mice/pet-mice-care",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/mice/domashni-myshi",
+      "destination": "/en/blog/mice/pet-mice-care",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/mice/domashni-myshi.html",
+      "destination": "/en/blog/mice/pet-mice-care",
       "permanent": true
     },
     {
@@ -269,12 +379,22 @@
     },
     {
       "source": "/en/blog/pylovi-vanny-shynshyly",
-      "destination": "/en/blog/chinchillas/pylovi-vanny-shynshyly",
+      "destination": "/en/blog/chinchillas/chinchilla-dust-baths",
       "permanent": true
     },
     {
       "source": "/en/blog/pylovi-vanny-shynshyly.html",
-      "destination": "/en/blog/chinchillas/pylovi-vanny-shynshyly",
+      "destination": "/en/blog/chinchillas/chinchilla-dust-baths",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chinchillas/pylovi-vanny-shynshyly",
+      "destination": "/en/blog/chinchillas/chinchilla-dust-baths",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chinchillas/pylovi-vanny-shynshyly.html",
+      "destination": "/en/blog/chinchillas/chinchilla-dust-baths",
       "permanent": true
     },
     {
@@ -289,12 +409,22 @@
     },
     {
       "source": "/en/blog/zdorovia-shynshyly",
-      "destination": "/en/blog/chinchillas/zdorovia-shynshyly",
+      "destination": "/en/blog/chinchillas/chinchilla-health",
       "permanent": true
     },
     {
       "source": "/en/blog/zdorovia-shynshyly.html",
-      "destination": "/en/blog/chinchillas/zdorovia-shynshyly",
+      "destination": "/en/blog/chinchillas/chinchilla-health",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chinchillas/zdorovia-shynshyly",
+      "destination": "/en/blog/chinchillas/chinchilla-health",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/chinchillas/zdorovia-shynshyly.html",
+      "destination": "/en/blog/chinchillas/chinchilla-health",
       "permanent": true
     },
     {
@@ -309,12 +439,22 @@
     },
     {
       "source": "/en/blog/tsynga-u-morskoi-svynky",
-      "destination": "/en/blog/guinea-pigs/tsynga-u-morskoi-svynky",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-scurvy",
       "permanent": true
     },
     {
       "source": "/en/blog/tsynga-u-morskoi-svynky.html",
-      "destination": "/en/blog/guinea-pigs/tsynga-u-morskoi-svynky",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-scurvy",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/tsynga-u-morskoi-svynky",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-scurvy",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/tsynga-u-morskoi-svynky.html",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-scurvy",
       "permanent": true
     },
     {
@@ -329,12 +469,22 @@
     },
     {
       "source": "/en/blog/dohliad-za-morskoiu-svynkoiu",
-      "destination": "/en/blog/guinea-pigs/dohliad-za-morskoiu-svynkoiu",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-care-basics",
       "permanent": true
     },
     {
       "source": "/en/blog/dohliad-za-morskoiu-svynkoiu.html",
-      "destination": "/en/blog/guinea-pigs/dohliad-za-morskoiu-svynkoiu",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-care-basics",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/dohliad-za-morskoiu-svynkoiu",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-care-basics",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/guinea-pigs/dohliad-za-morskoiu-svynkoiu.html",
+      "destination": "/en/blog/guinea-pigs/guinea-pig-care-basics",
       "permanent": true
     },
     {
@@ -349,12 +499,22 @@
     },
     {
       "source": "/en/blog/degu-vdoma",
-      "destination": "/en/blog/degus/degu-vdoma",
+      "destination": "/en/blog/degus/degus-at-home",
       "permanent": true
     },
     {
       "source": "/en/blog/degu-vdoma.html",
-      "destination": "/en/blog/degus/degu-vdoma",
+      "destination": "/en/blog/degus/degus-at-home",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/degus/degu-vdoma",
+      "destination": "/en/blog/degus/degus-at-home",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/degus/degu-vdoma.html",
+      "destination": "/en/blog/degus/degus-at-home",
       "permanent": true
     },
     {
@@ -369,12 +529,22 @@
     },
     {
       "source": "/en/blog/zhyttia-shchura-tsikavishe",
-      "destination": "/en/blog/rats/zhyttia-shchura-tsikavishe",
+      "destination": "/en/blog/rats/enrich-your-rats-life",
       "permanent": true
     },
     {
       "source": "/en/blog/zhyttia-shchura-tsikavishe.html",
-      "destination": "/en/blog/rats/zhyttia-shchura-tsikavishe",
+      "destination": "/en/blog/rats/enrich-your-rats-life",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/zhyttia-shchura-tsikavishe",
+      "destination": "/en/blog/rats/enrich-your-rats-life",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rats/zhyttia-shchura-tsikavishe.html",
+      "destination": "/en/blog/rats/enrich-your-rats-life",
       "permanent": true
     },
     {
@@ -389,12 +559,22 @@
     },
     {
       "source": "/en/blog/khomiak-dlia-novachka",
-      "destination": "/en/blog/hamsters/khomiak-dlia-novachka",
+      "destination": "/en/blog/hamsters/hamster-for-beginners",
       "permanent": true
     },
     {
       "source": "/en/blog/khomiak-dlia-novachka.html",
-      "destination": "/en/blog/hamsters/khomiak-dlia-novachka",
+      "destination": "/en/blog/hamsters/hamster-for-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/hamsters/khomiak-dlia-novachka",
+      "destination": "/en/blog/hamsters/hamster-for-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/hamsters/khomiak-dlia-novachka.html",
+      "destination": "/en/blog/hamsters/hamster-for-beginners",
       "permanent": true
     }
   ]
