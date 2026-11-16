@@ -1389,7 +1389,7 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
 {main}
 {CHROME[lang]['foot']}
 <script>window.RODDI_THANKS = '{THANKS[lang]}';</script>
-<script src="{up}assets/forms.js?v=2"></script>
+<script src="{up}assets/forms.js?v=3"></script>
 <script src="{up}assets/menu.js?v=2"></script>
 </body>
 </html>

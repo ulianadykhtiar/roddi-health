@@ -17,6 +17,27 @@ var RoddiForms = (function () {
   function t(uk, en) { return IS_EN ? en : uk; }
   var EMAIL_KEY = 'roddi:email';
 
+  /* ---------- where the visitor came from ----------
+   * First page of the visit: ?utm_source / ?utm_campaign from the link, else the referring site's host.
+   * Kept in sessionStorage (this visit only) and sent with the sign-up, so the Sheet shows which channel brought the person. */
+  var SRC_KEY = 'roddi:src';
+  function clip(v) { return String(v || '').replace(/[^\w.\-+ ]/g, '').slice(0, 60); }
+  (function () {
+    try {
+      if (sessionStorage.getItem(SRC_KEY)) return;
+      var q = new URLSearchParams(location.search);
+      var source = clip(q.get('utm_source')), campaign = clip(q.get('utm_campaign') || q.get('utm_medium'));
+      if (!source && document.referrer) {
+        var h = new URL(document.referrer).hostname.replace(/^www\./, '');
+        if (h && h !== location.hostname) source = clip(h);
+      }
+      sessionStorage.setItem(SRC_KEY, JSON.stringify({ source: source || 'direct', campaign: campaign }));
+    } catch (e) {}
+  })();
+  function attribution() {
+    try { return JSON.parse(sessionStorage.getItem(SRC_KEY)) || {}; } catch (e) { return {}; }
+  }
+
   /* ---------- storage ---------- */
   function send(type, data) {
     if (window.clarity) window.clarity('event', type);
@@ -127,7 +148,7 @@ var RoddiForms = (function () {
       if (consent && !consent.checked) { show(t('Поставте позначку, що погоджуєтесь отримувати листи.', 'Please tick the box to agree to receive emails.')); consent.focus(); return; }
 
       button.disabled = true;
-      send('signup', { email: email, form: form.dataset.form || '', consent: consent && consent.checked ? CONSENT_VERSION : '' }).then(function () {
+      send('signup', { email: email, form: form.dataset.form || '', consent: consent && consent.checked ? CONSENT_VERSION : '', source: attribution().source || '', campaign: attribution().campaign || '' }).then(function () {
         try { sessionStorage.setItem(EMAIL_KEY, email); } catch (e) {}
         location.href = THANKS;
       }, function () {

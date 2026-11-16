@@ -165,7 +165,7 @@ def build(lang):
 {main}
 
 {foot}
-<script src="{prefix}assets/forms.js?v=2"></script>
+<script src="{prefix}assets/forms.js?v=3"></script>
 <script src="{prefix}assets/menu.js?v=2"></script>
 </body>
 </html>
