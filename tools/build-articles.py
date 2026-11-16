@@ -295,13 +295,14 @@ def page(slug, title, desc, jsonld, main, img=None, og='article'):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/tailwind.css?v=1">
-  <link rel="stylesheet" href="../assets/styles.css?v=2">
+  <link rel="stylesheet" href="../assets/styles.css?v=3">
   <script src="../assets/clarity.js"></script>
   <link rel="stylesheet" href="../assets/theme.css">
   <link rel="stylesheet" href="../assets/app-home.css?v=47">
   <link rel="stylesheet" href="../assets/pages.css?v=4">
 </head>
 <body class="page-soft">
+<a class="skip-link" href="#main">Перейти до змісту</a>
 {DIALOG}
 <header class="relative bg-white">
   {NAV}
@@ -348,7 +349,7 @@ def article(a):
             {'@type': 'ListItem', 'position': 2, 'name': 'Блог', 'item': BASE + '/blog'},
             {'@type': 'ListItem', 'position': 3, 'name': a['title']}]},
     ]}
-    main = f'''<main class="ar">
+    main = f'''<main id="main" class="ar">
   <nav class="ar-crumb" aria-label="Навігація"><a href="../index.html">Головна</a><span aria-hidden="true">/</span><a href="../blog.html">Блог</a><span aria-hidden="true">/</span><b>{e(LABEL[a['rodent']])}</b></nav>
   <h1 class="t-h1">{e(a['title'])}</h1>
   <p class="ar-meta">Редакція Roddi Health · оновлено {UPDATED_UK} · огляд відкритих джерел</p>
@@ -369,7 +370,7 @@ def article(a):
 INFO_TITLE = 'Про матеріали блогу та відмова від відповідальності'
 INFO_DESC = 'Як Roddi Health готує матеріали блогу, які джерела використовує, обмеження інформації та як звʼязатися щодо авторських прав.'
 info_ld = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': INFO_TITLE, 'description': INFO_DESC, 'url': BASE + '/blog/pro-materialy', 'inLanguage': 'uk'}
-info_main = f'''<main class="ar">
+info_main = f'''<main id="main" class="ar">
   <nav class="ar-crumb" aria-label="Навігація"><a href="../index.html">Головна</a><span aria-hidden="true">/</span><a href="../blog.html">Блог</a><span aria-hidden="true">/</span><b>Про матеріали</b></nav>
   <h1 class="t-h1">{e(INFO_TITLE)}</h1>
   <p class="ar-meta">Оновлено {UPDATED_UK}</p>

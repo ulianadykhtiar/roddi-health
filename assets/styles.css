@@ -278,3 +278,8 @@ form[data-signup] .signup > img { opacity: .643; } /* the icon is already 70% #2
 
 /* Blog articles in the HTML for crawlers and no-JS readers; the page script draws the cards. */
 .js .blog-static { display: none; }
+
+/* Skip link: hidden until a keyboard user tabs to it. */
+.skip-link { position: fixed; left: 12px; top: 12px; z-index: 100; padding: 12px 18px; border-radius: 999px; background: #0f0f11; color: #fff; font: 500 14px Onest, system-ui, sans-serif; text-decoration: none; transform: translateY(-160%); transition: transform .2s ease; }
+.skip-link:focus { transform: none; }
+@media (prefers-reduced-motion: reduce) { .skip-link { transition: none; } }

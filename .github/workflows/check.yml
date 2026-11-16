@@ -1,0 +1,23 @@
+name: Check site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Links, SEO basics, placeholders
+        run: python3 tools/check-site.py
+      - name: Generated files are up to date
+        run: |
+          python3 tools/build-articles.py
+          python3 tools/build-privacy.py
+          python3 tools/build-css.py
+          git diff --exit-code -- . ':!app-design' || (echo "Generated files are out of date: run tools/build-articles.py, tools/build-privacy.py, tools/build-css.py and commit the result" && exit 1)
