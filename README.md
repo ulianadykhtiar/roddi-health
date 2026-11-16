@@ -1,6 +1,6 @@
 # Roddi Health — лендинг
 
-Статичний сайт: HTML + Tailwind (підключений з CDN), без збірки й залежностей.
+Статичний сайт: HTML + Tailwind (готовий `assets/tailwind.css`, збирається `python3 tools/build-css.py`), без залежностей у проєкті.
 
 ## Файли
 
