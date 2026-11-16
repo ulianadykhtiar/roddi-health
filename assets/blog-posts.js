@@ -73,43 +73,11 @@ var BLOG_POSTS = [
     photo: { src: 'b/bc/Caviidae_Cavia_porcellus_1.jpg', by: 'NasserHalaweh', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Caviidae_Cavia_porcellus_1.jpg' }
   },
   {
-    rodent: 'chinchilla', topic: 'Догляд', featured: true,
-    title: 'Пилові ванни для шиншили: як і як часто',
-    excerpt: 'Шиншилу не купають у воді: густе хутро погано висихає. Натомість дають спеціальний пісок-пил і прибирають ванночку приблизно через пів години, щоб не подразнювати очі.',
-    tags: 'пилова ванна купання хутро шерсть очі пісок',
-    source: 'PetMD', url: 'https://www.petmd.com/exotic/care/how-give-your-chinchilla-dust-bath',
-    photo: { src: '4/45/Napoleon_chinchilla_in_box.jpg', by: 'Bluerasberry', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Napoleon_chinchilla_in_box.jpg', pos: '50% 45%' }
-  },
-  {
-    rodent: 'chinchilla', topic: 'Симптоми',
-    title: 'Здоров’я шиншили: зуби, шерсть, травлення',
-    excerpt: 'Зуби шиншили ростуть усе життя, тому їй потрібне необмежене сіно і безпечні предмети для гризіння. Слинотеча чи відмова від їжі — привід перевірити зуби у ветеринара.',
-    tags: 'зуби сіно гризіння слина травлення шерсть перегрів',
-    source: 'PDSA', url: 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health',
-    photo: { src: 'e/e8/Chinchilla_lanigera1.jpg', by: 'Trurl66', lic: 'Public domain', page: 'https://commons.wikimedia.org/wiki/File:Chinchilla_lanigera1.jpg' }
-  },
-  {
     rodent: 'degu', topic: 'Догляд',
     title: 'Дегу вдома: що потрібно знати власнику',
     excerpt: 'Дегу — активні денні тварини, які живуть групами. Їм потрібні простір, колесо, предмети для гризіння й пилові ванни. Сильна спрага чи помутніння очей — привід звернутися до лікаря.',
     tags: 'клітка колесо компанія пилова ванна очі спрага',
     source: 'PetMD', url: 'https://www.petmd.com/exotic/care/caring-for-a-degu',
     photo: { src: '6/69/Octodon_degus_209581281.jpg', by: 'Ben Lyle Bedard', lic: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg' }
-  },
-  {
-    rodent: 'mouse', topic: 'Симптоми', featured: true,
-    title: 'Здоров’я мишей: щоденний огляд за хвилину',
-    excerpt: 'Миші часто приховують біль, тому зміни краще ловити рано: подивіться на очі, ніс, шерсть, дихання й послід. Чхання чи «цокання» під час дихання — привід звернутися до ветеринара.',
-    tags: 'огляд чхання дихання послід шерсть біль',
-    source: 'PDSA', url: 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health',
-    photo: { src: 'e/ed/Pet_mouse_mini.jpg', by: 'Tiia Monto', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Pet_mouse_mini.jpg' }
-  },
-  {
-    rodent: 'mouse', topic: 'Догляд',
-    title: 'Рутинний догляд за домашніми мишами',
-    excerpt: 'Довідник для власників від MSD Vet Manual: як облаштувати житло, як часто прибирати, як годувати і як помітити перші ознаки хвороби.',
-    tags: 'клітка прибирання корм профілактика ветеринар вода',
-    source: 'MSD Vet Manual', url: 'https://www.msdvetmanual.com/all-other-pets/mice/routine-health-care-of-mice',
-    photo: { src: '4/4d/Pet_mouse_drinking.jpg', by: 'Tiia Monto', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Pet_mouse_drinking.jpg', pos: '50% 35%' }
   }
 ];

@@ -20,21 +20,9 @@
     { title: 'Basic guinea pig care',
       excerpt: 'Unlimited hay, fresh vegetables, guinea pig pellets and clean water are the basis of the diet. They also need a roomy cage and company, since they’re social animals.',
       tags: 'hay water cage company diet vegetables' },
-    { title: 'Chinchilla dust baths: how and how often',
-      excerpt: 'Chinchillas aren’t bathed in water because their dense fur dries poorly. Instead, offer special bathing dust and remove the bath after about half an hour to avoid irritating the eyes.',
-      tags: 'dust bath bathing fur coat eyes sand' },
-    { title: 'Chinchilla health: teeth, coat and digestion',
-      excerpt: 'A chinchilla’s teeth grow throughout life, so it needs unlimited hay and safe things to chew. Drooling or refusing food are reasons to have a vet check the teeth.',
-      tags: 'teeth hay chewing drool digestion coat overheating' },
     { title: 'Degus at home: what owners need to know',
       excerpt: 'Degus are active by day and live in groups. They need space, a wheel, things to chew and dust baths. Excessive thirst or cloudy eyes are reasons to see a vet.',
-      tags: 'cage wheel company dust bath eyes thirst' },
-    { title: 'Mouse health: a one-minute daily check',
-      excerpt: 'Mice often hide pain, so it’s best to catch changes early: check the eyes, nose, coat, breathing and droppings. Sneezing or “chattering” when breathing are reasons to see a vet.',
-      tags: 'check sneezing breathing droppings coat pain' },
-    { title: 'Routine care for pet mice',
-      excerpt: 'An owner’s guide from the MSD Vet Manual: how to set up housing, how often to clean, what to feed and how to notice the first signs of illness.',
-      tags: 'cage cleaning food prevention vet water' }
+      tags: 'cage wheel company dust bath eyes thirst' }
   ];
 
   BLOG_RODENTS.forEach(function (r) { r.label = LABELS[r.key]; });
