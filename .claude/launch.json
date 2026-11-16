@@ -1,1 +1,15 @@
-{"version":"0.0.1","configurations":[{"name":"roddi-health","runtimeExecutable":"python3","runtimeArgs":["-m","http.server","8766"],"port":8766,"autoPort":false}]}
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "roddi-health",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "tools/serve.py",
+        "8766"
+      ],
+      "port": 8766,
+      "autoPort": false
+    }
+  ]
+}
