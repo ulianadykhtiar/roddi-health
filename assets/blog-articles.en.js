@@ -1,6 +1,58 @@
 /* Built by tools/build-articles.py. Do not edit by hand. */
 var BLOG_ARTICLES = [
  {
+  "rodent": "rat",
+  "topic": "Symptoms",
+  "title": "Why is my rat sneezing, and when to see a vet",
+  "excerpt": "Even an occasional sneeze or reddish crusts around the eyes and nose can be the first signs of a respiratory infection. According to RSPCA Australia, it is the most common health problem in rats, and untreated it can turn into pneumonia. So show a sneezing rat to a vet rather than waiting.",
+  "tags": "sneezing breathing wheezing laboured breathing runny nose porphyrin mycoplasma cold",
+  "source": "Roddi Health",
+  "url": "/en/blog/chomu-shchur-chkhaie.html",
+  "internal": true,
+  "featured": true,
+  "photo": {
+   "src": "f/fd/Fancy_rat_blaze.jpg",
+   "by": "AlexK100",
+   "lic": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fancy_rat_blaze.jpg"
+  }
+ },
+ {
+  "rodent": "rat",
+  "topic": "Nutrition",
+  "title": "What to feed a rat: what’s allowed and what isn’t",
+  "excerpt": "The basis of a pet rat’s diet is a pelleted food made specifically for rats. Vegetables, a little fruit, boiled egg, grains and seeds are given within the daily ration, not on top of it. Grapes, raisins, onion and chocolate are not suitable.",
+  "tags": "what to feed diet food pellets grapes bread tomato milk cabbage treats obesity water",
+  "source": "Roddi Health",
+  "url": "/en/blog/chym-goduvaty-shchura.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "4/41/Fancy_rat_husky.jpg",
+   "by": "Eurovaran",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fancy_rat_husky.jpg",
+   "pos": "50% 35%"
+  }
+ },
+ {
+  "rodent": "hamster",
+  "topic": "Nutrition",
+  "title": "What to feed a hamster: what’s allowed and what isn’t",
+  "excerpt": "Most of a hamster’s diet should be a pelleted hamster food. Fresh food is given in moderation, because too much of it can cause diarrhoea, which is dangerous for a hamster: it loses fluid quickly.",
+  "tags": "what to feed diet food apple carrot banana peach tomato pepper courgette dwarf syrian water",
+  "source": "Roddi Health",
+  "url": "/en/blog/chym-goduvaty-khomiaka.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "7/73/Syrian_Hamster_Mid-grooming.jpg",
+   "by": "John Stockla",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Syrian_Hamster_Mid-grooming.jpg"
+  }
+ },
+ {
   "rodent": "mouse",
   "topic": "Symptoms",
   "title": "How to check a pet mouse’s health: daily check and warning signs",
