@@ -69,7 +69,7 @@ def resolve(page_path, ref):
     return target
 
 
-pages = sorted(p for p in list(ROOT.glob('*.html')) + list(ROOT.glob('en/*.html')) + list(ROOT.glob('blog/*.html')) if p.name not in SKIP and not p.name.startswith('google'))   # google*.html = Search Console verification file
+pages = sorted(p for p in list(ROOT.glob('*.html')) + list(ROOT.glob('en/*.html')) + list(ROOT.glob('blog/*.html')) + list(ROOT.glob('blog/*/*.html')) + list(ROOT.glob('en/blog/*/*.html')) if p.name not in SKIP and not p.name.startswith('google'))   # google*.html = Search Console verification file
 parsed = {}
 for p in pages:
     rel = p.relative_to(ROOT).as_posix()
