@@ -44,6 +44,7 @@ P = {
     'chin': {'src': '4/45/Napoleon_chinchilla_in_box.jpg', 'by': 'Bluerasberry', 'lic': 'CC BY-SA 4.0', 'page': 'https://commons.wikimedia.org/wiki/File:Napoleon_chinchilla_in_box.jpg', 'pos': '50% 45%'},
     'chin2': {'src': 'e/e8/Chinchilla_lanigera1.jpg', 'by': 'Trurl66', 'lic': 'Public domain', 'page': 'https://commons.wikimedia.org/wiki/File:Chinchilla_lanigera1.jpg'},
     'mouse': {'src': 'e/ed/Pet_mouse_mini.jpg', 'by': 'Tiia Monto', 'lic': 'CC BY-SA 3.0', 'page': 'https://commons.wikimedia.org/wiki/File:Pet_mouse_mini.jpg'},
+    'degu2': {'src': '6/69/Octodon_degus_209581281.jpg', 'by': 'Ben Lyle Bedard', 'lic': 'CC BY 4.0', 'page': 'https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg'},
     'mouse2': {'src': '4/4d/Pet_mouse_drinking.jpg', 'by': 'Tiia Monto', 'lic': 'CC BY-SA 3.0', 'page': 'https://commons.wikimedia.org/wiki/File:Pet_mouse_drinking.jpg', 'pos': '50% 35%'},
 }
 
@@ -56,12 +57,12 @@ S = {
     'petmd_dwarf': ('PetMD: карликові хомʼяки', 'https://www.petmd.com/exotic/dwarf-hamster-care-sheet'),
     'petmd_wet': ('PetMD: мокрий хвіст у хомʼяків', 'https://www.petmd.com/exotic/condition/wet-tail-in-hamsters'),
     'petmd_gi_gp': ('PetMD: стаз ШКТ у морських свинок', 'https://www.petmd.com/exotic/gi-stasis-in-guinea-pigs'),
-    'petmd_gp': ('PetMD: памʼятка з догляду за морськими свинками', 'https://www.petmd.com/exotic/guinea-pig-care-sheet'),
+    'petmd_gp': ('PetMD: памʼятка з догляду за морськими свинками', 'https://www.petmd.com/exotic/guinea-pig-care-sheet', 'PetMD: guinea pig care sheet'),
     'spca_c': ('SPCA New Zealand: вітамін C для морських свинок', 'https://spca.nz/advice-and-welfare/article/why-is-vitamin-c-important-for-my-guinea-pigs'),
     'petmd_gi_r': ('PetMD: стаз ШКТ у кроликів', 'https://www.petmd.com/rabbit/conditions/digestive/gastrointestinal-gi-stasis-rabbits'),
     'walker_r': ('Walkerville Vet: кролик не їсть', 'https://www.walkervillevet.com.au/blog/rabbit-not-eating/'),
     'exotic_d': ('Exotic Direct: чим годувати дегу', 'https://exoticdirect.co.uk/news/degu-food-advice-what-your-degu-should-be-eating-not-eating-diabetes-and-other-advice/'),
-    'petmd_d': ('PetMD: догляд за дегу', 'https://www.petmd.com/exotic/care/caring-for-a-degu'),
+    'petmd_d': ('PetMD: догляд за дегу', 'https://www.petmd.com/exotic/care/caring-for-a-degu', 'PetMD: caring for a degu'),
     'petmd_m': ('PetMD: памʼятка з догляду за мишами', 'https://www.petmd.com/exotic/mouse-care-sheet'),
     # Sources for the mice and chinchilla articles (third item: English label).
     'rspca_mice': ('RSPCA: миші', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice', 'RSPCA: mice'),
@@ -84,6 +85,26 @@ S = {
     'rspca_chin_health': ('RSPCA: здоровʼя шиншил', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/health', 'RSPCA: chinchilla health and welfare'),
     'pdsa_chin': ('PDSA: здоровʼя шиншил', 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health', 'PDSA: chinchilla health'),
     'crossley_2001': ('Crossley D. A. Dental disease in chinchillas in the UK. Journal of Small Animal Practice, 2001 (наукова стаття)', 'https://doi.org/10.1111/j.1748-5827.2001.tb01977.x', 'Crossley D. A. Dental disease in chinchillas in the UK. Journal of Small Animal Practice, 2001 (research paper)'),
+    # Sources for the guinea pig and degu articles (PR 3).
+    'rspca_gp': ('RSPCA: морські свинки як домашні тварини', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs', 'RSPCA: keeping guinea pigs as pets'),
+    'rspca_gp_diet': ('RSPCA: чим годувати морську свинку', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet', 'RSPCA: what to feed a guinea pig'),
+    'rspca_gp_env': ('RSPCA: житло для морських свинок', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/environment', 'RSPCA: creating a good home for guinea pigs'),
+    'rspca_gp_company': ('RSPCA: як тримати морських свинок разом', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/company', 'RSPCA: keeping guinea pigs together'),
+    'rspca_gp_health': ('RSPCA: здоровʼя морських свинок', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health', 'RSPCA: guinea pig health and welfare'),
+    'pdsa_gp': ('PDSA: морські свинки як домашні тварини', 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pigs-as-pets', 'PDSA: guinea pigs as pets'),
+    'pdsa_gp_diet': ('PDSA: раціон морської свинки', 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet', 'PDSA: your guinea pig’s diet'),
+    'pdsa_gp_home': ('PDSA: ідеальне житло для морських свинок', 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/the-ideal-home-for-your-guinea-pig', 'PDSA: the ideal home for your guinea pigs'),
+    'pdsa_gp_health': ('PDSA: здоровʼя морських свинок', 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pig-health', 'PDSA: guinea pig health'),
+    'rspcaau_gp_keep': ('RSPCA Australia: де тримати морських свинок', 'https://kb.rspca.org.au/categories/companion-animals/other-pets/guinea-pigs/where-should-i-keep-my-guinea-pigs', 'RSPCA Australia: where should I keep my guinea pigs?'),
+    'petmd_gp_vitc': ('PetMD: нестача вітаміну C у морських свинок', 'https://www.petmd.com/exotic/conditions/cardiovascular/c_ex_gp_vitamin_c_deficiency', 'PetMD: vitamin C deficiency in guinea pigs'),
+    'improve_vitc': ('Improve International: морські свинки й проблема вітаміну C', 'https://improveinternational.com/uk/clinical-library/guinea-pigs-and-the-vitamin-c-problem', 'Improve International: guinea pigs and the vitamin C problem'),
+    'rspca_degu': ('RSPCA: дегу як домашні тварини', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus', 'RSPCA: keeping degus as pets'),
+    'rspca_degu_env': ('RSPCA: житло для дегу', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/environment', 'RSPCA: a good home for degus'),
+    'rspca_degu_diet': ('RSPCA: чим годувати дегу', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/diet', 'RSPCA: what to feed degus'),
+    'rspca_degu_health': ('RSPCA: здоровʼя дегу', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/health', 'RSPCA: degu health and welfare'),
+    'rspca_degu_company': ('RSPCA: як тримати дегу разом', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/company', 'RSPCA: keeping degus together'),
+    'rspca_degu_behaviour': ('RSPCA: поведінка дегу', 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/behaviour', 'RSPCA: degu behaviour'),
+    'pdsa_degu': ('PDSA: дегу як домашні тварини', 'https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus', 'PDSA: degus as pets'),
 }
 
 
@@ -373,7 +394,7 @@ ARTICLES = [
          en=dict(
              title='Pet mice: housing, cleaning, food and company',
              seo='How to care for pet mice: cage, bedding and food',
-             desc='How to set up a home for pet mice, which bedding to use and how often to clean, what to feed and why mice should not live alone. An overview of advice from the RSPCA, PDSA and others.',
+             desc='How to set up a home for pet mice, which bedding to use, how often to clean, what to feed and why mice should not live alone. Advice from the RSPCA, PDSA and others.',
              short='Mice are social, nocturnal animals. They need same-sex companions, a roomy, well-ventilated home without draughts, and places to hide and climb. The core of the diet is a pelleted mouse food, with fresh greens within the daily ration and clean water every day.',
              tags='cage housing bedding cleaning food pellets company males females wheel temperature',
              sections=[
@@ -495,8 +516,8 @@ ARTICLES = [
          related=['pylovi-vanny-shynshyly', 'zdorovia-myshi'],
          en=dict(
              title='Chinchilla health: teeth, fur, digestion and warning signs',
-             seo='Chinchilla health: teeth, fur, digestion and when to see a vet',
-             desc='Why a chinchilla’s teeth grow throughout life and how to spot dental problems, what changes in droppings and fur mean, which temperatures are safe and when to see a vet urgently.',
+             seo='Chinchilla health: teeth, fur, digestion, when to see a vet',
+             desc='Why a chinchilla’s teeth never stop growing, how to spot dental problems, what changes in droppings and fur mean, safe temperatures and when to see a vet.',
              short='A chinchilla’s teeth grow throughout life, so the core of its diet is unlimited hay, not sugary mixes. Saliva on the chin, a poorer appetite, weight loss or fewer droppings can mean mouth pain or digestive trouble. Chinchillas hide illness, so these signs are a reason to see a vet straight away.',
              tags='teeth drooling slobbers hay droppings not eating fur loss stress temperature heat',
              urgent=['the chinchilla is not eating, or there are fewer or no droppings', 'drooling, a wet chin', 'lethargy, moving less', 'difficulty breathing', 'diarrhoea or soft droppings'],
@@ -517,6 +538,213 @@ ARTICLES = [
                      'Stable weight: PetMD advises monitoring body weight.')),
              ],
              check=['when the chinchilla last ate normally', 'how many droppings a day and what they look like', 'weight over time', 'photos of the chin, teeth and fur', 'what you feed: hay, pellets, treats', 'room temperature'],
+         )),
+    # ---- Guinea pigs and degus (PR 3, 16 November 2026) ----
+    dict(slug='tsynga-u-morskoi-svynky', rodent='guinea-pig', topic='Симптоми', photo='gp',
+         published='2026-11-16', updated='2026-11-16', checked='2026-11-16',
+         title='Цинга в морської свинки: ознаки нестачі вітаміну C і профілактика',
+         seo='Цинга в морської свинки: симптоми й коли до ветеринара',
+         desc='Чому морська свинка не може жити без вітаміну C з їжею, як проявляється його нестача, чому корм із часом втрачає вітамін і що зробить ветеринар.',
+         short='Морські свинки не синтезують вітамін C самі, тож мають щодня отримувати його з їжею. За PetMD, ознаки нестачі можуть зʼявитися вже через 2–3 тижні неповноцінного раціону: гіршають шерсть, апетит і вага, рани довго гояться, тварині боляче рухатися. Причину визначає й лікування призначає ветеринар.',
+         tags='цинга вітамін с нестача шерсть суглоби кульгає не їсть гранули перець добавки',
+         urgent=['свинка не їсть або посліду поменшало чи немає', 'не хоче рухатися, кульгає, болять суглоби', 'утруднене дихання', 'сильна діарея', 'різка млявість, згорблена поза'],
+         sections=[
+             ('Чому вітамін C має бути в їжі', '<p>На відміну від більшості тварин, морські свинки не мають ферменту, потрібного для синтезу вітаміну C, тож отримують його лише з їжею. Вітамін C потрібен, зокрема, для утворення колагену. PDSA попереджає, що без нього свинці загрожує цинга.</p>'),
+             ('Як проявляється нестача', '<p>PetMD, стаття якого написана ветеринаром, називає такі ознаки:</p>' + ul(
+                 'груба, тьмяна чи нерівна шерсть',
+                 'млявість і пригнічений вигляд',
+                 'гірший апетит, схуднення, а в молодих свинок слабкий набір ваги',
+                 'рани гояться повільно, свинка частіше хворіє на інфекції',
+                 'проблеми із зубами й біль під час жування',
+                 'діарея',
+                 'біль у кістках і суглобах, набряклі суглоби: свинка неохоче рухається чи кульгає')
+              + '<p>У важких випадках нестача може призвести до переломів, паралічу, сепсису й загибелі тварини. Багато з цих ознак бувають і за інших хвороб, тому причину визначає ветеринар.</p>'),
+             ('Як швидко це стається', '<p>За PetMD, ознаки нестачі можуть зʼявитися вже через 2–3 тижні раціону, у якому замало вітаміну C. Найчастіші причини: мало свіжих овочів, немає збагаченого корму або корм і ласощі застаріли.</p>'),
+             ('Свіжі овочі щодня', '<p>RSPCA називає свіжі овочі й зелень чудовим джерелом вітаміну C. Серед того, що можна давати часто, організація згадує болгарський перець, огірок, селеру, ромен і петрушку. PetMD до продуктів, багатих на вітамін C, відносить червоний і зелений перець, брокколі, цвітну капусту, полуницю й ківі.</p>'
+              + '<p>Щодо зелені з високим вмістом кальцію джерела розходяться. RSPCA дає капусту кале й шпинат лише як ласощі кілька разів на тиждень. Памʼятка PetMD радить уникати петрушки, шпинату, кале й кульбаби через ризик каменів, а стаття PetMD про вітамін C називає кале й петрушку його джерелами. Якщо сумніваєтеся, порадьтеся з ветеринаром.</p>'),
+             ('Гранули втрачають вітамін', ul(
+                 'Обирайте гранули саме для морських свинок, на основі трав і збагачені вітаміном C.',
+                 'Вітамін C у кормі з часом руйнується, швидше на теплі, світлі й повітрі.',
+                 'PDSA радить зберігати гранули в сухому, прохолодному й темному місці та використати протягом трьох місяців після купівлі. За памʼяткою PetMD, вміст вітаміну різко падає через три місяці після дати виробництва.',
+                 'RSPCA радить щодня давати свіжу порцію гранул, а не досипати до старої, і не годувати кормом після кінця терміну придатності.')),
+             ('Вітамін у воді й добавки', '<p>Вітамін C у питній воді — ненадійний спосіб: він швидко руйнується, а PetMD пише, що такі добавки діють менше доби. PDSA не радить додавати вітамін у воду ще й тому, що через смак свинка може менше пити.</p>'
+              + '<p>За PDSA, якщо свинка щодня отримує збалансований раціон зі свіжою зеленню, окремі добавки не потрібні. Надлишок вітаміну теж може шкодити: Improve International, видання для ветеринарів, повʼязує надмірне його вживання з каменями в сечовій системі й проблемами із суглобами. Тому добавки варто обговорити з ветеринаром.</p>'),
+             ('Що зробить ветеринар', '<p>За PetMD, ветеринар оглядає свинку й розпитує про раціон, інколи робить рентген чи аналіз крові. Часто достатньо виправити раціон, а у важких випадках лікар сам призначає вітамін. Зміни зубів можуть лишитися надовго.</p>'),
+         ],
+         check=['чим годуєте й скільки свіжих овочів щодня', 'дата виробництва й відкриття пачки гранул', 'чи даєте добавки, які саме й як', 'вага в динаміці', 'відео того, як свинка рухається'],
+         sources=['petmd_gp_vitc', 'petmd_gp', 'pdsa_gp_diet', 'rspca_gp_diet', 'rspca_gp_health', 'improve_vitc'],
+         related=['chym-goduvaty-morsku-svynku', 'dohliad-za-morskoiu-svynkoiu'],
+         en=dict(
+             title='Scurvy in guinea pigs: signs of vitamin C deficiency and prevention',
+             seo='Scurvy in guinea pigs: symptoms and when to see a vet',
+             desc='Why a guinea pig needs vitamin C from its food, how a deficiency shows, why pellets lose vitamin C over time and what a vet will do.',
+             short='Guinea pigs can’t make vitamin C themselves, so they need it from food every day. According to PetMD, signs of deficiency can appear after just 2–3 weeks of a poor diet: the coat, appetite and weight get worse, wounds heal slowly and moving becomes painful. A vet finds the cause and prescribes treatment.',
+             tags='scurvy vitamin c deficiency coat joints limping not eating pellets pepper supplements',
+             urgent=['the guinea pig is not eating, or there are fewer or no droppings', 'it doesn’t want to move, limps or has painful joints', 'difficulty breathing', 'severe diarrhoea', 'sudden lethargy, hunched posture'],
+             sections=[
+                 ('Why vitamin C must come from food', '<p>Unlike most animals, guinea pigs lack the enzyme needed to make vitamin C, so they get it only from food. Vitamin C is needed, among other things, to make collagen. PDSA warns that without it a guinea pig is at risk of scurvy.</p>'),
+                 ('How a deficiency shows', '<p>PetMD, in an article written by a vet, lists these signs:</p>' + ul(
+                     'a rough, dull or patchy coat',
+                     'lethargy and a depressed look',
+                     'poor appetite and weight loss, or poor weight gain in young animals',
+                     'wounds heal slowly and infections become more frequent',
+                     'dental problems and pain when chewing',
+                     'diarrhoea',
+                     'bone and joint pain, swollen joints: the guinea pig is reluctant to move or limps')
+                  + '<p>In severe cases a deficiency can lead to fractures, paralysis, sepsis and death. Many of these signs also occur with other diseases, so a vet has to find the cause.</p>'),
+                 ('How quickly it happens', '<p>According to PetMD, signs can appear after just 2–3 weeks of a diet that is too low in vitamin C. The most common reasons are too little fresh produce, no fortified food, or food and treats that are too old.</p>'),
+                 ('Fresh vegetables every day', '<p>The RSPCA calls fresh vegetables and herbs an excellent source of vitamin C. Among foods that can be given often, it lists bell peppers, cucumber, celery, romaine lettuce and parsley. PetMD lists red and green peppers, broccoli, cauliflower, strawberries and kiwi among foods rich in vitamin C.</p>'
+                  + '<p>Sources disagree about high-calcium greens. The RSPCA gives kale and spinach only as treats a few times a week. PetMD’s care sheet advises avoiding parsley, spinach, kale and dandelion because of the risk of stones, while PetMD’s vitamin C article lists kale and parsley as good sources. If in doubt, ask your vet.</p>'),
+                 ('Pellets lose vitamin C', ul(
+                     'Choose pellets made for guinea pigs, grass-based and fortified with vitamin C.',
+                     'Vitamin C in food breaks down over time, faster with heat, light and air.',
+                     'PDSA advises storing pellets somewhere dry, cool and dark and using them within three months of purchase. According to PetMD’s care sheet, vitamin C levels drop sharply three months after the production date.',
+                     'The RSPCA advises giving a fresh portion of pellets daily instead of topping up the old one, and not feeding food past its best-before date.')),
+                 ('Vitamin C in water and supplements', '<p>Vitamin C in drinking water is unreliable: it breaks down quickly, and PetMD says such additives last less than a day. PDSA advises against adding it to water also because the taste can make a guinea pig drink less.</p>'
+                  + '<p>According to PDSA, a guinea pig that gets a balanced diet with fresh greens every day does not need separate supplements. Too much vitamin C can also do harm: Improve International, a publisher for vets, links excessive amounts with urinary stones and joint problems. So it is worth discussing supplements with your vet.</p>'),
+                 ('What a vet will do', '<p>According to PetMD, the vet examines the guinea pig and asks about its diet, and sometimes takes X-rays or a blood test. Correcting the diet is often enough, and in severe cases the vet prescribes vitamin C. Dental changes can last a long time.</p>'),
+             ],
+             check=['what you feed and how much fresh produce a day', 'the production date and opening date of the pellet bag', 'whether you give supplements, which ones and how', 'weight over time', 'a video of how the guinea pig moves'],
+         )),
+    dict(slug='dohliad-za-morskoiu-svynkoiu', rodent='guinea-pig', topic='Догляд', photo='gp2',
+         published='2026-11-16', updated='2026-11-16', checked='2026-11-16',
+         title='Базовий догляд за морськими свинками: сіно, корм, житло й компанія',
+         seo='Як доглядати за морською свинкою: раціон, клітка, компанія',
+         desc='Скільки сіна, гранул і овочів потрібно морській свинці, яким має бути житло, з ким вона може жити й що перевіряти щодня. Огляд порад RSPCA, PDSA та PetMD.',
+         short='Основа раціону морської свинки — необмежене сіно й трава. До них додають трохи гранул для свинок, щодня свіжі овочі й чисту воду. Свинки соціальні й живуть парами чи групами. Їм потрібне просторе житло із суцільною підлогою, схованками й місцем для руху.',
+         tags='сіно гранули овочі вода клітка вольєр підстилка прибирання компанія кастрація температура',
+         sections=[
+             ('Сіно і трава', '<p>Сіно має становити більшу частину раціону й бути доступним постійно. PDSA оцінює його частку у 85–90%, PetMD — приблизно у 80%. RSPCA радить якомога частіше, в ідеалі щодня, давати свіжу траву. Скошена газонокосаркою трава небезпечна, її не дають.</p>'),
+             ('Гранули', '<p>Обирайте однорідні гранули саме для морських свинок, на основі трав, а не суміші на кшталт мюслі. PDSA радить приблизно одну столову ложку на дорослу свинку на день, RSPCA — порцію за інструкцією виробника, щодня свіжу.</p>'),
+             ('Овочі й фрукти', '<p>PDSA радить приблизно чашку овочів на свинку на день, 5–6 різних видів, серед них багаті на вітамін C. RSPCA серед того, що можна давати часто, називає болгарський перець, огірок, селеру, ромен і петрушку, а брокколі, шпинат, кале, моркву й четвертинку яблука — як ласощі кілька разів на тиждень. Фрукти через цукор дають зрідка. Нові продукти вводьте поступово.</p>'
+              + '<p>Не давайте салат айсберг, картоплю, цибулю, часник, гриби, авокадо, ревінь, шоколад, хліб і печиво, горіхи й зерно.</p>'),
+             ('Вода', '<p>Свіжа чиста вода має бути завжди. RSPCA радить перевіряти її двічі на день, а взимку стежити, щоб вона не замерзала. Миску чи поїлку мийте щодня.</p>'),
+             ('Житло', '<p>Джерела дають різні мінімальні розміри:</p>' + table(['Джерело', 'Мінімум'], [
+                 ['PetMD', 'клітка приблизно 91 × 76 × 46 см'],
+                 ['PDSA', 'будиночок щонайменше 1,5 × 1 м і вольєр щонайменше 2 × 1 м'],
+                 ['RSPCA Australia', 'для пари щонайменше 2 × 0,5 м, висота не менше 30 см'],
+             ]) + '<p>Усі сходяться в тому, що більше краще. Підлога має бути суцільною, без сітки. RSPCA радить мати схованок на одну більше, ніж свинок, а ще щодня давати свинкам місце для руху. PetMD радить щонайменше годину на день поза кліткою.</p>'),
+             ('Температура', '<p>RSPCA називає комфортною кімнатну температуру 17–20 °C. Вище 26 °C зростає ризик теплового удару, нижче 15 °C свинка може переохолодитися. PDSA попереджає про тепловий удар вище 27 °C. Не ставте житло біля батарей, сонячних вікон і на протязі.</p>'),
+             ('Підстилка й прибирання', '<p>Підходять безпилове сіно чи паперова підстилка, вату не використовують. Щодо деревної стружки джерела розходяться, тож паперова підстилка — безпечніший вибір. Щодня прибирайте мокру підстилку й залишки свіжої їжі, а раз на тиждень робіть ґрунтовне прибирання.</p>'),
+             ('Компанія', '<p>RSPCA радить тримати свинку щонайменше з однією дружньою свинкою, якщо ветеринар не порадив інакше. Добре уживаються кастрований самець з однією чи кількома самками, дві самки, брати, які росли разом. Самця, що живе із самками, обовʼязково каструють: за PDSA, самки можуть завагітніти вже приблизно з трьох тижнів. Кролик не компанія для свинки, тримати їх разом не радять.</p>'),
+             ('Огляди', ul(
+                 'Щодня оглядайте свинку: обличчя й очі, шерсть, задню частину тіла, лапи.',
+                 'Раз на тиждень перевіряйте передні зуби й кігті. Зуби, що переросли, виправляє лише ветеринар.',
+                 'У спеку двічі на день оглядайте задню частину тіла: забруднена шерсть приваблює мух.',
+                 'Щонайменше раз на рік показуйте свинку ветеринару.',
+                 'Якщо змінилися харчування, пиття чи послід або послід зник, одразу звертайтеся до ветеринара. Утруднене дихання — невідкладний стан.')),
+         ],
+         check=['скільки свинок і якої статі живуть разом', 'розмір житла', 'чим годуєте й скільки', 'температура в кімнаті', 'вага в динаміці'],
+         sources=['rspca_gp', 'rspca_gp_diet', 'rspca_gp_env', 'rspca_gp_company', 'rspca_gp_health', 'pdsa_gp', 'pdsa_gp_diet', 'pdsa_gp_home', 'pdsa_gp_health', 'rspcaau_gp_keep', 'petmd_gp'],
+         related=['tsynga-u-morskoi-svynky', 'morska-svynka-ne-yist'],
+         en=dict(
+             title='Basic guinea pig care: hay, food, housing and company',
+             seo='How to care for a guinea pig: diet, cage and company',
+             desc='How much hay, pellets and vegetables a guinea pig needs, what its home should be like, who it can live with and what to check daily. RSPCA, PDSA and PetMD advice.',
+             short='The core of a guinea pig’s diet is unlimited hay and grass. On top of that come a few guinea pig pellets, fresh vegetables every day and clean water. Guinea pigs are social and live in pairs or groups. They need a roomy home with a solid floor, hides and space to move.',
+             tags='hay pellets vegetables water cage run bedding cleaning company neutering temperature',
+             sections=[
+                 ('Hay and grass', '<p>Hay should make up most of the diet and be available at all times. PDSA puts its share at 85–90%, PetMD at about 80%. The RSPCA advises giving fresh grass as often as possible, ideally daily. Lawnmower clippings are dangerous and must not be fed.</p>'),
+                 ('Pellets', '<p>Choose uniform pellets made for guinea pigs, grass-based, rather than muesli-style mixes. PDSA suggests about one tablespoon per adult guinea pig a day; the RSPCA says a portion following the manufacturer’s instructions, fresh each day.</p>'),
+                 ('Vegetables and fruit', '<p>PDSA suggests about a cup of vegetables per guinea pig a day, 5–6 different kinds, including some rich in vitamin C. Among foods that can be given often, the RSPCA lists bell peppers, cucumber, celery, romaine lettuce and parsley, while broccoli, spinach, kale, carrot and a quarter of an apple are treats for a few times a week. Fruit is given rarely because of its sugar. Introduce new foods gradually.</p>'
+                  + '<p>Don’t give iceberg lettuce, potato, onion, garlic, mushrooms, avocado, rhubarb, chocolate, bread and biscuits, nuts or grains.</p>'),
+                 ('Water', '<p>Fresh, clean water must always be available. The RSPCA advises checking it twice a day and making sure it doesn’t freeze in winter. Wash the bowl or bottle every day.</p>'),
+                 ('Housing', '<p>Sources give different minimum sizes:</p>' + table(['Source', 'Minimum'], [
+                     ['PetMD', 'a cage of about 91 × 76 × 46 cm'],
+                     ['PDSA', 'a hutch of at least 1.5 × 1 m and a run of at least 2 × 1 m'],
+                     ['RSPCA Australia', 'at least 2 × 0.5 m for a pair, at least 30 cm high'],
+                 ]) + '<p>All agree that bigger is better. The floor should be solid, not mesh. The RSPCA advises having one more hide than there are guinea pigs, and giving them space to move every day. PetMD suggests at least an hour a day outside the cage.</p>'),
+                 ('Temperature', '<p>The RSPCA gives 17–20 °C as a comfortable room temperature. Above 26 °C the risk of heatstroke rises, and below 15 °C a guinea pig can get chilled. PDSA warns of heatstroke above 27 °C. Keep the home away from radiators, sunny windows and draughts.</p>'),
+                 ('Bedding and cleaning', '<p>Dust-free hay or paper bedding works well; cotton wool should not be used. Sources disagree about wood shavings, so paper bedding is the safer choice. Remove wet bedding and leftover fresh food every day, and do a thorough clean once a week.</p>'),
+                 ('Company', '<p>The RSPCA advises keeping a guinea pig with at least one friendly companion unless a vet advises otherwise. Good pairings are a neutered male with one or more females, two females, or brothers raised together. A male living with females must be neutered: according to PDSA, females can become pregnant from about three weeks old. A rabbit is not a companion for a guinea pig, and keeping them together is not advised.</p>'),
+                 ('Health checks', ul(
+                     'Check your guinea pig every day: face and eyes, coat, rear end and feet.',
+                     'Check the front teeth and nails once a week. Overgrown teeth must be corrected by a vet.',
+                     'In hot weather check the rear end twice a day: soiled fur attracts flies.',
+                     'Take your guinea pig to a vet at least once a year.',
+                     'If eating, drinking or droppings change, or droppings stop, contact a vet straight away. Difficulty breathing is an emergency.')),
+             ],
+             check=['how many guinea pigs live together and their sex', 'the size of the home', 'what you feed and how much', 'room temperature', 'weight over time'],
+         )),
+    dict(slug='degu-vdoma', rodent='degu', topic='Догляд', photo='degu2',
+         published='2026-11-16', updated='2026-11-16', checked='2026-11-16',
+         title='Дегу вдома: житло, компанія, раціон і здоровʼя',
+         seo='Як доглядати за дегу: клітка, корм, пилові ванни, діабет',
+         desc='Яка клітка потрібна дегу, чому їх не тримають поодинці, чим годувати, щоб уберегти від діабету, як давати пилові ванни й чому не можна брати за хвіст.',
+         short='Дегу активні вдень і живуть групами, тож поодинці їх не тримають. Їм потрібна висока металева клітка з кількома рівнями й колесом, глибока підстилка для риття й пилові ванни кілька разів на тиждень. Основа раціону — сіно, а гранули дають потроху й без цукру, бо дегу схильні до діабету.',
+         tags='дегу клітка компанія сіно гранули діабет катаракта зуби хвіст пилова ванна колесо',
+         sections=[
+             ('Спосіб життя й компанія', '<p>Дегу активні вдень і дуже балакучі. Це соціальні тварини: RSPCA попереджає, що поодинці вони можуть впадати в депресію, і радить тримати дегу самого лише за порадою ветеринара. Тримають одностатеві групи або кастрованого самця із самками, причому в змішаній групі має бути не більше одного самця. PetMD не радить селити дегу з іншими гризунами чи кроликами. Тривалість життя джерела оцінюють по-різному: PDSA — 6–8 років, іноді 9, RSPCA — 6–7 років, PetMD — 5–9 років.</p>'),
+             ('Клітка', ul(
+                 'Клітка має бути металевою: пластик і дерево дегу прогризають. PetMD радить уникати пластикових кліток і аксесуарів.',
+                 'Розмір: PDSA радить якомога більшу клітку, а PetMD для двох дегу називає мінімум приблизно 71 × 46 × 71 см і відстань між прутами не більше 1,3 см.',
+                 'Висока клітка з кількома рівнями, полиці й підлога суцільні. Суцільний дах допомагає дегу почуватися в безпеці.',
+                 'Гілки груші, яблуні чи бука для лазіння й гризіння.',
+                 'Будиночок із сіном для сну.',
+                 'Скляні акваріуми не підходять: RSPCA повʼязує їх із проблемами дихання.',
+                 'Ставте клітку в приміщенні, без протягів і прямого сонця, подалі від телевізора й музики: вібрація їх лякає.')),
+             ('Тепло', '<p>RSPCA радить, щоб у приміщенні з кліткою було не вище 20 °C, і просить ставити її подалі від батарей. Якщо дегу лежить плазом на животі, вона може перегріватися: одразу звертайтеся до ветеринара.</p>'),
+             ('Рух і риття', '<p>Потрібне суцільне колесо, достатньо велике, щоб дегу бігала з рівною спиною. PetMD називає діаметр 25–30 см. PDSA радить щодня випускати дегу щонайменше на пів години в безпечну кімнату чи вольєр, де закриті дроти й дерево. Для риття потрібен глибокий шар сіна й рваного паперу. Щодо деревної стружки джерела розходяться: RSPCA допускає нетоксичну стружку, PetMD не радить її через ризик для дихання.</p>'),
+             ('Пилові ванни', table(['Джерело', 'Як часто', 'Як'], [
+                 ['PDSA', 'кілька разів на тиждень', 'пісок для шиншил чи хомʼяків, не лишати постійно, бо сушить шкіру'],
+                 ['RSPCA', '2–3 рази на тиждень, приблизно по 20 хв', 'важка миска з шаром піску близько 4 см, після купання прибрати'],
+                 ['PetMD', 'приблизно двічі на тиждень', 'пил для шиншил, поза кліткою'],
+             ])),
+             ('Раціон', ul(
+                 'Основа — сіно без обмежень.',
+                 'Гранули для дегу: PDSA і PetMD радять одну-дві столові ложки на день. Якщо їх немає, підходять гранули для морських свинок чи шиншил без меляси.',
+                 'Корм для кроликів, хомʼяків і піщанок, а також суміші із сухофруктами RSPCA вважає непридатними.',
+                 'Листова зелень і овочі — невеликими порціями. PDSA радить один-два рази на тиждень, PetMD — кілька разів на тиждень.',
+                 'Фрукти, мед, мелясу й насіння PetMD радить не давати зовсім. PDSA допускає зрідка шматочок яблука. Моркву, батат і буряк RSPCA дозволяє лише крихітними шматочками зрідка.',
+                 'Будьте обережні з магазинними ласощами: часто вони надто солодкі.',
+                 'Дегу зʼїдають частину свого посліду: це норма.',
+                 'Новий корм вводьте поступово.')),
+             ('Діабет', '<p>За RSPCA і PDSA, дегу схильні до діабету 2 типу, особливо якщо в раціоні багато вуглеводів і цукру. PDSA називає такі ознаки: помутніння очей (катаракта), дегу багато пʼє й часто мочиться, набирає зайву вагу. Якщо помітили щось із цього, зверніться до ветеринара. Детальніше про раціон читайте в статті «Чим годувати дегу».</p>'),
+             ('Зуби', '<p>Зуби дегу ростуть безперервно й стираються під час жування сіна. RSPCA пише, що здорові зуби жовто-помаранчеві, а білі можуть бути ознакою хвороби, і радить оглядати їх щотижня. За PDSA, про проблеми із зубами можуть свідчити слинотеча, набряк морди, виділення з очей і зміна кольору зубів. Виправляти зуби, що переросли, може лише ветеринар.</p>'),
+             ('Хвіст і як брати на руки', '<p>Дегу ніколи не беруть і не тягнуть за хвіст. Шкіра з кінчика хвоста може злізти, і тоді потрібен ветеринар, бо є ризик інфекції. RSPCA радить дати дегу самій залізти на долоню й підняти її в складених долонях, низько над підлогою. Руки, що нависають згори, тварину лякають.</p>'),
+             ('Огляди', '<p>RSPCA радить оглядати дегу щодня. У здорової дегу ясні очі, чисті вуха, блискуча шерсть, чистий хвіст і задня частина тіла. Насторожують виділення з носа, волога біля рота, помутніння очей і білі зуби. Щонайменше раз на рік показуйте дегу ветеринару. PetMD радить терміново звертатися до лікаря, якщо дегу гірше їсть, худне, важко дихає, має діарею, погано жує чи стала млявою.</p>'),
+         ],
+         check=['скільки дегу і якої статі живуть разом', 'чим годуєте, чи бувають солодощі', 'скільки дегу пʼє', 'стан очей і колір зубів', 'температура в кімнаті'],
+         sources=['rspca_degu', 'rspca_degu_env', 'rspca_degu_diet', 'rspca_degu_health', 'rspca_degu_company', 'rspca_degu_behaviour', 'pdsa_degu', 'petmd_d'],
+         related=['chym-goduvaty-degu', 'pylovi-vanny-shynshyly'],
+         en=dict(
+             title='Degus at home: housing, company, diet and health',
+             seo='How to care for degus: cage, food, dust baths and diabetes',
+             desc='Which cage degus need, why they are not kept alone, how to feed them to prevent diabetes, how to give dust baths and why never to hold them by the tail.',
+             short='Degus are active by day and live in groups, so they are not kept alone. They need a tall metal cage with several levels and a wheel, deep bedding for digging and dust baths a few times a week. The core of the diet is hay, with a few sugar-free pellets, because degus are prone to diabetes.',
+             tags='degu cage company hay pellets diabetes cataract teeth tail dust bath wheel',
+             sections=[
+                 ('Lifestyle and company', '<p>Degus are active by day and very vocal. They are social animals: the RSPCA warns that alone they can become depressed and advises keeping a single degu only on a vet’s advice. Keep single-sex groups or a neutered male with females, with no more than one male in a mixed group. PetMD advises against housing degus with other rodents or rabbits. Sources give different lifespans: PDSA says 6–8 years, sometimes 9; the RSPCA 6–7 years; PetMD 5–9 years.</p>'),
+                 ('The cage', ul(
+                     'The cage must be metal: degus chew through plastic and wood. PetMD advises avoiding plastic cages and accessories.',
+                     'Size: PDSA advises as large a cage as possible, and PetMD gives a minimum of about 71 × 46 × 71 cm for two degus, with bars no more than 1.3 cm apart.',
+                     'A tall cage with several levels and solid shelves and floor. A solid roof helps degus feel safe.',
+                     'Pear, apple or beech branches for climbing and gnawing.',
+                     'A nest box with hay for sleeping.',
+                     'Glass tanks are not suitable: the RSPCA links them to breathing problems.',
+                     'Keep the cage indoors, out of draughts and direct sun, away from the TV and music: vibration frightens them.')),
+                 ('Heat', '<p>The RSPCA advises keeping the room with the cage no warmer than 20 °C and placing it away from radiators. A degu lying flat on its stomach may be overheating: contact a vet straight away.</p>'),
+                 ('Exercise and digging', '<p>A solid wheel is needed, big enough for the degu to run with a straight back. PetMD gives a diameter of 25–30 cm. PDSA advises letting degus out for at least half an hour a day into a safe room or pen with wires and wood covered. For digging they need a deep layer of hay and shredded paper. Sources disagree on wood shavings: the RSPCA allows non-toxic shavings, while PetMD advises against them because of the risk to breathing.</p>'),
+                 ('Dust baths', table(['Source', 'How often', 'How'], [
+                     ['PDSA', 'a few times a week', 'chinchilla or hamster sand, not left in all the time because it dries the skin'],
+                     ['RSPCA', '2–3 times a week, about 20 min each', 'a heavy bowl with about 4 cm of sand, removed after use'],
+                     ['PetMD', 'about twice a week', 'chinchilla dust, outside the cage'],
+                 ])),
+                 ('Diet', ul(
+                     'The core is unlimited hay.',
+                     'Degu pellets: PDSA and PetMD suggest one to two tablespoons a day. If degu pellets are not available, guinea pig or chinchilla pellets without molasses will do.',
+                     'The RSPCA considers rabbit, hamster and gerbil food, and mixes with dried fruit, unsuitable.',
+                     'Leafy greens and vegetables in small portions: PDSA suggests once or twice a week, PetMD a few times a week.',
+                     'PetMD advises no fruit, honey, molasses or seeds at all. PDSA allows an occasional bit of apple. The RSPCA allows carrot, sweet potato and beetroot only in tiny pieces now and then.',
+                     'Be careful with shop-bought treats: they are often too sugary.',
+                     'Degus eat some of their own droppings: this is normal.',
+                     'Introduce new food gradually.')),
+                 ('Diabetes', '<p>According to the RSPCA and PDSA, degus are prone to type 2 diabetes, especially on a diet high in carbohydrates and sugar. PDSA lists these signs: cloudy eyes (cataracts), drinking a lot and urinating often, and weight gain. If you notice any of these, see a vet.</p>'),
+                 ('Teeth', '<p>Degus’ teeth grow continuously and wear down as they chew hay. The RSPCA says healthy teeth are yellow-orange, white teeth can be a sign of illness, and advises checking them every week. According to PDSA, dental problems can show as drooling, a swollen face, discharge from the eyes and a change in tooth colour. Only a vet should correct overgrown teeth.</p>'),
+                 ('The tail and handling', '<p>Never pick up or pull a degu by the tail. The skin on the tip of the tail can come off, and then a vet is needed because of the risk of infection. The RSPCA advises letting the degu climb onto your palm and lifting it in cupped hands, low over the floor. Hands swooping down from above frighten them.</p>'),
+                 ('Health checks', '<p>The RSPCA advises checking degus every day. A healthy degu has bright, clear eyes, clean ears, a glossy coat, and a clean tail and rear end. Warning signs include nasal discharge, wetness around the mouth, cloudy eyes and white teeth. Take your degus to a vet at least once a year. PetMD advises seeing a vet urgently if a degu eats less, loses weight, breathes with difficulty, has diarrhoea, struggles to chew or becomes lethargic.</p>'),
+             ],
+             check=['how many degus live together and their sex', 'what you feed and whether they get sweet things', 'how much the degus drink', 'the condition of the eyes and tooth colour', 'room temperature'],
          )),
 ]
 
@@ -805,7 +1033,7 @@ info_main = f'''<main id="main" class="ar">
 '''
 
 INFO_TITLE_EN = 'About our blog articles and disclaimer'
-INFO_DESC_EN = 'How Roddi Health prepares its blog articles: which sources we use, how we mark other sites’ articles and fact-check dates, the limits of the information and how to report a mistake.'
+INFO_DESC_EN = 'How Roddi Health prepares its blog articles: which sources we use, how we mark external articles and fact-check dates, and how to report a mistake.'
 info_ld_en = {'@context': 'https://schema.org', '@type': 'WebPage', 'name': INFO_TITLE_EN, 'description': INFO_DESC_EN, 'url': BASE + '/en/blog/pro-materialy', 'inLanguage': 'en', 'dateModified': INFO_UPDATED}
 info_main_en = f'''<main id="main" class="ar">
   <nav class="ar-crumb" aria-label="Breadcrumbs"><a href="/en/index.html">Home</a><span aria-hidden="true">/</span><a href="/en/blog.html">Blog</a><span aria-hidden="true">/</span><b>About our articles</b></nav>

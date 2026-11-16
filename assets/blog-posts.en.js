@@ -13,16 +13,7 @@
       tags: 'enrichment toys boredom cage play foraging' },
     { title: 'The 25 most common questions about hamsters',
       excerpt: 'Vets answer what owners ask most: what cage is needed, what to feed, whether two hamsters can live together and how to tell if one is ill.',
-      tags: 'cage food questions beginner tips cagemates syrian dwarf' },
-    { title: 'Scurvy in guinea pigs: how to spot it in time',
-      excerpt: 'Signs of vitamin C deficiency can appear after just 2–3 weeks of poor diet: stiffness, joint pain, bleeding gums and a poor coat. It’s treatable if caught early.',
-      tags: 'scurvy vitamin c joints gums coat deficiency' },
-    { title: 'Basic guinea pig care',
-      excerpt: 'Unlimited hay, fresh vegetables, guinea pig pellets and clean water are the basis of the diet. They also need a roomy cage and company, since they’re social animals.',
-      tags: 'hay water cage company diet vegetables' },
-    { title: 'Degus at home: what owners need to know',
-      excerpt: 'Degus are active by day and live in groups. They need space, a wheel, things to chew and dust baths. Excessive thirst or cloudy eyes are reasons to see a vet.',
-      tags: 'cage wheel company dust bath eyes thirst' }
+      tags: 'cage food questions beginner tips cagemates syrian dwarf' }
   ];
 
   BLOG_RODENTS.forEach(function (r) { r.label = LABELS[r.key]; });

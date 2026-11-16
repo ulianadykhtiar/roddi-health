@@ -225,5 +225,56 @@ var BLOG_ARTICLES = [
    "lic": "Public domain",
    "page": "https://commons.wikimedia.org/wiki/File:Chinchilla_lanigera1.jpg"
   }
+ },
+ {
+  "rodent": "guinea-pig",
+  "topic": "Симптоми",
+  "title": "Цинга в морської свинки: ознаки нестачі вітаміну C і профілактика",
+  "excerpt": "Морські свинки не синтезують вітамін C самі, тож мають щодня отримувати його з їжею. За PetMD, ознаки нестачі можуть зʼявитися вже через 2–3 тижні неповноцінного раціону: гіршають шерсть, апетит і вага, рани довго гояться, тварині боляче рухатися. Причину визначає й лікування призначає ветеринар.",
+  "tags": "цинга вітамін с нестача шерсть суглоби кульгає не їсть гранули перець добавки",
+  "source": "Roddi Health",
+  "url": "blog/tsynga-u-morskoi-svynky.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "e/ee/Cavia_porcellus01.jpg",
+   "by": "Kacper Aleksander",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cavia_porcellus01.jpg"
+  }
+ },
+ {
+  "rodent": "guinea-pig",
+  "topic": "Догляд",
+  "title": "Базовий догляд за морськими свинками: сіно, корм, житло й компанія",
+  "excerpt": "Основа раціону морської свинки — необмежене сіно й трава. До них додають трохи гранул для свинок, щодня свіжі овочі й чисту воду. Свинки соціальні й живуть парами чи групами. Їм потрібне просторе житло із суцільною підлогою, схованками й місцем для руху.",
+  "tags": "сіно гранули овочі вода клітка вольєр підстилка прибирання компанія кастрація температура",
+  "source": "Roddi Health",
+  "url": "blog/dohliad-za-morskoiu-svynkoiu.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "b/bc/Caviidae_Cavia_porcellus_1.jpg",
+   "by": "NasserHalaweh",
+   "lic": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Caviidae_Cavia_porcellus_1.jpg"
+  }
+ },
+ {
+  "rodent": "degu",
+  "topic": "Догляд",
+  "title": "Дегу вдома: житло, компанія, раціон і здоровʼя",
+  "excerpt": "Дегу активні вдень і живуть групами, тож поодинці їх не тримають. Їм потрібна висока металева клітка з кількома рівнями й колесом, глибока підстилка для риття й пилові ванни кілька разів на тиждень. Основа раціону — сіно, а гранули дають потроху й без цукру, бо дегу схильні до діабету.",
+  "tags": "дегу клітка компанія сіно гранули діабет катаракта зуби хвіст пилова ванна колесо",
+  "source": "Roddi Health",
+  "url": "blog/degu-vdoma.html",
+  "internal": true,
+  "featured": false,
+  "photo": {
+   "src": "6/69/Octodon_degus_209581281.jpg",
+   "by": "Ben Lyle Bedard",
+   "lic": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Octodon_degus_209581281.jpg"
+  }
  }
 ];
