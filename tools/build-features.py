@@ -7,7 +7,7 @@ Writes <section id="features"> into index.html and, in English, into en/index.ht
 Desktop: the section is pinned and its cards stack as you scroll; phones: the
 features simply follow each other. Card backgrounds are assets/features/pastel-1..4.jpg
 (made by tools/make-feature-backgrounds.py). Styles and behaviour:
-assets/features-pin.css?v=blue1 and assets/features-pin.js. Edit this file, not the HTML.
+assets/features-pin.css and assets/features-pin.js. Edit this file, not the HTML.
 """
 import json
 import re

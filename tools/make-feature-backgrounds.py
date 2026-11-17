@@ -2,7 +2,7 @@
 
     python3 tools/make-feature-backgrounds.py
 
-Writes assets/features/soft-1.jpg?v=blue1 … soft-4.jpg (1600×1000): rose, powder-pink and
+Writes assets/features/soft-1.jpg … soft-4.jpg (1600×1000): rose, powder-pink and
 beige light, painted as blurred motion, one look per feature:
     1 swirl        colour spinning around a point
     2 sweep        diagonal streaks, like a camera moved while shooting
