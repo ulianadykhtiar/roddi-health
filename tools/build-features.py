@@ -74,11 +74,11 @@ def scene_state():
   <div class="w-seg"><span class="on">Тиждень</span><span>Місяць</span><span>Рік</span></div>
   <div class="relative mt-[14px]">
     <svg viewBox="0 0 328 120" class="block h-[120px] w-full overflow-visible" aria-hidden="true">
-      <defs><linearGradient id="fp-wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a45588" stop-opacity=".22"/><stop offset="1" stop-color="#a45588" stop-opacity="0"/></linearGradient></defs>
+      <defs><linearGradient id="fp-wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3172c8" stop-opacity=".22"/><stop offset="1" stop-color="#3172c8" stop-opacity="0"/></linearGradient></defs>
       <g stroke="#eef0f3" stroke-width="1"><path d="M0 20H328M0 60H328M0 100H328"/></g>
       <path d="M0 78 C30 78 40 64 70 66 S110 88 140 80 S190 46 222 50 S280 30 328 24 L328 120 L0 120 Z" fill="url(#fp-wg)"/>
-      <path d="M0 78 C30 78 40 64 70 66 S110 88 140 80 S190 46 222 50 S280 30 328 24" fill="none" stroke="#a45588" stroke-width="2.6" stroke-linecap="round"/>
-      <path d="M222 50V120" stroke="#a45588" stroke-opacity=".25" stroke-dasharray="3 4"/><circle cx="222" cy="50" r="9" fill="#a45588" fill-opacity=".16"/><circle cx="222" cy="50" r="4.5" fill="#fff" stroke="#a45588" stroke-width="2.6"/>
+      <path d="M0 78 C30 78 40 64 70 66 S110 88 140 80 S190 46 222 50 S280 30 328 24" fill="none" stroke="#3172c8" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M222 50V120" stroke="#3172c8" stroke-opacity=".25" stroke-dasharray="3 4"/><circle cx="222" cy="50" r="9" fill="#3172c8" fill-opacity=".16"/><circle cx="222" cy="50" r="4.5" fill="#fff" stroke="#3172c8" stroke-width="2.6"/>
     </svg>
     <span class="w-tip" style="left:67.7%;top:41.7%">Пт · 337 г</span>
   </div>
@@ -104,7 +104,7 @@ def scene_vet():
 <div class="w" style="{at(272, 132, 280, 3)}">
   <div class="w-top"><div class="w-pet !gap-[10px]"><img alt="" class="!size-[34px] !shadow-none" src="{MARTIN}"><b class="!text-[15px]">Історія Мартіна</b></div><span class="w-chip">12 записів</span></div>
   <div class="w-tl">
-    <div style="--c:#a45588"><small>28 жовтня</small><b>Огляд · легка інфекція</b><span>Антибіотик на 10 днів</span></div>
+    <div style="--c:#3172c8"><small>28 жовтня</small><b>Огляд · легка інфекція</b><span>Антибіотик на 10 днів</span></div>
     <div style="--c:#3fcb7e"><small>14 жовтня</small><b>Аналіз крові</b><span class="w-file"><i>PDF</i>analiz-14-10.pdf</span></div>
     <div><small>30 вересня</small><b>Підпиляли зуби</b><span>Наступний огляд за 3 міс</span></div>
   </div>
@@ -127,7 +127,7 @@ SCENES = [scene_reminders, scene_state, scene_vet, scene_notes]
 
 def background(i):
     """A soft pastel picture behind the widgets; it drifts slowly (see the CSS)."""
-    return f'<div class="fp-glow" aria-hidden="true"><img alt="" src="assets/features/pastel-{i + 1}.jpg"></div>'
+    return f'<div class="fp-glow" aria-hidden="true"><img alt="" src="assets/features/pastel-{i + 1}.jpg?v=blue1"></div>'
 
 def pill(text):
     return (f'<span class="inline-flex items-center gap-[8px] rounded-full border border-[#e7e9ec] bg-white text-[#0f0f11] px-[14px] py-[6px] text-[13px] font-medium">'

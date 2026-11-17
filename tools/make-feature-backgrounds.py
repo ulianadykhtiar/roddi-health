@@ -22,7 +22,7 @@ def hexc(h):
     h = h.lstrip('#')
     return np.array([int(h[i:i + 2], 16) for i in (0, 2, 4)], dtype=np.float32)
 
-CREAM, POWDER, BLUSH, ROSE, DEEP = map(hexc, ['#fbf3ee', '#fbe2e4', '#f6c5d1', '#ee9fb8', '#e08aa8'])
+CREAM, POWDER, BLUSH, ROSE, DEEP = map(hexc, ['#fbf3ee', '#fbe2e4', '#f6c5d1', '#96c0f7', '#76adf4'])
 PEACH, BEIGE, SAND, WHITE = map(hexc, ['#f8cdb6', '#f1dfcb', '#e9cfb4', '#ffffff'])
 
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)

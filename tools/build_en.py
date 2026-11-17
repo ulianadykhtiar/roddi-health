@@ -105,7 +105,7 @@ def json_ld(name, lang, page, url):
     graph = []
     if name == "index.html":
         graph = [
-            {"@type": "Organization", "@id": org, "name": seo["name"], "url": site + "/", "logo": site + "/assets/vector.svg",
+            {"@type": "Organization", "@id": org, "name": seo["name"], "url": site + "/", "logo": site + "/assets/vector.svg?v=blue1",
              "email": seo["email"], "sameAs": seo["sameAs"]},
             website,
             {"@type": "SoftwareApplication", "name": seo["name"], "url": url, "applicationCategory": "HealthApplication",
@@ -132,7 +132,7 @@ def page_path(name, lang):
 def seo_head(name, lang):
     info = seo["pages"][name]
     page = info[lang]
-    lines = ["<title>%s</title>" % esc(page["title"]), '<link rel="icon" type="image/svg+xml" href="/assets/vector.svg">']
+    lines = ["<title>%s</title>" % esc(page["title"]), '<link rel="icon" type="image/svg+xml" href="/assets/vector.svg?v=blue1">']
     if info.get("noindex"):
         lines.append('<meta name="robots" content="noindex">')
         return "\n  ".join(lines)

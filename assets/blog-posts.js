@@ -24,17 +24,17 @@
  *   featured — the first featured post (per filter) is shown as the large card
  */
 var BLOG_RODENTS = [
-  { key: 'rat',        label: 'Щури',           tint: '#f3e8ef' },
-  { key: 'hamster',    label: 'Хом’яки',        tint: '#f3e8ef' },
+  { key: 'rat',        label: 'Щури',           tint: '#e3ecf8' },
+  { key: 'hamster',    label: 'Хом’яки',        tint: '#e3ecf8' },
   { key: 'guinea-pig', label: 'Морські свинки', tint: '#f2f2f4' },
-  { key: 'chinchilla', label: 'Шиншили',        tint: '#f3e8ef' },
-  { key: 'degu',       label: 'Дегу',           tint: '#f3e8ef' },
-  { key: 'mouse',      label: 'Миші',           tint: '#f3e8ef' },
-  { key: 'rabbit',     label: 'Кролики',        tint: '#f3e8ef' }
+  { key: 'chinchilla', label: 'Шиншили',        tint: '#e3ecf8' },
+  { key: 'degu',       label: 'Дегу',           tint: '#e3ecf8' },
+  { key: 'mouse',      label: 'Миші',           tint: '#e3ecf8' },
+  { key: 'rabbit',     label: 'Кролики',        tint: '#e3ecf8' }
 ];
 
 var BLOG_TOPICS = {
-  'Симптоми':    '#a45588',
+  'Симптоми':    '#3172c8',
   'Харчування':  '#2f9e5b',
   'Догляд':      '#e0a800',
   'Невідкладне': '#e5484d'
