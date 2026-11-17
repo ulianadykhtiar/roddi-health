@@ -22,4 +22,4 @@ with tempfile.TemporaryDirectory() as tmp:
     r = subprocess.run(['./node_modules/.bin/tailwindcss', '-i', 'in.css', '-o', str(out), '--minify'], cwd=tmp)
     if r.returncode:
         sys.exit(r.returncode)
-print('assets/tailwind.css written,', out.stat().st_size, 'bytes')
+print('assets/tailwind.css?v=blue1 written,', out.stat().st_size, 'bytes')

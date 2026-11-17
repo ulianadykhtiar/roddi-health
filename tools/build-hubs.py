@@ -23,7 +23,7 @@ COPY = {
                intro='Articles about %s are collected here: %s. Every article lists its sources and the date the facts were checked. They are reference material and do not replace a vet.',
                all='All blog articles', row='By animal', others='Other animals', read='Read', count=('article', 'articles', 'articles'), photo='Photo'),
 }
-TOPIC_COLOR = {'Симптоми': '#a45588', 'Харчування': '#2f7d4f', 'Догляд': '#8a6500', 'Невідкладне': '#c62828'}
+TOPIC_COLOR = {'Симптоми': '#3172c8', 'Харчування': '#2f7d4f', 'Догляд': '#8a6500', 'Невідкладне': '#c62828'}
 
 
 def plural(n, forms, lang):

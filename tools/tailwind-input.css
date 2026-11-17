@@ -1,4 +1,4 @@
-/* Input for the static Tailwind build: python3 tools/build-css.py (writes assets/tailwind.css).
+/* Input for the static Tailwind build: python3 tools/build-css.py (writes assets/tailwind.css?v=blue1).
    Classes are read from the pages and from the scripts that create markup (cards, banner, forms). */
 @import "tailwindcss";
 @source "../index.html";

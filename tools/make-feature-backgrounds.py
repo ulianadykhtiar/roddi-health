@@ -2,7 +2,7 @@
 
     python3 tools/make-feature-backgrounds.py
 
-Writes assets/features/soft-1.jpg … soft-4.jpg (1600×1000): rose, powder-pink and
+Writes assets/features/soft-1.jpg?v=blue1 … soft-4.jpg (1600×1000): rose, powder-pink and
 beige light, painted as blurred motion, one look per feature:
     1 swirl        colour spinning around a point
     2 sweep        diagonal streaks, like a camera moved while shooting
@@ -22,7 +22,7 @@ def hexc(h):
     h = h.lstrip('#')
     return np.array([int(h[i:i + 2], 16) for i in (0, 2, 4)], dtype=np.float32)
 
-CREAM, POWDER, BLUSH, ROSE, DEEP = map(hexc, ['#fbf3ee', '#fbe2e4', '#f6c5d1', '#ee9fb8', '#e08aa8'])
+CREAM, POWDER, BLUSH, ROSE, DEEP = map(hexc, ['#fbf3ee', '#fbe2e4', '#f6c5d1', '#96c0f7', '#76adf4'])
 PEACH, BEIGE, SAND, WHITE = map(hexc, ['#f8cdb6', '#f1dfcb', '#e9cfb4', '#ffffff'])
 
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)

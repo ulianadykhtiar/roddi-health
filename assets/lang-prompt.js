@@ -54,7 +54,7 @@
       '.lp-box{box-sizing:border-box;width:min(400px,calc(100vw - 32px));padding:28px 24px 24px;border-radius:28px;background:#fff;text-align:center;box-shadow:0 24px 64px -24px rgba(15,15,17,.5)}' +
       '.lp-t{margin:0 0 4px;font-size:22px;line-height:1.15;font-weight:600;letter-spacing:-.02em}.lp-s{margin:0 0 20px;color:#6e727a}' +
       '.lp-row{display:flex;gap:10px}.lp-b{flex:1;min-height:48px;border:0;border-radius:999px;font:500 15px Onest,system-ui,sans-serif;cursor:pointer;background:#fff;color:#0f0f11;box-shadow:inset 0 0 0 1px #d9dce1;transition:translate .2s ease}' +
-      '.lp-b:hover{translate:0 -1px}.lp-b.is-main{background:#0f0f11;color:#fff;box-shadow:none}.lp-b:focus-visible{outline:2px solid #a45588;outline-offset:2px}' +
+      '.lp-b:hover{translate:0 -1px}.lp-b.is-main{background:#0f0f11;color:#fff;box-shadow:none}.lp-b:focus-visible{outline:2px solid #3172c8;outline-offset:2px}' +
       '@media (prefers-reduced-motion:reduce){.lp-b{transition:none}}';
     d.head.appendChild(st);
     var dlg = d.createElement('dialog');

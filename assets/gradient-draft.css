@@ -16,12 +16,12 @@
 /* ---------------- "До і після": one big gradient panel ---------------- */
 /* clip-path rounds the corners for sure: Safari ignores overflow+border-radius when a child animates. */
 .hg-ba > div { position: relative; isolation: isolate; overflow: hidden; overflow: clip; border-radius: 44px; clip-path: inset(0 round 44px); padding: clamp(22px, 4.5vw, 64px); }
-.hg-ba > div::before { content: ""; position: absolute; inset: -12%; z-index: -2; background: url(features/pastel-ba.jpg) center / cover; animation: hg-pan 18s ease-in-out infinite alternate; }
+.hg-ba > div::before { content: ""; position: absolute; inset: -12%; z-index: -2; background: url(features/pastel-ba.jpg?v=blue1) center / cover; animation: hg-pan 18s ease-in-out infinite alternate; }
 .hg-ba > div::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hg-noise) 0 0 / 240px; pointer-events: none; }
-.hg-ba .text-\[\#6e727a\] { color: #4b4550; }
+.hg-ba .text-\[\#6e727a\] { color: #404955; }
 /* The table lies on frosted glass; the black "with the app" column keeps the contrast. */
 .hg-ba .ba-table { background: rgba(255,255,255,.55); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); box-shadow: 0 0 0 1px rgba(255,255,255,.6); }
-.hg-ba .ba-no { border-top-color: rgba(255,255,255,.7); color: #5a5460; }
+.hg-ba .ba-no { border-top-color: rgba(255,255,255,.7); color: #4f5865; }
 @media (max-width: 639px) {
   .hg-ba > div { border-radius: 30px; clip-path: inset(0 round 30px); padding: 18px; }
   /* The table runs edge to edge of the pastel panel; the panel's clip rounds its bottom corners. */
@@ -31,13 +31,13 @@
 
 /* ---------------- FAQ: the "still have questions" card ---------------- */
 .hg-ask { position: relative; isolation: isolate; overflow: hidden; clip-path: inset(0 round 28px); }
-.hg-ask::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/pastel-ask.jpg) center / cover; animation: hg-pan 17s ease-in-out infinite alternate; }
+.hg-ask::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/pastel-ask.jpg?v=blue1) center / cover; animation: hg-pan 17s ease-in-out infinite alternate; }
 .hg-ask::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hg-noise) 0 0 / 240px; pointer-events: none; }
-.hg-ask p { color: #4b4550; }
+.hg-ask p { color: #404955; }
 
 @media (prefers-reduced-motion: reduce) { .hg-dome img, .hg-ba > div::before, .hg-ask::before { animation: none; } }
 
 /* ---------------- the page's small accents, in the same palette ---------------- */
-header:has(> nav)::before { background: linear-gradient(180deg, rgba(239,223,233,0) 0%, #efdfe9 46%, #f6ebe9 58%, rgba(255,248,238,0) 100%); }
-.w-pet img { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #e2c5d9; }
+header:has(> nav)::before { background: linear-gradient(180deg, rgba(216,229,246,0) 0%, #d8e5f6 46%, #e9f0f8 58%, rgba(255,248,238,0) 100%); }
+.w-pet img { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #b8d0ef; }
 .fp-glow::after { content: ""; position: absolute; inset: 0; background: var(--hg-noise) 0 0 / 240px; pointer-events: none; }

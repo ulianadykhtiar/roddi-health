@@ -1394,7 +1394,7 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e(title)} | Roddi Health</title>
-  <link rel="icon" type="image/svg+xml" href="{up}assets/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="{up}assets/favicon.svg?v=blue1">
   <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="{up}assets/apple-touch-icon.png">
   <meta name="description" content="{e(desc)}">
@@ -1412,13 +1412,13 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{up}assets/tailwind.css?v=1">
-  <link rel="stylesheet" href="{up}assets/styles.css?v=3">
-  <script src="{up}assets/lang-prompt.js?v=2"></script>
-  <script src="{up}assets/clarity.js?v=3"></script>
-  <link rel="stylesheet" href="{up}assets/theme.css">
-  <link rel="stylesheet" href="{up}assets/app-home.css?v=47">
-  <link rel="stylesheet" href="{up}assets/pages.css?v=7">
+  <link rel="stylesheet" href="{up}assets/tailwind.css?v=blue1">
+  <link rel="stylesheet" href="{up}assets/styles.css?v=blue1">
+  <script src="{up}assets/lang-prompt.js?v=blue1"></script>
+  <script src="{up}assets/clarity.js?v=blue1"></script>
+  <link rel="stylesheet" href="{up}assets/theme.css?v=blue1">
+  <link rel="stylesheet" href="{up}assets/app-home.css?v=blue1">
+  <link rel="stylesheet" href="{up}assets/pages.css?v=blue1">
 </head>
 <body class="page-soft">
 <a class="skip-link" href="#main">{SKIP[lang]}</a>

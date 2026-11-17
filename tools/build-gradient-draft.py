@@ -31,7 +31,7 @@ assert n == 1
 
 # Hero: both stages (desktop collage and the narrower one) hold the same pair of pale circles.
 dome = ('<div data-reveal="zoom" data-d="420" class="hg-dome -translate-x-1/2 absolute left-1/2 size-[1292px] top-[534px]">'
-        '<img alt="" src="assets/features/pastel-hero.jpg"></div>')
+        '<img alt="" src="assets/features/pastel-hero.jpg?v=blue1"></div>')
 out, n = re.subn(r'<div class="-translate-x-1/2 absolute contents left-1/2 top-\[534px\]">.*?src="assets/ellipse11\.svg" />\s*</div>\s*</div>',
                  lambda m: dome, out, flags=re.S)
 assert n == 2, n
