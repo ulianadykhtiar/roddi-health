@@ -205,3 +205,78 @@
 .fp .w-tags span { padding: 9px 14px; border-radius: 999px; background: var(--fp-soft); color: var(--fp-ink); font-size: 13.5px; font-weight: 700; }
 .fp .w-tags span.warn { background: var(--fp-ink); color: #fff; }
 .fp .w-glass { background: rgba(255,255,255,.94); }
+
+
+/* ---------------- data-viz widgets (gradient rings, slider, battery bar, dot matrix) ----------------
+   Shared with the hero widgets. Soft squircle cards, big numbers with small units,
+   inner shadows on the tracks, colour only where the data is. */
+.fp .w, .hw { background: linear-gradient(180deg, #fff 0%, #fbfbfe 100%); border-radius: 36px; box-shadow: 0 1px 0 #fff inset, 0 22px 38px -26px rgba(22,36,77,.38); }
+.g-lab { display: flex; align-items: center; gap: 7px; font-size: 15px; font-weight: 600; color: #6b7494; white-space: nowrap; }
+.g-lab svg { display: block; }
+.g-lab.on-tint { color: rgba(255,255,255,.92); }
+.g-num { margin-top: 10px; font-size: 38px; font-weight: 650; line-height: 1; letter-spacing: -0.03em; color: var(--fp-ink, #16244d); }
+.g-num small { margin-left: 4px; font-size: 18px; font-weight: 600; letter-spacing: 0; color: #8a90a8; }
+.g-num.on-tint, .g-num.on-tint small { color: #fff; text-shadow: 0 1px 6px rgba(150,80,10,.18); }
+.g-num.on-tint small { color: rgba(255,255,255,.85); }
+.g-sub { margin-top: 6px; font-size: 14px; font-weight: 600; color: #4f86ee; }
+.g-sub.on-tint { color: rgba(255,255,255,.88); }
+.g-b { font-size: 17px; font-weight: 700; color: var(--fp-ink, #16244d); }
+.g-center { display: flex; justify-content: center; margin: 14px 0 12px; }
+.g-chips { display: flex; justify-content: space-between; gap: 8px; margin-top: 14px; }
+.g-chip { padding: 7px 14px; border-radius: 13px; background: rgba(255,255,255,.78); font-size: 14px; font-weight: 700; white-space: nowrap; box-shadow: 0 1px 2px rgba(22,36,77,.06); }
+.g-chip.up { color: #1f9a58; background: #e6f6ed; }
+.g-chip.down { color: #e5484d; background: #fdecec; }
+.w-tint .g-chip.up, .w-tint .g-chip.down { background: rgba(255,255,255,.82); }
+
+/* ring with a gradient arc, inset track and a raised centre */
+.g-ring { position: relative; display: inline-grid; flex: none; place-items: center; width: var(--s, 110px); height: var(--s, 110px); border-radius: 50%;
+          background: #eff0f5; box-shadow: inset 0 3px 8px rgba(22,36,77,.14), 0 1px 0 #fff; }
+.g-ring::before { content: ""; position: absolute; inset: 0; border-radius: 50%;
+          background: conic-gradient(from 0deg, var(--c1, #f2a93b), var(--c2, #ee5a2a) calc(var(--p, 50) * 1%), transparent 0);
+          -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--t, 14px)), #000 calc(100% - var(--t, 14px) + 1px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - var(--t, 14px)), #000 calc(100% - var(--t, 14px) + 1px)); }
+.g-ring::after { content: ""; position: absolute; inset: var(--t, 14px); border-radius: 50%; background: linear-gradient(180deg, #fff, #f7f8fb); box-shadow: 0 3px 10px rgba(22,36,77,.12); }
+.g-ring b { position: relative; z-index: 1; font-size: calc(var(--s, 110px) * .22); font-weight: 650; letter-spacing: -0.02em; color: var(--fp-ink, #16244d); }
+.g-two { display: flex; justify-content: space-between; gap: 10px; }
+.g-two span { display: flex; flex-direction: column; gap: 3px; }
+.g-two small { font-size: 13px; font-weight: 600; color: #6b7494; }
+.g-two b { font-size: 19px; font-weight: 650; color: var(--fp-ink, #16244d); }
+.g-two.rings { justify-content: space-around; margin-top: 12px; }
+.g-ringrow { display: flex; align-items: center; gap: 14px; margin-top: 12px; }
+.g-ringrow .g-sub { margin-top: 3px; line-height: 1.3; }
+.g-dateRow { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; }
+.g-date { display: flex; flex-direction: column; font-size: 20px; font-weight: 500; line-height: 1.12; color: #6b7494; }
+.g-date b { font-size: 30px; font-weight: 650; color: var(--fp-ink, #16244d); }
+.g-date small { font-size: 18px; font-weight: 500; color: #6b7494; }
+
+/* segmented battery bar */
+.g-bat { display: flex; gap: 4px; margin-top: 16px; padding: 6px; border-radius: 16px; background: rgba(255,255,255,.88); box-shadow: inset 0 1px 3px rgba(80,50,10,.12); }
+.g-bat i { flex: 1; height: 28px; border-radius: 6px; background: #e7e9ef; }
+.g-bat i.on { background: linear-gradient(180deg, #f8c25a, #ee8a1f); }
+
+/* gradient slider with a scale */
+.g-slider { position: relative; height: 16px; margin-top: 18px; border-radius: 99px; box-shadow: inset 0 2px 4px rgba(22,36,77,.16), 0 0 0 5px #f4f5f9;
+            background: linear-gradient(90deg, #f0642a 0%, #f7b84a 28%, #eaf0dc 50%, #a9c4f6 72%, #5b4fd6 100%); }
+.g-slider i { position: absolute; left: var(--x, 50%); top: 50%; width: 22px; height: 22px; border-radius: 50%; translate: -50% -50%; background: #fff; box-shadow: 0 2px 8px rgba(22,36,77,.3), inset 0 -2px 3px rgba(22,36,77,.08); }
+.g-scale { display: flex; justify-content: space-between; margin: 18px -6px 0; padding: 10px 6px 0; border-top: 1px solid #eef0f5; font-size: 12.5px; font-weight: 500; color: #7a809b; }
+
+/* dot matrix */
+.g-dots { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; }
+.g-col { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.g-grid { display: grid; grid-template-columns: repeat(var(--w, 4), 8px); gap: 3.5px; }
+.g-grid i { width: 8px; height: 8px; border-radius: 50%; background: color-mix(in srgb, var(--cd) 14%, #fff); }
+.g-grid i.on { background: var(--cd); }
+.g-col small { font-size: 12.5px; font-weight: 600; color: var(--cd); }
+
+/* tinted card */
+.fp .w.w-tint { background: linear-gradient(180deg, #f1b657 0%, #f5cf8c 52%, #fcefd6 100%); box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 22px 38px -26px rgba(190,110,20,.55); }
+.g-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+.g-tiles div { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 4px; border-radius: 22px; background: #f0f1f7; font-size: 14px; font-weight: 700; color: var(--fp-ink, #16244d); box-shadow: inset 0 1px 0 #fff; }
+.g-tiles div.on { background: var(--fp-ink, #16244d); color: #fff; }
+.g-tiles i { font-size: 22px; font-style: normal; line-height: 30px; }
+.g-tiles img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; }
+.g-hist { display: flex; flex-direction: column; margin-top: 8px; }
+.g-hist span { display: flex; align-items: baseline; justify-content: space-between; padding: 10px 0; border-top: 1px solid #eef0f5; }
+.g-hist span:first-child { border-top: 0; }
+.g-hist b { font-size: 15px; font-weight: 650; color: var(--fp-ink, #16244d); }
+.g-hist small { font-size: 13px; font-weight: 500; color: #7a809b; }

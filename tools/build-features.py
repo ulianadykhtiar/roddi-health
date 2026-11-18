@@ -73,71 +73,111 @@ def opt(icon, label, right='', on=False):
 def steps(n, total):
     return '<div class="a-steps">' + ''.join(f'<i{" class=on" if i < n else ""}></i>' for i in range(total)) + '</div>'
 
+# Data-viz pieces, in the style of premium widget apps: gradient rings, a gradient slider with a
+# scale, segmented battery bars, dot matrices, a tinted card. Their CSS is the .g-* block in
+# assets/features-pin.css (shared with the hero widgets).
+BLUE, VIOLET, AMBER, CORAL, PINK, GREEN = '#5b8def', '#6a55dc', '#f2a93b', '#ee5a2a', '#ec5b8e', '#2fb36d'
+L['bolt'] = '<path d="M13 2.5 4.500 13.500h6.500L10 21.500l8.500-11H12z"/>'
+L['face'] = '<circle cx="12" cy="12" r="9"/><path d="M8.500 14.500c1 1.300 2.100 2 3.500 2s2.500-.7 3.500-2M9 9.500v.5M15 9.500v.5"/>'
+L['note'] = '<path d="M6 3.500h9l3.500 3.500v13.500H6z"/><path d="M9 11h6M9 15h4"/>'
+
+def lab(icon, text, color='#6b7494', cls=''):
+    return f'<div class="g-lab {cls}"><span style="color:{color}">{ic(icon, 18)}</span>{text}</div>'
+
+def num(value, unit='', cls=''):
+    u = f'<small>{unit}</small>' if unit else ''
+    return f'<div class="g-num {cls}">{value}{u}</div>'
+
+def ring(p, text, s=112, c1=AMBER, c2=CORAL, t=15):
+    return f'<span class="g-ring" style="--p:{p};--s:{s}px;--t:{t}px;--c1:{c1};--c2:{c2}"><b>{text}</b></span>'
+
+def bat(n, total, cls=''):
+    return f'<div class="g-bat {cls}">' + ''.join(f'<i{" class=on" if i < n else ""}></i>' for i in range(total)) + '</div>'
+
+def dots(cols, rows=5, w=4):
+    """cols: [(filled dots, colour, label)]; dots fill from the bottom, one column per item."""
+    out = []
+    for n, color, name in cols:
+        cells = ''.join(f'<i{" class=on" if rows * w - 1 - idx < n else ""}></i>' for idx in range(rows * w))
+        out.append(f'<div class="g-col" style="--cd:{color}"><div class="g-grid" style="--w:{w}">{cells}</div><small>{name}</small></div>')
+    return '<div class="g-dots">' + ''.join(out) + '</div>'
+
+def slider(x, labels):
+    return (f'<div class="g-slider" style="--x:{x}%"><i></i></div>'
+            '<div class="g-scale">' + ''.join(f'<span>{t}</span>' for t in labels) + '</div>')
+
 def scene_reminders():
-    return f"""<div class="w" style="{at(40, 70, 350, 2)}">
-  <div class="a-top">{steps(1, 3)}{duo(MARTIN, ARCHIE)}</div>
-  <h4 class="a-h">Ранковий раунд</h4><p class="a-p">Мартін і Арчі · 3 препарати</p>
-  {opt(svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>', 22, 2.6), 'Інгаляція', '15 хв', True)}
-  {opt(ic('pill'), 'Мелоксикам', '0,05 мл')}
-  {opt(ic('drop'), 'Очні краплі', '1 крапля')}
-  <div class="a-cta">Відмітити все</div>
+    return f"""<div class="w w-tint" style="{at(22, 44, 304, 2)}">
+  {lab('bolt', 'Курс антибіотика', '#fff', 'on-tint')}
+  {num('60', '%', 'on-tint')}
+  <p class="g-sub on-tint">День 6 з 10 · Арчі</p>
+  {bat(6, 10)}
+  <div class="g-chips"><span class="g-chip up">Далі о 20:00</span><span class="g-chip down">ще 4 дні</span></div>
 </div>
-<div style="{at(20, 8, 310, 3)}">{notif('Час дати Мелоксикам 💊', 'Мартін · 0,05 мл')}</div>
-<div class="w" style="{at(382, 316, 172, 3)}"><h4 class="a-h" style="font-size:17px">Курс антибіотика</h4><p class="a-p">день 6 з 10 · Арчі</p>
-  <div style="margin-top:12px">{steps(6, 10)}</div></div>"""
+<div class="w" style="{at(344, 16, 206, 3)}">
+  {lab('pill', 'Дози сьогодні', AMBER)}
+  <div class="g-center">{ring(33, '1/3', 104)}</div>
+  <div class="g-two"><span><small>Дано</small><b>1</b></span><span><small>Лишилось</small><b>2</b></span></div>
+</div>
+<div style="{at(34, 308, 330, 4)}">{notif('Час дати Мелоксикам 💊', 'Мартін · 0,05 мл')}</div>
+<div class="w" style="{at(388, 252, 162, 3)}">
+  {lab('drop', 'Очні краплі', BLUE)}
+  {num('1', 'крапля')}
+  <p class="g-sub">Арчі · 21:00</p>
+</div>"""
 
 def scene_state():
-    return f"""<div class="w" style="{at(22, 30, 360, 2)}">
-  <div class="a-top"><span class="a-p" style="margin:0">Вага · Мартін</span><span class="a-badge">+3 г</span></div>
-  <div class="w-big" style="margin-top:6px">338 <small>г</small></div>
-  <div class="w-seg"><span class="on">Тиждень</span><span>Місяць</span><span>Рік</span></div>
-  <div class="relative mt-[14px]">
-    <svg viewBox="0 0 328 110" class="block h-[110px] w-full overflow-visible" aria-hidden="true">
-      <defs><linearGradient id="fp-wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16244d" stop-opacity=".14"/><stop offset="1" stop-color="#16244d" stop-opacity="0"/></linearGradient></defs>
-      <path d="M0 74 C30 74 40 60 70 62 S110 84 140 76 S190 44 222 48 S280 28 328 22 L328 110 L0 110 Z" fill="url(#fp-wg)"/>
-      <path d="M0 74 C30 74 40 60 70 62 S110 84 140 76 S190 44 222 48 S280 28 328 22" fill="none" stroke="#16244d" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="222" cy="48" r="6" fill="#fff" stroke="#16244d" stroke-width="3"/>
-    </svg>
-    <span class="w-tip" style="left:67.7%;top:42%">Пт · 337 г</span>
-  </div>
+    return f"""<div class="w" style="{at(22, 22, 360, 2)}">
+  <div class="a-top">{lab('chart', 'Вага · Мартін', BLUE)}<span class="g-chip up">+3 г</span></div>
+  {num('338', 'г')}
+  <p class="g-sub">за тиждень · норма 320–360</p>
+  {slider(47, ['300', '320', '340', '360', '380'])}
 </div>
-<div class="w" style="{at(206, 274, 344, 3)}">
-  <h4 class="a-h" style="font-size:17px">Симптоми · Арчі</h4>
-  <div class="a-days"><span><i>😊</i>Пн</span><span><i>😊</i>Вт</span><span><i>😐</i>Ср</span><span><i class="bad">🤧</i>Чт</span><span><i>😐</i>Пт</span><span><i>😊</i>Сб</span><span><i class="empty"></i>Нд</span></div>
+<div class="w" style="{at(22, 232, 316, 3)}">
+  {lab('face', 'Симптоми · Арчі', PINK)}
+  {dots([(14, BLUE, 'Пн'), (11, BLUE, 'Вт'), (7, AMBER, 'Ср'), (3, PINK, 'Чт'), (8, AMBER, 'Пт'), (13, BLUE, 'Сб'), (15, BLUE, 'Нд')], 5, 3)}
 </div>
-<div class="w w-glass" style="{at(396, 120, 156, 4)};padding:14px 16px"><p class="a-p" style="margin:0">Нотатка · Чт</p><b class="mt-[4px] block text-[15px] leading-[1.3]">Чхав зранку, апетит нормальний</b></div>"""
+<div class="w" style="{at(358, 222, 192, 4)}">
+  {lab('note', 'Апетит', VIOLET)}
+  <div class="g-center" style="margin:12px 0 8px">{ring(80, '80%', 96, '#7aa8ff', VIOLET, 14)}</div>
+  <p class="g-sub" style="text-align:center;margin:0">чхав, але їсть добре</p>
+</div>"""
 
 def scene_vet():
-    return f"""<div class="w" style="{at(20, 14, 310, 2)}">
-  <div class="flex items-center gap-[14px]"><span class="w-date"><small>Пн</small><b>9</b><small>лист</small></span>
-    <div class="min-w-0"><h4 class="a-h" style="margin:0;font-size:20px">Огляд у ветеринара</h4><p class="a-p">Завтра, 11:00 · Мартін</p></div></div>
-  <div style="margin-top:12px">
-  {opt(svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>', 22, 2.6), 'Історія ліків за місяць', '', True)}
-  {opt(ic('chart'), 'Графік ваги')}</div>
+    return f"""<div class="w" style="{at(22, 20, 262, 2)}">
+  {lab('clip', 'Візит · 11:00', VIOLET)}
+  <div class="g-dateRow"><div class="g-date"><small>Пн</small><b>9</b><small>листопада</small></div>{ring(67, '2/3', 96, AMBER, CORAL, 13)}</div>
+  <div class="g-two rings"><span>{ring(100, '3/3', 78, '#7aa8ff', VIOLET, 11)}</span><span>{ring(0, '–', 78, AMBER, CORAL, 11)}</span></div>
 </div>
-<div class="w" style="{at(250, 196, 300, 3)}">
-  <div class="a-top"><h4 class="a-h" style="font-size:17px">Історія Мартіна</h4><span class="a-badge">12</span></div>
-  {opt(ic('clip', 20), 'Огляд', '28 жовт')}
-  {opt(ic('clip', 20), 'Аналіз крові', '14 жовт')}
-  {opt(ic('clip', 20), 'Зуби', '30 вер')}
+<div class="w" style="{at(304, 38, 246, 3)}">
+  {lab('tag', 'Огляд · Мартін', AMBER)}
+  <div class="g-center">{ring(75, '75%', 112, AMBER, CORAL, 15)}</div>
+  <div class="g-two"><span><small>Клініка</small><b>«Хвостик»</b></span><span><small>Записів</small><b>12</b></span></div>
+</div>
+<div class="w" style="{at(304, 292, 246, 4)}">
+  {lab('clip', 'Історія Мартіна', '#6b7494')}
+  <div class="g-hist"><span><b>Огляд</b><small>28 жовт</small></span><span><b>Аналіз крові</b><small>14 жовт</small></span></div>
 </div>"""
 
 def scene_notes():
-    return f"""<div class="w" style="{at(20, 24, 350, 2)}">
+    return f"""<div class="w" style="{at(20, 22, 336, 2)}">
   <div class="a-opt on" style="margin-top:0">{ic('search')}<b>алергія</b><em>3 збіги</em></div>
-  <div class="a-tiles" style="margin-top:12px;grid-template-columns:1fr 1fr 1fr">
-    <div class="a-tile on" style="padding:12px 4px"><i style="font-size:22px;margin:0 0 4px">🐾</i>Усі</div>
-    <div class="a-tile" style="padding:12px 4px"><img alt="" src="{MARTIN}">Мартін</div>
-    <div class="a-tile" style="padding:12px 4px"><img alt="" src="{ARCHIE}">Арчі</div>
+  <div class="g-tiles">
+    <div class="on"><i>🐾</i>Усі</div>
+    <div><img alt="" src="{MARTIN}">Мартін</div>
+    <div><img alt="" src="{ARCHIE}">Арчі</div>
   </div>
   {opt(ic('tag', 20), 'Алергія на кедр', 'Арчі')}
-  {opt(ic('clip', 20), 'Паперовий наповнювач', 'Мартін')}
 </div>
-<div class="w" style="{at(330, 256, 222, 3)}">
+<div class="w" style="{at(372, 36, 178, 3)}">
+  {lab('note', 'Нотатки', VIOLET)}
+  {num('24')}
+  {dots([(14, BLUE, 'Ліки'), (9, AMBER, 'Вага'), (6, PINK, 'Стан')], 4, 3)}
+</div>
+<div class="w" style="{at(300, 240, 250, 3)}">
   <div class="w-pet"><img alt="" src="{ARCHIE}"><div><b>Арчі</b><span>Хом’як · 11 місяців</span></div></div>
   <div class="w-tags"><span class="warn">Алергія на кедр</span><span>Боїться пилососа</span><span>Гарбузове насіння</span></div>
-</div>
-<div class="w w-glass" style="{at(392, 78, 158, 4)};padding:14px 16px"><p class="a-p" style="margin:0">Профілі</p><div class="mt-[8px] flex -space-x-[8px]"><img alt="" class="size-[34px] rounded-full ring-2 ring-white" src="{MARTIN}"><img alt="" class="size-[34px] rounded-full ring-2 ring-white" src="{ARCHIE}"><img alt="" class="size-[34px] rounded-full ring-2 ring-white" src="{SKY}"></div><b class="mt-[8px] block text-[15px]">3 улюбленці</b></div>"""
+</div>"""
 
 SCENES = [scene_reminders, scene_state, scene_vet, scene_notes]
 
