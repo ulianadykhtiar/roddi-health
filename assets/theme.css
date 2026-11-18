@@ -292,17 +292,17 @@ header .z-\[6\] { background: #fff; }
 /* "Be among the first": animal photos travelling on orbits */
 section.bg-\[\#141416\] { position: relative; overflow: hidden; width: min(1120px, 100% - 2 * clamp(16px, 3vw, 40px)); margin-inline: auto; }
 section.bg-\[\#141416\] > *:not(.orbits) { position: relative; z-index: 1; }
-.orbits { position: absolute; inset: 0; pointer-events: none; --ic: 34px; }
+.orbits { position: absolute; inset: 0; pointer-events: none; --ic: 42px; }
 .orbit { --d: 430px; position: absolute; left: 50%; top: 50%; width: var(--d); height: var(--d); margin: calc(var(--d) / -2) 0 0 calc(var(--d) / -2); border: 1.5px dashed rgba(255,255,255,.18); border-radius: 50%; animation: orbit-spin var(--t, 40s) linear infinite; }
 .orbit.o1 { --d: 590px; --t: 80s; }
 .orbit.o2 { --d: 700px; --t: 112s; animation-direction: reverse; }
 @media (min-width: 768px) {
-  .orbits { --ic: 40px; }
+  .orbits { --ic: 50px; }
   .orbit.o1 { --d: 800px; }
   .orbit.o2 { --d: 920px; }
 }
 @media (min-width: 1100px) {
-  .orbits { --ic: 50px; }
+  .orbits { --ic: 62px; }
   .orbit.o1 { --d: 820px; }
   .orbit.o2 { --d: 1010px; }
 }
