@@ -19,6 +19,32 @@
     current = i;
     links.forEach(function (l, k) { l.classList.toggle('is-active', k === i); l.setAttribute('aria-current', k === i ? 'true' : 'false'); });
     slides.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
+    runNumbers(slides[i]);
+  }
+
+  // Numbers in the active card count up from data-from to their value; [data-wob] ones then keep
+  // ticking by a point or two, like live data. Without motion (or JS) they simply show the value.
+  var calm = matchMedia('(prefers-reduced-motion: reduce)');
+  var wobbleTimer = 0;
+  function show(el, v) { el.textContent = Math.round(v); }
+  function runNumbers(slide) {
+    clearInterval(wobbleTimer);
+    if (!slide || calm.matches || !wide.matches) return;
+    var nums = [].slice.call(slide.querySelectorAll('[data-cnt]'));
+    var t0 = performance.now();
+    nums.forEach(function (el) { if (el.dataset.from) show(el, +el.dataset.from); });
+    (function tick(now) {
+      var k = Math.min(((now || performance.now()) - t0 - 250) / 1300, 1);
+      if (k < 0) { requestAnimationFrame(tick); return; }
+      var e = 1 - Math.pow(1 - k, 3);
+      nums.forEach(function (el) { if (el.dataset.from) show(el, +el.dataset.from + (+el.dataset.cnt - +el.dataset.from) * e); });
+      if (k < 1) requestAnimationFrame(tick);
+    })();
+    wobbleTimer = setInterval(function () {
+      slide.querySelectorAll('[data-wob]').forEach(function (el) {
+        var v = +el.dataset.cnt; show(el, v + Math.round((Math.random() - .5) * 4));
+      });
+    }, 1700);
   }
 
   function ease(t) { return t * t * (3 - 2 * t); }
