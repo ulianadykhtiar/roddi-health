@@ -382,3 +382,38 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .hb img { position: absolute; left: var(--ix, -10%); top: var(--iy, -8%); width: var(--iw, 120%); max-width: none; }
 .hi { position: absolute; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle at 32% 26%, #fff 0%, #eaf2ff 55%, #cfe0fb 100%);
       box-shadow: 0 0 0 4px #fff, 0 16px 22px -10px rgba(30,70,140,.4); font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
+
+/* ---- Hero phone, redrawn: no black frame, only the screen with a thin glass edge and a soft lift ---- */
+.ph2 { position: absolute; width: 343px; height: 745px; overflow: hidden; border-radius: 56px; background: #fff; font-family: 'Onest', sans-serif; text-align: left; color: #16244d;
+       box-shadow: 0 0 0 6px rgba(255,255,255,.55), 0 0 0 7px rgba(255,255,255,.95), 0 56px 80px -38px rgba(26,64,150,.62), 0 20px 34px -22px rgba(26,64,150,.4); }
+.ph2-top { position: relative; height: 218px; padding: 62px 22px 0; color: #fff; background: radial-gradient(120% 90% at 15% 0%, #62b0e6 0%, rgba(98,176,230,0) 60%), linear-gradient(165deg, #3f8bda 0%, #2b5fc2 100%); }
+.ph2-top::after { content: ""; position: absolute; inset: 0; background: url(features/grain.png) 0 0 / 240px; opacity: .5; mix-blend-mode: soft-light; pointer-events: none; }
+.ph2-isl { position: absolute; left: 50%; top: 12px; z-index: 2; width: 104px; height: 31px; margin-left: -52px; border-radius: 20px; background: #0b0b0f; }
+.ph2-sb { position: absolute; left: 30px; right: 28px; top: 17px; z-index: 1; display: flex; justify-content: space-between; font-size: 15px; }
+.ph2-sb span { font-size: 9px; letter-spacing: 2px; opacity: .9; }
+.ph2-top p { position: relative; z-index: 1; font-size: 13.5px; font-weight: 500; opacity: .85; }
+.ph2-top h5 { position: relative; z-index: 1; margin-top: 4px; font-size: 29px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.05; }
+.ph2-top h5 i { font-style: normal; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; }
+.ph2-ava { position: absolute; right: 22px; top: 82px; z-index: 1; display: flex; }
+.ph2-ava img { width: 40px; height: 40px; border: 3px solid rgba(255,255,255,.9); border-radius: 50%; object-fit: cover; }
+.ph2-ava img + img { margin-left: -12px; }
+.ph2-sheet { position: absolute; left: 0; right: 0; top: 150px; bottom: 0; padding: 18px 16px; border-radius: 34px 34px 0 0; background: #fff; }
+.ph2-next { position: relative; padding: 18px; border-radius: 28px; background: linear-gradient(160deg, #1c2f66 0%, #16244d 100%); color: #fff; }
+.ph2-next small { display: inline-block; padding: 5px 11px; border-radius: 999px; background: rgba(255,255,255,.14); font-size: 12px; font-weight: 600; }
+.ph2-next h6 { margin-top: 12px; font-size: 25px; font-weight: 800; letter-spacing: -0.03em; }
+.ph2-next p { margin-top: 3px; font-size: 13.5px; opacity: .72; }
+.ph2-btn { display: flex; align-items: center; justify-content: space-between; height: 52px; margin-top: 16px; padding: 0 6px 0 22px; border-radius: 999px; background: #fff; color: #16244d; font-size: 15.5px; }
+.ph2-btn i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #16244d; color: #fff; }
+.ph2-sec { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 4px 10px; }
+.ph2-sec b { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; }
+.ph2-sec span { font-size: 13px; font-weight: 600; color: #6b7494; }
+.ph2-row { display: flex; align-items: center; gap: 12px; height: 58px; margin-top: 8px; padding: 0 16px 0 10px; border-radius: 999px; background: #f0f1f7; }
+.ph2-row.on { background: #16244d; color: #fff; }
+.ph2-chk { display: grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; border: 2px solid #c4c9dc; }
+.ph2-row.on .ph2-chk { border: 0; background: #fff; color: #16244d; }
+.ph2-row img { width: 26px; height: 26px; object-fit: contain; }
+.ph2-row b { font-size: 15.5px; font-weight: 700; letter-spacing: -0.01em; }
+.ph2-row em { margin-left: auto; font-size: 12.5px; font-style: normal; font-weight: 600; opacity: .6; white-space: nowrap; }
+.ph2-tabs { position: absolute; left: 24px; right: 24px; bottom: 20px; display: flex; justify-content: space-around; align-items: center; height: 60px; border-radius: 999px; background: rgba(255,255,255,.78); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); box-shadow: 0 10px 30px -10px rgba(22,36,77,.35), inset 0 0 0 1px rgba(255,255,255,.9); }
+.ph2-tabs i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #8a90a8; }
+.ph2-tabs i.on { background: #16244d; color: #fff; }
