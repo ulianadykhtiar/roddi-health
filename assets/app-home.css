@@ -377,11 +377,11 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 /* ---- Hero: one phone screen with pet photos in cloud frames and icon bubbles around it ---- */
 :root { --cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='33' cy='32' r='27'/%3E%3Ccircle cx='68' cy='33' r='26'/%3E%3Ccircle cx='32' cy='69' r='26'/%3E%3Ccircle cx='68' cy='68' r='27'/%3E%3Crect x='30' y='30' width='40' height='40'/%3E%3C/svg%3E"); }
 .hb { position: absolute; aspect-ratio: 1; filter: drop-shadow(0 16px 20px rgba(30,70,140,.22)); }
-.hb::before { content: ""; position: absolute; inset: -4%; background: #fff; -webkit-mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; }
+.hb::before { content: ""; position: absolute; inset: -2%; background: #fff; -webkit-mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; }
 .hb > span { position: absolute; inset: 0; overflow: hidden; background: var(--bg, #cfe0fb); -webkit-mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; }
 .hb img { position: absolute; left: var(--ix, -10%); top: var(--iy, -8%); width: var(--iw, 120%); max-width: none; }
 .hi { position: absolute; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle at 32% 26%, #fff 0%, #eaf2ff 55%, #cfe0fb 100%);
-      box-shadow: 0 0 0 4px #fff, 0 16px 22px -10px rgba(30,70,140,.4); font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
+      box-shadow: 0 0 0 2px #fff, 0 16px 22px -10px rgba(30,70,140,.4); font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
 
 /* ---- Hero phone: the app's home screen (Figma "1 · За замовчуванням") in an iPhone 17 Pro mockup ----
    Built at the real 402×874 pt screen size, then scaled to fit the hero (.ip-body). */
@@ -466,3 +466,14 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .hb.sh-blob { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M53 3C79 5 97 24 94 52 91 78 70 97 46 95 22 93 4 74 6 48 8 24 28 1 53 3Z'/%3E%3C/svg%3E"); }
 .hb.sh-flower { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='22' r='20'/%3E%3Ccircle cx='74' cy='36' r='20'/%3E%3Ccircle cx='74' cy='64' r='20'/%3E%3Ccircle cx='50' cy='78' r='20'/%3E%3Ccircle cx='26' cy='64' r='20'/%3E%3Ccircle cx='26' cy='36' r='20'/%3E%3C/svg%3E"); }
 .hb.sh-pill { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='16' y='2' width='68' height='96' rx='34'/%3E%3C/svg%3E"); }
+
+/* Hover on the photos and emoji around the phone: they stop drifting, straighten up, grow and lift;
+   the photo zooms a little inside its circle. Only where there is a real hover and motion is welcome. */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .hb, .hi { cursor: pointer; transition: scale .45s var(--spring), rotate .45s var(--spring), filter .35s, box-shadow .35s, opacity .7s var(--ease), transform .9s var(--ease); }
+  .hb:hover, .hi:hover { animation-play-state: paused; rotate: 0deg !important; z-index: 5; }
+  .hb:hover { scale: 1.1; filter: drop-shadow(0 26px 30px rgba(30,70,140,.34)); }
+  .hb img { transition: transform .6s var(--ease); }
+  .hb:hover img { transform: scale(1.1); }
+  .hi:hover { scale: 1.22; box-shadow: 0 0 0 2px #fff, 0 22px 28px -10px rgba(30,70,140,.5); }
+}
