@@ -24,7 +24,7 @@ T = {
         meta='Оновлено 19 листопада 2026', skip='Перейти до змісту', home='Головна', crumb='Політика конфіденційності', nav='Навігація',
         body=f'''
     <h2>Хто ми</h2>
-    <p>Roddi Health — додаток для здоров’я гризунів, який зараз розробляється. Сайт roddihealth.app ведуть Уляна Дихтяр і Вероніка Дихтяр, засновниці проєкту (далі «ми»). Ми відповідаємо за обробку ваших персональних даних. З будь-яких питань про ваші дані пишіть на <a href="mailto:{MAIL}">{MAIL}</a>.</p>
+    <p>Roddi Health — додаток для здоров’я гризунів, який зараз розробляється. Сайт roddihealth.app ведуть Уляна і Вероніка Дихтяр, засновниці проєкту (далі «ми»). Ми відповідаємо за обробку ваших персональних даних. З будь-яких питань про ваші дані пишіть на <a href="mailto:{MAIL}">{MAIL}</a>.</p>
     <h2 id="data">Які дані ми збираємо і навіщо</h2>
     <ul>
       <li><b>Email.</b> Ви залишаєте його у формі раннього доступу. Разом з ним ми зберігаємо дату й час, форму й сторінку, з якої ви підписалися, мову сайту та факт вашої згоди (версію її тексту). Навіщо: щоб написати вам про запуск і запросити до раннього доступу, а також час від часу надсилати новини застосунку й корисні матеріали про догляд за гризунами, щоб ви про нас не забували. Підстава: ваша згода.</li>
@@ -64,7 +64,7 @@ T = {
         meta='Updated November 19, 2026', skip='Skip to content', home='Home', crumb='Privacy Policy', nav='Navigation',
         body=f'''
     <h2>Who we are</h2>
-    <p>Roddi Health is an app for rodent health that is currently in development. The roddihealth.app website is run by Uliana Dykhtiar and Veronika Dykhtiar, the founders of the project (“we”). We are responsible for processing your personal data. For any question about your data, write to <a href="mailto:{MAIL}">{MAIL}</a>.</p>
+    <p>Roddi Health is an app for rodent health that is currently in development. The roddihealth.app website is run by Uliana and Veronika Dykhtiar, the founders of the project (“we”). We are responsible for processing your personal data. For any question about your data, write to <a href="mailto:{MAIL}">{MAIL}</a>.</p>
     <h2 id="data">What data we collect and why</h2>
     <ul>
       <li><b>Email.</b> You leave it in the early access form. With it we store the date and time, the form and page you signed up from, the site language and the fact of your consent (the version of its text). Why: to write to you about the launch and invite you to early access, and from time to time to send app news and useful materials about rodent care, so you do not forget about us. Legal basis: your consent.</li>

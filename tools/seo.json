@@ -8,7 +8,7 @@
     "index.html": {
       "path": { "uk": "/", "en": "/en" },
       "uk": {
-        "title": "Roddi Health — додаток для здоров’я щурів, хом’яків та інших гризунів",
+        "title": "Roddi Health — додаток для здоров’я гризунів",
         "description": "Нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для щурів, хом’яків, морських свинок та інших гризунів. Ранній доступ.",
         "app": "Мобільний додаток у розробці для власників гризунів: нагадування про ліки, журнал симптомів і ваги, історія візитів до ветеринара для кількох тварин.",
         "faq": [
@@ -18,7 +18,7 @@
         ]
       },
       "en": {
-        "title": "Roddi Health: health tracking app for rats, hamsters and other rodents",
+        "title": "Roddi Health: health tracking app for rodents",
         "description": "Medication reminders, symptom and weight logs and vet visit history for rats, hamsters, guinea pigs and other small pets. Join early access.",
         "app": "A mobile app in development for rodent owners: medication reminders, symptom and weight logs, and vet visit history for several pets.",
         "faq": [
