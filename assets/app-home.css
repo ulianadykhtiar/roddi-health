@@ -487,3 +487,6 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-pe { background: #dce4f2; }
 .ip-tabon { background: #eff0f7; }
 .ip-tabon b { color: #2a5fba; }
+.ip-stack { display: flex; flex: none; }
+.ip-stack .ip-pa { box-sizing: border-box; width: 32px; height: 32px; border: 2px solid #f3f5fa; }
+.ip-stack .ip-pa + .ip-pa { margin-left: -10px; }
