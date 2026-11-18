@@ -467,27 +467,23 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .hb.sh-flower { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='22' r='20'/%3E%3Ccircle cx='74' cy='36' r='20'/%3E%3Ccircle cx='74' cy='64' r='20'/%3E%3Ccircle cx='50' cy='78' r='20'/%3E%3Ccircle cx='26' cy='64' r='20'/%3E%3Ccircle cx='26' cy='36' r='20'/%3E%3C/svg%3E"); }
 .hb.sh-pill { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='16' y='2' width='68' height='96' rx='34'/%3E%3C/svg%3E"); }
 
-/* New home screen: deeper header, the blue mouse next to the reminder, round pet photos, tinted tab icons. */
+/* New home screen (Figma "1 · За замовчуванням"): compact header, rounder cards, blue tab icons. */
 .ip-hbg { display: none; }
+.ip-hd { height: 182px; padding-top: 76px; background: linear-gradient(180deg, #3b82dc 0%, #2a68d0 45%, #1e5bc4 100%); }
 .ip-hd::after { content: ""; position: absolute; inset: 0; background: url(features/grain.png) 0 0 / 240px; opacity: .45; mix-blend-mode: soft-light; pointer-events: none; }
-.ip-hrow { margin-top: 2px; }
-.ip-arr { width: 42px; height: 42px; background: rgba(255,255,255,.2); }
-.ip-dt h5 { font-size: 27px; }
-.ip-dt small { font-size: 14.5px; color: rgba(255,255,255,.72); }
-.ip-note { position: absolute; left: 8px; right: 16px; top: 148px; z-index: 2; display: flex; align-items: center; }
-.ip-mascot { position: relative; z-index: 1; flex: none; width: 76px; height: auto; margin-right: -6px; }
-.ip-notec { position: relative; z-index: 2; display: flex; flex: 1; align-items: center; justify-content: space-between; gap: 10px; min-height: 87px; padding: 14px 16px; border-radius: 24px; background: #fff; }
-.ip-notec > div { display: flex; flex-direction: column; gap: 3px; line-height: 1.22; }
-.ip-notec b { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; color: #312a2e; }
-.ip-notec span { font-size: 14px; letter-spacing: -0.02em; color: #919191; }
-.ip-nchev { flex: none; width: 18px; height: 18px; }
-.ip-nw b { font-size: 18px; letter-spacing: -0.02em; line-height: 1.15; }
-.ip-nw > div span { font-size: 14px; }
-.ip-start { padding: 4px 4px 4px 32px; }
-.ip-start b { font-size: 16px; }
-.ip-pa { display: block; flex: none; width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
-.ip-pe { background: #dfe5f1; }
-.ip-ti { display: block; width: 24px; height: 24px; background: #93aee6; -webkit-mask: var(--i) center / contain no-repeat; mask: var(--i) center / contain no-repeat; }
-.ti-home { --i: url(home/tab-home.svg); background: #2a63c8; } .ti-pets { --i: url(home/tab-pets.svg); } .ti-cal { --i: url(home/tab-cal.svg); } .ti-user { --i: url(home/tab-user.svg); }
-.ip-tabon { background: #eef2fa; }
-.ip-nav { box-shadow: 0 12px 34px rgba(18,34,75,.2); }
+.ip-hrow { position: relative; z-index: 1; }
+.ip-day { gap: 4px; }
+.ip-arrow { flex: none; width: 42px; height: 42px; }
+.ip-dt { gap: 4px; }
+.ip-dt h5 { font-size: 24px; letter-spacing: .01em; }
+.ip-dt small { font-size: 15px; letter-spacing: -0.03em; color: rgba(255,255,255,.7); }
+.ip-cards { top: 150px; }
+.ip-card { border-radius: 32px; }
+.ip-nc { background: linear-gradient(135deg, rgba(41,94,188,.92) 11%, rgba(56,131,197,.92) 114%); }
+.ip-ni { gap: 16px; background: #fff; border-radius: 16px; }
+.ip-nw b { font-size: 16px; letter-spacing: -0.03em; }
+.ip-nw > div span { font-size: 13px; color: #74747f; }
+.ip-pa { display: block; flex: none; width: 30px; height: 30px; border-radius: 50%; object-fit: cover; }
+.ip-pe { background: #dce4f2; }
+.ip-tabon { background: #eff0f7; }
+.ip-tabon b { color: #2a5fba; }
