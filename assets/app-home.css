@@ -383,37 +383,75 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .hi { position: absolute; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle at 32% 26%, #fff 0%, #eaf2ff 55%, #cfe0fb 100%);
       box-shadow: 0 0 0 4px #fff, 0 16px 22px -10px rgba(30,70,140,.4); font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
 
-/* ---- Hero phone, redrawn: no black frame, only the screen with a thin glass edge and a soft lift ---- */
-.ph2 { position: absolute; width: 343px; height: 745px; overflow: hidden; border-radius: 56px; background: #fff; font-family: 'Onest', sans-serif; text-align: left; color: #16244d;
-       box-shadow: 0 0 0 6px rgba(255,255,255,.55), 0 0 0 7px rgba(255,255,255,.95), 0 56px 80px -38px rgba(26,64,150,.62), 0 20px 34px -22px rgba(26,64,150,.4); }
-.ph2-top { position: relative; height: 218px; padding: 62px 22px 0; color: #fff; background: radial-gradient(120% 90% at 15% 0%, #62b0e6 0%, rgba(98,176,230,0) 60%), linear-gradient(165deg, #3f8bda 0%, #2b5fc2 100%); }
-.ph2-top::after { content: ""; position: absolute; inset: 0; background: url(features/grain.png) 0 0 / 240px; opacity: .5; mix-blend-mode: soft-light; pointer-events: none; }
-.ph2-isl { position: absolute; left: 50%; top: 12px; z-index: 2; width: 104px; height: 31px; margin-left: -52px; border-radius: 20px; background: #0b0b0f; }
-.ph2-sb { position: absolute; left: 30px; right: 28px; top: 17px; z-index: 1; display: flex; justify-content: space-between; font-size: 15px; }
-.ph2-sb span { font-size: 9px; letter-spacing: 2px; opacity: .9; }
-.ph2-top p { position: relative; z-index: 1; font-size: 13.5px; font-weight: 500; opacity: .85; }
-.ph2-top h5 { position: relative; z-index: 1; margin-top: 4px; font-size: 29px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.05; }
-.ph2-top h5 i { font-style: normal; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; }
-.ph2-ava { position: absolute; right: 22px; top: 82px; z-index: 1; display: flex; }
-.ph2-ava img { width: 40px; height: 40px; border: 3px solid rgba(255,255,255,.9); border-radius: 50%; object-fit: cover; }
-.ph2-ava img + img { margin-left: -12px; }
-.ph2-sheet { position: absolute; left: 0; right: 0; top: 150px; bottom: 0; padding: 18px 16px; border-radius: 34px 34px 0 0; background: #fff; }
-.ph2-next { position: relative; padding: 18px; border-radius: 28px; background: linear-gradient(160deg, #1c2f66 0%, #16244d 100%); color: #fff; }
-.ph2-next small { display: inline-block; padding: 5px 11px; border-radius: 999px; background: rgba(255,255,255,.14); font-size: 12px; font-weight: 600; }
-.ph2-next h6 { margin-top: 12px; font-size: 25px; font-weight: 800; letter-spacing: -0.03em; }
-.ph2-next p { margin-top: 3px; font-size: 13.5px; opacity: .72; }
-.ph2-btn { display: flex; align-items: center; justify-content: space-between; height: 52px; margin-top: 16px; padding: 0 6px 0 22px; border-radius: 999px; background: #fff; color: #16244d; font-size: 15.5px; }
-.ph2-btn i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #16244d; color: #fff; }
-.ph2-sec { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 4px 10px; }
-.ph2-sec b { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; }
-.ph2-sec span { font-size: 13px; font-weight: 600; color: #6b7494; }
-.ph2-row { display: flex; align-items: center; gap: 12px; height: 58px; margin-top: 8px; padding: 0 16px 0 10px; border-radius: 999px; background: #f0f1f7; }
-.ph2-row.on { background: #16244d; color: #fff; }
-.ph2-chk { display: grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; border: 2px solid #c4c9dc; }
-.ph2-row.on .ph2-chk { border: 0; background: #fff; color: #16244d; }
-.ph2-row img { width: 26px; height: 26px; object-fit: contain; }
-.ph2-row b { font-size: 15.5px; font-weight: 700; letter-spacing: -0.01em; }
-.ph2-row em { margin-left: auto; font-size: 12.5px; font-style: normal; font-weight: 600; opacity: .6; white-space: nowrap; }
-.ph2-tabs { position: absolute; left: 24px; right: 24px; bottom: 20px; display: flex; justify-content: space-around; align-items: center; height: 60px; border-radius: 999px; background: rgba(255,255,255,.78); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); box-shadow: 0 10px 30px -10px rgba(22,36,77,.35), inset 0 0 0 1px rgba(255,255,255,.9); }
-.ph2-tabs i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #8a90a8; }
-.ph2-tabs i.on { background: #16244d; color: #fff; }
+/* ---- Hero phone: the app's home screen (Figma "1 · За замовчуванням") in an iPhone 17 Pro mockup ----
+   Built at the real 402×874 pt screen size, then scaled to fit the hero (.ip-body). */
+.ip { position: absolute; width: 387px; height: 812px; }
+.ip-body { position: absolute; left: 0; top: 0; width: 430px; height: 902px; padding: 14px; border-radius: 70px; transform: scale(.9); transform-origin: 0 0;
+           background: linear-gradient(135deg, #f6f7f9 0%, #cfd3da 22%, #eef0f3 48%, #b8bdc7 78%, #e3e6ea 100%);
+           box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.9), inset 0 0 0 3px rgba(120,128,142,.35), 0 60px 90px -40px rgba(26,64,150,.6), 0 24px 40px -26px rgba(26,64,150,.45); }
+.ip-body::before { content: ""; position: absolute; inset: 4px; border-radius: 66px; background: #08090c; }
+.ip-sb { position: absolute; width: 4px; border-radius: 3px; background: linear-gradient(90deg, #aeb3bd, #e9ebef 50%, #aeb3bd); }
+.ip-s1 { left: -3px; top: 150px; height: 36px; } .ip-s2 { left: -3px; top: 214px; height: 64px; } .ip-s3 { left: -3px; top: 296px; height: 64px; } .ip-s4 { right: -3px; top: 250px; height: 100px; }
+.ip-screen { position: relative; width: 402px; height: 874px; overflow: hidden; border-radius: 56px; background: #f1f3f9; font-family: 'Onest', sans-serif; text-align: left; color: #312a2e; }
+.ip-screen img { display: block; max-width: none; }
+.ip-isl { position: absolute; left: 50%; top: 11px; z-index: 10; width: 124px; height: 36px; margin-left: -62px; border-radius: 20px; background: #000; }
+.ip-gl { position: absolute; inset: 0; z-index: 11; pointer-events: none; border-radius: inherit; background: linear-gradient(120deg, rgba(255,255,255,.14) 0%, rgba(255,255,255,0) 28%); }
+.ip-hd { position: absolute; left: 0; top: 0; z-index: 1; display: flex; flex-direction: column; gap: 20px; width: 402px; height: 346px; padding: 76px 16px 0; overflow: hidden; border-radius: 0 0 32px 32px; background: linear-gradient(180deg, #1a8bdc, #75bfef); }
+.ip-hbg { position: absolute; left: 0; top: 0; width: 418px; height: 428px; object-fit: cover; object-position: bottom; }
+.ip-status { position: absolute; left: 35px; top: 20px; z-index: 2; width: 331px; height: 11.4px; }
+.ip-hrow { position: relative; display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.ip-ht { display: flex; flex: 1; flex-direction: column; gap: 8px; line-height: 1.2; }
+.ip-ht small { font-size: 15px; font-weight: 500; letter-spacing: -0.03em; color: rgba(255,255,255,.7); }
+.ip-ht h5 { font-size: 24px; font-weight: 700; letter-spacing: .01em; color: #fff; max-width: 250px; }
+.ip-hb { display: flex; gap: 6px; }
+.ip-round { position: relative; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,.15); }
+.ip-round:last-child { background: none; }
+.ip-round img { width: 22px; height: 22px; }
+.ip-dot { position: absolute; left: 24px; top: 10px; width: 8px; height: 8px; border: 1.5px solid #2d95e0; border-radius: 50%; background: #fd6353; box-sizing: content-box; margin: -1.5px; }
+.ip-pets { position: relative; display: flex; gap: 16px; align-items: flex-start; }
+.ip-pet { display: flex; flex-direction: column; align-items: center; gap: 8px; flex: none; }
+.ip-pw { position: relative; width: 90px; height: 94px; }
+.ip-all .ip-pw { width: 96px; }
+.ip-ring94 { position: absolute; left: 0; top: 0; width: 94px; height: 94px; }
+.ip-ring88 { position: absolute; left: 1px; top: 3px; width: 94px; height: 94px; }
+.ip-circ { position: absolute; left: 0; top: 3px; display: grid; place-items: center; width: 88px; height: 88px; border: 3px solid rgba(255,255,255,.3); border-radius: 50%; box-sizing: border-box; }
+.ip-circ img { width: 80px; height: 80px; border-radius: 50%; }
+.ip-bd { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; border: 3px solid; border-radius: 50%; background: #122449; color: #fff; font-size: 14px; font-style: normal; font-weight: 700; box-sizing: border-box; }
+.ip-sky { position: absolute; left: 0; right: 0; top: 33px; text-align: center; font-size: 26px; font-weight: 700; color: #fff; }
+.ip-pl { padding: 6px 16px; border-radius: 100px; font-size: 14px; color: #fff; white-space: nowrap; }
+.ip-all .ip-pl { padding: 6px 20px; background: rgba(255,255,255,.3); font-weight: 600; }
+.ip-cards { position: absolute; left: 0; top: 322px; z-index: 2; display: flex; flex-direction: column; gap: 12px; width: 402px; padding: 0 16px; }
+.ip-card { padding: 20px; border-radius: 24px; background: #fff; filter: drop-shadow(0 0 21px rgba(65,34,54,.05)); }
+.ip-info { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 16px; backdrop-filter: blur(50px); }
+.ip-info > div { display: flex; flex: 1; flex-direction: column; gap: 2px; line-height: 1.2; }
+.ip-info b { font-size: 16px; font-weight: 600; letter-spacing: -0.03em; } .ip-info > div span { font-size: 14px; letter-spacing: -0.03em; color: #919191; }
+.ip-ico { align-self: flex-start; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: #edeff5; } .ip-ico img { width: 20px; height: 20px; }
+.ip-go { display: grid; flex: none; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #122449; } .ip-go img, .ip-start span img { width: 18px; height: 18px; }
+.ip-sec { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.ip-sec span { display: flex; align-items: center; gap: 6px; } .ip-sec img { width: 16px; height: 16px; }
+.ip-sec b { font-size: 18px; font-weight: 700; letter-spacing: -0.03em; } .ip-sec em { font-size: 14px; font-style: normal; font-weight: 600; letter-spacing: -0.03em; color: #b7b7b7; }
+.ip-peek { display: flex; flex-direction: column; gap: 4px; margin-bottom: -14px; opacity: .35; filter: blur(1px); }
+.ip-peek p { display: flex; align-items: center; gap: 6px; } .ip-peek i { width: 40px; font-size: 13px; font-style: normal; font-weight: 600; color: rgba(49,42,46,.6); } .ip-peek img { width: 16px; height: 16px; } .ip-peek span { font-size: 14px; font-weight: 500; color: rgba(49,42,46,.7); }
+.ip-pill { position: relative; display: flex; align-items: center; gap: 6px; width: max-content; margin: 0 auto 10px; padding: 8px 16px; border-radius: 100px; background: #fff; box-shadow: 0 0 12px rgba(65,34,54,.1); font-size: 14px; font-weight: 600; }
+.ip-pill img { width: 16px; height: 16px; }
+.ip-next { display: flex; gap: 10px; margin-bottom: 10px; }
+.ip-tm { flex: none; width: 44px; font-size: 14px; font-weight: 700; color: #14213d; } .ip-tm1 { width: 40px; padding-top: 24px; color: #312a2e; }
+.ip-nc { flex: 1; min-width: 0; padding: 8px 6px 6px; border-radius: 24px; background: linear-gradient(180deg, rgba(27,127,198,.9), rgba(79,154,204,.9)); }
+.ip-nt { display: flex; align-items: center; justify-content: space-between; padding: 0 8px 10px; color: #fff; } .ip-nt > b { font-size: 14px; font-weight: 700; letter-spacing: -0.03em; }
+.ip-badge { display: flex; align-items: center; gap: 4px; padding: 4px 6px; border-radius: 100px; background: rgba(255,255,255,.15); font-size: 12px; font-weight: 600; letter-spacing: -0.03em; } .ip-badge img { width: 16px; height: 16px; }
+.ip-ni { display: flex; flex-direction: column; gap: 16px; padding: 14px; border-radius: 20px; background: #f6f6f6; }
+.ip-nw { display: flex; align-items: center; gap: 8px; } .ip-nw > div { display: flex; flex-direction: column; gap: 4px; }
+.ip-nw b { font-size: 16px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; } .ip-nw > div span { font-size: 12px; color: #74747f; }
+.ip-avs { display: flex; flex: none; } .ip-av { position: relative; display: block; width: 30px; height: 30px; margin-right: -8px; overflow: hidden; border: 2px solid #f3f5fa; border-radius: 15px; background: #eadfcb; box-sizing: border-box; } .ip-av img { position: absolute; }
+.ip-av36 .ip-av { width: 36px; height: 36px; margin-right: -12px; border-radius: 50%; border-color: #f6f6f6; } .ip-av36 { margin-right: 12px; }
+.ip-start { display: flex; align-items: center; padding: 4px 4px 4px 32px; border-radius: 1000px; background: #122449; color: #fff; } .ip-start b { flex: 1; text-align: center; font-size: 14px; font-weight: 600; letter-spacing: -0.03em; }
+.ip-start span { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #fff; }
+.ip-task { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.ip-tc { display: flex; flex: 1; align-items: center; justify-content: space-between; gap: 8px; min-height: 64px; padding: 8px 16px; border-radius: 20px; background: #f3f5fa; }
+.ip-tc b { display: block; font-size: 16px; font-weight: 600; line-height: 19px; color: #14213d; } .ip-tc span:not(.ip-avs):not(.ip-av) { display: block; font-size: 14px; line-height: 17px; color: #6b7488; }
+.ip-nav { position: absolute; left: 23px; bottom: 38px; z-index: 5; display: flex; align-items: center; justify-content: space-between; width: 356px; height: 68px; padding: 10px 16px 10px 10px; border: 1px solid rgba(18,34,75,.05); border-radius: 34px; background: #fff; box-shadow: 0 10px 30px rgba(18,34,75,.22); box-sizing: border-box; }
+.ip-tabon { display: flex; align-items: center; gap: 8px; height: 52px; padding: 0 20px 0 16px; border-radius: 26px; background: #f1f3f9; } .ip-tabon b { font-size: 14px; font-weight: 700; color: #122449; } .ip-tabon img, .ip-tab img { width: 24px; height: 24px; }
+.ip-tab { display: grid; place-items: center; width: 52px; height: 52px; }
+.ip-bar { position: absolute; left: 50%; bottom: 8px; z-index: 6; width: 144px; height: 5px; margin-left: -72px; border-radius: 10px; background: #0f0f0f; }
+/* The whole phone is shown, so the hero stage no longer fades out at the bottom. */
+header .stage:has(.ip) { -webkit-mask-image: none; mask-image: none; }
