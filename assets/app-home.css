@@ -377,8 +377,8 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 /* ---- Hero: one phone screen with pet photos in cloud frames and icon bubbles around it ---- */
 :root { --cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='33' cy='32' r='27'/%3E%3Ccircle cx='68' cy='33' r='26'/%3E%3Ccircle cx='32' cy='69' r='26'/%3E%3Ccircle cx='68' cy='68' r='27'/%3E%3Crect x='30' y='30' width='40' height='40'/%3E%3C/svg%3E"); }
 .hb { position: absolute; aspect-ratio: 1; filter: drop-shadow(0 16px 20px rgba(30,70,140,.22)); }
-.hb::before { content: ""; position: absolute; inset: -4%; background: #fff; -webkit-mask: var(--cloud) center / 100% 100% no-repeat; mask: var(--cloud) center / 100% 100% no-repeat; }
-.hb > span { position: absolute; inset: 0; overflow: hidden; background: var(--bg, #cfe0fb); -webkit-mask: var(--cloud) center / 100% 100% no-repeat; mask: var(--cloud) center / 100% 100% no-repeat; }
+.hb::before { content: ""; position: absolute; inset: -4%; background: #fff; -webkit-mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; }
+.hb > span { position: absolute; inset: 0; overflow: hidden; background: var(--bg, #cfe0fb); -webkit-mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; mask: var(--shape, var(--cloud)) center / 100% 100% no-repeat; }
 .hb img { position: absolute; left: var(--ix, -10%); top: var(--iy, -8%); width: var(--iw, 120%); max-width: none; }
 .hi { position: absolute; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle at 32% 26%, #fff 0%, #eaf2ff 55%, #cfe0fb 100%);
       box-shadow: 0 0 0 4px #fff, 0 16px 22px -10px rgba(30,70,140,.4); font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
@@ -458,3 +458,11 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-tabon { display: flex; align-items: center; gap: 8px; height: 52px; padding: 0 20px 0 16px; border-radius: 26px; background: #f1f3f9; } .ip-tabon b { font-size: 14px; font-weight: 700; color: #122449; } .ip-tabon img, .ip-tab img { width: 24px; height: 24px; }
 .ip-tab { display: grid; place-items: center; width: 52px; height: 52px; }
 .ip-bar { position: absolute; left: 50%; bottom: 8px; z-index: 6; width: 144px; height: 5px; margin-left: -72px; border-radius: 10px; background: #0f0f0f; }
+
+/* Different shapes for the pet photos around the phone. */
+.hb.sh-circle { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48'/%3E%3C/svg%3E"); }
+.hb.sh-squircle { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='3' y='3' width='94' height='94' rx='32'/%3E%3C/svg%3E"); }
+.hb.sh-arch { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M3 72V50A47 47 0 0 1 97 50V72A25 25 0 0 1 72 97H28A25 25 0 0 1 3 72Z'/%3E%3C/svg%3E"); }
+.hb.sh-blob { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M53 3C79 5 97 24 94 52 91 78 70 97 46 95 22 93 4 74 6 48 8 24 28 1 53 3Z'/%3E%3C/svg%3E"); }
+.hb.sh-flower { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='22' r='20'/%3E%3Ccircle cx='74' cy='36' r='20'/%3E%3Ccircle cx='74' cy='64' r='20'/%3E%3Ccircle cx='50' cy='78' r='20'/%3E%3Ccircle cx='26' cy='64' r='20'/%3E%3Ccircle cx='26' cy='36' r='20'/%3E%3C/svg%3E"); }
+.hb.sh-pill { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='16' y='2' width='68' height='96' rx='34'/%3E%3C/svg%3E"); }
