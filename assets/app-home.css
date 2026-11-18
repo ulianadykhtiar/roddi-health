@@ -396,7 +396,7 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-screen img { display: block; max-width: none; }
 .ip-isl { position: absolute; left: 50%; top: 11px; z-index: 10; width: 124px; height: 36px; margin-left: -62px; border-radius: 20px; background: #000; }
 .ip-gl { position: absolute; inset: 0; z-index: 11; pointer-events: none; border-radius: inherit; background: linear-gradient(120deg, rgba(255,255,255,.14) 0%, rgba(255,255,255,0) 28%); }
-.ip-hd { position: absolute; left: 0; top: 0; z-index: 1; display: flex; flex-direction: column; gap: 20px; width: 402px; height: 298px; padding: 74px 16px 0; overflow: hidden; border-radius: 0 0 32px 32px; background: linear-gradient(180deg, #1a8bdc, #75bfef); }
+.ip-hd { position: absolute; left: 0; top: 0; z-index: 1; display: flex; flex-direction: column; gap: 20px; width: 402px; height: 154px; padding: 74px 16px 0; overflow: hidden; border-radius: 0 0 32px 32px; background: linear-gradient(180deg, #1a8bdc, #75bfef); }
 .ip-hbg { position: absolute; left: 0; top: 0; width: 418px; height: 428px; object-fit: cover; object-position: bottom; }
 .ip-status { position: absolute; left: 35px; top: 20px; z-index: 2; width: 331px; height: 11.4px; }
 .ip-hrow { position: relative; display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
@@ -425,7 +425,7 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-sky { position: absolute; left: 0; right: 0; top: 30px; text-align: center; font-size: 26px; font-weight: 700; color: #fff; }
 .ip-pl { padding: 3px 16px; line-height: 1.25; border-radius: 100px; font-size: 14px; color: #fff; white-space: nowrap; }
 .ip-all .ip-pl { padding: 3px 20px; background: rgba(255,255,255,.3); font-weight: 600; }
-.ip-cards { position: absolute; left: 0; top: 274px; z-index: 2; display: flex; flex-direction: column; gap: 12px; width: 402px; padding: 0 16px; }
+.ip-cards { position: absolute; left: 0; top: 130px; z-index: 2; display: flex; flex-direction: column; gap: 12px; width: 402px; padding: 0 16px; }
 .ip-card { padding: 20px; border-radius: 24px; background: #fff; filter: drop-shadow(0 0 21px rgba(65,34,54,.05)); }
 .ip-info { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 16px; backdrop-filter: blur(50px); }
 .ip-info > div { display: flex; flex: 1; flex-direction: column; gap: 2px; line-height: 1.2; }
