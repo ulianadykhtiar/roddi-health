@@ -372,3 +372,13 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .consent-dark input { accent-color: #fff; }
 .consent-dark a:hover { color: #fff; }
 @media (pointer: coarse) { .consent { align-items: center; min-height: 44px; } .consent input { margin-top: 0; } }
+
+
+/* ---- Hero: one phone screen with pet photos in cloud frames and icon bubbles around it ---- */
+:root { --cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='33' cy='32' r='27'/%3E%3Ccircle cx='68' cy='33' r='26'/%3E%3Ccircle cx='32' cy='69' r='26'/%3E%3Ccircle cx='68' cy='68' r='27'/%3E%3Crect x='30' y='30' width='40' height='40'/%3E%3C/svg%3E"); }
+.hb { position: absolute; aspect-ratio: 1; filter: drop-shadow(0 16px 20px rgba(30,70,140,.22)); }
+.hb::before { content: ""; position: absolute; inset: -4%; background: #fff; -webkit-mask: var(--cloud) center / 100% 100% no-repeat; mask: var(--cloud) center / 100% 100% no-repeat; }
+.hb > span { position: absolute; inset: 0; overflow: hidden; background: var(--bg, #cfe0fb); -webkit-mask: var(--cloud) center / 100% 100% no-repeat; mask: var(--cloud) center / 100% 100% no-repeat; }
+.hb img { position: absolute; left: var(--ix, -10%); top: var(--iy, -8%); width: var(--iw, 120%); max-width: none; }
+.hi { position: absolute; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle at 32% 26%, #fff 0%, #eaf2ff 55%, #cfe0fb 100%);
+      box-shadow: 0 0 0 4px #fff, 0 16px 22px -10px rgba(30,70,140,.4); font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
