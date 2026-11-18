@@ -372,3 +372,38 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .consent-dark input { accent-color: #fff; }
 .consent-dark a:hover { color: #fff; }
 @media (pointer: coarse) { .consent { align-items: center; min-height: 44px; } .consent input { margin-top: 0; } }
+
+/* ---- App look for the hero widgets: navy ink, lavender-grey surfaces, bold type, pill buttons ---- */
+.hw { padding: 14px; border-radius: 28px; background: #fff; box-shadow: 0 2px 4px rgba(18,32,80,.06), 0 24px 44px -22px rgba(10,26,80,.5); }
+.fx-push-ic { border-radius: 15px; background: #16244d; }
+.fx-push-top span { color: #6b7494; }
+.fx-push-t b, .sy-top b, .hv-row b { color: #16244d; font-weight: 800; letter-spacing: -0.01em; }
+.fx-push-t > small, .sy-top small, .hv-txt small { color: #6b7494; }
+.sy-d i { width: 40px; height: 40px; border-radius: 15px; background: #f0f1f7; }
+.sy-d i.sy-good { background: #dcf3e6; }
+.sy-d i.sy-same { background: #fff0c7; }
+.sy-d i.sy-bad { background: #fde4e4; }
+.sy-d b { color: #6b7494; font-weight: 700; }
+.hv-tile, .rc-tile { border-radius: 15px; background: #f0f1f7; box-shadow: none; }
+.hv-bar { background: #fbe9d5; }
+.ph-card { border-radius: 28px; box-shadow: 0 26px 44px -26px rgba(10,26,80,.55); color: #16244d; }
+.rc-chip { border-radius: 999px; padding: 5px 11px; background: #e4eefb; color: #2a62b0; font-weight: 700; }
+.rc-title { font-weight: 800; letter-spacing: -0.025em; }
+.rc-sub, .rc-t small { color: #6b7494; }
+.rc-prog::before { background: #e1e5f3; }
+.rc-prog i { background: linear-gradient(90deg, #4a97d3, #3172c8); }
+.rc-row { margin-top: 8px; padding: 7px 10px 7px 7px; border-radius: 20px; background: #f0f1f7; }
+.rc-row:has(.is-done) { background: #16244d; color: #fff; }
+.rc-row:has(.is-done) .rc-t small { color: rgba(255,255,255,.7); }
+.rc-row:has(.is-done) .rc-mark.is-done { background: #fff; }
+.rc-row:has(.is-done) .rc-mark.is-done svg { stroke: #16244d; }
+.rc-mark { border-color: #c4c9dc; }
+.rc-tile { background: #fff; }
+.rc-t b { font-weight: 800; }
+.rc-btn { border-radius: 999px; padding: 15px; background: #16244d; font-weight: 700; font-size: 15px; }
+.fx-blank { background: #eef0f7; }
+.ph-blur .rc-row { background: #fff; }
+.td-next-body { background: #f0f1f7; }
+.td-who b { color: #16244d; }
+.td-btn, .td-btn i { background: #16244d; }
+.td-btn i { background: #fff; color: #16244d; }
