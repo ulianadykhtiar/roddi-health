@@ -407,3 +407,28 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .td-who b { color: #16244d; }
 .td-btn, .td-btn i { background: #16244d; }
 .td-btn i { background: #fff; color: #16244d; }
+
+/* Hero widgets, second pass: the app's proportions (taller pill rows, bigger type, round icons). */
+.hw { padding: 16px 18px; border-radius: 32px; box-shadow: 0 24px 40px -28px rgba(22,36,77,.4); }
+.fx-push-ic { width: 46px; height: 46px; border-radius: 50%; }
+.fx-push-t b { font-size: 15.5px; }
+.fx-push-t > small { font-size: 13px; }
+.sy-top b { font-size: 17px; }
+.sy-top small { font-size: 13px; }
+.sy-d i { width: 40px; height: 40px; border-radius: 15px; background: #f0f1f7; }
+.sy-d i.sy-good, .sy-d i.sy-same { background: #f0f1f7; }
+.sy-d i.sy-bad { background: #16244d; }
+.sy-d b { font-size: 12px; }
+.hv-tile { width: 48px; height: 48px; border-radius: 50%; background: #f0f1f7; }
+.hv-row b { font-size: 16px; }
+.hv-txt small { font-size: 12.5px; }
+.ph-card { border-radius: 32px; padding: 18px; }
+.rc-title { font-size: 22px; }
+.rc-sub { font-size: 13.5px; }
+.rc-chip { font-size: 12px; }
+.rc-row { gap: 10px; min-height: 52px; margin-top: 8px; padding: 6px 14px 6px 8px; border-radius: 999px; }
+.rc-tile { width: 36px; height: 36px; border-radius: 50%; }
+.rc-tile img { width: 22px; height: 22px; }
+.rc-t b { font-size: 14.5px; }
+.rc-t small { font-size: 11.5px; }
+.rc-btn { margin-top: 14px; padding: 0; height: 52px; line-height: 52px; font-size: 15px; }

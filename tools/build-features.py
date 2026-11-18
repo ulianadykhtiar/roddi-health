@@ -50,78 +50,94 @@ def notif(title, sub, when='зараз', glass=True):
             f'<div class="min-w-0 flex-1"><div class="flex justify-between gap-[8px]"><small>Roddi Health</small><small class="!normal-case !tracking-normal">{when}</small></div>'
             f'<b>{title}</b><span>{sub}</span></div></div>')
 
-# ---- scenes: 560×440 compositions of widgets ----
+# ---- scenes: 560×440 compositions of app-style widgets ----
+# Components (see assets/features-pin.css): a-h heading, a-opt pill row (.on = chosen, navy),
+# a-tiles / a-tile emoji tiles, a-steps segments, a-cta pill button.
+L = {  # line icons, same family as the app's list rows
+    'tag': '<path d="M3.5 12.2V4.5a1 1 0 0 1 1-1h7.7l8.3 8.3a1.5 1.5 0 0 1 0 2.1l-5.6 5.6a1.5 1.5 0 0 1-2.1 0z"/><circle cx="8" cy="8" r="1.4"/>',
+    'clip': '<rect x="5" y="4.5" width="14" height="16.5" rx="3"/><path d="M9 4.5V3.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1M8.5 11h7M8.5 15h5"/>',
+    'chart': '<path d="M4 19V5M4 19h16"/><path d="m7.5 15 3.5-4 3 3 5-6"/>',
+    'drop': '<path d="M12 3.5s6 6.2 6 10.3a6 6 0 0 1-12 0C6 9.700 12 3.500 12 3.500z"/>',
+    'steam': '<path d="M8 4c-1.500 1.700 1.500 3 0 4.700M12.500 4c-1.500 1.700 1.500 3 0 4.700M17 4c-1.500 1.700 1.500 3 0 4.700"/><path d="M4.500 13h15a0 0 0 0 1 0 0 7 7 0 0 1-7 7h-1a7 7 0 0 1-7-7z"/>',
+    'pill': '<path d="M10.5 20.5a4.5 4.5 0 0 1-6.4-6.4l9.9-9.9a4.5 4.5 0 0 1 6.4 6.4z"/><path d="m8.5 8.5 7 7"/>',
+    'search': '<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.500-3.500"/>',
+    'paw': '<circle cx="6.500" cy="10" r="1.800"/><circle cx="10" cy="6" r="1.800"/><circle cx="14" cy="6" r="1.800"/><circle cx="17.500" cy="10" r="1.800"/><path d="M12 12.500c-3 0-5 2.700-5 4.700 0 1.600 1.300 2.300 2.800 2.300 1 0 1.500-.4 2.200-.4s1.200.4 2.200.4c1.500 0 2.800-.7 2.800-2.300 0-2-2-4.700-5-4.700z"/>',
+}
+def ic(name, size=22):
+    return svg(L[name], size, 2)
+
+def opt(icon, label, right='', on=False):
+    r = f'<em>{right}</em>' if right else ''
+    return f'<div class="a-opt{" on" if on else ""}">{icon}<b>{label}</b>{r}</div>'
+
+def steps(n, total):
+    return '<div class="a-steps">' + ''.join(f'<i{" class=on" if i < n else ""}></i>' for i in range(total)) + '</div>'
+
 def scene_reminders():
-    return f'''<div class="w" style="{at(118, 86, 330, 2)}">
-  <div class="w-top"><span class="w-chip">Наступний крок · через 15 хв</span>{duo(MARTIN, ARCHIE)}</div>
-  <span class="w-title">Ранковий раунд</span><span class="w-sub">3 препарати · Мартін і Арчі</span>
-  <div class="w-prog"><span class="bar" style="--p:34%"><i></i></span><span>1/3</span></div>
-  <div class="w-row"><span class="w-mark done">{CHECK}</span><span class="w-tile"><img alt="" src="{A}steam.svg"></span><span class="w-t"><b>Інгаляція</b><small>Фізрозчин, 15 хвилин</small></span></div>
-  <div class="w-row"><span class="w-mark"></span><span class="w-tile"><img alt="" src="{A}pill-pink.svg"></span><span class="w-t"><b>Мелоксикам</b><small>0,05 мл · Мартін</small></span></div>
-  <div class="w-row"><span class="w-mark"></span><span class="w-tile"><img alt="" src="{A}drop.svg"></span><span class="w-t"><b>Очні краплі</b><small>по 1 краплі · Арчі</small></span></div>
-  <span class="w-btn">{CHECK}Відмітити все як дано</span>
+    return f"""<div class="w" style="{at(40, 70, 350, 2)}">
+  <div class="a-top">{steps(1, 3)}{duo(MARTIN, ARCHIE)}</div>
+  <h4 class="a-h">Ранковий раунд</h4><p class="a-p">Мартін і Арчі · 3 препарати</p>
+  {opt(svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>', 22, 2.6), 'Інгаляція', '15 хв', True)}
+  {opt(ic('pill'), 'Мелоксикам', '0,05 мл')}
+  {opt(ic('drop'), 'Очні краплі', '1 крапля')}
+  <div class="a-cta">Відмітити все</div>
 </div>
-<div style="{at(24, 14, 300, 3)}">{notif('Час дати Мелоксикам 💊', 'Мартін · 0,05 мл')}</div>
-<div class="w" style="{at(368, 300, 190, 3)}"><div class="w-top"><b class="text-[13px]">Курс антибіотика</b></div>
-  <span class="w-sub">день 6 з 10 · Арчі</span>
-  <div class="w-seg-week"><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
-</div>'''
+<div style="{at(20, 8, 310, 3)}">{notif('Час дати Мелоксикам 💊', 'Мартін · 0,05 мл')}</div>
+<div class="w" style="{at(382, 316, 172, 3)}"><h4 class="a-h" style="font-size:17px">Курс антибіотика</h4><p class="a-p">день 6 з 10 · Арчі</p>
+  <div style="margin-top:12px">{steps(6, 10)}</div></div>"""
 
 def scene_state():
-    return f'''<div class="w" style="{at(22, 34, 360, 2)}">
-  <div class="w-top"><span class="text-[13px] font-semibold text-[#6e727a]">Вага · Мартін</span><span class="w-chip green">+3 г за тиждень</span></div>
-  <div class="mt-[8px] w-big">338 <small>г</small></div>
+    return f"""<div class="w" style="{at(22, 30, 360, 2)}">
+  <div class="a-top"><span class="a-p" style="margin:0">Вага · Мартін</span><span class="a-badge">+3 г</span></div>
+  <div class="w-big" style="margin-top:6px">338 <small>г</small></div>
   <div class="w-seg"><span class="on">Тиждень</span><span>Місяць</span><span>Рік</span></div>
   <div class="relative mt-[14px]">
-    <svg viewBox="0 0 328 120" class="block h-[120px] w-full overflow-visible" aria-hidden="true">
-      <defs><linearGradient id="fp-wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3172c8" stop-opacity=".22"/><stop offset="1" stop-color="#3172c8" stop-opacity="0"/></linearGradient></defs>
-      <g stroke="#eef0f3" stroke-width="1"><path d="M0 20H328M0 60H328M0 100H328"/></g>
-      <path d="M0 78 C30 78 40 64 70 66 S110 88 140 80 S190 46 222 50 S280 30 328 24 L328 120 L0 120 Z" fill="url(#fp-wg)"/>
-      <path d="M0 78 C30 78 40 64 70 66 S110 88 140 80 S190 46 222 50 S280 30 328 24" fill="none" stroke="#3172c8" stroke-width="2.6" stroke-linecap="round"/>
-      <path d="M222 50V120" stroke="#3172c8" stroke-opacity=".25" stroke-dasharray="3 4"/><circle cx="222" cy="50" r="9" fill="#3172c8" fill-opacity=".16"/><circle cx="222" cy="50" r="4.5" fill="#fff" stroke="#3172c8" stroke-width="2.6"/>
+    <svg viewBox="0 0 328 110" class="block h-[110px] w-full overflow-visible" aria-hidden="true">
+      <defs><linearGradient id="fp-wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16244d" stop-opacity=".14"/><stop offset="1" stop-color="#16244d" stop-opacity="0"/></linearGradient></defs>
+      <path d="M0 74 C30 74 40 60 70 62 S110 84 140 76 S190 44 222 48 S280 28 328 22 L328 110 L0 110 Z" fill="url(#fp-wg)"/>
+      <path d="M0 74 C30 74 40 60 70 62 S110 84 140 76 S190 44 222 48 S280 28 328 22" fill="none" stroke="#16244d" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="222" cy="48" r="6" fill="#fff" stroke="#16244d" stroke-width="3"/>
     </svg>
-    <span class="w-tip" style="left:67.7%;top:41.7%">Пт · 337 г</span>
+    <span class="w-tip" style="left:67.7%;top:42%">Пт · 337 г</span>
   </div>
-  <div class="mt-[6px] flex justify-between text-[10.5px] font-semibold text-[#a2a6ad]"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Нд</span></div>
 </div>
-<div class="w" style="{at(232, 258, 316, 3)}">
-  <div class="w-top"><b class="text-[14px]">Симптоми · Арчі</b><span class="text-[11.5px] font-medium text-[#a2a6ad]">цей тиждень</span></div>
-  <div class="w-faces"><span><i class="ok">😊</i>Пн</span><span><i class="ok">😊</i>Вт</span><span><i>😐</i>Ср</span><span><i class="bad">🤧</i>Чт</span><span><i>😐</i>Пт</span><span><i class="ok">😊</i>Сб</span><span><i class="empty"></i>Нд</span></div>
+<div class="w" style="{at(206, 274, 344, 3)}">
+  <h4 class="a-h" style="font-size:17px">Симптоми · Арчі</h4>
+  <div class="a-days"><span><i>😊</i>Пн</span><span><i>😊</i>Вт</span><span><i>😐</i>Ср</span><span><i class="bad">🤧</i>Чт</span><span><i>😐</i>Пт</span><span><i>😊</i>Сб</span><span><i class="empty"></i>Нд</span></div>
 </div>
-<div class="w w-glass" style="{at(392, 120, 160, 4)};padding:12px 14px"><span class="text-[11px] font-semibold text-[#a2a6ad]">Нотатка · Чт</span><b class="mt-[3px] block text-[13px] leading-[1.3]">Чхав зранку, апетит нормальний 🤧</b></div>'''
+<div class="w w-glass" style="{at(396, 120, 156, 4)};padding:14px 16px"><p class="a-p" style="margin:0">Нотатка · Чт</p><b class="mt-[4px] block text-[15px] leading-[1.3]">Чхав зранку, апетит нормальний</b></div>"""
 
 def scene_vet():
-    return f'''<div class="w" style="{at(20, 12, 300, 2)}">
-  <div class="flex gap-[12px]"><span class="w-date"><small>Пн</small><b>9</b><small>лист</small></span>
-    <div class="min-w-0"><span class="w-chip grey">Завтра · 11:00</span><b class="mt-[7px] block text-[16px]">Огляд у ветеринара</b><span class="w-sub">Мартін · клініка «Хвостик»</span></div></div>
-  <div class="mt-[14px] border-t border-[#eef0f3] pt-[4px]">
-    <p class="mt-[8px] text-[11px] font-bold uppercase tracking-[0.05em] text-[#a2a6ad]">Взяти на прийом</p>
-    <div class="w-check"><span class="w-mark done">{CHECK}</span>Історія ліків за місяць</div>
-    <div class="w-check"><span class="w-mark done">{CHECK}</span>Графік ваги</div>
-    <div class="w-check"><span class="w-mark"></span>Спитати: продовжувати курс?</div>
-  </div>
+    return f"""<div class="w" style="{at(20, 14, 310, 2)}">
+  <div class="flex items-center gap-[14px]"><span class="w-date"><small>Пн</small><b>9</b><small>лист</small></span>
+    <div class="min-w-0"><h4 class="a-h" style="margin:0;font-size:20px">Огляд у ветеринара</h4><p class="a-p">Завтра, 11:00 · Мартін</p></div></div>
+  <div style="margin-top:12px">
+  {opt(svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>', 22, 2.6), 'Історія ліків за місяць', '', True)}
+  {opt(ic('chart'), 'Графік ваги')}</div>
 </div>
-<div class="w" style="{at(272, 132, 280, 3)}">
-  <div class="w-top"><div class="w-pet !gap-[10px]"><img alt="" class="!size-[34px] !shadow-none" src="{MARTIN}"><b class="!text-[15px]">Історія Мартіна</b></div><span class="w-chip">12 записів</span></div>
-  <div class="w-tl">
-    <div style="--c:#3172c8"><small>28 жовтня</small><b>Огляд · легка інфекція</b><span>Антибіотик на 10 днів</span></div>
-    <div style="--c:#3fcb7e"><small>14 жовтня</small><b>Аналіз крові</b><span class="w-file"><i>PDF</i>analiz-14-10.pdf</span></div>
-    <div><small>30 вересня</small><b>Підпиляли зуби</b><span>Наступний огляд за 3 міс</span></div>
-  </div>
-</div>'''
+<div class="w" style="{at(250, 196, 300, 3)}">
+  <div class="a-top"><h4 class="a-h" style="font-size:17px">Історія Мартіна</h4><span class="a-badge">12</span></div>
+  {opt(ic('clip', 20), 'Огляд', '28 жовт')}
+  {opt(ic('clip', 20), 'Аналіз крові', '14 жовт')}
+  {opt(ic('clip', 20), 'Зуби', '30 вер')}
+</div>"""
 
 def scene_notes():
-    return f'''<div class="w" style="{at(20, 30, 340, 2)}">
-  <div class="w-search">{svg('<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>', 16, 2.4)}<b>алергія</b><span class="ml-auto text-[11px]">3 збіги</span></div>
-  <div class="w-filters"><span>Усі</span><span><img alt="" src="{MARTIN}">Мартін</span><span><img alt="" src="{ARCHIE}">Арчі</span></div>
-  <div class="w-res"><img alt="" src="{ARCHIE}"><div><small>Особливість · Арчі</small><p><mark>Алергія</mark> на кедрову стружку</p></div></div>
-  <div class="w-res"><img alt="" src="{MARTIN}"><div><small>Нотатка · Мартін · 3 лист</small><p>Після <mark>алергії</mark> — лише паперовий наповнювач</p></div></div>
+    return f"""<div class="w" style="{at(20, 24, 350, 2)}">
+  <div class="a-opt on" style="margin-top:0">{ic('search')}<b>алергія</b><em>3 збіги</em></div>
+  <div class="a-tiles" style="margin-top:12px;grid-template-columns:1fr 1fr 1fr">
+    <div class="a-tile on" style="padding:12px 4px"><i style="font-size:22px;margin:0 0 4px">🐾</i>Усі</div>
+    <div class="a-tile" style="padding:12px 4px"><img alt="" src="{MARTIN}">Мартін</div>
+    <div class="a-tile" style="padding:12px 4px"><img alt="" src="{ARCHIE}">Арчі</div>
+  </div>
+  {opt(ic('tag', 20), 'Алергія на кедр', 'Арчі')}
+  {opt(ic('clip', 20), 'Паперовий наповнювач', 'Мартін')}
 </div>
-<div class="w" style="{at(300, 196, 250, 3)}">
+<div class="w" style="{at(330, 256, 222, 3)}">
   <div class="w-pet"><img alt="" src="{ARCHIE}"><div><b>Арчі</b><span>Хом’як · 11 місяців</span></div></div>
-  <div class="w-tags"><span class="warn">Алергія на кедр</span><span>Боїться пилососа</span><span>Ласощі: гарбузове насіння</span><span>Вага 41 г</span></div>
+  <div class="w-tags"><span class="warn">Алергія на кедр</span><span>Боїться пилососа</span><span>Гарбузове насіння</span></div>
 </div>
-<div class="w w-glass" style="{at(386, 70, 150, 4)};padding:12px 14px"><span class="text-[11px] font-semibold text-[#a2a6ad]">Профілі</span><div class="mt-[6px] flex -space-x-[8px]"><img alt="" class="size-[30px] rounded-full ring-2 ring-white" src="{MARTIN}"><img alt="" class="size-[30px] rounded-full ring-2 ring-white" src="{ARCHIE}"><img alt="" class="size-[30px] rounded-full ring-2 ring-white" src="{SKY}"></div><b class="mt-[6px] block text-[13px]">3 улюбленці</b></div>'''
+<div class="w w-glass" style="{at(392, 78, 158, 4)};padding:14px 16px"><p class="a-p" style="margin:0">Профілі</p><div class="mt-[8px] flex -space-x-[8px]"><img alt="" class="size-[34px] rounded-full ring-2 ring-white" src="{MARTIN}"><img alt="" class="size-[34px] rounded-full ring-2 ring-white" src="{ARCHIE}"><img alt="" class="size-[34px] rounded-full ring-2 ring-white" src="{SKY}"></div><b class="mt-[8px] block text-[15px]">3 улюбленці</b></div>"""
 
 SCENES = [scene_reminders, scene_state, scene_vet, scene_notes]
 
