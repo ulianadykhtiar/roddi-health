@@ -21,13 +21,13 @@ T = {
         lang='uk', locale='uk_UA', file='privacy.html', url=BASE + '/privacy', other_file='en/privacy.html',
         title='Політика конфіденційності | Roddi Health', h1='Політика конфіденційності',
         desc='Які дані збирає Roddi Health, навіщо, кому ми їх довіряємо, скільки зберігаємо та як ви можете керувати даними й cookies.',
-        meta='Оновлено 16 листопада 2026', skip='Перейти до змісту', home='Головна', crumb='Політика конфіденційності', nav='Навігація',
+        meta='Оновлено 19 листопада 2026', skip='Перейти до змісту', home='Головна', crumb='Політика конфіденційності', nav='Навігація',
         body=f'''
     <h2>Хто ми</h2>
     <p>Roddi Health — додаток для здоров’я гризунів, який зараз розробляється. Сайт roddihealth.app ведуть Уляна і Вероніка Дихтяр, засновниці проєкту (далі «ми»). Ми відповідаємо за обробку ваших персональних даних. З будь-яких питань про ваші дані пишіть на <a href="mailto:{MAIL}">{MAIL}</a>.</p>
     <h2 id="data">Які дані ми збираємо і навіщо</h2>
     <ul>
-      <li><b>Email.</b> Ви залишаєте його у формі раннього доступу. Разом з ним ми зберігаємо дату й час, форму й сторінку, з якої ви підписалися, мову сайту та факт вашої згоди (версію її тексту). Навіщо: щоб написати вам про запуск і запросити до раннього доступу. Підстава: ваша згода.</li>
+      <li><b>Email.</b> Ви залишаєте його у формі раннього доступу. Разом з ним ми зберігаємо дату й час, форму й сторінку, з якої ви підписалися, мову сайту та факт вашої згоди (версію її тексту). Навіщо: щоб написати вам про запуск і запросити до раннього доступу, а також час від часу надсилати новини застосунку й корисні матеріали про догляд за гризунами, щоб ви про нас не забували. Підстава: ваша згода.</li>
       <li><b>Відповіді короткого опитування</b> (необов’язково): які у вас тварини й скільки їх, коли востаннє давали ліки, який у вас телефон (iPhone чи Android), чи хочете тестувати додаток, коментар. Вони прив’язані до вашого email. Навіщо: зрозуміти, що потрібно власникам гризунів, і спланувати запуск. Підстава: ваша згода.</li>
       <li><b>Листи до нас.</b> Якщо ви пишете на нашу пошту, ми зберігаємо листування, щоб відповісти.</li>
       <li><b>Технічні дані.</b> Хостинг автоматично зберігає службові журнали (IP-адреса, браузер, час запиту). Вони потрібні для безпеки й роботи сайту, ми їх не аналізуємо.</li>
@@ -46,12 +46,12 @@ T = {
     </ul>
     <p>Ці сервіси можуть обробляти дані на серверах у різних країнах, зокрема в США.</p>
     <h2>Скільки ми зберігаємо дані</h2>
-    <p>Email і відповіді опитування ми зберігаємо, доки ви не відкличете згоду або не попросите їх видалити, але не довше, ніж потрібно для запуску й розсилки про нього. Листування зберігаємо, доки воно потрібне для відповіді.</p>
+    <p>Email і відповіді опитування ми зберігаємо, доки ви не відкличете згоду або не попросите їх видалити, але не довше, ніж потрібно для запуску й розсилки. Листування зберігаємо, доки воно потрібне для відповіді.</p>
     <h2 id="rights">Ваші права</h2>
     <p>Ви можете будь-коли попросити показати, виправити чи видалити ваші дані, обмежити їх обробку, отримати їхню копію або відкликати згоду. Відкликання не впливає на законність обробки до нього. Напишіть на <a href="mailto:{MAIL}">{MAIL}</a>, і ми відповімо протягом місяця.</p>
     <p>Якщо ви вважаєте, що ми порушуємо ваші права, можете поскаржитися до наглядового органу: в Україні це Уповноважений Верховної Ради України з прав людини, у країнах ЄС — орган із захисту даних вашої країни. Ми обробляємо дані відповідно до законодавства України про захист персональних даних, а для відвідувачів з ЄС, ЄЕЗ і Великої Британії також відповідно до GDPR.</p>
     <h2>Як відписатися</h2>
-    <p>Кожен лист про запуск матиме посилання для відписки. Ви також можете написати нам на пошту, і ми видалимо вашу адресу зі списку.</p>
+    <p>Кожен лист матиме посилання для відписки. Ви також можете написати нам на пошту, і ми видалимо вашу адресу зі списку.</p>
     <h2>Діти</h2>
     <p>Сайт не призначений для дітей до 16 років. Якщо ви вважаєте, що дитина залишила нам дані, напишіть, і ми їх видалимо.</p>
     <h2>Зміни</h2>
@@ -61,13 +61,13 @@ T = {
         lang='en', locale='en_US', file='en/privacy.html', url=BASE + '/en/privacy', other_file='privacy.html',
         title='Privacy Policy | Roddi Health', h1='Privacy Policy',
         desc='What data Roddi Health collects and why, who we trust with it, how long we keep it and how you can manage your data and cookies.',
-        meta='Updated November 16, 2026', skip='Skip to content', home='Home', crumb='Privacy Policy', nav='Navigation',
+        meta='Updated November 19, 2026', skip='Skip to content', home='Home', crumb='Privacy Policy', nav='Navigation',
         body=f'''
     <h2>Who we are</h2>
     <p>Roddi Health is an app for rodent health that is currently in development. The roddihealth.app website is run by Uliana and Veronika Dykhtiar, the founders of the project (“we”). We are responsible for processing your personal data. For any question about your data, write to <a href="mailto:{MAIL}">{MAIL}</a>.</p>
     <h2 id="data">What data we collect and why</h2>
     <ul>
-      <li><b>Email.</b> You leave it in the early access form. With it we store the date and time, the form and page you signed up from, the site language and the fact of your consent (the version of its text). Why: to write to you about the launch and invite you to early access. Legal basis: your consent.</li>
+      <li><b>Email.</b> You leave it in the early access form. With it we store the date and time, the form and page you signed up from, the site language and the fact of your consent (the version of its text). Why: to write to you about the launch and invite you to early access, and from time to time to send app news and useful materials about rodent care, so you do not forget about us. Legal basis: your consent.</li>
       <li><b>Answers to the short survey</b> (optional): which pets you have and how many, when you last gave medication, what phone you use (iPhone or Android), whether you want to test the app, and a comment. They are linked to your email. Why: to understand what rodent owners need and plan the launch. Legal basis: your consent.</li>
       <li><b>Emails to us.</b> If you write to our address, we keep the correspondence so we can reply.</li>
       <li><b>Technical data.</b> Our host automatically keeps service logs (IP address, browser, time of request). They are needed for security and for the site to work, and we do not analyze them.</li>
@@ -86,12 +86,12 @@ T = {
     </ul>
     <p>These services may process data on servers in different countries, including the United States.</p>
     <h2>How long we keep data</h2>
-    <p>We keep your email and survey answers until you withdraw consent or ask us to delete them, but no longer than needed for the launch and the mailing about it. We keep correspondence as long as it is needed to reply.</p>
+    <p>We keep your email and survey answers until you withdraw consent or ask us to delete them, but no longer than needed for the launch and the mailing. We keep correspondence as long as it is needed to reply.</p>
     <h2 id="rights">Your rights</h2>
     <p>You can ask at any time to see, correct or delete your data, restrict its processing, get a copy of it or withdraw your consent. Withdrawing does not affect the lawfulness of processing before it. Write to <a href="mailto:{MAIL}">{MAIL}</a> and we will reply within a month.</p>
     <p>If you believe we are violating your rights, you can complain to a supervisory authority: in Ukraine, the Ukrainian Parliament Commissioner for Human Rights; in the EU, the data protection authority of your country; in the UK, the Information Commissioner’s Office. We process data in line with Ukrainian personal data protection law and, for visitors from the EU, the EEA and the UK, the GDPR.</p>
     <h2>How to unsubscribe</h2>
-    <p>Every launch email will contain an unsubscribe link. You can also write to us and we will remove your address from the list.</p>
+    <p>Every email will contain an unsubscribe link. You can also write to us and we will remove your address from the list.</p>
     <h2>Children</h2>
     <p>The site is not intended for children under 16. If you believe a child has left us data, write to us and we will delete it.</p>
     <h2>Changes</h2>

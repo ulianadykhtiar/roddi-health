@@ -9,7 +9,7 @@ var FORMS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwV8yi4dIDTwzk0D9J
 
 /* Version of the consent wording and the privacy policy the visitor agreed to (stored with the sign-up).
  * Change it together with the policy date in tools/build-privacy.py. */
-var CONSENT_VERSION = '2026-11-16';
+var CONSENT_VERSION = '2026-11-19';
 
 var RoddiForms = (function () {
   // Page language picks the text; en/*.html are built with lang="en".

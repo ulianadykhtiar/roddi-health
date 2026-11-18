@@ -14,7 +14,7 @@
         "faq": [
           ["Чи замінює додаток ветеринара?", "Ні. Roddi Health допомагає вести історію здоров’я й не пропускати лікування, але не замінює консультацію ветеринара."],
           ["Для яких тварин?", "Для щурів, хом’яків, морських свинок, кроликів, шиншил, дегу, мишей та інших маленьких улюбленців."],
-          ["Що ви робите з моєю поштою?", "Надсилаємо лише новини про запуск і запрошення до раннього доступу. Без спаму, відписатися можна будь-коли."]
+          ["Що ви робите з моєю поштою?", "Надсилаємо новини про запуск, запрошення до раннього доступу й час від часу листи про застосунок та корисні теми для власників гризунів. Без спаму, відписатися можна будь-коли."]
         ]
       },
       "en": {
@@ -24,7 +24,7 @@
         "faq": [
           ["Does the app replace a vet?", "No. Roddi Health helps you keep a health history and stay on top of treatment, but it doesn’t replace a veterinary consultation."],
           ["Which animals is it for?", "Rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets."],
-          ["What do you do with my email?", "We only send launch news and early access invitations. No spam, and you can unsubscribe anytime."]
+          ["What do you do with my email?", "We send launch news, early access invitations and, from time to time, emails about the app and useful topics for rodent owners. No spam, and you can unsubscribe anytime."]
         ]
       }
     },
