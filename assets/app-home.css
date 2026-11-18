@@ -409,7 +409,7 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-round img { width: 22px; height: 22px; }
 .ip-dot { position: absolute; left: 24px; top: 10px; width: 8px; height: 8px; border: 1.5px solid #2d95e0; border-radius: 50%; background: #fd6353; box-sizing: content-box; margin: -1.5px; }
 .ip-pets { position: relative; display: flex; gap: 16px; align-items: flex-start; }
-.ip-pet { display: flex; flex-direction: column; align-items: center; gap: 0; flex: none; }
+.ip-pet { display: flex; flex-direction: column; align-items: center; gap: 5px; flex: none; }
 .ip-pw { position: relative; width: 90px; height: 94px; }
 .ip-all .ip-pw { width: 96px; }
 .ip-ring94 { position: absolute; left: 0; top: 0; width: 94px; height: 94px; }
