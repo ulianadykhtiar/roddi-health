@@ -411,13 +411,12 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-pets { position: relative; display: flex; gap: 16px; align-items: flex-start; }
 .ip-pet { display: flex; flex-direction: column; align-items: center; gap: 5px; flex: none; }
 .ip-pw { position: relative; width: 90px; height: 94px; }
-.ip-all .ip-pw { width: 96px; }
-.ip-ring94 { position: absolute; left: 0; top: 0; width: 94px; height: 94px; }
-.ip-ring88 { position: absolute; left: 1px; top: 3px; width: 94px; height: 94px; }
+.ip-ring94 { position: absolute; left: 0; top: 3px; width: 88px; height: 88px; }
+.ip-ring88 { position: absolute; left: 0; top: 3px; width: 88px; height: 88px; }
 .ip-circ { position: absolute; left: 0; top: 3px; display: grid; place-items: center; width: 88px; height: 88px; border: 2px solid rgba(255,255,255,.3); border-radius: 50%; box-sizing: border-box; }
 .ip-circ img { width: 76px; height: 76px; border-radius: 50%; }
 .ip-bd { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; border: 3px solid; border-radius: 50%; background: #122449; color: #fff; font-size: 14px; font-style: normal; font-weight: 700; box-sizing: border-box; }
-.ip-sky { position: absolute; left: 0; right: 0; top: 33px; text-align: center; font-size: 26px; font-weight: 700; color: #fff; }
+.ip-sky { position: absolute; left: 0; right: 0; top: 30px; text-align: center; font-size: 26px; font-weight: 700; color: #fff; }
 .ip-pl { padding: 3px 16px; line-height: 1.25; border-radius: 100px; font-size: 14px; color: #fff; white-space: nowrap; }
 .ip-all .ip-pl { padding: 3px 20px; background: rgba(255,255,255,.3); font-weight: 600; }
 .ip-cards { position: absolute; left: 0; top: 322px; z-index: 2; display: flex; flex-direction: column; gap: 12px; width: 402px; padding: 0 16px; }
