@@ -466,14 +466,3 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .hb.sh-blob { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M53 3C79 5 97 24 94 52 91 78 70 97 46 95 22 93 4 74 6 48 8 24 28 1 53 3Z'/%3E%3C/svg%3E"); }
 .hb.sh-flower { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='22' r='20'/%3E%3Ccircle cx='74' cy='36' r='20'/%3E%3Ccircle cx='74' cy='64' r='20'/%3E%3Ccircle cx='50' cy='78' r='20'/%3E%3Ccircle cx='26' cy='64' r='20'/%3E%3Ccircle cx='26' cy='36' r='20'/%3E%3C/svg%3E"); }
 .hb.sh-pill { --shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='16' y='2' width='68' height='96' rx='34'/%3E%3C/svg%3E"); }
-
-/* Hover on the photos and emoji around the phone: they stop drifting, straighten up, grow and lift;
-   the photo zooms a little inside its circle. Only where there is a real hover and motion is welcome. */
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .hb, .hi { cursor: pointer; transition: scale .45s var(--spring), rotate .45s var(--spring), filter .35s, box-shadow .35s, opacity .7s var(--ease), transform .9s var(--ease); }
-  .hb:hover, .hi:hover { animation-play-state: paused; rotate: 0deg !important; z-index: 5; }
-  .hb:hover { scale: 1.1; filter: drop-shadow(0 26px 30px rgba(30,70,140,.34)); }
-  .hb img { transition: transform .6s var(--ease); }
-  .hb:hover img { transform: scale(1.1); }
-  .hi:hover { scale: 1.22; box-shadow: 0 0 0 2px #fff, 0 22px 28px -10px rgba(30,70,140,.5); }
-}
