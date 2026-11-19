@@ -36,6 +36,13 @@ var HEADERS = {
   Survey: ['Дата', 'Email', 'Тварини', 'Скільки', 'Останні ліки', 'Телефон', 'Бета', 'Коментар', 'Мова']
 };
 
+// Addresses for testing: a repeat sign-up is not ignored, the welcome letter is sent every time. "+tag" variants count too (name+test1@gmail.com).
+var TEST_EMAILS = ['veronikadihtyar@gmail.com'];
+function isTestEmail(email) {
+  var m = String(email).toLowerCase().match(/^([^@+]+)(?:\+[^@]*)?@(.+)$/);
+  return !!m && TEST_EMAILS.indexOf(m[1] + '@' + m[2]) !== -1;
+}
+
 function doPost(e) {
   // One-click unsubscribe from the mail client: POST to the unsubscribe link (?unsub=…&e=…).
   if (e && e.parameter && e.parameter.unsub) { doUnsub(e.parameter); return reply('ok'); }
@@ -49,7 +56,13 @@ function doPost(e) {
       var emails = sheet('Emails');
       // One row per address: a repeat sign-up is ignored.
       var known = emails.getLastRow() > 1 ? emails.getRange(2, 2, emails.getLastRow() - 1, 1).getValues() : [];
-      if (known.some(function (r) { return String(r[0]).toLowerCase() === email; })) return reply('duplicate');
+      var seen = known.some(function (r) { return String(r[0]).toLowerCase() === email; });
+      if (seen && isTestEmail(email)) {
+        // A test address (see TEST_EMAILS): sign up as many times as you like. The row stays as it is (no new rows), the welcome letter goes out again.
+        if (clean(data.consent)) try { sendWelcome(email, lang(data)); } catch (err) {}
+        return reply('ok');
+      }
+      if (seen) return reply('duplicate');
       var consent = clean(data.consent);
       emails.appendRow([new Date(), clean(email), clean(data.form), clean(data.page), lang(data), consent, clean(data.source), clean(data.campaign), consent ? 'active' : '', '']);
       if (consent) {
@@ -202,7 +215,7 @@ function wrap(lang, title, bodyHtml, email, emoji) {
     '<div style="background:#ffffff;border-radius:28px;overflow:hidden;box-shadow:0 10px 30px rgba(116,160,218,.18)">' +
     '<div style="background:#2f6fc7;background-image:url(' + SITE + '/assets/email-bg.jpg),linear-gradient(160deg,#9cc3dc 0%,#2f6fc7 30%,#3d8bd0 100%);background-size:cover;background-position:top left;padding:26px 28px 34px;text-align:center">' +
     '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 22px"><tr>' +
-    '<td style="padding-right:9px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="30" height="30" alt="" style="display:block;border-radius:9px"></td>' +
+    '<td style="padding-right:9px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="30" height="30" alt="Roddi Health" style="display:block;border-radius:9px;color:#ffffff;font-size:12px"></td>' +
     '<td style="font-size:17px;font-weight:bold;color:#ffffff">Roddi Health</td></tr></table>' +
     '<div style="width:156px;height:156px;margin:0 auto;background:#ffffff;border-radius:50%;box-shadow:0 8px 20px rgba(20,35,75,.22)">' +
     '<div style="width:140px;padding-right:16px"><img src="' + SITE + '/assets/email-mascot.png" width="124" height="114" alt="" style="display:block;margin:0 auto;padding-top:22px;border:0"></div></div></div>' +
