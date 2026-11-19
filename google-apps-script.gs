@@ -162,9 +162,9 @@ var TEXT = {
     hi: 'Ви в списку!',
     lead: 'Дякуємо, що приєдналися до Roddi Health. Це застосунок, який допомагає не пропускати ліки, стежити за вагою й станом гризунів і приходити до ветеринара з готовою історією.',
     stepsTitle: 'Що вас чекає',
-    steps: [['💊', 'Ліки без пропусків', 'Нагадування про кожну дозу для кожного улюбленця'],
-            ['⚖️', 'Вага й самопочуття', 'Усе в одному місці, зі зрозумілою динамікою'],
-            ['📋', 'Історія для ветеринара', 'Показуєте на візиті, а не згадуєте по пам’яті']],
+    steps: [['&#x1F48A;', 'Ліки без пропусків', 'Нагадування про кожну дозу для кожного улюбленця'],
+            ['&#x2696;&#xFE0F;', 'Вага й самопочуття', 'Усе в одному місці, зі зрозумілою динамікою'],
+            ['&#x1F4CB;', 'Історія для ветеринара', 'Показуєте на візиті, а не згадуєте по пам’яті']],
     next: 'Ми напишемо вам, щойно запустимось, і першими запросимо до раннього доступу.',
     cta: 'Читати блог про гризунів',
     foot: 'Ви отримали цей лист, бо залишили email на roddihealth.app.',
@@ -175,9 +175,9 @@ var TEXT = {
     hi: 'You’re on the list!',
     lead: 'Thanks for joining Roddi Health, an app that helps you never miss a dose, track your rodent’s weight and condition, and arrive at the vet with the history ready.',
     stepsTitle: 'What to expect',
-    steps: [['💊', 'No missed doses', 'A reminder for every dose, for every pet'],
-            ['⚖️', 'Weight and wellbeing', 'Everything in one place, with clear trends'],
-            ['📋', 'History for the vet', 'Show it at the visit instead of remembering']],
+    steps: [['&#x1F48A;', 'No missed doses', 'A reminder for every dose, for every pet'],
+            ['&#x2696;&#xFE0F;', 'Weight and wellbeing', 'Everything in one place, with clear trends'],
+            ['&#x1F4CB;', 'History for the vet', 'Show it at the visit instead of remembering']],
     next: 'We’ll email you as soon as we launch, and you’ll be the first to get early access.',
     cta: 'Read the rodent blog',
     foot: 'You got this email because you left your address at roddihealth.app.',
@@ -199,7 +199,7 @@ function wrap(lang, title, bodyHtml, email, emoji) {
     '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 22px"><tr>' +
     '<td style="padding-right:9px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="30" height="30" alt="" style="display:block;border-radius:9px"></td>' +
     '<td style="font-size:17px;font-weight:bold;color:' + INK + '">Roddi Health</td></tr></table>' +
-    '<div style="width:84px;height:84px;margin:0 auto;background:#ffffff;border-radius:50%;line-height:84px;font-size:42px;box-shadow:0 8px 20px rgba(49,114,200,.18)">' + (emoji || '🐾') + '</div></div>' +
+    '<div style="width:84px;height:84px;margin:0 auto;background:#ffffff;border-radius:50%;line-height:84px;font-size:42px;box-shadow:0 8px 20px rgba(49,114,200,.18)">' + (emoji || '&#x1F43E;') + '</div></div>' +
     '<div style="padding:30px 28px 32px;color:' + INK + ';font-size:16px;line-height:1.6">' +
     '<h1 style="margin:0 0 14px;font-size:30px;line-height:1.15;text-align:center;color:' + INK + '">' + esc(title) + '</h1>' + bodyHtml + '</div></div>' +
     '<div style="padding:18px 20px 0;color:#8a93a6;font-size:12.5px;line-height:1.5;text-align:center">' + esc(t.foot) + ' <a href="' + unsubUrl(email) + '" style="color:#8a93a6;text-decoration:underline">' + esc(t.unsub) + '</a></div>' +
@@ -231,8 +231,8 @@ function sendWelcome(email, lang) {
     '<div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:' + INK + ';font-weight:bold;margin:0 0 12px 4px">' + esc(t.stepsTitle) + '</div>' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' + cards + '</table></div>' +
     '<p style="margin:0 0 24px;text-align:center">' + esc(t.next) + '</p>' +
-    '<p style="margin:0;text-align:center">' + button(SITE + (lang === 'en' ? '/en/blog' : '/blog'), t.cta) + '</p>', email, '🐾');
-  var plain = t.hi + '\n\n' + t.lead + '\n\n' + t.steps.map(function (st) { return st[0] + ' ' + st[1] + ': ' + st[2]; }).join('\n') + '\n\n' + t.next + '\n\n' + t.unsub + ': ' + unsubUrl(email);
+    '<p style="margin:0;text-align:center">' + button(SITE + (lang === 'en' ? '/en/blog' : '/blog'), t.cta) + '</p>', email, '&#x1F43E;');
+  var plain = t.hi + '\n\n' + t.lead + '\n\n' + t.steps.map(function (st) { return st[1] + ': ' + st[2]; }).join('\n') + '\n\n' + t.next + '\n\n' + t.unsub + ': ' + unsubUrl(email);
   send(email, t.subject, html, plain);
   return true;
 }
