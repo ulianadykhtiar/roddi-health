@@ -137,9 +137,13 @@
 
 /* Phones and tablets: widgets stack at full size instead of a shrunk collage. */
 @media (max-width: 1023px) {
+  /* The grid column must not grow past the card, or the widgets lose their right padding. */
+  .fp-scene-wrap { grid-template-columns: minmax(0, 1fr); }
   .fp-scene { width: 100%; height: auto; zoom: 1 !important; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 14px; }
   .fp-scene > * { position: relative !important; left: auto !important; top: auto !important; width: min(100%, 360px) !important; }
   .fp-scene > .w-glass { display: none; }
+  /* Widgets wrapped in a positioned div (the notification) keep their desktop --w; make them fill the column. */
+  .fp-scene > * > .w { width: 100%; }
   
 }
 
