@@ -190,7 +190,8 @@ function wrap(lang, title, paragraphsHtml, email) {
 }
 
 function send(email, subject, html, plain) {
-  MailApp.sendEmail({ to: email, subject: subject, htmlBody: html, body: plain, name: MAIL_NAME, replyTo: MAIL_REPLY_TO });
+  // Відправник — roddihealth@gmail.com: адреса додана в Gmail як «Send mail as» (alias) на акаунті, де розгорнуто скрипт.
+  GmailApp.sendEmail(email, subject, plain, { htmlBody: html, name: MAIL_NAME, from: MAIL_REPLY_TO, replyTo: MAIL_REPLY_TO });
 }
 
 function sendWelcome(email, lang) {
