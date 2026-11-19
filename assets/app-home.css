@@ -491,6 +491,9 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-stack .ip-pa { box-sizing: border-box; width: 32px; height: 32px; border: 2px solid #f3f5fa; }
 .ip-stack .ip-pa + .ip-pa { margin-left: -10px; }
 
-/* Hero mascot: peeks from behind the phone's right edge; its paws reach over the phone. Sized in the phone's own units
-   (inside .ip, which is 387×812): the cut edge of the picture (x=397 of 813) sits on the phone's right edge, the top paw on its top edge. */
-.ip-mascot { position: absolute; left: -10px; top: -235px; z-index: 5; width: 813px; height: 743px; max-width: none; pointer-events: none; filter: drop-shadow(0 18px 26px rgba(30, 80, 160, .22)); }
+/* Hero mascot: sits BEHIND the phone, peeking out from its right edge (the cut edge of the picture is tucked 14px under the bezel,
+   so the phone stays whole). A second copy, clipped to the paws only, lies on top so they reach over the phone.
+   Sized in the phone's own units (inside .ip, 387×812): the top paw sits on the phone's top edge. */
+.ip { isolation: isolate; }
+.ip-mascot { position: absolute; left: -24px; top: -235px; z-index: -1; width: 813px; height: 743px; max-width: none; pointer-events: none; filter: drop-shadow(0 18px 26px rgba(30, 80, 160, .22)); }
+.ip-mascot-front { z-index: 5; filter: none; clip-path: inset(0 50% 0 0); }
