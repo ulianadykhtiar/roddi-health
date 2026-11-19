@@ -34,7 +34,7 @@
   function render() {
     ticking = false;
     if (!wide.matches) {
-      slides.forEach(function (s) { s.style.transform = ''; s.style.opacity = ''; });
+      slides.forEach(function (s) { s.style.transform = ''; s.style.opacity = ''; s.style.filter = ''; });
       return;
     }
     var p = progress(), h = slides[0].offsetHeight + GAP;
@@ -43,10 +43,12 @@
       if (d >= 0) {                      // the next card: below, rising into place; later ones hidden
         s.style.transform = 'translate3d(0,' + (Math.min(d, 1.6) * h).toFixed(1) + 'px,0)';
         s.style.opacity = Math.min(Math.max(2 - d, 0), 1).toFixed(2);
-      } else {                           // passed cards: stay under the new one, shrink a little
+        s.style.filter = '';
+      } else {                           // passed cards: stay under the new one, shrink a little, go paler and softer
         var b = Math.min(-d, 1);
         s.style.transform = 'translate3d(0,' + (-b * 10).toFixed(1) + 'px,0) scale(' + (1 - b * 0.06).toFixed(3) + ')';
-        s.style.opacity = (1 - Math.max(-d - 1, 0)).toFixed(2);
+        s.style.opacity = Math.max(1 - b * 0.4 - Math.max(-d - 1, 0), 0).toFixed(2);
+        s.style.filter = b > 0.01 ? 'blur(' + (b * 3).toFixed(1) + 'px)' : '';
       }
     });
     setActive(Math.round(p));
