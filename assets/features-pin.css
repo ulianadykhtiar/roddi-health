@@ -162,7 +162,7 @@
    The scenes reuse the hero phone's components (.ip-* in assets/app-home.css): white cards with a 32px radius,
    the blue "next step" block with its white card and navy pill, task rows with round pet photos.
    Only the few extras below live here. */
-.fx { width: var(--w, auto); filter: drop-shadow(0 20px 32px rgba(20,40,100,.2)); }
+.fx { width: var(--w, auto); filter: drop-shadow(0 10px 24px rgba(90,120,200,.13)); }
 .fx .ip-sec { margin-bottom: 14px; }
 .fx-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .fx-h { display: flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 700; letter-spacing: -0.03em; color: #312a2e; white-space: nowrap; }
@@ -190,4 +190,4 @@
 .fx .w-tl > div::before { box-shadow: inset 0 0 0 2px var(--c, #bfc5cc); }
 
 /* Cards stack on scroll: the card that slides up casts a soft shadow on the one below it, so they do not blend. */
-@media (min-width: 1024px) { .fp .fp-card { box-shadow: 0 -22px 44px -16px rgba(18,36,90,.32); } }
+@media (min-width: 1024px) { .fp .fp-card { box-shadow: 0 -10px 36px -14px rgba(90,120,200,.2); } }
