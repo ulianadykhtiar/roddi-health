@@ -154,39 +154,55 @@ function unsubUrl(email) {
   return ScriptApp.getService().getUrl() + '?unsub=' + token(email) + '&e=' + encodeURIComponent(email);
 }
 
+var SITE = 'https://roddihealth.app';
+
 var TEXT = {
   uk: {
-    subject: 'Ви в списку очікування Roddi Health',
-    hi: 'Дякуємо, що приєдналися!',
-    body: ['Ви в списку очікування Roddi Health, додатку, який допомагає не пропускати ліки, стежити за вагою й станом гризунів та приходити до ветеринара з готовою історією.',
-           'Спершу ми напишемо про запуск і запросимо до раннього доступу.',
-           'Іноді надсилатимемо листи про застосунок і корисні теми для власників гризунів, щоб ви не забули про нас. Без спаму, лише по суті.'],
-    foot: 'Ви отримали цей лист, бо залишили email на roddihealth.app. Якщо це були не ви або передумали,',
-    unsub: 'відпишіться одним кліком'
+    subject: 'Ви в списку очікування Roddi Health 🐹',
+    hi: 'Ви в списку!',
+    lead: 'Дякуємо, що приєдналися до Roddi Health. Це застосунок, який допомагає не пропускати ліки, стежити за вагою й станом гризунів і приходити до ветеринара з готовою історією.',
+    stepsTitle: 'Що вас чекає',
+    steps: [['💊', 'Ліки без пропусків', 'Нагадування про кожну дозу для кожного улюбленця'],
+            ['⚖️', 'Вага й самопочуття', 'Усе в одному місці, зі зрозумілою динамікою'],
+            ['📋', 'Історія для ветеринара', 'Показуєте на візиті, а не згадуєте по пам’яті']],
+    next: 'Ми напишемо вам, щойно запустимось, і першими запросимо до раннього доступу.',
+    cta: 'Читати блог про гризунів',
+    foot: 'Ви отримали цей лист, бо залишили email на roddihealth.app.',
+    unsub: 'Відписатися'
   },
   en: {
-    subject: 'You’re on the Roddi Health waitlist',
-    hi: 'Thanks for joining!',
-    body: ['You’re on the Roddi Health waitlist, an app that helps you never miss a dose, track your rodent’s weight and condition, and arrive at the vet with the history ready.',
-           'First, we’ll let you know when we launch and invite you to early access.',
-           'From time to time we’ll also send emails about the app and useful topics for rodent owners, so you don’t forget about us. No spam, only what matters.'],
-    foot: 'You got this email because you left your address at roddihealth.app. If that wasn’t you or you’ve changed your mind,',
-    unsub: 'unsubscribe in one click'
+    subject: 'You’re on the Roddi Health waitlist 🐹',
+    hi: 'You’re on the list!',
+    lead: 'Thanks for joining Roddi Health, an app that helps you never miss a dose, track your rodent’s weight and condition, and arrive at the vet with the history ready.',
+    stepsTitle: 'What to expect',
+    steps: [['💊', 'No missed doses', 'A reminder for every dose, for every pet'],
+            ['⚖️', 'Weight and wellbeing', 'Everything in one place, with clear trends'],
+            ['📋', 'History for the vet', 'Show it at the visit instead of remembering']],
+    next: 'We’ll email you as soon as we launch, and you’ll be the first to get early access.',
+    cta: 'Read the rodent blog',
+    foot: 'You got this email because you left your address at roddihealth.app.',
+    unsub: 'Unsubscribe'
   }
 };
 
 function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
-// One layout for every letter: blue header, white card, unsubscribe line.
-function wrap(lang, title, paragraphsHtml, email) {
+// One layout for every letter: logo bar, white card, footer with the unsubscribe link.
+// Fonts and layout are email-safe (tables, inline styles); the logo and the hamster are hosted on the site.
+function wrap(lang, title, bodyHtml, email) {
   var t = TEXT[lang === 'en' ? 'en' : 'uk'];
-  return '<div style="background:#eef2fb;padding:24px 12px;font-family:Arial,Helvetica,sans-serif">' +
-    '<div style="max-width:520px;margin:0 auto;background:#ffffff;border-radius:20px;overflow:hidden">' +
-    '<div style="background:#3172c8;padding:22px 28px;color:#ffffff;font-size:18px;font-weight:bold">Roddi Health</div>' +
-    '<div style="padding:28px;color:#16244d;font-size:16px;line-height:1.55">' +
-    '<h1 style="margin:0 0 14px;font-size:24px;line-height:1.2">' + esc(title) + '</h1>' + paragraphsHtml + '</div>' +
-    '<div style="padding:16px 28px 24px;color:#6b7494;font-size:12.5px;line-height:1.5">' + esc(t.foot) + ' <a href="' + unsubUrl(email) + '" style="color:#3172c8">' + esc(t.unsub) + '</a>.</div>' +
-    '</div></div>';
+  return '<div style="background:#eaf1fb;padding:28px 12px;font-family:Onest,Arial,Helvetica,sans-serif">' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto"><tr><td>' +
+    '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 16px"><tr>' +
+    '<td style="padding-right:10px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="36" height="36" alt="" style="display:block;border-radius:10px"></td>' +
+    '<td style="font-size:19px;font-weight:bold;color:#16244d">Roddi Health</td></tr></table>' +
+    '<div style="background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 8px 28px rgba(49,114,200,.12)">' +
+    '<div style="background:linear-gradient(135deg,#cfe0f7,#f3dff0);padding:28px 28px 0;text-align:center">' +
+    '<img src="' + SITE + '/assets/email-hamster.png" width="132" alt="" style="display:block;margin:0 auto"></div>' +
+    '<div style="padding:28px;color:#16244d;font-size:16px;line-height:1.6">' +
+    '<h1 style="margin:0 0 14px;font-size:28px;line-height:1.2;text-align:center">' + esc(title) + '</h1>' + bodyHtml + '</div></div>' +
+    '<div style="padding:18px 20px 0;color:#7a84a3;font-size:12.5px;line-height:1.5;text-align:center">' + esc(t.foot) + ' <a href="' + unsubUrl(email) + '" style="color:#7a84a3;text-decoration:underline">' + esc(t.unsub) + '</a></div>' +
+    '</td></tr></table></div>';
 }
 
 function send(email, subject, html, plain) {
@@ -196,8 +212,18 @@ function send(email, subject, html, plain) {
 
 function sendWelcome(email, lang) {
   var t = TEXT[lang === 'en' ? 'en' : 'uk'];
-  var html = wrap(lang, t.hi, t.body.map(function (p) { return '<p style="margin:0 0 14px">' + esc(p) + '</p>'; }).join(''), email);
-  send(email, t.subject, html, t.hi + '\n\n' + t.body.join('\n\n') + '\n\n' + t.unsub + ': ' + unsubUrl(email));
+  var steps = t.steps.map(function (st) {
+    return '<tr><td width="44" valign="top" style="padding:8px 0;font-size:24px">' + st[0] + '</td>' +
+      '<td style="padding:8px 0;color:#16244d"><b>' + esc(st[1]) + '</b><br><span style="color:#5b6690;font-size:14.5px">' + esc(st[2]) + '</span></td></tr>';
+  }).join('');
+  var html = wrap(lang, t.hi,
+    '<p style="margin:0 0 20px;text-align:center">' + esc(t.lead) + '</p>' +
+    '<div style="background:#f4f7fd;border-radius:16px;padding:14px 18px;margin:0 0 20px"><div style="font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:#3172c8;font-weight:bold;margin-bottom:4px">' + esc(t.stepsTitle) + '</div>' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' + steps + '</table></div>' +
+    '<p style="margin:0 0 22px;text-align:center">' + esc(t.next) + '</p>' +
+    '<p style="margin:0;text-align:center"><a href="' + SITE + (lang === 'en' ? '/en/blog' : '/blog') + '" style="display:inline-block;background:#3172c8;color:#ffffff;text-decoration:none;font-weight:bold;padding:14px 26px;border-radius:14px">' + esc(t.cta) + '</a></p>', email);
+  var plain = t.hi + '\n\n' + t.lead + '\n\n' + t.steps.map(function (st) { return st[0] + ' ' + st[1] + ': ' + st[2]; }).join('\n') + '\n\n' + t.next + '\n\n' + t.unsub + ': ' + unsubUrl(email);
+  send(email, t.subject, html, plain);
   return true;
 }
 
