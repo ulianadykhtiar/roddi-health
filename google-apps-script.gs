@@ -199,7 +199,8 @@ function wrap(lang, title, bodyHtml, email, emoji) {
     '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 22px"><tr>' +
     '<td style="padding-right:9px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="30" height="30" alt="" style="display:block;border-radius:9px"></td>' +
     '<td style="font-size:17px;font-weight:bold;color:#ffffff">Roddi Health</td></tr></table>' +
-    '<div style="width:84px;height:84px;margin:0 auto;background:#ffffff;border-radius:50%;line-height:84px;font-size:42px;box-shadow:0 8px 20px rgba(49,114,200,.18)">' + (emoji || '&#x1F43E;') + '</div></div>' +
+    '<div style="width:156px;height:156px;margin:0 auto;background:#ffffff;border-radius:50%;box-shadow:0 8px 20px rgba(20,35,75,.22)">' +
+    '<img src="' + SITE + '/assets/email-mascot.png" width="124" height="114" alt="" style="display:block;margin:0 auto;padding-top:22px;border:0"></div></div>' +
     '<div style="padding:30px 28px 32px;color:' + INK + ';font-size:16px;line-height:1.6">' +
     '<h1 style="margin:0 0 14px;font-size:30px;line-height:1.15;text-align:center;color:' + INK + '">' + esc(title) + '</h1>' + bodyHtml + '</div></div>' +
     '<div style="padding:18px 20px 0;color:#8a93a6;font-size:12.5px;line-height:1.5;text-align:center">' + esc(t.foot) + ' <a href="' + unsubUrl(email) + '" style="color:#8a93a6;text-decoration:underline">' + esc(t.unsub) + '</a></div>' +
