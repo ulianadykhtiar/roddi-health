@@ -26,6 +26,9 @@
 
 var MAIL_NAME = 'Roddi Health';
 var MAIL_REPLY_TO = 'roddihealth@gmail.com';
+// Відправка через Resend (домен roddihealth.app). Ключ лежить у Project Settings → Script properties як RESEND_KEY.
+// Поки ключа немає, листи йдуть через Gmail (адреса roddihealth@gmail.com як «Send mail as»).
+var MAIL_FROM = 'Roddi Health <hello@roddihealth.app>';
 
 var HEADERS = {
   Emails: ['Дата', 'Email', 'Форма', 'Сторінка', 'Мова', 'Згода', 'Джерело', 'Кампанія', 'Підписка', 'Вітальний лист'],
@@ -34,6 +37,8 @@ var HEADERS = {
 };
 
 function doPost(e) {
+  // One-click unsubscribe from the mail client: POST to the unsubscribe link (?unsub=…&e=…).
+  if (e && e.parameter && e.parameter.unsub) { doUnsub(e.parameter); return reply('ok'); }
   var lock = LockService.getScriptLock();
   lock.waitLock(10000);
   try {
@@ -213,7 +218,25 @@ function button(href, label) {
 }
 
 function send(email, subject, html, plain) {
-  // Відправник — roddihealth@gmail.com: адреса додана в Gmail як «Send mail as» (alias) на акаунті, де розгорнуто скрипт.
+  var key = PropertiesService.getScriptProperties().getProperty('RESEND_KEY');
+  if (key) {
+    // Resend: власний домен із SPF/DKIM, плюс заголовки відписки в один клік (Gmail показує кнопку «Відписатися»).
+    var res = UrlFetchApp.fetch('https://api.resend.com/emails', {
+      method: 'post',
+      contentType: 'application/json',
+      headers: { Authorization: 'Bearer ' + key },
+      muteHttpExceptions: true,
+      payload: JSON.stringify({
+        from: MAIL_FROM, to: [email], subject: subject, html: html, text: plain, reply_to: MAIL_REPLY_TO,
+        headers: {
+          'List-Unsubscribe': '<' + unsubUrl(email) + '>, <mailto:' + MAIL_REPLY_TO + '?subject=unsubscribe>',
+          'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'
+        }
+      })
+    });
+    if (res.getResponseCode() >= 300) throw new Error('Resend ' + res.getResponseCode() + ': ' + res.getContentText());
+    return;
+  }
   GmailApp.sendEmail(email, subject, plain, { htmlBody: html, name: MAIL_NAME, from: MAIL_REPLY_TO, replyTo: MAIL_REPLY_TO });
 }
 
@@ -249,7 +272,7 @@ function sendNewsletter() {
   if (n < 1) throw new Error('У вкладці Emails нікого немає.');
   var rows = list.getRange(2, 1, n, 9).getValues();
   var people = rows.filter(function (r) { return r[1] && r[5] && r[8] === 'active'; });
-  if (MailApp.getRemainingDailyQuota() < people.length) throw new Error('Денний ліміт пошти: залишилось ' + MailApp.getRemainingDailyQuota() + ', потрібно ' + people.length + '. Запустіть завтра.');
+  if (!PropertiesService.getScriptProperties().getProperty('RESEND_KEY') && MailApp.getRemainingDailyQuota() < people.length) throw new Error('Денний ліміт пошти: залишилось ' + MailApp.getRemainingDailyQuota() + ', потрібно ' + people.length + '. Запустіть завтра.');
   var sent = 0;
   people.forEach(function (r) {
     var l = r[4] === 'en' ? 'en' : 'uk';
@@ -263,8 +286,8 @@ function sendNewsletter() {
 }
 
 // The unsubscribe link in every letter opens this web app with ?unsub=<token>&e=<email>.
-function doGet(e) {
-  var p = (e && e.parameter) || {};
+// Marks the address as unsubscribed when the token matches. Returns true on success.
+function doUnsub(p) {
   var email = String(p.e || '').trim().toLowerCase();
   var ok = false;
   if (p.unsub && email && p.unsub === token(email)) {
@@ -278,6 +301,11 @@ function doGet(e) {
       }
     } finally { lock.releaseLock(); }
   }
+  return ok;
+}
+
+function doGet(e) {
+  var ok = doUnsub((e && e.parameter) || {});
   var msg = ok ? 'Готово, ви відписалися від листів Roddi Health. / Done, you’re unsubscribed from Roddi Health emails.'
                : 'Посилання недійсне. Напишіть нам на ' + MAIL_REPLY_TO + ', і ми видалимо вашу адресу. / This link isn’t valid. Email ' + MAIL_REPLY_TO + ' and we’ll remove your address.';
   return HtmlService.createHtmlOutput('<div style="font-family:Arial,sans-serif;max-width:480px;margin:15vh auto;padding:0 20px;color:#16244d;text-align:center"><h2>Roddi Health</h2><p>' + msg + '</p></div>')
