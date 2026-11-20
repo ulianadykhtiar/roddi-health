@@ -272,7 +272,7 @@ function sendWelcome(email, lang) {
     '<div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:' + INK + ';font-weight:bold;margin:0 0 12px 4px">' + esc(t.stepsTitle) + '</div>' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' + cards + '</table></div>' +
     '<p style="margin:0 0 24px;text-align:center">' + esc(t.next) + '</p>' +
-    '<p style="margin:0;text-align:center">' + button(SITE + (lang === 'en' ? '/en/blog' : '/blog'), t.cta) + '</p>', email, 'email-mascot-party.png');
+    '<p style="margin:0;text-align:center">' + button(SITE + (lang === 'en' ? '/en/blog' : '/blog'), t.cta) + '</p>', email, 'email-mascot-party.png?v=2');
   var plain = t.hi + '\n\n' + t.lead + '\n\n' + t.steps.map(function (st) { return st[1] + ': ' + st[2]; }).join('\n') + '\n\n' + t.next + '\n\n' + t.unsub + ': ' + unsubUrl(email);
   send(email, t.subject, html, plain);
   return true;
