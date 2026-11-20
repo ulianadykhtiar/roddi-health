@@ -66,6 +66,10 @@
     @media (max-width: 1023px) {
       .chip { min-height: 44px; }
       header a:last-child, #email-edit, #email-cancel { display: inline-flex; align-items: center; min-height: 44px; }
+      /* A long address stays on one line inside the white pill and ends with "…". */
+      #email-row > span:first-child { max-width: 100%; min-width: 0; }
+      #email-row > span:first-child > img { flex-shrink: 0; }
+      #email-value { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     }
   </style>
   <script src="/assets/lang-prompt.js?v=blue1"></script>
