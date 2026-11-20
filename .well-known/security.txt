@@ -1,0 +1,5 @@
+Contact: mailto:roddihealth@gmail.com
+Expires: 2027-11-20T00:00:00.000Z
+Preferred-Languages: uk, en
+Canonical: https://roddihealth.app/.well-known/security.txt
+Policy: https://roddihealth.app/en/privacy

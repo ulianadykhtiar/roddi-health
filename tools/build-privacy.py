@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://roddihealth.app'
-OG = {'uk': BASE + '/assets/og-uk-v2.jpg', 'en': BASE + '/assets/og-en-v2.jpg'}
+OG = {'uk': BASE + '/assets/og-uk-v3.jpg', 'en': BASE + '/assets/og-en-v3.jpg'}
 MAIL = 'roddihealth@gmail.com'
 
 T = {
@@ -136,7 +136,7 @@ def build(lang):
         head = re.sub(r'<!-- seo:start -->.*?<!-- seo:end -->', lambda m: seo, head, count=1, flags=re.S)
     else:  # the English pages carry the same block without the markers: from <title> to the last JSON-LD
         a = head.index('  <title>')
-        ld = head.rindex('</script>', 0, head.index('<link rel="preconnect"'))
+        ld = head.rindex('</script>', 0, head.index('<link rel="preload" as="font"'))
         assert 'application/ld+json' in head[a:ld], 'JSON-LD not found in ' + lang
         head = head[:a] + seo + head[ld + len('</script>'):]
 

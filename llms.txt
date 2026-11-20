@@ -6,14 +6,91 @@ Status: in development, with a free early access list. It is free during the bet
 
 The project grew out of a rat blog followed by 6,000+ people on Instagram and TikTok (@marchin_rats). Contact: roddihealth@gmail.com
 
-The site is available in Ukrainian (default) and English.
+The site is available in Ukrainian (default) and English. Articles are original overviews written from the veterinary sources they name (RSPCA, PDSA, PetMD and similar); they are reference material, not diagnosis or treatment advice.
 
 ## Main pages
 
 - [Roddi Health in English](https://roddihealth.app/en): what the app does, who it is for, FAQ and early access sign-up
 - [Roddi Health українською](https://roddihealth.app/): додаток для здоров'я гризунів, ранній доступ
+- [Privacy policy](https://roddihealth.app/en/privacy): what is collected and why, who is responsible, how to unsubscribe or delete data
+- [How we prepare materials](https://roddihealth.app/en/blog/pro-materialy): the editorial policy, sources, update and review dates
+
+## Frequently asked questions
+
+**When is the launch?** We’re working on the first version. Everyone who leaves their email will hear from us first.
+
+**How much will it cost?** Roddi Health is free during the beta.
+
+**Does the app replace a vet?** No. Roddi Health helps you keep a health history and stay on top of treatment, but it doesn’t replace a vet’s advice.
+
+**What about my data?** So far we only store your email and the answers to the short survey, if you gave any, and use them only for launch news. More in the Privacy Policy.
+
+**Which animals is it for?** Rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets. Don’t see yours? Write to us.
+
+**What do you do with my email?** We send launch news, early access invitations and, from time to time, emails about the app and useful topics for rodent owners. No spam, and you can unsubscribe at any time.
 
 ## Blog
 
-- [Rodent health blog](https://roddihealth.app/en/blog): short summaries on symptoms, nutrition, care and emergencies, each linking to the original veterinary source
+- [Rodent health blog](https://roddihealth.app/en/blog): short guides on symptoms, nutrition, care and emergencies, each citing its veterinary sources
 - [Блог про здоров'я гризунів](https://roddihealth.app/blog): короткі поради з посиланнями на ветеринарні джерела
+- [Chinchillas: health, food and care](https://roddihealth.app/en/blog/chinchillas)
+- [Degus: health, food and care](https://roddihealth.app/en/blog/degus)
+- [Guinea pigs: health, food and care](https://roddihealth.app/en/blog/guinea-pigs)
+- [Hamsters: health, food and care](https://roddihealth.app/en/blog/hamsters)
+- [Mice: health, food and care](https://roddihealth.app/en/blog/mice)
+- [Rabbits: health, food and care](https://roddihealth.app/en/blog/rabbits)
+- [Rats: health, food and care](https://roddihealth.app/en/blog/rats)
+- [Дегу: здоров’я, харчування й догляд](https://roddihealth.app/blog/degu)
+- [Хомʼяки: здоров’я, харчування й догляд](https://roddihealth.app/blog/khomiaky)
+- [Кролики: здоров’я, харчування й догляд](https://roddihealth.app/blog/kroliky)
+- [Морські свинки: здоров’я, харчування й догляд](https://roddihealth.app/blog/morski-svynky)
+- [Миші: здоров’я, харчування й догляд](https://roddihealth.app/blog/myshi)
+- [Щури: здоров’я, харчування й догляд](https://roddihealth.app/blog/shchury)
+- [Шиншили: здоров’я, харчування й догляд](https://roddihealth.app/blog/shynshyly)
+
+## Articles in English
+
+- [Dust baths for chinchillas: why, how often and for how long](https://roddihealth.app/en/blog/chinchillas/chinchilla-dust-baths): Chinchillas clean themselves in dust, which takes excess oil and moisture out of their dense fur. Bathing them in water is a bad idea: the fur takes a long time to dry and the skin can become inflamed. A bath of special dust is offered for a limited time and then removed so the dust doesn’t irritate the eyes.
+- [Chinchilla health: teeth, fur, digestion and warning signs](https://roddihealth.app/en/blog/chinchillas/chinchilla-health): A chinchilla’s teeth grow throughout life, so the core of its diet is unlimited hay, not sugary mixes. Saliva on the chin, a poorer appetite, weight loss or fewer droppings can mean mouth pain or digestive trouble. Chinchillas hide illness, so these signs are a reason to see a vet straight away.
+- [Degus at home: housing, company, diet and health](https://roddihealth.app/en/blog/degus/degus-at-home): Degus are active by day and live in groups, so they are not kept alone. They need a tall metal cage with several levels and a wheel, deep bedding for digging and dust baths a few times a week. The core of the diet is hay, with a few sugar-free pellets, because degus are prone to diabetes.
+- [What to feed a degu: hay, pellets and go easy on sugar](https://roddihealth.app/en/blog/degus/what-to-feed-a-degu): The basis of a degu’s diet is unlimited good-quality hay. Pellets are given in small amounts and without molasses, because degus are prone to diabetes. Fruit and starchy vegetables are best limited or left out.
+- [Basic guinea pig care: hay, food, housing and company](https://roddihealth.app/en/blog/guinea-pigs/guinea-pig-care-basics): The core of a guinea pig’s diet is unlimited hay and grass. On top of that come a few guinea pig pellets, fresh vegetables every day and clean water. Guinea pigs are social and live in pairs or groups. They need a roomy home with a solid floor, hides and space to move.
+- [Guinea pig not eating: what to do](https://roddihealth.app/en/blog/guinea-pigs/guinea-pig-not-eating): If your guinea pig has stopped eating or is producing fewer droppings, call a vet straight away. According to PetMD, untreated gut stasis can become fatal within 24–48 hours.
+- [Scurvy in guinea pigs: signs of vitamin C deficiency and prevention](https://roddihealth.app/en/blog/guinea-pigs/guinea-pig-scurvy): Guinea pigs can’t make vitamin C themselves, so they need it from food every day. According to PetMD, signs of deficiency can appear after just 2–3 weeks of a poor diet: the coat, appetite and weight get worse, wounds heal slowly and moving becomes painful. A vet finds the cause and prescribes treatment.
+- [What to feed a guinea pig and where to get vitamin C](https://roddihealth.app/en/blog/guinea-pigs/what-to-feed-a-guinea-pig): Hay and grass make up most of a guinea pig’s diet and must always be available: PetMD puts their share at about 80%, PDSA at 85–90%. Guinea pigs can’t make vitamin C themselves, so they get it from food every day, above all from fresh vegetables.
+- [A hamster for beginners: answers to common questions](https://roddihealth.app/en/blog/hamsters/hamster-for-beginners): Syrian hamsters live alone, while dwarf hamsters can sometimes live in pairs if they grew up together. Hamsters need a roomy cage with deep bedding for digging, a solid wheel that keeps their back straight, pelleted food and quiet during the day, as they are active at night.
+- [Wet tail in hamsters: symptoms and what to do](https://roddihealth.app/en/blog/hamsters/wet-tail-in-hamsters): “Wet tail” is diarrhoea that soaks the fur under the tail. A hamster loses fluid quickly, so it is often an emergency: PetMD advises that a vet who treats exotic animals should see the hamster, ideally within 24 hours.
+- [What to feed a hamster: what’s allowed and what isn’t](https://roddihealth.app/en/blog/hamsters/what-to-feed-a-hamster): Most of a hamster’s diet should be a pelleted hamster food. Fresh food is given in moderation, because too much of it can cause diarrhoea, which is dangerous for a hamster: it loses fluid quickly.
+- [Pet mice: housing, cleaning, food and company](https://roddihealth.app/en/blog/mice/pet-mice-care): Mice are social, nocturnal animals. They need same-sex companions, a roomy, well-ventilated home without draughts, and places to hide and climb. The core of the diet is a pelleted mouse food, with fresh greens within the daily ration and clean water every day.
+- [How to check a pet mouse’s health: daily check and warning signs](https://roddihealth.app/en/blog/mice/pet-mouse-health-check): Mice hide illness, so by the time symptoms are obvious a mouse is often already seriously ill. A short check every morning and evening helps you spot changes early: dull eyes, a ruffled coat, unusual breathing, weight loss or a mouse that sits apart from the others.
+- [Rabbit not eating: why it’s dangerous and what to do](https://roddihealth.app/en/blog/rabbits/rabbit-not-eating): A rabbit needs to eat and pass droppings all the time. PetMD considers more than 8 hours without food or droppings abnormal, and gut stasis an emergency. The Rabbit Welfare Association advises seeing a vet straight away in that case, without waiting until tomorrow.
+- [How to make a rat’s life more interesting: company, play and foraging](https://roddihealth.app/en/blog/rats/enrich-your-rats-life): Rats are clever, curious and social, so they need at least one companion and new experiences every day. A tall cage with several levels, hides, ropes, digging boxes and food they have to search for help prevent boredom, and time outside the cage should always be supervised.
+- [How long pet rodents live: rats, hamsters, guinea pigs, degus](https://roddihealth.app/en/blog/rats/how-long-pet-rodents-live): Mice and hamsters live the shortest, about 1–3 years, rats 2–3 years, guinea pigs 4–8, degus 5–9 years, and chinchillas, according to the RSPCA, 10–20 years. Sources give different figures, so treat these as guides, not exact limits.
+- [What to feed a rat: what’s allowed and what isn’t](https://roddihealth.app/en/blog/rats/what-to-feed-a-rat): The basis of a pet rat’s diet is a pelleted food made specifically for rats. Vegetables, a little fruit, boiled egg, grains and seeds are given within the daily ration, not on top of it. Grapes, raisins, onion and chocolate are not suitable.
+- [Why is my rat sneezing, and when to see a vet](https://roddihealth.app/en/blog/rats/why-is-my-rat-sneezing): Even an occasional sneeze or reddish crusts around the eyes and nose can be the first signs of a respiratory infection. According to RSPCA Australia, it is the most common health problem in rats, and untreated it can turn into pneumonia. So show a sneezing rat to a vet rather than waiting.
+
+## Статті українською
+
+- [Чим годувати дегу: сіно, гранули й обережно з цукром](https://roddihealth.app/blog/degu/chym-goduvaty-degu): Основа раціону дегу — якісне сіно без обмежень. Гранули дають у малій кількості й без меляси, бо дегу схильні до діабету. Фрукти й крохмалисті овочі найкраще обмежити або виключити.
+- [Дегу вдома: житло, компанія, раціон і здоровʼя](https://roddihealth.app/blog/degu/degu-vdoma): Дегу активні вдень і живуть групами, тож поодинці їх не тримають. Їм потрібна висока металева клітка з кількома рівнями й колесом, глибока підстилка для риття й пилові ванни кілька разів на тиждень. Основа раціону — сіно, а гранули дають потроху й без цукру, бо дегу схильні до діабету.
+- [Чим годувати хомʼяка: що можна, а що не можна](https://roddihealth.app/blog/khomiaky/chym-goduvaty-khomiaka): Більшу частину раціону хомʼяка має становити гранульований корм для хомʼяків. Свіже дають помірно, бо його надлишок може спричинити діарею, а для хомʼяка вона небезпечна: він швидко втрачає рідину.
+- [Хомʼяк для новачка: відповіді на часті запитання](https://roddihealth.app/blog/khomiaky/khomiak-dlia-novachka): Сирійських хомʼяків тримають лише поодинці, а карликових іноді парами, якщо вони виросли разом. Хомʼякам потрібна простора клітка з глибокою підстилкою для риття, суцільне колесо, у якому спина лишається рівною, гранульований корм і спокій удень, бо вони активні вночі.
+- [Мокрий хвіст у хомʼяка: симптоми й що робити](https://roddihealth.app/blog/khomiaky/mokryi-khvist-u-khomiaka): «Мокрий хвіст» — це діарея, через яку намокає шерсть під хвостом. Хомʼяк швидко втрачає рідину, тому стан часто є невідкладним: PetMD радить, щоб ветеринар, який лікує екзотичних тварин, оглянув хомʼяка в ідеалі протягом 24 годин.
+- [Кролик не їсть: чому це небезпечно й що робити](https://roddihealth.app/blog/kroliky/krolyk-ne-yist): Кролик має їсти й випорожнюватися постійно. PetMD вважає ненормальним понад 8 годин без їжі чи посліду, а стаз ШКТ — невідкладним станом. Rabbit Welfare Association радить у такому разі йти до ветеринара негайно, не чекаючи до завтра.
+- [Чим годувати морську свинку і де брати вітамін C](https://roddihealth.app/blog/morski-svynky/chym-goduvaty-morsku-svynku): Сіно й трава становлять більшість раціону морської свинки й мають бути доступні постійно: PetMD оцінює їхню частку приблизно у 80%, PDSA — у 85–90%. Вітамін C свинки не виробляють самі, тому щодня отримують його з їжею, насамперед зі свіжих овочів.
+- [Базовий догляд за морськими свинками: сіно, корм, житло й компанія](https://roddihealth.app/blog/morski-svynky/dohliad-za-morskoiu-svynkoiu): Основа раціону морської свинки — необмежене сіно й трава. До них додають трохи гранул для свинок, щодня свіжі овочі й чисту воду. Свинки соціальні й живуть парами чи групами. Їм потрібне просторе житло із суцільною підлогою, схованками й місцем для руху.
+- [Морська свинка не їсть: що робити](https://roddihealth.app/blog/morski-svynky/morska-svynka-ne-yist): Якщо морська свинка перестала їсти чи стало менше посліду, телефонуйте ветеринару відразу. За PetMD, стаз шлунково-кишкового тракту без лікування може стати смертельним за 24–48 годин.
+- [Цинга в морської свинки: ознаки нестачі вітаміну C і профілактика](https://roddihealth.app/blog/morski-svynky/tsynga-u-morskoi-svynky): Морські свинки не синтезують вітамін C самі, тож мають щодня отримувати його з їжею. За PetMD, ознаки нестачі можуть зʼявитися вже через 2–3 тижні неповноцінного раціону: гіршають шерсть, апетит і вага, рани довго гояться, тварині боляче рухатися. Причину визначає й лікування призначає ветеринар.
+- [Домашні миші: житло, прибирання, корм і компанія](https://roddihealth.app/blog/myshi/domashni-myshi): Миші — соціальні нічні тварини. Їм потрібні родичі тієї ж статі, просторе провітрюване житло без протягів і місця, щоб ховатися та лазити. Основа раціону — гранульований корм для мишей, свіжа зелень у межах денної норми й чиста вода щодня.
+- [Як перевірити здоровʼя миші: щоденний огляд і тривожні ознаки](https://roddihealth.app/blog/myshi/zdorovia-myshi): Миші приховують нездужання, тож помітні симптоми часто означають, що тварина вже серйозно хвора. Короткий огляд уранці й увечері допомагає побачити зміни рано: тьмяні очі, скуйовджену шерсть, незвичне дихання, схуднення або мишу, яка сидить окремо від інших.
+- [Чому щур чхає і коли їхати до ветеринара](https://roddihealth.app/blog/shchury/chomu-shchur-chkhaie): Навіть поодиноке чхання або червонуваті кірочки біля очей і носа можуть бути першими ознаками респіраторної інфекції. За RSPCA Australia, це найпоширеніша проблема зі здоровʼям у щурів, а без лікування вона може перейти в пневмонію. Тому чхання варто показати ветеринару, а не чекати.
+- [Чим годувати щура: що можна, а що не можна](https://roddihealth.app/blog/shchury/chym-goduvaty-shchura): Основа раціону домашнього щура — гранульований корм саме для щурів. Овочі, трохи фруктів, варене яйце, зерно й насіння дають у межах денної норми, а не понад неї. Виноград, родзинки, цибуля й шоколад не підходять.
+- [Скільки живуть домашні гризуни: щури, хомʼяки, свинки, дегу](https://roddihealth.app/blog/shchury/skilky-zhyvut-gryzuny): Найкоротше серед цих тварин живуть миші й хомʼяки, приблизно 1–3 роки, щури 2–3 роки, морські свинки 4–8, дегу 5–9 років, а шиншили, за RSPCA, 10–20 років. Джерела дають різні цифри, тож це орієнтири, а не точні межі.
+- [Як зробити життя щура цікавішим: компанія, ігри й пошук їжі](https://roddihealth.app/blog/shchury/zhyttia-shchura-tsikavishe): Щури розумні, допитливі й соціальні, тож їм потрібні щонайменше один родич і щоденні нові враження. Висока клітка з кількома рівнями, схованки, мотузки, коробки для риття й корм, який треба шукати, допомагають уникнути нудьги, а прогулянки поза кліткою — лише під наглядом.
+- [Пилові ванни для шиншили: навіщо, як часто й скільки тривати](https://roddihealth.app/blog/shynshyly/pylovi-vanny-shynshyly): Шиншила чиститься в пилу: він забирає з густого хутра зайвий жир і вологу. Купати у воді не можна, бо хутро довго сохне, а шкіра може запалитися. Ванну зі спеціальним пилом дають на обмежений час і після цього прибирають, щоб пил не подразнював очі.
+- [Здоровʼя шиншили: зуби, хутро, травлення й тривожні ознаки](https://roddihealth.app/blog/shynshyly/zdorovia-shynshyly): Зуби шиншили ростуть усе життя, тому основа раціону — необмежене сіно, а не солодкі суміші. Слина на підборідді, гірший апетит, схуднення чи менше посліду можуть означати біль у роті або проблеми з травленням. Шиншили приховують хворобу, тож такі ознаки — привід звернутися до ветеринара одразу.
+
+## Optional
+
+- [Full text of all articles](https://roddihealth.app/llms-full.txt): one plain-text file with every article and its sources
+- [Sitemap](https://roddihealth.app/sitemap.xml)

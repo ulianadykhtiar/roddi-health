@@ -1,0 +1,15 @@
+{
+  "name": "Roddi Health",
+  "short_name": "Roddi",
+  "description": "Medication reminders, symptom and weight logs and vet visit history for rats, hamsters, guinea pigs and other small pets.",
+  "lang": "uk",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#75a1da",
+  "icons": [
+    { "src": "/assets/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

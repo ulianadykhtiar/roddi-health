@@ -5,11 +5,11 @@
 /* ---------------- pastel panels ---------------- */
 @keyframes pg-pan { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-4%, 3%) scale(1.1); } 100% { transform: translate(3%, -3%) scale(1.04); } }
 .soft-grad { position: relative; isolation: isolate; overflow: hidden; }
-.soft-grad::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/pastel-ba.jpg?v=blue1) center / cover; animation: pg-pan 18s ease-in-out infinite alternate; }
+.soft-grad::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/pastel-ba.webp?v=blue1) center / cover; animation: pg-pan 18s ease-in-out infinite alternate; }
 .soft-grad::after { content: ""; position: absolute; inset: 0; z-index: -1; background: url(features/grain.png) 0 0 / 240px; pointer-events: none; }
-.soft-grad--one::before { background-image: url(features/pastel-1.jpg?v=blue1); }
-.soft-grad--ask::before { background-image: url(features/pastel-ask.jpg?v=blue1); }
-.soft-grad--three::before { background-image: url(features/pastel-3.jpg?v=blue1); }
+.soft-grad--one::before { background-image: url(features/pastel-1.webp?v=blue1); }
+.soft-grad--ask::before { background-image: url(features/pastel-ask.webp?v=blue1); }
+.soft-grad--three::before { background-image: url(features/pastel-3.webp?v=blue1); }
 @media (prefers-reduced-motion: reduce) { .soft-grad::before { animation: none; } }
 
 /* ---------------- shared type and controls ---------------- */
