@@ -208,18 +208,22 @@ function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').
 // One layout for every letter, in the site's style: pastel blue gradients, white cards, a black pill button.
 // Email-safe (tables, inline styles, solid colours as a fallback under every gradient). Only the logo is an image.
 var INK = '#14234B', MUTED = '#5a6788', GRAY = '#F6F6F9';
-function wrap(lang, title, bodyHtml, email, emoji) {
+function wrap(lang, title, bodyHtml, email, art) {
   var t = TEXT[lang === 'en' ? 'en' : 'uk'];
+  // With `art` (a picture in /assets, 620×511 px) the mascot stands big on the white card under a slim header; without it, the usual mascot sits in a white circle in the header.
+  var logo = '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto' + (art ? '' : ' 22px') + '"><tr>' +
+    '<td style="padding-right:9px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="30" height="30" alt="Roddi Health" style="display:block;border-radius:9px;color:#ffffff;font-size:12px"></td>' +
+    '<td style="font-size:17px;font-weight:bold;color:#ffffff">Roddi Health</td></tr></table>';
+  var circle = art ? '' :
+    '<div style="width:156px;height:156px;margin:0 auto;background:#ffffff;border-radius:50%;box-shadow:0 8px 20px rgba(20,35,75,.22)">' +
+    '<div style="width:140px;padding-right:16px"><img src="' + SITE + '/assets/email-mascot.png" width="124" height="114" alt="" style="display:block;margin:0 auto;padding-top:22px;border:0"></div></div>';
+  var big = art ? '<img src="' + SITE + '/assets/' + art + '" width="310" height="255" alt="" style="display:block;margin:0 auto 8px;border:0;max-width:100%;height:auto">' : '';
   return '<div style="background:#F6F6F9;padding:28px 12px;font-family:Onest,Arial,Helvetica,sans-serif">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto"><tr><td>' +
     '<div style="background:#ffffff;border-radius:28px;overflow:hidden;box-shadow:0 10px 30px rgba(116,160,218,.18)">' +
-    '<div style="background:#2f6fc7;background-image:url(' + SITE + '/assets/email-bg.jpg),linear-gradient(160deg,#9cc3dc 0%,#2f6fc7 30%,#3d8bd0 100%);background-size:cover;background-position:top left;padding:26px 28px 34px;text-align:center">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 22px"><tr>' +
-    '<td style="padding-right:9px"><img src="' + SITE + '/assets/apple-touch-icon.png" width="30" height="30" alt="Roddi Health" style="display:block;border-radius:9px;color:#ffffff;font-size:12px"></td>' +
-    '<td style="font-size:17px;font-weight:bold;color:#ffffff">Roddi Health</td></tr></table>' +
-    '<div style="width:156px;height:156px;margin:0 auto;background:#ffffff;border-radius:50%;box-shadow:0 8px 20px rgba(20,35,75,.22)">' +
-    '<div style="width:140px;padding-right:16px"><img src="' + SITE + '/assets/email-mascot.png" width="124" height="114" alt="" style="display:block;margin:0 auto;padding-top:22px;border:0"></div></div></div>' +
-    '<div style="padding:30px 28px 32px;color:' + INK + ';font-size:16px;line-height:1.6">' +
+    '<div style="background:#2f6fc7;background-image:url(' + SITE + '/assets/email-bg.jpg),linear-gradient(160deg,#9cc3dc 0%,#2f6fc7 30%,#3d8bd0 100%);background-size:cover;background-position:top left;padding:' + (art ? '20px 28px' : '26px 28px 34px') + ';text-align:center">' +
+    logo + circle + '</div>' +
+    '<div style="padding:' + (art ? '22px' : '30px') + ' 28px 32px;color:' + INK + ';font-size:16px;line-height:1.6">' + big +
     '<h1 style="margin:0 0 14px;font-size:30px;line-height:1.15;text-align:center;color:' + INK + '">' + esc(title) + '</h1>' + bodyHtml + '</div></div>' +
     '<div style="padding:18px 20px 0;color:#8a93a6;font-size:12.5px;line-height:1.5;text-align:center">' + esc(t.foot) + ' <a href="' + unsubUrl(email) + '" style="color:#8a93a6;text-decoration:underline">' + esc(t.unsub) + '</a></div>' +
     '</td></tr></table></div>';
@@ -268,7 +272,7 @@ function sendWelcome(email, lang) {
     '<div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:' + INK + ';font-weight:bold;margin:0 0 12px 4px">' + esc(t.stepsTitle) + '</div>' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' + cards + '</table></div>' +
     '<p style="margin:0 0 24px;text-align:center">' + esc(t.next) + '</p>' +
-    '<p style="margin:0;text-align:center">' + button(SITE + (lang === 'en' ? '/en/blog' : '/blog'), t.cta) + '</p>', email, '&#x1F43E;');
+    '<p style="margin:0;text-align:center">' + button(SITE + (lang === 'en' ? '/en/blog' : '/blog'), t.cta) + '</p>', email, 'email-mascot-party.png');
   var plain = t.hi + '\n\n' + t.lead + '\n\n' + t.steps.map(function (st) { return st[1] + ': ' + st[2]; }).join('\n') + '\n\n' + t.next + '\n\n' + t.unsub + ': ' + unsubUrl(email);
   send(email, t.subject, html, plain);
   return true;
