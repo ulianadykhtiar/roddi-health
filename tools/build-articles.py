@@ -1325,7 +1325,7 @@ CHROME = {'uk': chrome(blog, relink), 'en': chrome(blog_en, relink_en)}
 UP = {'uk': '/', 'en': '/'}
 DIR = {'uk': 'blog', 'en': 'en/blog'}
 LOCALE = {'uk': 'uk_UA', 'en': 'en_US'}
-OG_IMG = {'uk': 'assets/og-uk-v2.jpg', 'en': 'assets/og-en-v2.jpg'}
+OG_IMG = {'uk': 'assets/og-uk-v3.jpg', 'en': 'assets/og-en-v3.jpg'}
 THANKS = {'uk': '/thank-you.html', 'en': '/en/thank-you.html'}
 SKIP = {'uk': 'Перейти до змісту', 'en': 'Skip to content'}
 
@@ -1409,9 +1409,11 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <meta property="og:locale" content="{LOCALE[lang]}">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#75a1da">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" as="font" type="font/woff2" href="{up}assets/fonts/onest-cyrillic-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{up}assets/fonts/onest-latin-400.woff2" crossorigin>
+  <link rel="stylesheet" href="{up}assets/fonts/fonts.css?v=1">
   <link rel="stylesheet" href="{up}assets/tailwind.css?v=blue1">
   <link rel="stylesheet" href="{up}assets/styles.css?v=blue1">
   <script src="{up}assets/lang-prompt.js?v=blue1"></script>
