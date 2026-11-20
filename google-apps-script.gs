@@ -217,7 +217,7 @@ function wrap(lang, title, bodyHtml, email, art) {
   var circle = art ? '' :
     '<div style="width:156px;height:156px;margin:0 auto;background:#ffffff;border-radius:50%;box-shadow:0 8px 20px rgba(20,35,75,.22)">' +
     '<div style="width:140px;padding-right:16px"><img src="' + SITE + '/assets/email-mascot.png" width="124" height="114" alt="" style="display:block;margin:0 auto;padding-top:22px;border:0"></div></div>';
-  var big = art ? '<img src="' + SITE + '/assets/' + art + '" width="310" height="280" alt="" style="display:block;margin:0 auto 8px;border:0;max-width:100%;height:auto">' : '';
+  var big = art ? '<img src="' + SITE + '/assets/' + art + '" width="240" height="217" alt="" style="display:block;margin:0 auto 8px;border:0;max-width:100%;height:auto">' : '';
   return '<div style="background:#F6F6F9;padding:16px 8px;font-family:Onest,Arial,Helvetica,sans-serif">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto"><tr><td>' +
     '<div style="background:#ffffff;border-radius:28px;overflow:hidden;box-shadow:0 10px 30px rgba(116,160,218,.18)">' +
