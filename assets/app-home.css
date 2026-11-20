@@ -506,3 +506,7 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
         font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 30px; line-height: 1; }
 .hc b { display: block; color: #14234b; font-size: 22px; font-weight: 700; line-height: 1.2; }
 .hc small { display: block; margin-top: 3px; color: #5a6788; font-size: 17px; font-weight: 500; line-height: 1.2; }
+
+/* Hero "blog" line: overlapping pastel circles with rodent emoji instead of photos. */
+.hav { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid #fff; background: var(--bg, #dbe8fb);
+       font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 17px; line-height: 1; }
