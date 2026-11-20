@@ -218,13 +218,13 @@ function wrap(lang, title, bodyHtml, email, art) {
     '<div style="width:156px;height:156px;margin:0 auto;background:#ffffff;border-radius:50%;box-shadow:0 8px 20px rgba(20,35,75,.22)">' +
     '<div style="width:140px;padding-right:16px"><img src="' + SITE + '/assets/email-mascot.png" width="124" height="114" alt="" style="display:block;margin:0 auto;padding-top:22px;border:0"></div></div>';
   var big = art ? '<img src="' + SITE + '/assets/' + art + '" width="310" height="255" alt="" style="display:block;margin:0 auto 8px;border:0;max-width:100%;height:auto">' : '';
-  return '<div style="background:#F6F6F9;padding:28px 12px;font-family:Onest,Arial,Helvetica,sans-serif">' +
+  return '<div style="background:#F6F6F9;padding:16px 8px;font-family:Onest,Arial,Helvetica,sans-serif">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto"><tr><td>' +
     '<div style="background:#ffffff;border-radius:28px;overflow:hidden;box-shadow:0 10px 30px rgba(116,160,218,.18)">' +
-    '<div style="background:#2f6fc7;background-image:url(' + SITE + '/assets/email-bg.jpg),linear-gradient(160deg,#9cc3dc 0%,#2f6fc7 30%,#3d8bd0 100%);background-size:cover;background-position:top left;padding:' + (art ? '20px 28px' : '26px 28px 34px') + ';text-align:center">' +
+    '<div style="background:#2f6fc7;background-image:url(' + SITE + '/assets/email-bg.jpg),linear-gradient(160deg,#9cc3dc 0%,#2f6fc7 30%,#3d8bd0 100%);background-size:cover;background-position:top left;padding:' + (art ? '18px 20px' : '24px 20px 30px') + ';text-align:center">' +
     logo + circle + '</div>' +
-    '<div style="padding:' + (art ? '22px' : '30px') + ' 28px 32px;color:' + INK + ';font-size:16px;line-height:1.6">' + big +
-    '<h1 style="margin:0 0 14px;font-size:30px;line-height:1.15;text-align:center;color:' + INK + '">' + esc(title) + '</h1>' + bodyHtml + '</div></div>' +
+    '<div style="padding:' + (art ? '22px' : '30px') + ' 20px 28px;color:' + INK + ';font-size:16px;line-height:1.6">' + big +
+    '<h1 style="margin:0 0 12px;font-size:28px;line-height:1.15;text-align:center;color:' + INK + '">' + esc(title) + '</h1>' + bodyHtml + '</div></div>' +
     '<div style="padding:18px 20px 0;color:#8a93a6;font-size:12.5px;line-height:1.5;text-align:center">' + esc(t.foot) + ' <a href="' + unsubUrl(email) + '" style="color:#8a93a6;text-decoration:underline">' + esc(t.unsub) + '</a></div>' +
     '</td></tr></table></div>';
 }
@@ -262,13 +262,13 @@ function sendWelcome(email, lang) {
   // "What to expect": white cards on a pastel gradient panel, like the feature cards on the site.
   var cards = t.steps.map(function (st) {
     return '<tr><td style="padding:0 0 10px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:18px"><tr>' +
-      '<td width="76" align="center" valign="middle" style="padding:14px 0 14px 14px"><div style="width:48px;height:48px;background:#F6F6F9;border-radius:14px;line-height:48px;font-size:24px;text-align:center">' + st[0] + '</div></td>' +
-      '<td valign="middle" style="padding:14px 16px 14px 12px;color:' + INK + ';font-size:16px;line-height:1.35"><b>' + esc(st[1]) + '</b><br><span style="color:' + MUTED + ';font-size:14px">' + esc(st[2]) + '</span></td>' +
+      '<td width="62" align="center" valign="middle" style="padding:12px 0 12px 10px"><div style="width:44px;height:44px;background:#F6F6F9;border-radius:13px;line-height:44px;font-size:22px;text-align:center">' + st[0] + '</div></td>' +
+      '<td valign="middle" style="padding:12px 12px 12px 8px;color:' + INK + ';font-size:15px;line-height:1.3"><b>' + esc(st[1]) + '</b><br><span style="color:' + MUTED + ';font-size:13px">' + esc(st[2]) + '</span></td>' +
       '</tr></table></td></tr>';
   }).join('');
   var html = wrap(lang, t.hi,
     '<p style="margin:0 0 22px;text-align:center;color:' + MUTED + '">' + esc(t.lead) + '</p>' +
-    '<div style="background:#F6F6F9;border-radius:22px;padding:18px 16px 8px;margin:0 0 24px">' +
+    '<div style="background:#F6F6F9;border-radius:20px;padding:14px 10px 4px;margin:0 0 22px">' +
     '<div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:' + INK + ';font-weight:bold;margin:0 0 12px 4px">' + esc(t.stepsTitle) + '</div>' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' + cards + '</table></div>' +
     '<p style="margin:0 0 24px;text-align:center">' + esc(t.next) + '</p>' +
