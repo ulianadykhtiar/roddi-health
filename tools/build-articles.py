@@ -1394,9 +1394,9 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e(title)} | Roddi Health</title>
-  <link rel="icon" type="image/svg+xml" href="{up}assets/favicon.svg?v=blue1">
-  <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{up}assets/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="{up}assets/favicon.svg?v=blue2">
+  <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/favicon-32.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="{up}assets/apple-touch-icon.png?v=2">
   <meta name="description" content="{e(desc)}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="{url}">{alternates}

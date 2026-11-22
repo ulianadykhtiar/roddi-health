@@ -112,9 +112,9 @@ def build(lang):
     head = src[:src.index('</head>')]
     seo = '\n'.join([
         f'  <title>{c["title"]}</title>',
-        '  <link rel="icon" type="image/svg+xml" href="%sassets/favicon.svg">' % prefix,
-        '  <link rel="icon" type="image/png" sizes="32x32" href="%sassets/favicon-32.png">' % prefix,
-        '  <link rel="apple-touch-icon" sizes="180x180" href="%sassets/apple-touch-icon.png">' % prefix,
+        '  <link rel="icon" type="image/svg+xml" href="%sassets/favicon.svg?v=blue2">' % prefix,
+        '  <link rel="icon" type="image/png" sizes="32x32" href="%sassets/favicon-32.png?v=2">' % prefix,
+        '  <link rel="apple-touch-icon" sizes="180x180" href="%sassets/apple-touch-icon.png?v=2">' % prefix,
         f'  <meta name="description" content="{c["desc"]}">',
         '  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">',
         f'  <link rel="canonical" href="{c["url"]}">',
