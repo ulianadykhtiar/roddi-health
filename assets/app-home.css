@@ -534,3 +534,9 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 /* Hero "blog" line: the two platforms the followers come from (Instagram, TikTok) as plain one-colour glyphs, no tiles. */
 .soc { display: flex; flex: none; align-items: center; gap: 8px; color: #17171c; }
 .soc-t { display: grid; place-items: center; width: 20px; height: 20px; opacity: .85; }
+
+/* Hero "blog" line on phones: the two platform icons sit above, the sentence below runs left-aligned across the full width (two lines instead of three squeezed next to the icons). */
+@media (max-width: 639px) {
+  .hero-blog { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .hero-blog p { text-align: left; text-wrap: pretty; }
+}
