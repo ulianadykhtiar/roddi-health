@@ -502,12 +502,24 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
    (the body picture has the tail cut out and the eyes painted over, so nothing shows through). */
 .ip-tail, .ip-eye { position: absolute; z-index: -1; max-width: none; pointer-events: none; }
 .ip-tail { left: 510px; top: 104.55px; width: 139.09px; height: 215.45px; transform-origin: 30px 177.27px; animation: ip-tail 2.8s ease-in-out infinite alternate; }
-.ip-eye { transform-origin: 50% 50%; animation: ip-blink 5s ease-in-out infinite; }
-.ip-eye-l { left: 402.73px; top: -8.18px; width: 40.91px; height: 44.55px; }
-.ip-eye-r { left: 502.73px; top: 40.91px; width: 39.09px; height: 46.36px; }
+.ip-eye-l { left: 402.73px; top: -8.18px; width: 40.91px; height: 44.55px; transform-origin: 20.06px 21.86px; }
+.ip-eye-r { left: 502.73px; top: 40.91px; width: 39.09px; height: 46.36px; transform-origin: 19.16px 23.06px; }
+/* Blink along the face's own axis (the head is tilted 26.9°): the eye squeezes shut, a thin closed-eye line shows for a moment, then the eye opens. */
+.ip-eye { animation: ip-blink 6s infinite; }
+.ip-lid { position: absolute; z-index: -1; width: 30px; height: 12px; max-width: none; pointer-events: none; opacity: 0; rotate: 26.9deg; animation: ip-lid 6s infinite; }
+.ip-lid-l { left: 406.9px; top: 9.5px; }
+.ip-lid-r { left: 506px; top: 59.8px; }
 @keyframes ip-tail { from { rotate: -5deg; } to { rotate: 5deg; } }
-@keyframes ip-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
-@media (prefers-reduced-motion: reduce) { .ip-tail, .ip-eye { animation: none; } }
+@keyframes ip-blink {
+  0%, 92% { transform: rotate(26.9deg) scaleY(1) rotate(-26.9deg); opacity: 1; animation-timing-function: ease-in; }
+  93.5% { transform: rotate(26.9deg) scaleY(.25) rotate(-26.9deg); opacity: 1; }
+  94% { transform: rotate(26.9deg) scaleY(.2) rotate(-26.9deg); opacity: 0; }
+  96% { transform: rotate(26.9deg) scaleY(.2) rotate(-26.9deg); opacity: 0; }
+  96.5% { transform: rotate(26.9deg) scaleY(.25) rotate(-26.9deg); opacity: 1; animation-timing-function: ease-out; }
+  98.5%, 100% { transform: rotate(26.9deg) scaleY(1) rotate(-26.9deg); opacity: 1; }
+}
+@keyframes ip-lid { 0%, 93.3% { opacity: 0; } 94%, 96% { opacity: 1; } 96.7%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .ip-tail, .ip-eye, .ip-lid { animation: none; } }
 
 /* Hero cards: small app-style cards floating beside the phone (the visible part of the stage is x 165–1305 on tablets, so they stay inside it). */
 .hc { position: absolute; display: flex; align-items: center; gap: 14px; padding: 14px 24px 14px 14px; border-radius: 26px; background: rgba(255,255,255,.94);
