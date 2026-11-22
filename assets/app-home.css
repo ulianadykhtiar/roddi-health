@@ -535,11 +535,12 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .soc { display: flex; flex: none; align-items: center; gap: 8px; color: #17171c; }
 .soc-t { display: grid; place-items: center; width: 20px; height: 20px; opacity: .85; }
 
-/* Hero "blog" line on phones: the two platform icons start the first line and the sentence flows on after them,
-   left-aligned across the full width (two lines instead of three squeezed next to the icons). */
+/* Hero "blog" line on phones: the two platform icons sit at the left of the first line, the sentence runs next to them
+   as one left-aligned block (its second line starts under its first), 13 px like the consent text above so it fits in two lines. */
 @media (max-width: 639px) {
-  .hero-blog { display: block; text-align: left; font-size: 13px; line-height: 1.45; }
-  .hero-blog .soc { display: inline-flex; gap: 6px; margin-right: 2px; vertical-align: -3px; }
+  .hero-blog { justify-content: flex-start; align-items: flex-start; gap: 8px; }
+  .hero-blog .soc { gap: 6px; margin-top: 1px; }
   .hero-blog .soc-t, .hero-blog .soc svg { width: 17px; height: 17px; }
-  .hero-blog p { display: inline; text-align: left; text-wrap: wrap; font-size: 13px; line-height: 1.45; }
+  .hero-blog p { text-align: left; text-wrap: wrap; font-size: 13px; line-height: 1.45; }
+}
 }
