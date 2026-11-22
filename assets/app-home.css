@@ -495,9 +495,9 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
    so the phone stays whole). A second copy, clipped to the paws only, lies on top so they reach over the phone.
    Sized in the phone's own units (inside .ip, 387×812): the top paw sits on the phone's top edge. */
 .ip { isolation: isolate; }
-.ip-mascot { position: absolute; left: -11px; top: -235px; z-index: -1; width: 813px; height: 743px; max-width: none; pointer-events: none; filter: drop-shadow(0 18px 26px rgba(30, 80, 160, .22)); }
-/* Paws: the designer's front layer, the same 1312×1199 canvas as the mascot, so it lies exactly on top of it (same size and position). */
-.ip-paws { position: absolute; left: -11px; top: -235px; z-index: 5; width: 813px; height: 743px; max-width: none; pointer-events: none; }
+.ip-mascot { position: absolute; left: 171.8px; top: -143.6px; z-index: -1; width: 518.2px; height: 572.7px; max-width: none; pointer-events: none; }
+/* Paws: the front layer cut from the same reference (570×630 px canvas, like the mascot), so it lies exactly on top of it (same size and position). */
+.ip-paws { position: absolute; left: 171.8px; top: -143.6px; z-index: 5; width: 518.2px; height: 572.7px; max-width: none; pointer-events: none; }
 
 /* Hero cards: small app-style cards floating beside the phone (the visible part of the stage is x 165–1305 on tablets, so they stay inside it). */
 .hc { position: absolute; display: flex; align-items: center; gap: 14px; padding: 14px 24px 14px 14px; border-radius: 26px; background: rgba(255,255,255,.94);
