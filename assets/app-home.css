@@ -509,10 +509,8 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-lid { position: absolute; z-index: -1; width: 30px; height: 12px; max-width: none; pointer-events: none; opacity: 0; rotate: 26.9deg; animation: ip-lid 6s infinite; }
 .ip-lid-l { left: 406.9px; top: 9.5px; }
 .ip-lid-r { left: 506px; top: 59.8px; }
-/* The lower arm (hand on the phone) rocks a little around the shoulder, so the hand goes up and down by a few pixels. */
-.ip-arm { position: absolute; left: 336.36px; top: 146.36px; z-index: 5; width: 206.36px; height: 138.18px; max-width: none; pointer-events: none;
-          transform-origin: 180.91px 57.27px; animation: ip-arm 3.4s ease-in-out infinite alternate; }
-@keyframes ip-arm { from { rotate: -1.2deg; } to { rotate: 1.2deg; } }
+/* The lower arm (hand on the phone) is its own layer over the phone; it stays still for now. */
+.ip-arm { position: absolute; left: 336.36px; top: 146.36px; z-index: 5; width: 206.36px; height: 138.18px; max-width: none; pointer-events: none; }
 @keyframes ip-tail { from { rotate: -5deg; } to { rotate: 5deg; } }
 @keyframes ip-blink {
   0%, 92% { transform: rotate(26.9deg) scaleY(1) rotate(-26.9deg); opacity: 1; animation-timing-function: ease-in; }
@@ -523,7 +521,7 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
   98.5%, 100% { transform: rotate(26.9deg) scaleY(1) rotate(-26.9deg); opacity: 1; }
 }
 @keyframes ip-lid { 0%, 93.3% { opacity: 0; } 94%, 96% { opacity: 1; } 96.7%, 100% { opacity: 0; } }
-@media (prefers-reduced-motion: reduce) { .ip-tail, .ip-eye, .ip-lid, .ip-arm { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .ip-tail, .ip-eye, .ip-lid { animation: none; } }
 
 /* Hero cards: small app-style cards floating beside the phone (the visible part of the stage is x 165–1305 on tablets, so they stay inside it). */
 .hc { position: absolute; display: flex; align-items: center; gap: 14px; padding: 14px 24px 14px 14px; border-radius: 26px; background: rgba(255,255,255,.94);
