@@ -498,6 +498,16 @@ header .stage.hero-p { -webkit-mask-image: linear-gradient(180deg, #000 71%, tra
 .ip-mascot { position: absolute; left: 171.8px; top: -143.6px; z-index: -1; width: 518.2px; height: 572.7px; max-width: none; pointer-events: none; }
 /* Paws: the front layer cut from the same reference (570×630 px canvas, like the mascot), so it lies exactly on top of it (same size and position). */
 .ip-paws { position: absolute; left: 171.8px; top: -143.6px; z-index: 5; width: 518.2px; height: 572.7px; max-width: none; pointer-events: none; }
+/* A tiny bit of life: the tail sways around its base and the eyes blink now and then
+   (the body picture has the tail cut out and the eyes painted over, so nothing shows through). */
+.ip-tail, .ip-eye { position: absolute; z-index: -1; max-width: none; pointer-events: none; }
+.ip-tail { left: 510px; top: 104.55px; width: 139.09px; height: 215.45px; transform-origin: 30px 177.27px; animation: ip-tail 2.8s ease-in-out infinite alternate; }
+.ip-eye { transform-origin: 50% 50%; animation: ip-blink 5s ease-in-out infinite; }
+.ip-eye-l { left: 402.73px; top: -8.18px; width: 40.91px; height: 44.55px; }
+.ip-eye-r { left: 502.73px; top: 40.91px; width: 39.09px; height: 46.36px; }
+@keyframes ip-tail { from { rotate: -5deg; } to { rotate: 5deg; } }
+@keyframes ip-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+@media (prefers-reduced-motion: reduce) { .ip-tail, .ip-eye { animation: none; } }
 
 /* Hero cards: small app-style cards floating beside the phone (the visible part of the stage is x 165–1305 on tablets, so they stay inside it). */
 .hc { position: absolute; display: flex; align-items: center; gap: 14px; padding: 14px 24px 14px 14px; border-radius: 26px; background: rgba(255,255,255,.94);
