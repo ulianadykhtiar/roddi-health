@@ -102,7 +102,7 @@ HEAD = """# Roddi Health
 
 Status: in development, with a free early access list. It is free during the beta. Launch date, pricing and platforms are not announced yet.
 
-The project grew out of a rat blog followed by 6,000+ people on Instagram and TikTok (@marchin_rats). Contact: roddihealth@gmail.com
+The project grew out of a rat blog followed by 7,000+ people on Instagram and TikTok (@marchin_rats). Contact: roddihealth@gmail.com
 
 The site is available in Ukrainian (default) and English. Articles are original overviews written from the veterinary sources they name (RSPCA, PDSA, PetMD and similar); they are reference material, not diagnosis or treatment advice.
 """

@@ -7,9 +7,9 @@
   "scope": "/",
   "display": "browser",
   "background_color": "#ffffff",
-  "theme_color": "#75a1da",
+  "theme_color": "#0768ce",
   "icons": [
-    { "src": "/assets/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "/assets/favicon-192.png?v=2", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/favicon.svg?v=blue2", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }

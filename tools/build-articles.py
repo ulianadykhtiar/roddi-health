@@ -1325,7 +1325,7 @@ CHROME = {'uk': chrome(blog, relink), 'en': chrome(blog_en, relink_en)}
 UP = {'uk': '/', 'en': '/'}
 DIR = {'uk': 'blog', 'en': 'en/blog'}
 LOCALE = {'uk': 'uk_UA', 'en': 'en_US'}
-OG_IMG = {'uk': 'assets/og-uk-v3.jpg', 'en': 'assets/og-en-v3.jpg'}
+OG_IMG = {'uk': 'assets/og-uk-v4.jpg', 'en': 'assets/og-en-v4.jpg'}
 THANKS = {'uk': '/thank-you.html', 'en': '/en/thank-you.html'}
 SKIP = {'uk': 'Перейти до змісту', 'en': 'Skip to content'}
 
@@ -1394,9 +1394,9 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e(title)} | Roddi Health</title>
-  <link rel="icon" type="image/svg+xml" href="{up}assets/favicon.svg?v=blue1">
-  <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{up}assets/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="{up}assets/favicon.svg?v=blue2">
+  <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/favicon-32.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="{up}assets/apple-touch-icon.png?v=2">
   <meta name="description" content="{e(desc)}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="{url}">{alternates}
@@ -1409,7 +1409,7 @@ def page(lang, slug, title, desc, jsonld, main, img=None, og='article'):
   <meta property="og:locale" content="{LOCALE[lang]}">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
-  <meta name="theme-color" content="#75a1da">
+  <meta name="theme-color" content="#0768ce">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="preload" as="font" type="font/woff2" href="{up}assets/fonts/onest-cyrillic-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="{up}assets/fonts/onest-latin-400.woff2" crossorigin>

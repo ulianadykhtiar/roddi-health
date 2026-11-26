@@ -42,4 +42,4 @@
 - Шрифти свої: `assets/fonts/fonts.css` + woff2, без Google Fonts. Зображення у `assets/pets` і `assets/features` — WebP.
 - `robots.txt` явно дозволяє ШІ-ботів. `manifest.webmanifest`, `.well-known/security.txt` і файл ключа IndexNow лежать у корені.
 - Після деплою з новими сторінками запустіть `python3 tools/indexnow.py` (повідомляє Bing і ChatGPT search про нові адреси).
-- OG-картинки: `assets/og-uk-v3.jpg`, `assets/og-en-v3.jpg`. Змінюєте картинку — підвищуйте версію в назві, щоб соцмережі не показували кеш.
+- OG-картинки: `assets/og-uk-v4.jpg`, `assets/og-en-v4.jpg`. Змінюєте картинку — підвищуйте версію в назві, щоб соцмережі не показували кеш.
