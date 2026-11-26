@@ -15,9 +15,7 @@ KEY = 'fc91802e7a2213fcff50ca169e6f0715'
 
 urls = sys.argv[1:] or re.findall(r'<loc>([^<]+)</loc>', (ROOT / 'sitemap.xml').read_text(encoding='utf-8'))
 body = json.dumps({'host': HOST, 'key': KEY, 'keyLocation': f'https://{HOST}/{KEY}.txt', 'urlList': urls}).encode()
-req = urllib.request.Request('https://api.indexnow.org/indexnow', body, {'Content-Type': 'application/json; charset=utf-8'})
-try:
-    with urllib.request.urlopen(req, timeout=30) as r:
-        print('IndexNow accepted', len(urls), 'URLs, HTTP', r.status)
-except urllib.error.HTTPError as e:
-    print('IndexNow answered HTTP', e.code, '(200 and 202 mean accepted)', e.read()[:200])
+import subprocess
+r = subprocess.run(['curl', '-s', '-o', '/dev/null', '-w', '%{http_code}', '-H', 'Content-Type: application/json; charset=utf-8',
+                    '--data', body.decode(), 'https://api.indexnow.org/indexnow'], capture_output=True, text=True)
+print('IndexNow answered HTTP', r.stdout, '(200 and 202 mean accepted),', len(urls), 'URLs')
