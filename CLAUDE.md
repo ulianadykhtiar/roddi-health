@@ -35,3 +35,11 @@
 ## Форми
 
 `FORMS_ENDPOINT` в `assets/forms.js` — адреса вебзастосунку Apps Script, що пише в Google Таблицю «Roddi Health — заявки» (вкладки Emails і Survey). Заявки з localhost теж потрапляють у Таблицю. Після зміни `google-apps-script.gs` код треба вставити в Apps Script і оновити наявне розгортання (Deploy → Manage deployments → Edit → New version), щоб адреса не змінилася. Колонка «Мова» (`uk`/`en`) береться з `lang` сторінки, з якої надіслана форма.
+
+## SEO, швидкість і пошук через ШІ
+
+- `llms.txt` і `llms-full.txt` збирає `tools/build-llms.py` зі статей і FAQ (руками не правте, CI перевіряє). Після кожної нової статті запускайте скрипт.
+- Шрифти свої: `assets/fonts/fonts.css` + woff2, без Google Fonts. Зображення у `assets/pets` і `assets/features` — WebP.
+- `robots.txt` явно дозволяє ШІ-ботів. `manifest.webmanifest`, `.well-known/security.txt` і файл ключа IndexNow лежать у корені.
+- Після деплою з новими сторінками запустіть `python3 tools/indexnow.py` (повідомляє Bing і ChatGPT search про нові адреси).
+- OG-картинки: `assets/og-uk-v4.jpg`, `assets/og-en-v4.jpg`. Змінюєте картинку — підвищуйте версію в назві, щоб соцмережі не показували кеш.

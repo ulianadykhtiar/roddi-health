@@ -16,7 +16,7 @@
 /* ---------------- "До і після": one big gradient panel ---------------- */
 /* clip-path rounds the corners for sure: Safari ignores overflow+border-radius when a child animates. */
 .hg-ba > div { position: relative; isolation: isolate; overflow: hidden; overflow: clip; border-radius: 44px; clip-path: inset(0 round 44px); padding: clamp(22px, 4.5vw, 64px); }
-.hg-ba > div::before { content: ""; position: absolute; inset: -12%; z-index: -2; background: url(features/pastel-ba.jpg?v=blue1) center / cover; animation: hg-pan 18s ease-in-out infinite alternate; }
+.hg-ba > div::before { content: ""; position: absolute; inset: -12%; z-index: -2; background: url(features/pastel-ba.webp?v=blue1) center / cover; animation: hg-pan 18s ease-in-out infinite alternate; }
 .hg-ba > div::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hg-noise) 0 0 / 240px; pointer-events: none; }
 .hg-ba .text-\[\#6e727a\] { color: #404955; }
 /* The table lies on frosted glass; the black "with the app" column keeps the contrast. */
@@ -31,7 +31,7 @@
 
 /* ---------------- FAQ: the "still have questions" card ---------------- */
 .hg-ask { position: relative; isolation: isolate; overflow: hidden; clip-path: inset(0 round 28px); }
-.hg-ask::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/pastel-ask.jpg?v=blue1) center / cover; animation: hg-pan 17s ease-in-out infinite alternate; }
+.hg-ask::before { content: ""; position: absolute; inset: -14%; z-index: -2; background: url(features/pastel-ask.webp?v=blue1) center / cover; animation: hg-pan 17s ease-in-out infinite alternate; }
 .hg-ask::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hg-noise) 0 0 / 240px; pointer-events: none; }
 .hg-ask p { color: #404955; }
 

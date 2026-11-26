@@ -1,0 +1,2088 @@
+# Roddi Health
+
+> Roddi Health is a mobile app in development for owners of rats, hamsters, guinea pigs, rabbits, chinchillas, degus, mice and other small pets. It brings medication reminders, symptom and weight logs and vet visit history together in one place, even for several pets. Roddi Health does not replace a veterinary consultation.
+
+Status: in development, with a free early access list. It is free during the beta. Launch date, pricing and platforms are not announced yet.
+
+The project grew out of a rat blog followed by 7,000+ people on Instagram and TikTok (@marchin_rats). Contact: roddihealth@gmail.com
+
+The site is available in Ukrainian (default) and English. Articles are original overviews written from the veterinary sources they name (RSPCA, PDSA, PetMD and similar); they are reference material, not diagnosis or treatment advice.
+
+Short version with links: https://roddihealth.app/llms.txt
+
+
+# English articles
+
+## Dust baths for chinchillas: why, how often and for how long
+
+URL: https://roddihealth.app/en/blog/chinchillas/chinchilla-dust-baths
+Updated: 2026-11-16
+
+Summary: Chinchillas clean themselves in dust, which takes excess oil and moisture out of their dense fur. Bathing them in water is a bad idea: the fur takes a long time to dry and the skin can become inflamed. A bath of special dust is offered for a limited time and then removed so the dust doesn’t irritate the eyes.
+
+
+### Why chinchillas need dust
+
+A chinchilla’s fur is extremely dense: several dozen hairs grow from a single follicle (PetMD says up to 60, the RSPCA says 60–90). It is an adaptation to cold high mountains. By rolling in dust, a chinchilla removes excess skin oil, dirt and moisture from its coat. PDSA warns that without these baths the fur can become matted. A bath is also enrichment.
+
+
+### Why not water
+
+Dense fur dries slowly and holds moisture. According to PetMD, this can lead to matting and inflamed skin. That is why chinchillas are not bathed or wetted.
+
+
+### Which dust to choose
+- Use dust or sand made specifically for chinchilla baths. According to PetMD, it is a fine, cleaned powder made from volcanic ash, pumice, kaolin or silver sand.
+- Ordinary sand and similar products not meant for chinchillas are too abrasive and can irritate the skin, eyes and airways.
+- Extra-fine dust can irritate the nose and eyes, especially in chinchillas under a year old.
+- Replace the dust when it gets clumpy.
+
+
+### The bath bowl
+
+Use an open-top bowl or tray the chinchilla can roll around in freely, such as a shallow metal bowl. A closed box traps moisture. Sources differ on depth: PetMD suggests about 2.5 cm (1 inch), PDSA 4–6 cm.
+
+
+### How often and how long
+
+SourceHow oftenHow longPetMD, dust bath article2–4 times a week10–30 min; 3–4 min for chinchillas under a yearPetMD, care guideat least a few times a weeknot statedRSPCAdailynot statedPDSAdailyup to 10 min
+
+All sources agree on one thing: the bath does not stay in the cage all the time. Agree the frequency with your vet and watch the condition of the coat and skin. PetMD warns that going more than a week without a bath can lead to excess oil and skin irritation.
+
+
+### Why the bath is removed
+
+According to PetMD, constant access to dust can cause conjunctivitis and dry skin. Chinchillas may also use the bath as a toilet, so the RSPCA advises removing or sieving the dust after use.
+
+
+### Room conditions
+
+The RSPCA advises keeping chinchillas indoors in a dry, well-ventilated, draught-free room, ideally at 10–18 °C: heat, humidity and draughts can make them ill. PetMD adds that humidity should stay below 40–50% and the cage should be out of direct sunlight.
+
+
+### When to see a vet
+
+Take your chinchilla to a vet if you notice bald patches, discharge from the eyes or nose, or wet fur around the eyes or mouth. See our chinchilla health article for other warning signs.
+
+Sources:
+- https://www.petmd.com/exotic/care/how-give-your-chinchilla-dust-bath
+- https://www.petmd.com/exotic/chinchilla-care-sheet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health
+
+## Chinchilla health: teeth, fur, digestion and warning signs
+
+URL: https://roddihealth.app/en/blog/chinchillas/chinchilla-health
+Updated: 2026-11-16
+
+Summary: A chinchilla’s teeth grow throughout life, so the core of its diet is unlimited hay, not sugary mixes. Saliva on the chin, a poorer appetite, weight loss or fewer droppings can mean mouth pain or digestive trouble. Chinchillas hide illness, so these signs are a reason to see a vet straight away.
+
+
+### Why spotting problems early matters
+
+PetMD notes that chinchillas are good at hiding illness, so dental problems can go unnoticed until they are severe. PDSA and the RSPCA recommend checking your chinchilla every day, and the RSPCA also advises a vet check-up at least once a year.
+
+
+### Teeth
+
+A chinchilla’s teeth grow continuously and wear down through chewing. That is why the core of the diet is hay and grass, and PetMD advises unlimited good-quality hay. Pellets are given sparingly, without sugary treats. PDSA advises avoiding muesli-style mixes: chinchillas pick out the sugary bits, which can lead to painful dental disease. Chew blocks or untreated apple or pear branches are good for gnawing.
+
+Signs of dental problems, according to PetMD:
+- drooling and wet fur on the chin
+- eating less, dropping food, pawing at the mouth
+- weight loss and fewer droppings
+- swelling of the jaw or face
+- overgrown or crooked front teeth
+- less grooming and lethargy
+
+In a 2001 UK study (Crossley), dental changes were found on external examination in 35% of chinchillas that looked healthy. The author also noted that jaw swelling, weight loss or changes in chewing occur with various dental problems, so a vet has to find the actual cause. According to PetMD, examining the back teeth usually needs sedation and X-rays, and teeth must never be trimmed at home. If pain stops a chinchilla eating, gut stasis or infection can develop and become life-threatening within hours or days.
+
+
+### Digestion
+
+The RSPCA advises checking every day that your chinchilla eats and leaves plenty of dry droppings. If eating or drinking habits change, or droppings decrease or stop, contact a vet straight away: the chinchilla may be seriously ill. Diarrhoea and soft droppings are also a reason for a visit.
+
+
+### Fur and skin
+
+Fur loss can be a sign of illness or injury. The RSPCA also lists chewing its own or others’ fur, and patches of fur coming away when the chinchilla is handled, as signs of stress. Fur release is a defence response that can happen with rough handling. Without dust baths the fur becomes matted; we cover them in a separate article.
+
+
+### Heat and humidity
+
+Dense fur is an adaptation to cold, so heat and humidity are dangerous for chinchillas. Sources give slightly different ranges: the RSPCA recommends 10–18 °C in a dry, draught-free room, while PetMD gives roughly 13–21 °C, never above 27 °C, with humidity below 40–50% and no direct sun.
+
+
+### Daily check
+- Eyes and nose free of discharge, fur around the eyes and mouth dry.
+- The chinchilla eats and drinks, and droppings are normal and plentiful.
+- No bald patches, no skin changes.
+- No sore or injured feet, no limping.
+- No unusual swellings.
+- Stable weight: PetMD advises monitoring body weight.
+
+Sources:
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/environment
+- https://www.petmd.com/exotic/conditions/mouth/overgrown-chinchilla-teeth
+- https://www.petmd.com/exotic/chinchilla-care-sheet
+- https://doi.org/10.1111/j.1748-5827.2001.tb01977.x
+
+## Degus at home: housing, company, diet and health
+
+URL: https://roddihealth.app/en/blog/degus/degus-at-home
+Updated: 2026-11-16
+
+Summary: Degus are active by day and live in groups, so they are not kept alone. They need a tall metal cage with several levels and a wheel, deep bedding for digging and dust baths a few times a week. The core of the diet is hay, with a few sugar-free pellets, because degus are prone to diabetes.
+
+
+### Lifestyle and company
+
+Degus are active by day and very vocal. They are social animals: the RSPCA warns that alone they can become depressed and advises keeping a single degu only on a vet’s advice. Keep single-sex groups or a neutered male with females, with no more than one male in a mixed group. PetMD advises against housing degus with other rodents or rabbits. Sources give different lifespans: PDSA says 6–8 years, sometimes 9; the RSPCA 6–7 years; PetMD 5–9 years.
+
+
+### The cage
+- The cage must be metal: degus chew through plastic and wood. PetMD advises avoiding plastic cages and accessories.
+- Size: PDSA advises as large a cage as possible, and PetMD gives a minimum of about 71 × 46 × 71 cm for two degus, with bars no more than 1.3 cm apart.
+- A tall cage with several levels and solid shelves and floor. A solid roof helps degus feel safe.
+- Pear, apple or beech branches for climbing and gnawing.
+- A nest box with hay for sleeping.
+- Glass tanks are not suitable: the RSPCA links them to breathing problems.
+- Keep the cage indoors, out of draughts and direct sun, away from the TV and music: vibration frightens them.
+
+
+### Heat
+
+The RSPCA advises keeping the room with the cage no warmer than 20 °C and placing it away from radiators. A degu lying flat on its stomach may be overheating: contact a vet straight away.
+
+
+### Exercise and digging
+
+A solid wheel is needed, big enough for the degu to run with a straight back. PetMD gives a diameter of 25–30 cm. PDSA advises letting degus out for at least half an hour a day into a safe room or pen with wires and wood covered. For digging they need a deep layer of hay and shredded paper. Sources disagree on wood shavings: the RSPCA allows non-toxic shavings, while PetMD advises against them because of the risk to breathing.
+
+
+### Dust baths
+
+SourceHow oftenHowPDSAa few times a weekchinchilla or hamster sand, not left in all the time because it dries the skinRSPCA2–3 times a week, about 20 min eacha heavy bowl with about 4 cm of sand, removed after usePetMDabout twice a weekchinchilla dust, outside the cage
+
+
+### Diet
+- The core is unlimited hay.
+- Degu pellets: PDSA and PetMD suggest one to two tablespoons a day. If degu pellets are not available, guinea pig or chinchilla pellets without molasses will do.
+- The RSPCA considers rabbit, hamster and gerbil food, and mixes with dried fruit, unsuitable.
+- Leafy greens and vegetables in small portions: PDSA suggests once or twice a week, PetMD a few times a week.
+- PetMD advises no fruit, honey, molasses or seeds at all. PDSA allows an occasional bit of apple. The RSPCA allows carrot, sweet potato and beetroot only in tiny pieces now and then.
+- Be careful with shop-bought treats: they are often too sugary.
+- Degus eat some of their own droppings: this is normal.
+- Introduce new food gradually.
+
+
+### Diabetes
+
+According to the RSPCA and PDSA, degus are prone to type 2 diabetes, especially on a diet high in carbohydrates and sugar. PDSA lists these signs: cloudy eyes (cataracts), drinking a lot and urinating often, and weight gain. If you notice any of these, see a vet.
+
+
+### Teeth
+
+Degus’ teeth grow continuously and wear down as they chew hay. The RSPCA says healthy teeth are yellow-orange, white teeth can be a sign of illness, and advises checking them every week. According to PDSA, dental problems can show as drooling, a swollen face, discharge from the eyes and a change in tooth colour. Only a vet should correct overgrown teeth.
+
+
+### The tail and handling
+
+Never pick up or pull a degu by the tail. The skin on the tip of the tail can come off, and then a vet is needed because of the risk of infection. The RSPCA advises letting the degu climb onto your palm and lifting it in cupped hands, low over the floor. Hands swooping down from above frighten them.
+
+
+### Health checks
+
+The RSPCA advises checking degus every day. A healthy degu has bright, clear eyes, clean ears, a glossy coat, and a clean tail and rear end. Warning signs include nasal discharge, wetness around the mouth, cloudy eyes and white teeth. Take your degus to a vet at least once a year. PetMD advises seeing a vet urgently if a degu eats less, loses weight, breathes with difficulty, has diarrhoea, struggles to chew or becomes lethargic.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/behaviour
+- https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus
+- https://www.petmd.com/exotic/care/caring-for-a-degu
+
+## What to feed a degu: hay, pellets and go easy on sugar
+
+URL: https://roddihealth.app/en/blog/degus/what-to-feed-a-degu
+Updated: 2026-11-16
+
+Summary: The basis of a degu’s diet is unlimited good-quality hay. Pellets are given in small amounts and without molasses, because degus are prone to diabetes. Fruit and starchy vegetables are best limited or left out.
+
+
+### What the diet is based on
+
+Most of the diet is hay, available at all times, such as timothy or meadow hay. Hay wears down the continuously growing teeth and supports the gut. Exotic Direct advises against brown or green hay, because green hay can cause bloating, and says a pink or white coating means mould.
+
+Degu pellets are given in limited amounts: PDSA suggests one to two tablespoons, about 10 g a day, and PetMD one to two tablespoons depending on size and activity. If degu pellets aren’t available, guinea pig or chinchilla pellets without molasses will do. The RSPCA considers rabbit, hamster and gerbil food, and mixes with dried fruit, unsuitable.
+
+
+### Vegetables and fruit
+
+PDSA suggests a small portion of leafy greens and vegetables once or twice a week, no more. The RSPCA and PetMD advise against fruit because of its sugar, while PDSA allows an occasional bit of apple. Introduce new foods gradually.
+
+FoodWhat sources sayCabbage, broccoli, fresh herbsExotic Direct: once or twice a week; cabbage and broccoli can cause bloatingApple, cucumberExotic Direct: once a month. PDSA: an occasional bit of apple. PetMD and the RSPCA advise no fruitCarrot, sweet potato, beetroot, parsnipRSPCA: only tiny pieces now and then. Exotic Direct: carrot once a monthPeas, cornExotic Direct: once a month. PetMD: avoid as starchyPotatoesPetMD: avoidSugary rodent chews, food with molasses, human leftoversPDSA: don’t give
+
+Sources disagree, so if in doubt follow the stricter option and talk to your vet.
+
+
+### Diabetes
+
+Degus are prone to type 2 diabetes, especially on a diet high in sugar and carbohydrates. PDSA and Exotic Direct list these signs: drinking and urinating more, cloudy eyes (cataracts), and, according to PDSA, weight gain. If you notice them, see a vet.
+
+
+### Water and vitamin C
+
+Change the water daily, as PDSA and Exotic Direct advise. Exotic Direct advises against adding vitamin C to the water, because you can’t control how much the degu drinks and the vitamin breaks down quickly. If needed, it can come from food such as broccoli or red pepper.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/diet
+- https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus
+- https://www.petmd.com/exotic/care/caring-for-a-degu
+- https://exoticdirect.co.uk/news/degu-food-advice-what-your-degu-should-be-eating-not-eating-diabetes-and-other-advice/
+
+## Basic guinea pig care: hay, food, housing and company
+
+URL: https://roddihealth.app/en/blog/guinea-pigs/guinea-pig-care-basics
+Updated: 2026-11-16
+
+Summary: The core of a guinea pig’s diet is unlimited hay and grass. On top of that come a few guinea pig pellets, fresh vegetables every day and clean water. Guinea pigs are social and live in pairs or groups. They need a roomy home with a solid floor, hides and space to move.
+
+
+### Hay and grass
+
+Hay should make up most of the diet and be available at all times. PDSA puts its share at 85–90%, PetMD at about 80%. The RSPCA advises giving fresh grass as often as possible, ideally daily. Lawnmower clippings are dangerous and must not be fed.
+
+
+### Pellets
+
+Choose uniform pellets made for guinea pigs, grass-based, rather than muesli-style mixes. PDSA suggests about one tablespoon per adult guinea pig a day; the RSPCA says a portion following the manufacturer’s instructions, fresh each day.
+
+
+### Vegetables and fruit
+
+PDSA suggests about a cup of vegetables per guinea pig a day, 5–6 different kinds, including some rich in vitamin C. Among foods that can be given often, the RSPCA lists bell peppers, cucumber, celery, romaine lettuce and parsley, while broccoli, spinach, kale, carrot and a quarter of an apple are treats for a few times a week. Fruit is given rarely because of its sugar. Introduce new foods gradually.
+
+Don’t give iceberg lettuce, potato, onion, garlic, mushrooms, avocado, rhubarb, chocolate, bread and biscuits, nuts or grains.
+
+
+### Water
+
+Fresh, clean water must always be available. The RSPCA advises checking it twice a day and making sure it doesn’t freeze in winter. Wash the bowl or bottle every day.
+
+
+### Housing
+
+Sources give different minimum sizes:
+
+SourceMinimumPetMDa cage of about 91 × 76 × 46 cmPDSAa hutch of at least 1.5 × 1 m and a run of at least 2 × 1 mRSPCA Australiaat least 2 × 0.5 m for a pair, at least 30 cm high
+
+All agree that bigger is better. The floor should be solid, not mesh. The RSPCA advises having one more hide than there are guinea pigs, and giving them space to move every day. PetMD suggests at least an hour a day outside the cage.
+
+
+### Temperature
+
+The RSPCA gives 17–20 °C as a comfortable room temperature. Above 26 °C the risk of heatstroke rises, and below 15 °C a guinea pig can get chilled. PDSA warns of heatstroke above 27 °C. Keep the home away from radiators, sunny windows and draughts.
+
+
+### Bedding and cleaning
+
+Dust-free hay or paper bedding works well; cotton wool should not be used. Sources disagree about wood shavings, so paper bedding is the safer choice. Remove wet bedding and leftover fresh food every day, and do a thorough clean once a week.
+
+
+### Company
+
+The RSPCA advises keeping a guinea pig with at least one friendly companion unless a vet advises otherwise. Good pairings are a neutered male with one or more females, two females, or brothers raised together. A male living with females must be neutered: according to PDSA, females can become pregnant from about three weeks old. A rabbit is not a companion for a guinea pig, and keeping them together is not advised.
+
+
+### Health checks
+- Check your guinea pig every day: face and eyes, coat, rear end and feet.
+- Check the front teeth and nails once a week. Overgrown teeth must be corrected by a vet.
+- In hot weather check the rear end twice a day: soiled fur attracts flies.
+- Take your guinea pig to a vet at least once a year.
+- If eating, drinking or droppings change, or droppings stop, contact a vet straight away. Difficulty breathing is an emergency.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pigs-as-pets
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/the-ideal-home-for-your-guinea-pig
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pig-health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/guinea-pigs/where-should-i-keep-my-guinea-pigs
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+
+## Guinea pig not eating: what to do
+
+URL: https://roddihealth.app/en/blog/guinea-pigs/guinea-pig-not-eating
+Updated: 2026-11-16
+
+Summary: If your guinea pig has stopped eating or is producing fewer droppings, call a vet straight away. According to PetMD, untreated gut stasis can become fatal within 24–48 hours.
+
+
+### Why it is so dangerous
+
+A guinea pig’s gut has to keep moving all the time, and for that it needs a lot of fibre. When the gut slows down, gas builds up and the balance of gut bacteria is upset, and the condition gets worse quickly. PetMD calls stasis a life-threatening emergency. On top of that, according to PDSA and the RSPCA, guinea pigs hide illness, so by the time you notice a guinea pig isn’t eating the problem may have started earlier.
+
+
+### Possible causes
+
+According to PetMD, stasis is often the result of another problem:
+- too little hay and fibre
+- dehydration
+- pain or illness, including dental problems
+- stress: a new place, handling, changes in companions
+- too little exercise
+
+PDSA adds that changing food too quickly can also upset digestion and make a guinea pig stop eating. A vet finds the cause: the exam usually covers the teeth, weight, belly and X-rays, and in severe cases blood tests.
+
+
+### What to do now
+- Call a vet as soon as possible: PetMD and the RSPCA advise contacting one straight away.
+- Note when the guinea pig last ate and passed droppings.
+- If you can, bring a droppings sample.
+- Don’t give medicines without a prescription: the RSPCA advises only those a vet has recommended.
+
+According to PetMD, treatment usually includes fluids, assisted feeding and pain relief. Many guinea pigs start improving within 24–72 hours and fully recover within several days to a week.
+
+
+### Which droppings are normal
+
+Guinea pigs eat special soft droppings straight from their bottom, and this is a normal part of digestion. What should worry you is different: the RSPCA advises contacting a vet immediately if droppings become fewer, stop, become softer than usual or stick to the fur.
+
+
+### How to lower the risk
+- Hay and clean water available at all times. The RSPCA advises checking the water twice a day.
+- Daily exercise: PetMD suggests at least an hour a day outside the cage.
+- Introduce new food gradually.
+- Weigh your guinea pig regularly: according to PDSA, weight loss can be a sign of illness.
+- Check the front teeth and rear end every day.
+- See a vet at the first change in appetite.
+
+Sources:
+- https://www.petmd.com/exotic/gi-stasis-in-guinea-pigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pig-health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+
+## Scurvy in guinea pigs: signs of vitamin C deficiency and prevention
+
+URL: https://roddihealth.app/en/blog/guinea-pigs/guinea-pig-scurvy
+Updated: 2026-11-16
+
+Summary: Guinea pigs can’t make vitamin C themselves, so they need it from food every day. According to PetMD, signs of deficiency can appear after just 2–3 weeks of a poor diet: the coat, appetite and weight get worse, wounds heal slowly and moving becomes painful. A vet finds the cause and prescribes treatment.
+
+
+### Why vitamin C must come from food
+
+Unlike most animals, guinea pigs lack the enzyme needed to make vitamin C, so they get it only from food. Vitamin C is needed, among other things, to make collagen. PDSA warns that without it a guinea pig is at risk of scurvy.
+
+
+### How a deficiency shows
+
+PetMD, in an article written by a vet, lists these signs:
+- a rough, dull or patchy coat
+- lethargy and a depressed look
+- poor appetite and weight loss, or poor weight gain in young animals
+- wounds heal slowly and infections become more frequent
+- dental problems and pain when chewing
+- diarrhoea
+- bone and joint pain, swollen joints: the guinea pig is reluctant to move or limps
+
+In severe cases a deficiency can lead to fractures, paralysis, sepsis and death. Many of these signs also occur with other diseases, so a vet has to find the cause.
+
+
+### How quickly it happens
+
+According to PetMD, signs can appear after just 2–3 weeks of a diet that is too low in vitamin C. The most common reasons are too little fresh produce, no fortified food, or food and treats that are too old.
+
+
+### Fresh vegetables every day
+
+The RSPCA calls fresh vegetables and herbs an excellent source of vitamin C. Among foods that can be given often, it lists bell peppers, cucumber, celery, romaine lettuce and parsley. PetMD lists red and green peppers, broccoli, cauliflower, strawberries and kiwi among foods rich in vitamin C.
+
+Sources disagree about high-calcium greens. The RSPCA gives kale and spinach only as treats a few times a week. PetMD’s care sheet advises avoiding parsley, spinach, kale and dandelion because of the risk of stones, while PetMD’s vitamin C article lists kale and parsley as good sources. If in doubt, ask your vet.
+
+
+### Pellets lose vitamin C
+- Choose pellets made for guinea pigs, grass-based and fortified with vitamin C.
+- Vitamin C in food breaks down over time, faster with heat, light and air.
+- PDSA advises storing pellets somewhere dry, cool and dark and using them within three months of purchase. According to PetMD’s care sheet, vitamin C levels drop sharply three months after the production date.
+- The RSPCA advises giving a fresh portion of pellets daily instead of topping up the old one, and not feeding food past its best-before date.
+
+
+### Vitamin C in water and supplements
+
+Vitamin C in drinking water is unreliable: it breaks down quickly, and PetMD says such additives last less than a day. PDSA advises against adding it to water also because the taste can make a guinea pig drink less.
+
+According to PDSA, a guinea pig that gets a balanced diet with fresh greens every day does not need separate supplements. Too much vitamin C can also do harm: Improve International, a publisher for vets, links excessive amounts with urinary stones and joint problems. So it is worth discussing supplements with your vet.
+
+
+### What a vet will do
+
+According to PetMD, the vet examines the guinea pig and asks about its diet, and sometimes takes X-rays or a blood test. Correcting the diet is often enough, and in severe cases the vet prescribes vitamin C. Dental changes can last a long time.
+
+Sources:
+- https://www.petmd.com/exotic/conditions/cardiovascular/c_ex_gp_vitamin_c_deficiency
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health
+- https://improveinternational.com/uk/clinical-library/guinea-pigs-and-the-vitamin-c-problem
+
+## What to feed a guinea pig and where to get vitamin C
+
+URL: https://roddihealth.app/en/blog/guinea-pigs/what-to-feed-a-guinea-pig
+Updated: 2026-11-16
+
+Summary: Hay and grass make up most of a guinea pig’s diet and must always be available: PetMD puts their share at about 80%, PDSA at 85–90%. Guinea pigs can’t make vitamin C themselves, so they get it from food every day, above all from fresh vegetables.
+
+
+### Hay and grass
+
+Hay must always be available. RSPCA Australia suggests a daily pile of hay twice the size of the guinea pig. Almost any grass hay is suitable. Sources disagree about alfalfa: PetMD advises avoiding it because regular eating can cause harm, while RSPCA Australia allows it for young, pregnant, nursing and ill guinea pigs, and only occasionally for others. Fresh grass is good, but lawnmower clippings must never be fed.
+
+
+### Pellets
+
+Pellets are given in limited amounts: PDSA suggests about a tablespoon per adult guinea pig a day. Choose grass-based pellets fortified with vitamin C and check they are fresh, because the vitamin breaks down over time. Sources define the limit differently: PDSA says three months after purchase, PetMD’s care sheet three months after production, the RSPCA by the best-before date.
+
+
+### Vegetables and fruit
+
+Fresh vegetables are given every day, but sources give different amounts: PDSA suggests about a cup per guinea pig, PetMD a quarter to half a cup. Fruit is where they disagree most: SPCA New Zealand recommends plenty of fresh fruit and vegetables daily, PetMD fruit once or twice a week, PDSA fruit as a treat once every week or two. Introduce new food gradually: PDSA suggests changing the diet over two to four weeks.
+
+
+### Where to get vitamin C
+
+Guinea pigs can’t make vitamin C, so they need it every day. SPCA New Zealand considers pellets and vitamin C in drinking water unreliable sources because it breaks down quickly, and recommends fresh vegetables. The RSPCA and PDSA treat fortified pellets as a source. PDSA adds that a supplement may help if you’re unsure your guinea pig gets enough, but it shouldn’t be added to water. See our scurvy article for the signs of deficiency.
+
+
+### Greens high in calcium
+
+SPCA New Zealand recommends leafy greens such as kale, parsley and spinach for vitamin C. PetMD’s care sheet warns that these are high in calcium, and guinea pigs are prone to bladder stones. The RSPCA allows parsley often and kale and spinach as treats. Ask your vet how much of these greens suits your guinea pig.
+
+
+### What not to give
+
+FoodWho advises avoiding itIceberg lettuce, potato, garlic, avocadoRSPCA, PDSAOnion, mushrooms, chivesPDSA, PetMDRhubarbPDSAChocolate, daffodils, buttercups, liliesPetMDBread, biscuits, cakes, grains, seeds, nutsPetMD, RSPCA AustraliaCitrus, coconutRSPCALawnmower clippingsRSPCA, PDSA, RSPCA Australia
+
+Sources disagree about peas, beans and corn: PetMD counts them as starchy foods to avoid, while RSPCA Australia lists them among vegetables that can be fed.
+
+
+### Water
+
+Fresh water must always be available. The RSPCA advises checking it twice a day and making sure it doesn’t freeze in winter. PetMD advises changing bowl water daily.
+
+Sources:
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+- https://spca.nz/advice-and-welfare/article/why-is-vitamin-c-important-for-my-guinea-pigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/guinea-pigs/what-should-i-feed-my-guinea-pigs
+- https://www.petmd.com/exotic/conditions/cardiovascular/c_ex_gp_vitamin_c_deficiency
+
+## A hamster for beginners: answers to common questions
+
+URL: https://roddihealth.app/en/blog/hamsters/hamster-for-beginners
+Updated: 2026-11-16
+
+Summary: Syrian hamsters live alone, while dwarf hamsters can sometimes live in pairs if they grew up together. Hamsters need a roomy cage with deep bedding for digging, a solid wheel that keeps their back straight, pelleted food and quiet during the day, as they are active at night.
+
+
+### Syrian or dwarf?
+
+The RSPCA lists five species commonly kept as pets: Syrian, Chinese, Campbell’s Russian dwarf, winter white dwarf and Roborovski. Syrians are larger: about 13–18 cm long according to PetMD, while dwarfs are 5–10 cm. The species determines the size of the wheel and cage and whether hamsters can live together.
+
+
+### Can two hamsters live together?
+
+Syrian and Chinese hamsters live alone: they are not naturally social, and Syrians are never housed together. Sources disagree about dwarfs. The RSPCA and PetMD allow pairs or trios if they grew up together, ideally littermates, but warn they may fall out later, so be ready to separate them. PDSA advises against housing Russian dwarfs together. New hamsters are not added to a group.
+
+
+### Which cage
+
+Sources give different sizes:
+
+SourceMinimumPDSA100 × 50 cm (citing a German veterinary animal welfare association)PetMD, Syrianabout 102 × 51 × 41 cmPetMD, dwarfabout 61 × 30 × 30 cm per hamster
+
+All agree that bigger is better. PDSA prefers a single-level cage to a tall multi-level one. The floor should be solid, not mesh. The RSPCA advises against wooden cages. PetMD gives bar spacing of about 1.3 cm for Syrians and about 0.6 cm for dwarfs.
+
+
+### Bedding and nest
+
+Hamsters dig, so bedding should be deep. PDSA recommends at least 25 cm, PetMD 15–25 cm for Syrians, and for dwarfs 5 cm across the cage with about 20 cm in one corner. Unscented paper bedding is the safest choice. The RSPCA, PDSA and PetMD advise against cotton wool and fluffy fibres: the threads wrap around feet. Hay, shredded paper and unscented toilet paper work for the nest. Sources disagree about wood shavings and newspaper: PDSA considers shavings too dusty and newspaper ink toxic.
+
+
+### The wheel
+
+The wheel should be solid, with no gaps or rungs, and big enough to keep the hamster’s back straight: in a small wheel the back arches, which can cause pain over time. Recommended sizes differ:
+
+SourceSyrianDwarfPDSAat least 30 cmat least 20 cmPetMD, Syrian care sheet28–30 cmnot statedPetMD, general care sheetat least 20 cmat least 15 cm
+
+The RSPCA reminds owners that a wheel shouldn’t be the only enrichment.
+
+
+### Hamsters sleep by day
+
+Hamsters are active at night. Don’t wake them, pick them up while they sleep or clean the cage during the day. A hamster woken suddenly may get scared and bite. Keep the cage somewhere quiet, away from the TV, washing machine and direct sun, and switch the light off at about the same time each evening.
+
+
+### Temperature
+
+Keep your hamster indoors, away from draughts and damp. PDSA recommends a steady 18–21 °C, PetMD 20–24 °C for Syrians. Heat brings a risk of heatstroke, and in the cold a hamster can go into torpor. If a hamster is cold, limp and barely responsive, PetMD advises seeing a vet straight away.
+
+
+### What to feed
+- The core is pelleted hamster food: every pellet is the same, so a hamster can’t pick out the tasty bits. PDSA suggests muesli-style mixes only as an occasional extra.
+- Fresh vegetables and greens in small amounts, one or two teaspoons a day according to PDSA. Too much fresh food can cause diarrhoea.
+- Fruit rarely and in tiny portions. PDSA warns that Russian dwarfs are prone to diabetes, so sugary food is especially harmful for them.
+- Don’t give grapes, rhubarb, chocolate, caffeine, alcohol, fruit pits and seeds, raw potato, garlic, or sugary and salty food.
+- Hamsters hoard food, so remove leftover fresh food the same day, but leave dry food stores in place when cleaning.
+- Water must always be available. Check the bottle daily for leaks or blockages.
+
+Sources contradict each other on onion and tomato: PDSA lists them as suitable, while PetMD advises avoiding onions and unripe tomatoes. It is safer not to give them.
+
+
+### How to pick up a hamster
+
+According to the RSPCA, first let the hamster sniff your hand, then offer two cupped palms so it can climb on by itself. Hold it only a few centimetres above a stable surface: falls from a height are dangerous. Don’t grab or squeeze. Only handle a hamster when it is awake. Children shouldn’t hold a hamster without an adult.
+
+
+### Cleaning
+
+Remove dirty bedding, droppings and leftover fresh food every day or every few days. Sources disagree about full cleans: PetMD says weekly, PDSA weekly for small cages and every few weeks for larger ones, the RSPCA once or twice a month. Put back a little old, dry bedding so the nest still smells familiar.
+
+
+### When to see a vet urgently
+
+Hamsters lose condition quickly and hide pain. See a vet straight away if your hamster eats less, has diarrhoea, has wet or dirty fur under the tail (this may be wet tail), loses weight, breathes with difficulty, sneezes, has discharge from the nose or eyes, drools, has overgrown teeth, has cheek pouches that stay swollen for hours, or an eye bulges out.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/behaviour
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+- https://www.petmd.com/exotic/hamster-care-sheet
+- https://www.petmd.com/exotic/syrian-hamster-care-sheet
+- https://www.petmd.com/exotic/dwarf-hamster-care-sheet
+
+## Wet tail in hamsters: symptoms and what to do
+
+URL: https://roddihealth.app/en/blog/hamsters/wet-tail-in-hamsters
+Updated: 2026-11-16
+
+Summary: “Wet tail” is diarrhoea that soaks the fur under the tail. A hamster loses fluid quickly, so it is often an emergency: PetMD advises that a vet who treats exotic animals should see the hamster, ideally within 24 hours.
+
+
+### What it is
+
+The term usually refers to diarrhoea in young hamsters, although it can happen at any age. Fluid loss leaves the hamster dehydrated and weak, it eats less and its coat looks scruffy. PetMD warns that without prompt treatment the hamster can die, and PDSA that death is sometimes sudden.
+
+
+### Why it happens
+
+According to PetMD, causes can be infectious: bacteria, especially in hamsters 3–10 weeks old, protozoa and intestinal parasites. They can also be non-infectious:
+- a sudden change of food or brand
+- too many pellets, vegetables, fruit or sweet treats
+- stress: transport, heat or high humidity, overcrowding
+- a dirty cage and spoiled food in hidden stores
+- some antibiotics (PetMD names penicillin) that kill the good bacteria in the gut
+
+
+### What to do now
+- Call a vet who treats exotic animals as soon as possible.
+- Don’t give medicines, especially antibiotics, without a prescription: the RSPCA warns that some antibiotics can cause serious digestive problems in hamsters.
+- Take a fresh droppings sample and note what you feed, the room temperature and humidity, and whether any new hamsters arrived.
+- Handle the hamster less and don’t disturb it more than necessary.
+- Some bacteria that cause wet tail can infect people. Wash your hands after contact and ask the vet how to handle the hamster during treatment.
+
+The vet may give fluids, medicines and supportive care. According to PetMD, improvement is often seen within two to three days, and recovery takes one to two weeks or longer. Don’t change the diet during recovery unless the vet advises it.
+
+
+### How to lower the risk
+- A calm home without temperature swings.
+- Remove leftover food and dirty bedding every day.
+- A balanced diet without sudden changes; store food in an airtight tub or jar.
+- Don’t overfeed vegetables and fruit.
+- Keep new hamsters apart for at least 30 days, as PetMD advises.
+
+Sources:
+- https://www.petmd.com/exotic/condition/wet-tail-in-hamsters
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet
+- https://www.petmd.com/exotic/hamster-care-sheet
+
+## What to feed a hamster: what’s allowed and what isn’t
+
+URL: https://roddihealth.app/en/blog/hamsters/what-to-feed-a-hamster
+Updated: 2026-11-16
+
+Summary: Most of a hamster’s diet should be a pelleted hamster food. Fresh food is given in moderation, because too much of it can cause diarrhoea, which is dangerous for a hamster: it loses fluid quickly.
+
+
+### What the diet is based on
+
+The basis is a pelleted hamster food. PDSA explains that all pellets are the same, so a hamster can’t pick out the tasty bits, and advises against muesli-style mixes as the only food. PetMD recommends food with 15–25% protein and about a tablespoon of food a day, depending on the species.
+
+Choose high-fibre vegetables and give them in small amounts: PDSA suggests one or two teaspoons of fresh food a day. Hamsters are active at night, so fresh food is best given in the evening. Fruit is high in sugar. For Syrians, PetMD advises apple or berries only rarely and in tiny portions; for dwarfs, a teaspoon of fruit one to three times a week. PDSA warns that Russian dwarf hamsters are prone to diabetes, so they should get especially little sugary food.
+
+
+### Can hamsters eat it: a quick table
+
+FoodAnswerNoteGrapes, rhubarbNoRSPCA: can be poisonous to rodentsGarlicNoPetMDOnionBetter notPetMD advises avoiding it, while PDSA lists it as suitable. Safer not to giveChocolate, coffee, alcoholNoPetMD: toxicCitrusNoPetMD advises avoiding it; PDSA thinks it’s best avoided for nowAlmondsNoOn PetMD’s list; PDSA allows other nuts as an occasional treatRaw beans, raw potatoNoPetMDTomatoesCarefulPetMD advises avoiding unripe ones, PDSA allows tomatoFruit pits and seedsNoIncluding apple seedsSugary, salty food, red meatNoPetMDApple without seeds, banana, peachIn moderationA small piece; PDSA lists them as suitableCourgette, bell pepper, carrotIn moderationCourgette and pepper are on PDSA’s list, carrot is mentioned by PetMD
+
+
+### What to watch out for
+- A sudden change of food or brand: the RSPCA, PDSA and PetMD warn it can upset the gut and cause diarrhoea.
+- Too many vegetables, fruits or sweet treats.
+- Spoiled leftovers. Hamsters hoard food, so fresh food goes off quickly in their stores. PetMD advises removing leftovers and hidden fresh food daily, and for Syrians after a few hours.
+
+
+### Water
+
+Fresh, clean water must always be available. The RSPCA recommends a sipper tube without a ball valve, because hamsters find it hard to drink from ball valves. PetMD advises changing the water daily and checking the bottle for leaks and chew damage.
+
+Sources:
+- https://www.petmd.com/exotic/hamster-care-sheet
+- https://www.petmd.com/exotic/syrian-hamster-care-sheet
+- https://www.petmd.com/exotic/dwarf-hamster-care-sheet
+- https://www.petmd.com/exotic/condition/wet-tail-in-hamsters
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+
+## Pet mice: housing, cleaning, food and company
+
+URL: https://roddihealth.app/en/blog/mice/pet-mice-care
+Updated: 2026-11-16
+
+Summary: Mice are social, nocturnal animals. They need same-sex companions, a roomy, well-ventilated home without draughts, and places to hide and climb. The core of the diet is a pelleted mouse food, with fresh greens within the daily ration and clean water every day.
+
+
+### Company
+
+Mice are social and should live with other mice. Keep stable single-sex groups. Males are often aggressive towards unfamiliar males, so a male group is best made of brothers who grew up together. Females usually accept newcomers more easily. A male lives with females only if he is neutered. The RSPCA advises keeping a mouse alone only if a vet says so, and not housing other rodents with mice.
+
+
+### Housing
+- Sources give no exact floor area for pet mice. They advise as much space as possible, and PDSA considers most pet-shop cages too small.
+- The home needs good airflow without draughts. Ammonia builds up in glass tanks and solid plastic boxes.
+- Bar spacing of no more than 5 mm (RSPCA Australia) or 6 mm (PDSA).
+- A solid floor: wire mesh hurts their feet.
+- Several levels, ladders and ropes: mice are good climbers.
+- Several hides with two exits, and a dark spot for a nest.
+
+
+### Where to put it
+
+PDSA and the New South Wales schools guide give 18–22 °C as a comfortable range, without sudden swings. Keep the cage out of direct sun and draughts, and out of bathrooms, garages and conservatories. Mice need quiet, away from the TV and loud music, as they are sensitive to noise and light. RSPCA Australia suggests 8–12 hours of dark, quiet time a day.
+
+
+### Bedding and nest
+
+SuitableNot suitablepaper or card bedding, cellulose pelletsfine sawdust, scented or coloured beddingfor the nest: shredded paper, tissues, haycotton wool and fluffy fibres: they tangle around feeta layer of at least 2 cm, with one 3–4 cm area for diggingcorn cobs
+
+Sources disagree about wood shavings: RSPCA Victoria and the New South Wales schools guide allow them, while the RSPCA, PDSA and RSPCA Australia advise against them. Paper bedding is the safer choice.
+
+
+### Cleaning
+- Remove droppings and wet bedding every day.
+- PDSA recommends a full clean every week; the RSPCA says every one to two weeks.
+- Mice scent-mark their territory. Put back a little dry old bedding so the home still smells familiar.
+- Clean in the evening, when mice wake up.
+- Check the water bottle morning and evening: mice can block the spout with bedding.
+
+
+### What to feed
+- The core of the diet is mouse pellets or blocks. Each pellet contains everything needed, so a mouse cannot pick out only the tasty bits.
+- RSPCA Australia and RSPCA Victoria advise against seed mixes: mice pick their favourite parts, which leads to imbalance and obesity. PDSA allows mixes but suggests switching to pellets if a mouse leaves part of the food.
+- Fresh dark greens and non-starchy vegetables in small portions, as part of the daily ration rather than on top of it.
+- Treats should be no more than 10% of calories.
+- Don’t give chocolate, grapes or raisins, avocado, garlic, onion, coffee, tea, alcohol, sweets, fatty or dairy foods, or sticky food.
+- Scatter some food so the mice can forage for it.
+- Fresh water every day. RSPCA Australia recommends a drinking bottle, ideally two in case one fails.
+- Introduce new food gradually.
+
+
+### Gnawing and exercise
+
+Mice’s incisors grow throughout life, so they need things to gnaw made of untreated wood or cardboard. A wheel should be solid, with no gaps or rungs, and big enough for the mouse to run with a straight back. The RSPCA reminds owners that a wheel shouldn’t be the only enrichment: add tunnels, boxes and ropes.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice/company
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/where-should-i-keep-my-mice
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-should-i-feed-my-mice
+- https://rspcavic.org/learn/caring-for-your-mice-and-rats/
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/mice/mice-environment
+
+## How to check a pet mouse’s health: daily check and warning signs
+
+URL: https://roddihealth.app/en/blog/mice/pet-mouse-health-check
+Updated: 2026-11-16
+
+Summary: Mice hide illness, so by the time symptoms are obvious a mouse is often already seriously ill. A short check every morning and evening helps you spot changes early: dull eyes, a ruffled coat, unusual breathing, weight loss or a mouse that sits apart from the others.
+
+
+### Why check every day
+
+Mice can go downhill quickly and show only faint signs of pain until things are severe. RSPCA Australia explains that as prey animals they hide illness: if a mouse looks sick, it is already very sick. Check your mice twice a day, in the morning and evening when they are active. Watch quietly for a few minutes first, then look at each mouse closely.
+
+
+### What a healthy mouse looks like
+- Clear, wide-open eyes.
+- A dense, sleek, shiny coat.
+- Even, quiet breathing.
+- Sleeps curled up in a ball. A mouse lying stretched out may be unwell.
+- Moves briskly, eats and sleeps with the others.
+
+
+### What to look out for
+
+What to checkWarning signsEyesdull or sunken eyes, squinting, dischargeNose and breathingnasal discharge, chattering, fast or laboured breathing with a lot of belly movement, frequent sneezingCoat and skinruffled, dirty or matted fur, droppings stuck under the tail, red skin, bald patchesDroppingsdiarrhoea, soft foul-smelling droppingsWeight and bodyweight loss or rapid weight gain, lumps under the skinBehaviourhiding more than usual, sitting alone in a corner, moving little, losing interest in food, drinking much more
+
+Sources differ slightly on sneezing: the New South Wales schools guide treats any sneezing as a warning sign, while RSPCA Australia suggests seeing a vet if a mouse sneezes more than a few times over an hour or two. Soft droppings vary too. Mice normally eat a special soft dropping, which is healthy, but soft, foul-smelling droppings left in the cage are a concern.
+
+
+### Why weight matters
+
+The RSPCA notes that losing 20% or more of body weight can be fatal for a mouse. For a 30 g mouse that is just 6 g, so the change is easy to miss by eye. Keeping a weight record helps you see a trend and show it to the vet.
+
+
+### Common problems
+- Respiratory infections. According to RSPCA Australia, they are often caused by Sendai virus and Mycoplasma. Signs: sneezing, chattering, laboured breathing, head tilt, less grooming and weight loss. Treatment eases the symptoms, but the infection and the changes in the lungs remain. Treatment is prescribed by a vet.
+- Teeth. Incisors grow throughout life. If they overgrow, the mouse eats less, drools, loses weight and may get a swollen face. A vet trims the teeth, and hard things to gnaw lower the risk.
+- Skin and mites. Fur mites are a common cause of skin trouble: thinner, greasy fur on the head and body, and itching. Fur loss without sores can also come from a dominant mouse chewing others’ fur.
+- Tumours. The most common cancer in mice is mammary tumours. RSPCA Australia says they can double in size in two weeks or less and are almost always malignant. Show any new lump to a vet straight away.
+
+
+### New mice and vet visits
+
+The New South Wales schools guide advises keeping new mice apart for four weeks and watching them closely, because they can carry disease without any signs. When you take a mouse to the vet, RSPCA Australia suggests bringing a cage-mate along so they still smell the same afterwards and don’t fall out. Choose a vet who treats mice.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice/health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-does-an-unhealthy-mouse-look-like
+- https://kb.rspca.org.au/knowledge-base/what-are-common-health-problems-in-mice/
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/mice/mice-health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health
+
+## Rabbit not eating: why it’s dangerous and what to do
+
+URL: https://roddihealth.app/en/blog/rabbits/rabbit-not-eating
+Updated: 2026-11-16
+
+Summary: A rabbit needs to eat and pass droppings all the time. PetMD considers more than 8 hours without food or droppings abnormal, and gut stasis an emergency. The Rabbit Welfare Association advises seeing a vet straight away in that case, without waiting until tomorrow.
+
+
+### Why it is so dangerous
+
+A rabbit’s digestion depends on food moving through the gut all the time. When it slows down, the balance of gut bacteria is upset and gas and toxins build up. The RSPCA warns that stasis can quickly become life-threatening. PetMD adds that after more than a day without food a rabbit also risks liver damage. A healthy rabbit, according to the Rabbit Welfare Association, produces up to 300 droppings a day, so fewer droppings are a clear warning sign.
+
+
+### Possible causes
+
+According to Walkerville Vet, the most common cause is gut stasis, but appetite can also go because of:
+- dental problems
+- kidney disease
+- abscesses and pneumonia
+- liver lobe torsion
+- intestinal blockage
+
+Stasis itself, according to PetMD, can be triggered by anything that causes pain, reduces appetite or dehydrates the rabbit, as well as stress and a low-fibre diet. Walkerville stresses that only a vet can find the cause, and that telling stasis from a blockage is especially tricky.
+
+
+### How long can you wait
+
+Sources differ slightly: PetMD considers more than 8 hours without eating or passing droppings abnormal, while Walkerville Vet advises seeing a vet if appetite hasn’t improved within 12 hours or the rabbit is quiet. The RSPCA and the Rabbit Welfare Association advise going straight away. The safest choice is the shortest time.
+
+
+### What to tell the vet
+- When the rabbit last ate and last passed droppings.
+- What you feed and whether the diet changed.
+- Any medicines given recently.
+- How its behaviour has changed.
+- Whether a female rabbit is spayed.
+
+
+### What not to do at home
+- Don’t massage the belly: Walkerville advises ruling out a blockage first.
+- Don’t rely on pineapple, papaya or hairball lubricants. Walkerville says they are usually unnecessary and may even be harmful, and the Rabbit Welfare Association says pineapple won’t help and its sugar may make things worse.
+- Don’t give medicines without a vet’s approval.
+
+
+### How to lower the risk
+
+The RSPCA and the Rabbit Welfare Association recommend a diet of about 85% hay and grass, 10% leafy greens and 5% pellets. Hay must always be available: PetMD warns that rabbits fed only pellets are at higher risk of stasis. Walkerville advises avoiding processed food, fruit, grains, sugar and lucerne hay. The RSPCA also suggests keeping a note of changes in appetite, droppings, behaviour and weight.
+
+Sources:
+- https://www.petmd.com/rabbit/conditions/digestive/gastrointestinal-gi-stasis-rabbits
+- https://www.walkervillevet.com.au/blog/rabbit-not-eating/
+- https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/diet
+- https://rabbitwelfare.co.uk/welfare-need/gut-slowdown/
+
+## How to make a rat’s life more interesting: company, play and foraging
+
+URL: https://roddihealth.app/en/blog/rats/enrich-your-rats-life
+Updated: 2026-11-16
+
+Summary: Rats are clever, curious and social, so they need at least one companion and new experiences every day. A tall cage with several levels, hides, ropes, digging boxes and food they have to search for help prevent boredom, and time outside the cage should always be supervised.
+
+
+### Why rats get bored
+
+The RSPCA describes rats as highly intelligent, curious animals with good memories. They learn quickly and need chances to climb, run, forage, explore, play and dig. Without these, a rat gets bored. The RSPCA says chewing the cage bars may signal boredom or a wish to escape, and bald patches from rats chewing each other’s fur may mean they don’t get on or are bored.
+
+
+### Company
+
+A rat is never kept alone: according to the RSPCA, even plenty of human attention doesn’t replace other rats, and loneliness can lead to depression and abnormal behaviour. Keep pairs or small same-sex groups, ideally siblings. In a mixed group, all males must be neutered. Don’t add or remove rats from a stable group. Keep dogs and cats away: to rats they are predators.
+
+
+### A cage with plenty to do
+- The cage should be large enough for the rat to run, stand on its hind legs, climb and explore. PetMD gives a minimum of about 61 × 61 × 61 cm for one rat and advises the largest home possible. RSPCA Australia notes there is no evidence-based size standard.
+- Several levels with ladders and ramps. The RSPCA says levels also reduce squabbles between cage-mates.
+- Bar spacing narrow enough that a rat can’t push its head through: about 1.3 cm according to PetMD, up to 2.5 cm for adults according to RSPCA Australia.
+- A solid floor: wire mesh hurts feet.
+- One more hide than there are rats, with several exits so they can all sleep together.
+- Tunnels, natural-fibre ropes, hammocks, ladders. Remove a fabric hammock once it is chewed so the rat doesn’t swallow the fabric.
+- Change things around: the RSPCA advises rotating toys regularly.
+
+
+### Food they have to find
+
+The RSPCA suggests turning feeding into foraging: mix food into the bedding, scatter and hide it, put it in cardboard tubes or egg boxes. Whole foods that take some work, such as a cooled boiled egg in its shell, are good too. This food should come out of the daily ration, not be added to it. Several feeding spots reduce competition.
+
+
+### Digging and gnawing
+
+For digging, the RSPCA suggests a box of clean sand or compost and a thick layer of bedding in the cage; RSPCA Australia gives 3–4 cm. Rats’ incisors grow throughout life, so they need things to gnaw: wooden chews made for rodents, apple branches, untreated wood.
+
+
+### Time outside the cage
+
+PetMD says rats need time outside the cage every day. The RSPCA advises letting out only tame, relaxed rats, and only under supervision, in a room they can’t escape from and where they can’t get hurt. Remove cables, toxic plants and anything they could chew. An alternative is a large pen with objects, a digging area and a foraging tray. Sources don’t give a length of time.
+
+
+### How to train
+
+Rats are very trainable: the RSPCA mentions teaching them to respond to their name or give a high five. Use rewards only and never punish. A useful skill is climbing onto the scales for a treat, which makes weight checks easier. According to the RSPCA, rats are best handled in the morning or evening: let the rat sniff your hand, slide one palm under its body and rest the other lightly over its back. Never lift a rat by the tail or the scruff.
+
+
+### What to avoid
+- Exercise balls: the RSPCA says they restrict exploration and are stressful.
+- Scented or coloured bedding, cotton wool and fluffy fibres.
+- Strong smells (air fresheners, smoke) and sudden noise, including ultrasound from appliances.
+- Glass and solid plastic cages: air doesn’t circulate well.
+- Trimming whiskers.
+
+
+### When boredom may be illness
+
+The RSPCA advises showing a vet any repetitive behaviour, such as constant bar chewing. Signs of stress also include excessive grooming of the head and paws, aggression, red staining around the eyes and nose, hiding and avoiding contact. Rats hide pain, so any change in behaviour is a reason to look more closely.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/behaviour
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/where-should-i-keep-my-rats
+- https://www.petmd.com/exotic/rat-care-sheet
+
+## How long pet rodents live: rats, hamsters, guinea pigs, degus
+
+URL: https://roddihealth.app/en/blog/rats/how-long-pet-rodents-live
+Updated: 2026-11-16
+
+Summary: Mice and hamsters live the shortest, about 1–3 years, rats 2–3 years, guinea pigs 4–8, degus 5–9 years, and chinchillas, according to the RSPCA, 10–20 years. Sources give different figures, so treat these as guides, not exact limits.
+
+
+### Comparison table
+
+AnimalPetMDRSPCAPDSAMouse18–24 monthsabout 3 years1–3 yearsRatup to 3 years2–3 years2–3 yearsHamster2–3 years (Syrian and dwarf)up to 2 years, some longer2–3 yearsGuinea pigup to 8 years5–6 years4–8 yearsDegu5–9 years6–7 years6–8 years, sometimes 9Chinchillanot compared10–20 yearsnot compared
+
+These are approximate averages with proper care. Sources differ noticeably, especially for mice and guinea pigs, and individual animals live shorter or longer.
+
+
+### What matters most
+- A diet that suits the species, without too much sugar and fat.
+- A clean home without strong smells or draughts.
+- Companions for social species, exercise and calm handling.
+- Regular check-ups: PetMD advises a vet visit for hamsters once a year, and the RSPCA at least once a year for guinea pigs.
+- Seeing a vet at the first changes: the RSPCA warns that mice and hamsters lose condition quickly when ill.
+
+
+### Why keeping records matters
+
+These animals often hide illness, so changes in weight or appetite may be the only early sign. Regular notes help you spot a trend and show it to the vet.
+
+Sources:
+- https://www.petmd.com/exotic/mouse-care-sheet
+- https://www.petmd.com/exotic/rat-care-sheet
+- https://www.petmd.com/exotic/syrian-hamster-care-sheet
+- https://www.petmd.com/exotic/dwarf-hamster-care-sheet
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+- https://www.petmd.com/exotic/care/caring-for-a-degu
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/rats-as-pets
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pigs-as-pets
+- https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus
+
+## What to feed a rat: what’s allowed and what isn’t
+
+URL: https://roddihealth.app/en/blog/rats/what-to-feed-a-rat
+Updated: 2026-11-16
+
+Summary: The basis of a pet rat’s diet is a pelleted food made specifically for rats. Vegetables, a little fruit, boiled egg, grains and seeds are given within the daily ration, not on top of it. Grapes, raisins, onion and chocolate are not suitable.
+
+
+### What the diet is based on
+
+Choose pellets made specifically for rats. The RSPCA warns that rabbit, guinea pig or hamster food won’t give rats the nutrients they need. Rats are omnivores, so the diet can be topped up with small amounts of vegetables, fruit, boiled egg, grains and seeds.
+
+These extras come out of the daily portion rather than being added to it. PetMD advises that all extras and treats together make up no more than 10% of the diet: rats gain weight easily. Take the amount of the main food from the instructions on the pack and weigh your rat to keep an eye on its weight.
+
+
+### Can rats eat it: a quick table
+
+FoodAnswerNoteGrapes, raisinsNoRSPCA, RSPCA AustraliaOnion, garlicNoAll sources name onion; garlic is named by PetMD and RSPCA AustraliaRhubarbNoCitrusBetter notThe RSPCA and PetMD advise avoiding it, while the New South Wales schools guide allows itWalnutsNoOn the RSPCA’s list of harmful foodsChocolate, coffee, tea, alcoholNoPetMD warns that caffeine and alcohol can cause serious illness or deathAvocado, sticky foodNoRSPCA Australia; rats can choke on sticky foodRaw beans, potatoesNoPetMDUnripe tomatoesNoPetMD; ripe ones are not mentioned separatelyFruit pits and seedsNoPetMDDairyBetter avoidFatty; only now and then as a treatGrains, breadA littleSmall amounts of grain; bread is not mentioned separately. RSPCA Australia advises against seed and grain mixes as a foodMost vegetablesYesIn small pieces, within the ration. RSPCA Australia recommends dark greens and non-starchy vegetables
+
+
+### How to feed
+- Twice a day, morning and evening. The RSPCA explains that rats eat mostly at dawn and dusk.
+- Scatter some food, mix it into the bedding or hide it in cardboard tubes so the rats forage for it.
+- The RSPCA recommends ceramic bowls: metal ones give off ultrasound that bothers rats.
+- Remove what hasn’t been eaten. PetMD advises throwing away leftover vegetables and fruit after 10 hours at most.
+- Sweet and fatty foods only as an occasional reward during training. PetMD advises avoiding such treats altogether.
+
+
+### Water
+
+Fresh, clean water must always be available. The RSPCA recommends drinking bottles rather than bowls, several of them, checked twice a day. RSPCA Australia and PetMD advise changing the water daily.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/diet
+- https://www.petmd.com/exotic/rat-care-sheet
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-should-i-feed-my-rats
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/rats-as-pets
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/rats/rats-food-and-water
+
+## Why is my rat sneezing, and when to see a vet
+
+URL: https://roddihealth.app/en/blog/rats/why-is-my-rat-sneezing
+Updated: 2026-11-16
+
+Summary: Even an occasional sneeze or reddish crusts around the eyes and nose can be the first signs of a respiratory infection. According to RSPCA Australia, it is the most common health problem in rats, and untreated it can turn into pneumonia. So show a sneezing rat to a vet rather than waiting.
+
+
+### Early signs
+
+At first the symptoms are easy to miss: the rat sneezes now and then, and small reddish crusts appear around the eyes or nose. This is dried red pigment from tears, called porphyrin. Within a few days you may also see:
+- frequent sneezing and squinting
+- rusty tears or nasal discharge
+- poorer appetite and lethargy
+- a ruffled coat
+- behaviour changes: the rat avoids contact, is irritable or bites
+
+Red staining around the eyes and nose can also come from stress. The RSPCA says a small amount that doesn’t recur is not a worry, while a lot of it can point to a serious problem.
+
+
+### Why it happens
+
+According to PetMD, most rats naturally carry the bacterium Mycoplasma pulmonis, one of the most common causes of these infections. It passes from rat to rat, and a rat can carry it without any signs. Viruses can also cause disease, and other bacteria join in when immunity is weakened. The New South Wales government schools guide warns that the infection is highly contagious.
+
+The risk rises with age, other illnesses, obesity, stress and overcrowding, ammonia in a dirty cage, and smoke, vaping, scented soap, household chemicals and candles. Pine and cedar bedding irritate the airways, and PDSA warns against any dusty bedding. PetMD considers paper bedding the safer option.
+
+
+### Why not to wait
+
+PetMD advises that any rat with signs of a respiratory infection should see a vet straight away, and PDSA warns that these infections can get worse very quickly. RSPCA Australia says that once signs are visible, the changes in the lungs are permanent and treatment may be needed for life. PetMD knows of no home remedies that cure the infection, so only give medicines a vet has prescribed.
+
+
+### While you wait for the appointment
+- Clean the cage and remove strong smells nearby.
+- Note down when the symptoms started and what has changed.
+- You can take a short video of the breathing to show the vet.
+- Don’t give medicines or antibiotics without a prescription.
+
+
+### How to lower the risk
+- Keep new rats apart and watch them: PetMD advises at least 2 weeks, the New South Wales schools guide 4 weeks.
+- Clean the cage regularly so ammonia doesn’t build up.
+- Keep the cage somewhere quiet and clean, well ventilated but free of draughts.
+
+Sources:
+- https://www.petmd.com/exotic/conditions/respiratory/upper-respiratory-infection-rats
+- https://www.petmd.com/exotic/rat-care-sheet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/environment
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-are-common-health-problems-in-rats
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/rats-as-pets
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/rats/rats-health
+
+
+# Статті українською
+
+## Чим годувати дегу: сіно, гранули й обережно з цукром
+
+URL: https://roddihealth.app/blog/degu/chym-goduvaty-degu
+Updated: 2026-11-16
+
+Summary: Основа раціону дегу — якісне сіно без обмежень. Гранули дають у малій кількості й без меляси, бо дегу схильні до діабету. Фрукти й крохмалисті овочі найкраще обмежити або виключити.
+
+
+### Основа раціону
+
+Більшу частину раціону становить сіно, яке має бути доступне постійно, наприклад тимофіївка чи лугове. Сіно зношує зуби, що ростуть безперервно, і підтримує кишечник. Exotic Direct радить не давати буре й зелене сіно, бо зелене може спричинити здуття, а рожевий чи білий наліт означає пліснява.
+
+Гранули для дегу дають обмежено: PDSA називає одну-дві столові ложки, тобто близько 10 г на день, PetMD — одну-дві столові ложки залежно від розміру й активності. Якщо гранул для дегу немає, підійдуть гранули для морських свинок чи шиншил без меляси. Корм для кроликів, хомʼяків і піщанок, а також суміші із сухофруктами RSPCA вважає непридатними.
+
+
+### Овочі й фрукти
+
+PDSA радить невелику порцію листової зелені й овочів один-два рази на тиждень, не частіше. Фрукти через цукор RSPCA і PetMD радять не давати, а PDSA допускає зрідка шматочок яблука. Нові продукти вводьте поступово.
+
+ПродуктЩо кажуть джерелаКапуста, броколі, свіжі травиExotic Direct: один-два рази на тиждень; капуста й броколі можуть спричинити здуттяЯблуко, огірокExotic Direct: раз на місяць. PDSA: зрідка шматочок яблука. PetMD і RSPCA радять фруктів не даватиМорква, батат, буряк, пастернакRSPCA: лише крихітними шматочками зрідка. Exotic Direct: моркву раз на місяцьГорох, кукурудзаExotic Direct: раз на місяць. PetMD: уникати як крохмалистеКартопляPetMD: уникатиСолодкі ласощі для гризунів, корм із мелясою, рештки людської їжіPDSA: не давати
+
+Джерела розходяться, тому за наявності сумнівів дотримуйтесь суворішого варіанту й порадьтеся з ветеринаром.
+
+
+### Діабет
+
+Дегу схильні до діабету 2 типу, особливо на раціоні з великою кількістю цукру й вуглеводів. PDSA й Exotic Direct називають такі ознаки: дегу більше пʼє й частіше мочиться, очі мутніють (катаракта), за PDSA ще й зайва вага. Із такими ознаками зверніться до ветеринара.
+
+
+### Вода й вітамін C
+
+Воду міняйте щодня, як радять PDSA й Exotic Direct. Exotic Direct не радить додавати вітамін C у воду, бо неможливо проконтролювати, скільки дегу випʼє, і вітамін швидко руйнується. За потреби він може надходити з їжі, наприклад із броколі чи червоного перцю.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/diet
+- https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus
+- https://www.petmd.com/exotic/care/caring-for-a-degu
+- https://exoticdirect.co.uk/news/degu-food-advice-what-your-degu-should-be-eating-not-eating-diabetes-and-other-advice/
+
+## Дегу вдома: житло, компанія, раціон і здоровʼя
+
+URL: https://roddihealth.app/blog/degu/degu-vdoma
+Updated: 2026-11-16
+
+Summary: Дегу активні вдень і живуть групами, тож поодинці їх не тримають. Їм потрібна висока металева клітка з кількома рівнями й колесом, глибока підстилка для риття й пилові ванни кілька разів на тиждень. Основа раціону — сіно, а гранули дають потроху й без цукру, бо дегу схильні до діабету.
+
+
+### Спосіб життя й компанія
+
+Дегу активні вдень і дуже балакучі. Це соціальні тварини: RSPCA попереджає, що поодинці вони можуть впадати в депресію, і радить тримати дегу самого лише за порадою ветеринара. Тримають одностатеві групи або кастрованого самця із самками, причому в змішаній групі має бути не більше одного самця. PetMD не радить селити дегу з іншими гризунами чи кроликами. Тривалість життя джерела оцінюють по-різному: PDSA — 6–8 років, іноді 9, RSPCA — 6–7 років, PetMD — 5–9 років.
+
+
+### Клітка
+- Клітка має бути металевою: пластик і дерево дегу прогризають. PetMD радить уникати пластикових кліток і аксесуарів.
+- Розмір: PDSA радить якомога більшу клітку, а PetMD для двох дегу називає мінімум приблизно 71 × 46 × 71 см і відстань між прутами не більше 1,3 см.
+- Висока клітка з кількома рівнями, полиці й підлога суцільні. Суцільний дах допомагає дегу почуватися в безпеці.
+- Гілки груші, яблуні чи бука для лазіння й гризіння.
+- Будиночок із сіном для сну.
+- Скляні акваріуми не підходять: RSPCA повʼязує їх із проблемами дихання.
+- Ставте клітку в приміщенні, без протягів і прямого сонця, подалі від телевізора й музики: вібрація їх лякає.
+
+
+### Тепло
+
+RSPCA радить, щоб у приміщенні з кліткою було не вище 20 °C, і просить ставити її подалі від батарей. Якщо дегу лежить плазом на животі, вона може перегріватися: одразу звертайтеся до ветеринара.
+
+
+### Рух і риття
+
+Потрібне суцільне колесо, достатньо велике, щоб дегу бігала з рівною спиною. PetMD називає діаметр 25–30 см. PDSA радить щодня випускати дегу щонайменше на пів години в безпечну кімнату чи вольєр, де закриті дроти й дерево. Для риття потрібен глибокий шар сіна й рваного паперу. Щодо деревної стружки джерела розходяться: RSPCA допускає нетоксичну стружку, PetMD не радить її через ризик для дихання.
+
+
+### Пилові ванни
+
+ДжерелоЯк частоЯкPDSAкілька разів на тижденьпісок для шиншил чи хомʼяків, не лишати постійно, бо сушить шкіруRSPCA2–3 рази на тиждень, приблизно по 20 хвважка миска з шаром піску близько 4 см, після купання прибратиPetMDприблизно двічі на тижденьпил для шиншил, поза кліткою
+
+
+### Раціон
+- Основа — сіно без обмежень.
+- Гранули для дегу: PDSA і PetMD радять одну-дві столові ложки на день. Якщо їх немає, підходять гранули для морських свинок чи шиншил без меляси.
+- Корм для кроликів, хомʼяків і піщанок, а також суміші із сухофруктами RSPCA вважає непридатними.
+- Листова зелень і овочі — невеликими порціями. PDSA радить один-два рази на тиждень, PetMD — кілька разів на тиждень.
+- Фрукти, мед, мелясу й насіння PetMD радить не давати зовсім. PDSA допускає зрідка шматочок яблука. Моркву, батат і буряк RSPCA дозволяє лише крихітними шматочками зрідка.
+- Будьте обережні з магазинними ласощами: часто вони надто солодкі.
+- Дегу зʼїдають частину свого посліду: це норма.
+- Новий корм вводьте поступово.
+
+
+### Діабет
+
+За RSPCA і PDSA, дегу схильні до діабету 2 типу, особливо якщо в раціоні багато вуглеводів і цукру. PDSA називає такі ознаки: помутніння очей (катаракта), дегу багато пʼє й часто мочиться, набирає зайву вагу. Якщо помітили щось із цього, зверніться до ветеринара. Детальніше про раціон читайте в статті «Чим годувати дегу».
+
+
+### Зуби
+
+Зуби дегу ростуть безперервно й стираються під час жування сіна. RSPCA пише, що здорові зуби жовто-помаранчеві, а білі можуть бути ознакою хвороби, і радить оглядати їх щотижня. За PDSA, про проблеми із зубами можуть свідчити слинотеча, набряк морди, виділення з очей і зміна кольору зубів. Виправляти зуби, що переросли, може лише ветеринар.
+
+
+### Хвіст і як брати на руки
+
+Дегу ніколи не беруть і не тягнуть за хвіст. Шкіра з кінчика хвоста може злізти, і тоді потрібен ветеринар, бо є ризик інфекції. RSPCA радить дати дегу самій залізти на долоню й підняти її в складених долонях, низько над підлогою. Руки, що нависають згори, тварину лякають.
+
+
+### Огляди
+
+RSPCA радить оглядати дегу щодня. У здорової дегу ясні очі, чисті вуха, блискуча шерсть, чистий хвіст і задня частина тіла. Насторожують виділення з носа, волога біля рота, помутніння очей і білі зуби. Щонайменше раз на рік показуйте дегу ветеринару. PetMD радить терміново звертатися до лікаря, якщо дегу гірше їсть, худне, важко дихає, має діарею, погано жує чи стала млявою.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus/behaviour
+- https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus
+- https://www.petmd.com/exotic/care/caring-for-a-degu
+
+## Чим годувати хомʼяка: що можна, а що не можна
+
+URL: https://roddihealth.app/blog/khomiaky/chym-goduvaty-khomiaka
+Updated: 2026-11-16
+
+Summary: Більшу частину раціону хомʼяка має становити гранульований корм для хомʼяків. Свіже дають помірно, бо його надлишок може спричинити діарею, а для хомʼяка вона небезпечна: він швидко втрачає рідину.
+
+
+### Що має бути основою
+
+Основа — гранульований корм для хомʼяків. PDSA пояснює, що всі гранули однакові, тож хомʼяк не може вибрати лише смачне, а суміші на кшталт мюслі радить не давати як єдиний корм. PetMD рекомендує корм із вмістом білка 15–25% і приблизно столову ложку їжі на день, залежно від виду.
+
+Свіжі овочі обирайте з високим вмістом клітковини й давайте потроху: PDSA називає одну-дві чайні ложки свіжого на день. Хомʼяки активні вночі, тож свіже зручно давати ввечері. Фрукти містять багато цукру. Для сирійських PetMD радить давати яблуко чи ягоди лише зрідка й крихітними порціями, для карликових — чайну ложку фруктів один-три рази на тиждень. PDSA попереджає, що російські карликові хомʼяки схильні до діабету, тож солодкого їм варто давати особливо мало.
+
+
+### Чи можна хомʼяку: коротка таблиця
+
+ПродуктВідповідьПриміткаВиноград, ревіньНіRSPCA: можуть бути отруйними для гризунівЧасникНіPetMDЦибуляКраще не даватиPetMD радить уникати, а PDSA має її в списку дозволених. Безпечніше не даватиШоколад, кава, алкогольНіPetMD: токсичніЦитрусовіНіPetMD радить уникати; PDSA вважає, що поки краще не даватиМигдальНіУ переліку PetMD; PDSA допускає інші горіхи як рідкісні ласощіСирі боби, сира картопляНіPetMDПомідориОбережноPetMD радить уникати незрілих, PDSA допускає помідорКісточки й насіння фруктівНіЗокрема насіння яблукСолодке, солоне, червоне мʼясоНіPetMDЯблуко без насіння, банан, персикПомірноМаленький шматочок; PDSA має їх у списку дозволенихКабачок, болгарський перець, моркваПомірноКабачок і перець у списку PDSA, моркву згадує PetMD
+
+
+### Чого остерігатися
+- Різкої зміни корму чи марки: RSPCA, PDSA і PetMD попереджають, що це може засмутити кишечник і спричинити діарею.
+- Надлишку овочів, фруктів чи солодких ласощів.
+- Зіпсованих залишків. Хомʼяки ховають їжу про запас, тож свіже швидко псується в схованках. PetMD радить прибирати залишки й заховане свіже щодня, а для сирійських — через кілька годин.
+
+
+### Вода
+
+Свіжа чиста вода має бути завжди. RSPCA радить поїлку-трубочку без кульки, бо з кулькового клапана хомʼяку важко пити. PetMD радить міняти воду щодня й перевіряти, чи поїлка не протікає й не погризена.
+
+Sources:
+- https://www.petmd.com/exotic/hamster-care-sheet
+- https://www.petmd.com/exotic/syrian-hamster-care-sheet
+- https://www.petmd.com/exotic/dwarf-hamster-care-sheet
+- https://www.petmd.com/exotic/condition/wet-tail-in-hamsters
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+
+## Хомʼяк для новачка: відповіді на часті запитання
+
+URL: https://roddihealth.app/blog/khomiaky/khomiak-dlia-novachka
+Updated: 2026-11-16
+
+Summary: Сирійських хомʼяків тримають лише поодинці, а карликових іноді парами, якщо вони виросли разом. Хомʼякам потрібна простора клітка з глибокою підстилкою для риття, суцільне колесо, у якому спина лишається рівною, гранульований корм і спокій удень, бо вони активні вночі.
+
+
+### Сирійський чи карликовий?
+
+RSPCA перелічує пʼять видів, яких найчастіше тримають удома: сирійський, китайський, кембелла, джунгарський і хомʼяк Роборовського. Сирійські більші, за PetMD — 13–18 см завдовжки, а карликові — 5–10 см. Від виду залежать розмір колеса й житла та можливість жити разом.
+
+
+### Чи можна тримати двох хомʼяків разом?
+
+Сирійських і китайських хомʼяків тримають лише поодинці: за природою вони не соціальні, і сирійців ніколи не селять разом. Щодо карликових джерела розходяться. RSPCA і PetMD допускають пари чи трійки, якщо хомʼяки виросли разом, найкраще з одного виводку, але попереджають, що вони можуть посваритися пізніше, тож будьте готові їх розселити. PDSA радить не тримати разом російських карликових хомʼяків, тобто кембелла й джунгарських. Нових хомʼяків до групи не підселяють.
+
+
+### Яка клітка потрібна
+
+Розміри в джерелах різні:
+
+ДжерелоМінімумPDSA100 × 50 см (за даними німецької асоціації ветеринарів із захисту тварин)PetMD, сирійськийприблизно 102 × 51 × 41 смPetMD, карликовийприблизно 61 × 30 × 30 см на одного хомʼяка
+
+Усі сходяться, що більше краще. PDSA радить одноповерхову клітку, а не високу багаторівневу. Підлога має бути суцільною, без сітки. RSPCA не радить деревʼяних кліток. Відстань між прутами PetMD називає близько 1,3 см для сирійських і близько 0,6 см для карликових.
+
+
+### Підстилка й гніздо
+
+Хомʼяки риють, тому підстилка має бути глибокою. PDSA радить щонайменше 25 см, PetMD — 15–25 см для сирійських, а для карликових 5 см по всій клітці й близько 20 см в одному куті. Найбезпечніше обрати паперову підстилку без запаху. Вату й пухнасті волокна RSPCA, PDSA і PetMD не радять: нитки обмотують лапки. Для гнізда підійдуть сіно, рваний папір і туалетний папір без запаху. Щодо деревної стружки й газет джерела розходяться: PDSA вважає стружку надто пиловою, а друкарську фарбу на газетах — токсичною.
+
+
+### Колесо
+
+Колесо має бути суцільним, без щілин і перекладин, і настільки великим, щоб спина хомʼяка лишалася рівною: у малому колесі вона вигинається, і з часом це може спричинити біль. Рекомендовані розміри різняться:
+
+ДжерелоСирійськийКарликовийPDSAщонайменше 30 смщонайменше 20 смPetMD, памʼятка про сирійських28–30 смне вказаноPetMD, загальна памʼяткащонайменше 20 смщонайменше 15 см
+
+RSPCA нагадує, що колесо не має бути єдиною розвагою.
+
+
+### Удень хомʼяк спить
+
+Хомʼяки активні вночі. Їх не будять, не беруть на руки під час сну й не прибирають клітку вдень. Розбуджений хомʼяк може налякатися й вкусити. Ставте клітку в тихому місці, подалі від телевізора, пральної машини й прямого сонця, і вимикайте світло щовечора приблизно в той самий час.
+
+
+### Температура
+
+Тримайте хомʼяка вдома, без протягів і вогкості. PDSA радить стабільні 18–21 °C, PetMD для сирійських — 20–24 °C. У спеку є ризик теплового удару, а в холоді хомʼяк може впасти в заціпеніння. Якщо хомʼяк холодний, млявий і майже не реагує, PetMD радить негайно звернутися до ветеринара.
+
+
+### Чим годувати
+- Основа — гранульований корм для хомʼяків: кожна гранула однакова, і хомʼяк не може вибрати лише смачне. Суміші на кшталт мюслі PDSA радить давати лише зрідка як доповнення.
+- Свіжі овочі й зелень — потроху, одну-дві чайні ложки на день за PDSA. Надлишок свіжого може спричинити діарею.
+- Фрукти — зрідка й крихітними порціями. PDSA попереджає, що російські карликові хомʼяки схильні до діабету, тож їм солодке особливо шкідливе.
+- Не давайте виноград, ревінь, шоколад, каву, алкоголь, кісточки й насіння фруктів, сиру картоплю, часник, солодке й солоне.
+- Хомʼяки роблять запаси, тому свіжу їжу, що лишилася, прибирайте того ж дня, а сухі запаси під час прибирання не викидайте.
+- Вода має бути завжди. Щодня перевіряйте поїлку: чи не протікає й чи не забилася.
+
+Щодо цибулі й помідорів джерела суперечать одне одному: PDSA має їх у списку дозволених продуктів, а PetMD радить уникати цибулі й незрілих помідорів. Безпечніше їх не давати.
+
+
+### Як брати на руки
+
+За RSPCA, спершу дайте хомʼяку обнюхати руку, потім підставте дві складені долоні, щоб він сам на них сів. Тримайте його лише на кілька сантиметрів вище стійкої поверхні: падіння з висоти небезпечні. Не хапайте хомʼяка й не стискайте. Брати на руки варто лише тоді, коли він не спить. Дітям тримати хомʼяка без дорослих не радять.
+
+
+### Прибирання
+
+Щодня або раз на кілька днів прибирайте брудну підстилку, послід і залишки свіжої їжі. Щодо повного прибирання джерела розходяться: PetMD радить щотижня, PDSA — щотижня в малих клітках і раз на кілька тижнів у великих, RSPCA — один-два рази на місяць. Повертайте трохи старої сухої підстилки, щоб гніздо пахло знайомо.
+
+
+### Коли терміново до ветеринара
+
+Хомʼяки швидко втрачають сили й приховують біль. Звертайтеся до ветеринара одразу, якщо хомʼяк гірше їсть, має діарею, мокру чи забруднену шерсть під хвостом (це може бути «мокрий хвіст»), схуд, важко дихає, чхає, має виділення з носа чи очей, слинить, зуби переросли, щічні мішки лишаються роздутими кілька годин або випнулося око. Про мокрий хвіст є окрема стаття.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/behaviour
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+- https://www.petmd.com/exotic/hamster-care-sheet
+- https://www.petmd.com/exotic/syrian-hamster-care-sheet
+- https://www.petmd.com/exotic/dwarf-hamster-care-sheet
+
+## Мокрий хвіст у хомʼяка: симптоми й що робити
+
+URL: https://roddihealth.app/blog/khomiaky/mokryi-khvist-u-khomiaka
+Updated: 2026-11-16
+
+Summary: «Мокрий хвіст» — це діарея, через яку намокає шерсть під хвостом. Хомʼяк швидко втрачає рідину, тому стан часто є невідкладним: PetMD радить, щоб ветеринар, який лікує екзотичних тварин, оглянув хомʼяка в ідеалі протягом 24 годин.
+
+
+### Що це таке
+
+Так зазвичай називають діарею в молодих хомʼяків, хоча вона трапляється в будь-якому віці. Через втрату рідини хомʼяк зневоднюється, слабшає, гірше їсть, шерсть стає неохайною. PetMD попереджає, що без своєчасного лікування хомʼяк може загинути, а PDSA — що іноді смерть настає раптово.
+
+
+### Чому це трапляється
+
+За PetMD, причини бувають інфекційні: бактерії, особливо в хомʼяків віком 3–10 тижнів, найпростіші й кишкові паразити. Бувають і неінфекційні:
+- раптова зміна корму чи його марки
+- забагато гранул, овочів, фруктів чи солодких ласощів
+- стрес: перевезення, спека чи висока вологість, тіснота
+- брудна клітка й зіпсована їжа в схованках
+- деякі антибіотики (PetMD називає пеніцилін), які знищують корисні бактерії кишечника
+
+
+### Що зробити зараз
+- Телефонуйте ветеринару, який працює з екзотичними тваринами, якнайшвидше.
+- Не давайте ліків, особливо антибіотиків, без призначення: RSPCA попереджає, що деякі антибіотики можуть спричинити серйозні розлади травлення в хомʼяків.
+- Візьміть свіжий зразок посліду й запишіть, чим годуєте, яка температура й вологість у кімнаті, чи зʼявлялися нові хомʼяки.
+- Менше тримайте хомʼяка на руках і не турбуйте зайвий раз.
+- Деякі бактерії, що спричиняють мокрий хвіст, можуть заразити людину. Мийте руки після контакту й запитайте лікаря, як поводитися з хомʼяком під час лікування.
+
+Лікар може призначити рідину, ліки й підтримувальне лікування. За PetMD, покращення часто видно за два-три дні, а одужання триває від одного до двох тижнів чи довше. Під час одужання не змінюйте раціон без поради лікаря.
+
+
+### Як знизити ризик
+- Спокійне житло без перепадів температури.
+- Щоденне прибирання залишків їжі й брудної підстилки.
+- Збалансований корм без різких змін; зберігайте його в герметичній ємності.
+- Не перегодовуйте овочами й фруктами.
+- Нових хомʼяків тримайте окремо щонайменше 30 днів, як радить PetMD.
+
+Sources:
+- https://www.petmd.com/exotic/condition/wet-tail-in-hamsters
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet
+- https://www.petmd.com/exotic/hamster-care-sheet
+
+## Кролик не їсть: чому це небезпечно й що робити
+
+URL: https://roddihealth.app/blog/kroliky/krolyk-ne-yist
+Updated: 2026-11-16
+
+Summary: Кролик має їсти й випорожнюватися постійно. PetMD вважає ненормальним понад 8 годин без їжі чи посліду, а стаз ШКТ — невідкладним станом. Rabbit Welfare Association радить у такому разі йти до ветеринара негайно, не чекаючи до завтра.
+
+
+### Чому це так небезпечно
+
+Травлення кролика залежить від постійного руху їжі кишечником. Коли він сповільнюється, баланс бактерій порушується, накопичуються гази й токсини. RSPCA попереджає, що стаз може швидко стати загрозою для життя. PetMD додає, що понад добу без їжі кролик ризикує ще й ураженням печінки. Здоровий кролик, за Rabbit Welfare Association, залишає до 300 горошин посліду на день, тож зменшення посліду — помітний сигнал.
+
+
+### Що може бути причиною
+
+За клінікою Walkerville, найчастіша причина — стаз шлунково-кишкового тракту, але апетит також зникає через:
+- проблеми із зубами
+- хвороби нирок
+- абсцеси й пневмонію
+- перекрут частки печінки
+- непрохідність кишечника
+
+Сам стаз, за PetMD, може запустити все, що спричиняє біль, зменшує апетит чи зневоднює, а також стрес і раціон із малою кількістю клітковини. Walkerville наголошує, що причину може встановити лише ветеринар, і особливо складно відрізнити стаз від непрохідності.
+
+
+### Скільки можна чекати
+
+Джерела трохи різняться: PetMD вважає ненормальним понад 8 годин без їжі чи випорожнення, а клініка Walkerville радить іти до лікаря, якщо апетит не покращився за 12 годин або кролик притихлий. RSPCA і Rabbit Welfare Association радять звертатися негайно. Безпечніше орієнтуватися на найменший термін.
+
+
+### Що розповісти лікарю
+- Коли кролик востаннє їв і коли був послід.
+- Чим годуєте й чи змінювали раціон.
+- Які ліки давали останнім часом.
+- Як змінилася поведінка.
+- Чи стерилізована крольчиха.
+
+
+### Чого не робити вдома
+- Не масажуйте живіт: Walkerville радить спершу виключити непрохідність.
+- Не покладайтеся на ананас, папаю чи мастила від «грудок шерсті». Walkerville пише, що вони зазвичай не потрібні й можуть зашкодити, а Rabbit Welfare Association — що ананас не допоможе, а його цукор може погіршити стан.
+- Не давайте ліки без дозволу ветеринара.
+
+
+### Як знизити ризик
+
+RSPCA і Rabbit Welfare Association радять такий раціон: приблизно 85% сіна й трави, 10% листової зелені й 5% гранул. Сіно має бути доступне постійно: PetMD попереджає, що кролики, яких годують лише гранулами, мають вищий ризик стазу. Walkerville радить уникати обробленого корму, фруктів, зерна, цукру й люцернового сіна. RSPCA також радить записувати зміни апетиту, посліду, поведінки й ваги.
+
+Sources:
+- https://www.petmd.com/rabbit/conditions/digestive/gastrointestinal-gi-stasis-rabbits
+- https://www.walkervillevet.com.au/blog/rabbit-not-eating/
+- https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/diet
+- https://rabbitwelfare.co.uk/welfare-need/gut-slowdown/
+
+## Чим годувати морську свинку і де брати вітамін C
+
+URL: https://roddihealth.app/blog/morski-svynky/chym-goduvaty-morsku-svynku
+Updated: 2026-11-16
+
+Summary: Сіно й трава становлять більшість раціону морської свинки й мають бути доступні постійно: PetMD оцінює їхню частку приблизно у 80%, PDSA — у 85–90%. Вітамін C свинки не виробляють самі, тому щодня отримують його з їжею, насамперед зі свіжих овочів.
+
+
+### Сіно і трава
+
+Сіно має бути доступне постійно. RSPCA Australia радить щодня давати купку сіна, удвічі більшу за саму свинку. Майже будь-яке трав’яне сіно підходить. Щодо люцерни джерела розходяться: PetMD радить її уникати, бо регулярне вживання може зашкодити, а RSPCA Australia допускає її для молодих, вагітних, годувальниць і хворих свинок, а іншим лише зрідка. Свіжа трава корисна, але скошену газонокосаркою давати не можна.
+
+
+### Гранули
+
+Гранули дають обмежено: PDSA радить приблизно столову ложку на дорослу свинку на день. Обирайте гранули на основі трав, збагачені вітаміном C, і стежте за свіжістю: вітамін у них з часом руйнується. Джерела по-різному визначають термін: PDSA — три місяці після купівлі, памʼятка PetMD — три місяці після виробництва, RSPCA — до кінця терміну придатності.
+
+
+### Овочі й фрукти
+
+Свіжі овочі дають щодня, але кількість у джерелах різна: PDSA радить приблизно чашку на свинку, PetMD — чверть-пів чашки. Найбільше розбіжностей щодо фруктів: SPCA New Zealand радить щодня багато свіжих фруктів і овочів, PetMD — фрукти один-два рази на тиждень, PDSA — як ласощі раз на тиждень-два. Новий корм вводьте поступово: PDSA радить міняти раціон протягом двох-чотирьох тижнів.
+
+
+### Де брати вітамін C
+
+Морські свинки не синтезують вітамін C, тож мають отримувати його щодня. SPCA New Zealand вважає гранули й вітамін у питній воді ненадійними джерелами, бо він швидко руйнується, і радить свіжі овочі. RSPCA і PDSA розглядають збагачені гранули як джерело вітаміну. PDSA додає, що добавка може знадобитися, якщо ви сумніваєтеся, чи вистачає вітаміну, але у воду її не додають. Про ознаки нестачі читайте в статті про цингу.
+
+
+### Зелень із кальцієм
+
+SPCA New Zealand радить заради вітаміну C листову зелень на кшталт кале, петрушки й шпинату. Памʼятка PetMD застерігає, що саме в цих овочах багато кальцію, а свинки схильні до каменів у сечовому міхурі. RSPCA дозволяє петрушку часто, а кале й шпинат — як ласощі. Обговоріть із ветеринаром, скільки такої зелені підходить саме вашій свинці.
+
+
+### Чого не давати
+
+ПродуктХто радить уникатиСалат айсберг, картопля, часник, авокадоRSPCA, PDSAЦибуля, гриби, шніт-цибуляPDSA, PetMDРевіньPDSAШоколад, нарциси, жовтець, ліліїPetMDХліб, печиво, тістечка, зерно, насіння, горіхиPetMD, RSPCA AustraliaЦитрусові, кокосRSPCAСкошена газонокосаркою траваRSPCA, PDSA, RSPCA Australia
+
+Щодо гороху, квасолі й кукурудзи джерела розходяться: PetMD відносить їх до крохмалистих продуктів, яких варто уникати, а RSPCA Australia має їх у списку овочів, які можна давати.
+
+
+### Вода
+
+Свіжа вода має бути завжди. RSPCA радить перевіряти її двічі на день і стежити, щоб узимку вона не замерзала. PetMD радить міняти воду в мисці щодня.
+
+Sources:
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+- https://spca.nz/advice-and-welfare/article/why-is-vitamin-c-important-for-my-guinea-pigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/guinea-pigs/what-should-i-feed-my-guinea-pigs
+- https://www.petmd.com/exotic/conditions/cardiovascular/c_ex_gp_vitamin_c_deficiency
+
+## Базовий догляд за морськими свинками: сіно, корм, житло й компанія
+
+URL: https://roddihealth.app/blog/morski-svynky/dohliad-za-morskoiu-svynkoiu
+Updated: 2026-11-16
+
+Summary: Основа раціону морської свинки — необмежене сіно й трава. До них додають трохи гранул для свинок, щодня свіжі овочі й чисту воду. Свинки соціальні й живуть парами чи групами. Їм потрібне просторе житло із суцільною підлогою, схованками й місцем для руху.
+
+
+### Сіно і трава
+
+Сіно має становити більшу частину раціону й бути доступним постійно. PDSA оцінює його частку у 85–90%, PetMD — приблизно у 80%. RSPCA радить якомога частіше, в ідеалі щодня, давати свіжу траву. Скошена газонокосаркою трава небезпечна, її не дають.
+
+
+### Гранули
+
+Обирайте однорідні гранули саме для морських свинок, на основі трав, а не суміші на кшталт мюслі. PDSA радить приблизно одну столову ложку на дорослу свинку на день, RSPCA — порцію за інструкцією виробника, щодня свіжу.
+
+
+### Овочі й фрукти
+
+PDSA радить приблизно чашку овочів на свинку на день, 5–6 різних видів, серед них багаті на вітамін C. RSPCA серед того, що можна давати часто, називає болгарський перець, огірок, селеру, ромен і петрушку, а брокколі, шпинат, кале, моркву й четвертинку яблука — як ласощі кілька разів на тиждень. Фрукти через цукор дають зрідка. Нові продукти вводьте поступово.
+
+Не давайте салат айсберг, картоплю, цибулю, часник, гриби, авокадо, ревінь, шоколад, хліб і печиво, горіхи й зерно.
+
+
+### Вода
+
+Свіжа чиста вода має бути завжди. RSPCA радить перевіряти її двічі на день, а взимку стежити, щоб вона не замерзала. Миску чи поїлку мийте щодня.
+
+
+### Житло
+
+Джерела дають різні мінімальні розміри:
+
+ДжерелоМінімумPetMDклітка приблизно 91 × 76 × 46 смPDSAбудиночок щонайменше 1,5 × 1 м і вольєр щонайменше 2 × 1 мRSPCA Australiaдля пари щонайменше 2 × 0,5 м, висота не менше 30 см
+
+Усі сходяться в тому, що більше краще. Підлога має бути суцільною, без сітки. RSPCA радить мати схованок на одну більше, ніж свинок, а ще щодня давати свинкам місце для руху. PetMD радить щонайменше годину на день поза кліткою.
+
+
+### Температура
+
+RSPCA називає комфортною кімнатну температуру 17–20 °C. Вище 26 °C зростає ризик теплового удару, нижче 15 °C свинка може переохолодитися. PDSA попереджає про тепловий удар вище 27 °C. Не ставте житло біля батарей, сонячних вікон і на протязі.
+
+
+### Підстилка й прибирання
+
+Підходять безпилове сіно чи паперова підстилка, вату не використовують. Щодо деревної стружки джерела розходяться, тож паперова підстилка — безпечніший вибір. Щодня прибирайте мокру підстилку й залишки свіжої їжі, а раз на тиждень робіть ґрунтовне прибирання.
+
+
+### Компанія
+
+RSPCA радить тримати свинку щонайменше з однією дружньою свинкою, якщо ветеринар не порадив інакше. Добре уживаються кастрований самець з однією чи кількома самками, дві самки, брати, які росли разом. Самця, що живе із самками, обовʼязково каструють: за PDSA, самки можуть завагітніти вже приблизно з трьох тижнів. Кролик не компанія для свинки, тримати їх разом не радять.
+
+
+### Огляди
+- Щодня оглядайте свинку: обличчя й очі, шерсть, задню частину тіла, лапи.
+- Раз на тиждень перевіряйте передні зуби й кігті. Зуби, що переросли, виправляє лише ветеринар.
+- У спеку двічі на день оглядайте задню частину тіла: забруднена шерсть приваблює мух.
+- Щонайменше раз на рік показуйте свинку ветеринару.
+- Якщо змінилися харчування, пиття чи послід або послід зник, одразу звертайтеся до ветеринара. Утруднене дихання — невідкладний стан.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pigs-as-pets
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/the-ideal-home-for-your-guinea-pig
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pig-health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/guinea-pigs/where-should-i-keep-my-guinea-pigs
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+
+## Морська свинка не їсть: що робити
+
+URL: https://roddihealth.app/blog/morski-svynky/morska-svynka-ne-yist
+Updated: 2026-11-16
+
+Summary: Якщо морська свинка перестала їсти чи стало менше посліду, телефонуйте ветеринару відразу. За PetMD, стаз шлунково-кишкового тракту без лікування може стати смертельним за 24–48 годин.
+
+
+### Чому це так небезпечно
+
+Кишечник морської свинки має працювати постійно, а для цього їй потрібно дуже багато клітковини. Коли кишечник сповільнюється, накопичуються гази й порушується баланс бактерій, а стан швидко погіршується. PetMD називає стаз невідкладним станом, що загрожує життю. До того ж свинки, за PDSA і RSPCA, приховують нездужання, тож коли помітно, що свинка не їсть, проблема могла початися раніше.
+
+
+### Можливі причини
+
+За PetMD, стаз часто є наслідком іншої проблеми:
+- мало сіна й клітковини
+- зневоднення
+- біль чи хвороба, зокрема проблеми із зубами
+- стрес: зміна місця, поводження, компанії
+- мало руху
+
+PDSA додає, що надто швидка зміна корму теж може засмутити травлення й призвести до відмови від їжі. Причину встановлює ветеринар: огляд зазвичай охоплює зуби, вагу, живіт і рентген, а в тяжких випадках і аналіз крові.
+
+
+### Що зробити зараз
+- Телефонуйте ветеринару якнайшвидше: PetMD і RSPCA радять звертатися одразу.
+- Запишіть, коли свинка востаннє їла й ходила в туалет.
+- Якщо є можливість, візьміть зразок посліду.
+- Не давайте ліки без призначення: RSPCA радить лише ті, що рекомендував ветеринар.
+
+За PetMD, лікування зазвичай включає рідину, допоміжне годування й знеболення. Багато свинок починають одужувати за 24–72 години, а повністю відновлюються за кілька днів чи тиждень.
+
+
+### Який послід нормальний
+
+Свинки зʼїдають особливий мʼякий послід просто з-під хвоста, і це нормальна частина травлення. Насторожувати має інше: RSPCA радить негайно звертатися до ветеринара, якщо посліду стало менше, він зник, став мʼякшим, ніж зазвичай, і прилипає до шерсті.
+
+
+### Як знизити ризик
+- Сіно й чиста вода доступні постійно. RSPCA радить перевіряти воду двічі на день.
+- Щоденний рух: PetMD радить щонайменше годину на день поза кліткою.
+- Новий корм вводьте поступово.
+- Регулярно зважуйте свинку: за PDSA, схуднення може бути ознакою хвороби.
+- Щодня оглядайте передні зуби й задню частину тіла.
+- До лікаря при перших змінах апетиту.
+
+Sources:
+- https://www.petmd.com/exotic/gi-stasis-in-guinea-pigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pig-health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+
+## Цинга в морської свинки: ознаки нестачі вітаміну C і профілактика
+
+URL: https://roddihealth.app/blog/morski-svynky/tsynga-u-morskoi-svynky
+Updated: 2026-11-16
+
+Summary: Морські свинки не синтезують вітамін C самі, тож мають щодня отримувати його з їжею. За PetMD, ознаки нестачі можуть зʼявитися вже через 2–3 тижні неповноцінного раціону: гіршають шерсть, апетит і вага, рани довго гояться, тварині боляче рухатися. Причину визначає й лікування призначає ветеринар.
+
+
+### Чому вітамін C має бути в їжі
+
+На відміну від більшості тварин, морські свинки не мають ферменту, потрібного для синтезу вітаміну C, тож отримують його лише з їжею. Вітамін C потрібен, зокрема, для утворення колагену. PDSA попереджає, що без нього свинці загрожує цинга.
+
+
+### Як проявляється нестача
+
+PetMD, стаття якого написана ветеринаром, називає такі ознаки:
+- груба, тьмяна чи нерівна шерсть
+- млявість і пригнічений вигляд
+- гірший апетит, схуднення, а в молодих свинок слабкий набір ваги
+- рани гояться повільно, свинка частіше хворіє на інфекції
+- проблеми із зубами й біль під час жування
+- діарея
+- біль у кістках і суглобах, набряклі суглоби: свинка неохоче рухається чи кульгає
+
+У важких випадках нестача може призвести до переломів, паралічу, сепсису й загибелі тварини. Багато з цих ознак бувають і за інших хвороб, тому причину визначає ветеринар.
+
+
+### Як швидко це стається
+
+За PetMD, ознаки нестачі можуть зʼявитися вже через 2–3 тижні раціону, у якому замало вітаміну C. Найчастіші причини: мало свіжих овочів, немає збагаченого корму або корм і ласощі застаріли.
+
+
+### Свіжі овочі щодня
+
+RSPCA називає свіжі овочі й зелень чудовим джерелом вітаміну C. Серед того, що можна давати часто, організація згадує болгарський перець, огірок, селеру, ромен і петрушку. PetMD до продуктів, багатих на вітамін C, відносить червоний і зелений перець, брокколі, цвітну капусту, полуницю й ківі.
+
+Щодо зелені з високим вмістом кальцію джерела розходяться. RSPCA дає капусту кале й шпинат лише як ласощі кілька разів на тиждень. Памʼятка PetMD радить уникати петрушки, шпинату, кале й кульбаби через ризик каменів, а стаття PetMD про вітамін C називає кале й петрушку його джерелами. Якщо сумніваєтеся, порадьтеся з ветеринаром.
+
+
+### Гранули втрачають вітамін
+- Обирайте гранули саме для морських свинок, на основі трав і збагачені вітаміном C.
+- Вітамін C у кормі з часом руйнується, швидше на теплі, світлі й повітрі.
+- PDSA радить зберігати гранули в сухому, прохолодному й темному місці та використати протягом трьох місяців після купівлі. За памʼяткою PetMD, вміст вітаміну різко падає через три місяці після дати виробництва.
+- RSPCA радить щодня давати свіжу порцію гранул, а не досипати до старої, і не годувати кормом після кінця терміну придатності.
+
+
+### Вітамін у воді й добавки
+
+Вітамін C у питній воді — ненадійний спосіб: він швидко руйнується, а PetMD пише, що такі добавки діють менше доби. PDSA не радить додавати вітамін у воду ще й тому, що через смак свинка може менше пити.
+
+За PDSA, якщо свинка щодня отримує збалансований раціон зі свіжою зеленню, окремі добавки не потрібні. Надлишок вітаміну теж може шкодити: Improve International, видання для ветеринарів, повʼязує надмірне його вживання з каменями в сечовій системі й проблемами із суглобами. Тому добавки варто обговорити з ветеринаром.
+
+
+### Що зробить ветеринар
+
+За PetMD, ветеринар оглядає свинку й розпитує про раціон, інколи робить рентген чи аналіз крові. Часто достатньо виправити раціон, а у важких випадках лікар сам призначає вітамін. Зміни зубів можуть лишитися надовго.
+
+Sources:
+- https://www.petmd.com/exotic/conditions/cardiovascular/c_ex_gp_vitamin_c_deficiency
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-guinea-pig-s-diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health
+- https://improveinternational.com/uk/clinical-library/guinea-pigs-and-the-vitamin-c-problem
+
+## Домашні миші: житло, прибирання, корм і компанія
+
+URL: https://roddihealth.app/blog/myshi/domashni-myshi
+Updated: 2026-11-16
+
+Summary: Миші — соціальні нічні тварини. Їм потрібні родичі тієї ж статі, просторе провітрюване житло без протягів і місця, щоб ховатися та лазити. Основа раціону — гранульований корм для мишей, свіжа зелень у межах денної норми й чиста вода щодня.
+
+
+### Компанія
+
+Миші соціальні й мають жити з іншими мишами. Тримають сталі групи однієї статі. Самці часто агресивні до незнайомих самців, тому групу краще складати з братів, які росли разом. Самиці зазвичай легше приймають новеньких. Самця й самиць разом тримають, лише якщо самець кастрований. RSPCA радить тримати мишу поодинці, тільки якщо так скаже ветеринар, а інших гризунів у компанію мишам не підселяти.
+
+
+### Житло
+- Точної норми площі для домашніх мишей джерела не дають. Радять якомога просторіше житло, а більшість кліток із зоомагазину PDSA вважає замалими.
+- Житло має добре провітрюватися, але без протягів. У скляних і суцільних пластикових боксах накопичується аміак.
+- Відстань між прутами не більша за 5 мм (RSPCA Australia) або 6 мм (PDSA).
+- Підлога суцільна: сітка травмує лапи.
+- Кілька рівнів, драбинки й мотузки: миші добре лазять.
+- Кілька схованок із двома виходами й темне місце для гнізда.
+
+
+### Де поставити
+
+PDSA і шкільний посібник Нового Південного Уельсу називають комфортною температуру 18–22 °C без різких перепадів. Не ставте клітку на сонці чи на протязі, у ванній, гаражі чи на заскленій веранді. Мишам потрібна тиша, подалі від телевізора й гучної музики: вони чутливі до шуму й світла. RSPCA Australia радить забезпечити 8–12 годин темряви й тиші на добу.
+
+
+### Підстилка й гніздо
+
+ПідходитьНе підходитьпаперова чи картонна підстилка, целюлозні гранулидрібна тирса, ароматизована чи фарбована підстилкадля гнізда: рваний папір, серветки, сіновата й пухнасті волокна: вони обплутують лапкишар щонайменше 2 см, а в одному місці 3–4 см, щоб копатикукурудзяні качани
+
+Щодо деревної стружки джерела розходяться: RSPCA Victoria й шкільний посібник Нового Південного Уельсу її допускають, а RSPCA, PDSA і RSPCA Australia радять уникати. Безпечніше обрати паперову підстилку.
+
+
+### Прибирання
+- Щодня прибирайте послід і мокру підстилку.
+- Повне прибирання PDSA радить робити щотижня, RSPCA — раз на один-два тижні.
+- Миші мітять територію запахом. Повертайте назад трохи сухої старої підстилки, щоб житло не стало для них чужим.
+- Прибирайте ввечері, коли миші прокидаються.
+- Уранці й увечері перевіряйте поїлку: миші можуть забити носик підстилкою.
+
+
+### Чим годувати
+- Основа раціону — гранули чи брикети для мишей. Кожна гранула має все потрібне, і миша не може вибрати лише смачне.
+- Зернові суміші RSPCA Australia й RSPCA Victoria не радять: миші вибирають улюблене, а це веде до дисбалансу й ожиріння. PDSA допускає суміші, але радить перейти на гранули, якщо миша лишає частину корму.
+- Свіжа темна зелень і некрохмалисті овочі — невеликими порціями, у межах денної норми, а не понад неї.
+- Ласощі — не більше 10% калорій.
+- Не давайте шоколад, виноград і родзинки, авокадо, часник, цибулю, каву, чай, алкоголь, солодке, жирне, молочне й липку їжу.
+- Розсипайте частину корму, щоб миші його шукали.
+- Свіжа вода щодня. RSPCA Australia радить пляшечку-поїлку, а краще дві на випадок, якщо одна зламається.
+- Новий корм вводьте поступово.
+
+
+### Гризіння й рух
+
+Різці мишей ростуть усе життя, тому їм потрібні предмети для гризіння з необробленого дерева чи картону. Колесо має бути суцільним, без щілин і перекладин і достатньо великим, щоб миша бігала з рівною спиною. RSPCA нагадує, що колесо не має бути єдиною розвагою: додайте тунелі, коробки й мотузки.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice/company
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/where-should-i-keep-my-mice
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-should-i-feed-my-mice
+- https://rspcavic.org/learn/caring-for-your-mice-and-rats/
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/mice/mice-environment
+
+## Як перевірити здоровʼя миші: щоденний огляд і тривожні ознаки
+
+URL: https://roddihealth.app/blog/myshi/zdorovia-myshi
+Updated: 2026-11-16
+
+Summary: Миші приховують нездужання, тож помітні симптоми часто означають, що тварина вже серйозно хвора. Короткий огляд уранці й увечері допомагає побачити зміни рано: тьмяні очі, скуйовджену шерсть, незвичне дихання, схуднення або мишу, яка сидить окремо від інших.
+
+
+### Чому оглядати щодня
+
+Миші швидко слабнуть, а біль показують дуже слабко, аж поки стан не стане важким. RSPCA Australia пояснює це тим, що миші є здобиччю і приховують хворобу: якщо миша виглядає хворою, вона вже серйозно хвора. Тому оглядайте мишей двічі на день, уранці й увечері, коли вони активні. Спершу кілька хвилин спокійно поспостерігайте, а потім придивіться до кожної.
+
+
+### Як виглядає здорова миша
+- Очі ясні й широко відкриті.
+- Шерсть щільна, гладенька й блискуча.
+- Дихання рівне, без звуків.
+- Спить, згорнувшись клубочком. Якщо миша лежить витягнувшись, це може бути ознакою хвороби.
+- Рухається жваво, їсть і спить разом з іншими.
+
+
+### На що звернути увагу
+
+Що перевіритиЩо насторожуєОчітьмяні чи запалі очі, примружування, виділенняНіс і диханнявиділення з носа, цокання, часте або важке дихання з помітним рухом живота, часте чханняШерсть і шкіраскуйовджена, брудна чи злиплa шерсть, послід під хвостом, почервоніла шкіра, проплішиниПосліддіарея, мʼякий послід із неприємним запахомВага й тілосхуднення або швидкий набір ваги, грудки під шкіроюПоведінкаховається більше звичайного, сидить окремо в кутку, мало рухається, не цікавиться їжею, пʼє набагато більше
+
+Щодо чхання джерела трохи різняться: шкільний посібник Нового Південного Уельсу вважає тривожним будь-яке чхання, а RSPCA Australia радить іти до лікаря, якщо миша чхнула більше кількох разів за годину-дві. Мʼякий послід теж буває різним. Миші зазвичай зʼїдають особливий мʼякий послід, і це норма, а от мʼякий послід із неприємним запахом, що лишається в клітці, вже насторожує.
+
+
+### Чому важлива вага
+
+RSPCA зазначає, що втрата 20% маси тіла й більше може бути для миші смертельною. Для миші вагою 30 г це лише 6 г, тож на око таку зміну легко пропустити. Записи ваги допомагають побачити тенденцію й показати її лікарю.
+
+
+### Найчастіші проблеми
+- Дихальні інфекції. За даними RSPCA Australia, їх часто спричиняють вірус Сендай і мікоплазма. Ознаки: чхання, цокання, важке дихання, нахил голови, миша менше вмивається й худне. Лікування полегшує симптоми, але інфекція й зміни в легенях лишаються. Лікування призначає ветеринар.
+- Зуби. Різці ростуть усе життя. Якщо вони переросли, миша гірше їсть, слинить, худне, може зʼявитися набряк морди. Зуби підрізає ветеринар, а тверді предмети для гризіння знижують ризик.
+- Шкіра й кліщі. Хутрові кліщі часто спричиняють проблеми зі шкірою: рідшу жирну шерсть на голові й тулубі та свербіж. Шерсть без ранок на шкірі може випадати й тому, що її обгризає домінантна миша.
+- Пухлини. Найпоширеніший рак у мишей — пухлини молочних залоз. RSPCA Australia пише, що вони можуть подвоїтися за два тижні або швидше й майже завжди злоякісні. Будь-яку нову грудку покажіть ветеринару одразу.
+
+
+### Нові миші й візит до лікаря
+
+Шкільний посібник Нового Південного Уельсу радить тримати нових мишей окремо чотири тижні й уважно спостерігати: вони можуть переносити хворобу без жодних ознак. Якщо ведете мишу до ветеринара, RSPCA Australia радить узяти з собою її сусідку, щоб після повернення вони пахли однаково й не посварилися. Обирайте лікаря, який працює з мишами.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice/health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-does-an-unhealthy-mouse-look-like
+- https://kb.rspca.org.au/knowledge-base/what-are-common-health-problems-in-mice/
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/mice/mice-health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health
+
+## Чому щур чхає і коли їхати до ветеринара
+
+URL: https://roddihealth.app/blog/shchury/chomu-shchur-chkhaie
+Updated: 2026-11-16
+
+Summary: Навіть поодиноке чхання або червонуваті кірочки біля очей і носа можуть бути першими ознаками респіраторної інфекції. За RSPCA Australia, це найпоширеніша проблема зі здоровʼям у щурів, а без лікування вона може перейти в пневмонію. Тому чхання варто показати ветеринару, а не чекати.
+
+
+### Які ознаки помітні спочатку
+
+На початку симптоми легко пропустити: щур зрідка чхає, а біля очей чи носа зʼявляються дрібні червонуваті кірочки. Це засохлий червоний пігмент зі сліз, порфірин. За кілька днів можуть додатися:
+- часте чхання й примружені очі
+- іржаві сльози або виділення з носа
+- гірший апетит і млявість
+- скуйовджена шерсть
+- зміни в поведінці: щур уникає контакту, дратується чи кусається
+
+Червоні виділення біля очей і носа бувають і від стресу. RSPCA пише, що невелика кількість, яка не повторюється, не страшна, а велика може свідчити про серйозну проблему.
+
+
+### Чому це трапляється
+
+За PetMD, більшість щурів від природи носить бактерію Mycoplasma pulmonis, одну з найчастіших причин таких інфекцій. Вона передається від щура до щура, і щур може бути носієм без жодних ознак. Захворювання також можуть викликати віруси, а інші бактерії приєднуються, коли імунітет ослаблений. Шкільний посібник уряду Нового Південного Уельсу попереджає, що інфекція дуже заразна.
+
+Ризик підвищують вік, інші хвороби, ожиріння, стрес і тіснота, аміак у брудній клітці, а ще дим, вейп, ароматичне мило, побутова хімія й свічки. Хвоя й кедр у підстилці подразнюють дихальні шляхи, а PDSA застерігає від будь-якої пилової підстилки. PetMD вважає паперову підстилку безпечнішою.
+
+
+### Чому не варто чекати
+
+PetMD радить показати ветеринару будь-якого щура з ознаками респіраторної інфекції одразу, а PDSA попереджає, що такі інфекції можуть погіршитися дуже швидко. RSPCA Australia пише, що коли ознаки вже помітні, зміни в легенях лишаються, і лікування може знадобитися довічно. Домашніх засобів, які б вилікували інфекцію, PetMD не знає, тож ліки давайте лише ті, що призначив ветеринар.
+
+
+### Поки чекаєте на прийом
+- Приберіть клітку й усуньте різкі запахи поруч.
+- Запишіть, коли почалися симптоми й що змінилося.
+- Можна зняти коротке відео дихання, щоб показати лікарю.
+- Не давайте ліки чи антибіотики без призначення.
+
+
+### Як знизити ризик
+- Нових щурів тримайте окремо й спостерігайте за ними: PetMD радить щонайменше 2 тижні, шкільний посібник Нового Південного Уельсу — 4 тижні.
+- Регулярно прибирайте клітку, щоб не накопичувався аміак.
+- Ставте клітку в тихому чистому місці, добре провітрюваному, але без протягів.
+
+Sources:
+- https://www.petmd.com/exotic/conditions/respiratory/upper-respiratory-infection-rats
+- https://www.petmd.com/exotic/rat-care-sheet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/environment
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-are-common-health-problems-in-rats
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/rats-as-pets
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/rats/rats-health
+
+## Чим годувати щура: що можна, а що не можна
+
+URL: https://roddihealth.app/blog/shchury/chym-goduvaty-shchura
+Updated: 2026-11-16
+
+Summary: Основа раціону домашнього щура — гранульований корм саме для щурів. Овочі, трохи фруктів, варене яйце, зерно й насіння дають у межах денної норми, а не понад неї. Виноград, родзинки, цибуля й шоколад не підходять.
+
+
+### Що має бути основою
+
+Обирайте гранули, створені саме для щурів. RSPCA попереджає, що корм для кроликів, морських свинок чи хомʼяків не дасть щурам потрібних поживних речовин. Щури всеїдні, тож раціон можна доповнювати невеликою кількістю овочів, фруктів, вареного яйця, зерна й насіння.
+
+Такі доповнення входять у денну порцію, а не додаються до неї. PetMD радить, щоб усі доповнення й ласощі разом становили не більше 10% раціону: щури легко набирають зайву вагу. Кількість основного корму беріть з інструкції на упаковці й зважуйте щура, щоб стежити за вагою.
+
+
+### Чи можна щурам: коротка таблиця
+
+ПродуктВідповідьПриміткаВиноград, родзинкиНіRSPCA, RSPCA AustraliaЦибуля, часникНіЦибулю називають усі джерела, часник — PetMD і RSPCA AustraliaРевіньНіЦитрусовіКраще не даватиRSPCA і PetMD радять уникати, а шкільний посібник Нового Південного Уельсу їх допускаєВолоські горіхиНіУ переліку шкідливих у RSPCAШоколад, кава, чай, алкогольНіPetMD попереджає, що кофеїн і алкоголь можуть спричинити тяжку хворобу чи загибельАвокадо, липка їжаНіRSPCA Australia; липкою їжею щур може вдавитисяСирі боби, картопляНіPetMDНезрілі помідориНіPetMD; про стиглі окремо не сказаноКісточки й насіння фруктівНіPetMDМолочнеКраще уникатиЖирне; лише зрідка як ласощіЗерно, хлібТрохиЗерно потроху; про хліб окремо не сказано. RSPCA Australia не радить зернових сумішей як кормуБільшість овочівТакДрібними шматочками, у межах норми. RSPCA Australia радить темну зелень і некрохмалисті овочі
+
+
+### Як годувати
+- Двічі на день, уранці й увечері. RSPCA пояснює це тим, що щури їдять переважно на світанку й у сутінках.
+- Частину корму розсипте, змішайте з підстилкою чи сховайте в картонних тубусах, щоб щури його шукали.
+- RSPCA радить керамічні миски: металеві видають ультразвук, який турбує щурів.
+- Прибирайте те, що не зʼїли. PetMD радить викидати залишки овочів і фруктів щонайпізніше через 10 годин.
+- Солодке й жирне — лише як рідкісна винагорода під час дресирування. PetMD радить таких ласощів узагалі уникати.
+
+
+### Вода
+
+Свіжа чиста вода має бути завжди. RSPCA радить поїлки-пляшки замість мисок, кілька штук, і перевіряти їх двічі на день. RSPCA Australia й PetMD радять міняти воду щодня.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/diet
+- https://www.petmd.com/exotic/rat-care-sheet
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/what-should-i-feed-my-rats
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/rats-as-pets
+- https://education.nsw.gov.au/teaching-and-learning/animals-in-schools/animals-in-schools-species/rats/rats-food-and-water
+
+## Скільки живуть домашні гризуни: щури, хомʼяки, свинки, дегу
+
+URL: https://roddihealth.app/blog/shchury/skilky-zhyvut-gryzuny
+Updated: 2026-11-16
+
+Summary: Найкоротше серед цих тварин живуть миші й хомʼяки, приблизно 1–3 роки, щури 2–3 роки, морські свинки 4–8, дегу 5–9 років, а шиншили, за RSPCA, 10–20 років. Джерела дають різні цифри, тож це орієнтири, а не точні межі.
+
+
+### Порівняльна таблиця
+
+ТваринаPetMDRSPCAPDSAМиша18–24 місяціблизько 3 років1–3 рокиЩурдо 3 років2–3 роки2–3 рокиХомʼяк2–3 роки (сирійський і карликовий)до 2 років, деякі довше2–3 рокиМорська свинкадо 8 років5–6 років4–8 роківДегу5–9 років6–7 років6–8 років, іноді 9Шиншилане порівнювали10–20 роківне порівнювали
+
+Це орієнтовні середні значення за належного догляду. Джерела помітно розходяться, особливо щодо мишей і морських свинок, а окремі тварини живуть менше чи довше.
+
+
+### Що найбільше впливає
+- Раціон, що відповідає виду, без надлишку цукру й жиру.
+- Чисте житло без різких запахів і протягів.
+- Компанія родичів для соціальних видів, рух і спокійне поводження.
+- Планові огляди: PetMD радить показувати хомʼяка ветеринару раз на рік, а RSPCA — морських свинок щонайменше раз на рік.
+- Звернення до лікаря при перших змінах: RSPCA попереджає, що миші й хомʼяки швидко втрачають сили, коли хворіють.
+
+
+### Чому важливо записувати
+
+Ці тварини часто приховують нездужання, тож зміни ваги чи апетиту можуть бути єдиним раннім сигналом. Регулярні записи допомагають помітити тенденцію й показати її лікарю.
+
+Sources:
+- https://www.petmd.com/exotic/mouse-care-sheet
+- https://www.petmd.com/exotic/rat-care-sheet
+- https://www.petmd.com/exotic/syrian-hamster-care-sheet
+- https://www.petmd.com/exotic/dwarf-hamster-care-sheet
+- https://www.petmd.com/exotic/guinea-pig-care-sheet
+- https://www.petmd.com/exotic/care/caring-for-a-degu
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/mouse-health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/rats-as-pets
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/guinea-pigs-as-pets
+- https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/ideal-environment-for-degus
+
+## Як зробити життя щура цікавішим: компанія, ігри й пошук їжі
+
+URL: https://roddihealth.app/blog/shchury/zhyttia-shchura-tsikavishe
+Updated: 2026-11-16
+
+Summary: Щури розумні, допитливі й соціальні, тож їм потрібні щонайменше один родич і щоденні нові враження. Висока клітка з кількома рівнями, схованки, мотузки, коробки для риття й корм, який треба шукати, допомагають уникнути нудьги, а прогулянки поза кліткою — лише під наглядом.
+
+
+### Чому щурам нудно
+
+RSPCA описує щурів як дуже розумних і допитливих тварин із доброю памʼяттю. Вони швидко вчаться, і їм потрібні можливості лазити, бігати, шукати їжу, досліджувати, гратися й копати. Коли цього бракує, щур нудьгує. Гризіння прутів клітки RSPCA називає можливою ознакою нудьги чи бажання втекти, а проплішини від того, що щури обгризають одне одному шерсть, — ознакою того, що вони не ладнають або їм нудно.
+
+
+### Компанія
+
+Щура не тримають самого: за RSPCA, навіть багато уваги від людини не замінює родичів, а самотність може призвести до пригніченості й незвичної поведінки. Тримають пари чи невеликі групи однієї статі, найкраще братів чи сестер. У змішаній групі всі самці мають бути кастровані. До сталої групи не додають і не забирають щурів. Собак і котів тримають окремо: для щурів це хижаки.
+
+
+### Клітка, у якій є що робити
+- Клітка має бути великою, щоб щур міг бігати, ставати на задні лапи, лазити й досліджувати. PetMD для одного щура називає мінімум приблизно 61 × 61 × 61 см і радить якомога більше житло. RSPCA Australia зазначає, що науково обґрунтованої норми немає.
+- Кілька рівнів зі сходинками й рампами. RSPCA пише, що рівні ще й зменшують сварки між сусідами.
+- Відстань між прутами така, щоб щур не просунув голову. PetMD називає близько 1,3 см, RSPCA Australia — до 2,5 см для дорослих.
+- Суцільна підлога: сітка травмує лапи.
+- Схованок на одну більше, ніж щурів, з кількома виходами, щоб усі могли спати разом.
+- Тунелі, мотузки з натуральних волокон, гамаки, драбинки. Погризений тканинний гамак краще прибрати, щоб щур не наковтався тканини.
+- Оновлюйте іграшки: RSPCA радить регулярно їх міняти.
+
+
+### Їжа, яку треба шукати
+
+RSPCA радить перетворювати годування на пошук: змішувати корм із підстилкою, розсипати й ховати його, класти в картонні тубуси чи коробки для яєць. Можна давати цілу їжу, з якою доведеться повозитися, наприклад охолоджене варене яйце в шкаралупі. Важливо, щоб ця їжа входила в денну норму, а не додавалася до неї. Кілька місць годування зменшують суперництво.
+
+
+### Риття й гризіння
+
+Для риття RSPCA радить коробку з чистим піском або компостом і товстий шар підстилки в клітці. RSPCA Australia називає 3–4 см. Різці щурів ростуть усе життя, тому потрібні предмети для гризіння: дерев’яні вироби для гризунів, гілки яблуні, необроблене дерево.
+
+
+### Прогулянки поза кліткою
+
+PetMD пише, що щурам щодня потрібен час поза кліткою. RSPCA радить випускати лише ручних, спокійних щурів і лише під наглядом, у кімнаті, звідки вони не втечуть і де не зможуть поранитися. Приберіть дроти, отруйні рослини й усе, що можна погризти. Альтернатива — великий вольєр із предметами, місцем для риття й лотком для пошуку їжі. Тривалості прогулянки джерела не називають.
+
+
+### Як навчати
+
+Щури добре піддаються дресируванню: RSPCA згадує, що їх можна навчити відгукуватися на імʼя чи давати «пʼять». Навчають лише заохоченням, ніколи не карають. Корисна навичка — самому залазити на ваги за ласощі, так легше стежити за вагою. Брати щура на руки, за RSPCA, найкраще вранці або ввечері: дати понюхати руку, підвести одну долоню під тіло, а другою легко накрити спину. Не піднімайте щура за хвіст і за шкірку.
+
+
+### Чого уникати
+- Кульки для бігу: RSPCA пише, що вони обмежують дослідження й лякають.
+- Підстилку з ароматного чи фарбованого матеріалу, вату й пухнасті волокна.
+- Сильні запахи (освіжувачі повітря, дим) і різкий шум, зокрема ультразвук від техніки.
+- Скляні й суцільні пластикові клітки: у них погано циркулює повітря.
+- Обрізання вусів.
+
+
+### Коли нудьга може бути хворобою
+
+Повторювані рухи, як-от постійне гризіння прутів, RSPCA радить показати ветеринару. Ознаками стресу також бувають надмірне вмивання голови й лап, агресія, червоні виділення біля очей і носа, бажання ховатися й уникати контакту. Щури приховують біль, тож будь-які зміни в поведінці — привід придивитися уважніше.
+
+Sources:
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/behaviour
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/company
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/diet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats/health
+- https://kb.rspca.org.au/categories/companion-animals/other-pets/rats-and-mice/where-should-i-keep-my-rats
+- https://www.petmd.com/exotic/rat-care-sheet
+
+## Пилові ванни для шиншили: навіщо, як часто й скільки тривати
+
+URL: https://roddihealth.app/blog/shynshyly/pylovi-vanny-shynshyly
+Updated: 2026-11-16
+
+Summary: Шиншила чиститься в пилу: він забирає з густого хутра зайвий жир і вологу. Купати у воді не можна, бо хутро довго сохне, а шкіра може запалитися. Ванну зі спеціальним пилом дають на обмежений час і після цього прибирають, щоб пил не подразнював очі.
+
+
+### Навіщо шиншилі пил
+
+Хутро шиншили дуже густе: з одного волосяного фолікула росте кілька десятків волосин (PetMD пише про до 60, RSPCA — про 60–90). Так ці тварини пристосувалися до холодних високогірʼїв. Перекочуючись у пилу, шиншила прибирає з хутра зайвий шкірний жир, бруд і вологу. PDSA попереджає, що без таких ванн хутро може звалюватися. А ще ванна для шиншили — розвага.
+
+
+### Чому не вода
+
+Густе хутро довго сохне й затримує вологу. За даними PetMD, через це воно може звалюватися, а шкіра — запалюватися. Тому шиншилу не купають і не мочать.
+
+
+### Який пил обрати
+- Беріть спеціальний пил або пісок для ванн шиншил. За PetMD, це тонкий очищений порошок із вулканічного попелу, пемзи, каоліну чи кварцового піску.
+- Звичайний пісок і схожі продукти, не призначені для шиншил, надто абразивні: вони можуть подразнити шкіру, очі й дихальні шляхи.
+- Надто дрібний пил може подразнювати ніс і очі, особливо в шиншил до року.
+- Коли пил грудкується, замініть його.
+
+
+### Ємність
+
+Потрібна відкрита зверху ємність, у якій шиншила може вільно перекочуватися, наприклад неглибока металева миска. Закрита ємність затримує вологу. Щодо шару пилу джерела різняться: PetMD радить близько 2,5 см, PDSA — 4–6 см.
+
+
+### Як часто й скільки
+
+ДжерелоЯк частоСкількиPetMD, стаття про ванни2–4 рази на тиждень10–30 хв; для шиншил до року 3–4 хвPetMD, памʼятка з доглядущонайменше кілька разів на тижденьне вказаноRSPCAщодняне вказаноPDSAщоднядо 10 хв
+
+Спільне в усіх джерелах одне: ванну не лишають у клітці постійно. Узгодьте частоту з ветеринаром і стежте за станом хутра й шкіри. PetMD попереджає, що понад тиждень без ванни може призвести до надлишку жиру на шкірі й подразнення.
+
+
+### Чому ванну прибирають
+
+Постійний доступ до пилу, за PetMD, може спричинити конʼюнктивіт і сухість шкіри. До того ж шиншили можуть використовувати ванну як туалет, тому RSPCA радить після купання прибирати пил або просіювати його.
+
+
+### Умови в кімнаті
+
+RSPCA радить тримати шиншил удома в сухому провітрюваному приміщенні без протягів, бажано за 10–18 °C: спека, вологість і протяги можуть спричинити хворобу. PetMD додає, що вологість має бути нижчою за 40–50%, а клітку не ставлять на пряме сонце.
+
+
+### Коли до ветеринара
+
+Покажіть шиншилу лікарю, якщо зʼявилися проплішини, виділення з очей чи носа, вологе хутро біля очей або рота. Про інші тривожні ознаки читайте в статті про здоровʼя шиншили.
+
+Sources:
+- https://www.petmd.com/exotic/care/how-give-your-chinchilla-dust-bath
+- https://www.petmd.com/exotic/chinchilla-care-sheet
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/environment
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/health
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health
+
+## Здоровʼя шиншили: зуби, хутро, травлення й тривожні ознаки
+
+URL: https://roddihealth.app/blog/shynshyly/zdorovia-shynshyly
+Updated: 2026-11-16
+
+Summary: Зуби шиншили ростуть усе життя, тому основа раціону — необмежене сіно, а не солодкі суміші. Слина на підборідді, гірший апетит, схуднення чи менше посліду можуть означати біль у роті або проблеми з травленням. Шиншили приховують хворобу, тож такі ознаки — привід звернутися до ветеринара одразу.
+
+
+### Чому важливо помітити рано
+
+PetMD зазначає, що шиншили добре приховують нездужання, тож проблеми із зубами можна не помітити до важкої стадії. PDSA і RSPCA радять оглядати шиншилу щодня, а RSPCA — ще й показувати її ветеринару щонайменше раз на рік.
+
+
+### Зуби
+
+Зуби шиншили ростуть безперервно й стираються під час жування. Тому основа раціону — сіно й трава, причому PetMD радить давати якісне сіно без обмежень. Гранул дають небагато й без солодких ласощів. Сумішей на кшталт мюслі PDSA радить уникати: шиншила вибирає з них солодке, а це може призвести до болісної хвороби зубів. Для гризіння підійдуть блоки або гілки необробленої яблуні чи груші.
+
+Ознаки проблем із зубами, за PetMD:
+- слинотеча й мокре хутро на підборідді
+- шиншила гірше їсть, впускає їжу, тре лапою рот
+- схуднення й менше посліду
+- набряк щелепи чи морди
+- передні зуби переросли або ростуть криво
+- шиншила менше вмивається й мляво поводиться
+
+У британському дослідженні 2001 року (Crossley) зміни зубів виявили під час зовнішнього огляду в 35% шиншил, які виглядали здоровими. Автор також зазначив, що набряк щелепи, схуднення чи зміни в жуванні бувають за різних проблем із зубами, тож точну причину визначає ветеринар. За PetMD, огляд задніх зубів зазвичай потребує седації й рентгену, а підрізати зуби вдома не можна. Якщо через біль шиншила перестає їсти, може розвинутися стаз ШКТ або інфекція, небезпечна для життя вже за кілька годин або днів.
+
+
+### Травлення
+
+RSPCA радить щодня перевіряти, що шиншила їсть і залишає багато сухого посліду. Якщо змінилися звички в їжі чи питті або посліду поменшало чи він зник, одразу звертайтеся до ветеринара: шиншила може бути серйозно хвора. Діарея і мʼякий послід теж привід для візиту.
+
+
+### Хутро й шкіра
+
+Втрата хутра може бути ознакою хвороби чи травми. RSPCA також називає ознаками стресу обгризання власного чи чужого хутра й клаптики хутра, що відпадають, коли шиншилу тримають у руках. Це захисна реакція, яка може статися через неправильне поводження. Без пилових ванн хутро звалюється, про них є окрема стаття.
+
+
+### Тепло й вологість
+
+Густе хутро — пристосування до холоду, тож спека й вологість для шиншили небезпечні. Джерела дають трохи різні межі: RSPCA радить 10–18 °C у сухому приміщенні без протягів, а PetMD — приблизно 13–21 °C, не вище 27 °C, з вологістю нижче 40–50% і без прямого сонця.
+
+
+### Щоденний огляд
+- Очі й ніс без виділень, хутро біля очей і рота сухе.
+- Шиншила їсть, пʼє, послід звичайний і його багато.
+- Хутро без проплішин, шкіра без змін.
+- Лапи без натоптишів і ранок, шиншила не кульгає.
+- Немає незвичних набряків.
+- Вага стабільна: PetMD радить стежити за масою тіла.
+
+Sources:
+- https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/chinchilla-health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/health
+- https://www.rspca.org.uk/adviceandwelfare/pets/rodents/chinchillas/environment
+- https://www.petmd.com/exotic/conditions/mouth/overgrown-chinchilla-teeth
+- https://www.petmd.com/exotic/chinchilla-care-sheet
+- https://doi.org/10.1111/j.1748-5827.2001.tb01977.x
+
